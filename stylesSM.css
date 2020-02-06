@@ -167,7 +167,7 @@ a:link.link2 {
 
 @media screen and (max-width: 1200px) {
   .container {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     padding: 5px;
   }
