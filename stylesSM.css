@@ -44,8 +44,8 @@ h3 {
   line-height: 1.4;
   font-family:garamond;
   /*width: 50%;*/
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 p {
@@ -198,7 +198,7 @@ a:link.link2 {
     /*text-align: center;*/
   }
   .p {
-    font-size: 32px;
+    font-size: 5vw;
   }
 }
 
