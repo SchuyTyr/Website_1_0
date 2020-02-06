@@ -200,6 +200,9 @@ a:link.link2 {
   .p {
     font-size: 5vw;
   }
+  .#p01 {
+    font-size: 5vw;
+  }
 }
 
 button {
@@ -254,7 +257,10 @@ button {
 }
 
 #p01 {
-  color: blue;
+  /*color: blue;*/
+  text-align:center;
+  color:#8b8e91;
+  font-size:1.5vw;
 }
 
 hr {
