@@ -53,7 +53,7 @@ p {
   padding: 10px;
   margin: 20px;
   text-align:center;
-  font-size: 48px;
+  font-size: 24px;
 }
 
 img {
@@ -198,12 +198,6 @@ a:link.link2 {
     margin-right: auto;
     /*text-align: center;*/
   }
-  .p {
-    font-size: 48px;
-  }
-  .#p01 {
-    font-size: 48px;
-  }
 }
 
 button {
@@ -261,7 +255,7 @@ button {
   /*color: blue;*/
   text-align:center;
   color:#8b8e91;
-  font-size:1.5vw;
+  font-size: 24px;
 }
 
 hr {
