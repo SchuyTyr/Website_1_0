@@ -78,6 +78,10 @@ img {
   transform: scale(1.25);
 }
 
+.imgLogo {
+  width: 50%;
+}
+
 /* Style the video: 100% width and height to cover the entire window */
 #vid {
   /*background: no-repeat center center fixed;
@@ -205,8 +209,8 @@ a:link.link2 {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .img {
+@media screen and (max-width: 700px) {
+  .imgLogo {
     width: 100%;
   }
 }
