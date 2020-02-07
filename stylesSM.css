@@ -184,6 +184,11 @@ a:link.link2 {
     margin: 0 auto;
     padding: 5px;
   }
+
+  .overlay{
+    opacity: 1;
+  }
+
   .img2 {
     display: block;
     width: 100%;
@@ -196,7 +201,7 @@ a:link.link2 {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    /*text-align: center;*/
+    text-align: left;
   }
 }
 
