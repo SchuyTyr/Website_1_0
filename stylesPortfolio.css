@@ -3,14 +3,17 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif, garamond;
-  background-image:url('background1.png');
-  color:#a2a6a9;
+  background-image:url('Hex_7.jpg');
+  color: #bdc0c2;
 }
 
 p {
   text-align:justify;
+  color: #949a9e;
+  font-size: 16px;
 }
 
 .topLogos {
