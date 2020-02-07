@@ -205,6 +205,12 @@ a:link.link2 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .img {
+    width: 100%;
+  }
+}
+
 button {
   /*float: center;
   text-align: center;
@@ -214,7 +220,7 @@ button {
   margin: 5px;*/
   display: inline-block;
   border-radius: 8px;
-  background-color: #000000;
+  background-color: #0c0d0e;
   border: none;
   color: #8b8e91;
   text-align: center;
