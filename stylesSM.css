@@ -139,6 +139,7 @@ a:link.link2 {
   margin-right: auto;
   width: 28%;
   margin: 5px;
+  text-align: center;
 
   /*overflow: auto;*/
 }
@@ -214,7 +215,7 @@ a:link.link2 {
     width: 100%;
     margin: 0;
     padding-top: 0;
-    padding-bottom: 0; 
+    padding-bottom: 0;
   }
 }
 

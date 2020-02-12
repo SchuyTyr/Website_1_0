@@ -1,107 +1,103 @@
 <!DOCTYPE html>
 <!-- Schuyler Meyer Website attempt #1 -->
-
 <html lang="en-US">
-<head>
-  <title>Schuyler Meyer</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Schuyler Meyer">
-  <meta name="keywords" content="Photography,Digital Art,Game Design,Software,Code">
-  <meta name="author" content="Schuyler Meyer">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stylesPortfolio.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="shortcut icon" href="Logo2020.ico" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <head>
+        <title>Schuyler Meyer</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Schuyler Meyer">
+        <meta name="keywords" content="Photography,Digital Art,Game Design,Software,Code">
+        <meta name="author" content="Schuyler Meyer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesPortfolio.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Eagle+Lake|Faster+One|Quantico|Rye&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="Logo2020.ico"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- not sure if this is doing anything -->
+        <script type="text/javascript">
+          NProgress.configure({ showSpinner: true });
+          NProgress.start();
+          NProgress.done();
+          </script>
+        <style>
+          .affix {
+            top: 0;
+            width: 100%;
+            z-index: 9999; /*!important;*/
+          }
 
-  <!-- not sure if this is doing anything -->
-  <script type="text/javascript">
-    NProgress.configure({ showSpinner: true });
-    NProgress.start();
-    NProgress.done();
-  </script>
+          .affix + .container-fluid {
+            padding-top: 70px;
+          }
 
-  <style>
-  .affix {
-    top: 0;
-    width: 100%;
-    z-index: 9999; /*!important;*/
-  }
-
-  .affix + .container-fluid {
-    padding-top: 70px;
-  }
-
-  #section1 {padding-top:50px;height:500px;}
-  #section2 {padding-top:50px;height:500px;}
-  #section3 {padding-top:50px;height:500px;}
-  #section4 {padding-top:50px;height:500px;}
-  #section5 {padding-top:50px;height:500px;}
-  #section6 {padding-top:50px;height:500px;}
-  #section7 {padding-top:50px;height:500px;}
-  </style>
-
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<div class="container-fluid" style="text-align:center" height:250px;>
-  <h1 style="text-align:center;color:#8b8e91;font-size:64px;font-family:garamond;" title="Schuyler Meyer">
-    <div class="topLogos">
-      <a href="index.html" target="_self">
-      <!-- <a href="http://www.schuylermeyer.com"> -->
-        <img src="SMLogo2020.png" alt="Schuyler Meyer" width="6%">
-      </a>
-      <a href="index.html" target="_self">
-      <!-- <a href="http://www.schuylermeyer.com"> -->
-        <img src="smLogo2019.png" alt="Schuyler Meyer" width="18%">
-      </a>
-    </div>
-  </h1>
-
-  <h2>Digital Portfolio</h2>
-    <p style="text-align:center;width: 50%;margin-left: 25%;margin-right: 25%;">
+          #section1 {padding-top:50px;height:500px;}
+          #section2 {padding-top:50px;height:500px;}
+          #section3 {padding-top:50px;height:500px;}
+          #section4 {padding-top:50px;height:500px;}
+          #section5 {padding-top:50px;height:500px;}
+          #section6 {padding-top:50px;height:500px;}
+          #section7 {padding-top:50px;height:500px;}
+          </style>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div class="container-fluid" style="text-align:center" height:250px;>
+            <h1 style="text-align:center;color:#8b8e91;font-size:64px;font-family:garamond;" title="Schuyler Meyer"> <div class="topLogos">
+                    <a href="index.html" target="_self"> <!-- <a href="http://www.schuylermeyer.com"> --> <img src="SMLogo2020.png" alt="Schuyler Meyer" width="6%"> </a>
+                    <a href="index.html" target="_self"> <!-- <a href="http://www.schuylermeyer.com"> --> <img src="smLogo2019.png" alt="Schuyler Meyer" width="18%"> </a>
+                </div> </h1>
+            <h2>Digital Portfolio</h2>
+            <p style="text-align:center;width: 50%;margin-left: 25%;margin-right: 25%;">
       A collection of my digital works. This includes 3D Animation, Narrative Games, Virtual Reality (VR),
-      research projects, and films.
-    </p>
-</div>
-
-  <hr>
-
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Schuyler Meyer</a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#section1">The Virtual Archive</a></li>
-          <li><a href="#section2">Spatial Navigation</a></li>
-          <li><a href="#section3">Konbini</a></li>
-          <li><a href="#section4">Seeker of the Bygone</a></li>
-          <li><a href="#section5">VR Hockey</a></li>
-          <li><a href="#section6">Monuments VR</a></li>
-          <li><a href="https://www.schuylermeyerphoto.com">Photography</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- The "The Virtual Archive" Section -->
-<div id="section1" class="container-fluid" style="padding-top: 0">
-  <!-- <div class="container"> -->
-    <div class="row">
-      <div class="column-66">
-        <h1 class="xlarge-font"><b>The Virtual Archive</b></h1>
-        <p> <i>Spring 2019</i><br><br>
+      research projects, and films. </p>
+        </div>
+        <hr>
+        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Schuyler Meyer</a>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#section1">The Virtual Archive</a>
+                            </li>
+                            <li>
+                                <a href="#section2">Spatial Navigation</a>
+                            </li>
+                            <li>
+                                <a href="#section3">Konbini</a>
+                            </li>
+                            <li>
+                                <a href="#section4">Seeker of the Bygone</a>
+                            </li>
+                            <li>
+                                <a href="#section5">VR Hockey</a>
+                            </li>
+                            <li>
+                                <a href="#section6">Monuments VR</a>
+                            </li>
+                            <li>
+                                <a href="https://www.schuylermeyerphoto.com">Photography</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- The "The Virtual Archive" Section -->
+        <div id="section1" class="container-fluid" style="padding-top: 0">
+            <!-- <div class="container"> -->
+            <div class="row">
+                <div class="column-66">
+                    <h1 style="font-family: 'Eagle Lake', cursive;font-size:64px;"><b>The Virtual Archive</b></h1>
+                    <p> <i>Spring 2019</i><br><br>
           Press Release:<br>
           Through a fascination of architecture in game design and a devotion to the preservation of history,
           Schuyler Meyer of Millbrook, NY presents The Virtual Archive. A fully immersive and symbolic virtual
@@ -109,104 +105,95 @@
           on environmental design. The Virtual Archive, split into two sections, features a science fiction
           themed gallery, where the photos tell their own stories, and a fantasy themed library, featuring
           videos of completed past works. This vault of award-winning and international pieces was developed
-          in the Unity Engine and designed for the Oculus VR headset.<br><br>
-
+          in the Unity Engine and designed for the Oculus VR headset. See a video walkthrough at the end of
+          the slideshow.<br><br>
           Project:<br>
           - Developed in Unity<br>
           - Models made in Autodesk Maya<br>
           - Textures made in Adobe Photoshop (Sci-Fi floor texture was downloaded from a free asset store)<br>
           - Voice is "Amy IVONA" from Harpo Software<br>
-          - All photos and projects within the archive were created and recorded by Schuyler Meyer
-        </p>
-        <button class="button">Download Application</button>
-      </div>
+          - All photos and projects within the archive were created and recorded by Schuyler Meyer </p>
+                </div>
+                <div class="column-33">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="Digital_Portfolio/TheVirtualArchive/Capture.jpg" alt="Picture 1" style="width:100%">
+                            <!--<div class="text">Caption Text</div>-->
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="Digital_Portfolio/TheVirtualArchive/Capture3.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="Digital_Portfolio/TheVirtualArchive/Capture7.jpg" style="width:100%">
+                        </div>
 
-      <div class="column-33">
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <div class="vcontainer">
+                              <iframe src="https://www.youtube.com/embed/b8JPz9hyxjk" class="video" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
 
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-              <img src="Hex_7.jpg" alt="Picture 1" style="width:100%">
-              <div class="text">Caption Text</div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                    <script>
+                      var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          var dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";
+                          dots[slideIndex-1].className += " active";
+                        }
+                        </script>
+                    <!--<img src="/Digital_Portfolio/TheVirtualArchive/Capture3.jpg" width="335" height="471">-->
+                    <!-- <img src="TempPic.jpg" width="100%" height="auto"> -->
+                </div>
             </div>
+            <!-- </div> -->
+        </div>
 
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="hockey.jpg" style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
 
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="keyboard2.png" style="width:100%">
-              <!--<div class="vcontainer">
-                <iframe src="https://www.youtube.com/embed/b8JPz9hyxjk" class="video" frameborder="0" allowfullscreen></iframe>
-              </div>-->
-              <div class="text">Caption Three</div>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-          </div>
-          <br>
-
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-
-          <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";
-              dots[slideIndex-1].className += " active";
-            }
-          </script>
-
-          <!--<img src="/Digital_Portfolio/TheVirtualArchive/Capture3.jpg" width="335" height="471">-->
-          <!-- <img src="TempPic.jpg" width="100%" height="auto"> -->
-
-      </div>
-
-    </div>
-  <!-- </div> -->
-</div>
-
-<!-- The "Carrot Project" Section -->
-<div id="section2" class="container-fluid">
-  <!-- <div class="container" style="background-color:#f1f1f1"> -->
-    <div class="row">
-      <div class="column-33">
-        <img src="TempPic.jpg" width="100%" height="auto">
-      </div>
-      <div class="column-66">
-        <h1 class="xlarge-font"><b>Spatial Navigation and Foraging Research Project</b></h1>
-        <p> <i>Fall 2018 - Fall 2019</i><br><br>
+        <!-- The "Carrot Project" Section -->
+        <div id="section2" class="container-fluid">
+            <!-- <div class="container" style="background-color:#f1f1f1"> -->
+            <div class="row">
+                <div class="column-33">
+                    <img src="TempPic.jpg" width="100%" height="auto">
+                </div>
+                <div class="column-66">
+                    <h1 class="xlarge-font"><b>Spatial Navigation and Foraging Research Project</b></h1>
+                    <p> <i>Fall 2018 - Fall 2019</i><br><br>
           "Using virtual reality to study human foraging behavior."<br><br>
-
           Project:<br>
           - Lead developer on a research collaboration project with the Clarkson University Psychology Department<br>
           - Designed a virtual environment for test subjects to find carrots in a field<br>
@@ -214,135 +201,117 @@
           - Project created in Unity / C# <br>
           - Models created in Autodesk Maya <br>
           - Textures created in Adobe Photoshop and downloaded from free asset stores<br>
-          - Developed for the Oculus Rift platform <br>
-        </p>
-        <button class="button" style="background-color:red">Read More</button>
-      </div>
-    </div>
-  <!-- </div> -->
-</div>
+          - Developed for the Oculus Rift platform <br> </p>
+                    <button class="button" style="background-color:red">Read More</button>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
 
-<!-- The "Konbini" Section -->
-<div id="section3" class="container-fluid">
-<!--  <div class="container"> -->
-    <div class="row">
-      <div class="column-66">
-        <h1 class="xlarge-font"><b>Konbini</b></h1>
-        <p>
-          <i>Fall 2018</i><br><br>
+
+        <!-- The "Konbini" Section -->
+        <div id="section3" class="container-fluid">
+            <!--  <div class="container"> -->
+            <div class="row">
+                <div class="column-66">
+                    <h1 class="glow"><b>Konbini</b></h1>
+                    <p> <i>Fall 2018</i><br><br>
           A 3D animation with a cyberpunk sci-fi setting. The character heads to the Konbini.
           (Konbini is a Japanese convenience store). Originally, I was going for more of a noir
           style animation, but ended up decided to go the cyberpunk route instead.<br><br>
-
           Project:<br>
           - All models were created in Autodesk Maya and rendered using Arnold <br>
-          - The vehicles and fence were downloaded from a free asset store - though I added the lights afterwards. <br>
-        </p>
-        <button class="button">Download Application</button>
-      </div>
-      <div class="column-33">
-          <!--<img src="TempPic.jpg" width="100%" height="auto">-->
-          <div class="vcontainer">
-            <iframe src="https://www.youtube.com/embed/YvHBGxTTjos" class="video" frameborder="0" allowfullscreen></iframe>
-          </div>
-      </div>
-    </div>
-  <!-- </div> -->
-</div>
-
-<!-- The "Seeker of the Bygone" Section -->
-  <div id="section4" class="container-fluid">
-  <!-- <div class="container" style="background-color:#f1f1f1"> -->
-    <div class="row">
-      <div class="column-33">
-        <!--<img src="TempPic.jpg" width="100%" height="auto">-->
-        <div class="vcontainer">
-          <iframe src="https://www.youtube.com/embed/TyFg2lPMnGQ" class="video" frameborder="0" allowfullscreen></iframe>
+          - The vehicles and fence were downloaded from a free asset store - though I added the lights afterwards <br> </p>
+                </div>
+                <div class="column-33">
+                    <!--<img src="TempPic.jpg" width="100%" height="auto">-->
+                    <div class="vcontainer">
+                        <iframe src="https://www.youtube.com/embed/YvHBGxTTjos" class="video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
         </div>
-      </div>
-      <div class="column-66">
-        <h1 class="xlarge-font"><b>Seeker of the Bygone</b></h1>
-        <p>
-          <i>Spring 2018</i><br><br>
+        <!-- The "Seeker of the Bygone" Section -->
+        <div id="section4" class="container-fluid">
+            <!-- <div class="container" style="background-color:#f1f1f1"> -->
+            <div class="row">
+                <div class="column-33">
+                    <!--<img src="TempPic.jpg" width="100%" height="auto">-->
+                    <div class="vcontainer">
+                        <iframe src="https://www.youtube.com/embed/TyFg2lPMnGQ" class="video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="column-66">
+                    <h1 style="font-family: 'Quantico', sans-serif;font-size:64px;"><b>Seeker of the Bygone</b></h1>
+                    <p> <i>Spring 2018</i><br><br>
           A five minute visual novel style narrative game. A tale that follows #482 and friends
           through a tale of companionship, ​separation, and isolation in a world where togetherness
           is the most important aspect of life.<br><br>
-
           Project:<br>
           - Created in Unity / C# with Fungus <br>
           - All models were created in Autodesk Maya <br>
           - Some of the textures were created in Photoshop, the rest were downloaded from the Unity Asset Store <br>
-          - Other props were also downloaded from the Unity Asset Store <br>
-        </p>
-        <button class="button" style="background-color:red">Read More</button>
-      </div>
-    </div>
-  <!-- </div> -->
-</div>
-
-<!-- The "VR Hockey" Section -->
-<div id="section5" class="container-fluid">
-  <!-- <div class="container"> -->
-    <div class="row">
-      <div class="column-66">
-        <h1 class="xlarge-font"><b>VR Hockey</b></h1>
-        <p>
-          <i>Spring 2019</i><br><br>
+          - Other props were also downloaded from the Unity Asset Store <br> </p>
+                    <button class="button" style="background-color:red">Read More</button>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <!-- The "VR Hockey" Section -->
+        <div id="section5" class="container-fluid">
+            <!-- <div class="container"> -->
+            <div class="row">
+                <div class="column-66">
+                    <h1 style="font-family: 'Faster One', cursive;font-size: 64px;"><b>VR Hockey</b></h1>
+                    <p> <i>Spring 2019</i><br><br>
           Project:<br>
           - Hockey created for virtual reality (VR) in Unity / C# <br>
           - All the models were created in Autodesk Maya <br>
           - Some textures were created in Photoshop, the rest were downloaded from free asset stores.<br><br>
-
-          Live footage captured on a GoPro.
-        </p>
-        <button class="button">Download Application</button>
-      </div>
-      <div class="column-33">
-          <!--<img src="/w3images/img_app.jpg" width="335" height="471" >-->
-          <!--<img src="TempPic.jpg" width="100%" height="auto">-->
-          <div class="vcontainer">
-            <iframe src="https://www.youtube.com/embed/YdjYonT1VPY" class="video" frameborder="0" allowfullscreen></iframe>
-          </div>
-      </div>
-    </div>
-  <!-- </div> -->
-</div>
-
-<!-- The "Monuments (VR)" Section -->
-  <div id="section6" class="container-fluid">
-  <!-- <div class="container" style="background-color:#f1f1f1"> -->
-    <div class="row">
-      <div class="column-33">
-        <!--<img src="TempPic.jpg" width="100%" height="auto">-->
-        <div class="vcontainer">
-          <iframe src="https://player.vimeo.com/video/273553184" class="video" frameborder="0" allowfullscreen></iframe>
+          Live footage captured on a GoPro. </p>
+                    <button class="button">Download Application</button>
+                </div>
+                <div class="column-33">
+                    <!--<img src="/w3images/img_app.jpg" width="335" height="471" >-->
+                    <!--<img src="TempPic.jpg" width="100%" height="auto">-->
+                    <div class="vcontainer">
+                        <iframe src="https://www.youtube.com/embed/YdjYonT1VPY" class="video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
         </div>
-      </div>
-      <div class="column-66">
-        <h1 class="xlarge-font"><b>Monuments (VR)</b></h1>
-        <p>
-          <i>Spring 2018</i><br><br>
+        <!-- The "Monuments (VR)" Section -->
+        <div id="section6" class="container-fluid">
+            <!-- <div class="container" style="background-color:#f1f1f1"> -->
+            <div class="row">
+                <div class="column-33">
+                    <!--<img src="TempPic.jpg" width="100%" height="auto">-->
+                    <div class="vcontainer">
+                        <iframe src="https://player.vimeo.com/video/273553184" class="video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="column-66">
+                    <h1 style="font-family: 'Rye', cursive;font-size: 64px;"><b>Monuments (VR)</b></h1>
+                    <p> <i>Spring 2018</i><br><br>
           A virtual reality experience created through collaborated research on the current
           issues regarding Southern monuments (in the US). Displays perspectives from those
           that want to keep the monuments of Southern (Confederate) icons and those that want
           them to be taken down, as well as general historical facts about the monuments, the
           movement behind them, and the American Civil War. <br><br>
-
           Project:<br>
           - Created in Unity /C# for VR, with potential for AR implementation <br>
           - Most models were created in Autodesk Maya, some were downloaded from free asset stores <br>
-          - Background from Google Street View <br>
-        </p>
-        <button class="button" style="background-color:red">Read More</button>
-      </div>
-    </div>
-  <!-- </div> -->
-</div>
-
-<!-- __________________________________________________________________________ -->
-
-  <!-- The App Section -->
-<!--  <div class="container">
+          - Background from Google Street View <br> </p>
+                    <button class="button" style="background-color:red">Read More</button>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <!-- __________________________________________________________________________ -->
+        <!-- The App Section -->
+        <!--  <div class="container">
     <div class="row">
       <div class="column-66">
         <h1 class="xlarge-font"><b>The App</b></h1>
@@ -356,7 +325,5 @@
     </div>
   </div>
 -->
-
-</body>
-
+    </body>
 </html>
