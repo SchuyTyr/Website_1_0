@@ -100,20 +100,32 @@
                   <div class="column-33">
                     <div class="slideshow-container">
                         <div class="mySlides fade">
-                            <div class="numbertext">1 / 4</div>
+                            <div class="numbertext">1 / 7</div>
                             <img src="Digital_Portfolio/TheVirtualArchive/Capture.jpg" alt="Picture 1" style="width:100%">
                             <!--<div class="text">Caption Text</div>-->
                         </div>
                         <div class="mySlides fade">
-                            <div class="numbertext">2 / 4</div>
+                            <div class="numbertext">2 / 7</div>
                             <img src="Digital_Portfolio/TheVirtualArchive/Capture3.jpg" style="width:100%">
                         </div>
                         <div class="mySlides fade">
-                            <div class="numbertext">3 / 4</div>
+                            <div class="numbertext">3 / 7</div>
                             <img src="Digital_Portfolio/TheVirtualArchive/Capture7.jpg" style="width:100%">
                         </div>
                         <div class="mySlides fade">
-                            <div class="numbertext">4 / 4</div>
+                            <div class="numbertext">4 / 7</div>
+                            <img src="Digital_Portfolio/TheVirtualArchive/Capture11.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 7</div>
+                            <img src="Digital_Portfolio/TheVirtualArchive/Final6s.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 7</div>
+                            <img src="Digital_Portfolio/TheVirtualArchive/Final7s.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 7</div>
                             <div class="vcontainer">
                                 <iframe src="https://www.youtube.com/embed/b8JPz9hyxjk" class="video" frameborder="0" allowfullscreen></iframe>
                             </div>
@@ -127,6 +139,9 @@
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
                         <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
                     </div>
                     <script>
                       var slideIndex = 1;
@@ -222,18 +237,79 @@
                     <p> <i>Spring 2018</i><br><br>
                       A five minute visual novel style narrative game. A tale that follows #482 and friends
                       through a tale of companionship, ​separation, and isolation in a world where togetherness
-                      is the most important aspect of life.<br><br>
+                      is the most important aspect of life. See a video walkthrough at the end of the slideshow.<br><br>
                       Project:<br>
-                      - Created in Unity / C# with Fungus <br>
+                      - Created as a final project for Clarkson University's DA394 - Video Game Narrative class <br>
+                      - Developed in Unity / C# with Fungus <br>
                       - All models were created in Autodesk Maya <br>
                       - Some of the textures were created in Photoshop, the rest were downloaded from the Unity Asset Store <br>
-                      - Other props were also downloaded from the Unity Asset Store <br> </p>
+                      - Other props were also downloaded from the Unity Asset Store <br>
+                      - Can run on PC (Windows) or Android - has not been tested on MacOS or iOS <br></p>
                 </div>
                 <div class="column-33">
                     <!--<img src="TempPic.jpg" width="100%" height="auto">-->
-                    <div class="vcontainer">
-                        <iframe src="https://www.youtube.com/embed/TyFg2lPMnGQ" class="video" frameborder="0" allowfullscreen></iframe>
+                  <div class="slideshow-containera">
+                    <div class="mySlidesa fade">
+                        <div class="numbertexta">1 / 5</div>
+                        <img src="Digital_Portfolio/SOB/sob1s.jpg" alt="Picture 1" style="width:100%">
                     </div>
+                    <div class="mySlidesa fade">
+                        <div class="numbertexta">2 / 5</div>
+                        <img src="Digital_Portfolio/SOB/sob2s.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlidesa fade">
+                        <div class="numbertexta">3 / 5</div>
+                        <img src="Digital_Portfolio/SOB/sob3s.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlidesa fade">
+                        <div class="numbertexta">4 / 5</div>
+                        <img src="Digital_Portfolio/SOB/sob4s.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlidesa fade">
+                        <div class="numbertexta">5 / 5</div>
+                          <div class="vcontainer">
+                            <iframe src="https://www.youtube.com/embed/TyFg2lPMnGQ" class="video" frameborder="0" allowfullscreen></iframe>
+                          </div>
+                    </div>
+                    <a class="prev" onclick="plusSlidesa(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlidesa(1)">&#10095;</a>
+                  </div>
+                  <br>
+                  <div style="text-align:center">
+                      <span class="dota" onclick="currentSlidea(1)"></span>
+                      <span class="dota" onclick="currentSlidea(2)"></span>
+                      <span class="dota" onclick="currentSlidea(3)"></span>
+                      <span class="dota" onclick="currentSlidea(4)"></span>
+                      <span class="dota" onclick="currentSlidea(5)"></span>
+                  </div>
+                  <script>
+                    var slideIndexa = 1;
+                      showSlidesa(slideIndexa);
+
+                      function plusSlidesa(m) {
+                        showSlidesa(slideIndexa += m);
+                      }
+
+                      function currentSlidea(m) {
+                        showSlidesa(slideIndexa = m);
+                      }
+
+                      function showSlidesa(m) {
+                        var j;
+                        var slides = document.getElementsByClassName("mySlidesa");
+                        var dots = document.getElementsByClassName("dota");
+                        if (m > slides.length) {slideIndexa = 1}
+                        if (m < 1) {slideIndexa = slides.length}
+                        for (j = 0; j < slides.length; j++) {
+                          slides[j].style.display = "none";
+                        }
+                        for (j = 0; j < dots.length; j++) {
+                          dots[j].className = dots[j].className.replace(" active", "");
+                        }
+                        slides[slideIndexa-1].style.display = "block";
+                        dots[slideIndexa-1].className += " active";
+                      }
+                      </script>
                 </div>
             </div>
             <!-- </div> -->
@@ -247,7 +323,9 @@
                     <h1 class="xlarge-font" style="font-family: 'Faster One', cursive;"><b>VR Hockey</b></h1>
                     <p> <i>Spring 2019</i><br><br>
                       Project:<br>
-                      - Hockey created for virtual reality (VR) in Unity / C# <br>
+                      - Hockey in virtual reality (VR) <br>
+                      - Created as a final project for Clarkson University's CS461 - Mixed Reality class <br>
+                      - Developed in Unity / C# <br>
                       - All the models were created in Autodesk Maya <br>
                       - Some textures were created in Photoshop, the rest were downloaded from free asset stores<br><br>
                       Live footage captured on a GoPro </p>
@@ -276,7 +354,8 @@
                       them to be taken down, as well as general historical facts about the monuments, the
                       movement behind them, and the American Civil War. <br><br>
                       Project:<br>
-                      - Created in Unity /C# for VR, with potential for AR implementation <br>
+                      - Created as a final project for Clarkson University's DA391 - VR & 360 Mixed Reality <br>
+                      - Developed in Unity / C# for VR, with potential for AR implementation <br>
                       - Most models were created in Autodesk Maya, some were downloaded from free asset stores <br>
                       - Background from Google Street View <br> </p>
                 </div>
