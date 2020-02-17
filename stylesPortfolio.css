@@ -56,6 +56,11 @@ h1 {
     float: left;
     white-space: no-wrap;
     font-size: 0;
+    width: 100%;
+}
+
+.imgLogo {
+  width: 35%;
 }
 
 .container {
@@ -351,6 +356,11 @@ hr {
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    .imgLogo {
+      width: 75%;
+    }
+
     .xlarge-font {
         font-size: 32px;
     }
@@ -370,4 +380,9 @@ hr {
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    .imgLogo {
+      width: 100%;
+    }
+
 }

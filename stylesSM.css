@@ -56,6 +56,24 @@ p {
   font-size: 28px;
 }
 
+.aboutC {
+  text-align: justify;
+  color:#a2a6a9;
+  font-size:20px;
+  line-height: 1.4;
+  /*font-family:garamond;
+  font-family:monospace;*/
+  /*font-family: 'Special Elite', cursive;*/
+  /*font-family: 'Orbitron', sans-serif;*/
+  font-family: 'Merienda', cursive;
+  /*font-family: 'Rock Salt', cursive;*/
+  /*font-family: 'Marck Script', cursive;*/
+  /*font-family: 'Reenie Beanie', cursive;*/
+  /*width: 50%;*/
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 img {
   max-width: 100%;
   height:auto;
@@ -208,6 +226,15 @@ a:link.link2 {
     margin-right: auto;
     text-align: left;
   }
+
+  .aboutC {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 17px;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -216,6 +243,10 @@ a:link.link2 {
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .aboutC {
+    font-size: 14px;
   }
 }
 
