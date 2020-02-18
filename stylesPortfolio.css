@@ -145,6 +145,11 @@ hr {
     width: 90%;
 }
 
+hr.rounded {
+  border-top: 4px solid #bbb;
+  border-radius: 5px;
+}
+
 .glow {
     font-size: 64px;
     font-family: 'Audiowide', cursive;/* Geostar Fill; */
@@ -364,6 +369,11 @@ hr {
 
     .xlarge-font {
         font-size: 32px;
+    }
+
+    hr.rounded {
+      border-top: 2px solid #bbb;
+      border-radius: 5px;
     }
 }
 
