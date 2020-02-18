@@ -215,7 +215,10 @@ a:link.link2 {
   .img2 {
     display: block;
     width: 100%;
-    margin: 0 auto;
+    height: auto;
+    /*margin: 0 auto;*/
+    margin-left: auto;
+    margin-right: auto;
   }
   .text {
     padding: 5px;
