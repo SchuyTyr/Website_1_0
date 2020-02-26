@@ -83,6 +83,11 @@ p {
   margin-right: 10%;
 }
 
+.resumeStatsList {
+  font-size:17px;
+  line-height: 0.75;
+}
+
 img {
   max-width: 100%;
   height:auto;
@@ -243,8 +248,12 @@ a:link.link2 {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: justify;
     font-size: 17px;
+  }
+
+  .resumeStatsList {
+    line-height: 1.25;
   }
 
 }
@@ -259,6 +268,17 @@ a:link.link2 {
 
   .aboutC {
     font-size: 14px;
+    text-align: justify;
+  }
+
+  .resumeStats {
+    line-height: 1.25;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .resumeStatsList {
+    line-height: 1.25;
   }
 
 }
