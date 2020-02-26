@@ -32,11 +32,24 @@ h1 {
   top: 0;
   width: 100%;
   z-index: 9999; /*!important;*/
+  /*position: -webkit-sticky;
+  position: sticky;*/
 }
 
 .affix + .container-fluid {
   padding-top: 70px;
 }
+
+/* alternate version
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}
+*/
 
 /*.navbar-toggle {
     background-color: rgba(189, 192, 194, 0.5);

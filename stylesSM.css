@@ -74,6 +74,15 @@ p {
   margin-right: 10%;
 }
 
+.resumeStats {
+  font-family: 'Times New Roman',
+  text-align: justify;
+  color:#a2a6a9;
+  font-size:20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 img {
   max-width: 100%;
   height:auto;
