@@ -56,13 +56,13 @@ div.sticky {
 }*/
 
 /*#section1 {padding-top:50px;height:500px;}*/
-#section1 {height:500px;}
-#section2 {height:500px;}
-#section3 {height:500px;}
-#section4 {height:500px;}
-#section5 {height:500px;}
-#section6 {height:500px;}
-#section7 {height:500px;}
+#section1 {padding-top:50px;height:500px;}
+#section2 {padding-top:50px;height:500px;}
+#section3 {padding-top:50px;height:500px;}
+#section4 {padding-top:50px;height:500px;}
+#section5 {padding-top:50px;height:500px;}
+#section6 {padding-top:50px;height:500px;}
+#section7 {padding-top:50px;height:500px;}
 
 .topLogos {
     /* display: inline-block; */
@@ -70,6 +70,13 @@ div.sticky {
     white-space: no-wrap;
     font-size: 0;
     width: 100%;
+}
+
+.topDesc {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .imgLogo {
