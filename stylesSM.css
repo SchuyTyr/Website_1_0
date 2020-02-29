@@ -144,7 +144,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 600px;
-  height: 360px;
+  height: auto; /*360px;*/
 
 }
 
@@ -153,12 +153,98 @@ img {
   text-align: center;
 }*/
 
+/*.verticalLine {
+  border-left: 1px solid #a2a6a9;
+  padding: 10px;
+}*/
+
+a.link3 {
+  color: #889cb3;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a.link3:link {
+  color: #889cb3;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a.link3:visited {
+  color: #889cb3;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a.link3:hover {
+  color: #0099ff;
+  background-color: transparent;
+  text-decoration: underline;
+  text-align: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a.link3:active {
+  color: #889cb3;
+  background-color: transparent;
+  text-decoration: none;
+  text-align: inherit;
+  padding: 0;
+  margin: 0;
+}
+
 a:link.link2 {
   color: #262a30;
   background-color: transparent;
   text-decoration: none;
   /*display: inline-block;*/
   display: flex;
+  text-align: center;
+}
+
+a:link {
+  color: #262a30;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
+  text-align: center;
+}
+
+a:visited {
+  color: #5e646b;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
+  text-align: center;
+}
+
+a:hover {
+  color: #7b8aa0;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
+  text-align: center;
+}
+
+a:active {
+  color: #00409e;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
   text-align: center;
 }
 
@@ -353,40 +439,5 @@ hr {
   width: 28%; /* The width is 20%, by default */
 }
 
-a:link {
-  color: #262a30;
-  background-color: transparent;
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px 25px;
-  text-align: center;
-}
-
-a:visited {
-  color: #5e646b;
-  background-color: transparent;
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px 25px;
-  text-align: center;
-}
-
-a:hover {
-  color: #7b8aa0;
-  background-color: transparent;
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px 25px;
-  text-align: center;
-}
-
-a:active {
-  color: #00409e;
-  background-color: transparent;
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px 25px;
-  text-align: center;
-}
 
 /* --------------------------------------------------------------------- */
