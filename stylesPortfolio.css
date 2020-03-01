@@ -56,7 +56,7 @@ div.sticky {
 }*/
 
 /*#section1 {padding-top:50px;height:500px;}*/
-#section1 {padding-top:50px;height:500px;}
+#section1 {height:500px;}
 #section2 {padding-top:50px;height:500px;}
 #section3 {padding-top:50px;height:500px;}
 #section4 {padding-top:50px;height:500px;}
@@ -83,10 +83,10 @@ div.sticky {
   width: 35%;
 }
 
-.container {
+/*.container {
     padding: 64px;
     display: flex;
-}
+}*/
 
 .row:after {
     content: "";
@@ -351,6 +351,13 @@ hr.rounded {
     to {
         opacity: 1;
     }
+}
+
+#p01 {
+  /*color: blue;*/
+  text-align:center;
+  color:#8b8e91;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1200px) {
