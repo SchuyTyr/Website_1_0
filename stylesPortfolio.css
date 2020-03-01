@@ -423,4 +423,9 @@ hr.rounded {
       width: 100%;
     }
 
+    .topDesc {
+      text-align: center;
+      width: 90%;
+    }
+
 }
