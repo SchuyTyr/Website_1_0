@@ -8,9 +8,9 @@ All work and portfolio work designed, developed, or created by Schuyler Meyer
 Email: schuybreach@gmail.com
 
 References used: 
-> https://www.w3schools.com/
-> https://stackoverflow.com/
-> The occasional other site that came up through Google search
+- https://www.w3schools.com/
+- https://stackoverflow.com/
+- The occasional other site that came up through Google search
 
 Hosted by:
 
