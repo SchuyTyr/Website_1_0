@@ -5,6 +5,7 @@ Updated March 2020
 This is my first attempt at building a website from scratch. (HTML, CSS, etc.)
 
 All work and portfolio work designed, developed, or created by Schuyler Meyer 
+
 Email: schuybreach@gmail.com
 
 References used: 
