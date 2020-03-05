@@ -373,16 +373,16 @@ hr.rounded {
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: #0a112ae3;
-	color: #333;
+	background-color: #0038ffe3;
+	color: #d8d8d8;
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 4px;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #myBtn:hover {
-	background-color: #0b2277;
-	color: #bdc0c2;
+	background-color: #3e69fff5;
+	color: #ffffff;
 }
 #myBtn span {
 	cursor: pointer;
