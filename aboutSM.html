@@ -10,7 +10,29 @@
 </head>
 <body>
 	<h1 style="text-align:center;color:#8b8e91;font-size:12px;font-family:verdana;" title="Schuyler Meyer"><a href="http://www.schuylermeyer.com"><img alt="Schuyler Meyer" class="imgLogo" src="smLogo2019.png"></a></h1>
-	<div class="aboutC">
+  <button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
+	<script>
+	   //Get the button
+	   var mybutton = document.getElementById("myBtn");
+
+	   // When the user scrolls down 225px from the top of the document, show the button
+	   window.onscroll = function() {scrollFunction()};
+
+	   function scrollFunction() {
+	     if (document.body.scrollTop > 225 || document.documentElement.scrollTop > 225) {
+	       mybutton.style.display = "block";
+	     } else {
+	       mybutton.style.display = "none";
+	     }
+	   }
+
+	   // When the user clicks on the button, scroll to the top of the document
+	   function topFunction() {
+	     document.body.scrollTop = 0;
+	     document.documentElement.scrollTop = 0;
+	   }
+	</script>
+  <div class="aboutC">
 		<div style="text-align:center;"><img alt="Schuyler Meyer" class="imgLogo" src="self.jpg"></div><br>
 		<div style="text-align:center;">
 			<button class="button" onclick="window.location.href='index.html';" style="vertical-align:middle"><span>Home</span></button>
