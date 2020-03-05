@@ -314,6 +314,9 @@ a:active {
 	.resumeStatsList {
 		line-height: 1.25;
 	}
+  a.link3 {
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 700px) {
 	.imgLogo {
@@ -326,6 +329,9 @@ a:active {
 		font-size: 14px;
 		text-align: justify;
 	}
+  a.link3 {
+    font-size: 14px;
+  }
 	.resumeStats {
 		line-height: 1.25;
 		margin-left: 2%;
