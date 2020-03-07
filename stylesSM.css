@@ -54,34 +54,72 @@ p {
 	text-align: center;
 	font-size: 28px;
 }
-.aboutC {
-	text-align: justify;
-	color: #a2a6a9;
-	font-size: 20px;
-	line-height: 1.4;
-	/*font-family:garamond;
-  font-family:monospace;*/
-	/*font-family: 'Special Elite', cursive;*/
-	/*font-family: 'Orbitron', sans-serif;*/
-	font-family: 'Merienda', cursive;
-	/*font-family: 'Rock Salt', cursive;*/
-	/*font-family: 'Marck Script', cursive;*/
-	/*font-family: 'Reenie Beanie', cursive;*/
-	/*width: 50%;*/
-	margin-left: 10%;
-	margin-right: 10%;
+
+.btn-group button {
+	background-color: #00000000;
+	color: #00000000; /* White text */
+	/*padding: 10px 24px;*/ /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	border: none;
 }
-.resumeStats {
-	font-family: 'Times New Roman', text-align: justify;
-	color: #a2a6a9;
-	font-size: 20px;
-	margin-left: 10%;
-	margin-right: 10%;
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
 }
-.resumeStatsList {
-	font-size: 17px;
-	line-height: 0.75;
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
 }
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #00000000;
+}
+
+.imgSocial {
+	width: 16.66667%;
+	height: 100%;
+}
+
+.socialBar {
+	position: relative;
+  /*height: 25px;*/
+	background-color: #00000000;
+	color: #00000000;
+	display: block;
+}
+
+ul.socialProps {
+	list-style-type: none;
+	background-color: #00000000;
+	color: #00000000;
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	display: table;
+}
+ul.socialProps li {
+  /*display: inline;
+  margin-left: 5px;*/
+	display:inline-block;
+	/*display: table-cell;*/
+	text-align: center;
+	margin: auto;
+	width: 16.66667%;
+	height: auto;
+	float: left;
+}
+
+ul.socialProps li a {
+	display: block;
+	width: 85px;
+	height: 85px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -108,25 +146,7 @@ img {
 .imgLogo {
 	width: 50%;
 }
-/* Style the video: 100% width and height to cover the entire window */
 
-#vid {
-	/*background: no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
-	position: fixed;
-	object-fit: cover;
-	right: 0;
-	bottom: 0;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	/*width: auto;*/
-	min-width: 100%;
-	/*min-height: 100%;*/
-	height: auto;
-	z-index: -100;
-}
 .img2 {
 	max-width: 100%;
 	/*border: 1px solid #ddd;*/
@@ -151,47 +171,7 @@ img {
   padding: 10px;
 }*/
 
-a.link3 {
-	color: #889cb3;
-	background-color: transparent;
-	text-decoration: none;
-	text-align: inherit;
-	padding: 0;
-	margin: 0;
-}
-a.link3:link {
-	color: #889cb3;
-	background-color: transparent;
-	text-decoration: none;
-	text-align: inherit;
-	padding: 0;
-	margin: 0;
-}
-a.link3:visited {
-	color: #889cb3;
-	background-color: transparent;
-	text-decoration: none;
-	text-align: inherit;
-	padding: 0;
-	margin: 0;
-}
-a.link3:hover {
-	color: #0099ff;
-	background-color: transparent;
-	text-decoration: underline;
-	text-align: inherit;
-	padding: 0;
-	margin: 0;
-}
-a.link3:active {
-	color: #889cb3;
-	background-color: transparent;
-	text-decoration: none;
-	text-align: inherit;
-	padding: 0;
-	margin: 0;
-}
-a:link.link2 {
+a.link2 {
 	color: #262a30;
 	background-color: transparent;
 	text-decoration: none;
@@ -199,38 +179,30 @@ a:link.link2 {
 	display: flex;
 	text-align: center;
 }
-a:link {
-	color: #262a30;
-	background-color: transparent;
-	text-decoration: none;
+a.link2:link {
 	display: inline-block;
 	padding: 15px 25px;
-	text-align: center;
 }
-a:visited {
+a.link2:visited {
 	color: #5e646b;
-	background-color: transparent;
-	text-decoration: none;
-	display: inline-block;
-	padding: 15px 25px;
-	text-align: center;
 }
-a:hover {
+a.link2:hover {
 	color: #7b8aa0;
-	background-color: transparent;
-	text-decoration: none;
-	display: inline-block;
-	padding: 15px 25px;
-	text-align: center;
 }
-a:active {
+a.link2:active {
 	color: #00409e;
+}
+
+a.link4 {
+	color: #262a30;
+	width: 100%;
+	height: auto;
 	background-color: transparent;
 	text-decoration: none;
-	display: inline-block;
-	padding: 15px 25px;
+	display: inline;
 	text-align: center;
 }
+
 .container {
 	/*align-items: center;*/
 	position: relative;
@@ -304,22 +276,6 @@ a:active {
 		margin-right: auto;
 		text-align: left;
 	}
-	.aboutC {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: justify;
-		font-size: 17px;
-	}
-	.resumeStatsList {
-		line-height: 1.25;
-	}
-  a.link3 {
-    font-size: 17px;
-  }
-  /*#myBtn {
-    padding: 5%;
-  }*/
 }
 @media screen and (max-width: 700px) {
 	.imgLogo {
@@ -328,26 +284,31 @@ a:active {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-	.aboutC {
-		font-size: 14px;
-		text-align: justify;
+
+	/*li:nth-child(3):after {
+		content:"\A";
+		white-space:pre;
+	}*/
+
+	li:nth-child(4) {
+		clear: left;
+		padding-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
 	}
-  a.link3 {
-    font-size: 14px;
-  }
-	.resumeStats {
-		line-height: 1.25;
-		margin-left: 2%;
-		margin-right: 2%;
+	li:nth-child(5) {
+		padding-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.resumeStatsList {
-		line-height: 1.25;
+	li:nth-child(5) {
+		padding-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
 	}
-  #myBtn {
-    padding: 7.5%;
-  }
+
 }
-button {
+.button {
 	/*float: center;
   text-align: center;
   background-color: rgba(0, 0, 255, 0.3);*/
