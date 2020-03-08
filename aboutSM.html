@@ -24,6 +24,10 @@
 	     } else {
 	       mybutton.style.display = "none";
 	     }
+			 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+				 mybutton.style.fontSize = "75px";
+				 mybutton.style.padding = "5%";
+			 }
 	   }
 
 	   // When the user clicks on the button, scroll to the top of the document
@@ -35,7 +39,16 @@
   <div class="aboutC">
 		<div style="text-align:center;"><img alt="Schuyler Meyer" class="imgLogo" src="self.jpg"></div><br>
 		<div style="text-align:center;">
-			<button class="button" onclick="window.location.href='index.html';" style="vertical-align:middle"><span>Home</span></button>
+			<button class="buttonHome" onclick="window.location.href='index.html';" style="vertical-align:middle"><span>Home</span></button>
+			<script>
+				var buttonHome = document.getElementsByClassName('buttonHome');
+					if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+		 				 buttonHome.style.fontSize = "45px";
+		 				 buttonHome.style.padding = "20px";
+		 				 buttonHome.style.width = "200px";
+		 				 buttonHome.style.height = "75px";
+					}
+			</script>
 		</div><br>
 		<br>
 		<div style="text-align: center;">
@@ -371,7 +384,7 @@
 			<hr style="width: 100%;">
 		</div>
 	</div>
-	<h1><button class="button" onclick="window.location.href='index.html';" style="vertical-align:middle"><span>Home</span></button></h1>
+	<h1><button class="buttonHome" onclick="window.location.href='index.html';" style="vertical-align:middle"><span>Home</span></button></h1>
 	<h4 style="text-align:center;color:#8b8e91;font-size:64px;font-family:verdana;margin: 0;" title="Schuyler Meyer"><img alt="Schuyler Meyer" src="SMLogo2020.png" width="250"></h4><br>
 	<p id="p01"><i>&#169; Schuyler Meyer <b>|</b> 2020</i></p>
 </body>

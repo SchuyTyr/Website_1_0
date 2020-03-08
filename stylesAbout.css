@@ -123,54 +123,7 @@ a.link3:active {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 1200px) {
-	.text {
-		padding: 5px;
-	}
-	.aboutC {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: justify;
-		font-size: 17px;
-	}
-	.resumeStatsList {
-		line-height: 1.25;
-	}
-  a.link3 {
-    font-size: 17px;
-  }
-  /*#myBtn {
-    padding: 5%;
-  }*/
-}
-@media screen and (max-width: 700px) {
-	.imgLogo {
-		width: 100%;
-		margin: 0;
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-	.aboutC {
-		font-size: 14px;
-		text-align: justify;
-	}
-  a.link3 {
-    font-size: 14px;
-  }
-	.resumeStats {
-		line-height: 1.25;
-		margin-left: 2%;
-		margin-right: 2%;
-	}
-	.resumeStatsList {
-		line-height: 1.25;
-	}
-  #myBtn {
-    padding: 7.5%;
-  }
-}
-button {
+.buttonHome {
 	/*float: center;
   text-align: center;
   background-color: rgba(0, 0, 255, 0.3);*/
@@ -179,7 +132,7 @@ button {
   margin: 5px;*/
 	display: inline-block;
 	border-radius: 8px;
-	background-color: #0c0d0e;
+	background-color: #202e3c;
 	border: none;
 	color: #8b8e91;
 	text-align: center;
@@ -193,13 +146,13 @@ button {
 	margin: 1px;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.button span {
+.buttonHome span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
 }
-.button span:after {
+.buttonHome span:after {
 	content: "»";
 	/* \00bb */
 	font-size: 32px;
@@ -209,11 +162,11 @@ button {
 	right: -20px;
 	transition: 0.5s;
 }
-.button:hover span {
+.buttonHome:hover span {
 	padding-right: 24px;
 	padding-left: 1px;
 }
-.button:hover span:after {
+.buttonHome:hover span:after {
 	opacity: 1;
 	right: 0;
 }
@@ -235,10 +188,9 @@ button {
 	background-color: #0038ffe3;
 	color: #d8d8d8;
 	cursor: pointer;
-	/*padding: 15px;*/
+	padding: 15px;
 	border-radius: 4px;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: auto;
 }
 #myBtn:hover {
 	background-color: #3e69fff5;
@@ -272,4 +224,67 @@ hr {
 	width: 90%;
 	/*margin-left: auto;
   margin-right: 100px;*/
+}
+@media screen and (max-width: 1200px) {
+	.text {
+		padding: 5px;
+	}
+	.imgLogo {
+		width: 100%;
+	}
+	.aboutC {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		font-size: 17px;
+	}
+	.resumeStatsList {
+		line-height: 1.25;
+	}
+  a.link3 {
+    font-size: 17px;
+  }
+	/*.buttonHome{
+		width: 200px;
+    height: 75px;
+		font-size: 45px;
+	}*/
+	#myBtn {
+    /*padding: 5%;*/
+		font-size: 18px;
+  }
+}
+/*@media screen and (max-width: 900px) {
+	#myBtn {
+    padding: 5%;
+		font-size: 75px;
+  }
+}*/
+@media screen and (max-width: 700px) {
+	.imgLogo {
+		width: 100%;
+		/*margin: 0;
+		padding-top: 0;
+		padding-bottom: 0;*/
+	}
+	.aboutC {
+		font-size: 14px;
+		text-align: justify;
+	}
+  a.link3 {
+    font-size: 14px;
+  }
+	.resumeStats {
+		line-height: 1.25;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.resumeStatsList {
+		line-height: 1.25;
+	}
+  #myBtn {
+    /*padding: 7.5%;*/
+		font-size: 18px;
+  }
 }
