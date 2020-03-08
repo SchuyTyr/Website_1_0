@@ -318,6 +318,9 @@ a.link4 {
 	.socialProps img {
 		width: 40%;
 	}
+	.imgLogo {
+		width: 30%;
+	}
 }
 .button {
 	/*float: center;
