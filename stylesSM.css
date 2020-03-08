@@ -248,6 +248,9 @@ a.link4 {
 	transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 1200px) {
+	.socialProps img {
+		width: 40%;
+	}
 	.container {
 		width: 94%;
 		margin: 0 auto;
