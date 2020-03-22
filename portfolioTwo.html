@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!-- Schuyler Meyer Website attempt #1 -->
+<html lang="en-US">
+<head>
+	<title>Schuyler Meyer</title>
+	<meta charset="UTF-8">
+	<meta content="Schuyler Meyer" name="description">
+	<meta content="Photography,Digital Art,Game Design,Software,Code" name="keywords">
+	<meta content="Schuyler Meyer" name="author">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="stylesPortfolio.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Orbitron|Faster+One|Rye|Akronim|Merienda&display=swap" rel="stylesheet">
+	<link href="Logo2020.ico" rel="shortcut icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+	</script><!-- not sure if this is doing anything -->
+
+	<script>
+	            NProgress.configure({ showSpinner: true });
+	            NProgress.start();
+	            NProgress.done();
+	</script>
+</head>
+<body data-offset="50" data-spy="scroll" data-target=".navbar">
+	<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
+	<script>
+	   //Get the button
+	   var mybutton = document.getElementById("myBtn");
+
+	   // When the user scrolls down 225px from the top of the document, show the button
+	   window.onscroll = function() {scrollFunction()};
+
+	   function scrollFunction() {
+	     if (document.body.scrollTop > 225 || document.documentElement.scrollTop > 225) {
+	       mybutton.style.display = "block";
+	     } else {
+	       mybutton.style.display = "none";
+	     }
+	   }
+
+	   // When the user clicks on the button, scroll to the top of the document
+	   function topFunction() {
+	     document.body.scrollTop = 0;
+	     document.documentElement.scrollTop = 0;
+	   }
+	</script>
+	<div class="container-fluid" style="text-align:center;">
+		<!--<h1 style="text-decoration: none;" title="Schuyler Meyer">-->
+		<div class="topLogos">
+			<a href="index.html" target="_self"><img alt="Schuyler Meyer" class="imgLogo" src="Logo2020Header_dark.png"></a>
+		</div><!--</h1>-->
+		<div style="font-size:24px;">
+			Digital Portfolio
+		</div>
+		<p class="topDesc"><i>A collection of my digital works. This includes 3D Animation, Narrative Games, Virtual Reality (VR), research projects, and films.</i></p>
+	</div><!--<hr>-->
+	<nav class="navbar navbar-inverse" data-offset-top="225" data-spy="affix" style="background-color: #222222d9;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html">
+				<div style="font-family: 'Akronim', cursive;color: #6877fd;">
+					Home
+				</div></a>
+			</div>
+			<div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="portfolio.html">Page 1</a>
+						</li>
+						<li>
+							<a href="#section1">Swarm</a>
+						</li>
+						<li>
+							<a href="#section2">VR Hockey</a>
+						</li>
+						<li>
+							<a href="#section3">CGK Promo</a>
+						</li>
+						<li>
+							<a href="#section4">Monuments VR</a>
+						</li>
+						<li>
+							<a href="#section5">More</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- The "Swarm" Section -->
+	<div class="container-fluid" id="section1">
+		<div class="row" style="width:100%; margin-left: 0;">
+			<div class="column-66">
+				<h1 class="xlarge-font" style="font-family: 'Orbitron', sans-serif;"><b>Swarm Simulation</b></h1>
+				<p><i>Fall 2019</i><br>
+				<br>
+				Developed in Unity / C#<br>
+				Made for a final project in MA277 Elementary Numerical Methods at Clarkson University<br><br>
+
+				<u>Details</u>:<br>
+				- Each moving sphere represents a shopper / person shopping on Black Friday<br>
+				- Each person has three emotional states: Normal / content [Blue], angry [Red], happy [Light Blue / Cyan]<br>
+				- The stationary white spheres represent items to be purchased<br>
+				- Each person starts in the "normal" emotional state at the entrance / checkout<br>
+				- When they bump into another person, they become "angry"<br>
+				- When they pick up an item they want, they become "happy"<br>
+				- Each person has a shopping list of five items<br>
+				- Each item has a limited quantity (25)<br>
+				- Each time a person picks up (touches) an item, they move to the next one on their list and that item decreases its quantity by one<br>
+				- If an item's quantity reaches zero, it disappears and can no longer be picked up<br>
+				- If a person finds an item is no longer available, they move on to another item<br>
+				- When a person grabs all five items on their list, they move to checkout<br><br>
+
+				<u>Representation</u>:<br>
+				The original outburst of "shoppers / persons"<br>
+				- This represents "shoppers / persons" at the door waiting for the store to open and then a sudden flood when the store does open<br>
+				Sometimes the "person" stalls at an item<br>
+				- This represents someone being indecisive on whether or not to buy the item<br>
+				- If there are two or more "persons" stalled at an item, they may be in argument about who can take the item<br><br>
+				</p>
+			</div><!--<div class="col-lg-5">-->
+			<div class="column-33">
+				<div class="vcontainer">
+					<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/tDnwA2Lajkw"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr class="rounded">
+
+	<!-- The "VR Hockey" Section -->
+	<div class="container-fluid" id="section2">
+		<div class="row" style="width:100%; margin-left: 0;">
+			<div class="column-66">
+				<h1 class="xlarge-font" style="font-family: 'Faster One', cursive;"><b>VR Hockey</b></h1>
+				<p><i>Spring 2019</i><br>
+				<br>
+				Project:<br>
+				- Hockey in virtual reality (VR)<br>
+				- Created as a final project for Clarkson University's CS461 - Mixed Reality class<br>
+				- Developed in Unity / C#<br>
+				- All the models were created in Autodesk Maya<br>
+				- Some textures were created in Photoshop, the rest were downloaded from free asset stores<br>
+				<br>
+				Live footage captured on a GoPro
+				</p>
+			</div>
+			<div class="column-33">
+				<div class="vcontainer">
+					<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/YdjYonT1VPY?rel=0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr class="rounded">
+
+	<!-- The "CGK Promo" Section -->
+	<div class="container-fluid" id="section3">
+		<div class="row" style="width:100%; margin-left: 0;">
+			<div class="column-66">
+				<h1 class="xlarge-font" style="font-family: 'Times New Roman';"><b>Clarkson Women's Hockey Promotional Video</b></h1>
+				<p><i>Fall 2019</i><br>
+				<br>
+				Project:<br>
+				- Promotional video created for the Clarkson Women's Hockey Team<br>
+				- Scripted, filmed, and edited by Schuyler Meyer<br>
+				- Starring Cassidy Vinkle<br>
+				- Music: For Tomorrow by Savfk<br>
+				- Filmed on location at Clarkson University and in Cheel Arena<br>
+				- Filmed with Canon cameras and GoPros<br><br>
+				</p>
+			</div>
+			<div class="column-33">
+				<div class="vcontainer">
+					<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/teKWmAu9UxU"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr class="rounded">
+
+	<!-- The "Monuments (VR)" Section -->
+	<div class="container-fluid" id="section4">
+		<div class="row" style="width:100%; margin-left: 0;">
+			<div class="column-66">
+				<h1 class="xlarge-font" style="font-family: 'Rye', cursive;"><b>Monuments (VR)</b></h1>
+				<p><i>Spring 2018</i><br>
+				<br>
+				A virtual reality experience created through collaborated research on the current issues regarding Southern monuments (in the US). Displays perspectives from those that want to keep the monuments of Southern (Confederate) icons and those that want them to be taken down, as well as general historical facts about the monuments, the movement behind them, and the American Civil War.<br>
+				<br>
+				Project:<br>
+				- Created as a final project for Clarkson University's DA391 - VR & 360 Mixed Reality<br>
+				- Developed in Unity / C# for VR, with potential for AR implementation<br>
+				- Most models were created in Autodesk Maya, some were downloaded from free asset stores<br>
+				- Background from Google Street View<br>
+			</p>
+			</div>
+			<div class="column-33">
+				<div class="vcontainer">
+					<iframe allowfullscreen class="video" frameborder="0" src="https://player.vimeo.com/video/273553184"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr class="rounded">
+
+	<!-- The "More" Section -->
+	<div class="container-fluid" id="section5">
+		<!-- CUGI Promo, gameboard, ... -->
+		<div class="row" style="width:100%; margin-left: 0; padding:2%;">
+				<h1 class="xlarge-font" style="font-family: 'Reenie Beanie', cursive;"><b>More Projects</b></h1>
+				<p>
+				<i>Here are a few more smaller projects:</i><br>
+				<br>
+				- Board Game Concept: <a href="https://www.deviantart.com/akatsukirising/art/Board-Game-Concept-834758674">Link [DeviantArt]</a>,<i> Spring 2018</i><br>
+				- CUGI Promotional Video: <a href="https://www.youtube.com/watch?v=HvVJKZyXrKc">Link [YouTube]</a>,<i> Summer 2016</i><br>
+				- Zaim Logo Sequence: <a href="https://www.youtube.com/watch?v=lbHEsqueyiY">Link [YouTube]</a>,<i> Fall 2018</i><br>
+			</p>
+			</div>
+	</div>
+
+	<hr class="rounded">
+
+	<div class="pageButton">
+			<a href="portfolio.html" class="pageButtonLink" title="Go to Page 1">Page 1</a>
+	</div>
+
+	<h4 style="text-align:center;color:#8b8e91;font-size:64px;font-family:verdana;margin: 0;" title="Schuyler Meyer"><img alt="Schuyler Meyer" src="SMLogo2020.png" width="150"></h4><br>
+	<p id="p01"><i>&#169; Schuyler Meyer <b>|</b> 2020</i></p>
+</body>
+</html>

@@ -23,9 +23,9 @@ p {
 	color: #949a9e;
 	font-size: 16px;
 }
-h1 {
+/*h1 {
 	font-size: 64px;
-}
+}*/
 /* .h2, h2 {
   margin-top: 0;
   padding-top: 0;
@@ -364,6 +364,30 @@ hr.rounded {
 	color: #8b8e91;
 	font-size: 14px;
 }
+
+.pageButton {
+	font-size: 32px;
+	text-align: center;
+	/*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+	font-family: 'Merienda', cursive;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 10px;
+}
+
+.pageButtonLink {
+	text-align: center;
+	border: thin solid #bbb;
+	border-radius: 5px;
+	padding: 5px;
+	padding-top: 0;
+}
+
+.pageButtonLink:hover {
+	background: #111111;
+	color: #bbb;
+}
+
 #myBtn {
 	display: none;
 	position: fixed;
@@ -446,6 +470,9 @@ hr.rounded {
 		width: 90%;
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+	p {
+		text-align: left;
 	}
 }
 /* On smaller screens, decrease text size */
