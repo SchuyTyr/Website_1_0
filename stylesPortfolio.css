@@ -23,6 +23,14 @@ p {
 	color: #949a9e;
 	font-size: 16px;
 }
+
+.moreProj {
+	list-style-type:circle;
+	color: #949a9e;
+	font-size: 16px;
+	line-height: 2;
+}
+
 /*h1 {
 	font-size: 64px;
 }*/
