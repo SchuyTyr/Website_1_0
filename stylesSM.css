@@ -285,7 +285,7 @@ a.link4 {
 }
 
 .modalDialog > div {
-	width: 400px;
+	width: 25%;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
@@ -299,17 +299,17 @@ a.link4 {
 .close {
 	background: #606061;
 	color: #FFFFFF;
-	line-height: 25px;
+	line-height: 35px;
 	position: absolute;
 	right: -10px;
 	text-align: center;
 	top: -10px;
-	width: 24px;
+	width: 35px;
 	text-decoration: none;
 	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
 	-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
@@ -317,10 +317,38 @@ a.link4 {
 
 .close:hover {
 	/*background: #00d9ff;*/
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	filter: invert(1);
+}
+
+.closeTwo {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 35px;
+	position: absolute;
+	text-align: center;
+	left: 45%;
+	width: 35px;
+	margin: 1%;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
 	-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
-	filter: invert(1);
+}
+
+.closeTwo:hover {
+	/*background: #00d9ff;*/
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: #e6e6e6;
+	color: #0a0a0a;
 }
 
 @media screen and (max-width: 1200px) {
@@ -352,6 +380,11 @@ a.link4 {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+	.modalDialog > div {
+		width: 50%;
+		overflow: inherit;
+
+	}
 }
 @media screen and (max-width: 700px) {
 	.imgLogo {
@@ -368,27 +401,36 @@ a.link4 {
 	h4 img {
 		width: 40%;
 	}
-	/*li:nth-child(3):after {
-		content:"\A";
-		white-space:pre;
-	}*/
-
-	/*li:nth-child(4) {
-		clear: left;
-		padding-top: 10px;
-		margin-left: auto;
-		margin-right: auto;
+	.modalDialog > div {
+		width: 60%;
+		height: 400px;
+		overflow-x: hidden;
+		overflow-y: scroll;
 	}
-	li:nth-child(5) {
-		padding-top: 10px;
-		margin-left: auto;
-		margin-right: auto;
+	.modalP {
+		margin: 5% auto;
+		text-align: left;
 	}
-	li:nth-child(5) {
-		padding-top: 10px;
-		margin-left: auto;
-		margin-right: auto;
-	}*/
+	.close {
+		opacity: 0;
+	}
+}
+@media screen and (min-width: 700px) {
+	.closeTwo {
+		opacity: 0;
+	}
+}
+@media screen and (max-width: 400px) {
+	.modalDialog > div {
+		width: 75%;
+		height: 400px;
+		overflow-y: scroll;
+		text-align: left;
+	}
+	.modalP {
+		margin: 5% auto;
+		text-align: left;
+	}
 }
 @media screen and (min-width: 2000px) {
 	.socialProps img {
