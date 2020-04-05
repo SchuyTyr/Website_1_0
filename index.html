@@ -31,12 +31,7 @@
 	</script>-->
 </head>
 <body>
-	<!--
-  <video loop="loop" muted="muted" autoplay="autoplay" id="vid">
-    <source src="back2.mp4" type="video/mp4">
-  </video>
--->
-	<h1 style="color:#8b8e91;" title="Schuyler Meyer"><a href="https://www.schuylermeyer.com"><img alt="Schuyler Meyer" class="imgLogo" src="smLogo2019.png"></a></h1><!-- <p ><i>Welcome.</i></p> <!-* id="p01" -->
+	<h1 style="color:#8b8e91;" title="Schuyler Meyer"><a href="https://www.schuylermeyer.com"><img alt="Schuyler Meyer" class="imgLogo" src="smLogo2019.png"></a></h1>
 	<hr>
 	<!-- __________________________________________________________________________ -->
 	<div style="text-align:center;">
@@ -167,6 +162,25 @@
 				<a href="#close" title="Close" class="closeTwo">&times;</a>
 	 		</div>
 	 </div>
+
+	 <script>
+	 	// Get the modal
+		var modal = document.getElementById('openModal');
+		var isModalClosed = false;
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (isModalClosed == true){
+				modal.style.display = "inherit";
+				isModalClosed = false;
+			}
+  		if (event.target == modal) {
+    		modal.style.display = "none";
+				location.href = "#close";
+				isModalClosed = true;
+  		}
+		}
+	</script>
 
 </body>
 </html>
