@@ -83,19 +83,22 @@
 							<a href="portfolio.html"><i>Page 1</i></a>
 						</li>
 						<li>
-							<a href="#section1">Swarm</a>
+							<a href="#section1">Hockey Cards</a>
 						</li>
 						<li>
-							<a href="#section2">VR Hockey</a>
+							<a href="#section2">Swarm</a>
 						</li>
 						<li>
-							<a href="#section3">CGK Promo</a>
+							<a href="#section3">VR Hockey</a>
 						</li>
 						<li>
-							<a href="#section4">Monuments VR</a>
+							<a href="#section4">CGK Promo</a>
 						</li>
 						<li>
-							<a href="#section5">More</a>
+							<a href="#section5">Monuments VR</a>
+						</li>
+						<li>
+							<a href="#section6">More</a>
 						</li>
 					</ul>
 				</div>
@@ -103,8 +106,93 @@
 		</div>
 	</nav>
 
-	<!-- The "Swarm" Section -->
+	<!-- Hockey Cards Section -->
 	<div class="container-fluid" id="section1">
+		<!-- <div class="container" style="background-color:#f1f1f1"> -->
+		<div class="row" style="width:100%; margin-left: 0;">
+			<div class="column-66">
+				<h1 class="xlarge-font" style="font-family: 'Arial'"><b>Hockey Cards</b></h1>
+				<p><i>Spring 2020</i><br>
+				<br>
+				Growing up, I loved getting baseball cards. A year or so ago, I was looking for women's hockey cards and found next to none. There were some Team Canada cards and the random Hilary Knight card, but that was pretty much it. So, I decided to make some myself.<br>
+				<br>
+				Project:<br>
+				- These are drafts / mockups / first renders / etc.<br>
+				- All information is copy/pasted from the <a href="https://www.nwhl.zone/">NWHL roster pages</a><br>
+				- Photos are my own, for the portraits on the back - I "guessed" who took them<br>
+				- Logos are from Google Image Search, some are low quality because that's all I could find<br>
+				- The cards themselves can be used as templates for other players<br>
+				- Players on these cards were picked based on which photos I took that looked like "hockey card photos"<br>
+				- Cards made in Photoshop, 3D models made in Maya, video made in Premiere<br>
+				- See promotional video at the end of the slideshow<br>
+				- <i>Note: These are not officially affiliated with the NWHL or anyone else. They are simply a personal project at the moment.</i><br>
+				</p>
+			</div>
+			<div class="column-33">
+				<!--<img src="TempPic.jpg" width="100%" height="auto">-->
+				<div class="slideshow-containerb">
+					<div class="mySlidesb fade">
+					<div class="numbertextb">
+						1 / 5
+					</div><img alt="Picture 1" src="Digital_Portfolio/HockeyCards/KA-card_front.jpg" style="width:50%"></div>
+					<div class="mySlidesb fade">
+					<div class="numbertextb">
+						2 / 5
+					</div><img src="Digital_Portfolio/HockeyCards/KA-card_back.jpg" style="width:50%; transform:rotate(90deg);"></div>
+					<div class="mySlidesb fade">
+					<div class="numbertextb">
+						3 / 5
+					</div><img src="Digital_Portfolio/HockeyCards/KF-card_front.jpg" style="width:50%"></div>
+					<div class="mySlidesb fade">
+					<div class="numbertextb">
+						4 / 5
+					</div><img src="Digital_Portfolio/HockeyCards/KF-card_back.jpg" style="width:50%; transform:rotate(90deg);"></div>
+					<div class="mySlidesb fade">
+						<div class="numbertextb">
+							5 / 5
+						</div>
+						<div class="vcontainer">
+							<iframe allowfullscreen class="video" frameborder="0" src="https://youtu.be/KWw_-XWKMek"></iframe>
+						</div>
+					</div><a class="prev" onclick="plusSlidesb(-1)">&#10094;</a> <a class="next" onclick="plusSlidesb(1)">&#10095;</a>
+				</div><br>
+				<div style="text-align:center">
+					<span class="dotb" onclick="currentSlideb(1)"></span> <span class="dotb" onclick="currentSlideb(2)"></span> <span class="dotb" onclick="currentSlideb(3)"></span> <span class="dotb" onclick="currentSlideb(4)"></span> <span class="dotb" onclick="currentSlideb(5)"></span>
+				</div>
+				<script>
+																		var slideIndexb = 1;
+																			showSlidesb(slideIndexb);
+
+																			function plusSlidesb(m) {
+																				showSlidesb(slideIndexb += m);
+																			}
+
+																			function currentSlideb(m) {
+																				showSlidesb(slideIndexb = m);
+																			}
+
+																			function showSlidesb(m) {
+																				var k;
+																				var slides = document.getElementsByClassName("mySlidesb");
+																				var dots = document.getElementsByClassName("dotb");
+																				if (m > slides.length) {slideIndexb = 1}
+																				if (m < 1) {slideIndexb = slides.length}
+																				for (k = 0; k < slides.length; k++) {
+																					slides[k].style.display = "none";
+																				}
+																				for (k = 0; k < dots.length; k++) {
+																					dots[k].className = dots[k].className.replace(" active", "");
+																				}
+																				slides[slideIndexb-1].style.display = "block";
+																				dots[slideIndexb-1].className += " active";
+																			}
+				</script>
+			</div>
+		</div><!-- </div> -->
+	</div>
+
+	<!-- The "Swarm" Section -->
+	<div class="container-fluid" id="section2">
 		<div class="row" style="width:100%; margin-left: 0;">
 			<div class="column-66">
 				<h1 class="xlarge-font" style="font-family: 'Orbitron', sans-serif;"><b>Swarm Simulation</b></h1>
@@ -146,7 +234,7 @@
 	<hr class="rounded">
 
 	<!-- The "VR Hockey" Section -->
-	<div class="container-fluid" id="section2">
+	<div class="container-fluid" id="section3">
 		<div class="row" style="width:100%; margin-left: 0;">
 			<div class="column-66">
 				<h1 class="xlarge-font" style="font-family: 'Faster One', cursive;"><b>VR Hockey</b></h1>
@@ -173,7 +261,7 @@
 	<hr class="rounded">
 
 	<!-- The "CGK Promo" Section -->
-	<div class="container-fluid" id="section3">
+	<div class="container-fluid" id="section4">
 		<div class="row" style="width:100%; margin-left: 0;">
 			<div class="column-66">
 				<h1 class="xlarge-font" style="font-family: 'Times New Roman';"><b>Clarkson Women's Hockey Promotional Video</b></h1>
@@ -199,7 +287,7 @@
 	<hr class="rounded">
 
 	<!-- The "Monuments (VR)" Section -->
-	<div class="container-fluid" id="section4">
+	<div class="container-fluid" id="section5">
 		<div class="row" style="width:100%; margin-left: 0;">
 			<div class="column-66">
 				<h1 class="xlarge-font" style="font-family: 'Rye', cursive;"><b>Monuments (VR)</b></h1>
@@ -225,7 +313,7 @@
 	<hr class="rounded">
 
 	<!-- The "More" Section -->
-	<div class="container-fluid" id="section5">
+	<div class="container-fluid" id="section6">
 		<!-- CUGI Promo, gameboard, ... -->
 		<div class="row" style="width:100%; margin-left: 0; padding:2%;">
 				<h1 class="xlarge-font" style="font-family: 'Reenie Beanie', cursive;"><b>More Projects</b></h1>

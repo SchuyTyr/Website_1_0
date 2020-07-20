@@ -254,6 +254,17 @@ hr.rounded {
 	position: relative;
 	margin: auto;
 }
+
+.mySlidesb {
+	display: none;
+}
+/* Slideshow container */
+
+.slideshow-containerb {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
 /* Next & previous buttons */
 
 .prev, .next {
@@ -313,6 +324,14 @@ hr.rounded {
 	position: absolute;
 	top: 0;
 }
+.numbertextb {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
 /* The dots/bullets/indicators */
 
 .dot {
@@ -341,6 +360,20 @@ hr.rounded {
 .active, .dota:hover {
 	background-color: #717171;
 }
+.dotb {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active, .dotb:hover {
+	background-color: #717171;
+}
+
 /* Fading animation */
 
 .fade {
