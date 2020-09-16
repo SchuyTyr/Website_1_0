@@ -452,7 +452,11 @@ a.link4 {
   margin: 5px;*/
 	display: inline-block;
 	border-radius: 8px;
-	background-color: #202e3c;
+	/*background-color: #202e3c;*/
+	background-image: url('homeButton_3.png');
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	outline: none;
 	border: none;
 	color: #8b8e91;
 	text-align: center;
@@ -460,7 +464,8 @@ a.link4 {
 	font-size: 24px;
 	font-family: garamond;
 	padding: 10px;
-	width: 125px;
+	width: 115px;
+	/*height: 80px;*/
 	transition: all 0.5s;
 	cursor: pointer;
 	margin: 1px;
@@ -490,6 +495,14 @@ a.link4 {
 	opacity: 1;
 	right: 0;
 }
+
+.button:hover {
+	background-image: url('homeButton_3-invert.png');
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	outline: none;
+}
+
 #p01 {
 	text-align: center;
 	color: #8b8e91;

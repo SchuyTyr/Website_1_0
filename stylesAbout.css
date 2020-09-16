@@ -132,7 +132,11 @@ a.link3:active {
   margin: 5px;*/
 	display: inline-block;
 	border-radius: 8px;
-	background-color: #202e3c;
+	/*background-color: #202e3c;*/
+	background-image: url('homeButton_3.png');
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	outline: none;
 	border: none;
 	color: #8b8e91;
 	text-align: center;
@@ -140,7 +144,7 @@ a.link3:active {
 	font-size: 24px;
 	font-family: garamond;
 	padding: 10px;
-	width: 125px;
+	width: 115px;
 	transition: all 0.5s;
 	cursor: pointer;
 	margin: 1px;
@@ -170,6 +174,14 @@ a.link3:active {
 	opacity: 1;
 	right: 0;
 }
+
+.buttonHome:hover {
+	background-image: url('homeButton_3-invert.png');
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	outline: none;
+}
+
 #p01 {
 	/*color: blue;*/
 	text-align: center;
