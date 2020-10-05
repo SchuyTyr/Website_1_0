@@ -133,7 +133,7 @@ img {
 /* [2] Transition property for smooth transformation of images */
 
 .img-hover-zoom img {
-	transition: transform 0.75s ease;
+	transition: transform 0.6s ease-in-out;
 }
 /* [3] Finally, transforming the image when container gets hovered */
 
@@ -150,14 +150,21 @@ img {
 	/*border-radius: 4px;*/
 	/*margin: 5px;*/
 	display: block;
-	object-fit: cover;
-	object-position: 0 0;
+	/*object-fit: cover;
+	object-position: 0 0;*/
 	margin-left: auto;
 	margin-right: auto;
 	width: 600px;
 	height: auto;
+	top:0;
+  left:0;
 	/*360px;*/
 }
+
+/*.imgBlur{
+	filter: blur(4px);
+	position: relative;
+}*/
 /*.wrapper2 {
   margin: 0 auto;
   text-align: center;
@@ -226,16 +233,20 @@ a.link4 {
 	margin-right: -50vw;
 	height: auto;
 	/*width: 28%;*/
-	opacity: 0;
-	transition: .5s ease;
+	/*opacity: 0.5;*/
+	color: #8b8e91;
+	transition: color .75s ease;
 	background-color: #008CBA;
 }
 .container:hover .overlay {
-	opacity: .75;
+	opacity: 1;
+	color: #d3dce6;
+	/*text-transform: uppercase;*/
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .text {
-	color: #8b8e91;
+	/*color: #d3dce6;*/
 	font-size: 24px;
 	font-family: garamond;
 	text-align: center;
@@ -459,6 +470,7 @@ a.link4 {
 	outline: none;
 	border: none;
 	color: #8b8e91;
+	/*color: #d3dce6;*/
 	text-align: center;
 	/*font-size:1vw;*/
 	font-size: 24px;
@@ -466,7 +478,7 @@ a.link4 {
 	padding: 10px;
 	width: 115px;
 	/*height: 80px;*/
-	transition: all 0.5s;
+	transition: all 0.5s, color 0s;
 	cursor: pointer;
 	margin: 1px;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -485,7 +497,8 @@ a.link4 {
 	opacity: 0;
 	top: -7.5px;
 	right: -20px;
-	transition: 0.5s;
+	color: #d3dce6;
+	transition: 0.5s, color 0s;
 }
 .button:hover span {
 	padding-right: 24px;
@@ -501,6 +514,8 @@ a.link4 {
 	background-color: Transparent;
 	background-repeat:no-repeat;
 	outline: none;
+	color: #d3dce6;
+	transition: color;
 }
 
 #p01 {
