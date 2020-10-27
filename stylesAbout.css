@@ -247,7 +247,6 @@ a.linkG:hover {
   background-repeat:no-repeat;
 	border:solid 2px #bc9c36;
   border-radius: 12px;
-  background: rgba(255, 255, 255,0);
   box-shadow: 0px 0px 6px 2px #bc9c36;
 	/*background-color: #3e69fff5;
 	color: #ffffff;*/
@@ -309,7 +308,17 @@ hr {
 	#myBtn {
     /*padding: 5%;*/
 		font-size: 18px;
-  }
+		background-color: rgba(67,111,243,0.6);
+		border: solid 4px #436ff3;
+	}
+	#myBtn:hover, #myBtn:focus {
+		font-size: 18px;
+		background-color: rgba(188,157,54,0.6);
+		border: solid 4px #bc9c36;
+	}
+	.buttonHome{
+		font-size: 24px;
+	}
 }
 /*@media screen and (max-width: 900px) {
 	#myBtn {
@@ -342,7 +351,14 @@ hr {
   #myBtn {
     /*padding: 7.5%;*/
 		font-size: 18px;
+		background-color: rgba(67,111,243,0.4);
+		border: solid 4px #436ff3;
   }
+	#myBtn:hover, #myBtn:focus {
+		font-size: 18px;
+		background-color: rgba(188,157,54,0.4);
+		border: solid 4px #bc9c36;
+	}
 	.buttonHome{
 		font-size: 24px;
 	}
