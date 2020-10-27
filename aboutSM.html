@@ -63,17 +63,33 @@
 			</script>
 		</div><br>
 		<br>
-		<div style="text-align: center;font-size: 28px;">
-			<i>Hello friends and onlookers,</i><br><br>
+		<div class="greeting">
+			<i><a class="linkG" onclick="hiddenTextFunc()">Hello</a> friends and onlookers,</i><br><br>
 		</div>
 		Hmm, where to start? My name is Schuyler Meyer (pronounced like "Sky &mdash; ler My &mdash; er").<br><br>
+
+		<div id="hiddenText" style="display:none;">
+		<i>You found it! The following paragraph is something I debated placing into my "about me" text. It's all true, but I
+		feel that it, and myself, may be misunderstood, so I have hidden it for now. Plus I got to learn some more Javascript in the process!<br><br>
 		Based on a Google search I made back in middle school, my name's meaning originates from the Dutch language and
 		translates to "the scholar". And true to <i>mynamemeaning.com</i>, I love to learn, (as corny as that may sound) &mdash;
 		I love to learn new techniques, improve old methods, discover new ideas, anything and sometimes everything. Furthermore,
 		something that may seem uneventful to most, but what I am rather proud of, was the amount of credits I completed
 		while at Clarkson University. According to insider sources, I apparently hold 2nd place for the most consecutive credits
 		taken in Clarkson history, which was established in 1896, at 179 credits throughout my time there, (the first-place
-		person had 180).<br><br>
+		person had 180).</i><br><br></div>
+
+		<script>
+			function hiddenTextFunc() {
+  			var x = document.getElementById("hiddenText");
+  			if (x.style.display === "none") {
+    			x.style.display = "block";
+  			} else {
+    			x.style.display = "none";
+  			}
+			}
+		</script>
+
 		As for my dreams and aspirations, my ultimate goal is to create immersive experiences. Whether they be happy and
 		exciting for people to relive or escape to, more sensitive and emotional for people to better understand the
 		struggles of others or to learn about history past, or simply awe-inspiring and epic. The tools used could be any
