@@ -248,7 +248,8 @@ a.link4 {
 .text {
 	/*color: #d3dce6;*/
 	font-size: 24px;
-	font-family: garamond;
+	/*font-family: garamond;*/
+	font-family: 'Orbitron', sans-serif;
 	text-align: center;
 	opacity: 1;
 	position: absolute;
@@ -463,7 +464,8 @@ a.link4 {
 	color: #8b8e91;
 	/*text-align: center;*/
 	font-size: 24px;
-	font-family: garamond;
+	/*font-family: garamond;*/
+	font-family: 'Orbitron', sans-serif;
 	padding: 8px;
 
 	cursor: pointer;

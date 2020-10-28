@@ -71,7 +71,7 @@ img {
 }
 
 .imgLogo {
-	width: 30%;
+	width: 42%;
 }
 
 a.link3 {
@@ -163,7 +163,10 @@ a.linkG:hover {
 	color: #8b8e91;
 	/*text-align: center;*/
 	font-size: 24px;
-	font-family: garamond;
+	/*font-family: garamond;*/
+	/*font-family:'Turret Road', cursive;*/
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: 'Orbitron', sans-serif;
 	padding: 8px;
 
 	cursor: pointer;
