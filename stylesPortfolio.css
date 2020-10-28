@@ -407,38 +407,62 @@ hr.rounded {
 }
 
 .pageButton {
-	/*font-size: 32px;*/
 	text-align: center;
-	/*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 	font-family: 'Merienda', cursive;
-	/*margin-left: 10%;
-	margin-right: 10%;
-	padding: 10px;*/
+
+	display: inline-block;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	outline: none;
+	color: #8b8e91;
+	font-size: 24px;
+	padding: 8px;
+
+	height: 100%;
+	border: solid 2px #436ff3;
+  border-radius: 8px;
+  background: rgba(255, 255, 255,0);
+	box-shadow: 0px 0px 6px 2px #436ff3;
+  transition: .3s all ease-in;
+
 }
 
-.pageButtonLink {
+.pageButton:hover, .pageButton:focus {
+	/*background-image: url('homeButton_3-invert.png');*/
+	outline: none;
+	color: #d3dce6;
+	transition: color;
+	background-color: Transparent;
+  background-repeat:no-repeat;
+	border:solid 2px #bc9c36;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 2px #bc9c36;
+	transition: .15s all ease-in;
+}
+
+.buttonAbout {
+	width: 100%;
+	text-align: center;
+}
+
+/*.pageButtonLink {
 	text-align: center;
 	font-size: 24px;
-	/*border: thin solid #bbb;*/
 	background-image: url('homeButton_3.png');
 	background-color: Transparent;
 	background-repeat: no-repeat;
 	background-position: center center;
 	outline: none;
 	padding: 20px;
-	/*border-radius: 5px;
-	padding-top: 0;*/
 }
 
 .pageButtonLink:hover {
-	/*background: #111111;
-	color: #bbb;*/
 	background-image: url('homeButton_3-invert.png');
 	background-color: Transparent;
 	background-repeat:no-repeat;
 	outline: none;
 	text-decoration: none;
-}
+}*/
 
 #myBtn {
 	background-color: Transparent;
