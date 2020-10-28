@@ -154,33 +154,38 @@ a.linkG:hover {
 	transform: translate(-50%, -50%);
 }
 .buttonHome {
-	/*float: center;
-  text-align: center;
-  background-color: rgba(0, 0, 255, 0.3);*/
-	/*width: 100px;
-  height: 50px;
-  margin: 5px;*/
 	display: inline-block;
-	border-radius: 8px;
-	/*background-color: #202e3c;*/
-	background-image: url('homeButton_3.png');
+	/*background-image: url('homeButton_3.png');*/
 	background-color: Transparent;
 	background-repeat:no-repeat;
 	outline: none;
-	border: none;
 	color: #8b8e91;
-	text-align: center;
-	/*font-size:1vw;*/
+	/*text-align: center;*/
 	font-size: 24px;
 	font-family: garamond;
-	padding: 10px;
-	width: 115px;
-	transition: all 0.5s, color 0s;
-	cursor: pointer;
-	margin: 1px;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 8px;
+
+	/*cursor: pointer;*/
+	height: 100%;
+	border: solid 2px #436ff3;
+  border-radius: 8px;
+  background: rgba(255, 255, 255,0);
+	box-shadow: 0px 0px 6px 2px #436ff3;
+  transition: .3s all ease-in;
 }
-.buttonHome span {
+.buttonHome:hover, .buttonHome:focus {
+	/*background-image: url('homeButton_3-invert.png');*/
+	outline: none;
+	color: #d3dce6;
+	transition: color;
+	background-color: Transparent;
+  background-repeat:no-repeat;
+	border:solid 2px #bc9c36;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 2px #bc9c36;
+	transition: .15s all ease-in;
+}
+/*.buttonHome span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
@@ -188,7 +193,6 @@ a.linkG:hover {
 }
 .buttonHome span:after {
 	content: "»";
-	/* \00bb */
 	font-size: 32px;
 	position: absolute;
 	opacity: 0;
@@ -213,6 +217,15 @@ a.linkG:hover {
 	outline: none;
 	color: #d3dce6;
 	transition: color;
+}*/
+.buttonAbout {
+	color: #8b8e91;
+	width: 100%;
+	text-align: center;
+	font-family: garamond;
+	font-size:12px;
+	/*margin-left: auto;
+	margin-right: auto;*/
 }
 
 #p01 {
