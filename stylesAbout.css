@@ -122,6 +122,7 @@ a.linkG {
 	text-align: inherit;
 	padding: 0;
 	margin: 0;
+	cursor: pointer;
 }
 a.linkG:visited {
 	color: #889cb3;
@@ -134,7 +135,7 @@ a.linkG:visited {
 a.linkG:hover {
 	color: #0099ff;
 	background-color: transparent;
-	text-decoration: underline;
+	text-decoration: none;
 	text-align: inherit;
 	padding: 0;
 	margin: 0;
@@ -165,7 +166,7 @@ a.linkG:hover {
 	font-family: garamond;
 	padding: 8px;
 
-	/*cursor: pointer;*/
+	cursor: pointer;
 	height: 100%;
 	border: solid 2px #436ff3;
   border-radius: 8px;

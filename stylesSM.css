@@ -466,7 +466,7 @@ a.link4 {
 	font-family: garamond;
 	padding: 8px;
 
-	/*cursor: pointer;*/
+	cursor: pointer;
 	height: 100%;
 	border: solid 2px #436ff3;
   border-radius: 8px;
