@@ -1,7 +1,5 @@
 body {
 	background-color: #111821;
-	/*padding: 10px;*/
-	/*margin: 40px;*/
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -12,17 +10,12 @@ body {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-image: url('Hex_7.jpg');
-	/*background-image: url('back.gif');*/
-	/*overflow: hidden;*/
 }
 h1 {
 	color: #8b8e91;
 	width: auto;
 	text-align: center;
 	font-family: garamond;
-	/*height: auto;
-  padding: 5px;
-  margin: 5px;*/
 }
 p {
 	color: #8b8e91;
@@ -34,7 +27,6 @@ p {
 .aboutC {
 	text-align: justify;
 	color: #abafb3;
-	/*color: #a2a6a9;*/
 	font-size: 20px;
 	line-height: 1.4;
 	/*font-family:garamond;
@@ -45,7 +37,6 @@ p {
 	/*font-family: 'Rock Salt', cursive;*/
 	/*font-family: 'Marck Script', cursive;*/
 	/*font-family: 'Reenie Beanie', cursive;*/
-	/*width: 50%;*/
 	margin-left: 10%;
 	margin-right: 10%;
 }
@@ -54,11 +45,15 @@ p {
 	font-size: 28px;
 }
 .resumeStats {
-	font-family: 'Times New Roman', text-align: justify;
+	font-family: 'Times New Roman';
 	color: #a2a6a9;
 	font-size: 20px;
 	margin-left: 10%;
 	margin-right: 10%;
+}
+.resumeStatsHeader {
+	font-size: 28px;
+	color: #64696b;
 }
 .resumeStatsList {
 	font-size: 17px;
@@ -67,7 +62,6 @@ p {
 img {
 	max-width: 100%;
 	height: auto;
-	/*margin: 5px;*/
 }
 
 .imgLogo {
@@ -156,12 +150,10 @@ a.linkG:hover {
 }
 .buttonHome {
 	display: inline-block;
-	/*background-image: url('homeButton_3.png');*/
 	background-color: Transparent;
 	background-repeat:no-repeat;
 	outline: none;
 	color: #8b8e91;
-	/*text-align: center;*/
 	font-size: 24px;
 	/*font-family: garamond;*/
 	/*font-family:'Turret Road', cursive;*/
@@ -178,7 +170,6 @@ a.linkG:hover {
   transition: .3s all ease-in;
 }
 .buttonHome:hover, .buttonHome:focus {
-	/*background-image: url('homeButton_3-invert.png');*/
 	outline: none;
 	color: #d3dce6;
 	transition: color;
@@ -189,51 +180,15 @@ a.linkG:hover {
   box-shadow: 0px 0px 6px 2px #bc9c36;
 	transition: .15s all ease-in;
 }
-/*.buttonHome span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
-}
-.buttonHome span:after {
-	content: "»";
-	font-size: 32px;
-	position: absolute;
-	opacity: 0;
-	top: -7.5px;
-	right: -20px;
-	color: #d3dce6;
-	transition: 0.5s, color 0s;
-}
-.buttonHome:hover span {
-	padding-right: 24px;
-	padding-left: 1px;
-}
-.buttonHome:hover span:after {
-	opacity: 1;
-	right: 0;
-}
-
-.buttonHome:hover {
-	background-image: url('homeButton_3-invert.png');
-	background-color: Transparent;
-	background-repeat:no-repeat;
-	outline: none;
-	color: #d3dce6;
-	transition: color;
-}*/
 .buttonAbout {
 	color: #8b8e91;
 	width: 100%;
 	text-align: center;
 	font-family: garamond;
 	font-size:12px;
-	/*margin-left: auto;
-	margin-right: auto;*/
 }
 
 #p01 {
-	/*color: blue;*/
 	text-align: center;
 	color: #8b8e91;
 	font-size: 14px;
@@ -251,12 +206,10 @@ a.linkG:hover {
   border-radius: 8px;
   background: rgba(255, 255, 255,0);
 	outline: none;
-	/*background-color: #0038ffe3;*/
 	color: #d8d8d8;
 	cursor: pointer;
 	padding: 15px;
 	box-shadow: 0px 0px 6px 2px #436ff3;
-	/*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   transition: .3s all ease-in;
 }
 #myBtn:hover, #myBtn:focus {
@@ -265,37 +218,9 @@ a.linkG:hover {
 	border:solid 2px #bc9c36;
   border-radius: 12px;
   box-shadow: 0px 0px 6px 2px #bc9c36;
-	/*background-color: #3e69fff5;
-	color: #ffffff;*/
 }
-/*#myBtn span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.25s;
-}
-#myBtn span:after {
-	content: "Top ↑";
-	font-size: 18px;
-	position: absolute;
-	opacity: 0;
-	top: 0px;
-	right: -20px;
-	transition: 0.25s;
-}
-#myBtn:hover span {
-	padding-right: 50px;
-	padding-left: 1px;
-}
-#myBtn:hover span:after {
-	opacity: 1;
-	right: 0;
-}*/
 hr {
-	/*width: auto;*/
 	width: 90%;
-	/*margin-left: auto;
-  margin-right: 100px;*/
 }
 @media screen and (max-width: 1200px) and (min-width: 701px) {
 	.text {
@@ -309,7 +234,10 @@ hr {
 		margin-left: auto;
 		margin-right: auto;
 		text-align: justify;
-		font-size: 17px;
+		font-size: 32px;
+	}
+	.resumeStatsHeader {
+		font-size: 72px;
 	}
 	.resumeStatsList {
 		line-height: 1.25;
@@ -317,13 +245,7 @@ hr {
   a.link3 {
     font-size: 17px;
   }
-	/*.buttonHome{
-		width: 200px;
-    height: 75px;
-		font-size: 45px;
-	}*/
 	#myBtn {
-    /*padding: 5%;*/
 		font-size: 18px;
 		background-color: rgba(67,111,243,0.6);
 		border: solid 4px #436ff3;
@@ -337,21 +259,12 @@ hr {
 		font-size: 24px;
 	}
 }
-/*@media screen and (max-width: 900px) {
-	#myBtn {
-    padding: 5%;
-		font-size: 75px;
-  }
-}*/
 @media screen and (max-width: 700px) {
 	.imgLogo {
 		width: 100%;
-		/*margin: 0;
-		padding-top: 0;
-		padding-bottom: 0;*/
 	}
 	.aboutC {
-		font-size: 14px;
+		font-size: 32px;
 		text-align: justify;
 	}
   a.link3 {
@@ -362,11 +275,13 @@ hr {
 		margin-left: 2%;
 		margin-right: 2%;
 	}
+	.resumeStatsHeader {
+		font-size: 72px;
+	}
 	.resumeStatsList {
 		line-height: 1.25;
 	}
   #myBtn {
-    /*padding: 7.5%;*/
 		font-size: 18px;
 		background-color: rgba(67,111,243,0.4);
 		border: solid 4px #436ff3;
@@ -380,6 +295,6 @@ hr {
 		font-size: 24px;
 	}
 	.greeting {
-		font-size: 14px;
+		font-size: 17px;
 	}
 }
