@@ -1,6 +1,7 @@
 # Website_1_0
 
-Updated November 2020
+Last Updated November 2020
+
 &#169; 2019-2020
 
 This is my first attempt at building a website from scratch. (HTML, CSS, etc.)
