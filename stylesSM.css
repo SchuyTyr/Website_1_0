@@ -262,7 +262,8 @@ a.link4 {
 
 .modalP {
 	font-size: 18px;
-	color: Black;
+	color: #d3dce6;
+	font-family: 'Merienda', cursive;
 	text-align: justify;
 }
 
@@ -292,7 +293,7 @@ a.link4 {
 }
 
 .modalDialog:target {
-	opacity:1;
+	opacity:0.95;
 	pointer-events: auto;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
@@ -304,67 +305,119 @@ a.link4 {
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
+	/*border-radius: 10px;
 	background: #fff;
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);*/
+	color: #d3dce6;
+	border: solid 2px #436ff3;
+	background-color: rgba(29, 67, 181);
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 2px #436ff3;
+	transition: .15s all ease-in;
 }
 
 .close {
-	background: #606061;
+	font-size: 24px;
 	color: #FFFFFF;
 	line-height: 35px;
-	position: absolute;
-	right: -10px;
+	/*position: absolute;*/
+	/*right: -10px;*/
 	text-align: center;
-	top: -10px;
-	width: 35px;
+	/*top: -10px;*/
+	width: 25%;
 	text-decoration: none;
+	border: solid 2px #436ff3;
+	background-color: rgba(67,111,243);
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 2px #436ff3;
+	transition: .15s all ease-in;
 	font-weight: bold;
-	-webkit-border-radius: 18px;
+	/*-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
 	border-radius: 18px;
-	-moz-box-shadow: 1px 1px 3px #000;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;*/
+	/*-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;*/
 }
 
 .close:hover {
-	/*background: #00d9ff;*/
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	filter: invert(1);
-}
-
-.closeTwo {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 35px;
-	position: absolute;
-	text-align: center;
-	left: 45%;
-	width: 35px;
-	margin: 1%;
-	text-decoration: none;
+	color: #000000;
+	border:solid 2px #bc9c36;
+  border-radius: 15px;
+	background-color: rgba(188,157,54);
+  box-shadow: 0px 0px 6px 2px #bc9c36;
+	transition: .15s all ease-in;
 	font-weight: bold;
-	-webkit-border-radius: 18px;
-	-moz-border-radius: 18px;
-	border-radius: 18px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+	/*filter: invert(1);*/
 }
 
-.closeTwo:hover {
-	/*background: #00d9ff;*/
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	background: #e6e6e6;
-	color: #0a0a0a;
+.button {
+	display: inline-block;
+	/*background-image: url('homeButton_3.png');*/
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	outline: none;
+	color: #8b8e91;
+	/*text-align: center;*/
+	font-size: 24px;
+	/*font-family: garamond;*/
+	font-family: 'Orbitron', sans-serif;
+	padding: 8px;
+
+	cursor: pointer;
+	height: 100%;
+	border: solid 2px #436ff3;
+  border-radius: 8px;
+  background: rgba(255, 255, 255,0);
+	box-shadow: 0px 0px 6px 2px #436ff3;
+  transition: .3s all ease-in;
 }
+
+.button:hover, .button:focus {
+	/*background-image: url('homeButton_3-invert.png');*/
+	outline: none;
+	color: #d3dce6;
+	transition: color;
+	background-color: Transparent;
+  background-repeat:no-repeat;
+	border:solid 2px #bc9c36;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 2px #bc9c36;
+	transition: .15s all ease-in;
+}
+.buttonAbout {
+	color: #8b8e91;
+	width: 100%;
+	text-align: center;
+	font-family: garamond;
+	font-size:12px;
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+
+#p01 {
+	text-align: center;
+	color: #8b8e91;
+	font-size: 14px;
+	width:auto;
+}
+hr {
+	/*width: auto;*/
+	width: 90%;
+	/*margin-left: auto;
+  margin-right: 100px;*/
+}
+.left, .right, .main {
+	float: left;
+	width: 28%;
+	/* The width is 20%, by default */
+}
+/* --------------------------------------------------------------------- */
 
 @media screen and (max-width: 1200px) {
 	.socialProps img {
@@ -426,15 +479,8 @@ a.link4 {
 		margin: 5% auto;
 		text-align: left;
 	}
-	.close {
-		opacity: 0;
-	}
 }
-@media screen and (min-width: 700px) {
-	.closeTwo {
-		opacity: 0;
-	}
-}
+
 @media screen and (max-width: 400px) {
 	.modalDialog > div {
 		width: 75%;
@@ -455,90 +501,3 @@ a.link4 {
 		width: 30%;
 	}
 }
-.button {
-	display: inline-block;
-	/*background-image: url('homeButton_3.png');*/
-	background-color: Transparent;
-	background-repeat:no-repeat;
-	outline: none;
-	color: #8b8e91;
-	/*text-align: center;*/
-	font-size: 24px;
-	/*font-family: garamond;*/
-	font-family: 'Orbitron', sans-serif;
-	padding: 8px;
-
-	cursor: pointer;
-	height: 100%;
-	border: solid 2px #436ff3;
-  border-radius: 8px;
-  background: rgba(255, 255, 255,0);
-	box-shadow: 0px 0px 6px 2px #436ff3;
-  transition: .3s all ease-in;
-}
-/*.button span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
-}*/
-/*.button span:after {
-	content: "»"; //&#171; &#187; &#12296; &#12297; &#12308; &#12309; &#12301; &#12300;
-	// &#91; &#93;
-	font-size: 32px;
-	position: absolute;
-	opacity: 0;
-	top: -7.5px;
-	right: -20px;
-	color: #d3dce6;
-	transition: 0.5s, color 0s;
-}
-.button:hover span {
-	padding-right: 24px;
-	padding-left: 1px;
-}
-.button:hover span:after {
-	opacity: 1;
-	right: 0;
-}*/
-
-.button:hover, .button:focus {
-	/*background-image: url('homeButton_3-invert.png');*/
-	outline: none;
-	color: #d3dce6;
-	transition: color;
-	background-color: Transparent;
-  background-repeat:no-repeat;
-	border:solid 2px #bc9c36;
-  border-radius: 15px;
-  box-shadow: 0px 0px 6px 2px #bc9c36;
-	transition: .15s all ease-in;
-}
-.buttonAbout {
-	color: #8b8e91;
-	width: 100%;
-	text-align: center;
-	font-family: garamond;
-	font-size:12px;
-	/*margin-left: auto;
-	margin-right: auto;*/
-}
-
-#p01 {
-	text-align: center;
-	color: #8b8e91;
-	font-size: 14px;
-	width:auto;
-}
-hr {
-	/*width: auto;*/
-	width: 90%;
-	/*margin-left: auto;
-  margin-right: 100px;*/
-}
-.left, .right, .main {
-	float: left;
-	width: 28%;
-	/* The width is 20%, by default */
-}
-/* --------------------------------------------------------------------- */
