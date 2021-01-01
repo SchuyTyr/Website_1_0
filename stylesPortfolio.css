@@ -387,10 +387,11 @@ hr.rounded {
 	}
 }
 #p01 {
-	/*color: blue;*/
 	text-align: center;
 	color: #8b8e91;
 	font-size: 14px;
+	width:auto;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .pageButton {
