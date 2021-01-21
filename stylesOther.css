@@ -74,6 +74,9 @@ hr {
 .two {
   width: 50%;
 }
+.three{
+	box-shadow: 0px 0px 6px 1px #c2c6cc;
+}
 a.link2 {
 	color: inherit;
 	background-color: transparent;
@@ -148,6 +151,28 @@ a.link5:hover {
 	margin-right: auto;*/
 }
 
+h4 {
+	text-align:center;
+	color:#8b8e91;
+	font-size:64px;
+	font-family:verdana;
+	margin: 0;
+}
+.imgSMLogo {
+	width: 250px;
+	text-align: center;
+}
+
+.GCal {
+	text-align: center;
+	margin: auto;
+	width: 90%;
+	background-color: Transparent;
+  background-repeat:no-repeat;
+	border:solid #c2c6cc;
+  box-shadow: 0px 0px 6px 6px #c2c6cc;
+}
+
 @media screen and (max-width: 600px) {
   .two {
     width: 75%;
@@ -159,12 +184,21 @@ a.link5:hover {
     width: 90%;
   }
   .imgLogo {
-    width: 100%;
+    width: 75%;
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
+	.imgSMLogo {
+		width: 25%;
+		text-align: center;
+	}
   ul {
     font-size: 17px;
   }
+}
+@media screen and (min-width: 1440px) {
+	.imgLogo {
+		width: 25%;
+	}
 }
