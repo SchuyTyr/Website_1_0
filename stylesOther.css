@@ -87,23 +87,26 @@ a.link6 {
 	background-color: transparent;
 	text-decoration: none;
 }
-a.link2 {
+a.link1 {
 	color: inherit;
 	background-color: transparent;
-	/*text-decoration: none;*/
-	/*display: inline-block;*/
 }
-a.link2:link {
-	display: inline-block;
+a.link1:visited {
+	color: #1957ff;
+}
+a.link1:hover {
+	color: #1957ff;
+}
+a.link2 {
+	/*color: inherit;*/
+	background-color: transparent;
+	color: #8b8e91;
 }
 a.link2:visited {
-	color: #bb00ff;
+	color: #1957ff;
 }
 a.link2:hover {
 	color: #1957ff;
-}
-a.link2:active {
-	/*color: #00409e;*/
 }
 a.link5 {
 	color: #d4d4d4;
