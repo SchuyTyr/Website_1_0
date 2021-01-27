@@ -87,6 +87,14 @@ a.link6 {
 	background-color: transparent;
 	text-decoration: none;
 }
+a.link7 {
+	color: inherit;
+	background-color: transparent;
+	text-decoration: none;
+}
+a.link7:hover {
+	text-decoration: underline;
+}
 a.link1 {
 	color: inherit;
 	background-color: transparent;
