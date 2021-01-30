@@ -242,6 +242,10 @@ td {
 }
 .MET {
 	color:#b74736;
+	/*text-decoration: black line-through;
+	text-decoration-thickness: 2px;*/
+	background-image: repeating-linear-gradient(
+		-45deg, transparent 0 20px, #b74736 20px 40px);
 }
 .BOS {
 	color:#edc743;
