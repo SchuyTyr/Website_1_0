@@ -239,6 +239,8 @@ td {
 }
 .CTW {
 	color:#6bab52;
+	background-image: repeating-linear-gradient(
+		-45deg, transparent 0 20px, #6bab52 20px 40px);
 }
 .MET {
 	color:#b74736;
