@@ -1,0 +1,647 @@
+/* * {
+	box-sizing: border-box;
+}*/
+body {
+	background-color: #111821;
+	background: no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: auto;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: Arial, Helvetica, sans-serif, garamond;
+	background-image: url('Hex_7.jpg');
+}
+
+p {
+	text-align: justify;
+	color: #949a9e;
+	font-size: 20px;
+}
+
+.container-fluid {
+	width: 90%;
+}
+
+.topLogos {
+	float: left;
+	white-space: no-wrap;
+	font-size: 0;
+	width: 100%;
+}
+.topTitles {
+	font-size:32px;
+	font-family: 'Orbitron', sans-serif;
+	color: rgb(72,72,72);
+}
+.topDesc {
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.imgLogo {
+	width: 35%;
+	margin-top: 10px;
+}
+
+.xlarge-font {
+	font-size: 52px;
+	color: rgb(72,72,72);
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #4CAF50;
+}
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+hr {
+	-moz-width: 90%;
+	-webkit-width: 90%;
+	-ms-width: 90%;
+	width: 90%;
+}
+hr.rounded {
+	border-top: 4px solid #bbb;
+	border-radius: 5px;
+}
+.glow {
+	font-size: 64px;
+	font-family: 'Audiowide', cursive;
+	color: #ffffff;
+	/*text-align: left;*/
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff,
+								 0 0 20px #fff,
+								 0 0 30px #e60073,
+								 0 0 40px #e60073,
+								 0 0 50px #e60073,
+								 0 0 60px #e60073,
+								 0 0 70px #e60073;
+	}
+	to {
+		text-shadow: 0 0 20px #fff,
+								 0 0 30px #ff4da6,
+								 0 0 40px #ff4da6,
+								 0 0 50px #ff4da6,
+								 0 0 60px #ff4da6,
+								 0 0 70px #ff4da6,
+								 0 0 80px #ff4da6;
+	}
+}
+
+.glowToo {
+	font-size: 64px;
+	/*font-family: 'Audiowide', cursive;*/
+	font-family: 'Orbitron', sans-serif;
+	color: #000000;
+	-webkit-animation: glowToo 2.5s ease-in-out infinite alternate;
+	-moz-animation: glowToo 2.5s ease-in-out infinite alternate;
+	animation: glowToo 2.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glowToo {
+	0% { opacity: 1;}
+  10% { opacity: 0.8;}
+	20% { opacity: 1;}
+	30% { opacity: 0.5;}
+	40% { opacity: 0.5;}
+	50% { opacity: 0.8;}
+	60% { opacity: 1;}
+	70% { opacity: 0.8;}
+	80% { opacity: 0.5;}
+	90% { opacity: 0.5;}
+	100% { opacity: 1;}
+	from {
+		text-shadow: 0 0 2px #ffffff,
+								 0 0 5px #ffffff,
+								 0 0 8px #c96b00,
+								 0 0 10px #c96b00,
+								 0 0 40px #c96b00,
+								 0 0 45px #c96b00,
+								 0 0 50px #c96b00;
+	}
+	to {
+		text-shadow: 0 0 10px #ffffff,
+								 0 0 20px #ff7e2e,
+								 0 0 30px #ff7e2e,
+								 0 0 40px #ff7e2e,
+								 0 0 50px #ff7e2e,
+								 0 0 60px #ff7e2e,
+								 0 0 70px #ff7e2e;
+	}
+}
+
+.glowTree {
+	font-size: 64px;
+	/*font-family: 'Audiowide', cursive;*/
+	font-family: 'Orbitron', sans-serif;
+	color: #000000;
+	text-shadow: 0 0 2px #ffffff;
+ 	-webkit-animation: glowTree 4s ease-in-out infinite alternate;
+	-moz-animation: glowTree 4s ease-in-out infinite alternate;
+	animation: glowTree 4s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glowTree {
+	from {
+		text-shadow: 0 0 2px #ffffff,
+								 0 0 5px #3053ff;
+	}
+	to {
+		text-shadow: 0 0 10px #000000,
+								 0 0 25px #3053ff,
+								 0 0 50px #3053ff,
+								 0 0 75px #3053ff;
+	}
+}
+
+/* Fading animation */
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+@-webkit-keyframes fade {
+	from {
+		opacity: .4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fade {
+	from {
+		opacity: .4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+#p01 {
+	text-align: center;
+	color: #8b8e91;
+	font-size: 14px;
+	width:auto;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.pageButton {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	cursor: pointer;
+  transition: .3s all ease-in;
+	color: rgba(67,111,243); /*#949a9e;*/
+ 	font-size: 24px;
+ 	font-weight: bold;
+ 	transition: 0.3s;
+	padding: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+
+ 	/*width: 100%;*/
+ 	text-decoration: none;
+ 	border: solid 2px rgba(67,111,243,30%);
+ 	background-color: rgba(67,111,243,30%);
+	border-radius: 15px;
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	margin: 0 auto;
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*left: 45%;*/
+	display: block;
+}
+
+.pageButton:hover, .pageButton:focus {
+	color: #142149; /*#202020;*/
+	cursor: pointer;
+	background-color: rgba(67,111,243);
+	transition: .15s all ease-in;
+}
+
+.buttonAbout {
+	width: 100%;
+	text-align: center;
+}
+
+#myBtn {
+	background-color: Transparent;
+  background-repeat:no-repeat;
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 32px;
+	outline: none;
+	cursor: pointer;
+	padding: 8px;
+	padding-top: 4px;
+	padding-left: 12px;
+	padding-right: 12px;
+  transition: .3s all ease-in;
+
+	color: rgba(215,215,215);
+	border: solid 2px rgba(56,56,56,30%);
+ 	background-color: rgba(56,56,56,75%);
+	border-radius: 8px;
+	box-shadow: 0px 0px 6px 2px #d7d7d7;
+}
+#myBtn:hover/*, #myBtn:focus*/ {
+	color: #383838; /*#202020;*/
+	background-color: rgba(215,215,215);
+}
+
+@media screen and (max-width: 1200px){
+	img {
+		margin: auto;
+	}
+	.xlarge-font {
+		font-size: 48px;
+	}
+	.glow {
+		text-align: center;
+	}
+	.glowToo {
+		text-align: center;
+	}
+	#myBtn {
+		background-color: rgba(56,56,56,75%);
+	}
+}
+@media screen and (max-width: 700px) {
+	.topLogos {
+		width: 100%;
+		margin: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.imgLogo {
+		width: 75%;
+	}
+	hr.rounded {
+		border-top: 2px solid #bbb;
+		border-radius: 5px;
+	}
+	.topDesc {
+		text-align: center;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.topTitles {
+		font-size:22px;
+	}
+	p {
+		text-align: left;
+	}
+	#myBtn {
+		background-color: rgba(56,56,56,90%);
+	}
+	.xlarge-font {
+		font-size: 32px;
+	}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.imgLogo {
+		width: 100%;
+	}
+}
+
+/* -------------------------------- */
+
+.rowN {
+  display: flex;
+  flex-wrap: wrap;
+  /*padding: 0 6px;*/
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnN {
+  flex: 25%;
+  max-width: 25%;
+  padding: 12px 12px;
+}
+
+.columnN img {
+  margin-top: 16px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover {
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+	color: #436ff3;
+	border: 10px #436ff3;
+	box-shadow: /*0 0 4px 4px #436ff3,*/
+							0 0 1px 4px #000000, /*1e1f20*/
+							0 0 20px 10px #436ff3;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+ border-radius: 48px;
+ cursor: pointer;
+ transition: 0.3s;
+ /*background: rgba(255, 255, 255, 0.8);*/
+}
+
+#myImg:hover {
+	/*opacity: 0.9;*/
+	background-color: rgb(0,0,0);
+	border-radius: 8px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg1,#myImg2,#myImg3,#myImg4,#myImg5,#myImg6,
+#myImg7,#myImg8,#myImg9,#myImg10,#myImg11,#myImg12,
+#myImg13,#myImg14,#myImg15,#myImg16 {
+ border-radius: 48px;
+ cursor: pointer;
+ transition: 0.3s;
+ /*background: rgba(255, 255, 255, 0.8);*/
+}
+
+#myImg1:hover,#myImg2:hover,#myImg3:hover,
+#myImg4:hover,#myImg5:hover,#myImg6:hover,
+#myImg7:hover,#myImg8:hover,#myImg9:hover,
+#myImg10:hover,#myImg11:hover,#myImg12:hover,
+#myImg13:hover,#myImg14:hover,#myImg15:hover,
+#myImg16:hover {
+	/*opacity: 0.9;*/
+	background-color: rgb(0,0,0);
+	border-radius: 8px;
+}
+
+/* The Modal (background) */
+.modal {
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ padding-top: 25px; /* Location of the box */
+ padding-bottom: 25px;
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+ -webkit-backdrop-filter: blur(20px);
+ backdrop-filter: blur(20px);
+ /*overflow-y: scroll;*/
+}
+
+/* Modal Content (Image) */
+.modal-content {
+ margin: auto;
+ display: block;
+ width: 80%;
+ max-width: 700px;
+}
+
+body.noscroll {
+  overflow-y: hidden;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+ margin: auto;
+ display: block;
+ width: 80%;
+ max-width: 700px;
+ text-align: center;
+ color: #ccc;
+ padding: 10px 0;
+ /*height: 150px;*/
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+ animation-name: zoom;
+ animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+ from {transform:scale(0)}
+ to {transform:scale(1)}
+}
+
+/* The Close Button */
+.closeBtn {
+
+ 	color: rgba(67,111,243); /*#949a9e;*/
+	/*filter: invert(1);*/
+ 	font-size: 40px;
+ 	font-weight: bold;
+ 	transition: 0.3s;
+
+ 	text-align: center;
+ 	width: 10%;
+ 	text-decoration: none;
+ 	border: solid 2px rgba(67,111,243,30%);
+ 	background-color: rgba(67,111,243,30%);
+	border-radius: 15px;
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+	margin: 0 auto;
+	position: absolute;
+	/*top: 50%;*/
+	left: 45%;
+	/*-ms-transform: translateY(-50%);
+	transform: translateY(-50%);*/
+
+	line-height: normal;
+	display: block;
+	/*padding-left: 5%;
+	padding-right: 5%;*/
+
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+ 	/*color: #8b8e91;*/
+	color: #142149; /*#202020;*/
+ 	cursor: pointer;
+
+
+ 	background-color: rgba(67,111,243);
+
+ 	transition: .15s all ease-in;
+}
+
+#bodyText {
+	width: 80%;
+  max-width: 700px;
+	text-align: center;
+	margin: auto;
+  display: block;
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px 30px 10px 30px;
+	border-radius: 12px;
+}
+
+.socialBar {
+	/*position: relative;*/
+  /*height: 25px;*/
+	background-color: #00000000;
+	color: #00000000;
+	display: inline-flex;
+}
+
+.socialProps {
+	/*list-style-type: none;
+	background-color: #00000000;
+	color: #00000000;*/
+	width: 80%;
+	/*margin: auto;
+	padding: 10px;*/
+	/*display: table;*/
+	display:         flex;
+  flex-wrap:       wrap;
+  justify-content: center;
+}
+.socialProps img {
+  /*display: inline;
+  margin-left: 5px;*/
+	/*display:inline-block;*/
+	/*display: table-cell;*/
+	/*text-align: center;
+	margin: auto;*/
+	width: 40%;
+	/*height: auto;*/
+	/*float: left;*/
+}
+
+.socialProps a {
+	/*display: block;
+	width: 16.66667%;*/
+	/*width: 85px;
+	height: 85px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a.link4 {
+	color: #262a30;
+	/*width: 100%;
+	height: auto;*/
+	background-color: transparent;
+	text-decoration: none;
+	display: inline;
+	text-align: center;
+}
+
+.socialHover:hover {
+	filter: drop-shadow(0 0 2px #82e2ff) brightness(1.2);
+}
+
+#vcontainer {
+	position: relative;
+	margin: 10px auto;
+	text-align: center;
+	width: 80%;
+	max-width: 700px;
+	height: auto;
+}
+
+.video {
+	width: 100%;
+	max-width: 700px;
+	height: 420px;
+}
+
+.moreProj {
+	list-style-type:circle;
+	color: #949a9e;
+	font-size: 16px;
+	line-height: 2;
+}
+
+/* __________________________________________________________________________*/
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+	.rowN {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.columnN {
+    flex: 50%;
+    max-width: 50%;
+  }
+	.modal-content {
+		width: 100%;
+	}
+	.pageButton {
+		width: auto;
+	}
+	.socialProps img {
+		width: 40%;
+	}
+	/*.grow:hover {
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+	}*/
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.rowN {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.columnN {
+    flex: 100%;
+    max-width: 100%;
+  }
+	.grow:hover {
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+	}
+	.closeBtn {
+		width: 20%;
+		left: 40%;
+	}
+	.pageButton {
+		width: auto;
+		left: 50vw;/*calc(50% - width);*/
+	}
+	.socialProps img {
+		width: 80%;
+	}
+	.video {
+		height: 200px;
+	}
+}
