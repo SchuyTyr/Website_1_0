@@ -22,31 +22,7 @@
 <body>
 	<br>
 	<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
-	<script>
-		 //Get the button
-		 var mybutton = document.getElementById("myBtn");
 
-		 // When the user scrolls down 225px from the top of the document, show the button
-		 window.onscroll = function() {scrollFunction()};
-
-		 function scrollFunction() {
-			 if (document.body.scrollTop > 225 || document.documentElement.scrollTop > 225) {
-				 mybutton.style.display = "block";
-			 } else {
-				 mybutton.style.display = "none";
-			 }
-			 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-				 mybutton.style.fontSize = "75px";
-				 mybutton.style.padding = "5%";
-			 }
-		 }
-
-		 // When the user clicks on the button, scroll to the top of the document
-		 function topFunction() {
-			 document.body.scrollTop = 0;
-			 document.documentElement.scrollTop = 0;
-		 }
-	</script>
 	<h2 title="National Women's Hockey League" style="color: #d4d4d4;">
 		<img alt="NWHL Lake Placid, NY" class="imgLogo" src="nwhl2021isobelcupFinals.jpg"><br><br>
 		<u>_&ndash; NWHL 2021 Isobel Cup Playoffs in Boston, MA &ndash;_</u>
@@ -195,5 +171,32 @@
 		</a>
 	</h1>
 	<p id="p01">&#169; Schuyler Meyer <b>|</b> 2021</p>
+
+	<script>
+		 //Get the button
+		 var mybutton = document.getElementById("myBtn");
+
+		 // When the user scrolls down 225px from the top of the document, show the button
+		 window.onscroll = function() {scrollFunction()};
+
+		 function scrollFunction() {
+			 if (document.body.scrollTop > 225 || document.documentElement.scrollTop > 225) {
+				 mybutton.style.display = "block";
+			 } else {
+				 mybutton.style.display = "none";
+			 }
+			 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+				 mybutton.style.fontSize = "75px";
+				 mybutton.style.padding = "5%";
+			 }
+		 }
+
+		 // When the user clicks on the button, scroll to the top of the document
+		 function topFunction() {
+			 document.body.scrollTop = 0;
+			 document.documentElement.scrollTop = 0;
+		 }
+	</script>
+
 </body>
 </html>
