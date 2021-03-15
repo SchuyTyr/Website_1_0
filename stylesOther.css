@@ -356,6 +356,7 @@ td {
 		font-size: 75%;
 	}
 	#myBtn {
+		font-size: 2em;
 		background-color: rgba(56,56,56,90%);
 	}
 }
