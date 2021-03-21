@@ -136,6 +136,20 @@ img {
 	width: 40%;
 }
 
+/*.imgLogo:hover {
+	-webkit-filter: drop-shadow(0 0 1px #99bbff);
+	-moz-filter: drop-shadow(0 0 1px #99bbff);
+	-ms-filter: drop-shadow(0 0 1px #99bbff);
+	filter: drop-shadow(0 0 1px #99bbff);
+}*/
+
+/*h4 img:hover {
+	-webkit-filter: drop-shadow(0 0 1px #ffffff);
+	-moz-filter: drop-shadow(0 0 1px #ffffff);
+	-ms-filter: drop-shadow(0 0 1px #ffffff);
+	filter: drop-shadow(0 0 1px #ffffff);
+}*/
+
 .img2 {
 	max-width: 100%;
 	/*border: 1px solid #ddd;*/
@@ -210,7 +224,7 @@ a.link4 {
 }
 
 .socialHover:hover {
-	filter: drop-shadow(0 0 2px #82e2ff) brightness(1.2);
+	filter: drop-shadow(0 0 2px #ffffff) brightness(1.2);
 }
 
 .container {
@@ -248,6 +262,7 @@ a.link4 {
 	opacity: 1;
 	color: #d3dce6;
 	/*text-transform: uppercase;*/
+	font-weight: bold;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -436,10 +451,20 @@ hr {
 	-ms-width: 90%;
 	width: 90%;
 }
+
 hr.rounded {
-	border-top: 4px solid #bbb;
+	border-top: 1px solid #bbbbbb;
 	border-radius: 5px;
+	-webkit-filter: drop-shadow(0 0 2px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+	-moz-filter: drop-shadow(0 0 2px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+	-ms-filter: drop-shadow(0 0 2px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+	filter: drop-shadow(0 0 2px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
 }
+
 
 .left, .right, .main {
 	float: left;

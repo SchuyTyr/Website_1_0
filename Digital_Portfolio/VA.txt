@@ -1,0 +1,16 @@
+<div id="myTexT" class="myText"><h1 class="xlarge-font" style="font-family: 'Eagle Lake', cursive;"><b>The Virtual Archive</b></h1>
+<p><i>Spring 2019</i><br>
+<br>
+Press Release:<br>
+<i>Through a fascination of architecture in game design and a devotion to the preservation of history, Schuyler Meyer of Millbrook, NY presents The Virtual Archive. A fully immersive and symbolic virtual reality museum of past works of both his photography and other digital media projects, with a focus on environmental design. The Virtual Archive, split into two sections, features a science fiction themed gallery, where the photos tell their own stories, and a fantasy themed library, featuring videos of completed past works. This vault of award-winning and international pieces was developed in the Unity Engine and designed for the Oculus VR headset.</i><br>
+See a video walkthrough at the end of the slideshow.<br>
+<br>
+Project:<br>
+- Created as a final project for Clarkson University's Digital Arts and Sciences Program, DA492 - Senior Studies class<br>
+- Developed in Unity / C#<br>
+- All models made in Autodesk Maya<br>
+- All textures made in Adobe Photoshop (Sci-Fi floor texture was downloaded from a free asset store)<br>
+- Voice is "Amy IVONA" from Harpo Software<br>
+- All photos and projects within the archive were created and recorded by Schuyler Meyer
+</p>
+</div>
