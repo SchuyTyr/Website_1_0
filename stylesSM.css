@@ -417,7 +417,6 @@ a.link4 {
 	/*position: absolute;*/
 	/*top: 50%;*/
 	/*left: 45%;*/
-	display: block;
 }
 
 .pageButton:hover {
@@ -433,6 +432,7 @@ a.link4 {
 	text-align: center;
 	font-family: garamond;
 	font-size:12px;
+	display: block;
 	/*margin-left: auto;
 	margin-right: auto;*/
 }
