@@ -181,6 +181,22 @@ img {
   padding: 10px;
 }*/
 
+.imgPSContainer {
+	/*width: 90%;*/
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.imgPhotoshoot {
+	width: auto;
+	height: 30%;
+	padding: 10px;
+	position: relative;
+	object-fit: cover;
+	overflow: hidden;
+}
+
 a.link2 {
 	color: #262a30;
 	background-color: transparent;
@@ -304,6 +320,13 @@ a.link4 {
 	font-family: 'Merienda', cursive;
 	text-align: left;
 	font-size: 28px;
+}
+.modalH2-2 {
+	color: #d3dce6;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	font-size: 32px;
+	font-weight: lighter;
 }
 
 #modalA {
@@ -474,6 +497,18 @@ hr.rounded {
 
 /* --------------------------------------------------------------------- */
 
+@media screen and (max-width: 1350px) {
+	.imgPSContainer {
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.imgPhotoshoot {
+		height: 20%;
+		padding: 10px;
+	}
+}
+
 @media screen and (max-width: 1200px) {
 	.socialProps img {
 		width: 40%;
@@ -511,6 +546,24 @@ hr.rounded {
 		width: auto;
 	}
 }
+@media screen and (max-width: 850px) {
+	.imgPSContainer {
+		text-align: center;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+	.imgPhotoshoot {
+		/*height: 30%;*/
+		width: auto;
+		padding: 5px;
+	}
+}
+@media screen and (max-width: 775px) {
+	.imgPhotoshoot {
+		height: 15%;
+		width: auto;
+	}
+}
 @media screen and (max-width: 700px) {
 	.imgLogo {
 		width: 100%;
@@ -535,6 +588,7 @@ hr.rounded {
 	.modalP {
 		margin: 5% auto;
 		text-align: left;
+		font-weight: 200px;
 	}
 	.topDesc {
 		text-align: center;
@@ -552,7 +606,12 @@ hr.rounded {
 		border-radius: 5px;
 	}
 }
-
+@media screen and (max-width: 600px) {
+	.imgPhotoshoot {
+		height: 20%;
+		width: auto;
+	}
+}
 @media screen and (max-width: 400px) {
 	.modal-content > div {
 		width: 90%;
@@ -563,6 +622,16 @@ hr.rounded {
 	.modalP {
 		margin: 5% auto;
 		text-align: left;
+	}
+	/*.imgPSContainer {
+		text-align: center;
+		margin-left: 5%;
+		margin-right: 5%;
+	}*/
+	.imgPhotoshoot {
+		height: auto;
+		width: 100%;
+		/*padding: 10px;*/
 	}
 }
 @media screen and (min-width: 2000px) {
