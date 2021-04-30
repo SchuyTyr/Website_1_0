@@ -309,8 +309,10 @@ a.link4 {
 
 .modalP {
 	font-size: 20px;
-	color: #d3dce6;
-	font-family: 'Merienda', cursive;
+	font-weight: 100px;
+	color: #abafb3;
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'verdana';
 	text-align: left;
 	position: relative;
 }
@@ -588,7 +590,6 @@ hr.rounded {
 	.modalP {
 		margin: 5% auto;
 		text-align: left;
-		font-weight: 200px;
 	}
 	.topDesc {
 		text-align: center;
