@@ -490,6 +490,20 @@ hr.rounded {
 					drop-shadow(0 0 4px #99bbff);
 }
 
+hr.roundedTwo {
+	width: 25%;
+	border-top: 1px solid #bbbbbb;
+	border-radius: 5px;
+	-webkit-filter: drop-shadow(0 0 2px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+	-moz-filter: drop-shadow(0 0 2px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+	-ms-filter: drop-shadow(0 0 2px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+	filter: drop-shadow(0 0 2px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+}
+
 
 .left, .right, .main {
 	float: left;
@@ -546,6 +560,9 @@ hr.rounded {
 	}
 	.pageButton {
 		width: auto;
+	}
+	hr.roundedTwo {
+		width: 50%;
 	}
 }
 @media screen and (max-width: 850px) {
@@ -606,6 +623,11 @@ hr.rounded {
 		border-top: 2px solid #bbb;
 		border-radius: 5px;
 	}
+	hr.roundedTwo {
+		width: 90%;
+		border-top: 2px solid #bbb;
+		border-radius: 5px;
+	}
 }
 @media screen and (max-width: 600px) {
 	.imgPhotoshoot {
@@ -641,5 +663,8 @@ hr.rounded {
 	}
 	.imgLogo {
 		width: 30%;
+	}
+	hr.roundedTwo {
+		width: 20%;
 	}
 }
