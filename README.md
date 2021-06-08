@@ -1,10 +1,11 @@
 # Website_1_0
 
-Last Updated December 2020
+README Last Updated June 2021
+Website Last Updated June 2021
 
 Website - Schuyler Meyer &#169; 2019-2021
 
-This is my first attempt at building a website from scratch. (HTML, CSS, etc.)
+This is my first attempt at building a website from scratch. (HTML, CSS, JavaScript, etc.)
 
 All work and portfolio work designed, developed, or created by Schuyler Meyer 
 
