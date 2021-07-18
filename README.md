@@ -1,6 +1,6 @@
 # Website_1_0
 
-README Last Updated June 2021
+README Last Updated July 2021
 
 Website Last Updated June 2021
 
@@ -17,6 +17,11 @@ References used:
 - https://www.w3schools.com/
 - https://stackoverflow.com/
 - The occasional other site that came up through Google search
+
+-------------------------------------
+This repository also includes some other websites that I have created (in addition to my main / portfolio site), for example, the IceySchuy Twitter Bot page.
+They are all under the "schuylermeyer.com" domain.
+-------------------------------------
 
 Hosted by:
 
