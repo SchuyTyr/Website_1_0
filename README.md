@@ -19,8 +19,10 @@ References used:
 - The occasional other site that came up through Google search
 
 -------------------------------------
+
 This repository also includes some other websites that I have created (in addition to my main / portfolio site), for example, the IceySchuy Twitter Bot page.
 They are all under the "schuylermeyer.com" domain.
+
 -------------------------------------
 
 Hosted by:
