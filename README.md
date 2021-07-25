@@ -7,6 +7,10 @@ Website Last Updated July 2021
 
 Website - Schuyler Meyer &#169; 2019-2021
 
+View here: https://www.schuylermeyer.com/ 
+
+-------------------------------------
+
 This is my first attempt at building a website from scratch. (HTML, CSS, JavaScript, etc.)
 
 All work and portfolio work designed, developed, or created by Schuyler Meyer 
