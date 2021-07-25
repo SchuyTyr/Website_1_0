@@ -661,6 +661,43 @@ a.link4 {
 
 .socialHover:hover {
 	filter: drop-shadow(0 0 2px #ffffff) brightness(1.2);
+	animation: fadeinout 2.5s Ease-in-out infinite;
+}
+
+@keyframes fadeinout {
+	0% {
+		opacity: 100%;
+	}
+	10% {
+		opacity: 90%;
+	}
+	20% {
+		opacity: 50%;
+	}
+	30% {
+		opacity: 80%;
+	}
+	40% {
+		opacity: 90%;
+	}
+	50% {
+		opacity: 100%;
+	}
+	60% {
+		opacity: 90%;
+	}
+	70% {
+		opacity: 60%;
+	}
+	80% {
+		opacity: 100%;
+	}
+	90% {
+		opacity: 70%;
+	}
+	100% {
+		opacity: 100%;
+	}
 }
 
 #vcontainer {
