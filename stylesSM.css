@@ -32,6 +32,12 @@ p {
 	font-size: 28px;
 }
 
+.mainContainer {
+	text-align:center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
 .btn-group button {
 	background-color: #00000000;
 	color: #00000000; /* White text */
@@ -490,7 +496,7 @@ hr.rounded {
 					drop-shadow(0 0 4px #99bbff);
 	-ms-filter: drop-shadow(0 0 2px #ffffff)
 					drop-shadow(0 0 4px #99bbff);*/
-	filter: drop-shadow(0 0 2px #ffffff)
+	filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
 	/*animation: fadeinoutSmall 5s Ease-in-out infinite;*/
 }
@@ -505,7 +511,7 @@ hr.roundedTwo {
 					drop-shadow(0 0 4px #99bbff);
 	-ms-filter: drop-shadow(0 0 2px #ffffff)
 					drop-shadow(0 0 4px #99bbff);*/
-	filter: drop-shadow(0 0 2px #ffffff)
+	filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
 	/*animation: fadeinoutSmall 5s Ease-in-out infinite;*/
 	/*animation: flicker var(--animation-time) Ease-in-out alternate infinite;*/
@@ -620,6 +626,10 @@ hr.roundedTwo {
 /* --------------------------------------------------------------------- */
 
 @media screen and (max-width: 1350px) {
+	.mainContainer {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
 	.imgPSContainer {
 		text-align: center;
 		margin-left: 5%;
@@ -632,6 +642,10 @@ hr.roundedTwo {
 }
 
 @media screen and (max-width: 1200px) {
+	.mainContainer {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 	.socialProps img {
 		width: 40%;
 	}
@@ -690,17 +704,19 @@ hr.roundedTwo {
 	}
 }
 @media screen and (max-width: 700px) {
+	.mainContainer {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 	.imgLogo {
 		width: 100%;
 		margin: 0;
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-
 	.socialProps img {
 		width: 80%;
 	}
-
 	h4 img {
 		width: 40%;
 	}
