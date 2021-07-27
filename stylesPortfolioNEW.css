@@ -660,8 +660,8 @@ a.link4 {
 }
 
 .socialHover:hover {
-	filter: drop-shadow(0 0 2px #ffffff) brightness(1.2);
-	animation: fadeinout 1.5s Ease-in-out infinite;
+	filter: drop-shadow(0 0 2px #ffffff) brightness(1.25);
+	animation: fadeinout 2s Ease-in-out infinite;
 }
 
 @keyframes fadeinout {

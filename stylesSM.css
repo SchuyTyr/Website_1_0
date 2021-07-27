@@ -129,7 +129,7 @@ img {
 /* [3] Finally, transforming the image when container gets hovered */
 
 .img-hover-zoom:hover img {
-	transform: scale(1.1);
+	transform: scale(1.2);
 	border-radius: 8px;
 }
 
@@ -140,7 +140,7 @@ img {
 	box-shadow: /*0 0 4px 4px #436ff3,*/
 							0 0 1px 4px #000000, /*1e1f20*/
 							0 0 25px 15px #436ff3;
-	animation: colorChange 2.5s Ease-in-out infinite;
+	animation: colorChange 2s Ease-in-out infinite;
 }
 
 .imgLogo {
@@ -164,7 +164,7 @@ img {
 .img2 {
 	max-width: 100%;
 	/*border: 1px solid #ddd;*/
-	/*border-radius: 4px;*/
+	border-radius: 50% / 12%;
 	/*margin: 5px;*/
 	display: block;
 	/*object-fit: cover;
@@ -251,8 +251,8 @@ a.link4 {
 }
 
 .socialHover:hover {
-	filter: drop-shadow(0 0 2px #ffffff) brightness(1.2);
-	animation: fadeinout 1.5s Ease-in-out infinite;
+	filter: drop-shadow(0 0 2px #ffffff) brightness(1.25);
+	animation: fadeinout 2s Ease-in-out infinite;
 }
 
 .container {
@@ -606,10 +606,10 @@ hr.roundedTwo {
   } 30% {
 		box-shadow: 0 0 1px 4px #000000,
 								0 0 24px 14px #3062f2;
-  } 50% {
+  } 70% {
 		box-shadow: 0 0 1px 4px #000000,
 								0 0 25px 15px #436ff3;
-  } 70% {
+  } 80% {
 		box-shadow: 0 0 1px 4px #000000,
 								0 0 24px 14px #4a74f0;
   } 100% {
