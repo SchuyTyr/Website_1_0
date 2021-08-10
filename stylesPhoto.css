@@ -296,7 +296,7 @@ a.link4 {
 	border-radius: 4%;
 
 	transform: skew(-30deg);
-	transform-origin: top; /* may fix or worsen centering issues, check later */
+	/*transform-origin: top; *//* may fix or worsen centering issues, check later */
 
 	box-shadow: 0px 0px 6px 2px #436ff3;
 	-webkit-background-clip: padding-box; /* for Safari */
@@ -309,6 +309,37 @@ a.link4 {
 }
 
 .pageButton:hover {
+	/*color: #142149; *//*#202020;*/
+	color: rgba(20, 33, 73);
+	cursor: pointer;
+	background-color: rgba(99, 138, 255, 0.9);
+	transition: .15s all ease-in;
+
+	border-radius: 50% / 15%;
+}
+
+.pageButtonC {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	cursor: pointer;
+  transition: .3s all ease-in;
+	color: rgba(99, 138, 255, 0.9);
+ 	font-size: 22px;
+	padding: 10px;
+	padding-left: 14px;
+	padding-right: 14px;
+
+ 	text-decoration: none;
+ 	border: solid 2px rgba(67,111,243,30%);
+ 	background-color: rgba(67,111,243,15%);
+	border-radius: 4%;
+
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.pageButtonC:hover {
 	/*color: #142149; *//*#202020;*/
 	color: rgba(20, 33, 73);
 	cursor: pointer;
@@ -517,6 +548,8 @@ hr.roundedTwo {
 	}
 	.pageButton {
 		width: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	hr.roundedTwo {
 		width: 90%;
