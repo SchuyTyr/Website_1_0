@@ -81,7 +81,7 @@
 			Click or tap play to view the video. <br><br>
 			Click or tap the "close" button above to close the video and open the photo slideshow.<br><br>
 		</p>
-		<video controls loop poster="Photography/Web_Ani_Still-2.png" preload="auto">
+		<video id="video" controls loop poster="Photography/Web_Ani_Still-2.png" preload="auto">
 			<source src="Photography/WebAni.mp4" type="video/mp4">
 			<source src="Photography/WebAni.webm" type="video/webm">
 			<p class="pText">Your browser doesn't support HTML5 video. Here is
@@ -200,11 +200,13 @@
 	function hideVid() {
 	  var y = document.getElementById("videoMessage");
 		var z = document.getElementById("videoMessageButton");
+		var vid = document.getElementById("video");
 	  if (y.style.display === "none") {
 	    y.style.display = "block";
 	  } else {
 	    y.style.display = "none";
 			z.style.display = "none";
+			vid.pause();
 			isPlaying = !isPlaying;
 			carousel();
 	  }
