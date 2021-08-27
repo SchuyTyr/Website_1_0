@@ -98,6 +98,7 @@ video {
 	margin-right: auto;
 	height: 600px;
 	position: relative;
+	object-fit: contain;
 }
 
 .arrowsL {
@@ -562,8 +563,9 @@ hr.roundedTwo {
 		margin-bottom: 0px;
 	}
 	.img3 {
-		width: 100%;
-		height: auto;
+		/*width: 100%;
+		height: auto;*/
+		height: 300px;
 	}
 	.imgLogo {
 		width: 100%;
@@ -596,6 +598,13 @@ hr.roundedTwo {
 		width: 90%;
 		border-top: 2px solid #bbb;
 		border-radius: 5px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.img3 {
+		/*width: 100%;
+		height: auto;*/
+		height: 200px;
 	}
 }
 @media screen and (min-width: 2000px) {
