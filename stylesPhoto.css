@@ -18,7 +18,7 @@ h1 {
 	width: auto;
 	text-align: center;
 	font-family: garamond;
-	font-size:12px;
+	font-size: 12px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -40,6 +40,171 @@ img {
 video {
 	/*width: 100%;*/
 	height: 600px;
+}
+
+.menuOverlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.95);
+	font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.menuOverlay-content {
+  position: relative;
+  top: 10%;
+  /*width: 100%;*/
+  text-align: center;
+  /*margin-top: 30px;*/
+}
+
+.menuOverlay a, .menuOverlay div {
+  padding: 12px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #8b8e91;
+  /*display: block;*/
+  transition: 0.1s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.menuOverlay a:hover, .menuOverlay a:focus {
+  color: rgba(99, 138, 255, 0.9);
+}
+
+.menuOverlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 72px;
+	padding-left: 12px;
+	padding-right: 12px;
+	transition: 0.3s all ease-in-out;
+	/*font-family: 'Orbitron', sans-serif;*/
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'Rye', cursive;
+	transform: rotate(0deg);
+	z-index: 10;
+}
+
+.closebtn:hover,
+.closebtn:active {
+	transform: rotate(90deg);
+	transition: 0.3s all ease-in-out;
+}
+
+.navbar {
+  overflow: hidden;
+  /*background-color: rgba(0,0,0,0.9);*/
+}
+
+.navbar a {
+  /*float: left;*/
+  font-size: 24px;
+  /*color: white;*/
+  text-align: center;
+  /*padding: 14px 16px;*/
+	padding: 12px;
+  text-decoration: none;
+}
+
+.subNav {
+  /*float: left;*/
+  overflow: hidden;
+}
+
+.subNav .subNavBtn {
+  font-size: 42px;
+  border: none;
+  outline: none;
+  color: #8b8e91;
+  /*padding: 14px 16px;*/
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+	border-bottom: 3px solid rgba(99, 138, 255,0.25);
+}
+
+/*.mNav a:hover, .subNav:hover .subNavBtn {
+  background-color: red;
+}*/
+
+.subNav-content {
+  display: none;
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*background-color: red;*/
+  /*width: 100%;*/
+  z-index: 1;
+}
+
+.subNav-content a {
+	/*margin-top: 4px;
+	margin-bottom: 4px;
+	padding: 12px;*/
+	/*border: solid 2px transparent;*/
+	border: solid 2px rgba(67,111,243,30%);
+	/*background-color: rgba(67,111,243,15%);*/
+	border-radius: 4%;
+	padding: 2px;
+}
+
+.subNav-content a:hover {
+	text-align: center;
+	/*font-family: 'Orbitron', sans-serif;*/
+	cursor: pointer;
+  /*transition: .3s all ease-in;*/
+	color: rgba(99, 138, 255);
+ 	/*font-size: 18px;*/
+	/*padding: 10px;*/
+	/*padding-left: 4px;
+	padding-right: 4px;*/
+
+ 	/*text-decoration: none;*/
+ 	border: solid 2px rgba(67,111,243,30%);
+ 	background-color: rgba(67,111,243,15%);
+	border-radius: 4%;
+
+	/*box-shadow: 0px 0px 6px 2px #436ff3;*/
+	-webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.subNav:hover .subNav-content {
+  display: block;
+}
+.subNav:active .subNav-content {
+  display: block;
+}
+
+.subNav:hover .subNavBtn {
+  border-bottom: 3px solid rgba(99, 138, 255);
+	color: rgba(99, 138, 255);
+}
+
+.subNavBtn:visited,
+.subNav-content:visited
+/*.subNavBtn:focus,
+.subNav-content:focus*/ {
+	text-decoration: none;
+	color: #8b8e91;
+}
+
+.titles {
+	text-align: center;
+	font-size: 48px;
+	font-family: 'Orbitron', sans-serif;
+	color: #8b8e91;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .pText {
@@ -557,6 +722,15 @@ hr.roundedTwo {
 	}
 }
 
+@media screen and (max-width: 800px) {
+	.pageButton {
+		transform: skew(0);
+	}
+	.pageButtonTxt {
+		transform: skew(0);
+	}
+}
+
 @media screen and (max-width: 700px) {
 	.mainContainer {
 		margin-top: 0px;
@@ -578,6 +752,9 @@ hr.roundedTwo {
 	}
 	h4 img {
 		width: 40%;
+	}
+	.titles {
+		font-size: 28px;
 	}
 	.topDesc {
 		text-align: center;
@@ -601,6 +778,19 @@ hr.roundedTwo {
 	}
 }
 @media screen and (max-width: 500px) {
+	/*.menuOverlay a {
+		font-size: 20px
+	}*/
+	.menuOverlay .closebtn {
+		top: 15px;
+		left: 15vw;
+		text-align: center;
+	}
+	.subNav-content a{
+	 	border: solid 2px rgba(67,111,243,30%);
+		border-radius: 4%;
+		padding: 2px;
+	}
 	.img3 {
 		/*width: 100%;
 		height: auto;*/
