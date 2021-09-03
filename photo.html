@@ -234,6 +234,7 @@
 
 	<script>
 	var vid = document.getElementById("video");
+	var isStarted = false;
 
 	function openNav() {
 	  document.getElementById("mNav").style.width = "100%";
@@ -242,7 +243,12 @@
 
 	function closeNav() {
 	  document.getElementById("mNav").style.width = "0%";
-		vid.play();
+
+		// Need to set it to true somewhere, currently it is never set to true.
+		if (isStarted === true) {
+			vid.play();
+			isStarted = !isStarted;
+		}
 	}
 	</script>
 
