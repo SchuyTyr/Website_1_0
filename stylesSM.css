@@ -709,6 +709,14 @@ hr.roundedTwo {
 		padding: 5px;
 	}
 }
+@media screen and (max-width: 800px) {
+	.pageButton {
+		transform: skew(0);
+	}
+	.pageButtonTxt {
+		transform: skew(0);
+	}
+}
 @media screen and (max-width: 775px) {
 	.imgPhotoshoot {
 		height: 15%;
