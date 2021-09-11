@@ -788,6 +788,7 @@ hr.roundedTwo {
 		margin-left: 5%;
 		margin-right: 5%;
 		font-size: 18px;
+		padding: 0;
 	}
 	.pageButton {
 		width: auto;
