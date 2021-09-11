@@ -74,6 +74,8 @@ p {
 	background-color: #00000000;
 	color: #00000000;
 	display: inline-flex;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .socialProps {
@@ -482,8 +484,8 @@ a.link4 {
 	font-size:12px;
 	display: block;
 	text-align: center;
-	/*margin-left: auto;
-	margin-right: auto;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #p01 {
@@ -639,6 +641,21 @@ hr.roundedTwo {
 
 /* --------------------------------------------------------------------- */
 
+@media screen and (min-width: 2000px) {
+	.mainContainer {
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+	.socialProps img {
+		width: 40%;
+	}
+	.imgLogo {
+		width: 30%;
+	}
+	hr.roundedTwo {
+		width: 50%;
+	}
+}
 @media screen and (max-width: 1350px) {
 	.mainContainer {
 		margin-top: 40px;
@@ -660,13 +677,17 @@ hr.roundedTwo {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
-	.socialProps img {
-		width: 40%;
-	}
 	.container {
-		width: 94%;
+		width: 33%;
 		margin: 0 auto;
 		padding: 5px;
+	}
+	.socialBar {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.socialProps img {
+		width: 40%;
 	}
 	.overlay {
 		opacity: 1;
@@ -699,6 +720,13 @@ hr.roundedTwo {
 	}
 	hr.roundedTwo {
 		width: 90%;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.container {
+		width: 75%;
+		margin: 0 auto;
+		padding: 5px;
 	}
 }
 @media screen and (max-width: 850px) {
@@ -776,9 +804,22 @@ hr.roundedTwo {
 	}
 }
 @media screen and (max-width: 600px) {
+	.container {
+		width: 94%;
+		margin: 0 auto;
+		padding: 5px;
+	}
+	.buttonAbout {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
 	.imgPhotoshoot {
 		height: 20%;
 		width: auto;
+	}
+	.socialBar {
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 }
 @media screen and (max-width: 400px) {
@@ -801,16 +842,5 @@ hr.roundedTwo {
 		height: auto;
 		width: 100%;
 		/*padding: 10px;*/
-	}
-}
-@media screen and (min-width: 2000px) {
-	.socialProps img {
-		width: 40%;
-	}
-	.imgLogo {
-		width: 30%;
-	}
-	hr.roundedTwo {
-		width: 50%;
 	}
 }
