@@ -722,13 +722,13 @@ hr.roundedTwo {
 		width: 90%;
 	}
 }
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
 	.container {
 		width: 75%;
 		margin: 0 auto;
 		padding: 5px;
 	}
-}
+}*/
 @media screen and (max-width: 850px) {
 	.imgPSContainer {
 		text-align: center;
@@ -742,6 +742,11 @@ hr.roundedTwo {
 	}
 }
 @media screen and (max-width: 800px) {
+	.container {
+		width: 75%;
+		margin: 0 auto;
+		padding: 5px;
+	}
 	.pageButton {
 		transform: skew(0);
 	}
@@ -789,6 +794,11 @@ hr.roundedTwo {
 		margin-right: 5%;
 		font-size: 18px;
 		padding: 0;
+	}
+	.buttonAbout {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.pageButton {
 		width: auto;
