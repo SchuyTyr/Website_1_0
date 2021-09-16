@@ -140,6 +140,7 @@
 
 <div class="mainContainer">
 
+	<!--
 	<button id="videoMessageButton" class="pageButtonC" onclick="hideVid()" title="Close the video message."><div>Close</div></button>
 	<div id="videoMessage">
 		<p class="pText">
@@ -154,6 +155,7 @@
 			</p>
 		</video>
 	</div>
+-->
 
 	<div class="container">
 	  <img class="slides img3" src="Photography/photos/photo_1.jpg">
@@ -170,9 +172,11 @@
 		<img class="slides img3" src="Photography/photos/photo_12.jpg">
 	</div>
 
+<!--
 	<p class="pText">
 		While this site is under construction, check out the rest of my photos on my Flickr, or on the other social medias &ndash; linked below.
 	</p>
+-->
 
   <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
   <!-- <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
@@ -229,7 +233,8 @@
 
 	<!-- __________________________________________________________________________ -->
 
-	<script>
+<script>
+
 	var vid = document.getElementById("video");
 	var isStarted = false;
 
@@ -247,7 +252,9 @@
 			isStarted = !isStarted;
 		}
 	}
-	</script>
+
+</script>
+
 
 	<!-- For slideshow arrows
 	<script>
@@ -273,6 +280,7 @@
 	</script>
 	-->
 
+<!-- For "Work in Progress" Video
 	<script>
 
 	var isPlaying = false;
@@ -293,11 +301,12 @@
 	}
 
 	</script>
+-->
 
 	<script>
 
 	var myIndex = 0;
-	//carousel();
+	carousel();
 
 	function carousel() {
 	  var i;
@@ -314,10 +323,10 @@
 
 		//x[myIndex-1].style.display = "block";
 
-		if (isPlaying === true){
-			x[myIndex-1].style.display = "block";
-	  	setTimeout(carousel, 6000); // Change image every 6 seconds
-		}
+		//if (isPlaying === true){
+		x[myIndex-1].style.display = "block";
+	  setTimeout(carousel, 6000); // Change image every 6 seconds
+		//}
 	}
 	</script>
 
