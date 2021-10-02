@@ -1,3 +1,5 @@
+/*-- slideShow.js // Schuyler Meyer // 2021 --*/
+
 var myIndex = 0;
 carousel();
 
