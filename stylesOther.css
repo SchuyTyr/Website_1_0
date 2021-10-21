@@ -30,6 +30,15 @@ h2 {
   font-size: 28px;
   font-family: 'Orbitron', sans-serif;
 }
+h4 {
+	text-align:center;
+	color:#8b8e91;
+	font-size:64px;
+	font-family:verdana;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 p {
 	color: #c2c6cc;
 	padding: 10px;
@@ -64,8 +73,10 @@ ul {
 .p03 {
 	color: #c2c6cc;
 	text-align: center;
-	font-family: 'Merienda';
+	/*font-family: 'Merienda';*/
+	font-family: 'verdana';
 	font-size:16px;
+	line-height: 1.5;
 }
 img {
 	max-width: 100%;
@@ -166,13 +177,6 @@ a.link5:hover {
 	margin-right: auto;*/
 }
 
-h4 {
-	text-align:center;
-	color:#8b8e91;
-	font-size:64px;
-	font-family:verdana;
-	margin: 0;
-}
 .imgSMLogo {
 	width: 250px;
 	text-align: center;
@@ -327,12 +331,28 @@ td {
 	background-color: rgba(215,215,215);
 }
 
+@media screen and (min-width: 1440px) {
+	.imgLogo {
+		width: 25%;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.lg-view {
 		display:none;
 	}
 	.sm-view{
 		 display:inline;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	h4 {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	h4 img {
+		width: 40%;
 	}
 }
 
@@ -374,10 +394,5 @@ td {
 	#myBtn {
 		font-size: 2em;
 		background-color: rgba(56,56,56,90%);
-	}
-}
-@media screen and (min-width: 1440px) {
-	.imgLogo {
-		width: 25%;
 	}
 }
