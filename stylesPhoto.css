@@ -375,6 +375,12 @@ video {
 	/*cubic-bezier(.68,-0.55,.27,1.55) -- for 4 seconds */
 }
 
+.slidesEvent {
+	display: none;
+	animation: fading 6s cubic-bezier(.88,-0.49,.22,1.54) infinite;
+	/*cubic-bezier(.68,-0.55,.27,1.55) -- for 4 seconds */
+}
+
 .w3-content {
 	margin-left: auto;
 	margin-right: auto;
