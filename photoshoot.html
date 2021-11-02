@@ -1,4 +1,3 @@
-<!-- Schuyler Meyer Website attempt #1 -->
 <html lang="en-US">
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -11,7 +10,7 @@
 	</script>
 	<meta charset="UTF-8">
 	<meta name="description" content="Schuyler Meyer Photography">
-	<meta name="keywords" content="photoshoot,photography,Schuyler Meyer,Hudson Valley,NY,CT">
+	<meta name="keywords" content="photoshoot,photography,Schuyler Meyer,Hudson Valley,NY,CT,MA,holiday shoot,New York,family portraits">
 	<meta name="author" content="Schuyler Meyer">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="stylesSM.css" rel="stylesheet">
@@ -19,7 +18,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Orbitron|Merienda|Iceberg&display=swap" rel="stylesheet">
 	<title>Schuyler Meyer Photography</title>
 </head>
-<body>
+<body onload = "startTimer()">
+
+	<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
+
 	<h1 style="color:#8b8e91;" title="Schuyler Meyer"><a href="https://www.schuylermeyer.com"><img alt="Schuyler Meyer" class="imgLogo" src="SM2021.png"></a></h1>
 	<p class="topDesc"><u>_&mdash;Photography &#8280; Digital Art &#8280; Game Developer &#8280; VR &#8280; Software Engineering&mdash;_</u></p>
 	<hr class="rounded"><br>
@@ -29,21 +31,41 @@
 		<button class="pageButton pageButtonUN" onclick="window.location.href='index.html';" title="Go Home">
 			<div class="pageButtonTxt pageButtonUN">&lt;&nbsp;Home&nbsp;&gt;</div>
 		</button>
+		<button class="pageButton pageButtonUN" onclick="window.location.href='photo.html';" title="Go to Photography">
+			<div class="pageButtonTxt pageButtonUN">&lt;&nbsp;Photos&nbsp;&gt;</div>
+		</button>
 	</div>
 
-	<h2 class="modalH2-2">&lt;&nbsp;<u>Socially Distance Photoshoots</u>&nbsp;&gt;</h2>
+	<h2 class="modalH2-2">
+		<span class="lg-view">_/&nbsp;&nbsp;&nbsp;</span>
+			<u>Socially Distance Photoshoots</u>
+		<span class="lg-view">&nbsp;&nbsp;&nbsp;\_</span>
+	</h2>
+
+<!--
 	<div class="imgPSContainer">
 		<img alt="" class="imgPhotoshoot" src="Fashion_1.jpg">
 		<img alt="" class="imgPhotoshoot" src="Hockey_1.jpg">
 		<img alt="" class="imgPhotoshoot" src="Fashion_2.jpg">
 	</div>
+-->
+
+	<div class="imgPSContainerSlides">
+		<div class="imgPSInnerContainerSlides">
+		  <img alt="" class="slides img3" src="Fashion_1.jpg">
+		  <img alt="" class="slides img3" src="Hockey_1.jpg">
+		  <img alt="" class="slides img3" src="Fashion_2.jpg">
+		</div>
+	</div>
+
 	<div class="modal-content">
 		<div>
 			 <h2 class="modalH2"><u>Photoshoots Available</u>&nbsp;&gt;</h2>
-				 <p class="modalP">&gt;&nbsp;Sports, Senior Portraits, Cosplay, and More!
-				 <br><br>&gt;&nbsp;Based out of Millbrook, NY, I am available throughout the Hudson Valley and Western Connecticut.
+				 <p class="modalP">&gt;&nbsp;Sports (all levels), Holiday, Family, Senior Portraits, Cosplay, and More!
+				 <br><br><i style="margin-left: 40px;font-size: 18px;">&gt;&nbsp;I can also design your holiday card for an additional cost.</i>
+				 <br><br>&gt;&nbsp;Based out of Millbrook, NY, I am available throughout the Hudson Valley, Western Connecticut, and Western Massachusetts.
 				 <br><br>&gt;&nbsp;You will receive fully edited digital photographs to use for social media, profile pictures, yearbooks, and more!
-				 <br><br>&gt;&nbsp;Solo and group shots are available.
+				 <br><br>&gt;&nbsp;Solo, group, and family shoots are available.
 				 <br><br>&gt;&nbsp;Photoshoots are split into one hour time slots (sports are per game).
 			 	 </p>
 			 	 <br><hr class="rounded" style="width:40%;"><br>
@@ -72,67 +94,47 @@
 	<br>
 	<br>
 	<hr class="rounded">
-	<br>
-	<br>
+
 	<div class="socialBar" style="width: 100%;">
-		<!--<ul class="socialProps">-->
-			<!--<li>-->
+
 			<div class="socialProps">
 				<a class="link4" href="https://www.instagram.com/schuyler_meyer/" title="Instagram &#64;schuyler_meyer">
-					<!--<button class="imgSocial" title="Instagram &#64; schuyler_meyer">-->
 						<img class="socialHover" src="Instagram_3.png" alt="instagram.com/schuyler_meyer">
-					<!--</button>-->
 				</a>
-			<!--</li>-->
 			</div>
-			<!--<li>-->
+
 			<div class="socialProps">
 				<a class="link4" href="https://twitter.com/schuylermeyer24" title="Twitter &#64;schuylermeyer24">
-					<!--<button class="imgSocial" title="Twitter &#64;schuylermeyer24">-->
 						<img class="socialHover" src="Twitter_3.png" alt="twitter.com/schuylermeyer24" >
-					<!--</button>-->
 				</a>
-			<!--</li>-->
 			</div>
-			<!--<li>-->
+
 			<div class="socialProps">
 				<a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer">
 					<!--<button class="imgSocial" title="Flickr &#64; Schuyler Meyer">-->
 						<img class="socialHover" src="Flickr_3.png" alt="flickr.com/photos/schuyler_meyer">
-					<!--</button>-->
 				</a>
-			<!--</li>-->
 			</div>
-			<!--<li>-->
+
 			<div class="socialProps">
 				<a class="link4" href="https://www.linkedin.com/in/schuyler-meyer/" title="LinkedIn &#64; Schuyler Meyer">
 						<img class="socialHover" src="LinkedIn.png" alt="linkedin.com/in/schuyler-meyer">
 				</a>
-			<!--</li>-->
 			</div>
-			<!--<li>-->
+
 			<div class="socialProps">
 				<a class="link4" href="https://www.deviantart.com/akatsukirising" title="DeviantArt &#64;AkatsukiRising">
-					<!--<button class="imgSocial" title="DeviantArt &#64; AkatsukiRising">-->
 						<img class="socialHover" src="DeviantArt_3.png" alt="deviantart.com/akatsukirising" >
-					<!--</button>-->
 				</a>
-			<!--</li>-->
 			</div>
-			<!--<li>-->
+
 			<div class="socialProps">
-				<a class="link4" href="mailto:schuybreach@gmail.com?subject=Schuyler%20Meyer%20Photoshoot%20Request" title="Email &#64; schuybreach@gmail.com">
-					<!--<button class="imgSocial" title="Email &#64; schuybreach@gmail.com">-->
+				<a class="link4" href="mailto:schuybreach@gmail.com" title="Email &#64; schuybreach@gmail.com">
 						<img class="socialHover" src="Email.png" alt="Email: schuybreach@gmail.com">
-					<!--</button>-->
 				</a>
-			<!--</li>-->
 			</div>
-		<!--</ul> -->
 	</div>
-	<br>
-	<br>
-	<br>
+
 	<hr class="rounded">
 	<br>
 	<br>
@@ -142,11 +144,21 @@
 		<button class="pageButton pageButtonUN" onclick="window.location.href='index.html';" title="Go Home">
 			<div class="pageButtonTxt pageButtonUN">&lt;&nbsp;Home&nbsp;&gt;</div>
 		</button>
+		<button class="pageButton pageButtonUN" onclick="window.location.href='photo.html';" title="Go to Photography">
+			<div class="pageButtonTxt pageButtonUN">&lt;&nbsp;Photos&nbsp;&gt;</div>
+		</button>
 	</div>
 	<br>
-	<h4 style="text-align:center;color:#8b8e91;font-size:64px;font-family:verdana;margin: 0;" title="Schuyler Meyer"><img alt="Schuyler Meyer" src="SMLogo2021Color.png" width="250"></h4>
-	<p id="p01">&#169; Schuyler Meyer <b>|</b> 2019 &mdash; 2021</p>
+	<h4 title="Schuyler Meyer"><img class="glowFade" alt="Schuyler Meyer" src="SMLogo2021Color.png" width="250"></h4>
 
+	<p id="p01">&#169; Schuyler Meyer
+		<b>| 2019 &mdash;
+		<script>document.write(new Date().getFullYear())</script>
+		</b>
+	</p>
+
+	<script src="photography/slideShow.js"></script>
+	<script src="scrollToTop.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 </body>
