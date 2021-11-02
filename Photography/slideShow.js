@@ -17,6 +17,11 @@ function carousel() {
   }
 
   x[myIndex-1].style.display = "block";
-  setInterval(carousel, 6000); // Change image every 6 seconds
+  //setTimeout(carousel, 6000); // Change image every 6 seconds
+  //setInterval(carousel, 6000); // Change image every 6 seconds
 
+}
+
+function startTimer() {
+  setInterval(carousel, 6000);
 }

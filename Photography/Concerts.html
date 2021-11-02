@@ -33,7 +33,7 @@
 
 
 </head>
-<body>
+<body onload = "startTimer()">
 
 	<div id="mNav" class="menuOverlay">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close">&times;</a> <!-- &#10007; -->
@@ -210,24 +210,15 @@
 	<!-- __________________________________________________________________________ -->
 
 	<hr class="rounded">
-	<br>
-	<br>
-	<h4 style="text-align:center;color:#8b8e91;font-size:64px;font-family:verdana;margin: 0;" title="Schuyler Meyer"><img alt="Schuyler Meyer" src="../SMLogo2021Color.png" width="250"></h4>
+
+	<h4 title="Schuyler Meyer"><img alt="Schuyler Meyer" src="../SMLogo2021Color.png" width="250"></h4>
 	<!-- <br> -->
 	<!-- <hr class="roundedTwo"> -->
 	<p id="p01">&#169;&nbsp;<u>Schuyler&nbsp;Meyer&nbsp;Photography</u> <b>&nbsp;&lt;&nbsp;|&nbsp;/\\&nbsp;|&nbsp;&gt;&nbsp;</b> <u>2017&nbsp;&mdash;&nbsp;2021</u> </p>
 
 	<!-- __________________________________________________________________________ -->
 
-		<script>
-		function openNav() {
-		  document.getElementById("mNav").style.width = "100%";
-		}
-
-		function closeNav() {
-		  document.getElementById("mNav").style.width = "0%";
-		}
-		</script>
+	<script src="photoMenu.js"></script>
 
 	<!-- For slideshow arrows
 	<script>
@@ -253,29 +244,7 @@
 	</script>
 	-->
 
-	<script>
-
-	var myIndex = 0;
-	carousel();
-
-	function carousel() {
-	  var i;
-	  var x = document.getElementsByClassName("slides");
-
-		for (i = 0; i < x.length; i++) {
-	    x[i].style.display = "none";
-	  }
-
-	  myIndex++;
-	  if (myIndex > x.length) {
-			myIndex = 1
-		}
-
-		x[myIndex-1].style.display = "block";
-	  setTimeout(carousel, 6000); // Change image every 6 seconds
-
-	}
-	</script>
+	<script src="slideShow.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
