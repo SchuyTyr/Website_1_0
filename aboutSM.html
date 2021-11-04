@@ -81,16 +81,7 @@
 			<br><hr class="rounded" style="width: 50%;"><br>
 		</div>
 
-		<script>
-			function hiddenTextFunc() {
-  			var x = document.getElementById("hiddenText");
-  			if (x.style.display === "none") {
-    			x.style.display = "block";
-  			} else {
-    			x.style.display = "none";
-  			}
-			}
-		</script>
+		<script src="hideText.js"></script>
 
 		<p class="aboutCText">
 			As for my dreams and aspirations, my ultimate goal is to create immersive experiences. Whether they be happy and exciting
@@ -136,7 +127,27 @@
 	<!-- __________________________________________________________________________ -->
 
 	<div>
-		<p>&mdash;<u>Resume Stat Sheet</u>&mdash;</p>
+		<p>&mdash;<u>Resume Stat Sheet &shy;(The Full Experience)</u>&mdash;</p>
+
+		<div class="rDownloads">
+
+			<a class="rLink" href="src/resume/SchuylerMeyer_SoftEng-UnityDeveloper_Resume.pdf" download="SchuylerMeyer_SoftEngDev_Resume" target="_blank" title="Download PDF">
+				<img src="src/icons/download_arrow.svg">
+				<br>Software Developer Resume
+			</a>
+
+			<a class="rLink" href="src/resume/SchuylerMeyer-Design-Resume.pdf" download="SchuylerMeyer_Design_Resume" target="_blank" title="Download PDF">
+				<img src="src/icons/download_arrow.svg">
+				<br>Design Resume
+			</a>
+
+			<a class="rLink" href="src/resume/SchuylerMeyer-Photography_Resume.pdf" download="SchuylerMeyer_Photography_Resume" target="_blank" title="Download PDF">
+				<img src="src/icons/download_arrow.svg">
+				<br>Photography Resume
+			</a>
+
+		</div>
+
 		<div class="resumeStats">
 			<!--<div class="verticalLine">-->
 			<u class="resumeStatsHeader">Education:</u><br><br>
@@ -554,39 +565,12 @@
 		<!--</div>-->
 	</button></div>
 	<br>
-	<h4 style="text-align:center;color:#8b8e91;font-size:64px;font-family:verdana;margin: 0;" title="Schuyler Meyer"><img alt="Schuyler Meyer" src="SMLogo2021Color.png" width="250"></h4><br>
+	<h4 title="Schuyler Meyer"><img alt="Schuyler Meyer" src="SMLogo2021Color.png" width="250"></h4><br>
 	<p id="p01">&#169; Schuyler Meyer <b>|</b> 2021</p>
 
 	<!-- __________________________________________________________________________ -->
 
-	<script>
-		 //Get the button
-		 var mybutton = document.getElementById("myBtn");
-
-		 var topBtn = false;
-
-		 // When the user scrolls down 225px from the top of the document, show the button
-		 window.onscroll = function() {scrollFunction()};
-
-		 function scrollFunction() {
-			 if (document.body.scrollTop > 225 || document.documentElement.scrollTop > 225) {
-				 if (!topBtn){
-					mybutton.style.display = "block";
-				 }
-			 } else {
-				 if (!topBtn){
-					mybutton.style.display = "none";
-				 }
-			 }
-		 }
-
-		 // When the user clicks on the button, scroll to the top of the document
-		 function topFunction() {
-			 /*document.body.scrollTop = 0;
-			 document.documentElement.scrollTop = 0;*/
-			 window.scrollTo({top: 0, behavior: 'smooth'});
-		 }
-	</script>
+	<script src="scrollToTop.js"></script>
 
 <!-- __________________________________________________________________________ -->
 

@@ -94,6 +94,44 @@ img {
 	border-radius: 20px;
 }
 
+.rDownloads {
+	display:         flex;
+  flex-wrap:       wrap;
+  justify-content: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rLink {
+	background-color: transparent;
+	text-decoration: none;
+	display: inline;
+	text-align: center;
+	padding: 15px;
+	/*padding-left: 12px;
+	padding-right: 12px;*/
+	font-family: garamond;
+	color: #a2a6a9;
+	font-size: 20px;
+	cursor: pointer;
+	width: 20%;
+}
+
+.rLink:hover, .rLink:active {
+	color: #0099ff;
+	text-decoration: underline;
+}
+
+.rLink img {
+	filter: invert(0.5);
+	width: 40px;
+}
+
+.rLink:hover img {
+	filter: invert(1);
+}
+
 /*.imgLogoStyle:hover {
 	color: #436ff3;
 	border: 10px #436ff3;
@@ -276,6 +314,12 @@ a.linkG:hover {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+	.rDownloads {
+		margin-bottom: 16px;
+	}
+	.rLink {
+		width: 25%;
+	}
 }
 @media screen and (max-width: 700px) {
 	.imgLogo {
@@ -320,6 +364,12 @@ a.linkG:hover {
 	.pageButton {
 		width: auto;
 		left: 50vw;/*calc(50% - width);*/
+	}
+	.rDownloads {
+		margin-bottom: 16px;
+	}
+	.rLink {
+		width: 25%;
 	}
 }
 @media screen and (min-width: 1201px) {
