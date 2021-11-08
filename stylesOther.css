@@ -149,23 +149,23 @@ a.link5:hover {
 
 	cursor: pointer;
 	/*height: 100%;*/
-	border: solid 2px #436ff3;
+	border: solid 2px #aeb4fa;
   border-radius: 8px;
   background: rgba(255, 255, 255,0);
-	box-shadow: 0px 0px 6px 2px #436ff3;
+	box-shadow: 0px 0px 6px 2px #aeb4fa;
   transition: .3s all ease-in;
 }
 
 .button:hover, .button:focus {
 	/*background-image: url('homeButton_3-invert.png');*/
 	outline: none;
-	color: #436ff3;
+	color: #7e29ff;
 	transition: color;
 	background-color: rgba(194, 198, 204,0.9);
   background-repeat:no-repeat;
-	border:solid 2px #c2c6cc;
+	border:solid 2px #aeb4fa;
   border-radius: 21px;
-  box-shadow: 0px 0px 6px 2px #c2c6cc;
+  box-shadow: 0px 0px 6px 2px #aeb4fa;
 	transition: .15s all ease-in;
 }
 .buttonAbout {
@@ -335,14 +335,23 @@ td {
 	.imgLogo {
 		width: 25%;
 	}
+	abbr {
+		font-size: 0;
+		text-decoration: none;
+	}
+	abbr::before {
+		content: attr(title) " ";
+		font-size: 21px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
 }
 
 @media screen and (max-width: 800px) {
 	.lg-view {
-		display:none;
-	}
-	.sm-view{
-		 display:inline;
+		display: none;
 	}
 }
 
@@ -353,6 +362,12 @@ td {
 	}
 	h4 img {
 		width: 40%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.sm-view{
+		 display: block;
 	}
 }
 
