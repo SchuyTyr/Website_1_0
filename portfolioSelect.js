@@ -113,7 +113,7 @@ for (var i = 0; i < images.length; i++) {
 		// Hockey Cards
 		else if(this.getAttribute('id') == 'myImg9'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[11];
+			vaText.innerHTML = descr[12];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/KWw_-XWKMek"></iframe>';
 		}
 		// Swarm
@@ -134,22 +134,28 @@ for (var i = 0; i < images.length; i++) {
 			vaText.innerHTML = descr[11];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/rictK6On9B4"></iframe>';
 		}*/
+		// Artstation
+		else if(this.getAttribute('id') == 'myImg12'){
+			modalImg.src = this.src;
+			vaText.innerHTML = descr[13];
+			vid.innerHTML = '';
+		}
 		// CGK Promo
 		else if(this.getAttribute('id') == 'myImg13'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[12];
+			vaText.innerHTML = descr[10];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/teKWmAu9UxU"></iframe>';
 		}
-		// Infinite Space Tunnel
-		else if(this.getAttribute('id') == 'myImg14'){
+		// Infinite Space Tunnel (no longer)
+		/*else if(this.getAttribute('id') == 'myImg14'){
 			modalImg.src = '';
 			vaText.innerHTML = descr[10];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/jByZKsF_9uc"></iframe>';
-		}
+		}*/
 		// Board Game
 		else if(this.getAttribute('id') == 'myImg15'){
 			modalImg.src = this.src;
-			vaText.innerHTML = descr[13];
+			vaText.innerHTML = descr[14];
 			vid.innerHTML = '';
 		}
 		// Zaim (no longer)
@@ -159,7 +165,7 @@ for (var i = 0; i < images.length; i++) {
 			vaText.innerHTML = descr[15];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/lbHEsqueyiY"></iframe>';*/
 			modalImg.src = this.src;
-			vaText.innerHTML = descr[14];
+			vaText.innerHTML = descr[11];
 			vid.innerHTML = '';
 		}
 		else {
