@@ -364,7 +364,7 @@ polygon {
 	/*margin-top: 16px;*/
 	margin-bottom: 2px;
 	font-size: 28px;
-	/*font-family: 'Orbitron', sans-serif;*/
+	font-family: 'Orbitron', sans-serif;
 	font-family: nasalization, sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -377,7 +377,7 @@ polygon {
 #tMute {
 	/*margin-top: 12px;*/
 	font-size: 32px;
-	/*font-family: 'Orbitron', sans-serif;*/
+	font-family: 'Orbitron', sans-serif;
 	font-family: nasalization, sans-serif;
 	font-style: normal;
 	font-weight: 400;
