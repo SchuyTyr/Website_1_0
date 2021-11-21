@@ -204,8 +204,14 @@ polygon {
   }
 }
 @keyframes borderReverse {
-  to {
-    stroke-dashoffset: -50;
+	0% {
+    stroke-dashoffset: 0;
+  }
+	50% {
+    stroke-dashoffset: 50;
+  }
+	100% {
+    stroke-dashoffset: 0;
   }
 }
 
@@ -219,8 +225,6 @@ polygon {
 
 .gradient-border {
   --borderWidth: 3px;
-  /*background: #1D1F20;*/
-  /*position: relative;*/
   border-radius: var(--borderWidth);
 }
 .gradient-border:after {
@@ -259,22 +263,6 @@ polygon {
 	}
 }
 
-/*
-.btn {
-	display: inline-block;
-	padding: 10px 30px;
-	background: var(--primary-color);
-	color: #fff;
-	border-radius: 5px;
-	border: solid #fff 1px;
-	margin-top: 25px;
-	opacity: 0.7;
-}
-
-.btn:hover {
-	transform: scale(0.98);
-}
-*/
 .landPageBtn {
 	display: inline-block;
 	font-size: 60px;
