@@ -193,7 +193,7 @@ polygon {
 	animation: border 10s linear infinite;
 }
 #line2 {
-	animation: borderReverse 10s linear infinite;
+	animation: borderReverse 10s linear infinite reverse;
 }
 @keyframes border {
   0% {
