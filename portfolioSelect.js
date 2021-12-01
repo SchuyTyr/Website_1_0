@@ -141,12 +141,12 @@ for (var i = 0; i < images.length; i++) {
 			vid.innerHTML = '';
 		}
 		// CGK Promo
-		else if(this.getAttribute('id') == 'myImg13'){
+		else if(this.getAttribute('id') == 'myImg16'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[10];
+			vaText.innerHTML = descr[11];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/teKWmAu9UxU"></iframe>';
 		}
-		// Infinite Space Tunnel (no longer)
+		// Infinite Space Tunnel (No longer)
 		/*else if(this.getAttribute('id') == 'myImg14'){
 			modalImg.src = '';
 			vaText.innerHTML = descr[10];
@@ -158,15 +158,19 @@ for (var i = 0; i < images.length; i++) {
 			vaText.innerHTML = descr[14];
 			vid.innerHTML = '';
 		}
-		// Zaim (no longer)
-		// QWERTY
-		else if(this.getAttribute('id') == 'myImg16'){
+		// Zaim (No longer)
+		// QWERTY (No Longer)
+		// DA300 Animation
+		else if(this.getAttribute('id') == 'myImg13'){
 			/*modalImg.src = '';
 			vaText.innerHTML = descr[15];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/lbHEsqueyiY"></iframe>';*/
-			modalImg.src = this.src;
-			vaText.innerHTML = descr[11];
-			vid.innerHTML = '';
+			/*modalImg.src = this.src;
+			vaText.innerHTML = descr[10];
+			vid.innerHTML = '';*/
+			modalImg.src = '';
+			vaText.innerHTML = descr[10];
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/mHvkkD9hmiI"></iframe>';
 		}
 		else {
 			modalImg.src = '';
