@@ -2,7 +2,6 @@ body {
 	background-color: #111821;
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
-	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	width: auto;
@@ -249,6 +248,11 @@ td:hover {
 tr:hover {
 	color: #181818;
 	background-color: #aeb4fa;
+}
+
+tr:hover.noHover {
+	color: inherit;
+	background-color: inherit;
 }
 
 /*td:hover::after,
