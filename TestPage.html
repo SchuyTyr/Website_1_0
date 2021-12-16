@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Schuyler Meyer Photography -->
+<html lang="en-US">
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMYCWX2SRC"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-YMYCWX2SRC');
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
+	<script src="../footerMain.js"></script>
+
+	<script src="jquery.js"></script>
+    <script>
+    $(function(){
+      $("#DivContent").load("../footerMain.html");
+    });
+    </script>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Schuyler Meyer &mdash; Photography, Photo">
+	<meta name="keywords" content="Photography,Photo,Schuyler Meyer Photography,Schuyler Meyer Photo,Baseball">
+	<meta name="author" content="Schuyler Meyer">
+	<title>Test Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index,follow">
+	<meta Access-Control-Allow-Origin="https://www.schuylermeyer.com">
+	<link href="stylesPhoto.css" rel="stylesheet">
+	<link href="smlogo2021.ico" rel="shortcut icon">
+	<link href="https://fonts.googleapis.com/css?family=Merienda|Orbitron|Rye&display=swap" rel="stylesheet">
+	<script src="footer-main.js" type="text/javascript" defer></script>
+
+
+</head>
+<body>
+
+		<div id="mNav" class="menuOverlay">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close">&times;</a> <!-- &#10007; -->
+		  <div class="menuOverlay-content">
+
+				<div class="navbar">
+				<div class="subNav">
+					<button class="subNavBtn">Sports</button>
+					<div class="subNav-content">
+						<a href="Baseball.html">Baseball</a>
+						<a href="Basketball.html">Basketball</a>
+						<a href="Equestrian.html">Equestrian</a>
+						<a href="Football.html">Football</a>
+						<a href="Golf.html">Golf</a>
+						<a href="MHockey.html">Hockey, Men's</a>
+						<a href="WHockey.html">Hockey, Women's</a>
+						<a href="Lacrosse.html">Lacrosse</a>
+						<a href="MountainBiking.html">Mountain Biking</a>
+						<a href="Soccer.html">Soccer</a>
+						<a href="Softball.html">Softball</a>
+						<a href="SwimDive.html">Swimming and Diving</a>
+						<a href="XCountry.html">Cross Country</a>
+					</div>
+				</div>
+
+				<div class="subNav">
+					<button class="subNavBtn">Nature</button>
+					<div class="subNav-content">
+						<a href="Animals.html">Animals</a>
+						<a href="Landscape.html">Landscape</a>
+						<a href="Macro.html">Macro</a>
+					</div>
+				</div>
+
+				<div class="subNav">
+					<button class="subNavBtn">People</button>
+					<div class="subNav-content">
+						<a href="Concerts.html">Concerts</a>
+						<a href="Cosplay.html">Cosplay</a>
+						<a href="Events.html">Events</a>
+						<a href="Portraits.html">Portraits</a>
+					</div>
+				</div>
+
+				<div class="subNav">
+					<button class="subNavBtn">Still Life</button>
+					<div class="subNav-content">
+						<a href="Artwork.html">Artwork</a>
+						<a href="Miniatures.html">Miniatures</a>
+						<a href="StillLife.html">Still Life</a>
+					</div>
+				</div>
+			</div>
+
+		  </div>
+		</div>
+
+
+	<!-- __________________________________________________________________________ -->
+
+
+	<h1 style="color:#8b8e91;" title="Schuyler Meyer"><a href="https://www.schuylermeyer.com"><img alt="Schuyler Meyer" class="imgLogo" src="Photography/smPhotoLogo.png"></a></h1>
+	<!-- <p class="topDesc"><u>&#8280; Photography &#8280;</u></p> -->
+	<hr class="rounded">
+
+	<div class="buttonAbout">
+		<button class="pageButton" onclick="window.location.href='index.html';" title="Home">
+			<div class="pageButtonTxt">&nbsp;Home&nbsp;</div>
+		</button>
+		<button class="pageButton" onclick="openNav()" title="Click to Open the Photo Menu">
+			<div class="pageButtonTxt">&nbsp;<span style="font-size: 20px;">&#9776;</span>&nbsp;Photos&nbsp;</div>
+		</button>
+		<button class="pageButton hideButton" onclick="window.location.href='photoshoot.html';" title="Book the Schuy">
+			<div class="pageButtonTxt">&nbsp;Book a Photoshoot&nbsp;</div>
+		</button>
+		<button class="pageButton hideButton" onclick="window.location.href='aboutSM.html';" title="About the Schuy">
+			<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
+		</button>
+		<button class="pageButton hideButton" onclick="window.open('https://schuybox.wordpress.com/','_blank')" title="To the SchuyBox!">
+			<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
+		</button>
+		<!--<button class="pageButton" title="Coming Soon" style="cursor: wait;">
+			<div class="pageButtonTxt">&lt;&nbsp;New Tabs Incoming&nbsp;&gt;</div>
+		</button>-->
+	</div>
+
+	<hr class="rounded">
+
+
+	<!-- __________________________________________________________________________ -->
+
+	<div class="mainContainer">
+		<div class="container">
+			<canvas id="myCanvas" width="500" height="500" style=""></canvas>
+		</div>
+	</div>
+
+
+	<!-- __________________________________________________________________________ -->
+
+
+<!--
+	<div class="mainContainer">
+		<div class="container">
+			<div class="arrowsL"> &lt; </div>
+			<img alt="Photography" class="img2" src="../hockey3.jpg">
+			<div class="arrowsR"> &gt; </div>
+		</div>
+	</div>
+-->
+
+<!-- __________________________________________________________________________ -->
+
+
+<template id="footer">
+</template>
+
+<!-- __________________________________________________________________________ -->
+
+
+
+	<!-- __________________________________________________________________________ -->
+
+	<script src="Photography/photoMenu.js"></script>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</body>
+</html>
