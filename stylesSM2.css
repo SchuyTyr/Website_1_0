@@ -406,11 +406,148 @@ polygon {
 }
 
 /*-----------------------------------------------------------------*/
+/*---------------------------About Page----------------------------*/
+
+.imgLogoStyle {
+	width: 42%;
+	border-radius: 20px;
+}
+.aboutC {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.greeting {
+	text-align: center;
+	font-size: 28px;
+	color: #abafb3;
+	line-height: 1.4;
+	font-family: 'Merienda', cursive;
+}
+.aboutCText {
+	text-align: justify;
+	color: #abafb3;
+	font-size: 20px;
+	line-height: 1.4;
+	font-family: 'Merienda', cursive;
+}
+.resumeStats {
+	font-family: 'Times New Roman';
+	color: #a2a6a9;
+	font-size: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.resumeStatsHeader {
+	font-size: 28px;
+	color: #64696b;
+	font-weight: bold;
+}
+.resumeStatsList {
+	line-height: 0.75;
+}
+.rDownloads {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 16px;
+}
+
+.rLink {
+	background-color: transparent;
+	text-decoration: none;
+	display: inline;
+	text-align: center;
+	padding: 15px;
+	font-family: garamond;
+	color: #a2a6a9;
+	font-size: 20px;
+	cursor: pointer;
+	width: 20%;
+}
+
+.rLink:hover, .rLink:active {
+	color: #0099ff;
+	text-decoration: underline;
+}
+
+.rLink img {
+	filter: invert(0.5);
+	width: 40px;
+}
+
+.rLink:hover img {
+	filter: invert(1);
+}
+a.link3 {
+	color: #abafb3;
+	background-color: transparent;
+	text-decoration: underline;
+	text-align: inherit;
+	padding: 0;
+	margin: 0;
+}
+a.link3:hover {
+	color: #0099ff;
+	background-color: transparent;
+	text-align: inherit;
+	padding: 0;
+	margin: 0;
+}
+a.linkG {
+	color: #abafb3;
+	background-color: transparent;
+	text-decoration: none;
+	text-align: inherit;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+a.linkG:visited {
+	color: #889cb3;
+	background-color: transparent;
+	text-decoration: none;
+	text-align: inherit;
+	padding: 0;
+	margin: 0;
+}
+a.linkG:hover {
+	color: #0099ff;
+	background-color: transparent;
+	text-decoration: none;
+	text-align: inherit;
+	padding: 0;
+	margin: 0;
+}
+.text {
+	color: #8b8e91;
+	font-size: 24px;
+	font-family: garamond;
+	text-align: center;
+	opacity: 1;
+	position: absolute;
+	padding: 5px;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.pageButton {
+	transform: skew(0);
+}
+
+/*-------------------------End About Page--------------------------*/
+/*-----------------------------------------------------------------*/
 
 @media screen and (min-width: 2000px) {
 	main {
 		margin-top: 80px;
 		margin-bottom: 80px;
+	}
+	.imgLogoStyle {
+		width: 45%;
 	}
 }
 
@@ -418,6 +555,9 @@ polygon {
 	main {
 		margin-top: 40px;
 		margin-bottom: 40px;
+	}
+	.imgLogoStyle {
+		width: 60%;
 	}
 }
 
@@ -428,6 +568,36 @@ polygon {
 	.socialBar {
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+	.imgLogoStyle {
+		width: 75%;
+	}
+	.text {
+		padding: 5px;
+	}
+	.aboutC {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		/*font-size: 32px;*/
+	}
+	.resumeStatsHeader {
+		font-size: 28px;
+	}
+	.resumeStatsList {
+		line-height: 1.25;
+	}
+	.pageButton {
+		width: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.rDownloads {
+		margin-bottom: 16px;
+	}
+	.rLink {
+		width: 25%;
 	}
 }
 
@@ -454,6 +624,39 @@ polygon {
 		/*text-shadow: 1px 0 4px #ffffff;*/
 		/*text-shadow: 1px 0 4px #000000;*/
 		/*filter: invert();*/
+	}
+	.imgLogoStyle {
+		width: 100%;
+	}
+	.greeting {
+		font-size: 20px;
+	}
+	.aboutC {
+		/*font-size: 32px;*/
+		/*text-align: justify;*/
+		width: 94%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	.aboutCText {
+		text-align: left;
+	}
+	.resumeStats {
+		line-height: 1.25;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.resumeStatsHeader {
+		font-size: 28px;
+	}
+	.resumeStatsList {
+		line-height: 1.25;
+	}
+	.rDownloads {
+		margin-bottom: 16px;
+	}
+	.rLink {
+		width: 25%;
 	}
 }
 

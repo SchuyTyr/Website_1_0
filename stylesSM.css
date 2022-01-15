@@ -8,13 +8,11 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	/*background-attachment: scroll;*/
 	width: auto;
 	height: 100%;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-image: url('Hex_7.jpg');
-	/*animation: fadeinoutSmall 1s Ease-in-out infinite;*/
 }
 
 h1 {
