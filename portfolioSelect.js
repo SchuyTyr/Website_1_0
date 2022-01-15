@@ -73,7 +73,7 @@ for (var i = 0; i < images.length; i++) {
 		// SOB
 		else if(this.getAttribute('id') == 'myImg3'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[7];
+			vaText.innerHTML = descr[3];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/TyFg2lPMnGQ?rel=0"></iframe>';
 		}
 		// VR Hockey
@@ -97,7 +97,7 @@ for (var i = 0; i < images.length; i++) {
 		// The Spooky and Mysterious Box
 		else if(this.getAttribute('id') == 'myImg7'){
 			modalImg.src = this.src;
-			vaText.innerHTML = descr[6];
+			vaText.innerHTML = descr[7];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/JpfNoArEEHw"></iframe>';
 		}
 		// CUGI Promo (no longer)
@@ -122,12 +122,18 @@ for (var i = 0; i < images.length; i++) {
 			vaText.innerHTML = descr[9];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/tDnwA2Lajkw"></iframe>';
 		}
-		// Monuments
+		// Untitled Animation Tests
 		else if(this.getAttribute('id') == 'myImg11'){
+			modalImg.src = '';
+			vaText.innerHTML = descr[6];
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/w2kJaepBS7k"></iframe>';
+		}
+		// Monuments
+		/*else if(this.getAttribute('id') == 'myImg11'){
 			modalImg.src = '';
 			vaText.innerHTML = descr[3];
 			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://player.vimeo.com/video/273553184"></iframe>';
-		}
+		}*/
 		// The Future of Sports Photography
 		/*else if(this.getAttribute('id') == 'myImg12'){
 			modalImg.src = '';
