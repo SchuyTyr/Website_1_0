@@ -534,9 +534,6 @@ a.linkG:hover {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-.pageButton {
-	transform: skew(0);
-}
 
 /*-------------------------End About Page--------------------------*/
 /*-----------------------------------------------------------------*/

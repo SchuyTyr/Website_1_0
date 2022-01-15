@@ -361,7 +361,7 @@ a.link4 {
 	letter-spacing: 0.1em;
 }
 
-.text {
+.textCaption {
 	/*color: #d3dce6;*/
 	font-size: 24px;
 	/*font-family: garamond;*/
@@ -505,6 +505,33 @@ a.link4 {
 	/*border-radius: 12% / 12%;*/
 	border-radius: 4%;
 
+	/*transform: skew(-30deg);*/
+	/*transform-origin: top; *//* may fix or worsen centering issues, check later */
+
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	/*margin: 8px;*/
+}
+.pageButtonSkew {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	cursor: pointer;
+  transition: .3s all ease-in;
+	color: rgba(99, 138, 255, 0.9); /*#638aff;*/
+	/*color: #99B3FF;*/
+ 	font-size: 22px;
+ 	/*font-weight: bold;*/
+	padding: 10px;
+	padding-left: 14px;
+	padding-right: 14px;
+
+ 	text-decoration: none;
+ 	border: solid 2px rgba(67,111,243,30%); /* #436ff3 */
+ 	background-color: rgba(67,111,243,15%);
+	/*border-radius: 12% / 12%;*/
+	border-radius: 4%;
+
 	transform: skew(-30deg);
 	/*transform-origin: top; *//* may fix or worsen centering issues, check later */
 
@@ -514,6 +541,7 @@ a.link4 {
 	/*margin: 8px;*/
 }
 
+/* for blank buttons */
 .pageButtonFalse {
 	display: inline;
 	text-align: center;
@@ -549,7 +577,7 @@ a.link4 {
 	transform: skew(0deg);
 }
 
-.pageButton:hover {
+.pageButton:hover, .pageButtonSkew:hover {
 	/*color: #142149; *//*#202020;*/
 	color: rgba(20, 33, 73);
 	cursor: pointer;
@@ -806,7 +834,7 @@ hr.roundedTwo {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.text {
+	.textCaption {
 		padding: 5px;
 	}
 	.imgLogo {
@@ -819,7 +847,7 @@ hr.roundedTwo {
 		width: 75%;
 		overflow: inherit;
 	}
-	.pageButton {
+	.pageButton, .pageButtonSkew {
 		width: auto;
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -864,7 +892,7 @@ hr.roundedTwo {
 		margin: 0 auto;
 		padding: 5px;
 	}
-	.pageButton {
+	.pageButton, .pageButtonSkew {
 		transform: skew(0);
 	}
 	.pageButtonTxt {
@@ -931,7 +959,7 @@ hr.roundedTwo {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.pageButton {
+	.pageButton, .pageButtonSkew {
 		width: auto;
 		left: 50vw;/*calc(50% - width);*/
 	}
