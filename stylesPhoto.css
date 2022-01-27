@@ -371,13 +371,23 @@ video {
 
 .slides {
 	display: none;
-	animation: fading 6s cubic-bezier(.88,-0.49,.22,1.54) infinite;
+	animation: fading cubic-bezier(.88,-0.49,.22,1.54) infinite;
 	/*cubic-bezier(.68,-0.55,.27,1.55) -- for 4 seconds */
+}
+.slidesText {
+	/*display: none;*/
+	/*animation: fading 6s cubic-bezier(.88,-0.49,.22,1.54) infinite;*/
+	/*cubic-bezier(.68,-0.55,.27,1.55) -- for 4 seconds */
+	text-align:center;
+	color: #8b8e91;
+	font-size: 32px;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .slidesEvent {
 	display: none;
-	animation: fading 6s cubic-bezier(.88,-0.49,.22,1.54) infinite;
+	animation: fading cubic-bezier(.88,-0.49,.22,1.54) infinite;
+	/*animation: fading 6s cubic-bezier(.88,-0.49,.22,1.54) infinite;*/
 	/*cubic-bezier(.68,-0.55,.27,1.55) -- for 4 seconds */
 }
 
