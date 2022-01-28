@@ -24,7 +24,7 @@ function carousel() {
     slideCnt = 1;
   }
 
-  sc.innerHTML = "<br>&mdash;&nbsp;"+ slideCnt +"&nbsp;/&nbsp;"+ slideTotal +"&nbsp;&mdash;";
+  sc.innerHTML = "&mdash;&nbsp;"+ slideCnt +"&nbsp;/&nbsp;"+ slideTotal +"&nbsp;&mdash;";
 
   x[myIndex-1].style.display = "block";
   //setTimeout(carousel, 6000); // Change image every 6 seconds

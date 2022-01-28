@@ -99,13 +99,13 @@
 		<button class="pageButton" onclick="openNav()" title="Click to Open the Photo Menu">
 			<div class="pageButtonTxt">&nbsp;<span style="font-size: 20px;">&#9776;</span>&nbsp;Photos&nbsp;</div>
 		</button>
-		<button class="pageButton" onclick="window.location.href='photoshoot.html';" title="Book the Schuy">
-			<div class="pageButtonTxt">&nbsp;Book a Photoshoot&nbsp;</div>
-		</button>
-		<button class="pageButton" onclick="window.location.href='aboutSM.html';" title="About the Schuy">
+		<button class="pageButton hideButton" onclick="window.location.href='aboutSM.html';" title="About the Schuy">
 			<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
 		</button>
-		<button class="pageButton" onclick="window.open('https://schuybox.wordpress.com/','_blank')" title="To the SchuyBox!">
+		<button class="pageButton hideButton" style="cursor:wait;" title="Coming Soon!">
+			<div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
+		</button>
+		<button class="pageButton hideButton" onclick="window.open('https://schuybox.wordpress.com/','_blank')" title="To the SchuyBox!">
 			<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
 		</button>
 		<!--<button class="pageButton" title="Coming Soon" style="cursor: wait;">
@@ -178,7 +178,13 @@
 
 <!-- __________________________________________________________________________ -->
 
-	<br>
+	<hr class="rounded">
+
+	<div class="buttonAbout">
+		<button class="pageButton" onclick="window.location.href='photoshoot.html';" title="Book a Photoshoot">
+			<div class="pageButtonTxt">&nbsp;Book a Photoshoot&nbsp;</div>
+		</button>
+	</div>
 
 	<hr class="rounded">
 

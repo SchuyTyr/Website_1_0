@@ -40,6 +40,16 @@ nav {
 	padding-bottom: 10px;
 }
 
+.buttonNav {
+	color: #8b8e91;
+	width: 100%;
+	font-size:12px;
+	display: block;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 .socialBar {
 	display: inline-flex;
 	padding-top: 15px;
@@ -604,6 +614,11 @@ a.linkG:hover {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.buttonNav {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.video-container video {
 		height: 200px;
 	}
@@ -659,6 +674,10 @@ a.linkG:hover {
 
 @media screen and (max-width: 600px) {
 	nav {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.buttonNav {
 		padding-top: 0px;
 		padding-bottom: 0px;
 	}

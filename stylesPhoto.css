@@ -382,6 +382,8 @@ video {
 	color: #8b8e91;
 	font-size: 32px;
 	font-family: 'Orbitron', sans-serif;
+	padding-top: 42px;
+	padding-bottom: 12px;
 }
 
 .slidesEvent {
@@ -672,7 +674,6 @@ hr.roundedTwo {
 	/*animation: fadeinoutSmall 5s Ease-in-out infinite;*/
 	/*animation: flicker var(--animation-time) Ease-in-out alternate infinite;*/
 }
-
 .glowFade {
 	/*border-top: 1px solid #bbbbbb;*/
 	border-radius: 5px;
@@ -881,11 +882,19 @@ hr.roundedTwo {
 	.eventPhotoContainer img {
 		width: 90%;
 	}
+	.slidesText {
+		font-size: 24px;
+		padding-top: 24px;
+		padding-bottom: 12px;
+	}
 	.buttonAbout {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
+}
+
+@media screen and (max-width: 900px) {
 	.pageButton {
 		margin-top: 10px;
 		margin-bottom: 10px;
@@ -894,11 +903,8 @@ hr.roundedTwo {
 	.pageButtonTxt {
 		transform: skew(0);
 	}
-}
-
-@media screen and (max-width: 900px) {
 	.hideButton {
-			display: none;
+		display: none;
 	}
 	.titles {
 		font-size: 28px;
@@ -909,6 +915,9 @@ hr.roundedTwo {
 	.mainContainer {
 		margin-top: 0px;
 		margin-bottom: 0px;
+	}
+	.slidesText {
+		font-size: 20px;
 	}
 	#myBtn {
 		background-color: rgba(56,56,56,90%);
@@ -928,7 +937,7 @@ hr.roundedTwo {
 		padding-bottom: 0;
 	}
 	.socialProps img {
-		width: 80%;
+		width: 50%;
 	}
 	h4 {
 		margin-top: 0px;
@@ -969,6 +978,10 @@ hr.roundedTwo {
 	.socialBar {
 		padding-top: 5px;
 		padding-bottom: 5px;
+	}
+	.slidesText {
+		padding-top: 12px;
+		padding-bottom: 12px;
 	}
 	/*.menuOverlay a {
 		font-size: 20px
