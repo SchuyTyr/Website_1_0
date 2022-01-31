@@ -572,6 +572,10 @@ a.link4 {
 	/*margin: 8px;*/
 }
 
+.pageButtonUN {
+	transform: skew(0deg);
+}
+
 .pageButtonTxt {
 	transform: skew(30deg);
 }
@@ -650,14 +654,16 @@ hr {
 hr.rounded {
 	border-top: 1px solid #bbbbbb;
 	border-radius: 5px;
-	/*-webkit-filter: drop-shadow(0 0 2px #ffffff)
+	box-shadow: 0 0 4px #ffffff,
+							0 0 10px #99bbff;
+	/*-webkit-filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
-	-moz-filter: drop-shadow(0 0 2px #ffffff)
+	-moz-filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
-	-ms-filter: drop-shadow(0 0 2px #ffffff)
+	-ms-filter: drop-shadow(0 0 1px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+	filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);*/
-	filter: drop-shadow(0 0 4px #ffffff);
-	/*animation: fadeinoutSmall 5s Ease-in-out infinite;*/
 }
 
 hr.roundedTwo {
@@ -962,7 +968,6 @@ hr.roundedTwo {
 	}
 	hr.rounded {
 		border-top: 2px solid #bbb;
-		border-radius: 5px;
 	}
 	hr.roundedTwo {
 		width: 90%;

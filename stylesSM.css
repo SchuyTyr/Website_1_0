@@ -113,6 +113,7 @@ img {
 	/* [1.1] Set it as per your need */
 	overflow: hidden;
 	/* [1.2] Hide the overflowing of child elements */
+	transition: transform 0.4s cubic-bezier(.31,.01,.51,.99);
 }
 /* [2] Transition property for smooth transformation of images */
 
@@ -125,6 +126,9 @@ img {
 	transform: scale(1.2);
 	border-radius: 8px;
 }
+.img-hover-zoom:hover{
+	transform: translate(0,-10px);
+}
 
 .glowBorder:hover {
 	color: #436ff3;
@@ -134,6 +138,7 @@ img {
 							0 0 1px 4px #000000, /*1e1f20*/
 							0 0 25px 15px #436ff3;
 	animation: colorChange 2s Ease-in-out infinite;
+	/*transform: translate(0,-10px);*/
 }
 
 .imgLogo {
@@ -605,15 +610,16 @@ hr {
 hr.rounded {
 	border-top: 1px solid #bbbbbb;
 	border-radius: 5px;
-	/*-webkit-filter: drop-shadow(0 0 2px #ffffff)
+	box-shadow: 0 0 4px #ffffff,
+							0 0 10px #99bbff;
+	/*-webkit-filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
-	-moz-filter: drop-shadow(0 0 2px #ffffff)
+	-moz-filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
-	-ms-filter: drop-shadow(0 0 2px #ffffff)
-					drop-shadow(0 0 4px #99bbff);*/
+	-ms-filter: drop-shadow(0 0 1px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
 	filter: drop-shadow(0 0 1px #ffffff)
-					drop-shadow(0 0 4px #99bbff);
-	/*animation: fadeinoutSmall 5s Ease-in-out infinite;*/
+					drop-shadow(0 0 4px #99bbff);*/
 }
 
 hr.roundedTwo {
@@ -947,7 +953,6 @@ hr.roundedTwo {
 	}
 	hr.rounded {
 		border-top: 2px solid #bbb;
-		border-radius: 5px;
 	}
 	hr.roundedTwo {
 		width: 90%;

@@ -106,27 +106,20 @@ hr {
 	width: 90%;
 }
 hr.rounded {
-	/*text-align: center;*/
-	border-top: 2px solid #bbbbbb;
+	border: 1px solid #bbbbbb;
+	border-top: 1px solid #bbbbbb;
 	border-radius: 5px;
-	-webkit-filter: drop-shadow(0 0 4px #ffffff)
-					drop-shadow(0 0 10px #ffffff);
-	-moz-filter: drop-shadow(0 0 4px #ffffff)
-					drop-shadow(0 0 10px #ffffff);
-	-ms-filter: drop-shadow(0 0 4px #ffffff)
-					drop-shadow(0 0 10px #ffffff);
-	filter: drop-shadow(0 0 4px #ffffff)
-					drop-shadow(0 0 10px #ffffff);
+	box-shadow: 0 0 4px #ffffff,
+							0 0 10px #99bbff;
+	/*-webkit-filter: drop-shadow(0 0 1px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+	-moz-filter: drop-shadow(0 0 1px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+	-ms-filter: drop-shadow(0 0 1px #ffffff)
+					drop-shadow(0 0 4px #99bbff);
+	filter: drop-shadow(0 0 1px #ffffff)
+					drop-shadow(0 0 4px #99bbff);*/
 }
-/* to put text in the center of the hr */
-/*hr:after {
-    background: rgba(0,0,0,0);
-    content: '⥎';  or '⇕';
-		font-size: 60px;
-    padding: 0 4px;
-    position: relative;
-    top: 20px;
-}*/
 
 .glow {
 	font-size: 64px;
@@ -845,7 +838,6 @@ a.link4 {
 	}
 	hr.rounded {
 		border-top: 2px solid #bbb;
-		border-radius: 5px;
 	}
 	.topDesc {
 		text-align: center;
