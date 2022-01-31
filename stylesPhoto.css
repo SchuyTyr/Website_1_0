@@ -654,8 +654,9 @@ hr {
 hr.rounded {
 	border-top: 1px solid #bbbbbb;
 	border-radius: 5px;
-	box-shadow: 0 0 4px #ffffff,
-							0 0 10px #99bbff;
+	box-shadow: 0 0 1px #ffffff,
+							0 0 10px #ffffff,
+							0 0 15px #99bbff;
 	/*-webkit-filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
 	-moz-filter: drop-shadow(0 0 1px #ffffff)
