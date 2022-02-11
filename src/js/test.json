@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author": "Kirito the Swordsman",
+      "authorId": 1,
+      "likes": 960,
+      "popularity": 0.16,
+      "reads": 24698,
+      "tags": [ "tech", "health" ]
+    },
+    {
+      "id": 2,
+      "author": "Asuna Lightningflash",
+      "authorId": 2,
+      "likes": 2400,
+      "popularity": 0.88,
+      "reads": 84952,
+      "tags": [ "nature", "crafting" ]
+    },
+    {
+      "id": 3,
+      "author": "Agil Shopowner",
+      "authorId": 5,
+      "likes": 84,
+      "popularity": 0.12,
+      "reads": 7560,
+      "tags": [ "market", "food" ]
+    },
+    {
+      "id": 4,
+      "author": "Lizbeth Blacksmith",
+      "authorId": 3,
+      "likes": 1245,
+      "popularity": 0.42,
+      "reads": 12375,
+      "tags": [ "market", "crafting" ]
+    },
+    {
+      "id": 5,
+      "author": "Silica Dragontamer",
+      "authorId": 4,
+      "likes": 1635,
+      "popularity": 0.90,
+      "reads": 90617,
+      "tags": [ "idol", "nature" ]
+    },
+    {
+      "id": 6,
+      "author": "Klein Samurai",
+      "authorId": 6,
+      "likes": 24,
+      "popularity": 0.05,
+      "reads": 540,
+      "tags": [ "food", "swords" ]
+    },
+    {
+      "id": 7,
+      "author": "Sinon Sharpshooter",
+      "authorId": 9,
+      "likes": 142,
+      "popularity": 0.28,
+      "reads": 50342,
+      "tags": [ "swords", "health" ]
+    },
+    {
+      "id": 8,
+      "author": "Leafa Fastblade",
+      "authorId": 8,
+      "likes": 750,
+      "popularity": 0.72,
+      "reads": 9001,
+      "tags": [ "swords", "nature" ]
+    }
+  ]
+}
