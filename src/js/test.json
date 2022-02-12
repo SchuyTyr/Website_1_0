@@ -52,7 +52,7 @@
       "likes": 24,
       "popularity": 0.05,
       "reads": 540,
-      "tags": [ "food", "swords" ]
+      "tags": [ "food", "tech" ]
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "likes": 142,
       "popularity": 0.28,
       "reads": 50342,
-      "tags": [ "swords", "health" ]
+      "tags": [ "tech", "swords" ]
     },
     {
       "id": 8,
