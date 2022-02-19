@@ -552,21 +552,26 @@ a.linkG:hover {
 /*---------------------------Wordsearch Page----------------------------*/
 
 h3 {
-	color: #8b8e91;
+	color: #c2c7cc;
 	font-size: 42px;
 	font-family: 'Orbitron', sans-serif;
 	text-align: center;
 	text-decoration: underline;
+	margin: 0;
+	margin-top: 24px;
 }
 
 .pText {
-	color: #8b8e91;
-	font-size: 18px;
+	color: #c2c7cc;
+	font-size: 22px;
 	font-family: 'Merienda', cursive;
 	text-align: center;
 	width: 75%;
 	margin: auto;
+	margin-bottom: 24px;
 	padding-bottom: 24px;
+	margin-top: 24px;
+	padding-top: 24px;
 }
 
 #ws-main {
@@ -577,11 +582,14 @@ h3 {
 	background-repeat:no-repeat;
 	border:solid #c2c6cc;
 	box-shadow: 0px 0px 6px 6px #c2c6cc;
+	justify-content: center;
+  align-items: center;
 }
 
 .ws-input {
 	text-align: center;
-	padding: 12px;
+	/*padding: 12px;*/
+	margin: auto;
 }
 
 #ws-output {
@@ -591,7 +599,7 @@ h3 {
 	margin: auto;
 	margin-top: 24px;
 	margin-bottom: 24px;
-	color: #8b8e91;
+	color: #c2c7cc;
 	font-size: 42px;
 	font-family: 'Orbitron', sans-serif;
 }
@@ -652,7 +660,7 @@ h3 {
 	padding: 12px;
 	padding-left: 20px;
 	padding-right: 20px;
-	margin: 12px;
+	margin: 32px;
 	box-shadow: 0 0 0 #000000;
 	border: 2px solid #3870ff;
 	border-radius: 12px;
@@ -682,7 +690,7 @@ h3 {
 #output {
 	word-wrap: break-word;
 	line-height: 2;
-	color: #8b8e91;
+	color: #c2c7cc;
 	font-size: 24px;
 	font-family: 'verdana';
 	text-align: center;

@@ -7,7 +7,7 @@ const dictPath = './../files/english.txt';
 
 var wordList = [];
 var setList = [];
-var wordLength = '';
+//var wordLength = '';
 var startLetter = '';
 var secondLetter = '';
 var thirdLetter = '';
@@ -26,23 +26,30 @@ var tb4 = document.getElementById("textbox4");
 var tb5 = document.getElementById("textbox5");
 var tb6 = document.getElementById("textbox6");
 var tb7 = document.getElementById("textbox7");
-var submit = document.getElementById("submit");
-var reset = document.getElementById("reset");
+const submit = document.getElementById("submit");
+const reset = document.getElementById("reset");
 
 
 submit.addEventListener("click", function () {
 
     var output = document.getElementById("output");
 
+    // not ideal to use innerHTML, but until I find something else that works...
     output.innerHTML = '';
 
-    var startLetter = tb1.value;
-    var secondLetter = tb2.value;
-    var thirdLetter = tb3.value;
-    var fourthLetter = tb4.value;
-    var endLetter = tb5.value;
-    var anyLetter = tb6.value;
-    var excLetter = tb7.value;
+    let startLetter = tb1.value;
+    let secondLetter = tb2.value;
+    let thirdLetter = tb3.value;
+    let fourthLetter = tb4.value;
+    let endLetter = tb5.value;
+    let anyLetter = tb6.value;
+    let excLetter = tb7.value;
+
+    startLetter = startLetter === '' ? '*' : startLetter;
+    secondLetter = secondLetter === '' ? '*' : secondLetter;
+    thirdLetter = thirdLetter === '' ? '*' : thirdLetter;
+    fourthLetter = fourthLetter === '' ? '*' : fourthLetter;
+    endLetter = endLetter === '' ? '*' : endLetter;
 
     if (excLetter === '\n' || excLetter === '\r' || excLetter === '') {
         excLetter = '9';
@@ -53,17 +60,12 @@ submit.addEventListener("click", function () {
 
     console.log("Word: " + startLetter + secondLetter + thirdLetter + fourthLetter + endLetter);
 
-    //console.log("startLetter: " + startLetter);
-    //console.log("secondLetter: " + secondLetter);
-    //console.log("thirdLetter: " + thirdLetter);
-    //console.log("fourthLetter: " + fourthLetter);
-    //console.log("endLetter: " + endLetter);
     console.log("anyLetter: " + anyLetter);
     console.log("excLetter: " + excLetter);
 
     const myInit = {
-        //mode: 'cors',
-        headers: { 'Access-Control-Allow-Origin': 'https://https://www.schuylermeyer.com' }
+        mode: 'cors',
+        headers: { 'Access-Control-Allow-Origin': 'https://www.schuylermeyer.com' }
     };
 
 
@@ -180,6 +182,8 @@ submit.addEventListener("click", function () {
 // resets / clears the input text boxes
 reset.addEventListener("click", function () {
 
+    var output = document.getElementById("output");
+
     document.getElementById('textbox1').value = "";
     document.getElementById('textbox2').value = "";
     document.getElementById('textbox3').value = "";
@@ -187,7 +191,9 @@ reset.addEventListener("click", function () {
     document.getElementById('textbox5').value = "";
     document.getElementById('textbox6').value = "";
     document.getElementById('textbox7').value = "";
-    document.getElementById('output').value = "";
+
+    // not ideal to use innerHTML, but until I find something else that works...
+    output.innerHTML = '';
 
 });
 
