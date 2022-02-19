@@ -585,7 +585,7 @@ h3 {
 }
 
 #ws-output {
-	border:solid #c2c6cc;
+	/*border:solid #c2c6cc;*/
 	width: 90%;
 	text-align: center;
 	margin: auto;
@@ -677,6 +677,15 @@ h3 {
 							 8px -8px 2px #000000;*/
 	box-shadow: inset 0px 0px 2px 2px #000000;
 	/*animation: compact reverse 2s infinite;*/
+}
+
+#output {
+	word-wrap: break-word;
+	line-height: 2;
+	color: #8b8e91;
+	font-size: 24px;
+	font-family: 'verdana';
+	text-align: center;
 }
 
 @keyframes compact {

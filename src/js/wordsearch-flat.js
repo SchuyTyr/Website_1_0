@@ -1,13 +1,9 @@
 /*-- wordsearch-flat.js // Schuyler Meyer // 2022 --*/
 
-//const fetch = require('node-fetch');
-//const url = require('url');
 
 const dictURL = "https://www.schuylermeyer.com/src/files/english.txt";
 const dictPath = './../files/english.txt';
 
-
-//console.log();
 
 var wordList = [];
 var setList = [];
@@ -162,8 +158,9 @@ submit.addEventListener("click", function () {
             excWords = [];
             anyLetterAll = [];
 
-            output.insertAdjacentText('afterbegin', setList);
-            console.dir(setList, { maxArrayLength: null });
+            output.insertAdjacentText('afterbegin', setList.join(', '));
+            console.log(setList);
+            //console.dir(setList, { maxArrayLength: null });
 
 
         })
