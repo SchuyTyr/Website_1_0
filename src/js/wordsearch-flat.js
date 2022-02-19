@@ -162,6 +162,9 @@ submit.addEventListener("click", function () {
             excWords = [];
             anyLetterAll = [];
 
+            output.insertAdjacentText('afterbegin', setList);
+            console.dir(setList, { maxArrayLength: null });
+
 
         })
 
@@ -171,7 +174,7 @@ submit.addEventListener("click", function () {
     //----------------------------------------//
 
 
-    output.insertAdjacentText('afterbegin', setList);
+    //output.insertAdjacentText('afterbegin', setList);
 
 });
 
