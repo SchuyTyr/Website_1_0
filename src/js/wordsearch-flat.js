@@ -1,5 +1,7 @@
 /*-- wordsearch-flat.js // Schuyler Meyer // 2022 --*/
 
+// Changed "let" to "var" for older phone browsers (ES5 - ES6)
+
 
 const dictURL = "https://www.schuylermeyer.com/src/files/english.txt";
 const dictPath = './../files/english.txt';
@@ -38,13 +40,13 @@ submit.addEventListener("click", function () {
     // not ideal to use innerHTML, but until I find something else that works...
     output.innerHTML = '';
 
-    let startLetter = tb1.value;
-    let secondLetter = tb2.value;
-    let thirdLetter = tb3.value;
-    let fourthLetter = tb4.value;
-    let endLetter = tb5.value;
-    let anyLetter = tb6.value;
-    let excLetter = tb7.value;
+    var startLetter = tb1.value;
+    var secondLetter = tb2.value;
+    var thirdLetter = tb3.value;
+    var fourthLetter = tb4.value;
+    var endLetter = tb5.value;
+    var anyLetter = tb6.value;
+    var excLetter = tb7.value;
 
     startLetter = startLetter === '' ? '*' : startLetter;
     secondLetter = secondLetter === '' ? '*' : secondLetter;
@@ -71,14 +73,17 @@ submit.addEventListener("click", function () {
     };
 
 
-    fetch(dictURL, myInit)
+    /*fetch(dictURL, myInit)
         .then(res => res.text())
-        .then(dict => {
+        .then(dict => {*/
+    fetch(dictURL, myInit)
+        .then(function (res) { return res.text() })
+        .then(function(dict) {
 
             wordList = dict.split("\n");
             wordList = wordList.toString().replace(/(\r\n|\n|\r)/gm, "").split(","); //remove those line breaks
 
-            for (let i in wordList) {
+            for (var i in wordList) {
                 if ((wordList[i].length === 5) // check length of word
                     && (wordList[i].charAt(0) === startLetter || startLetter === '*') // check first letter
                     && (wordList[i].charAt(1) === secondLetter || secondLetter === '*') // check second letter
@@ -88,7 +93,7 @@ submit.addEventListener("click", function () {
 
                     if (anyLetter.length > 1 || excLetter.length > 1) {
 
-                        for (let x in anyLetter) {
+                        for (var x in anyLetter) {
 
                             if (anyLetter === '' || anyLetter === '9' || wordList[i].includes(anyLetter.charAt(x))) {
 
@@ -102,7 +107,7 @@ submit.addEventListener("click", function () {
 
                         }
 
-                        for (let y in excLetter) {
+                        for (var y in excLetter) {
 
                             if (excLetter !== '' && excLetter !== '9' && wordList[i].includes(excLetter.charAt(y))) {
 
@@ -131,9 +136,9 @@ submit.addEventListener("click", function () {
 
             }
 
-            for (let z in setList) {
+            for (var z in setList) {
 
-                for (let w in excWords) {
+                for (var w in excWords) {
 
                     if (setList.includes(excWords[w])) {
 
@@ -146,7 +151,7 @@ submit.addEventListener("click", function () {
 
             }
 
-            for (let u in anyLetterAll) {
+            for (var u in anyLetterAll) {
                 setList = notExcluded(setList, anyLetterAll[u]);
             }
 
