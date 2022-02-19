@@ -34,7 +34,7 @@ submit.addEventListener("click", function () {
 
     var output = document.getElementById("output");
 
-    document.getElementById('output').value = "";
+    output.innerHTML = '';
 
     var startLetter = tb1.value;
     var secondLetter = tb2.value;
