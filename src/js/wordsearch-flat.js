@@ -52,10 +52,10 @@ submit.addEventListener("click", function () {
     fourthLetter = fourthLetter === '' ? '*' : fourthLetter;
     endLetter = endLetter === '' ? '*' : endLetter;
 
-    if (excLetter === '\n' || excLetter === '\r' || excLetter === '') {
+    if (excLetter === '\n' || excLetter === '\r' || excLetter === '' || excLetter === '*') {
         excLetter = '9';
     }
-    if (anyLetter === '\n' || anyLetter === '\r' || anyLetter === '') {
+    if (anyLetter === '\n' || anyLetter === '\r' || anyLetter === '' || anyLetter === '*') {
         anyLetter = '9';
     }
 
