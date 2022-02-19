@@ -150,6 +150,10 @@ submit.addEventListener("click", function () {
 
             setList = setList.filter(onlyUnique);
 
+            output.insertAdjacentText('afterbegin', setList.join(', '));
+            console.log(setList);
+            //console.dir(setList, { maxArrayLength: null });
+
             // reset
             //wordLength = '';
             startLetter = '';
@@ -161,10 +165,7 @@ submit.addEventListener("click", function () {
             excLetter = '';
             excWords = [];
             anyLetterAll = [];
-
-            output.insertAdjacentText('afterbegin', setList.join(', '));
-            console.log(setList);
-            //console.dir(setList, { maxArrayLength: null });
+            setList = [];
 
 
         })
