@@ -187,3 +187,15 @@ reset.addEventListener("click", function () {
     document.getElementById('textbox7').value = "";
 
 });
+
+//-------------------------------------------------------------------------------------------------------------//
+
+//-- Checking If Multiple Entries In Result Function --//
+function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+}
+
+//-- Checking If Multiple Entries In Result Function --//
+function notExcluded(arr, query) {
+    return arr.filter(el => el.indexOf(query) !== -1)
+}
