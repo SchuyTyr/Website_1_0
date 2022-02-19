@@ -565,7 +565,8 @@ h3 {
 	color: #c2c7cc;
 	font-size: 22px;
 	font-family: 'Merienda', cursive;
-	text-align: center;
+	/*text-align: center;*/
+	text-align: justify;
 	width: 75%;
 	margin: auto;
 	margin-bottom: 24px;
@@ -664,6 +665,7 @@ h3 {
 	box-shadow: 0 0 0 #000000;
 	border: 2px solid #3870ff;
 	border-radius: 12px;
+	cursor: pointer;
 	/*animation: compact 4s infinite;*/
 }
 
@@ -693,7 +695,8 @@ h3 {
 	color: #c2c7cc;
 	font-size: 24px;
 	font-family: 'verdana';
-	text-align: center;
+	/*text-align: center;*/
+	text-align: justify;
 }
 
 @keyframes compact {
@@ -834,6 +837,35 @@ h3 {
 	.rLink {
 		width: 25%;
 	}
+	.letterContainer{
+		width: 90%;
+		margin: auto;
+	}
+	#textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
+		height: 32px;
+		width: 6%;
+		font-size: 28px;
+	}
+	 #textbox6, #textbox7 {
+		 width: 184px;
+		 height: 32px;
+		 font-size: 28px;
+	 }
+	 #submit, #reset {
+		 font-size: 18px;
+		 margin: 8px;
+		 margin-top: 16px;
+		 margin-bottom: 16px;
+	 }
+	 .pText {
+		 font-size: 18px;
+		 width: 90%;
+		 text-align: justify;
+	 }
+	 #output {
+		 font-size: 22px;
+		 text-align: justify;
+	 }
 }
 
 @media screen and (max-width: 600px) {
@@ -849,4 +881,38 @@ h3 {
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
+	.letterContainer{
+		width: 100%;
+		margin: 0;
+	}
+	#textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
+		/*height: 42px;
+		width: 42px;
+		font-size: 38px;*/
+		height: 24px;
+		width: 4%;
+		font-size: 20px;
+		margin: 8px;
+	}
+	 #textbox6, #textbox7 {
+		 width: 70%;
+		 height: 24px;
+		 font-size: 20px;
+	 }
+}
+@media screen and (max-width: 500px) {
+	#textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
+		height: 42px;
+		width: 12%;
+		font-size: 20px;
+		margin: 6px;
+		margin-bottom: 12px;
+		padding: 0;
+	}
+	 #textbox6, #textbox7 {
+		 width: 84%;
+		 height: 24px;
+		 font-size: 20px;
+		 padding: 12px;
+	 }
 }

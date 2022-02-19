@@ -15,6 +15,7 @@ var fourthLetter = '';
 var endLetter = '';
 var anyLetter = '';
 var excLetter = '';
+var fullLetter = '';
 
 var anyLetterAll = [];
 var excWords = [];
@@ -59,6 +60,7 @@ submit.addEventListener("click", function () {
     }
 
     console.log("Word: " + startLetter + secondLetter + thirdLetter + fourthLetter + endLetter);
+    fullLetter = startLetter + secondLetter + thirdLetter + fourthLetter + endLetter;
 
     console.log("anyLetter: " + anyLetter);
     console.log("excLetter: " + excLetter);
@@ -150,7 +152,7 @@ submit.addEventListener("click", function () {
 
             setList = setList.filter(onlyUnique);
 
-            output.insertAdjacentText('afterbegin', setList.join(', '));
+            output.insertAdjacentText('afterbegin', ("(" + fullLetter + ") - " + setList.join(', ')));
             console.log(setList);
             //console.dir(setList, { maxArrayLength: null });
 
@@ -163,6 +165,7 @@ submit.addEventListener("click", function () {
             endLetter = '';
             anyLetter = '';
             excLetter = '';
+            fullLetter = '';
             excWords = [];
             anyLetterAll = [];
             setList = [];
