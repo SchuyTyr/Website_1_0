@@ -34,6 +34,8 @@ submit.addEventListener("click", function () {
 
     var output = document.getElementById("output");
 
+    document.getElementById('output').value = "";
+
     var startLetter = tb1.value;
     var secondLetter = tb2.value;
     var thirdLetter = tb3.value;
@@ -185,6 +187,7 @@ reset.addEventListener("click", function () {
     document.getElementById('textbox5').value = "";
     document.getElementById('textbox6').value = "";
     document.getElementById('textbox7').value = "";
+    document.getElementById('output').value = "";
 
 });
 
