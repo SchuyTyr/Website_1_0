@@ -214,6 +214,6 @@ function onlyUnique(value, index, self) {
 }
 
 //-- Checking If Multiple Entries In Result Function --//
-function notExcluded(arr, query) {
-    return arr.filter(el => el.indexOf(query) !== -1)
+function notExcluded(array, query) {
+    return array.filter(function (notEx) { notEx.indexOf(query) !== -1 });
 }
