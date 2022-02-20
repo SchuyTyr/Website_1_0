@@ -156,8 +156,9 @@ submit.addEventListener("click", function () {
             }
 
             setList = setList.filter(onlyUnique);
+            setList = setList.join(', ');
 
-            output.insertAdjacentText('afterbegin', ("(" + fullLetter + ") - " + setList.join(', ')));
+            output.insertAdjacentText('afterbegin', ("(" + fullLetter + ") - " + setList));
             console.log(setList);
             //console.dir(setList, { maxArrayLength: null });
 
