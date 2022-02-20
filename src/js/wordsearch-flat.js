@@ -1,6 +1,6 @@
 /*-- wordsearch-flat.js // Schuyler Meyer // 2022 --*/
 
-// Changed "let" to "var" for older phone browsers (ES5 - ES6)
+// Changed "let" to "var" (among other changes, like removed "=>") for older phone browsers (ES5 - ES6)
 
 
 const dictURL = "https://www.schuylermeyer.com/src/files/english.txt";
@@ -156,13 +156,12 @@ submit.addEventListener("click", function () {
             }
 
             setList = setList.filter(onlyUnique);
-            setList = setList.join(', ');
 
-            output.insertAdjacentText('afterbegin', ("(" + fullLetter + ") - " + setList));
+            output.insertAdjacentText('afterbegin', ("(" + fullLetter + ") - " + setList.join(', ')));
             console.log(setList);
             //console.dir(setList, { maxArrayLength: null });
 
-            // reset
+            //-- reset --//
             //wordLength = '';
             startLetter = '';
             secondLetter = '';
@@ -181,11 +180,6 @@ submit.addEventListener("click", function () {
 
         .catch(function (error) { console.log(error) }) // Catching errors
 
-
-    //----------------------------------------//
-
-
-    //output.insertAdjacentText('afterbegin', setList);
 
 });
 
@@ -216,5 +210,7 @@ function onlyUnique(value, index, self) {
 
 //-- Checking If Multiple Entries In Result Function --//
 function notExcluded(array, query) {
-    return array.filter(function (notEx) { notEx.indexOf(query) !== -1 });
+    //return array.filter(function (notEx) { notEx.indexOf(query) !== -1 });
+    var temp = array.filter(function (notEx) { return notEx.indexOf(query) !== -1 });
+    return temp;
 }
