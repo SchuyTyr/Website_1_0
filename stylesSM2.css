@@ -561,18 +561,29 @@ h3 {
 	margin-top: 24px;
 }
 
-.pText {
+.pText, .pTextH {
 	color: #c2c7cc;
-	font-size: 22px;
+	font-size: 20px;
 	font-family: 'Merienda', cursive;
 	/*text-align: center;*/
 	text-align: justify;
-	width: 75%;
+	width: 90%;
 	margin: auto;
 	margin-bottom: 24px;
 	padding-bottom: 24px;
 	margin-top: 24px;
 	padding-top: 24px;
+}
+
+.pTextH {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-top: 8px;
+	padding-top: 0;
+}
+
+.point {
+	cursor: pointer;
 }
 
 #ws-main {
@@ -615,7 +626,7 @@ h3 {
 	margin: 12px;
 	width: 42px;
 	height: 42px;
-	border: solid #c2c6cc;
+	border: solid #3870ff;
 	box-shadow: 0px 0px 4px 4px #3870ff;
 	border-radius: 12px;
 }
@@ -635,10 +646,12 @@ h3 {
  }
 
  #textbox6 {
+	 border: solid #00e000;
 	 box-shadow: 0px 0px 4px 4px #00e000;
  }
 
  #textbox7 {
+	 border: solid #ff3b14;
 	 box-shadow: 0px 0px 4px 4px #ff3b14;
  }
 
@@ -773,6 +786,10 @@ h3 {
 	.rLink {
 		width: 25%;
 	}
+	.pText, .pTextH {
+		font-size: 18px;
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -856,11 +873,6 @@ h3 {
 		 margin: 8px;
 		 margin-top: 16px;
 		 margin-bottom: 16px;
-	 }
-	 .pText {
-		 font-size: 18px;
-		 width: 90%;
-		 text-align: justify;
 	 }
 	 #output {
 		 font-size: 22px;

@@ -49,19 +49,24 @@
 			<a class="link3" href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle</a>).
 			For words that are not five letters, that functionality is still in research
 			and development. Do note that this search will not work on Internet Explorer due to a few
-			"newer features". I have also notice that it does not work on some mobile browsers, if that is the case, try updating
-			your browser app or try using a desktop / laptop instead.
+			"newer features". I have also noticed that it does not work on some mobile browsers (mainly older phones),
+			if that is the case, try updating your browser app or try using a desktop / laptop instead.
+			I apologize for the inconvenience.
 			<!--but if you are casual internet browser and are still using
 			Internet Explorer in this day and age, I'd suggest switching to another one, such as Firefox or Chrome.-->
 		</p>
+
 		<div id="ws-main">
-			<p class="pText">
-				<u>Directions:</u> Type any single letter you know in the top five <span style="color:#3870ff">blue</span> boxes.
-				If you don't know the letter, place a * (asterisk / star) in its place. For letters you know
-				are included, but you don't know where, put them in the bottom left <span style="color:#00e000">green</span> box.
-				And letters that you know are not in the word in the bottom right <span style="color:#ff3b14">red</span> box.
-				Press "search" to search and "reset" to reset the form.
-			</p>
+			<div class="pText">
+				<u><a class="point" onclick="hiddenTextFunc()">Directions (click to expand)</a></u>:
+				<p class="pTextH" id="hiddenText" style="display:none;">
+					Type any single letter you know in the top five <span style="color:#3870ff">blue</span> boxes.
+					If you don't know the letter, place a * (asterisk / star) in its place. For letters you know
+					are included, but you don't know where, put them in the bottom left <span style="color:#00e000">green</span> box.
+					And letters that you know are not in the word in the bottom right <span style="color:#ff3b14">red</span> box.
+					Press "search" to search and "reset" to reset the form.
+				</p>
+			</div>
 			<div class="ws-input">
 				<!--<div class="letterContainer">-->
 					<input id="textbox1" type="text" maxLength="1" placeholder="a" title="First Letter">
@@ -107,8 +112,9 @@
 	<template id="footer-main">
 	</template>
 
-
+	<script src="hideText.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 </body>
 </html>

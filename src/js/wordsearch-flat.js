@@ -78,7 +78,7 @@ submit.addEventListener("click", function () {
         .then(dict => {*/
     fetch(dictURL, myInit)
         .then(function (res) { return res.text() })
-        .then(function(dict) {
+        .then(function (dict) {
 
             wordList = dict.split("\n");
             wordList = wordList.toString().replace(/(\r\n|\n|\r)/gm, "").split(","); //remove those line breaks
@@ -143,7 +143,7 @@ submit.addEventListener("click", function () {
                     if (setList.includes(excWords[w])) {
 
                         if (setList[z] === excWords[w]) {
-                            console.log("entry deleted: " + setList[z]);
+                            //console.log("entry deleted: " + setList[z]);
                             delete setList[z];
                         }
                     }
@@ -178,7 +178,7 @@ submit.addEventListener("click", function () {
 
         })
 
-        .catch(error => console.log(error)) // Catching errors
+        .catch(function (error) { console.log(error) }) // Catching errors
 
 
     //----------------------------------------//
