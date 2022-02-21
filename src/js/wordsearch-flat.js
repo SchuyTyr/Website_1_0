@@ -145,6 +145,7 @@ submit.addEventListener("click", function () {
             }
 
             //-- Works? Very slow. --//
+
             //if (excWords.length !== 0) {
             //    for (var z in setList) {
 
@@ -163,6 +164,10 @@ submit.addEventListener("click", function () {
             //    }
             //}
 
+            //-- remove the duplicate words first because "indexOf" only finds the first instance of, not others --//
+
+            setList = setList.filter(onlyUnique);
+
             var index;
             for (var d = 0; d < excWords.length; d++) {
                 index = setList.indexOf(excWords[d]);
@@ -178,9 +183,7 @@ submit.addEventListener("click", function () {
                 }
             }
 
-            setList = setList.filter(onlyUnique);
-
-            output.insertAdjacentText('afterbegin', ("(" + fullLetter + ") - " + setList.join(', ')));
+            output.insertAdjacentText('afterbegin', ("[ " + setList.length + " words ] - (" + fullLetter + ") - " + setList.join(', ')));
             console.log(setList);
             //console.dir(setList, { maxArrayLength: null });
 
@@ -234,6 +237,4 @@ function onlyUnique(value, index, self) {
 //-- Checking Something Function --//
 function notExcluded(array, query) {
     return array.filter(function (notEx) { return notEx.indexOf(query) !== -1 });
-    //var temp = array.filter(function (notEx) { return notEx.indexOf(query) !== -1 });
-    //return temp;
 }
