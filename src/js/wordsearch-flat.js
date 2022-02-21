@@ -1,6 +1,6 @@
 /*-- wordsearch-flat.js // Schuyler Meyer // 2022 --*/
 
-// Changed "let" to "var" (among other changes, like removed "=>") for older phone browsers (ES5 - ES6)
+// Changed "let" to "var" (among other changes, like removed "=>" and "includes") for older phone browsers (ES5 - ES6)
 
 
 const dictURL = "https://www.schuylermeyer.com/src/files/english.txt";
@@ -95,9 +95,11 @@ submit.addEventListener("click", function () {
 
                         for (var x in anyLetter) {
 
-                            if (anyLetter === '' || anyLetter === '9' || wordList[i].includes(anyLetter.charAt(x))) {
+                            //if (anyLetter === '' || anyLetter === '9' || wordList[i].includes(anyLetter.charAt(x))) {
+                            if (anyLetter === '' || anyLetter === '9' || wordList[i].indexOf(anyLetter.charAt(x)) !== -1) {
 
-                                if (!anyLetterAll.includes(anyLetter.charAt(x))) {
+                                //if (!anyLetterAll.includes(anyLetter.charAt(x)) && anyLetter !== '' && anyLetter !== '9') {
+                                if (anyLetterAll.indexOf(anyLetter.charAt(x)) === -1 && anyLetter !== '' && anyLetter !== '9') {
                                     anyLetterAll.push(anyLetter.charAt(x));
                                 }
 
@@ -109,7 +111,8 @@ submit.addEventListener("click", function () {
 
                         for (var y in excLetter) {
 
-                            if (excLetter !== '' && excLetter !== '9' && wordList[i].includes(excLetter.charAt(y))) {
+                            //if (excLetter !== '' && excLetter !== '9' && wordList[i].includes(excLetter.charAt(y))) {
+                            if (excLetter !== '' && excLetter !== '9' && wordList[i].indexOf(excLetter.charAt(y)) !== -1) {
 
                                 excWords.push(wordList[i]);
 
@@ -119,13 +122,18 @@ submit.addEventListener("click", function () {
 
                     }
                     else {
-                        if (excLetter !== '' && excLetter !== '9' && wordList[i].includes(excLetter)) {
+                        //if (excLetter !== '' && excLetter !== '9' && wordList[i].includes(excLetter)) {
+                        if (excLetter !== '' && excLetter !== '9' && wordList[i].indexOf(excLetter) !== -1) {
 
                             excWords.push(wordList[i]);
 
                         }
-                        else if (anyLetter === '' || anyLetter === '9' || wordList[i].includes(anyLetter)) {
+                        //else if (anyLetter === '' || anyLetter === '9' || wordList[i].includes(anyLetter)) {
+                        else if (anyLetter === '' || anyLetter === '9' || wordList[i].indexOf(anyLetter) !== -1) {
 
+                            if (anyLetter !== '' && anyLetter !== '9') {
+                                anyLetterAll.push(anyLetter);
+                            }
                             setList.push(wordList[i]);
 
                         }
@@ -136,23 +144,38 @@ submit.addEventListener("click", function () {
 
             }
 
-            for (var z in setList) {
+            //-- Works? Very slow. --//
+            //if (excWords.length !== 0) {
+            //    for (var z in setList) {
 
-                for (var w in excWords) {
+            //        for (var w in excWords) {
 
-                    if (setList.includes(excWords[w])) {
+            //            //if (setList.includes(excWords[w])) {
+            //            if (setList.indexOf(excWords[w]) !== -1) {
 
-                        if (setList[z] === excWords[w]) {
-                            //console.log("entry deleted: " + setList[z]);
-                            delete setList[z];
-                        }
-                    }
+            //                if (setList[z] === excWords[w]) {
+            //                    console.log("entry deleted: " + setList[z]);
+            //                    delete setList[z];
+            //                }
+            //            }
+            //        }
+
+            //    }
+            //}
+
+            var index;
+            for (var d = 0; d < excWords.length; d++) {
+                index = setList.indexOf(excWords[d]);
+                if (index > -1) {
+                    console.log("entry deleted: " + setList[index]);
+                    setList.splice(index, 1);
                 }
-
             }
 
-            for (var u in anyLetterAll) {
-                setList = notExcluded(setList, anyLetterAll[u]);
+            if (anyLetterAll.length !== 0) {
+                for (var u in anyLetterAll) {
+                    setList = notExcluded(setList, anyLetterAll[u]);
+                }
             }
 
             setList = setList.filter(onlyUnique);
@@ -208,9 +231,9 @@ function onlyUnique(value, index, self) {
     return self.indexOf(value) === index;
 }
 
-//-- Checking If Multiple Entries In Result Function --//
+//-- Checking Something Function --//
 function notExcluded(array, query) {
-    //return array.filter(function (notEx) { notEx.indexOf(query) !== -1 });
-    var temp = array.filter(function (notEx) { return notEx.indexOf(query) !== -1 });
-    return temp;
+    return array.filter(function (notEx) { return notEx.indexOf(query) !== -1 });
+    //var temp = array.filter(function (notEx) { return notEx.indexOf(query) !== -1 });
+    //return temp;
 }
