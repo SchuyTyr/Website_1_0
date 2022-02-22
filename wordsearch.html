@@ -20,6 +20,7 @@
 	<title>SM &ndash; Wordsearch</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index,follow">
+	<link rel="preconnect" href="https://www.schuylermeyer.com" crossorigin>
 	<link href="stylesSM.css" rel="stylesheet">
 	<link href="stylesSM2.css" rel="stylesheet">
 	<link href="src/icons/SMLogo2022.ico" rel="shortcut icon">
@@ -65,22 +66,20 @@
 				</p>
 			</div>
 			<div class="ws-input">
-				<!--<div class="letterContainer">-->
-					<input id="textbox1" type="text" maxLength="1" placeholder="a" title="First Letter">
-					<input id="textbox2" type="text" maxLength="1" placeholder="b" title="Second Letter">
-					<input id="textbox3" type="text" maxLength="1" placeholder="c" title="Third Letter">
-					<input id="textbox4" type="text" maxLength="1" placeholder="d" title="Fourth Letter">
-					<input id="textbox5" type="text" maxLength="1" placeholder="e" title="Fifth Letter">
-				<!--</div>-->
-				<br>
-				<input id="textbox6" type="text" maxLength="5" placeholder="include" title="Letters to Include">
-				<input id="textbox7" type="text" maxLength="21" placeholder="exclude" title="Letters to Exclude">
-				<br>
-				<div style="text-align:center">
-					<input id="submit" type="button" value="Search" title="Search"> <!-- Go!!! -->
-					<input id="reset" type="button" value="Reset" title="Reset"> <!-- reset -->
-				</div>
-				<br>
+					<input id="textbox1" class="inputs" type="text" maxLength="1" placeholder="a" title="First Letter">
+					<input id="textbox2" class="inputs" type="text" maxLength="1" placeholder="b" title="Second Letter">
+					<input id="textbox3" class="inputs" type="text" maxLength="1" placeholder="c" title="Third Letter">
+					<input id="textbox4" class="inputs" type="text" maxLength="1" placeholder="d" title="Fourth Letter">
+					<input id="textbox5" class="inputs" type="text" maxLength="1" placeholder="e" title="Fifth Letter">
+					<br>
+					<input id="textbox6" class="inputs" type="text" maxLength="5" placeholder="include" title="Letters to Include">
+					<input id="textbox7" class="inputs" type="text" maxLength="21" placeholder="exclude" title="Letters to Exclude">
+					<br>
+					<div style="text-align:center">
+						<input id="submit" type="button" value="Search" title="Search"> <!-- Go!!! -->
+						<input id="reset" type="button" value="Reset" title="Reset"> <!-- reset -->
+					</div>
+					<br>
 			</div>
 
 			<hr class="rounded">
@@ -89,6 +88,7 @@
 				<div><u>Results:</u></div>
 				<br>
 				<div id="output"></div>
+				<div id="loading"></div>
 				<br>
 			</div>
 		</div>
@@ -130,6 +130,24 @@
 	<script src="hideText.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+	<script>
+		$(".inputs").keyup(function () {
+			if (this.value.length === this.maxLength) {
+				var $next = $(this).next('.inputs');
+
+				if(this.id === 'textbox5'){
+				/*if($next.length === 0){*/
+					$('.inputs').siblings('.inputs').prev('.inputs').focus();
+				}
+				else if ($next.length){
+						$(this).next('.inputs').focus();
+				}
+				else {
+						$(this).blur();
+				}
+			}
+		});
+	</script>
 
 </body>
 </html>
