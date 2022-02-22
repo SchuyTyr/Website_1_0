@@ -594,6 +594,7 @@ h3 {
 	background-repeat:no-repeat;
 	border:solid #c2c6cc;
 	box-shadow: 0px 0px 6px 6px #c2c6cc;
+	-webkit-box-shadow: 0px 0px 6px 6px #c2c6cc;
 	justify-content: center;
   align-items: center;
 }
@@ -628,6 +629,7 @@ h3 {
 	height: 42px;
 	border: solid #3870ff;
 	box-shadow: 0px 0px 4px 4px #3870ff;
+	-webkit-box-shadow: 0px 0px 4px 4px #3870ff;
 	border-radius: 12px;
 }
 
@@ -648,11 +650,13 @@ h3 {
  #textbox6 {
 	 border: solid #00e000;
 	 box-shadow: 0px 0px 4px 4px #00e000;
+	 -webkit-box-shadow: 0px 0px 4px 4px #00e000;
  }
 
  #textbox7 {
 	 border: solid #ff3b14;
 	 box-shadow: 0px 0px 4px 4px #ff3b14;
+	 -webkit-box-shadow: 0px 0px 4px 4px #ff3b14;
  }
 
  #textbox1:focus, #textbox2:focus, #textbox3:focus,
@@ -662,11 +666,12 @@ h3 {
 	 border: solid #fca417;
 	 box-shadow: inset 0px 0px 2px 2px #000000,
 	  					 0px 0px 4px 4px #fca417;
+	 -webkit-box-shadow: inset 0px 0px 2px 2px #000000,
+	  					 0px 0px 4px 4px #fca417;
  }
 
 #submit, #reset {
 	color: #c2c6cc;
-	background-color: rgba(56, 112, 255, 0.1);
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 24px;
@@ -675,30 +680,35 @@ h3 {
 	padding-left: 20px;
 	padding-right: 20px;
 	margin: 32px;
-	box-shadow: 0 0 0 #000000;
 	border: 2px solid #3870ff;
 	border-radius: 12px;
 	cursor: pointer;
+	background-color: rgba(56, 112, 255, .1);
+	box-shadow: 0 0 0 #000000;
+	-webkit-box-shadow: 0 0 0 #000000;
+	-webkit-appearance: none;
 	/*animation: compact 4s infinite;*/
 }
 
 #submit:hover, #reset:hover {
 	color: #ffffff;
-	background-color: rgba(56, 112, 255, 0.75);
+	background-color: rgba(56, 112, 255, .75);
 	text-shadow: 2px 2px 2px #000000,
 							 -1px -1px 2px #000000;
 	box-shadow: inset 0px 0px 2px 2px #000000;
+	-webkit-box-shadow: inset 0px 0px 2px 2px #000000;
 	/*animation: compact 4s infinite;*/
 }
 
 #submit:active, #reset:active {
 	color: #3870ff;
-	background-color: rgba(56, 112, 255, 0.5);
+	background-color: rgba(56, 112, 255, .5);
 	text-shadow: 4px 4px 2px #000000,
 							 -1px -1px 2px #000000;
 							 /*-8px 8px 2px #000000,
 							 8px -8px 2px #000000;*/
 	box-shadow: inset 0px 0px 2px 2px #000000;
+	-webkit-box-shadow: inset 0px 0px 2px 2px #000000;
 	/*animation: compact reverse 2s infinite;*/
 }
 
@@ -915,9 +925,9 @@ h3 {
 @media screen and (max-width: 500px) {
 	#textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
 		height: 42px;
-		width: 12%;
+		width: 14%;
 		font-size: 20px;
-		margin: 6px;
+		margin: 3px;
 		margin-bottom: 12px;
 		padding: 0;
 	}

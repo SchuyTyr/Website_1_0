@@ -19,34 +19,44 @@ var anyLetter = '';
 var excLetter = '';
 var fullLetter = '';
 
+//-- Unnecessary variables --//
+//var tb1 = document.getElementById("textbox1");
+//var tb2 = document.getElementById("textbox2");
+//var tb3 = document.getElementById("textbox3");
+//var tb4 = document.getElementById("textbox4");
+//var tb5 = document.getElementById("textbox5");
+//var tb6 = document.getElementById("textbox6");
+//var tb7 = document.getElementById("textbox7");
+
 var anyLetterAll = [];
 var excWords = [];
 
-var tb1 = document.getElementById("textbox1");
-var tb2 = document.getElementById("textbox2");
-var tb3 = document.getElementById("textbox3");
-var tb4 = document.getElementById("textbox4");
-var tb5 = document.getElementById("textbox5");
-var tb6 = document.getElementById("textbox6");
-var tb7 = document.getElementById("textbox7");
 const submit = document.getElementById("submit");
 const reset = document.getElementById("reset");
 
 
 submit.addEventListener("click", function () {
 
+    var startLetter = document.getElementById("textbox1").value;
+    var secondLetter = document.getElementById("textbox2").value;
+    var thirdLetter = document.getElementById("textbox3").value;
+    var fourthLetter = document.getElementById("textbox4").value;
+    var endLetter = document.getElementById("textbox5").value;
+    var anyLetter = document.getElementById("textbox6").value;
+    var excLetter = document.getElementById("textbox7").value;
+
     var output = document.getElementById("output");
 
     // not ideal to use innerHTML, but until I find something else that works...
     output.innerHTML = '';
 
-    var startLetter = tb1.value;
-    var secondLetter = tb2.value;
-    var thirdLetter = tb3.value;
-    var fourthLetter = tb4.value;
-    var endLetter = tb5.value;
-    var anyLetter = tb6.value;
-    var excLetter = tb7.value;
+    //var startLetter = tb1.value;
+    //var secondLetter = tb2.value;
+    //var thirdLetter = tb3.value;
+    //var fourthLetter = tb4.value;
+    //var endLetter = tb5.value;
+    //var anyLetter = tb6.value;
+    //var excLetter = tb7.value;
 
     startLetter = startLetter === '' ? '*' : startLetter;
     secondLetter = secondLetter === '' ? '*' : secondLetter;

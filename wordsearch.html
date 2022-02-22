@@ -57,8 +57,8 @@
 					Type any single letter you know in the top five <span style="color:#3870ff">blue</span> boxes.
 					If you don't know the letter, place a * (asterisk / star) in its place. For letters you know
 					are included, but you don't know where, put them in the bottom left <span style="color:#00e000">green</span> box.
-					And letters that you know are not in the word in the bottom right <span style="color:#ff3b14">red</span> box.
-					Press "search" to search and "reset" to reset the form.
+					And letters that you know are not in the word, in the bottom right <span style="color:#ff3b14">red</span> box.
+					Press "search" to search and "reset" to clear the form.
 				</p>
 			</div>
 			<div class="ws-input">
@@ -73,8 +73,10 @@
 				<input id="textbox6" type="text" maxLength="5" placeholder="include" title="Letters to Include">
 				<input id="textbox7" type="text" maxLength="21" placeholder="exclude" title="Letters to Exclude">
 				<br>
-				<input id="submit" type="button" value="Search" title="Search"> <!-- Go!!! -->
-				<input id="reset" type="button" value="Reset" title="Reset"> <!-- reset -->
+				<div style="text-align:center">
+					<input id="submit" type="button" value="Search" title="Search"> <!-- Go!!! -->
+					<input id="reset" type="button" value="Reset" title="Reset"> <!-- reset -->
+				</div>
 				<br>
 			</div>
 
@@ -93,7 +95,11 @@
 		<p class="pText">
 			<u>Please Note</u>: The less information you input, the longer it will take to process, please be patient.
 			<br><br>
-			<u>Known Bugs</u>: Currently searching...
+			<u>Known Bugs</u>: It seems to not work on Chrome for Android and MS Edge for Android, due to a 10+ year old
+			<a class="link3" href="https://bugs.chromium.org/p/chromium/issues/detail?id=118639" target="_blank">issue</a> with some of the virtual keyboards.
+			It also seems to not work with older versions of Safari on iOS / iPhones. I'm not sure if it is the same issue or not.
+			<br><br>
+			Also on mobile, typing letters into any of the five top spaces will return a list of zero words. I believe this is related to the above.
 			<br><br>
 			For words that are not five letters, that functionality is still in research
 			and development. Do note that this search will not work on Internet Explorer due to a few
