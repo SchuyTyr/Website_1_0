@@ -64,6 +64,14 @@ submit.addEventListener("click", function () {
     fourthLetter = fourthLetter === '' ? '*' : fourthLetter;
     endLetter = endLetter === '' ? '*' : endLetter;
 
+    startLetter = startLetter.toLowerCase();
+    secondLetter = secondLetter.toLowerCase();
+    thirdLetter = thirdLetter.toLowerCase();
+    fourthLetter = fourthLetter.toLowerCase();
+    endLetter = endLetter.toLowerCase();
+    anyLetter = anyLetter.toLowerCase();
+    excLetter = excLetter.toLowerCase();
+
     if (excLetter === '\n' || excLetter === '\r' || excLetter === '' || excLetter === '*') {
         excLetter = '9';
     }
