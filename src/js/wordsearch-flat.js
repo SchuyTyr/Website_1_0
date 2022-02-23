@@ -3,7 +3,8 @@
 // Changed "let" to "var" (among other changes, like removed "=>" and "includes") for older phone browsers (ES5 - ES6)
 
 
-const dictURL = "https://www.schuylermeyer.com/src/files/english.txt";
+const dictURL_OG = "https://www.schuylermeyer.com/src/files/english.txt";
+const dictURL = "https://www.schuylermeyer.com/src/files/WordleListFullSorted.txt";
 const dictPath = './../files/english.txt';
 
 
