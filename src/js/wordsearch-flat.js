@@ -200,8 +200,6 @@ submit.addEventListener("click", function () {
                 index = setList.indexOf(excWords[d]);
                 if (index > -1) {
                     console.log("entry deleted: " + setList[index]);
-                    //output.insertAdjacentText('afterbegin', ("Calculating " + Math.round(getRandom())));
-                    //console.log(("Calculating " + Math.round(getRandom())));
                     setList.splice(index, 1);
                 }
             }
@@ -213,6 +211,8 @@ submit.addEventListener("click", function () {
             }
 
             output.innerHTML = '';
+
+            loadingIcon.style.display = "none";
 
             output.insertAdjacentText('afterbegin', ("[ " + setList.length + " words ] - (" + fullLetter + ") - " + setList.join(', ')));
             console.log(setList);
@@ -231,13 +231,6 @@ submit.addEventListener("click", function () {
             excWords = [];
             anyLetterAll = [];
             setList = [];
-
-            //-- Loading Function --//
-            //function getRandom() {
-            //    return (Math.random() * 100);
-            //}
-
-            loadingIcon.style.display = "none";
 
 
         })
