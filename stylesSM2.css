@@ -415,6 +415,64 @@ polygon {
 	transition: .15s all ease-in;
 }
 
+/*--------------------------------------------------------------------*/
+/*---------------------------Software Page----------------------------*/
+
+.title {
+	color: #c2c7cc;
+	font-size: 42px;
+	font-family: 'Orbitron', sans-serif;
+	font-family: 'Audiowide', cursive;
+	text-align: center;
+	text-decoration: underline;
+	margin: 0;
+	margin-top: 24px;
+}
+
+.sContainer {
+	width: 90%;
+	margin: auto;
+}
+.sContainer p {
+	font-family: 'VT323', monospace;
+	color: #8b8e91;
+	font-size: 28px;
+	text-align: left;
+	/*text-decoration: underline;*/
+	margin: 0;
+	/*margin-top: 12px;*/
+	word-wrap: break-word;
+}
+.sContainer ul {
+	/*width: 80%;*/
+	cursor: pointer;
+	font-family: 'VT323', monospace;
+	color: #c2c7cc;
+	font-size: 24px;
+	text-align: left;
+	/*text-decoration: underline;*/
+	margin: auto;
+	/*margin-top: 12px;*/
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	/*padding-left: 1.2em;*/
+}
+.sContainer li {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+.sContainer ul li:before {
+	content: "{";
+}
+.descr {
+	visibility: hidden;
+}
+
+
+/*-------------------------End Software Page--------------------------*/
+/*--------------------------------------------------------------------*/
+
 /*-----------------------------------------------------------------*/
 /*---------------------------About Page----------------------------*/
 

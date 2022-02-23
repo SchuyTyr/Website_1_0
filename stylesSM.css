@@ -827,7 +827,7 @@ hr.roundedTwo {
 		padding: 5px;
 	}
 	.imgLogo {
-		width: 75%;
+		width: 50%;
 		margin: 0;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -906,7 +906,7 @@ hr.roundedTwo {
 		margin-bottom: 0px;
 	}*/
 	.imgLogo {
-		width: 100%;
+		width: 60%;
 		margin: 0;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -989,6 +989,9 @@ hr.roundedTwo {
 	}
 }
 @media screen and (max-width: 400px) {
+	.imgLogo {
+		width: 90%;
+	}
 	.modal-content > div {
 		width: 90%;
 		height: auto;
