@@ -419,7 +419,7 @@ polygon {
 /*---------------------------Software Page----------------------------*/
 
 .title {
-	color: #c2c7cc;
+	color: #64a2e8;
 	font-size: 42px;
 	font-family: 'Orbitron', sans-serif;
 	font-family: 'Audiowide', cursive;
@@ -445,10 +445,10 @@ polygon {
 }
 .sContainer ul {
 	/*width: 80%;*/
-	cursor: pointer;
+	/*cursor: pointer;*/
 	font-family: 'VT323', monospace;
-	color: #c2c7cc;
 	font-size: 24px;
+	color: #3870ff;
 	text-align: left;
 	/*text-decoration: underline;*/
 	margin: auto;
@@ -465,8 +465,51 @@ polygon {
 .sContainer ul li:before {
 	content: "{";
 }
+.sContainer a {
+	cursor: pointer;
+}
+.sContainer a:hover {
+	color: #3870ff;
+}
+.projLink {
+	color: #c2c7cc;
+	cursor: pointer;
+	text-decoration: underline;
+	word-wrap: break-word;
+}
+.projLink a:hover {
+	color: #3870ff;
+}
+.projLink a:visited {
+	color: #c2c7cc;
+}
+.showHideLink{
+	color: #c2c7cc;
+}
 .descr {
-	visibility: hidden;
+	display: none;
+}
+.underline{
+	text-decoration: underline;
+}
+.lg-view {
+	display:inline;
+}
+.topDescr{
+	color: #3870ff;
+}
+.topDescrIn {
+	color: #c2c7cc;
+}
+.dates {
+	color: #64696b;
+	color: green;
+}
+.types {
+	color: #64a2e8;
+}
+.underDescr {
+	color: #8b8e91;
 }
 
 
@@ -824,6 +867,17 @@ h3 {
 		width: 45%;
 	}
 }
+@media screen and (min-width: 1500px) {
+	.sContainer ul {
+		font-size: 28px;
+	}
+}
+@media screen and (min-width: 1351px) {
+	main {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
 
 @media screen and (max-width: 1350px) {
 	main {
@@ -876,6 +930,9 @@ h3 {
 	.pText, .pTextH {
 		font-size: 18px;
 		width: 90%;
+	}
+	.lg-view {
+		display:none;
 	}
 }
 
