@@ -858,6 +858,51 @@ h3 {
 /*-------------------------End Wordsearch Page--------------------------*/
 /*----------------------------------------------------------------------*/
 
+/*--------------------------------------------------------------------*/
+/*-----------------------Computer Repair Page-------------------------*/
+
+.titleIT {
+	color: #64a2e8;
+	font-size: 42px;
+	font-family: 'Audiowide', cursive;
+	text-align: center;
+	text-decoration: underline;
+	margin: auto;
+	word-wrap: break-word;
+}
+.descrTitleIT{
+	text-align: left;
+	font-family: 'Audiowide', cursive;
+	text-decoration: underline;
+	margin: auto;
+	word-wrap: break-word;
+	line-height: 2;
+	color: #c2c7cc;
+	font-size: 28px;
+	width: 90%;
+}
+.descrIT{
+	text-align: left;
+	font-family: 'verdana';
+	text-decoration: none;
+	margin: auto;
+	line-height: 2;
+	word-wrap: break-word;
+	color: #8b8e91;
+	font-size: 22px;
+	width: 90%;
+}
+.descrIT ul {
+	list-style: none;
+}
+.descrIT ul li:before {
+	/*content: "&#9655;";*/
+	content: "▷";
+}
+
+/*----------------------End Computer Repair Page------------------------*/
+/*----------------------------------------------------------------------*/
+
 @media screen and (min-width: 2000px) {
 	main {
 		margin-top: 80px;
@@ -877,6 +922,10 @@ h3 {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
+	#main-main {
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
 }
 
 @media screen and (max-width: 1350px) {
@@ -892,6 +941,7 @@ h3 {
 @media screen and (max-width: 1200px) {
 	main {
 		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	.socialBar {
 		padding-top: 10px;
@@ -933,6 +983,15 @@ h3 {
 	}
 	.lg-view {
 		display:none;
+	}
+	.titleIT {
+		font-size: 28px;
+	}
+	.descrTitleIT{
+		font-size: 22px;
+	}
+	.descrIT{
+		font-size: 18px;
 	}
 }
 
