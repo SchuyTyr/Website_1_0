@@ -486,6 +486,10 @@ polygon {
 .showHideLink{
 	color: #c2c7cc;
 }
+.showHideAll{
+	color: #c2c7cc;
+	text-decoration: underline;
+}
 .descr {
 	display: none;
 }
