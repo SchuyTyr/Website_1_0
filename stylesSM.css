@@ -496,6 +496,8 @@ a.link4 {
 	/*transform-origin: top; *//* may fix or worsen centering issues, check later */
 
 	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
 	-webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 	/*margin: 8px;*/
@@ -523,6 +525,8 @@ a.link4 {
 	/*transform-origin: top; *//* may fix or worsen centering issues, check later */
 
 	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
 	-webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 	/*margin: 8px;*/
@@ -551,6 +555,8 @@ a.link4 {
 	/*transform-origin: top; *//* may fix or worsen centering issues, check later */
 
 	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
 	-webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 	/*margin: 8px;*/
@@ -583,6 +589,7 @@ a.link4 {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	-webkit-appearance: none;
 }
 
 .lg-view {
