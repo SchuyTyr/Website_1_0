@@ -418,6 +418,20 @@ polygon {
 /*--------------------------------------------------------------------*/
 /*---------------------------Software Page----------------------------*/
 
+/*
+.typicalWrapper::after {
+  content: "|";
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}*/
+
+#typing {
+	cursor: pointer;
+}
+
 .title {
 	color: #64a2e8;
 	font-size: 42px;
