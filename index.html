@@ -29,12 +29,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
 	<!-- End Fonts -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
 	<script src="src/js/footer-main.js" type="text/javascript" defer></script>
 </head>
 <body>
-	<header class="fullContent">
+	<header>
 		<h1 title="Schuyler Meyer">
-			<a href="https://www.schuylermeyer.com">
+			<a href="index.html">
 				<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">
 			</a>
 		</h1>
@@ -42,20 +43,19 @@
 		<hr class="rounded">
 
 		<nav>
-			<!-- Copy / Paste for more buttons or decoration
-			<button class="pageButtonFalse">
-				<div class="pageButtonTxt">&nbsp;&mdash;&mdash;&mdash;&mdash;&nbsp;</div>
-			</button>
-			-->
-			<button class="pageButtonSkew" onclick="window.location.href='aboutSM.html';" title="About the Schuy">
-				<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
-			</button>
-			<button class="pageButtonSkew" style="cursor:wait;" title="Coming Soon!">
+			<a href="aboutSM.html" class="aButton">
+				<button class="pageButtonSkew" title="About the Schuy">
+					<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
+				</button>
+			</a>
+			<button id="contactButton" class="pageButtonSkew" style="cursor:wait;" title="Coming Soon!">
 				<div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
 			</button>
-			<button class="pageButtonSkew" onclick="window.open('https://schuybox.wordpress.com/','_blank')" title="To the SchuyBox!">
-				<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
-			</button>
+			<a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
+				<button class="pageButtonSkew" title="To the SchuyBox!">
+					<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
+				</button>
+			</a>
 		</nav>
 
 		<hr class="rounded">
@@ -63,11 +63,11 @@
 
 	<!-- __________________________________________________________________________ -->
 
+<!--
 	<section id="LandVid" class="showcase">
 		<div class="video-container">
-			<video id="LVid" autoplay muted loop playsInline preload="auto" poster="src/img/LandingPage.jpg"> <!--loop muted-->
+			<video id="LVid" autoplay muted loop playsInline preload="auto" poster="src/img/LandingPage.jpg">
 				<source src="src/vid/Landing-3.mp4" type="video/mp4">
-				<!--<source src="src/vid/Landing-3-big.mp4" type="video/mp4">-->
 				<source src="src/vid/Landing-3.webm" type="video/webm">
 				<p class="pText">Your browser doesn't support HTML5 video. Here is
 					 a <a href="src/vid/landing.mp4">link to the video</a> instead.
@@ -97,10 +97,12 @@
 
 		</div>
 	</section>
+-->
 
 	<!-- __________________________________________________________________________ -->
 
-	<main id="main-main" class="fullContent">
+<!-- add class "fullContent" if using landing video -->
+	<main id="main-main">
 		<div class="container">
 			<a class="link2" href="portfolio.html" target="_self" title="Digital Art">
 				<div class="img-hover-zoom glowBorder">
@@ -146,16 +148,20 @@
 
 	</main>
 
-	<section class="fullContent">
+	<section>
 		<hr class="rounded">
 
 		<div class="buttonNav">
-			<button class="pageButtonSkew" onclick="window.location.href='photoshoot.html';" title="Book a Photoshoot">
-				<div class="pageButtonTxt">&nbsp;Book a Photoshoot&nbsp;</div>
-			</button>
-			<button class="pageButtonSkew" onclick="window.location.href='computerrepair.html';" title="Computer Repair">
-				<div class="pageButtonTxt">&nbsp;Computer Repair&nbsp;</div>
-			</button>
+			<a href="photoshoot.html" class="aButton">
+				<button class="pageButtonSkew" title="Book a Photoshoot">
+					<div class="pageButtonTxt">&nbsp;Book a Photoshoot&nbsp;</div>
+				</button>
+			</a>
+			<a href="computerrepair.html" class="aButton">
+				<button class="pageButtonSkew" title="Computer Repair">
+					<div class="pageButtonTxt">&nbsp;Computer Repair&nbsp;</div>
+				</button>
+			</a>
 		</div>
 	</section>
 
@@ -217,6 +223,9 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="hideText.js"></script>
+	<script>
+			document.getElementById("contactButton").title = 'Contact Page Coming Soon:\nSee social media below for messaging options';
+	</script>
 
 </body>
 </html>
