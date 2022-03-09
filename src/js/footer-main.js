@@ -56,7 +56,7 @@ template.innerHTML = `
   <hr class="rounded">
   <br>
   <br>
-  <h4 style="text-align:center;color:#8b8e91;font-size:64px;font-family:verdana;margin: 0;" title="Schuyler Meyer">
+  <h4 title="Schuyler Meyer">
     <img class="glowFade" alt="Schuyler Meyer" src="src/img/Logo2022.png" width="250">
   </h4>
 
@@ -65,6 +65,7 @@ template.innerHTML = `
     &#169; Schuyler Meyer &nbsp;&#5827;&nbsp; 2019 &mdash;
     `+curYear+`
     &nbsp;&#5827;&nbsp;
+    Powered by SchuyTyr &nbsp;&#5827;&nbsp;
     <a class="link3" href="readmeText.html" target="_self" title="Readme"> <u>README</u> </a>
   </p>
 `;
