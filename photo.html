@@ -16,12 +16,13 @@
 
 	<meta charset="UTF-8">
 	<meta name="description" content="Schuyler Meyer &mdash; Photography, Photo">
-	<meta name="keywords" content="Photography,Photo,Schuyler Meyer Photography,Schuyler Meyer Photo,SchuyTyr,SchuyTyr Art">
+	<meta name="keywords" content="Photography,Photo,Schuyler Meyer Photography,Schuyler Meyer Photo,SchuyTyr,SchuyTyr Art,photoshoot,Hudson Valley">
 	<meta name="author" content="Schuyler Meyer">
 	<title>SM Photo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index,follow">
 	<link href="stylesPhoto.css" rel="stylesheet">
+	<link href="stylesSM2.css" rel="stylesheet">
 	<link href="src/icons/SMLogo2022.ico" rel="shortcut icon">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,61 +30,60 @@
 	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&family=Rye&display=swap" rel="stylesheet">
 	<!-- End Fonts -->
 </head>
-<body onload = "startTimer()">
+<body id='fullBody'>
 
 	<div id="mNav" class="menuOverlay">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close" tabIndex="0">&times;</a> <!-- &#10007; -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close" tabIndex="0">&times;</a>
 	  <div class="menuOverlay-content">
 
 			<div class="navbar">
-			<div class="subNav">
-				<button class="subNavBtn" onclick="void(0)">Sports</button>
-				<div class="subNav-content" onclick="void(0)">
-					<a href="Photography/Baseball.html">Baseball</a>
-					<a href="Photography/Basketball.html">Basketball</a>
-					<a href="Photography/Equestrian.html">Equestrian</a>
-					<a href="Photography/Football.html">Football</a>
-					<a href="Photography/Golf.html">Golf</a>
-					<a href="Photography/MHockey.html">Hockey, Men's</a>
-					<a href="Photography/WHockey.html">Hockey, Women's</a>
-					<a href="Photography/Lacrosse.html">Lacrosse</a>
-					<a href="Photography/MountainBiking.html">Mountain Biking</a>
-					<a href="Photography/Soccer.html">Soccer</a>
-					<a href="Photography/Softball.html">Softball</a>
-					<a href="Photography/SwimDive.html">Swimming and Diving</a>
-					<a href="Photography/XCountry.html">Cross Country</a>
+				<div class="subNav">
+					<button class="subNavBtn" onclick="void(0)">Sports</button>
+					<div class="subNav-content" onclick="void(0)">
+						<a href="Photography/Baseball.html">Baseball</a>
+						<a href="Photography/Basketball.html">Basketball</a>
+						<a href="Photography/Equestrian.html">Equestrian</a>
+						<a href="Photography/Football.html">Football</a>
+						<a href="Photography/Golf.html">Golf</a>
+						<a href="Photography/MHockey.html">Hockey, Men's</a>
+						<a href="Photography/WHockey.html">Hockey, Women's</a>
+						<a href="Photography/Lacrosse.html">Lacrosse</a>
+						<a href="Photography/MountainBiking.html">Mountain Biking</a>
+						<a href="Photography/Soccer.html">Soccer</a>
+						<a href="Photography/Softball.html">Softball</a>
+						<a href="Photography/SwimDive.html">Swimming and Diving</a>
+						<a href="Photography/XCountry.html">Cross Country</a>
+					</div>
+				</div>
+
+				<div class="subNav">
+					<button class="subNavBtn">Nature</button>
+					<div class="subNav-content">
+						<a href="Photography/Animals.html">Animals</a>
+						<a href="Photography/Landscape.html">Landscape</a>
+						<a href="Photography/Macro.html">Macro</a>
+					</div>
+				</div>
+
+				<div class="subNav">
+					<button class="subNavBtn" onclick="void(0)">People</button>
+					<div class="subNav-content" onclick="void(0)">
+						<a href="Photography/Concerts.html">Concerts</a>
+						<a href="Photography/Cosplay.html">Cosplay</a>
+						<a href="Photography/Events.html">Events</a>
+						<a href="Photography/Portraits.html">Portraits</a>
+					</div>
+				</div>
+
+				<div class="subNav">
+					<button class="subNavBtn">Still Life</button>
+					<div class="subNav-content">
+						<a href="Photography/Artwork.html">Artwork</a>
+						<a href="Photography/Miniatures.html">Miniatures</a>
+						<a href="Photography/StillLife.html">Still Life</a>
+					</div>
 				</div>
 			</div>
-
-			<div class="subNav">
-				<button class="subNavBtn">Nature</button>
-				<div class="subNav-content">
-					<a href="Photography/Animals.html">Animals</a>
-					<a href="Photography/Landscape.html">Landscape</a>
-					<a href="Photography/Macro.html">Macro</a>
-				</div>
-			</div>
-
-			<div class="subNav">
-				<button class="subNavBtn" onclick="void(0)">People</button>
-				<div class="subNav-content" onclick="void(0)">
-					<a href="Photography/Concerts.html">Concerts</a>
-					<a href="Photography/Cosplay.html">Cosplay</a>
-					<a href="Photography/Events.html">Events</a>
-					<a href="Photography/Portraits.html">Portraits</a>
-				</div>
-			</div>
-
-			<div class="subNav">
-				<button class="subNavBtn">Still Life</button>
-				<div class="subNav-content">
-					<a href="Photography/Artwork.html">Artwork</a>
-					<a href="Photography/Miniatures.html">Miniatures</a>
-					<a href="Photography/StillLife.html">Still Life</a>
-				</div>
-			</div>
-		</div>
-
 	  </div>
 	</div>
 
@@ -91,29 +91,35 @@
 <!-- __________________________________________________________________________ -->
 
 
-	<h1 style="color:#8b8e91;" title="Schuyler Meyer"><a href="https://www.schuylermeyer.com"><img alt="Schuyler Meyer" class="imgLogo" src="src/img/SM_Sign_Photo-blur.png"></a></h1>
-	<!-- <p class="topDesc"><u>&#8280; Photography &#8280;</u></p> -->
+	<h1 style="color:#8b8e91;" title="Schuyler Meyer">
+		<a href="index.html">
+			<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SM_Sign_Photo-blur.png">
+		</a>
+	</h1>
 	<hr class="rounded">
 
 	<div class="buttonAbout">
-		<button class="pageButton" onclick="window.location.href='index.html';" title="Home">
-			<div class="pageButtonTxt">&nbsp;Home&nbsp;</div>
-		</button>
+		<a href="index.html" class="aButton">
+			<button class="pageButton" title="Home">
+				<div class="pageButtonTxt">&nbsp;Home&nbsp;</div>
+			</button>
+		</a>
 		<button class="pageButton" onclick="openNav()" title="Click to Open the Photo Menu">
 			<div class="pageButtonTxt">&nbsp;<span style="font-size: 20px;">&#9776;</span>&nbsp;Photos&nbsp;</div>
 		</button>
-		<button class="pageButton hideButton" onclick="window.location.href='aboutSM.html';" title="About the Schuy">
-			<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
-		</button>
-		<button class="pageButton hideButton" style="cursor:wait;" title="Coming Soon!">
+		<a href="aboutSM.html" class="aButton">
+			<button class="pageButton hideButton" title="About the Schuy">
+				<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
+			</button>
+		</a>
+		<button id="contactButton" class="pageButton hideButton" style="cursor:wait;" title="Coming Soon!">
 			<div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
 		</button>
-		<button class="pageButton hideButton" onclick="window.open('https://schuybox.wordpress.com/','_blank')" title="To the SchuyBox!">
-			<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
-		</button>
-		<!--<button class="pageButton" title="Coming Soon" style="cursor: wait;">
-			<div class="pageButtonTxt">&lt;&nbsp;New Tabs Incoming&nbsp;&gt;</div>
-		</button>-->
+		<a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
+			<button class="pageButton hideButton" title="To the SchuyBox!">
+				<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
+			</button>
+		</a>
 	</div>
 
 	<hr class="rounded">
@@ -121,63 +127,41 @@
 
 	<!-- __________________________________________________________________________ -->
 
-<!--
-	<div class="mainContainer">
-		<div class="container">
-			<div class="arrowsL"> &lt; </div>
-			<img alt="Photography" class="img2" src="../hockey3.jpg">
-			<div class="arrowsR"> &gt; </div>
-		</div>
-	</div>
--->
+<main class="mainContainer">
 
-<!-- __________________________________________________________________________ -->
+	<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
 
-<div class="mainContainer">
+	<div class="photoTextDescr">Click on an image to enlarge it.</div>
 
-	<!--
-	<button id="videoMessageButton" class="pageButtonC" onclick="hideVid()" title="Close the video message."><div>Close</div></button>
-	<div id="videoMessage">
-		<p class="pText">
-			Click or tap play to view the video. <br><br>
-			Click or tap the "close" button above to close the video and open the photo slideshow.<br><br>
-		</p>
-		<video id="video" controls loop poster="Photography/Web_Ani_Still-2.png" preload="auto">
-			<source src="Photography/WebAni.mp4" type="video/mp4">
-			<source src="Photography/WebAni.webm" type="video/webm">
-			<p class="pText">Your browser doesn't support HTML5 video. Here is
-				 a <a href="Photography/WebAni.mp4">link to the video</a> instead.
-			</p>
-		</video>
-	</div>
--->
-
-	<div class="container">
-	  <img class="slides img3" src="Photography/photos/photo_1.jpg">
-	  <img class="slides img3" src="Photography/photos/photo_2.jpg">
-	  <img class="slides img3" src="Photography/photos/photo_3.jpg">
-	  <img class="slides img3" src="Photography/photos/photo_4.jpg">
-		<img class="slides img3" src="Photography/photos/photo_5.jpg">
-		<img class="slides img3" src="Photography/photos/photo_6.jpg">
-		<img class="slides img3" src="Photography/photos/photo_7.jpg">
-		<img class="slides img3" src="Photography/photos/photo_8.jpg">
-		<img class="slides img3" src="Photography/photos/photo_9.jpg">
-		<img class="slides img3" src="Photography/photos/photo_10.jpg">
-		<img class="slides img3" src="Photography/photos/photo_11.jpg">
-		<img class="slides img3" src="Photography/photos/photo_12.jpg">
-		<div id="slideCounter" class="slidesText"></div>
+	<div class="containerGrid">
+	  <img class="img4" src="Photography/photos/photo_1.jpg" title="Gabrielle David of the Clarkson Golden Knights">
+	  <img class="img4" src="Photography/photos/photo_2.jpg" title="Blueberries">
+	  <img class="img4" src="Photography/photos/photo_3.jpg" title="Dustyn McFaul Scores His First Collegiate Goal">
+	  <img class="img4" src="Photography/photos/photo_4.jpg" title="The Insect and the Flower">
+		<img class="img4" src="Photography/photos/photo_5.jpg" title="Frog">
+		<img class="img4" src="Photography/photos/photo_6.jpg" title="Kayla Meneghin of the Connecticut Whale, Season 5">
+		<img class="img4" src="Photography/photos/photo_7.jpg" title="On a Journey">
+		<img class="img4" src="Photography/photos/photo_8.jpg" title="Red Dress">
+		<img class="img4" src="Photography/photos/photo_9.jpg" title="The Golden Knights are National Champions, 2018">
+		<img class="img4" src="Photography/photos/photo_10.jpg" title="Protecting the Ring">
+		<img class="img4" src="Photography/photos/photo_11.jpg" title="Base Hit">
+		<img class="img4" src="Photography/photos/photo_12.jpg" title="Fruit Loop Magic">
+		<img class="img4" src="Photography/photos/photo_13.jpg" title="And The Pitch">
+		<img class="img4" src="Photography/photos/photo_14.jpg" title="Squeezing By">
+		<img class="img4" src="Photography/photos/photo_15.jpg" title="Chaotic Fantasy">
+		<img class="img4" src="Photography/photos/photo_16.jpg" title="Through The Gate">
+		<img class="img4" src="Photography/photos/photo_17.jpg" title="Treasure">
+		<img class="img4" src="Photography/photos/photo_18.jpg" title="QWERTY">
 	</div>
 
-<!--
-	<p class="pText">
-		While this site is under construction, check out the rest of my photos on my Flickr, or on the other social medias &ndash; linked below.
-	</p>
--->
+</main>
 
-  <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
-  <!-- <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+<div id="myModal" class="modal" title="Click to Close">
+	<div id="photoText">Click the "x" or anywhere outside the image to close.</div>
+	<input type="button" id="closeButton" value="&times;" title="Close">
+	<img class="modal-content" id="img01" title="">
+	<div id="photoTextCapt"></div>
 </div>
-
 
 <!-- __________________________________________________________________________ -->
 
@@ -187,6 +171,19 @@
 		<button class="pageButton pageButtonUN" onclick="window.location.href='photoshoot.html';" title="Book a Photoshoot">
 			<div>&nbsp;Book a Photoshoot&nbsp;</div>
 		</button>
+		<a href="aboutSM.html" class="aButton">
+			<button class="pageButton showButton" title="About the Schuy">
+				<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
+			</button>
+		</a>
+		<button id="contactButton" class="pageButton showButton" style="cursor:wait;" title="Coming Soon!">
+			<div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
+		</button>
+		<a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
+			<button class="pageButton showButton" title="To the SchuyBox!">
+				<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
+			</button>
+		</a>
 	</div>
 
 	<hr class="rounded">
@@ -224,75 +221,32 @@
 			</div>
 	</div>
 
-
 	<hr class="rounded">
 
-	<h4 title="Schuyler Meyer"><img alt="Schuyler Meyer" src="src/img/Logo2022.png" width="250"></h4>
+	<h4 title="Schuyler Meyer">
+    <img alt="Schuyler Meyer" src="src/img/Logo2022.png" width="250">
+  </h4>
 
-	<p id="p01">&#169;&nbsp;<u>Schuyler&nbsp;Meyer&nbsp;Photography</u> <b>&nbsp;&lt;&nbsp;|&nbsp;/\\&nbsp;|&nbsp;&gt;&nbsp;</b>
-		<u>2017&nbsp;&mdash;&nbsp;<script>document.write(new Date().getFullYear())</script></u>
-	</p>
+  <p id="p01">
+    <b>&nbsp;&lt;&nbsp;|&nbsp;/\\&nbsp;|&nbsp;&gt;&nbsp;</b>
+		<br><br>
+    &#169; Schuyler Meyer &nbsp;&#5827;&nbsp; 2017 &mdash;
+    <script>document.write(new Date().getFullYear())</script>
+		&nbsp;&#5827;&nbsp;
+    Powered by SchuyTyr
+  </p>
 
 
 
 	<!-- __________________________________________________________________________ -->
 
 	<script src="photography/photoMenu.js"></script>
+	<script src="scrollToTop.js"></script>
+	<script src="src/js/photoScript.js"></script>
 
-	<script src="photography/slideShow.js"></script>
-
-	<!-- For slideshow arrows
 	<script>
-	/*
-	var slideIndex = 1;
-	showDivs(slideIndex);
-
-	function plusDivs(n) {
-	  showDivs(slideIndex += n);
-	}
-
-	function showDivs(n) {
-	  var i;
-	  var x = document.getElementsByClassName("slides");
-	  if (n > x.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = x.length}
-	  for (i = 0; i < x.length; i++) {
-	    x[i].style.display = "none";
-	  }
-	  x[slideIndex-1].style.display = "block";
-	}
-	*/
+			document.getElementById("contactButton").title = 'Contact Page Coming Soon:\nSee social media below for messaging options';
 	</script>
-	-->
-
-<!-- For "Work in Progress" Video
-	<script>
-
-	var isPlaying = false;
-
-	function hideVid() {
-	  var y = document.getElementById("videoMessage");
-		var z = document.getElementById("videoMessageButton");
-		var vid = document.getElementById("video");
-	  if (y.style.display === "none") {
-	    y.style.display = "block";
-	  } else {
-	    y.style.display = "none";
-			z.style.display = "none";
-			vid.pause();
-			isPlaying = !isPlaying;
-			carousel();
-	  }
-	}
-
-	</script>
--->
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </body>
 </html>

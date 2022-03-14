@@ -7,6 +7,8 @@ const body = document.getElementById('fullBody');
 let modalImg = document.getElementById("img01");
 let modalImgCapt = document.getElementById("photoTextCapt");
 
+var close = document.getElementById("closeButton");
+
 var scrollTop = document.getElementById("myBtn");
 var noScroll = true;
 
@@ -28,6 +30,12 @@ window.onclick = function(event) {
 			noScrollF();
       topBtn = false;
 		}
+}
+
+close.onclick = function(event) {
+		modal.style.display = "none";
+		noScrollF();
+    topBtn = false;
 }
 
 function noScrollF() {

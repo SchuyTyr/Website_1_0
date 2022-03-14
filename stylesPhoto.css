@@ -2,7 +2,6 @@ body {
 	background-color: #111821;
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
-	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	width: auto;
@@ -62,24 +61,22 @@ video {
 	font-family: 'Orbitron', sans-serif;
   overflow-x: hidden;
   transition: 0.5s;
+	-webkit-appearance: none;
 }
 
 .menuOverlay-content {
   position: relative;
   top: 10%;
-  /*width: 100%;*/
-  text-align: center;
-  /*margin-top: 30px;*/
+  text-align: left;
 }
 
 .menuOverlay a, .menuOverlay div {
   padding: 12px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
   text-decoration: none;
   font-size: 36px;
   color: #8b8e91;
-  /*display: block;*/
   transition: 0.1s cubic-bezier(.68,-0.55,.27,1.55);
 }
 
@@ -95,11 +92,10 @@ video {
 	padding-left: 12px;
 	padding-right: 12px;
 	transition: 0.3s all ease-in-out;
-	/*font-family: 'Orbitron', sans-serif;*/
-	/*font-family: 'Merienda', cursive;*/
 	font-family: 'Rye', cursive;
 	transform: rotate(0deg);
 	z-index: 10;
+	-webkit-appearance: none;
 }
 
 .closebtn:hover,
@@ -110,21 +106,16 @@ video {
 
 .navbar {
   overflow: hidden;
-  /*background-color: rgba(0,0,0,0.9);*/
 }
 
 .navbar a {
-  /*float: left;*/
   font-size: 24px;
-  /*color: white;*/
   text-align: center;
-  /*padding: 14px 16px;*/
 	padding: 12px;
   text-decoration: none;
 }
 
 .subNav {
-  /*float: left;*/
   overflow: hidden;
 }
 
@@ -133,61 +124,38 @@ video {
   border: none;
   outline: none;
   color: #8b8e91;
-  /*padding: 14px 16px;*/
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 	border-bottom: 3px solid rgba(99, 138, 255,0.25);
+	-webkit-appearance: none;
 }
 
-/*.mNav a:hover, .subNav:hover .subNavBtn {
-  background-color: red;
-}*/
-
 .subNav-content {
-  display: none;
-  /*position: absolute;*/
-  /*left: 0;*/
-  /*background-color: red;*/
-  /*width: 100%;*/
+  /*display: none;*/
   z-index: 1;
+	-webkit-appearance: none;
 }
 
 .subNav-content a {
-	/*margin-top: 4px;
-	margin-bottom: 4px;
-	padding: 12px;*/
-	/*border: solid 2px transparent;*/
 	border: solid 2px rgba(67,111,243,30%);
-	/*background-color: rgba(67,111,243,15%);*/
 	border-radius: 4%;
 	padding: 2px;
 }
 
 .subNav-content a:hover {
 	text-align: center;
-	/*font-family: 'Orbitron', sans-serif;*/
 	cursor: pointer;
-  /*transition: .3s all ease-in;*/
 	color: rgba(99, 138, 255);
- 	/*font-size: 18px;*/
-	/*padding: 10px;*/
-	/*padding-left: 4px;
-	padding-right: 4px;*/
 
- 	/*text-decoration: none;*/
  	border: solid 2px rgba(67,111,243,30%);
  	background-color: rgba(67,111,243,15%);
 	border-radius: 4%;
-
-	/*box-shadow: 0px 0px 6px 2px #436ff3;*/
 	-webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
-.subNav:hover .subNav-content {
-  display: block;
-}
+.subNav:hover .subNav-content,
 .subNav:active .subNav-content {
   display: block;
 }
@@ -198,9 +166,7 @@ video {
 }
 
 .subNavBtn:visited,
-.subNav-content:visited
-/*.subNavBtn:focus,
-.subNav-content:focus*/ {
+.subNav-content:visited {
 	text-decoration: none;
 	color: #8b8e91;
 }
@@ -492,7 +458,7 @@ video {
 }
 
 .imgLogo {
-	width: 40%;
+	width: 30%;
 }
 
 a.link3 {
@@ -567,6 +533,8 @@ a.link4 {
 	/*transform-origin: top; *//* may fix or worsen centering issues, check later */
 
 	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
 	-webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 	/*margin: 8px;*/
@@ -593,6 +561,9 @@ a.link4 {
 .hideButton {
 	display: inline-block;
 }
+.showButton {
+	display: none;
+}
 
 .pageButtonC {
 	text-align: center;
@@ -611,6 +582,8 @@ a.link4 {
 	border-radius: 4%;
 
 	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
 	-webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
@@ -645,7 +618,6 @@ a.link4 {
 }
 
 hr {
-	-moz-width: 90%;
 	-webkit-width: 90%;
 	-ms-width: 90%;
 	width: 90%;
@@ -657,9 +629,10 @@ hr.rounded {
 	box-shadow: 0 0 1px #ffffff,
 							0 0 10px #ffffff,
 							0 0 15px #99bbff;
+	-webkit-box-shadow: 0 0 1px #ffffff,
+							0 0 10px #ffffff,
+							0 0 15px #99bbff;
 	/*-webkit-filter: drop-shadow(0 0 1px #ffffff)
-					drop-shadow(0 0 4px #99bbff);
-	-moz-filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
 	-ms-filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
@@ -673,8 +646,6 @@ hr.roundedTwo {
 	border-radius: 5px;
 	/*-webkit-filter: drop-shadow(0 0 2px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
-	-moz-filter: drop-shadow(0 0 2px #ffffff)
-					drop-shadow(0 0 4px #99bbff);
 	-ms-filter: drop-shadow(0 0 2px #ffffff)
 					drop-shadow(0 0 4px #99bbff);*/
 	filter: drop-shadow(0 0 4px #ffffff);
@@ -685,8 +656,6 @@ hr.roundedTwo {
 	/*border-top: 1px solid #bbbbbb;*/
 	border-radius: 5px;
 	/*-webkit-filter: drop-shadow(0 0 2px #ffffff)
-					drop-shadow(0 0 4px #99bbff);
-	-moz-filter: drop-shadow(0 0 2px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
 	-ms-filter: drop-shadow(0 0 2px #ffffff)
 					drop-shadow(0 0 4px #99bbff);*/
@@ -864,7 +833,7 @@ hr.roundedTwo {
 		padding: 5px;
 	}
 	.imgLogo {
-		width: 75%;
+		width: 50%;
 		margin: 0;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -913,6 +882,9 @@ hr.roundedTwo {
 	.hideButton {
 		display: none;
 	}
+	.showButton {
+		display: inline-block;
+	}
 	.titles {
 		font-size: 28px;
 	}
@@ -938,7 +910,7 @@ hr.roundedTwo {
 		font-size: 18px;
 	}
 	.imgLogo {
-		width: 100%;
+		width: 75%;
 		margin: 0;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -989,9 +961,9 @@ hr.roundedTwo {
 		padding-top: 12px;
 		padding-bottom: 12px;
 	}
-	/*.menuOverlay a {
-		font-size: 20px
-	}*/
+	.menuOverlay-content {
+		text-align: center;
+	}
 	.menuOverlay .closebtn {
 		top: 15px;
 		left: 15vw;
@@ -1000,7 +972,7 @@ hr.roundedTwo {
 	.subNav-content a{
 	 	border: solid 2px rgba(67,111,243,30%);
 		border-radius: 4%;
-		padding: 2px;
+		padding: 4px;
 	}
 	.img3 {
 		/*width: 100%;
