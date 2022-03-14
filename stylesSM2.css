@@ -2,7 +2,6 @@ body {
 	background-color: #111821;
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
-	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	width: auto;
@@ -414,6 +413,147 @@ polygon {
 	/*text-decoration: underline;*/
 	transition: .15s all ease-in;
 }
+
+.aButton {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*--------------------------------------------------------------------*/
+/*---------------------------New Photo Page----------------------------*/
+
+.containerGrid {
+  /*display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: fit-content(100%);*/
+
+	object-fit: contain;
+}
+
+.containerGrid img {
+	height: 300px;
+  /*width: 90%;*/
+	border-radius: 20% / 12%;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 12px;
+}
+
+.img4 {
+
+}
+
+.containerGrid img:hover {
+	cursor: pointer;
+	color: #436ff3;
+	border: 10px #436ff3;
+	border-radius: 0px;
+	box-shadow: 0 0 1px 4px #000000,
+							0 0 25px 15px #436ff3;
+	-webkit-box-shadow: 0 0 1px 4px #000000,
+							0 0 25px 15px #436ff3;
+	-webkit-appearance: none;
+	/*animation: colorChange 2s Ease-in-out infinite;*/
+	animation: borderChange 0.25s Ease-in-out;
+}
+
+@keyframes borderChange {
+  from {
+		border-radius: 20% / 12%;
+  }
+  to {
+		border-radius: 0;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+	 display: none; /* Hidden by default */
+	 position: fixed; /* Stay in place */
+	 z-index: 1000; /* Sit on top */
+	 padding-top: 25px; /* Location of the box */
+	 padding-bottom: 25px;
+	 left: 0;
+	 top: 0;
+	 width: 100%; /* Full width */
+	 height: 100%; /* Full height */
+	 overflow: auto; /* Enable scroll if needed */
+	 background-color: rgb(0,0,0); /* Fallback color */
+	 background-color: rgba(0,0,0,0.95); /* Black w/ opacity */
+	 -webkit-backdrop-filter: blur(20px);
+	 -ms-backdrop-filter: blur(20px);
+	 -o-backdrop-filter: blur(20px);
+	 backdrop-filter: blur(20px);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+	 margin: auto;
+	 margin-top: auto;
+	 margin-bottom: auto;
+	 display: block;
+	 /*width: 80%;*/
+	 max-width: 80%;
+	 max-height: 60%;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 padding: 12px;
+	 /*border-radius: 20% / 12%;*/
+	 box-shadow: 0 0 1px 4px #000000,
+ 							0 0 25px 15px #436ff3;
+ 	-webkit-box-shadow: 0 0 1px 4px #000000,
+ 							0 0 25px 15px #436ff3;
+ 	-webkit-appearance: none;
+}
+
+.photoText, .photoTextDescr, #photoTextCapt {
+	color: #c2c7cc;
+	font-size: 20px;
+	font-family: 'Merienda', cursive;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+}
+.photoTextDescr {
+	margin-bottom: 24px;
+	padding-bottom: 12px;
+	margin-top: 8px;
+	padding-top: 0;
+}
+.photoText {
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#photoTextCapt {
+	/*text-decoration: overline;*/
+	/*border-bottom: solid 1px #c2c7cc;*/
+	position: absolute;
+	top: 88%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#photoTextCapt span {
+	/*text-decoration: overline;*/
+	border-top: solid 1px #c2c7cc;
+	border-bottom: solid 1px #c2c7cc;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	line-height: 2;
+}
+
+body.noscroll {
+  overflow-y: hidden;
+}
+
+/*-------------------------End Photo Page--------------------------*/
+/*--------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------*/
 /*---------------------------Software Page----------------------------*/
@@ -951,6 +1091,9 @@ h3 {
 		margin-top: 40px;
 		margin-bottom: 40px;
 	}
+	.containerGrid img {
+		height: 250px;
+	}
 	.imgLogoStyle {
 		width: 60%;
 	}
@@ -1132,6 +1275,10 @@ h3 {
 		 height: 24px;
 		 font-size: 20px;
 	 }
+	 .containerGrid img {
+			 height: auto;
+			 width: 80%;
+		}
 }
 @media screen and (max-width: 500px) {
 	#textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
@@ -1148,4 +1295,16 @@ h3 {
 		 font-size: 20px;
 		 padding: 12px;
 	 }
+	 .containerGrid img {
+ 		 height: auto;
+ 		 width: 90%;
+ 		 margin-left: 4px;
+ 		 margin-right: 4px;
+ 		 margin-top: 4px;
+ 		 margin-bottom: 4px;
+ 		 padding: 8px;
+ 	}
+	#photoTextCapt {
+		top: 85%;
+	}
 }

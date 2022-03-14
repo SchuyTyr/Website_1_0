@@ -5,7 +5,6 @@ body {
 	background-color: #111821;
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
-	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	width: auto;
@@ -613,7 +612,6 @@ a.link4 {
 }
 
 hr {
-	-moz-width: 90%;
 	-webkit-width: 90%;
 	-ms-width: 90%;
 	width: 90%;
@@ -627,8 +625,6 @@ hr.rounded {
 							0 0 15px #ffffff;
 	/*-webkit-filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
-	-moz-filter: drop-shadow(0 0 1px #ffffff)
-					drop-shadow(0 0 4px #99bbff);
 	-ms-filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
 	filter: drop-shadow(0 0 1px #ffffff)
@@ -640,8 +636,6 @@ hr.roundedTwo {
 	border-top: 1px solid #bbbbbb;
 	border-radius: 5px;
 	/*-webkit-filter: drop-shadow(0 0 2px #ffffff)
-					drop-shadow(0 0 4px #99bbff);
-	-moz-filter: drop-shadow(0 0 2px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
 	-ms-filter: drop-shadow(0 0 2px #ffffff)
 					drop-shadow(0 0 4px #99bbff);*/
@@ -655,8 +649,6 @@ hr.roundedTwo {
 	/*border-top: 1px solid #bbbbbb;*/
 	border-radius: 5px;
 	/*-webkit-filter: drop-shadow(0 0 2px #ffffff)
-					drop-shadow(0 0 4px #99bbff);
-	-moz-filter: drop-shadow(0 0 2px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
 	-ms-filter: drop-shadow(0 0 2px #ffffff)
 					drop-shadow(0 0 4px #99bbff);*/

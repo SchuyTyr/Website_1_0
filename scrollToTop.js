@@ -6,7 +6,9 @@ var mybutton = document.getElementById("myBtn");
 var topBtn = false;
 
 // When the user scrolls down 225px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction()
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 225 || document.documentElement.scrollTop > 225) {
@@ -24,5 +26,7 @@ function scrollFunction() {
 function topFunction() {
   /*document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;*/
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  window.scrollTo({
+    top: 0, behavior: 'smooth'
+  });
 }
