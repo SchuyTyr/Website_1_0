@@ -14,29 +14,39 @@
 	<meta name="author" content="Schuyler Meyer">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="stylesSM.css" rel="stylesheet">
+	<!--<link href="stylesSM2.css" rel="stylesheet"> - Breaks it-->
 	<link href="src/icons/SMLogo2022.ico" rel="shortcut icon">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Merienda&family=Orbitron&display=swap" rel="stylesheet">
 	<!-- End Fonts -->
+	<script src="src/js/footer-photo.js" type="text/javascript" defer></script>
 	<title>Schuyler Meyer Photography</title>
 </head>
 <body onload = "startTimer()">
 
 	<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
 
-	<h1 style="color:#8b8e91;" title="Schuyler Meyer"><a href="https://www.schuylermeyer.com"><img alt="Schuyler Meyer" class="imgLogo" src="src/img/SM_Sign_Photo-blur.png"></a></h1>
+	<h1 style="color:#8b8e91;" title="Schuyler Meyer">
+		<a href="index.html">
+			<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SM_Sign_Photo-blur.png">
+		</a>
+	</h1>
 	<hr class="rounded"><br>
 	<!-- __________________________________________________________________________ -->
 
 	<div class="buttonAbout">
-		<button class="pageButton pageButtonUN" onclick="window.location.href='index.html';" title="Go Home">
-			<div class="pageButtonTxt pageButtonUN">&nbsp;Home&nbsp;</div>
-		</button>
-		<button class="pageButton pageButtonUN" onclick="window.location.href='photo.html';" title="Go to Photography">
-			<div class="pageButtonTxt pageButtonUN">&nbsp;Photos&nbsp;</div>
-		</button>
+		<a href="index.html" class="aButton">
+			<button class="pageButton" title="Home">
+				<div>&nbsp;Home&nbsp;</div>
+			</button>
+		</a>
+		<a href="photo.html" class="aButton">
+			<button class="pageButton" title="Photography">
+				<div>&nbsp;Photos&nbsp;</div>
+			</button>
+		</a>
 	</div>
 
 	<h2 class="modalH2-2">
@@ -101,73 +111,24 @@
 	<br>
 	<br>
 	<br>
-	<hr class="rounded">
 
-	<div class="socialBar" style="width: 100%;">
-
-			<div class="socialProps">
-				<a class="link4" href="https://www.instagram.com/schuyler_meyer/" title="Instagram &#64;schuyler_meyer">
-						<img class="socialHover" src="Instagram_3.png" alt="instagram.com/schuyler_meyer">
-				</a>
-			</div>
-
-			<div class="socialProps">
-				<a class="link4" href="https://twitter.com/schuylermeyer24" title="Twitter &#64;schuylermeyer24">
-						<img class="socialHover" src="Twitter_3.png" alt="twitter.com/schuylermeyer24" >
-				</a>
-			</div>
-
-			<div class="socialProps">
-				<a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer">
-					<!--<button class="imgSocial" title="Flickr &#64; Schuyler Meyer">-->
-						<img class="socialHover" src="Flickr_3.png" alt="flickr.com/photos/schuyler_meyer">
-				</a>
-			</div>
-
-			<div class="socialProps">
-				<a class="link4" href="https://www.linkedin.com/in/schuyler-meyer/" title="LinkedIn &#64; Schuyler Meyer">
-						<img class="socialHover" src="LinkedIn.png" alt="linkedin.com/in/schuyler-meyer">
-				</a>
-			</div>
-
-			<div class="socialProps">
-				<a class="link4" href="https://www.deviantart.com/akatsukirising" title="DeviantArt &#64;AkatsukiRising">
-						<img class="socialHover" src="DeviantArt_3.png" alt="deviantart.com/akatsukirising" >
-				</a>
-			</div>
-
-			<div class="socialProps">
-				<a class="link4" href="mailto:schuybreach@gmail.com" title="Email &#64; schuybreach@gmail.com">
-						<img class="socialHover" src="Email.png" alt="Email: schuybreach@gmail.com">
-				</a>
-			</div>
-	</div>
-
-	<hr class="rounded">
-	<br>
-	<br>
-	<br>
-		<!-- __________________________________________________________________________ -->
 	<div class="buttonAbout">
-		<button class="pageButton pageButtonUN" onclick="window.location.href='index.html';" title="Go Home">
-			<div class="pageButtonTxt pageButtonUN">&nbsp;Home&nbsp;</div>
-		</button>
-		<button class="pageButton pageButtonUN" onclick="window.location.href='photo.html';" title="Go to Photography">
-			<div class="pageButtonTxt pageButtonUN">&nbsp;Photos&nbsp;</div>
-		</button>
+		<a href="index.html" class="aButton">
+			<button class="pageButton" title="Home">
+				<div>&nbsp;Home&nbsp;</div>
+			</button>
+		</a>
+		<a href="photo.html" class="aButton">
+			<button class="pageButton" title="Photography">
+				<div>&nbsp;Photos&nbsp;</div>
+			</button>
+		</a>
 	</div>
-	<br>
-	<h4 title="Schuyler Meyer">
-    <img class="glowFade" alt="Schuyler Meyer" src="src/img/Logo2022.png" width="250">
-  </h4>
 
-  <p id="p01">
-    <b>&nbsp;&lt;&nbsp;|&nbsp;/\\&nbsp;|&nbsp;&gt;&nbsp;</b><br><br>
-    &#169; Schuyler Meyer &nbsp;&#5827;&nbsp; 2019 &mdash;
-    <script>document.write(new Date().getFullYear())</script>
-    &nbsp;&#5827;&nbsp;
-    <a class="link3" href="readmeText.html" target="_self" title="Readme"> <u>README</u> </a>
-  </p>
+	<br>
+	<br>
+
+	<div id="PhotoFooter"></div>
 
 	<script src="photography/slideShow.js"></script>
 	<script src="scrollToTop.js"></script>

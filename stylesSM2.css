@@ -575,6 +575,26 @@ body.noscroll {
 	transition: 0.3s all ease-in-out;
 }
 
+.cancelButton {
+	/*background-image: repeating-linear-gradient(
+		90deg, transparent 0 10px, #c2c7cc 10px 20px);*/
+		text-decoration: line-through;
+		cursor: default;
+		border: solid 2px rgba(80, 83, 92,30%);
+	 	background-color: rgba(80, 83, 92,15%);
+		color: rgba(80, 83, 92, 0.9);
+		box-shadow: 0px 0px 6px 2px #50535c;
+		-webkit-box-shadow: 0px 0px 6px 2px #50535c;
+		-webkit-appearance: none;
+}
+.cancelButton:hover {
+	border: solid 2px rgba(80, 83, 92,30%);
+	background-color: rgba(80, 83, 92,15%);
+	color: rgba(80, 83, 92, 0.9);
+	transition: .3s all ease-in;
+	border-radius: 4%;
+}
+
 /*-------------------------End Photo Page--------------------------*/
 /*--------------------------------------------------------------------*/
 

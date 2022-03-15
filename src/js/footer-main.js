@@ -72,4 +72,3 @@ template.innerHTML = `
 
 //let templateContent = template.content;
 //document.body.appendChild(template.content);
-document.body.appendChild(template.content);
