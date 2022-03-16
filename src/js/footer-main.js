@@ -56,7 +56,7 @@ template.innerHTML = `
   <hr class="rounded">
   <br>
   <br>
-  <h4 title="Schuyler Meyer">
+  <h4>
     <img alt="Schuyler Meyer" src="src/img/Logo2022.png" width="250">
   </h4>
 

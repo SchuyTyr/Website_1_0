@@ -674,10 +674,10 @@ body.noscroll {
 	text-decoration: underline;
 	word-wrap: break-word;
 }
-.projLink a:hover {
+.projLink:hover {
 	color: #3870ff;
 }
-.projLink a:visited {
+.projLink:visited {
 	color: #c2c7cc;
 }
 .showHideLink{
@@ -1102,6 +1102,25 @@ h3 {
 }
 
 /*----------------------End Computer Repair Page------------------------*/
+/*----------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------*/
+/*---------------------------Contact Page-----------------------------*/
+
+.pContact {
+	color: #c2c7cc;
+	font-size: 18px;
+	font-family: 'Merienda', cursive;
+	text-align: center;
+	text-decoration: none;
+	word-wrap: break-word;
+	padding: 24px;
+	margin: auto;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+/*--------------------------End Contact Page----------------------------*/
 /*----------------------------------------------------------------------*/
 
 @media screen and (min-width: 2000px) {

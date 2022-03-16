@@ -88,7 +88,7 @@
 		<div class="title">Projects:</div>
 
 		<div class="sContainer">
-			<p style="text-align:center;">(Click Title to <a class="showHideAll" title="Expand">Expand</a>)</p>
+			<p style="text-align:center;">(Click Title to <a class="showHideAll" title="Expand All">Expand</a>)</p>
 			<br>
 			<p>Project_s:</p>
 					<ul>
@@ -335,12 +335,12 @@
 			function (event) {
 					if ($(this).hasClass("underline")) {
 						$(this).removeClass("underline");
-						$('.showHideAll').text("Expand");
-						$('.showHideAll').prop('title', 'Expand');
+						$('.showHideAll').text("Expand All");
+						$('.showHideAll').prop('title', 'Expand All');
 					} else {
 						$(this).addClass("underline");
-						$('.showHideAll').text("Collapse");
-						$('.showHideAll').prop('title', 'Collapse');
+						$('.showHideAll').text("Collapse All");
+						$('.showHideAll').prop('title', 'Collapse All');
 					}
 					$(this).next('.descr').toggle("slow","swing");
 			}
@@ -351,13 +351,13 @@
 					if ($('.showHideLink').hasClass("underline")){
 						$('.descr').hide("slow","swing");
 						$('.showHideLink').removeClass("underline");
-						$('.showHideAll').text("Expand");
-						$('.showHideAll').prop('title', 'Expand');
+						$('.showHideAll').text("Expand All");
+						$('.showHideAll').prop('title', 'Expand All');
 					} else {
 						$('.descr').show("slow","swing");
 						$('.showHideLink').addClass("underline");
-						$('.showHideAll').text("Collapse");
-						$('.showHideAll').prop('title', 'Collapse');
+						$('.showHideAll').text("Collapse All");
+						$('.showHideAll').prop('title', 'Collapse All');
 					}
 			}
 		);
