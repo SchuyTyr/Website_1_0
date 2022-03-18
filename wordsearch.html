@@ -34,7 +34,7 @@
 <body>
 	<header>
 		<h1 title="Schuyler Meyer">
-			<a href="https://www.schuylermeyer.com">
+			<a href="index.html">
 				<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">
 			</a>
 		</h1>
@@ -124,44 +124,10 @@
 
 	<div id="footer-main"></div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="src/js/wordsearch-flat.js"></script>
 	<script src="hideText.js"></script>
 	<script src="scrollToTop.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-	<script>
-
-		var place = this.placeholder;
-
-		$(".inputs").focus(function () {
-			place = this.placeholder;
-			if ($(this).is(':focus')){
-				this.placeholder = '';
-			}
-		});
-		$(".inputs").blur(function () {
-			if (!($(this).is(':focus'))){
-				this.placeholder = place;
-			}
-		});
-
-		$(".inputs").keyup(function () {
-			if (this.value.length === this.maxLength) {
-				var $next = $(this).next('.inputs');
-
-				if(this.id === 'textbox5'){
-				/*if($next.length === 0){*/
-					$('.inputs').siblings('.inputs').prev('.inputs').focus();
-				}
-				else if ($next.length){
-						$(this).next('.inputs').focus();
-				}
-				else {
-						$(this).blur();
-				}
-			}
-		});
-	</script>
 
 </body>
 </html>

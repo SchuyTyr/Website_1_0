@@ -112,7 +112,7 @@ submit.addEventListener("click", function () {
             wordList = wordList.toString().replace(/(\r\n|\n|\r)/gm, "").split(","); //-- remove those line breaks --//
 
             for (var i in wordList) {
-                if ((wordList[i].length === 5) //-- check length of word --//
+                if ((wordList[i].length === 5) //-- check length of word // Wordle = 5 letter words --//
                     && (wordList[i].charAt(0) === startLetter || startLetter === '*') //-- check first letter --//
                     && (wordList[i].charAt(1) === secondLetter || secondLetter === '*') //-- check second letter --//
                     && (wordList[i].charAt(2) === thirdLetter || thirdLetter === '*') //-- check third letter --//
@@ -274,3 +274,35 @@ function notExcluded(array, query) {
 }
 
 
+//-- jQuery, here instead of on HTML page --//
+
+var place = this.placeholder;
+
+$(".inputs").focus(function () {
+    place = this.placeholder;
+    if ($(this).is(':focus')) {
+        this.placeholder = '';
+    }
+});
+$(".inputs").blur(function () {
+    if (!($(this).is(':focus'))) {
+        this.placeholder = place;
+    }
+});
+
+$(".inputs").keyup(function () {
+    if (this.value.length === this.maxLength) {
+        var $next = $(this).next('.inputs');
+
+        if (this.id === 'textbox5') {
+            /*if($next.length === 0){*/
+            $('.inputs').siblings('.inputs').prev('.inputs').focus();
+        }
+        else if ($next.length) {
+            $(this).next('.inputs').focus();
+        }
+        else {
+            $(this).blur();
+        }
+    }
+});
