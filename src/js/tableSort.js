@@ -15,7 +15,7 @@ const comparer =
                 (getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
 
 // do the work...
-document.querySelectorAll('th').forEach(th =>
+document.querySelectorAll('th.standings').forEach(th =>
     th.addEventListener('click', (() => {
 
         const table = th.closest('table');

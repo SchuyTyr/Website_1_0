@@ -103,12 +103,13 @@ a.link6 {
 	background-color: transparent;
 	text-decoration: none;
 }
-a.link7 {
+a.link7, a.link7:visited {
 	color: inherit;
 	background-color: transparent;
 	text-decoration: none;
 }
 a.link7:hover {
+	color: inherit;
 	text-decoration: underline;
 }
 /* Tweeting Accounts */
@@ -208,6 +209,9 @@ a.link5:hover {
 .sm-view{
    display:none;
 }
+.sm-view2{
+   display:none;
+}
 
 table {
   border: 1px solid #8b8e91;
@@ -250,45 +254,52 @@ td {
 	padding: 5px;
 	background-color: rgba(20,20,20,0.5);
 	font-weight: bold;
-}
-/*td, th {
-	position: relative;
-}*/
-td:hover {
-	color: #181818;
-	background-color: #7e29ff;
+	color: inherit;
 }
 tr:hover {
-	color: #181818;
-	background-color: #aeb4fa;
+	background-color: #7e29ff;
+	text-shadow: 2px 1px 2px black;
 }
-
+tr:visited {
+	color: inherit;
+}
 tr:hover.noHover {
 	color: inherit;
 	background-color: inherit;
 }
-
-/*td:hover::after,
-th:hover::after{
-	content: "";
-	color: #141414;
-	background-color: #aeb4fa;
-	position: absolute;
-	left: 0;
-  top: -5000px;
-  height: 10000px;
-  width: 100%;
-	z-index: -1;
-}*/
+td:hover.noHover {
+	color: inherit;
+	background-color: inherit;
+}
 
 .taybel{
 	/*overflow-x: scroll;*/
 }
 
 .widthCol {
-	width: 25%;
+	width: 18%;
 }
-
+.widthColMid {
+	width: 28%;
+}
+td.thickTop {
+	border-top: 4px solid #8b8e91;
+}
+td.thickBottom {
+	border-Bottom: 4px solid #8b8e91;
+}
+td.thickRight {
+	border-right: 4px solid #8b8e91;
+}
+td.thickLeft {
+	border-left: 4px solid #8b8e91;
+}
+.PHF {
+	color:#9147ff;
+}
+.PHF2 {
+	color:#aeb4fa;
+}
 .CTW {
 	color:#6bab52;
 	/*background-image: repeating-linear-gradient(
@@ -377,6 +388,8 @@ th:hover::after{
 	background-color: rgba(215,215,215);
 }
 
+/*----------------------------------------------------------------*/
+
 @media screen and (min-width: 1440px) {
 	.imgLogo {
 		width: 25%;
@@ -391,8 +404,21 @@ th:hover::after{
 	}
 }
 
-@media screen and (min-width: 1200px) {
-
+@media screen and (max-width: 900px) {
+	.taybel{
+		/*overflow-x: scroll;*/
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	table.center {
+		width: 100%;
+	}
+	table.center td,
+	table.center th {
+		font-size: 18px;
+		padding: 2px;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -411,13 +437,27 @@ th:hover::after{
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
 	.sm-view{
 		 display: block;
 	}
-}
-
-@media screen and (max-width: 600px) {
+	.sm-view2{
+		 display: block;
+	}
+	.taybelB {
+		overflow-x: scroll;
+		overflow-y: scroll;
+	}
+	.taybel{
+		overflow-x: scroll;
+		margin-left: auto;
+		margin-right: auto;
+		/*border:solid #c2c6cc;
+		box-shadow: 0px 0px 6px 6px #c2c6cc;
+		-webkit-box-shadow: 0px 0px 6px 6px #c2c6cc;
+		-webkit-appearance: none;*/
+		width: 100%;
+	}
 	.two {
     width: 75%;
   }
@@ -443,16 +483,6 @@ th:hover::after{
   ul {
     font-size: 17px;
   }
-	.taybel{
-		overflow-x: scroll;
-		margin-left: auto;
-	  margin-right: auto;
-		border:solid #c2c6cc;
-		box-shadow: 0px 0px 6px 6px #c2c6cc;
-		-webkit-box-shadow: 0px 0px 6px 6px #c2c6cc;
-		-webkit-appearance: none;
-		width: 90%;
-	}
 	[data-title]:after {
 		bottom: -2em;
 		font-size: 75%;
@@ -460,5 +490,10 @@ th:hover::after{
 	#myBtn {
 		font-size: 2em;
 		background-color: rgba(56,56,56,90%);
+	}
+	table.center td,
+	table.center th {
+		font-size: 16px;
+		padding: 6px;
 	}
 }
