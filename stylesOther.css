@@ -139,21 +139,17 @@ a.link5:hover {
 	color: #1957ff;
 }
 
-.button {
+.button, .button:active {
 	display: inline-block;
-	/*background-image: url('homeButton_3.png');*/
 	background-color: Transparent;
 	background-repeat:no-repeat;
 	outline: none;
 	color: #8b8e91;
-	/*text-align: center;*/
 	font-size: 24px;
-	/*font-family: garamond;*/
   font-family: 'Iceberg', cursive;
 	padding: 8px;
-
+	margin: 1px;
 	cursor: pointer;
-	/*height: 100%;*/
 	border: solid 2px #aeb4fa;
   border-radius: 8px;
   background: rgba(255, 255, 255,0);
