@@ -228,7 +228,7 @@ table {
 table.center {
   margin-left: auto;
   margin-right: auto;
-	width: 85%;
+	width: 90%;
 }
 th {
 	border: 1px solid #8b8e91;
@@ -397,6 +397,9 @@ td.thickLeft {
 	abbr::before {
 		content: attr(title) " ";
 		font-size: 21px;
+	}
+	td, th {
+		padding: 10px;
 	}
 }
 
