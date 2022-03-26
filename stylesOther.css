@@ -298,23 +298,25 @@ td.thickLeft {
 }
 .CTW {
 	color:#6bab52;
-	/*background-image: repeating-linear-gradient(
-		-45deg, transparent 0 20px, #6bab52 20px 40px);*/
 }
 .MET {
 	color:#b74736;
-	/*text-decoration: black line-through;
-	text-decoration-thickness: 2px;*/
-	/*background-image: repeating-linear-gradient(
-		-45deg, transparent 0 20px, #b74736 20px 40px);*/
+}
+.METElim {
+	text-shadow: 2px 1px 2px black;
+	background-image: repeating-linear-gradient(
+		-45deg, transparent 0 20px, #b74736 20px 40px);
 }
 .BOS {
 	color:#edc743;
 }
 .BUF {
 	color:#83ade3;
-	/*background-image: repeating-linear-gradient(
-		-45deg, transparent 0 20px, #83ade3 20px 40px);*/
+}
+.BUFElim {
+	text-shadow: 2px 1px 2px black;
+	background-image: repeating-linear-gradient(
+		-45deg, transparent 0 20px, #83ade3 20px 40px);
 }
 .MIN {
 	color:#2d4498;
