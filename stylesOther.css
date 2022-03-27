@@ -321,8 +321,18 @@ td.thickLeft {
 .MIN {
 	color:#2d4498;
 }
+.MINElim {
+	text-shadow: 2px 1px 2px black;
+	background-image: repeating-linear-gradient(
+		-45deg, transparent 0 20px, #2d4498 20px 40px);
+}
 .TOR {
 	color:#c54125;
+}
+.TORElim {
+	text-shadow: 2px 1px 2px black;
+	background-image: repeating-linear-gradient(
+		-45deg, transparent 0 20px, #c54125 20px 40px);
 }
 
 [data-title]:hover:after {
