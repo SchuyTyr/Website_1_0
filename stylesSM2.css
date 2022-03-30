@@ -595,6 +595,22 @@ body.noscroll {
 	border-radius: 4%;
 }
 
+.aboutCPhoto {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.aboutCPhotoText {
+	text-align: justify;
+	color: #abafb3;
+	text-indent: 42px;
+	line-height: 1.8;
+	font-size: 18px;
+	font-family: 'Merienda', cursive;
+}
+
 /*-------------------------End Photo Page--------------------------*/
 /*--------------------------------------------------------------------*/
 
@@ -1136,6 +1152,13 @@ h3 {
 	.sContainer ul {
 		font-size: 28px;
 	}
+	.aboutCPhoto {
+		margin-top: 42px;
+		margin-bottom: 42px;
+	}
+	.aboutCPhotoText {
+		font-size: 20px;
+	}
 }
 @media screen and (min-width: 1351px) {
 	main {
@@ -1389,6 +1412,11 @@ h3 {
 	#photoTextCapt {
 		top: 85%;
 	}
+	.photoTextCaptCosplay {
+		overflow-y: scroll;
+		z-index: 1001;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 	#closeButton {
 		width: 20%;
 		padding-top: 24px;
@@ -1398,6 +1426,9 @@ h3 {
 @media screen and (max-width: 400px) {
 	#photoTextCapt {
 		top: 88%;
+	}
+	.photoTextCaptCosplay {
+		top: 80%;
 	}
 	#closeButton {
 		padding-top: 7px;
