@@ -34,12 +34,14 @@ var excWords = [];
 
 const submit = document.getElementById("submit");
 const reset = document.getElementById("reset");
+const enter = document.getElementById("ws-main");
 
 const loadingIcon = document.getElementById('loading');
 loadingIcon.style.display = "none";
 
-
-submit.addEventListener("click", function () {
+//-- WordSearch Function --//
+function wordSearch() {
+//submit.addEventListener("click", function () {
 
     loadingIcon.style.display = "block";
 
@@ -238,6 +240,43 @@ submit.addEventListener("click", function () {
 
         .catch(function (error) { console.log(error) }) // Catching errors
 
+
+}
+//);
+
+//-- Wordsearch when click "submit" --//
+submit.addEventListener("click", function () {
+
+    wordSearch();
+
+});
+
+//-- Wordsearch when press enter --//
+enter.addEventListener('keypress', function (e) {
+
+    if (e.key === 'Enter') {
+        wordSearch();
+    }
+
+});
+
+// resets / clears the input text boxes
+reset.addEventListener("click", function () {
+
+    var output = document.getElementById("output");
+
+    loadingIcon.style.display = "none";
+
+    document.getElementById('textbox1').value = "";
+    document.getElementById('textbox2').value = "";
+    document.getElementById('textbox3').value = "";
+    document.getElementById('textbox4').value = "";
+    document.getElementById('textbox5').value = "";
+    document.getElementById('textbox6').value = "";
+    document.getElementById('textbox7').value = "";
+
+    // not ideal to use innerHTML, but until I find something else that works...
+    output.innerHTML = '';
 
 });
 
