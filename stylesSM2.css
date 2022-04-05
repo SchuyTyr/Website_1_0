@@ -1139,6 +1139,44 @@ h3 {
 /*--------------------------End Contact Page----------------------------*/
 /*----------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------*/
+/*---------------------------README Page----------------------------*/
+
+.paraTextFull {
+	width: 75%;
+	margin: auto;
+}
+.paraTextTitle {
+	color: #c2c7cc;
+	font-size: 42px;
+	/*font-family: 'Orbitron', sans-serif;*/
+	/*font-family: nasalization, sans-serif;*/
+	font-family: 'Audiowide', cursive;
+	/*font-family: 'Merienda', cursive;*/
+	text-align: center;
+	text-decoration: underline;
+	word-wrap: break-word;
+	padding: 24px;
+	margin: auto;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.paraTextPara {
+	color: #c2c7cc;
+	font-size: 22px;
+	font-family: 'Merienda', cursive;
+	text-align: justify;
+	text-decoration: none;
+	word-wrap: break-word;
+	padding: 24px;
+	margin: auto;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+/*-------------------------End README Page--------------------------*/
+/*------------------------------------------------------------------*/
+
 @media screen and (min-width: 2000px) {
 	main {
 		margin-top: 80px;
@@ -1339,6 +1377,12 @@ h3 {
 	 #closeButton {
 		 padding-bottom: 24px;
 	 }
+	 .paraTextFull {
+		 width: 100%;
+	 }
+	 .paraTextPara {
+		 font-size: 18px;
+	 }
 }
 
 @media screen and (max-width: 600px) {
@@ -1421,6 +1465,9 @@ h3 {
 		width: 20%;
 		padding-top: 24px;
 		padding-bottom: 0;
+	}
+	.paraTextFull {
+		width: 100%;
 	}
 }
 @media screen and (max-width: 400px) {

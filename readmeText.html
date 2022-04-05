@@ -21,6 +21,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index,follow">
 	<link href="stylesSM.css" rel="stylesheet">
+	<link href="stylesSM2.css" rel="stylesheet">
 	<link href="src/icons/SMLogo2022.ico" rel="shortcut icon">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +33,9 @@
 
 </head>
 <body>
+
+	<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
+
 	<h1 style="color:#8b8e91;" title="Schuyler Meyer">
 		<a href="index.html">
 			<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">
@@ -41,30 +45,37 @@
 	<hr class="rounded">
 	<br>
 	<!-- __________________________________________________________________________ -->
-	<div class="modal-content">
-		<div>
-			 <h2 class="modalH2"><u>README</u>&nbsp;&gt;</h2>
-			 <span data-nosnippet>
-				 <p class="modalP">
-					 Hello!<br><br>
-					 This is my first attempt at building a website completely from scratch. (HTML, CSS, JS, etc.) &ndash; started in 2019. Everything on
-					 this website I have created or implemented myself. (Obviously, I did not create the "Twitter" logo, but I did design my own
-					 version of it to display on my website, same story with all the other brand logos as well).
-					 <br><br>I continuously update this website with new features and bug fixes. Please note: I have limited access to
-					 MacOS and iOS devices, so if you see any blatant bugs, on any browser or device, but especially Apple ones, please
-					 <a class="link3" href="mailto:schuybreach@gmail.com">email</a> or message me. (Contact page coming soon - email or
-					 message on social media in the meantime). Comments and feedback are also welcome.
-					 <br><br>View the GitHub repository here: <a class="link3" href="https://github.com/SchuyTyr/Website_1_0">GitHub</a>.<br><br><br><br>
 
-					 PS: This is just a quick message letting you know that I am trying to implement Google Analytics on this site. (I love looking at
-					 this kind of data). It is running in the background, however, most adblockers block Google Analytics, in my experience.
-					 <br><br>All Google Analytics is doing (at least that I'm aware of, who knows what Google does behind the scenes) is tracking basic data like number of
-					 users, location (region), and stuff like that. Individual users are completely anonymous to me, it simply tallies the data.
-					 <br><br>And once again, if you have any questions, comments, or feedback, feel free to message me on any of the social medias
-					 or email me at <a class="link3" href="mailto:schuybreach@gmail.com">schuybreach@gmail.com</a>.<br><br>
-				 </p>
-			 </span>
-		 </div>
+	<div class="buttonAbout">
+		 <a href="index.html" class="aButton">
+			 <button class="pageButton" title="Home">
+				 <div>&nbsp;Home&nbsp;</div>
+			 </button>
+		 </a>
+	</div>
+
+	<div class="paraTextFull">
+		 <div class="paraTextTitle">README</div>
+		 <span data-nosnippet>
+			 <p class="paraTextPara">
+				 Hello!<br><br>
+				 This is my first attempt at building a website completely from scratch. (HTML, CSS, JS, etc.) &ndash; started in 2019. Everything on
+				 this website I have created or implemented myself. (Obviously, I did not create the "Twitter" logo, but I did design my own
+				 version of it to display on my website, same story with all the other brand logos as well).
+				 <br><br>I continuously update this website with new features and bug fixes. Please note: I have limited access to
+				 MacOS and iOS devices, so if you see any blatant bugs, on any browser or device, but especially Apple ones, please
+				 <a class="link3" href="mailto:schuybreach@gmail.com">email</a> or message me. (Contact page coming soon - email or
+				 message on social media in the meantime). Comments and feedback are also welcome.
+				 <br><br>View the GitHub repository here: <a class="link3" href="https://github.com/SchuyTyr/Website_1_0">GitHub</a>.<br><br><br><br>
+
+				 PS: This is just a quick message letting you know that I am trying to implement Google Analytics on this site. (I love looking at
+				 this kind of data). It is running in the background, however, most adblockers block Google Analytics, in my experience.
+				 <br><br>All Google Analytics is doing (at least that I'm aware of, who knows what Google does behind the scenes) is tracking basic data like number of
+				 users, location (region), and stuff like that. Individual users are completely anonymous to me, it simply tallies the data.
+				 <br><br>And once again, if you have any questions, comments, or feedback, feel free to message me on any of the social medias
+				 or email me at <a class="link3" href="mailto:schuybreach@gmail.com">schuybreach@gmail.com</a>.<br><br>
+			 </p>
+		 </span>
 	 </div>
 
 	 <div class="buttonAbout">
@@ -82,7 +93,7 @@
 
 	<div id="footer-main"></div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="scrollToTop.js"></script>
 
 </body>
 </html>
