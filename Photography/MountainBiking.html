@@ -22,117 +22,123 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index,follow">
 	<link href="../stylesPhoto.css" rel="stylesheet">
-	<link href="../src/icons/SMLogo2022.ico" rel="shortcut icon">
-	<link href="https://fonts.googleapis.com/css?family=Merienda|Orbitron|Rye&display=swap" rel="stylesheet">
-	<!-- not sure if this is doing anything -->
-	<!--<script>
-	            NProgress.configure({ showSpinner: true });
-	            NProgress.start();
-	            NProgress.done();
-	</script>-->
+	<link href="../stylesSM2.css" rel="stylesheet">
+	<link href="src/icons/SMLogo2022.ico" rel="shortcut icon">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&family=Rye&display=swap" rel="stylesheet">
+	<!-- End Fonts -->
+	<script src="../src/js/footer-photo-inner.js" type="text/javascript" defer></script>
 
 
 </head>
-<body onload = "startTimer()">
+<!--<body onload = "startTimer()">-->
+<body id='fullBody'>
 
-		<div id="mNav" class="menuOverlay">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close">&times;</a> <!-- &#10007; -->
-		  <div class="menuOverlay-content">
+	<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
 
-				<div class="navbar">
+	<div id="mNav" class="menuOverlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close">&times;</a> <!-- &#10007; -->
+		<div class="menuOverlay-content">
+
+			<div class="navbar">
 				<div class="subNav">
-					<button class="subNavBtn">Sports</button>
+					<button class="subNavBtn">Home</button>
 					<div class="subNav-content">
-						<a href="Baseball.html">Baseball</a>
-						<a href="Basketball.html">Basketball</a>
-						<a href="Equestrian.html">Equestrian</a>
-						<a href="Football.html">Football</a>
-						<a href="Golf.html">Golf</a>
-						<a href="MHockey.html">Hockey, Men's</a>
-						<a href="WHockey.html">Hockey, Women's</a>
-						<a href="Lacrosse.html">Lacrosse</a>
-						<a href="MountainBiking.html">Mountain Biking</a>
-						<a href="Soccer.html">Soccer</a>
-						<a href="Softball.html">Softball</a>
-						<a href="SwimDive.html">Swimming and Diving</a>
-						<a href="XCountry.html">Cross Country</a>
+						<a href="../index.html" title="Home, Main">Home</a>
+						<a href="../photo.html" title="Home, Photos">Photos</a>
+					</div>
+				</div>
+
+				<div class="subNav">
+					<button class="subNavBtn" onclick="void(0)">Sports</button>
+					<div class="subNav-content" onclick="void(0)">
+						<a href="Baseball.html" title="Baseball">Baseball</a>
+						<a href="Basketball.html" title="Basketball">Basketball</a>
+						<a href="Equestrian.html" title="Equestrian">Equestrian</a>
+						<a href="Football.html" title="Football">Football</a>
+						<a href="Golf.html" title="Golf">Golf</a>
+						<a href="MHockey.html" title="Hockey, Men's">Hockey, Men's</a>
+						<a href="WHockey.html" title="Hockey, Women's">Hockey, Women's</a>
+						<a href="Lacrosse.html" title="Lacrosse">Lacrosse</a>
+						<a href="MountainBiking.html" title="Mountain Biking">Mountain Biking</a>
+						<a href="Soccer.html" title="Soccer">Soccer</a>
+						<a href="Softball.html" title="Softball">Softball</a>
+						<a href="SwimDive.html" title="Swimming and Diving">Swimming and Diving</a>
+						<a href="XCountry.html" title="Cross Country">Cross Country</a>
 					</div>
 				</div>
 
 				<div class="subNav">
 					<button class="subNavBtn">Nature</button>
 					<div class="subNav-content">
-						<a href="Animals.html">Animals</a>
-						<a href="Landscape.html">Landscape</a>
-						<a href="Macro.html">Macro</a>
+						<a href="Animals.html" title="Animals">Animals</a>
+						<a href="Landscape.html" title="Landscape">Landscape</a>
+						<a href="Macro.html" title="Macro">Macro</a>
 					</div>
 				</div>
 
 				<div class="subNav">
-					<button class="subNavBtn">People</button>
-					<div class="subNav-content">
-						<a href="Concerts.html">Concerts</a>
-						<a href="Cosplay.html">Cosplay</a>
-						<a href="Events.html">Events</a>
-						<a href="Portraits.html">Portraits</a>
+					<button class="subNavBtn" onclick="void(0)">People</button>
+					<div class="subNav-content" onclick="void(0)">
+						<a href="Concerts.html" title="Concerts">Concerts</a>
+						<a href="Cosplay.html" title="Cosplay">Cosplay</a>
+						<a href="Events.html" title="Events">Events</a>
+						<a href="Portraits.html" title="Portraits">Portraits</a>
 					</div>
 				</div>
 
 				<div class="subNav">
 					<button class="subNavBtn">Still Life</button>
 					<div class="subNav-content">
-						<a href="Artwork.html">Artwork</a>
-						<a href="Miniatures.html">Miniatures</a>
-						<a href="StillLife.html">Still Life</a>
+						<a href="Artwork.html" title="Artwork">Artwork</a>
+						<a href="Miniatures.html" title="Miniatures">Miniatures</a>
+						<a href="StillLife.html" title="Still Life">Still Life</a>
 					</div>
 				</div>
-			</div>
-
-		  </div>
 		</div>
 
+		</div>
+	</div>
 
 	<!-- __________________________________________________________________________ -->
 
-
-	<h1 style="color:#8b8e91;" title="Schuyler Meyer"><a href="https://www.schuylermeyer.com"><img alt="Schuyler Meyer" class="imgLogo" src="smPhotoLogo.png"></a></h1>
+	<h1 style="color:#8b8e91;" title="Schuyler Meyer">
+		<a href="../index.html">
+			<img alt="Schuyler Meyer" class="imgLogo" src="../src/img/SM_Sign_Photo-blur.png">
+		</a>
+	</h1>
 	<!-- <p class="topDesc"><u>&#8280; Photography &#8280;</u></p> -->
 	<hr class="rounded">
 
 	<div class="buttonAbout">
-		<button class="pageButton" onclick="window.location.href='../index.html';" title="Home">
-			<div class="pageButtonTxt">&nbsp;Home&nbsp;</div>
-		</button>
+		<a href="../index.html" class="aButton">
+			<button class="pageButton" title="Home">
+				<div class="pageButtonTxt">&nbsp;Home&nbsp;</div>
+			</button>
+		</a>
 		<button class="pageButton" onclick="openNav()" title="Click to Open the Photo Menu">
 			<div class="pageButtonTxt">&nbsp;<span style="font-size: 20px;">&#9776;</span>&nbsp;Photos&nbsp;</div>
 		</button>
-		<button class="pageButton" onclick="window.location.href='../photoshoot.html';" title="Book the Schuy">
-			<div class="pageButtonTxt">&nbsp;Book a Photoshoot&nbsp;</div>
-		</button>
-		<button class="pageButton" onclick="window.location.href='../aboutSM.html';" title="About the Schuy">
-			<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
-		</button>
-		<button class="pageButton" onclick="window.open('https://schuybox.wordpress.com/','_blank')" title="To the SchuyBox!">
-			<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
-		</button>
-		<!--<button class="pageButton" title="Coming Soon" style="cursor: wait;">
-			<div class="pageButtonTxt">&lt;&nbsp;New Tabs Incoming&nbsp;&gt;</div>
-		</button>-->
+		<a href="../aboutSM.html" class="aButton">
+			<button class="pageButton hideButton" title="About the Schuy">
+				<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
+			</button>
+		</a>
+		<a href="../contact.html" class="aButton">
+			<button class="pageButton hideButton" title="Coming Soon!">
+				<div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
+			</button>
+		</a>
+		<a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
+			<button class="pageButton hideButton" title="To the SchuyBox!">
+				<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
+			</button>
+		</a>
 	</div>
 
 	<hr class="rounded">
-
-	<!-- __________________________________________________________________________ -->
-
-<!--
-	<div class="mainContainer">
-		<div class="container">
-			<div class="arrowsL"> &lt; </div>
-			<img alt="Photography" class="img2" src="../hockey3.jpg">
-			<div class="arrowsR"> &gt; </div>
-		</div>
-	</div>
--->
 
 <!-- __________________________________________________________________________ -->
 
@@ -142,110 +148,67 @@
 		<u>Mountain Biking</u>
 	</div>
 
-	<div class="container">
-	  <img class="slides img3" src="photos/Sports/MountainBiking/photo_1.jpg">
-	  <img class="slides img3" src="photos/Sports/MountainBiking/photo_2.jpg">
-	  <img class="slides img3" src="photos/Sports/MountainBiking/photo_3.jpg">
-	  <img class="slides img3" src="photos/Sports/MountainBiking/photo_4.jpg">
-		<img class="slides img3" src="photos/Sports/MountainBiking/photo_5.jpg">
-		<img class="slides img3" src="photos/Sports/MountainBiking/photo_6.jpg">
-		<img class="slides img3" src="photos/Sports/MountainBiking/photo_7.jpg">
-		<img class="slides img3" src="photos/Sports/MountainBiking/photo_8.jpg">
-		<img class="slides img3" src="photos/Sports/MountainBiking/photo_9.jpg">
-		<img class="slides img3" src="photos/Sports/MountainBiking/photo_10.jpg">
-		<img class="slides img3" src="photos/Sports/MountainBiking/photo_11.jpg">
-		<img class="slides img3" src="photos/Sports/MountainBiking/photo_12.jpg">
-		<div id="slideCounter" class="slidesText"></div>
-	</div>
+	<div class="photoTextDescr">Click on an image to enlarge it.</div>
 
-  <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button> -->
-  <!-- <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+	<div class="containerGrid">
+	  <img class="img4" src="photos/Sports/MountainBiking/photo_1.jpg" title="">
+	  <img class="img4" src="photos/Sports/MountainBiking/photo_2.jpg" title="">
+	  <img class="img4" src="photos/Sports/MountainBiking/photo_3.jpg" title="">
+	  <img class="img4" src="photos/Sports/MountainBiking/photo_4.jpg" title="">
+		<img class="img4" src="photos/Sports/MountainBiking/photo_5.jpg" title="">
+		<img class="img4" src="photos/Sports/MountainBiking/photo_6.jpg" title="">
+		<img class="img4" src="photos/Sports/MountainBiking/photo_7.jpg" title="">
+		<img class="img4" src="photos/Sports/MountainBiking/photo_8.jpg" title="">
+		<img class="img4" src="photos/Sports/MountainBiking/photo_9.jpg" title="">
+		<img class="img4" src="photos/Sports/MountainBiking/photo_10.jpg" title="">
+		<img class="img4" src="photos/Sports/MountainBiking/photo_11.jpg" title="">
+		<img class="img4" src="photos/Sports/MountainBiking/photo_12.jpg" title="">
+		<!--<div id="slideCounter" class="slidesText"></div>-->
+	</div>
+</div>
+
+<div id="myModal" class="modal" title="Click to Close">
+	<div id="photoText">Click the "x" or anywhere outside the image to close.</div>
+	<input type="button" id="closeButton" value="&times;" title="Close">
+	<img class="modal-content" id="img01" title="">
+	<div id="photoTextCapt"></div>
 </div>
 
 
 <!-- __________________________________________________________________________ -->
 
-	<hr class="rounded">
+<hr class="rounded">
 
-	<div class="socialBar" style="width: 100%;">
-			<div class="socialProps">
-				<a class="link4" href="https://www.instagram.com/schuyler_meyer/" title="Instagram &#64;schuyler_meyer">
-						<img class="socialHover" src="../Instagram_3.png" alt="instagram.com/schuyler_meyer">
-				</a>
-			</div>
-			<div class="socialProps">
-				<a class="link4" href="https://twitter.com/schuylermeyer24" title="Twitter &#64;schuylermeyer24">
-						<img class="socialHover" src="../Twitter_3.png" alt="twitter.com/schuylermeyer24" >
-				</a>
-			</div>
-			<div class="socialProps">
-				<a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer">
-						<img class="socialHover" src="../Flickr_3.png" alt="flickr.com/photos/schuyler_meyer">
-				</a>
-			</div>
-			<div class="socialProps">
-				<a class="link4" href="https://www.linkedin.com/in/schuyler-meyer/" title="LinkedIn &#64; Schuyler Meyer">
-						<img class="socialHover" src="../LinkedIn.png" alt="linkedin.com/in/schuyler-meyer">
-				</a>
-			</div>
-			<div class="socialProps">
-				<a class="link4" href="https://www.deviantart.com/akatsukirising" title="DeviantArt &#64;AkatsukiRising">
-						<img class="socialHover" src="../DeviantArt_3.png" alt="deviantart.com/akatsukirising" >
-				</a>
-			</div>
-			<div class="socialProps">
-				<a class="link4" href="mailto:schuybreach@gmail.com" title="Email &#64; schuybreach@gmail.com">
-						<img class="socialHover" src="../Email.png" alt="Email: schuybreach@gmail.com">
-				</a>
-			</div>
-	</div>
-	<br>
+<div class="buttonAbout">
+	<a href="../photoshoot.html" class="aButton">
+		<button class="pageButton pageButtonUN" title="Book a Photoshoot">
+			<div>&nbsp;Book a Photoshoot&nbsp;</div>
+		</button>
+	</a>
+	<a href="../aboutSM.html" class="aButton">
+		<button class="pageButton showButton" title="About the Schuy">
+			<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
+		</button>
+	</a>
+	<a href="../contact.html" class="aButton">
+		<button class="pageButton showButton" title="Coming Soon!">
+			<div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
+		</button>
+	</a>
+	<a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
+		<button class="pageButton showButton" title="To the SchuyBox!">
+			<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
+		</button>
+	</a>
+</div>
 
-	<!-- __________________________________________________________________________ -->
+<div id="PhotoFooterInner"></div>
 
-	<hr class="rounded">
+<!-- __________________________________________________________________________ -->
 
-	<h4 title="Schuyler Meyer"><img alt="Schuyler Meyer" src="../src/img/Logo2022.png" width="250"></h4>
-
-	<p id="p01">&#169;&nbsp;<u>Schuyler&nbsp;Meyer&nbsp;Photography</u> <b>&nbsp;&lt;&nbsp;|&nbsp;/\\&nbsp;|&nbsp;&gt;&nbsp;</b>
-		<u>2017&nbsp;&mdash;&nbsp;<script>document.write(new Date().getFullYear())</script></u>
-	</p>
-
-	<!-- __________________________________________________________________________ -->
-
-	<script src="photoMenu.js"></script>
-
-	<!-- For slideshow arrows
-	<script>
-	/*
-	var slideIndex = 1;
-	showDivs(slideIndex);
-
-	function plusDivs(n) {
-	  showDivs(slideIndex += n);
-	}
-
-	function showDivs(n) {
-	  var i;
-	  var x = document.getElementsByClassName("slides");
-	  if (n > x.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = x.length}
-	  for (i = 0; i < x.length; i++) {
-	    x[i].style.display = "none";
-	  }
-	  x[slideIndex-1].style.display = "block";
-	}
-	*/
-	</script>
-	-->
-
-	<script src="slideShow.js"></script>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="photoMenu.js"></script>
+<script src="../scrollToTop.js"></script>
+<script src="../src/js/photoScript.js"></script>
 
 </body>
 </html>
