@@ -255,12 +255,12 @@ submit.addEventListener("click", function () {
 enter.addEventListener('keypress', function (e) {
 
     if (e.key === 'Enter') {
-        wordSearch();
         if (window.innerWidth < 600) {
           document.getElementById('ws-output').scrollIntoView({
             behavior: 'smooth'
           });
         }
+        wordSearch();
     }
 
 });
