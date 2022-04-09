@@ -92,7 +92,7 @@ function wordSearch() {
 
     fullLetter = startLetter + secondLetter + thirdLetter + fourthLetter + endLetter;
     console.log("Word: " + fullLetter);
-    
+
     console.log("anyLetter: " + anyLetter);
     console.log("excLetter: " + excLetter);
 
@@ -256,6 +256,11 @@ enter.addEventListener('keypress', function (e) {
 
     if (e.key === 'Enter') {
         wordSearch();
+        if (window.innerWidth < 600) {
+          document.getElementById('ws-output').scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
     }
 
 });
