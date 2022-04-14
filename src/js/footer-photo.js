@@ -51,7 +51,7 @@ photoFooter.innerHTML = `
 </h4>
 
 <p id="p01">
-  <b>&nbsp;&lt;&nbsp;|&nbsp;/\\&nbsp;|&nbsp;&gt;&nbsp;</b>
+  <b>&nbsp;&lt;&nbsp;|&nbsp;/\\\\&nbsp;|&nbsp;&gt;&nbsp;</b>
   <br><br>
   &#169; Schuyler Meyer Photography
   <br>
