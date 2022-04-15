@@ -22,12 +22,18 @@
 	<link href="stylesSM.css" rel="stylesheet">
 	<link href="stylesSM2.css" rel="stylesheet">
 	<link href="src/icons/SMLogo2022.ico" rel="shortcut icon">
-	<link href="https://fonts.googleapis.com/css?family=Orbitron|Merienda&display=swap" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
+	<!-- End Fonts -->
+	<script src="src/js/footer-main.js" type="text/javascript" defer></script>
 </head>
 <body>
 	<header>
-		<h1 style="color:#8b8e91;" title="Schuyler Meyer">
-			<a href="https://www.schuylermeyer.com">
+		<h1 title="Schuyler Meyer">
+			<a href="index.html">
 				<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">
 			</a>
 		</h1>
@@ -41,31 +47,61 @@
 
 	<main class="fof">
 		<div>
-			<img alt="404 Error" src="src/img/404Error.jpg">
+			<img alt="404 Error" src="src/img/impossible.gif">
 		</div>
 
 		<h1>You're a bit ahead of the game, this page does not exist yet.</h1>
-		<h2>Click the button below to go back home.</h2>
+		<div class="text4" style="text-align:center;">Click the button below to go back home.</div>
 
-		<button onclick="window.location.href='index.html';" title="To the homepage, away!">
-			<div>&nbsp;Home&nbsp;</div>
-		</button>
+		<br>
+
+		<a href="index.html" class="aButton">
+			<button class="pageButton" title="To the homepage, away!">
+				<div>&nbsp;Home&nbsp;</div>
+			</button>
+		</a>
+
+		<br><br>
+
+		<hr class="rounded">
+
+		<div class="text4">
+			<p class="about4Title">Looking for something else?</p>
+			<ul class="ul4">
+				<li>
+					<a href="wordsearch.html" class="aButton">Wordsearch</a>
+				</li>
+				<li>
+					<a href="photo.html" class="aButton">Photography</a>
+				</li>
+				<li>
+					<a href="PHF-Schedule.html" class="aButton">PHF Schedule and Standings</a>
+				</li>
+				<li>
+					<a href="software.html" class="aButton">Software</a>
+				</li>
+				<li>
+					<a href="portfolio.html" class="aButton">Digital Portfolio</a>
+				</li>
+				<li>
+					<a href="photoshoot.html" class="aButton">Booking a Photoshoot</a>
+				</li>
+				<li>
+					<a href="computerrepair.html" class="aButton">Computer Repair</a>
+				</li>
+				<li>
+					<a href="aboutSM.html" class="aButton">About Schuyler</a>
+				</li>
+			</ul>
+		</div>
+
 	</main>
 
 	<!-- __________________________________________________________________________ -->
 
 	<footer>
 
-	<hr class="rounded">
-	<br>
-	<h4 title="Schuyler Meyer"><img alt="Schuyler Meyer" src="src/img/Logo2022.png" width="250"></h4>
-
-	<p id="p01">
-		<b>&nbsp;&lt;&nbsp;|&nbsp;/\\&nbsp;|&nbsp;&gt;&nbsp;</b><br><br>
-		&#169; Schuyler Meyer &nbsp;&#5827;&nbsp; 2019 &mdash;
-		<script>document.write(new Date().getFullYear())</script>
-		&nbsp;
-	</p>
+		<div id="footer-main"></div>
 
 	</footer>
 

@@ -56,67 +56,6 @@ nav {
 	width: 100%;
 }
 
-.fof {
-	display: block;
-	/*font-family: 'Orbitron', sans-serif;*/
-	font-family: 'Merienda', cursive;
-	text-align: center;
-	color: #8b8e91;
-	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin: 40px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.fof h1 {
-	font-size: 28px;
-	font-family: 'Merienda', cursive;
-}
-
-.fof h2 {
-	font-size: 18px;
-	padding-bottom: 20px;
-	padding-top: 0px;
-}
-
-.fof img {
-	width: 600px;
-	border-radius: 20% / 12%;
-}
-
-.fof button {
-	text-align: center;
-	font-family: 'Orbitron', sans-serif;
-	cursor: pointer;
-  transition: .3s all ease-in;
-	color: rgba(99, 138, 255, 0.9);
- 	font-size: 22px;
-	padding: 10px;
-	padding-left: 14px;
-	padding-right: 14px;
-
- 	text-decoration: none;
- 	border: solid 2px rgba(67,111,243,30%);
- 	background-color: rgba(67,111,243,15%);
-	border-radius: 4%;
-
-	box-shadow: 0px 0px 6px 2px #436ff3;
-	-webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-}
-
-.fof button:hover {
-	/*color: #142149; *//*#202020;*/
-	color: rgba(20, 33, 73);
-	cursor: pointer;
-	background-color: rgba(99, 138, 255, 0.9);
-	transition: .15s all ease-in;
-
-	border-radius: 50% / 15%;
-}
-
 .showcase {
 	height: 100vh;
 	display:inline-flex;
@@ -1177,6 +1116,116 @@ h3 {
 /*-------------------------End README Page--------------------------*/
 /*------------------------------------------------------------------*/
 
+/*-----------------------------------------------------------------*/
+/*----------------------------404 Page-----------------------------*/
+
+
+.fof {
+	display: block;
+	/*font-family: 'Orbitron', sans-serif;*/
+	font-family: 'Merienda', cursive;
+	text-align: center;
+	color: #8b8e91;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fof h1 {
+	font-size: 28px;
+	font-family: 'Merienda', cursive;
+}
+
+.fof h2 {
+	font-size: 18px;
+	padding-bottom: 20px;
+	padding-top: 0px;
+}
+
+.fof img {
+	width: 600px;
+	border-radius: 20% / 12%;
+}
+
+.fof button {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	cursor: pointer;
+  transition: .3s all ease-in;
+	color: rgba(99, 138, 255, 0.9);
+ 	font-size: 22px;
+	padding: 10px;
+	padding-left: 14px;
+	padding-right: 14px;
+
+ 	text-decoration: none;
+ 	border: solid 2px rgba(67,111,243,30%);
+ 	background-color: rgba(67,111,243,15%);
+	border-radius: 4%;
+
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.fof button:hover {
+	/*color: #142149; *//*#202020;*/
+	color: rgba(20, 33, 73);
+	cursor: pointer;
+	background-color: rgba(99, 138, 255, 0.9);
+	transition: .15s all ease-in;
+
+	border-radius: 50% / 15%;
+}
+
+.about4Title {
+	color: #8b8e91;
+	font-size: 22px;
+	text-align: center;
+}
+.ul4 {
+	color: #8b8e91;
+	font-size: 18px;
+	font-family: 'Merienda', cursive;
+	text-align: left;
+	text-decoration: none;
+	word-wrap: break-word;
+	line-height: 1.5;
+	/*list-style: disclosure-closed;*/
+	list-style: none;
+}
+.ul4 li::before {
+	content: 'ᛃ';
+}
+.ul4 li {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+.ul4 li:hover {
+	color: #3870ff;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.text4 {
+	color: #8b8e91;
+	font-size: 18px;
+	font-family: 'Merienda', cursive;
+	text-align: justify;
+	text-decoration: none;
+	word-wrap: break-word;
+	width: 75%;
+	padding: 24px;
+	margin: auto;
+	/*margin-top: 24px;
+	margin-bottom: 24px;*/
+}
+
+/*---------------------------End 404 Page-----------------------------*/
+/*--------------------------------------------------------------------*/
+
 @media screen and (min-width: 2000px) {
 	main {
 		margin-top: 80px;
@@ -1285,6 +1334,12 @@ h3 {
 		width: 12%;
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+	.ul4 {
+	 font-size: 22px;
+	}
+	.text4 {
+	 font-size: 22px;
 	}
 }
 
@@ -1423,6 +1478,15 @@ h3 {
 	 #photoText {
 		 padding-top: 24px;
  	 }
+	 .ul4 {
+	 	font-size: 22px;
+	 }
+	 .text4 {
+	 	font-size: 22px;
+	 	width: 90%;
+		margin: auto;
+		padding: 0;
+	 }
 }
 @media screen and (max-width: 500px) {
 	#textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
@@ -1479,5 +1543,8 @@ h3 {
 	}
 	#closeButton {
 		padding-top: 7px;
+	}
+	.text4 {
+	 width: 98%;
 	}
 }
