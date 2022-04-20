@@ -299,7 +299,6 @@ a.link4 {
 }
 
 .container {
-	/*align-items: center;*/
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
@@ -307,9 +306,29 @@ a.link4 {
 	margin-right: auto;
 	width: 27%;
 	margin: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	text-align: center;
-	/*overflow: auto;*/
+
+	border-top: 2px solid rgba(0, 0, 0, 0);
+	transition: fadeLine 5s ease-in-out;
 }
+/*.container:hover .textCaption {
+	//text-decoration: overline;
+	border-top: 2px solid #8b8e91;
+	//border-bottom: 2px solid #8b8e91;
+}*/
+
+@keyframes fadeLine {
+	0% {
+		border-top: 2px solid rgba(0, 0, 0, 0);
+    /*opacity: 0;*/
+  } 100% {
+    /*opacity: 1;*/
+		border-top: 2px solid #8b8e91;
+  }
+}
+
 .overlay {
 	/*position: relative;
   top: 50%;
@@ -356,6 +375,7 @@ a.link4 {
 	opacity: 1;
 	position: absolute;
 	padding: 5px;
+	margin-top: 25px;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
@@ -793,7 +813,9 @@ hr.roundedTwo {
 	}
 	.container {
 		width: 33%;
-		margin: 0 auto;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		padding: 5px;
 	}
 	.imgPSContainerSlides {
@@ -829,6 +851,7 @@ hr.roundedTwo {
 	}
 	.textCaption {
 		padding: 5px;
+		margin-bottom: 20px;
 	}
 	.imgLogo {
 		width: 40%;
@@ -882,7 +905,9 @@ hr.roundedTwo {
 @media screen and (max-width: 800px) {
 	.container {
 		width: 75%;
-		margin: 0 auto;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		padding: 5px;
 	}
 	.pageButton, .pageButtonSkew {
@@ -971,7 +996,9 @@ hr.roundedTwo {
 @media screen and (max-width: 600px) {
 	.container {
 		width: 94%;
-		margin: 0 auto;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		padding: 5px;
 	}
 	.buttonAbout {

@@ -9,12 +9,13 @@ body {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-image: url('Hex_7.jpg');
+	/*cursor:url(http://www.schuylermeyer.com/src/img/LogoCursor_1.png), auto;*/
 }
 
 main {
 	text-align:center;
 	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 
 /*.fullContent {
@@ -136,12 +137,45 @@ polygon {
   fill: none;
   /*animation: border 10s linear infinite;*/
 }
+
+.lineBox {
+	width: 80%;
+}
+
 #line1 {
 	stroke: #8ad6ff;
 	animation: border 10s linear infinite;
 }
 #line2 {
 	animation: borderReverse 10s linear infinite reverse;
+}
+#line3a, #line3b, #line3c {
+	visibility: hidden;
+}
+.line3 {
+	stroke: #8ad6ff;
+	stroke-dasharray: 0;
+	/*stroke-dasharray: 50;
+	stroke-dashoffset: 100;*/
+}
+.borderLine:hover .line3 {
+	animation: borderReverseReverse 1s cubic-bezier(.77,0,.18,1) forwards;
+}
+.line4a {
+	fill: none;
+	stroke: #8ad6ff;
+	stroke-width: 1;
+	stroke-dasharray: 0 1000;
+	stroke-dashoffset: 0;
+	animation: borderLeftToRight 5s ease-in-out forwards infinite;
+}
+.line4b {
+	fill: none;
+	stroke: #8ad6ff;
+	stroke-width: 1;
+	stroke-dasharray: 10 0;
+	stroke-dashoffset: 100;
+	animation: borderLeftToRightReverse 5s ease-in-out reverse infinite;
 }
 @keyframes border {
   0% {
@@ -160,6 +194,44 @@ polygon {
   }
 	100% {
     stroke-dashoffset: 0;
+  }
+}
+@keyframes borderReverseReverse {
+	from {
+		stroke-dasharray: 0 100;
+		stroke-dashoffset: 50;
+  }
+	to {
+		stroke-dasharray: 100 0;
+		stroke-dashoffset: 100;
+  }
+}
+@keyframes borderLeftToRight {
+	0% {
+		stroke-dasharray: 10 500;
+		stroke-dashoffset: 0;
+  }
+	50% {
+		stroke-dasharray: 10 0;
+		stroke-dashoffset: 100;
+  }
+	100% {
+		stroke-dasharray: 10 500;
+		stroke-dashoffset: 0;
+  }
+}
+@keyframes borderLeftToRightReverse {
+	0% {
+		stroke-dasharray: 10 0;
+		stroke-dashoffset: 100;
+  }
+	50% {
+		stroke-dasharray: 10 500;
+		stroke-dashoffset: 0;
+  }
+	100% {
+		stroke-dasharray: 10 0;
+		stroke-dashoffset: 100;
   }
 }
 
@@ -356,6 +428,123 @@ polygon {
 .aButton {
 	text-decoration: none;
 	color: inherit;
+}
+
+.welcome {
+	margin-top: 80px;
+	margin-bottom: 40px;
+	/*display: block;*/
+	position: relative;
+	cursor: pointer;
+	cursor: url(http://www.schuylermeyer.com/src/img/CustomCursor_2.png), auto;
+}
+
+.imgWel {
+	max-width: 100%;
+	border-radius: 25% / 12%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 600px;*/
+	width: 40%;
+	height: auto;
+	top:0;
+  left:0;
+	z-index: 10;
+	position: relative;
+}
+.glowBorderN {
+	color: #436ff3;
+	border: 4px #436ff3;
+	box-shadow: 0 0 2px 6px #000000,
+							0 0 28px 12px #436ff3;
+	/*animation: colorChangeN 2s Ease-in-out infinite;*/
+}
+
+@keyframes colorChangeN {
+  0% {
+		box-shadow: 0 0 1px 4px #000000,
+								0 0 12px 8px #436ff3;
+  } 30% {
+		box-shadow: 0 0 1px 4px #000000,
+								0 0 8px 6px #3062f2;
+  } 70% {
+		box-shadow: 0 0 1px 4px #000000,
+								0 0 12px 8px #436ff3;
+  } 80% {
+		box-shadow: 0 0 1px 4px #000000,
+								0 0 8px 6px #4a74f0;
+  } 100% {
+		box-shadow: 0 0 1px 4px #000000,
+								0 0 12px 8px #436ff3;
+  }
+}
+
+.fadeScroll {
+  transition: opacity 0.5s ease-in-out;
+}
+.fadeOut { opacity: 0; }
+.fadeIn { opacity: 1; }
+
+.rounded3Back {
+	position: absolute;
+	/*top: 50%;
+	left: 1%;
+	transform: translate(0, 50%);*/
+	width: 98%;
+	border-top: 1px solid #000000;
+	/*border-radius: 5px;*/
+	/*box-shadow: 0 0 2px 6px #000000,
+							0 0 56px 24px #436ff3;*/
+	z-index: 1;
+	display: inline;
+	vertical-align: middle;
+}
+.roundTop {
+	top: 25%;
+	left: 0;
+
+}
+.roundBottom {
+	top: 70%;
+	left: 0;
+
+}
+.roundGreen1 {
+	transform: translate(50%, 0);
+	box-shadow: 0 0 2px 6px #000000,
+							0 0 42px 18px #00bb17,
+							0 0 56px 24px #006600;
+}
+.roundOrange1 {
+	transform: translate(-50%, 0);
+	box-shadow: 0 0 2px 6px #000000,
+							0 0 28px 12px #ffa407,
+							0 0 56px 24px #c98002;
+}
+.roundGreen2 {
+	transform: translate(-50%, 0);
+	box-shadow: 0 0 2px 6px #000000,
+							0 0 42px 18px #00bb17,
+							0 0 56px 24px #006600;
+}
+.roundOrange2 {
+	transform: translate(50%, 0);
+	box-shadow: 0 0 2px 6px #000000,
+							0 0 28px 12px #ffa407,
+							0 0 56px 24px #c98002;
+}
+
+.closeWel {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 36px;
+	text-align: center;
+	font-size: 32px;
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /*--------------------------------------------------------------------*/
@@ -1199,6 +1388,7 @@ h3 {
 }
 .ul4 li::before {
 	content: 'ᛃ';
+	text-decoration: none;
 }
 .ul4 li {
 	padding-top: 6px;
@@ -1226,6 +1416,14 @@ h3 {
 /*---------------------------End 404 Page-----------------------------*/
 /*--------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------*/
+/*----------------------------Test Page-----------------------------*/
+
+
+
+/*--------------------------End Test Page---------------------------*/
+/*------------------------------------------------------------------*/
+
 @media screen and (min-width: 2000px) {
 	main {
 		margin-top: 80px;
@@ -1249,19 +1447,19 @@ h3 {
 }
 @media screen and (min-width: 1351px) {
 	main {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 60px;
+		margin-bottom: 80px;
 	}
 	#main-main {
-		margin-top: 80px;
+		margin-top: 60px;
 		margin-bottom: 80px;
 	}
 }
 
 @media screen and (max-width: 1350px) {
 	main {
-		margin-top: 40px;
-		margin-bottom: 40px;
+		margin-top: 60px;
+		margin-bottom: 80px;
 	}
 	.containerGrid img {
 		height: 250px;
@@ -1269,12 +1467,24 @@ h3 {
 	.imgLogoStyle {
 		width: 60%;
 	}
+	.lineBox {
+		width: 60%;
+	}
+	.imgWel {
+		width: 60%;
+	}
+	.roundOrange1 {
+		transform: translate(-25%, 0);
+	}
+	.roundGreen2 {
+		transform: translate(-25%, 0);
+	}
 }
 
 @media screen and (max-width: 1200px) {
 	main {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 60px;
+		margin-bottom: 80px;
 	}
 	.socialBar {
 		padding-top: 10px;
@@ -1341,8 +1551,21 @@ h3 {
 	.text4 {
 	 font-size: 22px;
 	}
+	.closeWel {
+		margin-bottom: 36px;
+	}
 }
 
+@media screen and (max-width: 900px) {
+	.lineBox {
+	 width: 55%;
+	}
+}
+@media screen and (max-width: 800px) {
+	.lineBox {
+	 width: 80%;
+	}
+}
 @media screen and (max-width: 700px) {
 	nav {
 		width: 90%;
@@ -1487,8 +1710,35 @@ h3 {
 		margin: auto;
 		padding: 0;
 	 }
+	 .imgWel {
+		 width: 80%;
+	 }
+	 .roundGreen1 {
+	 	box-shadow: 0 0 2px 6px #000000,
+	 							0 0 22px 18px #00bb17,
+	 							0 0 42px 18px #006600;
+	 }
+	 .roundOrange1 {
+	 	box-shadow: 0 0 2px 6px #000000,
+	 							0 0 22px 12px #ffa407,
+	 							0 0 42px 18px #c98002;
+	 }
+	 .roundGreen2 {
+	 	box-shadow: 0 0 2px 6px #000000,
+	 							0 0 22px 18px #00bb17,
+	 							0 0 42px 18px #006600;
+	 }
+	 .roundOrange2 {
+	 	box-shadow: 0 0 2px 6px #000000,
+	 							0 0 22px 12px #ffa407,
+	 							0 0 42px 18px #c98002;
+	 }
 }
 @media screen and (max-width: 500px) {
+	main {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
 	#textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
 		height: 42px;
 		width: 14%;
@@ -1533,6 +1783,9 @@ h3 {
 	.paraTextFull {
 		width: 100%;
 	}
+	.lineBox {
+	 width: 70%;
+	}
 }
 @media screen and (max-width: 400px) {
 	#photoTextCapt {
@@ -1546,5 +1799,34 @@ h3 {
 	}
 	.text4 {
 	 width: 98%;
+	}
+	.lineBox {
+	 width: 75%;
+	}
+	.roundTop {
+		top: 25%;
+	}
+	.roundBottom {
+		top: 65%;
+	}
+	.roundGreen1 {
+		box-shadow: 0 0 2px 6px #000000,
+								0 0 12px 8px #00bb17,
+								0 0 18px 12px #006600;
+	}
+	.roundOrange1 {
+		box-shadow: 0 0 2px 6px #000000,
+								0 0 12px 8px #ffa407,
+								0 0 18px 12px #c98002;
+	}
+	.roundGreen2 {
+		box-shadow: 0 0 2px 6px #000000,
+								0 0 12px 8px #00bb17,
+								0 0 18px 12px #006600;
+	}
+	.roundOrange2 {
+		box-shadow: 0 0 2px 6px #000000,
+								0 0 12px 8px #ffa407,
+								0 0 18px 12px #c98002;
 	}
 }

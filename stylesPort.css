@@ -5,7 +5,6 @@ body {
 	background-color: #111821;
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
-	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	width: auto;
@@ -68,7 +67,7 @@ a.linkMore:hover {
 	margin-right: 25%;
 }
 .imgLogo {
-	width: 35%;
+	width: 20%;
 	margin-top: 10px;
 }
 
@@ -241,6 +240,13 @@ hr.rounded {
 		opacity: 1;
 	}
 }
+
+.fadeScroll {
+  transition: opacity 0.5s ease-in-out;
+}
+.fadeOut { opacity: 0; }
+.fadeIn { opacity: 1; }
+
 #p01 {
 	text-align: center;
 	color: #8b8e91;
@@ -518,7 +524,6 @@ hr.rounded {
  background-color: rgb(0,0,0); /* Fallback color */
  background-color: rgba(0,0,0,0.95); /* Black w/ opacity */
  -webkit-backdrop-filter: blur(20px);
- -moz-backdrop-filter: blur(20px);
  -ms-backdrop-filter: blur(20px);
  -o-backdrop-filter: blur(20px);
  backdrop-filter: blur(20px);
@@ -591,8 +596,10 @@ body.noscroll {
 	border-radius: 4%;
 
 	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
+	-webkit-appearance: none;
 }
 
 .closeBtn:hover,
@@ -739,6 +746,9 @@ a.link4 {
 }
 
 @media screen and (max-width: 1600px){
+	.imgLogo {
+		width: 30%;
+	}
 	.titles {
 		font-size: 2em;
 	}
@@ -775,6 +785,9 @@ a.link4 {
 	}
 	.xlarge-font {
 		font-size: 48px;
+	}
+	.imgLogo {
+		width: 40%;
 	}
 	.glow {
 		text-align: center;
@@ -835,7 +848,7 @@ a.link4 {
 		padding-bottom: 0;
 	}
 	.imgLogo {
-		width: 75%;
+		width: 60%;
 	}
 	hr.rounded {
 		border-top: 2px solid #bbb;

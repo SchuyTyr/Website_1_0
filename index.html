@@ -110,46 +110,83 @@
 
 	<!-- __________________________________________________________________________ -->
 
+<section id="hiddenText">
+	<div id="wel" class="welcome fadeScroll fadeOut" onclick="moveTo()" title="Click to see content">
+		<img class="imgWel glowBorderN" alt="Welcome to the Schuy" src="src/img/WttS-2.gif">
+		<div class="rounded3Back roundTop roundGreen1">
+			<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
+				<polygon class="line4a" points="0,5 100,5"><polygon/>
+			</svg>
+		</div>
+		<div class="rounded3Back roundTop roundOrange1">
+			<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
+				<polygon class="line4b" points="0,5 100,5"><polygon/>
+			</svg>
+		</div>
+		<div class="rounded3Back roundBottom roundGreen2">
+			<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
+				<polygon class="line4a" points="0,5 100,5"><polygon/>
+			</svg>
+		</div>
+		<div class="rounded3Back roundBottom roundOrange2">
+			<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
+				<polygon class="line4b" points="0,5 100,5"><polygon/>
+			</svg>
+		</div>
+	</div>
+	<button class="pageButton closeWel fadeScroll fadeOut" onclick="hiddenTextFunc()" title="Close">
+		<div>&nbsp;&times;&nbsp;</div>
+	</button>
+	<hr class="rounded" id="mainCont">
+</section>
+
+	<!-- __________________________________________________________________________ -->
+
 <!-- add class "fullContent" if using landing video -->
 	<main id="main-main">
-		<div class="container">
+		<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
+
+		<div class="container borderLine fadeScroll fadeOut" onmouseover="document.getElementById('line3a').style.visibility = 'visible'" onmouseout="document.getElementById('line3a').style.visibility = 'hidden'">
 			<a class="link2" href="portfolio.html" target="_self" title="Digital Art">
 				<div class="img-hover-zoom glowBorder">
 					<img alt="Digital_Portfolio" class="img2" src="src/img/DA_4.jpg">
 				</div>
-			</a>
-			<a class="link2" href="portfolio.html" target="_self">
 				<div class="overlay">
 					<div class="textCaption">
-						Digital&nbsp;Portfolio
+						<svg class="lineBox" viewBox="0 0 100 10" height="15px" preserveAspectRatio="none">
+							<polygon class="line3" id="line3a" points="0,5 100,5"><polygon/>
+						</svg>
+						&nbsp;Digital&nbsp;Portfolio&nbsp;
 					</div>
 				</div>
 			</a>
 		</div>
-		<div class="container">
+		<div class="container borderLine fadeScroll fadeOut" onmouseover="document.getElementById('line3b').style.visibility = 'visible'" onmouseout="document.getElementById('line3b').style.visibility = 'hidden'">
 			<a class="link2" href="photo.html" title="Schuyler Meyer Photography">
 				<div class="img-hover-zoom glowBorder">
 					<img alt="Photography" class="img2" src="hockey3.jpg">
 				</div>
-			</a>
-			<a class="link2" href="photo.html">
 				<div class="overlay">
 					<div class="textCaption">
-						Photography
+						<svg class="lineBox" viewBox="0 0 100 10" height="15px" preserveAspectRatio="none">
+							<polygon class="line3" id="line3b" points="0,5 100,5"/>
+						</svg>
+						&nbsp;Photography&nbsp;
 					</div>
 				</div>
 			</a>
 		</div>
-		<div class="container">
+		<div class="container borderLine fadeScroll fadeOut" onmouseover="document.getElementById('line3c').style.visibility = 'visible'" onmouseout="document.getElementById('line3c').style.visibility = 'hidden'">
 			<a class="link2" href="software.html" title="Software / Code">
 				<div class="img-hover-zoom glowBorder">
 					<img alt="Software" class="img2" src="keyb2.jpg">
 				</div>
-			</a>
-			<a class="link2" href="software.html">
 				<div class="overlay">
 					<div class="textCaption">
-						Software&nbsp;/&nbsp;Code
+						<svg class="lineBox" viewBox="0 0 100 10" height="15px" preserveAspectRatio="none">
+							<polygon class="line3" id="line3c" points="0,5 100,5"/>
+						</svg>
+						&nbsp;Software&nbsp;/&nbsp;Code&nbsp;
 					</div>
 				</div>
 			</a>
@@ -179,8 +216,11 @@
 	<!--<template id="footer-main"></template>-->
 	<div id="footer-main"></div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!--Needed for the landing page, I think??-->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
 	<script src="hideText.js"></script>
+	<script src="scrollToTop.js"></script>
+	<script src="src/js/fadeScroll.js"></script>
 	<!-- For landing page video
 		<script src="hideTextS.js"></script>
 	-->
