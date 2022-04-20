@@ -9,7 +9,7 @@ body {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-image: url('Hex_7.jpg');
-	/*cursor:url(http://www.schuylermeyer.com/src/img/LogoCursor_1.png), auto;*/
+	/*cursor:url(https://www.schuylermeyer.com/src/img/LogoCursor_1.png), auto;*/
 }
 
 main {
@@ -436,7 +436,7 @@ polygon {
 	/*display: block;*/
 	position: relative;
 	cursor: pointer;
-	cursor: url(http://www.schuylermeyer.com/src/img/CustomCursor_2.png), auto;
+	cursor: url(https://www.schuylermeyer.com/src/img/CustomCursor_2.png), auto;
 }
 
 .imgWel {
