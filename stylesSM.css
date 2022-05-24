@@ -50,6 +50,7 @@ p {
 	color: #00000000; /* White text */
 	/*padding: 10px 24px;*/ /* Some padding */
 	cursor: pointer; /* Pointer/hand icon */
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	border: none;
 }
 /* Clear floats (clearfix hack) */
@@ -102,7 +103,7 @@ p {
 img {
 	max-width: 100%;
 	height: auto;
-	image-rendering: -webkit-optimize-contrast;
+	/*image-rendering: -webkit-optimize-contrast;*/
 	/*margin: 5px;*/
 }
 /* [1] The container */
@@ -235,6 +236,7 @@ img {
 	font-size: 32px;
 	outline: none;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	padding: 8px;
 	padding-top: 2px;
 	padding-left: 12px;
@@ -384,7 +386,7 @@ a.link4 {
 
 .modalP {
 	font-size: 20px;
-	font-weight: 100px;
+	/*font-weight: 100px;*/
 	color: #abafb3;
 	/*font-family: 'Merienda', cursive;*/
 	font-family: 'verdana';
@@ -414,6 +416,7 @@ a.link4 {
 #modalA:hover {
 	color: #3C56E9;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 }
 
 .modal-content {
@@ -457,6 +460,7 @@ a.link4 {
 .close:focus {
 	color: #142149;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	background-color: rgba(67,111,243);
 	transition: .15s all ease-in;
 }
@@ -496,6 +500,7 @@ a.link4 {
 	text-align: center;
 	font-family: 'Orbitron', sans-serif;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
   transition: .3s all ease-in;
 	color: rgba(99, 138, 255, 0.9); /*#638aff;*/
 	/*color: #99B3FF;*/
@@ -525,6 +530,7 @@ a.link4 {
 	text-align: center;
 	font-family: 'Orbitron', sans-serif;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
   transition: .3s all ease-in;
 	color: rgba(99, 138, 255, 0.9); /*#638aff;*/
 	/*color: #99B3FF;*/
@@ -598,6 +604,7 @@ a.link4 {
 	/*color: #142149; *//*#202020;*/
 	color: rgba(20, 33, 73);
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	background-color: rgba(99, 138, 255, 0.9);
 	/*background-color: #99B3FF;*/
 	transition: .15s all ease-in;
@@ -655,10 +662,6 @@ hr.roundedTwo {
 	width: 50%;
 	border-top: 1px solid #bbbbbb;
 	border-radius: 5px;
-	/*-webkit-filter: drop-shadow(0 0 2px #ffffff)
-					drop-shadow(0 0 4px #99bbff);
-	-ms-filter: drop-shadow(0 0 2px #ffffff)
-					drop-shadow(0 0 4px #99bbff);*/
 	filter: drop-shadow(0 0 1px #ffffff)
 					drop-shadow(0 0 4px #99bbff);
 	/*animation: fadeinoutSmall 5s Ease-in-out infinite;*/

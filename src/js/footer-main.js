@@ -66,6 +66,8 @@ template.innerHTML = `
     `+curYear+`
     &nbsp;&#5827;&nbsp;
     Powered by SchuyTyr &nbsp;&#5827;&nbsp;
+    <a class="link3" href="sitemap.html" target="_self" title="Sitemap"> Site Map </a>
+    &nbsp;&#5827;&nbsp;
     <a class="link3" href="readmeText.html" target="_self" title="Readme"> <u>README</u> </a>
   </p>
 `;

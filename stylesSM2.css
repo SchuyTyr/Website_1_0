@@ -9,7 +9,7 @@ body {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-image: url('Hex_7.jpg');
-	/*cursor:url(https://www.schuylermeyer.com/src/img/LogoCursor_1.png), auto;*/
+	cursor: url("src/img/CustomCursor_5_5s.png"), auto;
 }
 
 main {
@@ -28,6 +28,10 @@ header {
 
 footer {
 
+}
+
+a {
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 }
 
 nav {
@@ -55,6 +59,52 @@ nav {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	width: 100%;
+}
+
+.pageButtonColor,
+.pageButtonColorSkew {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+  transition: .3s all ease-in;
+	color: rgba(99, 138, 255, 0.9);
+ 	font-size: 22px;
+	padding: 10px;
+	padding-left: 14px;
+	padding-right: 14px;
+ 	text-decoration: none;
+ 	border: solid 2px rgba(67,111,243,30%);
+ 	background-color: rgba(67,111,243,15%);
+	border-radius: 4%;
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
+	-webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.pageButtonColorSkew {
+	transform: skew(-30deg);
+}
+
+.pageButtonColor:hover,
+.pageButtonColorSkew:hover {
+	color: #ffa407;
+	border: solid 2px rgba(255,164,7,70%);
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+	transition: .15s all ease-in;
+	border-radius: 50% / 15%;
+}
+.pageButtonColor:active,
+.pageButtonColorSkew:active {
+	color: #00bb17;
+	border: solid 2px rgba(0,187,23,70%);
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+	transition: .15s all ease-in;
+	border-radius: 50% / 15%;
 }
 
 .showcase {
@@ -292,6 +342,7 @@ polygon {
 	font-weight: 100;
 	text-align: center;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
   transition: .4s all ease-in-out;
 	color: #E8AEB7;
 	padding: 10px;
@@ -409,6 +460,7 @@ polygon {
 	font-weight: 400;*/
 	text-align: center;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	/*color: rgba(99, 138, 255, 0.9);*/
 	/*color: #847996;*/
 	color: #EEE5E9;
@@ -436,7 +488,7 @@ polygon {
 	/*display: block;*/
 	position: relative;
 	cursor: pointer;
-	cursor: url(https://www.schuylermeyer.com/src/img/CustomCursor_2.png), auto;
+	cursor: url("src/img/CustomCursor_2.png"), auto;
 }
 
 .imgWel {
@@ -458,26 +510,26 @@ polygon {
 	border: 4px #436ff3;
 	box-shadow: 0 0 2px 6px #000000,
 							0 0 28px 12px #436ff3;
-	/*animation: colorChangeN 2s Ease-in-out infinite;*/
+	animation: colorChangeN 5s Ease-in-out infinite;
 }
 
 @keyframes colorChangeN {
   0% {
-		box-shadow: 0 0 1px 4px #000000,
-								0 0 12px 8px #436ff3;
-  } 30% {
-		box-shadow: 0 0 1px 4px #000000,
-								0 0 8px 6px #3062f2;
-  } 70% {
-		box-shadow: 0 0 1px 4px #000000,
-								0 0 12px 8px #436ff3;
-  } 80% {
-		box-shadow: 0 0 1px 4px #000000,
-								0 0 8px 6px #4a74f0;
+		box-shadow: 0 0 2px 6px #000000,
+								0 0 28px 12px #ffa407;
+  } 25% {
+		box-shadow: 0 0 2px 6px #000000,
+								0 0 28px 12px #436ff3;
+  } 50% {
+		box-shadow: 0 0 2px 6px #000000,
+								0 0 28px 12px #00bb17;
+  } 75% {
+		box-shadow: 0 0 2px 6px #000000,
+								0 0 28px 12px #436ff3;
   } 100% {
-		box-shadow: 0 0 1px 4px #000000,
-								0 0 12px 8px #436ff3;
-  }
+		box-shadow: 0 0 2px 6px #000000,
+								0 0 28px 12px #ffa407;
+	}
 }
 
 .fadeScroll {
@@ -576,6 +628,7 @@ polygon {
 
 .containerGrid img:hover {
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	color: #436ff3;
 	border: 10px #436ff3;
 	border-radius: 0px;
@@ -683,6 +736,7 @@ body.noscroll {
 #closeButton {
 	display: block;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
   font-size: 96px;
 	color: rgba(99, 138, 255, 0.9);
 	transition: 0.3s all ease-in-out;
@@ -757,6 +811,7 @@ body.noscroll {
 
 #typing {
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 }
 
 .title {
@@ -808,6 +863,7 @@ body.noscroll {
 }
 .sContainer a {
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 }
 .sContainer a:hover {
 	color: #3870ff;
@@ -815,6 +871,7 @@ body.noscroll {
 .projLink {
 	color: #c2c7cc;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	text-decoration: underline;
 	word-wrap: break-word;
 }
@@ -921,6 +978,7 @@ body.noscroll {
 	color: #a2a6a9;
 	font-size: 20px;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	width: 20%;
 }
 
@@ -960,6 +1018,7 @@ a.linkG {
 	padding: 0;
 	margin: 0;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 }
 a.linkG:visited {
 	color: #889cb3;
@@ -992,6 +1051,119 @@ a.linkG:hover {
 }
 
 /*-------------------------End About Page--------------------------*/
+/*-----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------*/
+/*---------------------------Sitemap Page----------------------------*/
+
+.textSMap { /*text4*/
+	color: #8b8e91;
+	font-size: 18px;
+	font-family: 'Merienda', cursive;
+	text-align: center;
+	text-decoration: none;
+	word-wrap: break-word;
+	width: 75%;
+	padding: 24px;
+	margin: auto;
+}
+
+.aboutSMapTitle { /*about4Title*/
+	color: #8b8e91;
+	font-size: 22px;
+	text-align: center;
+}
+
+.listTitles {
+	/*text-decoration: underline;*/
+	font-size: 24px;
+	text-align: center;
+	border: 1px solid #c2c7cc;
+	list-style: none;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.listTitles:hover {
+	color: #8b8e91;
+	text-decoration: none;
+}
+
+.liTitle {
+	text-decoration: none;
+}
+.liTitle:hover {
+	text-decoration: underline;
+	color: #8b8e91;
+}
+.liTitle::after {
+	content: ' >';
+	text-decoration: none;
+}
+.ulSMap { /*ul4*/
+	color: #8b8e91;
+	font-size: 18px;
+	font-family: 'Merienda', cursive;
+	text-align: left;
+	text-decoration: none;
+	word-wrap: break-word;
+	line-height: 1.5;
+	/*list-style: disclosure-closed;*/
+	list-style: none;
+}
+.ulSMap .divContent::before {
+	content: 'ᛃ ';
+	text-decoration: none;
+}
+.ulSMap li {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	list-style: none;
+}
+.ulSMap a:hover {
+	color: #3870ff;
+	text-decoration: underline;
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+}
+.secCont {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*.secCont:hover {
+	background-color: rgba(67,111,243,15%);
+}*/
+.secCont:hover .listTitles {
+	color: #00bb17;
+	background-color: rgba(67,111,243,15%);
+}
+/*.ulSMap li ul li {
+	text-decoration: underline;
+	color: green;
+}*/
+.tab1 {
+	padding-left: 5%;
+}
+.tab2 {
+	padding-left: 10%;
+}
+.tab3 {
+	padding-left: 15%;
+}
+
+#photoList1,
+#photoList2,
+#photoList3,
+#photoList4 {
+	display: none;
+}
+
+/*-------------------------End Sitemap Page--------------------------*/
 /*-----------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------*/
@@ -1030,6 +1202,7 @@ h3 {
 
 .point {
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 }
 
 #ws-main {
@@ -1129,6 +1302,7 @@ h3 {
 	border: 2px solid #3870ff;
 	border-radius: 12px;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	background-color: rgba(56, 112, 255, .1);
 	box-shadow: 0 0 0 #000000;
 	-webkit-box-shadow: 0 0 0 #000000;
@@ -1343,31 +1517,50 @@ h3 {
 	text-align: center;
 	font-family: 'Orbitron', sans-serif;
 	cursor: pointer;
-  transition: .3s all ease-in;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+	transition: .3s all ease-in;
 	color: rgba(99, 138, 255, 0.9);
- 	font-size: 22px;
+	font-size: 22px;
 	padding: 10px;
 	padding-left: 14px;
 	padding-right: 14px;
-
- 	text-decoration: none;
- 	border: solid 2px rgba(67,111,243,30%);
- 	background-color: rgba(67,111,243,15%);
+	text-decoration: none;
+	border: solid 2px rgba(67,111,243,30%);
+	background-color: rgba(67,111,243,15%);
 	border-radius: 4%;
-
 	box-shadow: 0px 0px 6px 2px #436ff3;
-	-webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+.fof:hover {
+	border: 5px blue;
 }
 
 .fof button:hover {
-	/*color: #142149; *//*#202020;*/
-	color: rgba(20, 33, 73);
+	color: #ffa407;
+	border: solid 2px rgba(255,164,7,70%);
 	cursor: pointer;
-	background-color: rgba(99, 138, 255, 0.9);
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	transition: .15s all ease-in;
-
 	border-radius: 50% / 15%;
+}
+.fof button:active {
+	color: #00bb17;
+	border: solid 2px rgba(0,187,23,70%);
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+	transition: .15s all ease-in;
+	border-radius: 50% / 15%;
+}
+
+.welcome4 {
+	position: relative;
+	/*cursor: pointer;*/
+	/*cursor: url(https://www.schuylermeyer.com/src/img/CustomCursor_5_4s.png), auto;*/
+	/*cursor: url("src/img/CustomCursor_5_5s.png"), auto;*/
 }
 
 .about4Title {
@@ -1394,10 +1587,11 @@ h3 {
 	padding-top: 6px;
 	padding-bottom: 6px;
 }
-.ul4 li:hover {
+.ul4 li:hover, .ul4 a:hover {
 	color: #3870ff;
 	text-decoration: underline;
 	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 }
 .text4 {
 	color: #8b8e91;
@@ -1417,11 +1611,21 @@ h3 {
 /*--------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------*/
-/*----------------------------Test Page-----------------------------*/
+/*-------------------Test Fantasy Spreadsheet Page------------------*/
 
+.fs_title {
+	color: #8b8e91;
+	padding: 10px;
+	margin: 10px;
+	margin-left: 5%;
+	margin-bottom: 0;
+	/*width: 90%;*/
+	text-align: left;
+	font-size: 36px;
+	font-family: 'Orbitron', sans-serif;
+}
 
-
-/*--------------------------End Test Page---------------------------*/
+/*----------------End Test Fantasy Spreadsheet Page-----------------*/
 /*------------------------------------------------------------------*/
 
 @media screen and (min-width: 2000px) {
@@ -1548,6 +1752,14 @@ h3 {
 	.ul4 {
 	 font-size: 22px;
 	}
+	.ulSMap {
+	/*width: 90%;*/
+	 font-size: 22px;
+	}
+	.textSMap {
+		width: 90%;
+		font-size: 22px;
+	}
 	.text4 {
 	 font-size: 22px;
 	}
@@ -1565,6 +1777,12 @@ h3 {
 	.lineBox {
 	 width: 80%;
 	}
+	.pageButtonColorSkew {
+		transform: skew(0);
+	}
+	.pageButtonTxt {
+		transform: skew(0);
+	}
 }
 @media screen and (max-width: 700px) {
 	nav {
@@ -1574,8 +1792,17 @@ h3 {
 	}
 	.buttonNav {
 		width: 90%;
+		margin: 2px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.pageButtonColorSkew {
+		width: auto;
+		left: 50vw;
+	}
+	.aButton {
+		margin-left: 1px;
+		margin-right: 1px;
 	}
 	.video-container video {
 		height: 200px;
@@ -1704,7 +1931,16 @@ h3 {
 	 .ul4 {
 	 	font-size: 22px;
 	 }
+	 .ulSMap {
+	 	font-size: 22px;
+	 }
 	 .text4 {
+	 	font-size: 22px;
+	 	width: 90%;
+		margin: auto;
+		padding: 0;
+	 }
+	 .textSMap {
 	 	font-size: 22px;
 	 	width: 90%;
 		margin: auto;
@@ -1786,6 +2022,18 @@ h3 {
 	.lineBox {
 	 width: 70%;
 	}
+	.ulSMap {
+		padding: 0;
+	}
+	.tab1 {
+		padding-left: 2.5%;
+	}
+	.tab2 {
+		padding-left: 5%;
+	}
+	.tab3 {
+		padding-left: 7.5%;
+	}
 }
 @media screen and (max-width: 400px) {
 	#photoTextCapt {
@@ -1798,6 +2046,9 @@ h3 {
 		padding-top: 7px;
 	}
 	.text4 {
+	 width: 98%;
+	}
+	.textSMap {
 	 width: 98%;
 	}
 	.lineBox {
