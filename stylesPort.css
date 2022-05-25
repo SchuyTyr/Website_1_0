@@ -91,6 +91,44 @@ a.linkMore:hover {
 	cursor: pointer;
 	background-color: #4CAF50;
 }
+.pageButtonColor {
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+  transition: .3s all ease-in;
+	color: rgba(99, 138, 255, 0.9);
+ 	font-size: 22px;
+	padding: 10px;
+	padding-left: 14px;
+	padding-right: 14px;
+ 	text-decoration: none;
+ 	border: solid 2px rgba(67,111,243,30%);
+ 	background-color: rgba(67,111,243,15%);
+	border-radius: 4%;
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
+	-webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.pageButtonColor:hover {
+	color: #ffa407;
+	border: solid 2px rgba(255,164,7,70%);
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+	transition: .15s all ease-in;
+	border-radius: 50% / 15%;
+}
+.pageButtonColor:active {
+	color: #00bb17;
+	border: solid 2px rgba(0,187,23,70%);
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+	transition: .15s all ease-in;
+	border-radius: 50% / 15%;
+}
 img {
 	height: auto;
 	max-width: 100%;

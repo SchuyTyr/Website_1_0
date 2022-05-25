@@ -123,6 +123,7 @@ video {
   font-size: 42px;
   border: none;
   outline: none;
+	cursor: url("src/img/CustomCursor_5_5s.png"), auto;
   color: #8b8e91;
   background-color: inherit;
   font-family: inherit;
@@ -140,19 +141,23 @@ video {
 .subNav-content a {
 	border: solid 2px rgba(67,111,243,30%);
 	border-radius: 4%;
-	padding: 2px;
+	padding: 4px;
 }
 
 .subNav-content a:hover {
 	text-align: center;
 	cursor: pointer;
-	color: rgba(99, 138, 255);
-
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+	/*color: rgba(99, 138, 255);*/
+	color: #ffa407;
  	border: solid 2px rgba(67,111,243,30%);
  	background-color: rgba(67,111,243,15%);
 	border-radius: 4%;
 	-webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+.subNav-content a:active {
+	color: #00bb17;
 }
 
 .subNav:hover .subNav-content,

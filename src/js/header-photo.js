@@ -84,25 +84,25 @@ photoHeader.innerHTML = `
 
 <div class="buttonAbout">
   <a href="index.html" class="aButton">
-    <button class="pageButton" title="Home">
+    <button class="pageButtonColorSkew" title="Home">
       <div class="pageButtonTxt">&nbsp;Home&nbsp;</div>
     </button>
   </a>
-  <button class="pageButton" onclick="openNav()" title="Click to Open the Photo Menu">
+  <button class="pageButtonColorSkew" onclick="openNav()" title="Click to Open the Photo Menu">
     <div class="pageButtonTxt">&nbsp;<span style="font-size: 20px;">&#9776;</span>&nbsp;Photos&nbsp;</div>
   </button>
   <a href="aboutSM.html" class="aButton">
-    <button class="pageButton hideButton" title="About the Schuy">
+    <button class="pageButtonColorSkew hideButton" title="About the Schuy">
       <div class="pageButtonTxt">&nbsp;About&nbsp;</div>
     </button>
   </a>
   <a href="contact.html" class="aButton">
-    <button class="pageButton hideButton" title="Coming Soon!">
+    <button class="pageButtonColorSkew hideButton" title="Coming Soon!">
       <div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
     </button>
   </a>
   <a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
-    <button class="pageButton hideButton" title="To the SchuyBox!">
+    <button class="pageButtonColorSkew hideButton" title="To the SchuyBox!">
       <div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
     </button>
   </a>
