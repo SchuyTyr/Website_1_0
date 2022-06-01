@@ -482,13 +482,17 @@ polygon {
 	color: inherit;
 }
 
+.welcomeContent {
+	cursor: url("src/img/CustomCursor_2.png"), auto;
+}
+
 .welcome {
-	margin-top: 80px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 	/*display: block;*/
 	position: relative;
-	cursor: pointer;
-	cursor: url("src/img/CustomCursor_2.png"), auto;
+	/*cursor: pointer;*/
+	/*cursor: url("src/img/CustomCursor_2.png"), auto;*/
 }
 
 .imgWel {
@@ -597,6 +601,19 @@ polygon {
 	padding: 6px;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+.indexDescr {
+	color: #c2c7cc;
+	font-size: 20px;
+	font-family: 'Merienda', cursive;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 24px;
+	padding-bottom: 12px;
+	margin-top: 24px;
+	padding-top: 0;
 }
 
 /*--------------------------------------------------------------------*/
