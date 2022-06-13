@@ -33,7 +33,7 @@
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
 	<!-- End Fonts -->
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
@@ -45,90 +45,13 @@
 
 	<!-- __________________________________________________________________________ -->
 
-<!--
-	<section id="LandVid" class="showcase">
-		<div class="video-container">
-			<video id="LVid" autoplay muted loop playsInline preload="auto" poster="src/img/LandingPage.jpg">
-				<source src="src/vid/Landing-3.mp4" type="video/mp4">
-				<source src="src/vid/Landing-3.webm" type="video/webm">
-				<p class="pText">Your browser doesn't support HTML5 video. Here is
-					 a <a href="src/vid/landing.mp4">link to the video</a> instead.
-				</p>
-			</video>
-		</div>
-
-		<div class="content borderz gradient-border">
-			<svg viewBox="0 0 100 5" width="100%" height="15px" preserveAspectRatio="none">
-				<polygon id="line2" points="0,5 100,5"/>
-			</svg>
-			<svg viewBox="0 0 100 10" width="100%" height="10px" preserveAspectRatio="none">
-				<polygon id="line1" points="0,5 100,5"/>
-			</svg>
-			<button class="landPageBtn glowFade2 moveUp" onclick="hideLandFunc()" title="Enter the Schuy">ENTER</button>
-			<h1 id="landHeadText">Welcome to the Schuy &mdash; Enjoy!</h1>
-			<button id="tMute" onclick="toggleMute()" title="No Sound">
-				<span style="font-size:24px;">Sound &rarr; </span>
-				&#128264;
-			</button>
-			<svg viewBox="0 0 100 10" width="100%" height="10px" preserveAspectRatio="none">
-				<polygon id="line1" points="0,5 100,5"/>
-			</svg>
-			<svg viewBox="0 0 100 10" width="100%" height="15px" preserveAspectRatio="none">
-				<polygon id="line2" points="0,5 100,5"/>
-			</svg>
-
-		</div>
-	</section>
--->
-
-	<!-- __________________________________________________________________________ -->
-
-<section id="hiddenText" class="welcomeContent" onclick="moveTo()" title="Click to see content">
-
-	<div class="indexDescr">
-		\/ <u>Scroll to see more</u> \/
-	</div>
-
-	<!-- __________________________________________________________________________ -->
-
-	<div id="wel" class="welcome fadeScroll fadeOut">
-		<img class="imgWel glowBorderN" alt="Welcome to the Schuy" src="src/img/WttS-2.gif">
-		<div class="rounded3Back roundTop roundGreen1">
-			<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
-				<polygon class="line4a" points="0,5 100,5"><polygon/>
-			</svg>
-		</div>
-		<div class="rounded3Back roundTop roundOrange1">
-			<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
-				<polygon class="line4b" points="0,5 100,5"><polygon/>
-			</svg>
-		</div>
-		<div class="rounded3Back roundBottom roundGreen2">
-			<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
-				<polygon class="line4a" points="0,5 100,5"><polygon/>
-			</svg>
-		</div>
-		<div class="rounded3Back roundBottom roundOrange2">
-			<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
-				<polygon class="line4b" points="0,5 100,5"><polygon/>
-			</svg>
-		</div>
-	</div>
-
-	<button class="pageButtonColor closeWel fadeScroll fadeOut" onclick="hiddenTextFunc()" title="Close">
-		<div>&nbsp;&times;&nbsp;</div>
-	</button>
-	<hr class="rounded" id="mainCont">
-</section>
-
-	<!-- __________________________________________________________________________ -->
 
 <!-- add class "fullContent" if using landing video -->
 	<main id="main-main">
-		<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
+		<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&#11165;</span></button>
 
 		<div class="container borderLine fadeScroll fadeOut" onmouseover="document.getElementById('line3a').style.visibility = 'visible'" onmouseout="document.getElementById('line3a').style.visibility = 'hidden'">
-			<a class="link2" href="portfolio.html" target="_self" title="Digital Art">
+			<a class="link2" href="portfolio.html" target="_self" title="SchuyTyr Art">
 				<div class="img-hover-zoom glowBorder">
 					<img alt="Digital_Portfolio" class="img2" src="src/img/DA_4.jpg">
 				</div>
@@ -158,7 +81,7 @@
 			</a>
 		</div>
 		<div class="container borderLine fadeScroll fadeOut" onmouseover="document.getElementById('line3c').style.visibility = 'visible'" onmouseout="document.getElementById('line3c').style.visibility = 'hidden'">
-			<a class="link2" href="software.html" title="Software / Code">
+			<a class="link2" href="software.html" title="SchuyTyr Software">
 				<div class="img-hover-zoom glowBorder">
 					<img alt="Software" class="img2" src="keyb2.jpg">
 				</div>
@@ -174,6 +97,92 @@
 		</div>
 
 	</main>
+
+	<!--
+		<section id="LandVid" class="showcase">
+			<div class="video-container">
+				<video id="LVid" autoplay muted loop playsInline preload="auto" poster="src/img/LandingPage.jpg">
+					<source src="src/vid/Landing-3.mp4" type="video/mp4">
+					<source src="src/vid/Landing-3.webm" type="video/webm">
+					<p class="pText">Your browser doesn't support HTML5 video. Here is
+						 a <a href="src/vid/landing.mp4">link to the video</a> instead.
+					</p>
+				</video>
+			</div>
+
+			<div class="content borderz gradient-border">
+				<svg viewBox="0 0 100 5" width="100%" height="15px" preserveAspectRatio="none">
+					<polygon id="line2" points="0,5 100,5"/>
+				</svg>
+				<svg viewBox="0 0 100 10" width="100%" height="10px" preserveAspectRatio="none">
+					<polygon id="line1" points="0,5 100,5"/>
+				</svg>
+				<button class="landPageBtn glowFade2 moveUp" onclick="hideLandFunc()" title="Enter the Schuy">ENTER</button>
+				<h1 id="landHeadText">Welcome to the Schuy &mdash; Enjoy!</h1>
+				<button id="tMute" onclick="toggleMute()" title="No Sound">
+					<span style="font-size:24px;">Sound &rarr; </span>
+					&#128264;
+				</button>
+				<svg viewBox="0 0 100 10" width="100%" height="10px" preserveAspectRatio="none">
+					<polygon id="line1" points="0,5 100,5"/>
+				</svg>
+				<svg viewBox="0 0 100 10" width="100%" height="15px" preserveAspectRatio="none">
+					<polygon id="line2" points="0,5 100,5"/>
+				</svg>
+
+			</div>
+		</section>
+	-->
+
+		<!-- __________________________________________________________________________ -->
+
+<!--
+	<section id="hiddenText" class="welcomeContent" onclick="moveTo()" title="Click to see content">
+
+		<div class="indexDescr">
+			\/ <u>Scroll to see more</u> \/
+		</div>
+
+		<div id="wel" class="welcome fadeScroll fadeOut">
+			<img class="imgWel glowBorderN" alt="Welcome to the Schuy" src="src/img/WttS-2.gif">
+			<div class="rounded3Back roundTop roundGreen1">
+				<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
+					<polygon class="line4a" points="0,5 100,5"><polygon/>
+				</svg>
+			</div>
+			<div class="rounded3Back roundTop roundOrange1">
+				<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
+					<polygon class="line4b" points="0,5 100,5"><polygon/>
+				</svg>
+			</div>
+			<div class="rounded3Back roundBottom roundGreen2">
+				<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
+					<polygon class="line4a" points="0,5 100,5"><polygon/>
+				</svg>
+			</div>
+			<div class="rounded3Back roundBottom roundOrange2">
+				<svg class="lineBox" viewBox="0 0 100 10" height="12px" preserveAspectRatio="none">
+					<polygon class="line4b" points="0,5 100,5"><polygon/>
+				</svg>
+			</div>
+		</div>
+
+		<button class="pageButtonColor closeWel fadeScroll fadeOut" onclick="hiddenTextFunc()" title="Close">
+			<div>&nbsp;&times;&nbsp;</div>
+		</button>
+		<hr class="rounded" id="mainCont">
+	</section>
+-->
+
+<!--
+<hr class="rounded" style="width: 50%;">
+
+<div id="wel" class="welcome fadeScroll fadeOut">
+	<img class="imgWel" alt="Welcome to the Schuy" src="src/img/WttS-2.gif">
+<div>
+-->
+
+		<!-- __________________________________________________________________________ -->
 
 	<section>
 		<hr class="rounded">
@@ -192,9 +201,10 @@
 		</div>
 	</section>
 
+
+
 	<!-- __________________________________________________________________________ -->
 
-	<!--<template id="footer-main"></template>-->
 	<div id="footer-main"></div>
 
 	<!--Needed for the landing page, I think??-->

@@ -46,9 +46,9 @@ photoFooter.innerHTML = `
 
 <hr class="rounded">
 
-<h4 title="Schuyler Meyer">
+<div class="h4">
   <img alt="Schuyler Meyer" src="src/img/Logo2022.png" width="250">
-</h4>
+</div>
 
 <p id="p01">
   <b>&nbsp;&lt;&nbsp;|&nbsp;/\\\\&nbsp;|&nbsp;&gt;&nbsp;</b>

@@ -1,0 +1,31 @@
+Text
+---------------------------------------------------
+Header: font-family: 'Audiowide', cursive;
+Buttons: font-family: 'Audiowide', cursive;
+Titles: font-family: 'Audiowide', cursive;
+Little Text: font-family: 'Orbitron', sans-serif;
+Paragraph:
+"Written": font-family: 'Merienda', cursive;*
+Bullet Lists: font-family: 'Roboto Mono', monospace;
+
+Others: font-family: 'nasalization', sans-serif;
+
+---------------------------------------------------
+
+Colors:
+---------------------------------------------------
+Text: 
+color: #c2c7cc; (light grey)
+color: #8b8e91; (other grey)
+#ffa407 (orange)
+#436ff3 // rgba(67,111,243,30%) (blue)
+#00bb17 (green)
+#638affe6 (light blue)
+About Text: #99a8b8
+
+---------------------------------------------------
+
+Up arrow: &#11165;
+
+
+---------------------------------------------------

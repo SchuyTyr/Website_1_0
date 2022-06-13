@@ -17,7 +17,7 @@ h1 {
 	padding-bottom: 20px;
 }
 
-h4 {
+.h4 {
 	text-align:center;
 	margin: 0;
 	margin-top: 20px;
@@ -55,14 +55,22 @@ a.linkMore:hover {
 }
 .topTitles {
 	font-size:32px;
-	font-family: 'Orbitron', sans-serif;
-	color: rgb(72,72,72);
+	/*font-family: 'Orbitron', sans-serif;*/
+	font-family: 'Audiowide', cursive;
+	font-style: normal;
+	font-weight: 300;
+	text-decoration: underline;
+	color: #99a8b8;
 }
 .topDesc {
 	text-align: center;
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	color: #a2a6a9;
 }
 .imgLogo {
 	width: 20%;
@@ -75,6 +83,45 @@ a.linkMore:hover {
 	-ms-filter: drop-shadow(0 0 2px #ffffff);
 	filter: drop-shadow(0 0 2px #ffffff);
 }*/
+
+.headerTxt {
+	/*color: #8b8e91;*/
+	color: #c2c7cc;
+	/*color: #080808;*/
+	font-size: 42px;
+	/*font-family: 'nasalization', sans-serif;
+	font-family: 'Orbitron', sans-serif;*/
+	font-family: 'Audiowide', cursive;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*text-transform: full-width;*/
+	letter-spacing: 1.2em;
+	/*letter-spacing: 42px;*/
+	line-height: 1.8;
+	font-weight: normal;
+	transform: scale(1, 0.9);
+	margin: auto;
+	margin-top: 24px;
+	margin-bottom: 42px;
+	overflow: visible;
+	text-shadow: -1px 1px 2px #c2c7cc;
+							 /*0 0 2px #436ff3;*/
+	/*animation: 10s ease-in-out headerColorChange infinite;*/
+}
+
+.headerTxt span {
+	position: relative;
+	left: 2%;
+}
+
+.headerTxt a,
+.headerTxt a:visited,
+.headerTxt a:hover,
+.headerTxt a:active {
+	text-decoration: none;
+	color: inherit;
+}
 
 .xlarge-font {
 	font-size: 52px;
@@ -92,7 +139,8 @@ a.linkMore:hover {
 }
 .pageButtonColor {
 	text-align: center;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Audiowide', cursive;
+	/*font-family: 'Orbitron', sans-serif;*/
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
   transition: .3s all ease-in;
@@ -118,7 +166,9 @@ a.linkMore:hover {
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	transition: .15s all ease-in;
-	border-radius: 50% / 15%;
+	border-radius: 25% / 10%;
+	/*border-radius: 50% / 15%;*/
+	/*transform: skew(-30deg);*/
 }
 .pageButtonColor:active {
 	color: #00bb17;
@@ -678,21 +728,12 @@ body.noscroll {
 }
 
 .socialBar {
-	/*position: relative;*/
-  /*height: 25px;*/
-	background-color: #00000000;
-	color: #00000000;
+	width: 100%;
 	display: inline-flex;
 }
 
 .socialProps {
-	/*list-style-type: none;
-	background-color: #00000000;
-	color: #00000000;*/
 	width: 80%;
-	/*margin: auto;
-	padding: 10px;*/
-	/*display: table;*/
 	display:         flex;
   flex-wrap:       wrap;
   justify-content: center;
@@ -704,7 +745,7 @@ body.noscroll {
 	/*display: table-cell;*/
 	/*text-align: center;
 	margin: auto;*/
-	width: 40%;
+	width: 24%;
 	/*height: auto;*/
 	/*float: left;*/
 }
@@ -838,6 +879,9 @@ a.link4 {
 	img {
 		margin: auto;
 	}
+	.headerTxt {
+		font-size: 28px;
+	}
 	.xlarge-font {
 		font-size: 48px;
 	}
@@ -869,6 +913,9 @@ a.link4 {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
+	.headerTxt {
+		font-size: 24px;
+	}
 	.modal-content {
 		width: 100%;
 	}
@@ -876,7 +923,7 @@ a.link4 {
 		width: auto;
 	}
 	.socialProps img {
-		width: 40%;
+		width: 24%;
 	}
 	.titles {
 		font-size: 1.6em;
@@ -889,11 +936,11 @@ a.link4 {
 }
 
 @media screen and (max-width: 700px) {
-	h4 {
+	.h4 {
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
-	h4 img {
+	.h4 img {
 		width: 40%;
 	}
 	.topLogos {
@@ -959,10 +1006,19 @@ a.link4 {
 		left: 50vw;/*calc(50% - width);*/
 	}
 	.socialProps img {
-		width: 80%;
+		width: 38%;
 	}
 	.video {
 		height: 200px;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+	.headerTxt {
+		font-size: 18px;
+		margin-bottom: 24px;
+		margin-top: 24px;
 	}
 }
 

@@ -14,47 +14,51 @@
 	<meta name="author" content="Schuyler Meyer">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="stylesSM.css" rel="stylesheet">
-	<!--<link href="stylesSM2.css" rel="stylesheet"> - Breaks it-->
+	<link href="stylesSM2.css" rel="stylesheet"> <!-- - Breaks it-->
 	<link href="src/icons/SMLogo2022.ico" rel="shortcut icon">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Merienda&family=Orbitron&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&family=VT323&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
 	<!-- End Fonts -->
 	<script src="src/js/footer-photo.js" type="text/javascript" defer></script>
 	<title>Schuyler Meyer Photography</title>
 </head>
-<body onload = "startTimer()">
+<body>
 
-	<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
+	<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&#11165;</span></button>
 
-	<h1 style="color:#8b8e91;" title="Schuyler Meyer">
+	<h1 class="headerTxt" title="Schuyler Meyer">
 		<a href="index.html">
-			<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SM_Sign_Photo-blur.png">
+			<!--<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">-->
+			<span>Schuyler Meyer</span>
 		</a>
 	</h1>
-	<hr class="rounded"><br>
+	<hr class="rounded">
 	<!-- __________________________________________________________________________ -->
 
 	<div class="buttonAbout">
 		<a href="index.html" class="aButton">
 			<!-- pageButtonColor is in stylesSM2, which breacks this page -->
-			<button class="pageButton" title="Home">
+			<button class="pageButtonColor" title="Home">
 				<div>&nbsp;Home&nbsp;</div>
 			</button>
 		</a>
 		<a href="photo.html" class="aButton">
-			<button class="pageButton" title="Photography">
+			<button class="pageButtonColor" title="Photography">
 				<div>&nbsp;Photos&nbsp;</div>
 			</button>
 		</a>
 	</div>
 
-	<h2 class="modalH2-2">
-		<span class="lg-view">_/&nbsp;&nbsp;&nbsp;</span>
-			<u>Socially Distance Photoshoots</u>
-		<span class="lg-view">&nbsp;&nbsp;&nbsp;\_</span>
+	<hr class="rounded">
+
+	<h2 class="descrTitleIT" style="text-align:center;">
+		<u>Socially Distance Photoshoots</u>
 	</h2>
+
+	<div class="descrITClick" onclick="moveToContent()">Click here (or scroll) for information.</div>
 
 <!--
 	<div class="imgPSContainer">
@@ -64,76 +68,136 @@
 	</div>
 -->
 
-	<div class="imgPSContainerSlides">
-		<div class="imgPSInnerContainerSlides">
-		  <img alt="" class="slides img3" src="Photography/photos/People/Portraits/photo_1.jpg">
-		  <img alt="" class="slides img3" src="Photography/photos/Sports/MHockey/photo_1.jpg">
-		  <img alt="" class="slides img3" src="Photography/photos/People/Portraits/photo_3.jpg">
-		  <img alt="" class="slides img3" src="Photography/photos/People/Portraits/photo_7.jpg">
-		  <img alt="" class="slides img3" src="Photography/photos/People/Portraits/photo_5.jpg">
-		  <img alt="" class="slides img3" src="Photography/photos/People/Portraits/photo_11.jpg">
-		  <img alt="" class="slides img3" src="Photography/photos/People/Portraits/photo_12.jpg">
-			<div id="slideCounter" class="slidesText" style="display: none;"></div>
+	<div class="PSphotos">
+		<div class="PSphotosInner">
+		  <img alt="" class="img5" src="Photography/photos/People/Portraits/photo_1.jpg">
+		  <img alt="" class="img5" src="Photography/photos/Sports/MHockey/photo_1.jpg">
+		  <img alt="" class="img5" src="Photography/photos/People/Portraits/photo_3.jpg">
+		  <img alt="" class="img5" src="Photography/photos/People/Portraits/photo_7.jpg">
+		  <img alt="" class="img5" src="Photography/photos/People/Portraits/photo_5.jpg">
+		  <img alt="" class="img5" src="Photography/photos/Sports/WHockey/photo_1.jpg">
+		  <img alt="" class="img5" src="Photography/photos/People/Portraits/photo_11.jpg">
+		  <img alt="" class="img5" src="Photography/photos/People/Portraits/photo_12.jpg">
+		  <img alt="" class="img5" src="Photography/photos/People/Portraits/photo_21.jpg">
+			<!--<div id="slideCounter" class="slidesText" style="display: none;"></div>-->
 		</div>
 	</div>
 
-	<div class="modal-content">
-		<div>
-			 <h2 class="modalH2"><u>Photoshoots Available</u>&nbsp;&gt;</h2>
-				 <p class="modalP">&gt;&nbsp;Sports (all levels), Holiday, Family, Senior Portraits, Cosplay, and More!
-				 <br><br><i style="margin-left: 40px;font-size: 18px;">&gt;&nbsp;I can also design your holiday card for an additional cost.</i>
-				 <br><br>&gt;&nbsp;Based out of Millbrook, NY, I am available throughout the Hudson Valley, Western Connecticut, and Western Massachusetts.
-				 <br><br>&gt;&nbsp;You will receive fully edited digital photographs to use for social media, profile pictures, yearbooks, and more!
-				 <br><br>&gt;&nbsp;Solo, group, and family shoots are available.
-				 <br><br>&gt;&nbsp;Photoshoots are split into one hour time slots (sports are per game).
-			 	 </p>
-			 	 <br><hr class="rounded" style="width:40%;"><br>
-				 <p class="modalP">&gt;&nbsp;I can travel further to get to that perfect location*.
-				 <br><br>&gt;&nbsp;I am happy to work with you to get that image you are looking for**.
-				 <br><br>
-			   </p>
-			 <h2 class="modalH2"><u>Book Today</u>&nbsp;&gt;</h2>
- 				 <p class="modalP">&gt;&nbsp;To schedule, or if you have any questions, please message me on any of the social medias or email me at
-				 <a class="link3" href="mailto:schuybreach@gmail.com?subject=Schuyler%20Meyer%20Photoshoot%20Request"><u>schuybreach@gmail.com</u></a>.
-				 <br><br>&gt;&nbsp;Please include "<i>Schuyler Meyer Photoshoot Request</i>" or something similar in the subject line or within the message.
-				 <br><br>&gt;&nbsp;To see more of my photography, click <a class="link3" href="photo.html"><u>here</u></a>.
-				 <br><br>
-				 </p>
-			 <h2 class="modalH2"><u>Costs</u>&nbsp;&gt;</h2>
-				 <p class="modalP">&gt;&nbsp;Base cost: $100 for a 1 hour shoot (or per game for sports).
-					 <br><br>&gt;&nbsp;*If travel time from Millbrook, NY to the location is longer than one and a half (1.5) hours,
-					 additional travel costs may be added to the base price.
-				 	 <br><br>&gt;&nbsp;**If rental equipment is needed and used, an additional fee may be added to the base price to cover the rental costs.
-					 <br><br>&gt;&nbsp;All costs will be discussed prior to the shoot.
-				 </p>
-		 </div>
+	<br>
+	<br>
+
+	<div class="descrITLink">
+		To see more examples of my work,
+		<a class="link3" href="photo.html">click here</a>.
+	</div>
+
+	 <div id="textHere" class="descrTitleIT"><u>Photoshoots Available</u>&nbsp;&mdash;</div>
+	 <div class="descrIT">
+		 <ul>
+			 <li>
+				 Sports (all levels), Holiday, Family, Senior Portraits, Cosplay, and More!
+			 </li>
+				 <ul>
+					 <li>
+						 I can also design your holiday card for an additional cost.
+					 </li>
+				 </ul>
+			 <li>
+				 Based out of Millbrook, NY, I am available throughout the Hudson Valley, Western Connecticut, and Western Massachusetts.
+			 </li>
+			 <li>
+				 You will receive fully edited digital photographs to use for social media, profile pictures, yearbooks, and more!
+			 </li>
+		   <li>
+			   Solo, group, and family shoots are available.
+		   </li>
+		   <li>
+			   Photoshoots are split into one hour time slots (sports are per game).
+		   </li>
+	   </ul>
 	 </div>
+
+	 	 <br>
+		 <hr class="rounded" style="width:40%;">
+		 <br>
+
+		 <div class="descrIT">
+			 <ul>
+				 <li>
+					 I can travel further to get to that perfect location*.
+				 </li>
+				 <li>
+					 I am happy to work with you to get that image you are looking for**.
+				 </li>
+			 </ul>
+			</div>
+
+	 <div class="descrTitleIT"><u>Book Today</u>&nbsp;&mdash;</div>
+	 	<div class="descrIT">
+			 <ul>
+				 <li>
+					 To schedule, or if you have any questions, please message me on any of the social medias or email me at
+					 <a class="link3" href="mailto:schuybreach@gmail.com?subject=Schuyler%20Meyer%20Photoshoot%20Request">
+						 schuybreach@gmail.com
+					 </a>.
+				 </li>
+				 <li>
+	 			 		Please include "<i>Schuyler Meyer Photoshoot Request</i>" or something similar in the subject line or within the message.
+				 </li>
+	 	 </div>
+
+	 <div class="descrTitleIT"><u>Costs</u>&nbsp;&mdash;</div>
+		 <div class="descrIT">
+			 <ul>
+				 <li>
+					 Base cost: $100 for a 1 hour shoot (or per game for sports).
+				 </li>
+				 <li>
+					 *If travel time from Millbrook, NY to the location is longer than one and a half (1.5) hours,
+					 additional travel costs may be added to the base price.
+				 </li>
+				 <li>
+					 **If rental equipment is needed and used, an additional fee may be added to the base price to cover the rental costs.
+				 </li>
+				 <li>
+					 All costs will be discussed prior to the shoot.
+				 </li>
+			 </ul>
+		 </div>
+
 	<!-- __________________________________________________________________________ -->
 	<br>
 	<br>
 	<br>
 
+	<hr class="rounded">
+
 	<div class="buttonAbout">
 		<a href="index.html" class="aButton">
-			<button class="pageButton" title="Home">
+			<button class="pageButtonColor" title="Home">
 				<div>&nbsp;Home&nbsp;</div>
 			</button>
 		</a>
 		<a href="photo.html" class="aButton">
-			<button class="pageButton" title="Photography">
+			<button class="pageButtonColor" title="Photography">
 				<div>&nbsp;Photos&nbsp;</div>
 			</button>
 		</a>
 	</div>
 
-	<br>
-	<br>
-
 	<div id="PhotoFooter"></div>
 
-	<script src="photography/slideShow.js"></script>
+	<!--<script src="photography/slideShow.js"></script>-->
 	<script src="scrollToTop.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+	<script>
+		function moveToContent() {
+			document.getElementById('textHere').scrollIntoView({
+				behavior: 'smooth'
+			});
+		}
+	</script>
+
 
 </body>
 </html>

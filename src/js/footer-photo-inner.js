@@ -9,6 +9,29 @@ let photoFooterInner = document.getElementById('PhotoFooterInner');
 var curYear = new Date().getFullYear();
 
 photoFooterInner.innerHTML = `
+<div class="buttonAbout">
+	<a href="../photoshoot.html" class="aButton">
+		<button class="pageButtonColor" title="Book a Photoshoot">
+			<div>&nbsp;Book a Photoshoot&nbsp;</div>
+		</button>
+	</a>
+	<a href="../aboutSM.html" class="aButton">
+		<button class="pageButtonColorSkew showButton" title="About the Schuy">
+			<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
+		</button>
+	</a>
+	<a href="../contact.html" class="aButton">
+		<button class="pageButtonColorSkew showButton" title="Coming Soon!">
+			<div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
+		</button>
+	</a>
+	<a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
+		<button class="pageButtonColorSkew showButton" title="To the SchuyBox!">
+			<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
+		</button>
+	</a>
+</div>
+
 <hr class="rounded">
 
 <div class="socialBar" style="width: 100%;">
@@ -46,9 +69,9 @@ photoFooterInner.innerHTML = `
 
 <hr class="rounded">
 
-<h4 title="Schuyler Meyer">
+<div class="h4">
   <img alt="Schuyler Meyer" src="../src/img/Logo2022.png" width="250">
-</h4>
+</div>
 
 <p id="p01">
   <b>&nbsp;&lt;&nbsp;|&nbsp;/\\\\&nbsp;|&nbsp;&gt;&nbsp;</b>

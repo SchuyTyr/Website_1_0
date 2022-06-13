@@ -14,7 +14,7 @@ var curYear = new Date().getFullYear();
 template.innerHTML = `
   <hr class="rounded">
 
-  <div class="socialBar" style="width: 100%;">
+  <div class="socialBar">
 
       <div class="socialProps">
         <a class="link4" href="https://www.instagram.com/schuyler_meyer/" title="Instagram &#64;schuyler_meyer">
@@ -56,9 +56,11 @@ template.innerHTML = `
   <hr class="rounded">
   <br>
   <br>
-  <h4>
+  <div class="h4">
     <img alt="Schuyler Meyer" src="src/img/Logo2022.png" width="250">
-  </h4>
+    <br>
+    <img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">
+  </div>
 
   <p id="p01">
     <b>&nbsp;&lt;&nbsp;|&nbsp;/\\\\&nbsp;|&nbsp;&gt;&nbsp;</b><br><br>

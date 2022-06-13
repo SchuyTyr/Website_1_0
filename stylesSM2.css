@@ -1,3 +1,9 @@
+/* Colors
+	 Header Text: #ffffff
+	 Text: #d8d8d8
+	 Background: #0f0f0f
+*/
+
 body {
 	background-color: #111821;
 	background: no-repeat center center fixed;
@@ -14,8 +20,8 @@ body {
 
 main {
 	text-align:center;
-	margin-top: 60px;
-	margin-bottom: 80px;
+	margin-top: 120px;
+	margin-bottom: 140px;
 }
 
 /*.fullContent {
@@ -32,6 +38,72 @@ footer {
 
 a {
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+}
+
+br {
+	cursor: url("src/img/CustomCursor_5_5s.png"), auto;
+}
+
+.headerTxt {
+	/*color: #8b8e91;*/
+	color: #c2c7cc;
+	/*color: #080808;*/
+	font-size: 42px;
+	/*font-family: 'nasalization', sans-serif;
+	font-family: 'Orbitron', sans-serif;*/
+	font-family: 'Audiowide', cursive;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*text-transform: full-width;*/
+	letter-spacing: 1.2em;
+	/*letter-spacing: 42px;*/
+	line-height: 1.8;
+	font-weight: normal;
+	transform: scale(1, 0.9);
+	margin: auto;
+	margin-top: 24px;
+	margin-bottom: 42px;
+	overflow: visible;
+	text-shadow: -1px 1px 2px #c2c7cc;
+							 /*0 0 2px #436ff3;*/
+	/*animation: 10s ease-in-out headerColorChange infinite;*/
+}
+
+.headerTxt span {
+	position: relative;
+	left: 2%;
+}
+
+@keyframes headerColorChange {
+ 0% {
+	 text-shadow: 0 0 4px #ffa407;
+	 color: #080808;
+ }
+ 25% {
+   text-shadow: 0 0 4px #436ff3;
+	 color: #080808;
+ }
+ 50% {
+   text-shadow: 0 0 4px #00bb17;
+	 color: #080808;
+ }
+ 75% {
+   text-shadow: 0 0 4px #436ff3;
+	 color: #080808;
+ }
+ 100% {
+   text-shadow: 0 0 4px #ffa407;
+	 color: #080808;
+ }
+}
+
+h1 a,
+h1 a:visited,
+h1 a:hover,
+h1 a:active {
+	text-decoration: none;
+	color: #c2c7cc;
 }
 
 nav {
@@ -64,7 +136,14 @@ nav {
 .pageButtonColor,
 .pageButtonColorSkew {
 	text-align: center;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Audiowide', cursive;
+	/*font-family: 'Kdam Thmor Pro', sans-serif;
+	font-family: 'Merienda', cursive;*/
+	/*font-family: 'Orbitron', sans-serif;*/
+	/*font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Mono', monospace;
+	font-family: 'Sora', sans-serif;*/
+	/*font-family: 'Ubuntu', sans-serif;*/
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
   transition: .3s all ease-in;
@@ -85,7 +164,7 @@ nav {
 }
 
 .pageButtonColorSkew {
-	transform: skew(-30deg);
+	/*transform: skew(-30deg);*/
 }
 
 .pageButtonColor:hover,
@@ -95,7 +174,9 @@ nav {
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	transition: .15s all ease-in;
-	border-radius: 50% / 15%;
+	border-radius: 25% / 10%;
+	/*border-radius: 50% / 15%;*/
+	/*transform: skew(-30deg);*/
 }
 .pageButtonColor:active,
 .pageButtonColorSkew:active {
@@ -106,6 +187,10 @@ nav {
 	transition: .15s all ease-in;
 	border-radius: 50% / 15%;
 }
+/*.pageButtonColor:hover .pageButtonTxt,
+.pageButtonColorSkew:hover .pageButtonTxt {
+	transform: skew(30deg);
+}*/
 
 .showcase {
 	height: 100vh;
@@ -499,6 +584,7 @@ polygon {
 	max-width: 100%;
 	border-radius: 25% / 12%;
 	display: block;
+	margin: 24px;
 	margin-left: auto;
 	margin-right: auto;
 	/*width: 600px;*/
@@ -951,30 +1037,76 @@ body.noscroll {
 	font-size: 28px;
 	color: #abafb3;
 	line-height: 1.4;
-	font-family: 'Merienda', cursive;
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
 }
 .aboutCText {
 	text-align: justify;
 	color: #abafb3;
+	color: #99a8b8;
 	font-size: 20px;
 	line-height: 1.4;
-	font-family: 'Merienda', cursive;
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
 }
 .resumeStats {
-	font-family: 'Times New Roman';
+	/*font-family: 'Times New Roman';
+	font-family: 'Audiowide', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
 	color: #a2a6a9;
-	font-size: 20px;
+	font-size: 18px;
 	margin-left: 10%;
 	margin-right: 10%;
+	line-height: 1.2;
+}
+.resumeStatsHeaderTop {
+	font-size: 28px;
+	color: #99a8b8;
+	font-family: 'Audiowide', cursive;
+	font-style: normal;
+	font-weight: 300;
+	text-align: center;
+	display: block;
+	padding-top: 18px;
+	padding-bottom: 18px;
 }
 .resumeStatsHeader {
 	font-size: 28px;
-	color: #64696b;
+	color: #99a8b8;
+	font-family: 'Audiowide', cursive;
+	font-style: normal;
 	font-weight: bold;
+	text-decoration: underline;
+}
+.resumeStatsDate {
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 200;
+}
+.resumeStatsTitle {
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #889cb3;
+}
+.resumeStatsPlace {
+	color: #057bf3;
+	font-style: normal;
+	font-weight: 200;
 }
 .resumeStatsList {
-	line-height: 0.75;
+	line-height: 1.5;
+	list-style-type: square;
+	/*list-style-type: none;*/
+	font-style: normal;
 }
+/*.resumeStatsList li:before {
+	content: "▷";
+}*/
 .rDownloads {
 	display: flex;
   flex-wrap: wrap;
@@ -992,8 +1124,9 @@ body.noscroll {
 	text-align: center;
 	padding: 15px;
 	font-family: garamond;
+	font-family: 'Orbitron', sans-serif;
 	color: #a2a6a9;
-	font-size: 20px;
+	font-size: 16px;
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	width: 20%;
@@ -1019,6 +1152,8 @@ a.link3 {
 	text-align: inherit;
 	padding: 0;
 	margin: 0;
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 }
 a.link3:hover {
 	color: #0099ff;
@@ -1074,9 +1209,13 @@ a.linkG:hover {
 /*---------------------------Sitemap Page----------------------------*/
 
 .textSMap { /*text4*/
-	color: #8b8e91;
+	/*color: #8b8e91;*/
 	font-size: 18px;
-	font-family: 'Merienda', cursive;
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	color: #a2a6a9;
 	text-align: center;
 	text-decoration: none;
 	word-wrap: break-word;
@@ -1120,9 +1259,13 @@ a.linkG:hover {
 	text-decoration: none;
 }
 .ulSMap { /*ul4*/
-	color: #8b8e91;
-	font-size: 18px;
-	font-family: 'Merienda', cursive;
+	/*color: #8b8e91;*/
+	font-size: 22px;
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	color: #a2a6a9;
 	text-align: left;
 	text-decoration: none;
 	word-wrap: break-word;
@@ -1395,6 +1538,79 @@ h3 {
 /*----------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------*/
+/*-------------------------Photoshoot Page----------------------------*/
+
+.PSphotos {
+	width: 90%;
+	margin: auto;
+}
+.PSphotosInner {
+	width: 100%;
+	margin: auto;
+	position: relative;
+	object-fit: contain;
+	display: inline-block;
+	text-align: center;
+
+	border: solid 2px rgba(67,111,243,30%);
+ 	background-color: rgba(67,111,243,15%);
+	/*border-radius: 4%;*/
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
+	-webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.img5 {
+	max-width: 100%;
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+	position: relative;
+	object-fit: contain;
+	padding: 12px;
+	/*border: solid 2px rgba(67,111,243,0%);
+	border-radius: 4%;*/
+}
+/*.img5:hover {
+	border: solid 2px rgba(67,111,243,30%);
+	border-radius: 4%;
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}*/
+
+.descrITClick,
+.descrITLink {
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	text-decoration: none;
+	color: #a2a6a9;
+	font-size: 18px;
+	margin: auto;
+	margin-bottom: 24px;
+	line-height: 1.2;
+	width: 90%;
+	word-wrap: break-word;
+	display: block;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+}
+
+.descrITClick:hover {
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+	text-decoration: underline;
+}
+
+/*-------------------------End Photoshoot Page--------------------------*/
+/*----------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------*/
 /*-----------------------Computer Repair Page-------------------------*/
 
 .titleIT {
@@ -1408,28 +1624,50 @@ h3 {
 }
 .descrTitleIT{
 	text-align: left;
-	font-family: 'Audiowide', cursive;
-	text-decoration: underline;
-	margin: auto;
 	word-wrap: break-word;
-	line-height: 2;
-	color: #c2c7cc;
-	font-size: 28px;
 	width: 90%;
+	line-height: 2;
+	text-decoration: none;
+	font-size: 28px;
+	color: #99a8b8;
+	font-family: 'Audiowide', cursive;
+	font-style: normal;
+	font-weight: 300;
+	display: block;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin: auto;
 }
 .descrIT{
 	text-align: left;
-	font-family: 'verdana';
+	/*font-family: 'verdana';*/
+	/*font-family: 'Orbitron', sans-serif;
 	text-decoration: none;
 	margin: auto;
 	line-height: 2;
-	word-wrap: break-word;
+	letter-spacing: 0.15em;
+
 	color: #8b8e91;
-	font-size: 22px;
+	font-size: 20px;
+	width: 90%;*/
+
+	/*font-family: 'Times New Roman';
+	font-family: 'Audiowide', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	text-decoration: none;
+	color: #a2a6a9;
+	font-size: 18px;
+	margin: auto;
+	line-height: 1.2;
 	width: 90%;
+	word-wrap: break-word;
+	cursor: url("src/img/CustomCursor_5_5s.png"), auto;
 }
 .descrIT ul {
 	list-style: none;
+	line-height: 2.5;
 }
 .descrIT ul li:before {
 	/*content: "&#9655;";*/
@@ -1443,9 +1681,13 @@ h3 {
 /*---------------------------Contact Page-----------------------------*/
 
 .pContact {
-	color: #c2c7cc;
-	font-size: 18px;
-	font-family: 'Merienda', cursive;
+	/*color: #c2c7cc;*/
+	font-size: 22px;
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	color: #a2a6a9;
 	text-align: center;
 	text-decoration: none;
 	word-wrap: break-word;
@@ -1481,9 +1723,13 @@ h3 {
 	margin-bottom: 24px;
 }
 .paraTextPara {
-	color: #c2c7cc;
+	/*color: #c2c7cc;*/
 	font-size: 22px;
-	font-family: 'Merienda', cursive;
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	color: #a2a6a9;
 	text-align: justify;
 	text-decoration: none;
 	word-wrap: break-word;
@@ -1532,24 +1778,25 @@ h3 {
 
 .fof button {
 	text-align: center;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Audiowide', cursive;
+	/*font-family: 'Orbitron', sans-serif;*/
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
-	transition: .3s all ease-in;
+  transition: .3s all ease-in;
 	color: rgba(99, 138, 255, 0.9);
-	font-size: 22px;
+ 	font-size: 22px;
 	padding: 10px;
 	padding-left: 14px;
 	padding-right: 14px;
-	text-decoration: none;
-	border: solid 2px rgba(67,111,243,30%);
-	background-color: rgba(67,111,243,15%);
+ 	text-decoration: none;
+ 	border: solid 2px rgba(67,111,243,30%);
+ 	background-color: rgba(67,111,243,15%);
 	border-radius: 4%;
 	box-shadow: 0px 0px 6px 2px #436ff3;
 	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
 	-webkit-appearance: none;
 	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
+  background-clip: padding-box;
 }
 
 .fof:hover {
@@ -1562,7 +1809,9 @@ h3 {
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	transition: .15s all ease-in;
-	border-radius: 50% / 15%;
+	border-radius: 25% / 10%;
+	/*border-radius: 50% / 15%;*/
+	/*transform: skew(-30deg);*/
 }
 .fof button:active {
 	color: #00bb17;
@@ -1647,8 +1896,8 @@ h3 {
 
 @media screen and (min-width: 2000px) {
 	main {
-		margin-top: 80px;
-		margin-bottom: 80px;
+		margin-top: 120px;
+		margin-bottom: 140px;
 	}
 	.imgLogoStyle {
 		width: 45%;
@@ -1657,6 +1906,10 @@ h3 {
 @media screen and (min-width: 1500px) {
 	.sContainer ul {
 		font-size: 28px;
+	}
+	.aboutC {
+		width: 60%;
+		margin: auto;
 	}
 	.aboutCPhoto {
 		margin-top: 42px;
@@ -1668,19 +1921,15 @@ h3 {
 }
 @media screen and (min-width: 1351px) {
 	main {
-		margin-top: 60px;
-		margin-bottom: 80px;
-	}
-	#main-main {
-		margin-top: 60px;
-		margin-bottom: 80px;
+		margin-top: 80px;
+		margin-bottom: 120px;
 	}
 }
 
 @media screen and (max-width: 1350px) {
 	main {
 		margin-top: 60px;
-		margin-bottom: 80px;
+		margin-bottom: 100px;
 	}
 	.containerGrid img {
 		height: 250px;
@@ -1706,6 +1955,9 @@ h3 {
 	main {
 		margin-top: 60px;
 		margin-bottom: 80px;
+	}
+	.headerTxt {
+		font-size: 28px;
 	}
 	.socialBar {
 		padding-top: 10px;
@@ -1786,6 +2038,9 @@ h3 {
 }
 
 @media screen and (max-width: 900px) {
+	.headerTxt {
+		font-size: 24px;
+	}
 	.lineBox {
 	 width: 55%;
 	}
@@ -1795,10 +2050,17 @@ h3 {
 	.pageButtonTxt {
 		transform: skew(0);
 	}
+	.descrIT{
+		margin-left: 5%;
+	}
 }
 @media screen and (max-width: 800px) {
 	.lineBox {
 	 width: 80%;
+	}
+	.img5 {
+		height: 175px;
+		padding: 8px;
 	}
 }
 @media screen and (max-width: 700px) {
@@ -1986,15 +2248,20 @@ h3 {
 	 							0 0 22px 12px #ffa407,
 	 							0 0 42px 18px #c98002;
 	 }
+	 .pageButtonColor,
 	 .pageButtonColorSkew {
 		 margin: 8px 1px;
 		 font-size: 18px;
 	 }
+	 .descrIT{
+		 margin-left: 0;
+		 margin-right: 0;
+	 }
 }
 @media screen and (max-width: 500px) {
 	main {
-		margin-top: 20px;
-		margin-bottom: 40px;
+		margin-top: 40px;
+		margin-bottom: 60px;
 	}
 	#textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
 		height: 42px;
@@ -2055,8 +2322,18 @@ h3 {
 	.tab3 {
 		padding-left: 7.5%;
 	}
+	.img5 {
+		height: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 8px;
+	}
 }
 @media screen and (max-width: 400px) {
+	.headerTxt {
+		font-size: 18px;
+		margin-bottom: 24px;
+	}
 	#photoTextCapt {
 		top: 88%;
 	}
@@ -2101,8 +2378,11 @@ h3 {
 								0 0 12px 8px #ffa407,
 								0 0 18px 12px #c98002;
 	}
+	.pageButtonColor,
 	.pageButtonColorSkew {
 		margin: 4px 1px;
-		font-size: 16px;
+	}
+	.pageButtonTxt {
+		font-size: 14px;
 	}
 }
