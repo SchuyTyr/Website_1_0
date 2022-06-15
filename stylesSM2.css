@@ -16,6 +16,7 @@ body {
 	overflow-x: hidden;
 	background-image: url('Hex_7.jpg');
 	cursor: url("src/img/CustomCursor_5_5s.png"), auto;
+	font-family: verdana; /*backup font*/
 }
 
 main {
@@ -1045,7 +1046,7 @@ body.noscroll {
 	text-align: justify;
 	color: #abafb3;
 	color: #99a8b8;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 1.4;
 	/*font-family: 'Merienda', cursive;*/
 	font-family: 'Roboto Mono', monospace;
@@ -1749,9 +1750,14 @@ h3 {
 .fof {
 	display: block;
 	/*font-family: 'Orbitron', sans-serif;*/
-	font-family: 'Merienda', cursive;
+	/*font-family: 'Merienda', cursive;*/
+	/*font-family: 'Audiowide', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	color: #a2a6a9;
 	text-align: center;
-	color: #8b8e91;
+	/*color: #8b8e91;*/
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -1762,7 +1768,7 @@ h3 {
 
 .fof h1 {
 	font-size: 28px;
-	font-family: 'Merienda', cursive;
+	font-family: 'Audiowide', cursive;
 }
 
 .fof h2 {
@@ -1835,9 +1841,13 @@ h3 {
 	text-align: center;
 }
 .ul4 {
-	color: #8b8e91;
+	/*color: #8b8e91;*/
 	font-size: 18px;
-	font-family: 'Merienda', cursive;
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	color: #a2a6a9;
 	text-align: left;
 	text-decoration: none;
 	word-wrap: break-word;
@@ -1860,9 +1870,13 @@ h3 {
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 }
 .text4 {
-	color: #8b8e91;
+	/*color: #8b8e91;*/
 	font-size: 18px;
-	font-family: 'Merienda', cursive;
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	color: #a2a6a9;
 	text-align: justify;
 	text-decoration: none;
 	word-wrap: break-word;
