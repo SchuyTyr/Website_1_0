@@ -1,7 +1,7 @@
 /*:root {
   --animation-time: 5s;
 }*/
-body {
+/*body {
 	background-color: #111821;
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -12,8 +12,8 @@ body {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-image: url('Hex_7.jpg');
-	font-family: verdana; /*backup font*/
-}
+	font-family: verdana;
+}*/
 
 h1 {
 	color: #8b8e91;
@@ -215,15 +215,15 @@ img {
   background-repeat:no-repeat;
 	display: none;
 	position: fixed;
-	bottom: 20px;
-	right: 30px;
+	bottom: 5%;
+	right: 2.5%;
 	z-index: 1004;
 	font-size: 32px;
 	outline: none;
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
 	padding: 8px;
-	padding-top: 2px;
+	padding-top: 8px;
 	padding-left: 12px;
 	padding-right: 12px;
   transition: .2s all ease-in;
@@ -234,7 +234,10 @@ img {
 	border-radius: 8px;
 	box-shadow: 0px 0px 6px 2px #d7d7d7;
 	font-family: arial;
-	content: "⮝"; /*&#11165;*/
+	content: '⇪';/*"⮝";*/ /*&#11165;*/
+}
+#myBtn::after {
+	content: '⇪';
 }
 #myBtn:hover {
 	color: #383838;
@@ -978,6 +981,8 @@ hr.roundedTwo {
 	#myBtn {
 		background-color: rgba(56,56,56,90%);
 		bottom: 100px;
+		left: 2.5%;
+		right: revert;
 	}
 }
 @media screen and (max-width: 600px) {
