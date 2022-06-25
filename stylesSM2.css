@@ -1058,6 +1058,55 @@ body.noscroll {
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 300;
 }
+.formatting {
+	display: flex;
+  gap: 20px 50px;
+  min-width: 25%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*text-decoration: overline;*/
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+	text-align: center;
+}
+.formatting li {
+	color: #889cb3;
+	font-weight: bold;
+	flex-shrink: 3;
+	flex-grow: 4;
+	border: 1px solid grey;
+	padding: 4px;
+	/*border-top: 1px solid grey;
+	border-right: 1px solid grey;
+  border-bottom: 1px solid grey;*/
+}
+.formatting li::before {
+	/*content: "_";*/
+}
+.formatting li::after {
+	/*content: "_";*/
+}
+.formatting li:hover {
+	background-color: rgba(67,111,243,15%);
+}
+.linkSkill {
+	color: #889cb3;
+	font-weight: bold;
+	/*border: 1px solid grey;*/
+	text-decoration: none;
+
+}
+.linkSkill:visited {
+	color: #889cb3;
+	font-weight: bold;
+	text-decoration: none;
+}
+.linkSkill:hover {
+	/*text-decoration: underline;*/
+	color: #99a8b8;
+}
 .resumeStats {
 	/*font-family: 'Times New Roman';
 	font-family: 'Audiowide', cursive;*/
@@ -1071,7 +1120,7 @@ body.noscroll {
 	line-height: 1.2;
 }
 .resumeStatsHeaderTop {
-	font-size: 28px;
+	font-size: 34px;
 	color: #99a8b8;
 	font-family: 'Audiowide', cursive;
 	font-style: normal;
@@ -2002,6 +2051,9 @@ h3 {
 	.resumeStatsList {
 		line-height: 1.25;
 	}
+	/*.formatting {
+		text-align: justify;
+	}*/
 	.pageButton {
 		width: auto;
 		margin-top: 10px;
@@ -2136,6 +2188,8 @@ h3 {
 	}
 	.aboutCText {
 		text-align: left;
+		width: 96%;
+		margin: auto;
 	}
 	.resumeStats {
 		line-height: 1.25;
@@ -2148,11 +2202,15 @@ h3 {
 	.resumeStatsList {
 		line-height: 1.25;
 	}
+	/*.formatting {
+		text-align: left;
+	}*/
 	.rDownloads {
 		margin-bottom: 16px;
+		width: 100%;
 	}
 	.rLink {
-		width: 25%;
+		width: 30%;
 	}
 	.letterContainer{
 		width: 90%;
