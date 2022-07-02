@@ -4,13 +4,16 @@
 	 Background: #0f0f0f
 */
 
-html, body {
-	/*overflow-y: scroll;
-	overflow-x: hidden;*/ /*messes up the noscroll modals*/
+html {
+	overflow-y: scroll;
+	overflow-x: hidden; /*messes up the noscroll modals*/
 	scroll-behavior: smooth;
 }
 
 body {
+	/*overflow-y: scroll;*/
+	/*overflow-x: hidden;*/
+
 	background-color: #111821;
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -22,6 +25,13 @@ body {
 	background-image: url('Hex_7.jpg');
 	cursor: url("src/img/CustomCursor_5_5s.png"), auto;
 	font-family: verdana; /*backup font*/
+}
+
+.noscroll {
+	margin: 0;
+	height: 100%;
+  /*overflow-y: hidden;*/
+  overflow: hidden;
 }
 
 main {
@@ -874,12 +884,6 @@ polygon {
 	padding-bottom: 3px;
 	padding-top: 3px;
 	line-height: 2;
-}
-
-.noscroll {
-	margin: 0;
-	height: 100%;
-  overflow-y: hidden;
 }
 
 #closeButton {

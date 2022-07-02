@@ -3,6 +3,7 @@
 const modal = document.getElementById('myModal');
 const images = document.querySelectorAll(".containerGrid img");
 const body = document.getElementById('fullBody');
+const html = document.documentElement;
 
 let modalImg = document.getElementById("img01");
 let modalImgCapt = document.getElementById("photoTextCapt");
@@ -20,6 +21,7 @@ images.forEach((img) => {
 				modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";
 				noScrollF();
         scrollTop.style.display = "none";
+        html.style.overflow = "hidden";
         topBtn = true;
         //console.log("no scroll?");
     });
@@ -29,6 +31,7 @@ window.onclick = function(event) {
 		if (event.target == modal) {
 			modal.style.display = "none";
 			noScrollF();
+      html.style.overflow = "revert";
       topBtn = false;
 		}
 }
@@ -36,6 +39,7 @@ window.onclick = function(event) {
 close.onclick = function(event) {
 		modal.style.display = "none";
 		noScrollF();
+    html.style.overflow = "revert";
     topBtn = false;
 }
 
