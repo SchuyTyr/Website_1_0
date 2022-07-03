@@ -845,7 +845,7 @@ polygon {
 	font-size: 20px;
 	font-family: 'Merienda', cursive;
 	text-align: center;
-	width: 90%;
+	/*width: 90%;*/
 	margin: auto;
 	display: flex;
 	justify-content: center;
@@ -2329,7 +2329,7 @@ h3 {
 	 #photoText {
 		 font-size: 14px;
 	 }
-	 #photoText, .photoTextDescr {
+	 #photoText {
 		transform: translate(4%, 1%);
 		box-shadow: 0 0 1px 4px #000000;
 		-webkit-box-shadow: 0 -24px 24px 24px #000000;
@@ -2506,7 +2506,7 @@ h3 {
 	.modalPhotoContent {
 		/*transform: translate(-3.5%, -5%);*/ /* add or remove, test more*/
 	}
-	#photoText, .photoTextDescr {
+	#photoText {
 	 font-size: 12px;
 	 /*left: 47%;*/
 	 transform: translate(4%, 1%);
