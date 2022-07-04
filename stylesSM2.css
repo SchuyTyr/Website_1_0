@@ -721,13 +721,25 @@ polygon {
 /*--------------------------------------------------------------------*/
 /*---------------------------New Photo Page----------------------------*/
 
+.hamS {
+	font-size: 16px;
+	/*display: inline-block;
+  vertical-align: middle;
+  line-height: normal;*/
+}
+
 .containerGrid {
   /*display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: fit-content(100%);*/
-
+	display: flex;
 	object-fit: contain;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .containerGrid img {
@@ -1678,13 +1690,19 @@ h3 {
 .PSphotos {
 	width: 90%;
 	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-evenly;
+	align-items: center;
 }
 .PSphotosInner {
 	width: 100%;
 	margin: auto;
 	position: relative;
 	object-fit: contain;
-	display: inline-block;
+	/*display: inline-block;*/
 	text-align: center;
 
 	border: solid 2px rgba(67,111,243,30%);
@@ -2228,6 +2246,9 @@ h3 {
 		margin: 2px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.hamS {
+		font-size: 14px;
 	}
 	.pageButtonColorSkew {
 		width: auto;

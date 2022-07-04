@@ -196,6 +196,7 @@ clse.onclick = function() {
 		//mybutton.style.display = "block";
 		topBtn = false;
 	}
+	vid.innerHTML = '';
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -213,6 +214,7 @@ window.onclick = function(event) {
 			//mybutton.style.display = "block";
 			topBtn = false;
 		}
+		vid.innerHTML = '';
 		//isModalClosed = true;
 	}
 }

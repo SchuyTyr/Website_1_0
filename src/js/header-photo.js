@@ -89,7 +89,7 @@ photoHeader.innerHTML = `
     </button>
   </a>
   <button class="pageButtonColorSkew" onclick="openNav()" title="Click to Open the Photo Menu">
-    <div class="pageButtonTxt">&nbsp;<span>&#9776;</span>&nbsp;Photos&nbsp;</div>
+    <div class="pageButtonTxt">&nbsp;<span class="hamS">&#9776;</span>&nbsp;Photos&nbsp;</div>
   </button>
   <a href="aboutSM.html" class="aButton">
     <button class="pageButtonColorSkew hideButton" title="About the Schuy">
