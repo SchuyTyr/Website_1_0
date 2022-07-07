@@ -55,6 +55,7 @@ photoHeaderInner.innerHTML = `
           <a href="Cosplay.html" title="Cosplay">Cosplay</a>
           <a href="Events.html" title="Events">Events</a>
           <a href="Portraits.html" title="Portraits">Portraits</a>
+          <a href="Weddings.html" title="Weddings">Weddings</a>
         </div>
       </div>
 
