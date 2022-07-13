@@ -1012,6 +1012,11 @@ hr.roundedTwo {
 	}
 }
 @media screen and (max-width: 400px) {
+	#p01 {
+		width: 98%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.imgLogo {
 		width: 90%;
 	}
