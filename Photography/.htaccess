@@ -8,6 +8,9 @@ AcceptPathInfo On
 
 ErrorDocument 404 ../404.html
 
+RewriteEngine on
+RewriteRule ^photography/([^\./]+)\.html /$1.html [L]
+
 Access-Control-Allow-Origin: https://www.schuylermeyer.com/
 
 # RewriteEngine on
