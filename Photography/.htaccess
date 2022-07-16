@@ -1,6 +1,14 @@
+AuthName "Schuyler Meyer"
+
+AddDefaultCharset UTF-8
+
+DefaultLanguage en-US
+
+AcceptPathInfo On
+
 ErrorDocument 404 ../404.html
 
-Access-Control-Allow-Origin: https://www.schuylermeyer.com
+Access-Control-Allow-Origin: https://www.schuylermeyer.com/
 
 # RewriteEngine on
 
