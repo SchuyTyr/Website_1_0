@@ -19,15 +19,20 @@
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Merienda&family=Orbitron&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&family=Roboto+Mono:wght@200;300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
 	<!-- End Fonts -->
 	<title>IceySchuy</title>
 </head>
 <body>
 
-	<button id="myBtn" onclick="topFunction()" title="Go to the top"><span>&uarr;</span></button>
+	<button id="myBtn" onclick="topFunction()" title="Go to the top"></button>
 
-	<h1 style="color:#8b8e91;" title="Schuyler Meyer"><a href="https://www.schuylermeyer.com"><img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png"></a></h1>
+	<h1 class="headerTxt" title="Schuyler Meyer">
+		<a href="index.html">
+			<span>Schuyler Meyer</span>
+		</a>
+	</h1>
 	<hr>
 		<div>
 			<div class="buttonAbout" style="margin-top:20px;">
@@ -38,7 +43,7 @@
 			<h2>
 			List of <b style="color:#659fef;">Twitter</b> accounts that are retweeted by the <a class="link5" href="https://twitter.com/IceySchuy">IceySchuy</a> Bot:
 			<hr class="two">
-				<ul>
+				<ul class="accountList">
 					<li style="color:#d4d4d4;">The Premier Hockey Federation &lt; PHF &gt; (<i>formally the NWHL</i>) &#10571; <a class="link1" href="https://twitter.com/PHF">@PHF</a></li>
 					<li style="color:#6bab52;">The Connecticut Whale &#10571; <a class="link1" href="https://twitter.com/CTWhaleHockey">@CTWhaleHockey</a></li>
 					<li style="color:#edc743;">The Boston Pride &#10571; <a class="link1" href="https://twitter.com/TheBostonPride">@TheBostonPride</a></li>
@@ -46,9 +51,10 @@
 					<li style="color:#b74736;">The Metropoliton Riveters &#10571; <a class="link1" href="https://twitter.com/Riveters">@Riveters</a></li>
 					<li style="color:#2d4498;">The Minnesota Whitecaps &#10571; <a class="link1" href="https://twitter.com/WhitecapsHockey">@WhitecapsHockey</a></li>
 					<li style="color:#c54125;">The Toronto Six &#10571; <a class="link1" href="https://twitter.com/TheTorontoSix">@TheTorontoSix</a></li>
+					<li style="color:#659fef;">The Montreal Team &#10571; <a class="link1" href="https://twitter.com/PHFMontreal">@PHFMontreal</a></li>
 					<li style="color:#7e29ff;">The PHF Players’ Association &#10571; <a class="link1" href="https://twitter.com/nwhlpa">@nwhlpa</a></li>
-					<li>&mdash; More to be added &mdash;</li>
 				</ul>
+				<span class="accountList" style="text-align:center;">&mdash; More to be added &mdash;</span>
 			</h2>
 		</div>
 		<div style="text-align:center;">
@@ -60,7 +66,7 @@
 			The IceySchuy (<i>Icey&mdash;Sky</i>) bot was created to compile all the PHF (<i>formally the NWHL</i>) news in one place.
 			To start, this bot will only retweet the PHF and official team accounts, but
 			later on, media members and other officials may be added. This bot was created in Python with Tweepy.
-			View the source code <a class="link1" href="https://github.com/SchuyTyr/IceySchuy">here<a>.
+			View the source code <a class="link3" href="https://github.com/SchuyTyr/IceySchuy">here<a>.
 		</p>
 	</div>
 	<hr><br>
@@ -73,10 +79,13 @@
     <img class="glowFade" alt="Schuyler Meyer" src="src/img/Logo2022.png" width="250">
   </h4>
 
-  <p id="p01">
+	<p id="p01">
     <b>&nbsp;&lt;&nbsp;|&nbsp;/\\&nbsp;|&nbsp;&gt;&nbsp;</b><br><br>
     &#169; Schuyler Meyer &nbsp;&#5827;&nbsp; 2019 &mdash;
     <script>document.write(new Date().getFullYear())</script>
+    &nbsp;&#5827;&nbsp;
+    Powered by SchuyTyr &nbsp;&#5827;&nbsp;
+    <a class="link3" href="sitemap.html" target="_self" title="Sitemap"> Site Map </a>
     &nbsp;&#5827;&nbsp;
     <a class="link3" href="readmeText.html" target="_self" title="Readme"> <u>README</u> </a>
   </p>
