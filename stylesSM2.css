@@ -1479,17 +1479,26 @@ a.linkG:hover {
 h3 {
 	color: #c2c7cc;
 	font-size: 42px;
-	font-family: 'Orbitron', sans-serif;
+	/*font-family: 'Orbitron', sans-serif;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 400;
 	text-align: center;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	margin: 0;
 	margin-top: 24px;
+}
+h3 span {
+	border-bottom: solid 1px #c2c7cc;
 }
 
 .pText, .pTextH {
 	color: #c2c7cc;
 	font-size: 20px;
-	font-family: 'Merienda', cursive;
+	/*font-family: 'Merienda', cursive;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
 	/*text-align: center;*/
 	text-align: justify;
 	width: 90%;
@@ -1506,10 +1515,36 @@ h3 {
 	margin-top: 8px;
 	padding-top: 0;
 }
+.pText #notes {
+	border-bottom: solid 1px #c2c7cc;
+}
+
+a.linkWS {
+	color: #abafb3;
+	background-color: transparent;
+	text-decoration: none;
+	text-align: inherit;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+}
+a.linkWS span {
+	border-bottom: solid 1px #c2c7cc;
+}
+a.linkWS:hover, a.linkWS:hover span {
+	color: #0099ff;
+	background-color: transparent;
+	text-align: inherit;
+	padding: 0;
+	margin: 0;
+	border-bottom: solid 1px #0099ff;
+}
 
 .point {
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
+	border-bottom: solid 1px #c2c7cc;
 }
 
 #ws-main {
@@ -1540,7 +1575,14 @@ h3 {
 	margin-bottom: 24px;
 	color: #c2c7cc;
 	font-size: 42px;
-	font-family: 'Orbitron', sans-serif;
+	/*font-family: 'Orbitron', sans-serif;*/
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+}
+#ws-output-underline {
+	font-weight: 400;
+	border-bottom: solid 1px #c2c7cc;
 }
 
 #textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
@@ -1602,6 +1644,9 @@ h3 {
 	text-transform: uppercase;
 	font-size: 24px;
 	font-family: 'Orbitron', sans-serif;
+	/*font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 400;*/
 	padding: 12px;
 	padding-left: 20px;
 	padding-right: 20px;
