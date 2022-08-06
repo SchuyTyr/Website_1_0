@@ -858,7 +858,6 @@ polygon {
 	font-size: 20px;
 	font-family: 'Merienda', cursive;
 	text-align: center;
-	/*width: 90%;*/
 	margin: auto;
 	display: flex;
 	justify-content: center;
@@ -872,25 +871,19 @@ polygon {
 #photoText {
 	margin-bottom: 24px;
 	font-size: 18px;
-	/*position: absolute;
-	top: 12%;
-	left: 50%;
-	transform: translate(-50%, -50%);*/
 }
 #photoTextCapt {
-	/*text-decoration: overline;*/
-	/*border-bottom: solid 1px #c2c7cc;*/
-	/*position: absolute;
-	top: 88%;
-	left: 50%;
-	transform: translate(-50%, -50%);*/
 	width: 75%;
-	background-color: black;
+	/*background-color: black;
 	box-shadow: 0 0 1px 4px #000000;
  -webkit-box-shadow: 0 0 24px 24px #000000;
- -webkit-appearance: none;
+ -webkit-appearance: none;*/
 }
 #photoTextCapt span {
+	background-color: black;
+	box-shadow: 0 10px 18px 18px #000000;
+ -webkit-box-shadow: 0 10px 18px 18px #000000;
+ -webkit-appearance: none;
 	/*text-decoration: overline;*/
 	border-top: solid 1px #c2c7cc;
 	border-bottom: solid 1px #c2c7cc;
@@ -2403,8 +2396,10 @@ a.linkWS:hover, a.linkWS:hover span {
 	 }
 	 #photoTextCapt {
 		transform: translate(4%, 1%);
-		box-shadow: 0 0 1px 4px #000000;
-		-webkit-box-shadow: 0 24px 24px 24px #000000;
+	 }
+	 #photoTextCapt span {
+		box-shadow: 0 10px 18px 18px #000000;
+		-webkit-box-shadow: 0 10px 18px 18px #000000;
 	 }
 	 #closeButton {
 		 transform: translate(4%, 1%);
@@ -2582,10 +2577,11 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	#photoTextCapt {
 	 font-size: 14px;
-	 /*left: 47%;*/
 	 transform: translate(4%, 1%);
-	 box-shadow: 0 0 1px 4px #000000;
-	 -webkit-box-shadow: 0 24px 24px 24px #000000;
+	}
+	#photoTextCapt span {
+	 box-shadow: 0 10px 18px 18px #000000;
+	 -webkit-box-shadow: 0 10px 18px 18px #000000;
 	}
 	#closeButton {
 		transform: translate(4%, 1%);
