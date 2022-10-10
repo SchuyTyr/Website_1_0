@@ -419,6 +419,9 @@ td.thickLeft {
 	background-image: repeating-linear-gradient(
 		-45deg, transparent 0 20px, #c54125 20px 40px);
 }
+.MON {
+	color: #792638;
+}
 
 [data-title]:hover:after {
     opacity: 1;
