@@ -2253,6 +2253,8 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	.pageButtonColorSkew {
 		transform: skew(0);
+		margin: 8px 1px;
+		font-size: 20px;
 	}
 	.pageButtonTxt {
 		transform: skew(0);
