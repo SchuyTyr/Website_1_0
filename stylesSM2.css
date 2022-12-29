@@ -2272,7 +2272,7 @@ a.linkWS:hover, a.linkWS:hover span {
 		padding: 8px;
 	}
 	.modalPhoto {
-		width: 70vw;
+		width: 80vw;
 	}
 }
 @media screen and (max-width: 700px) {
@@ -2444,10 +2444,8 @@ a.linkWS:hover, a.linkWS:hover span {
 			 width: 80%;
 	 }
 	 .modalPhotoContent {
-		 	box-shadow: 0 0 1px 4px #000000,
-		 						 0 0 25px 10px #436ff3;
-		  -webkit-box-shadow: 0 0 1px 4px #000000,
-		 						 0 0 25px 10px #436ff3;
+		 	box-shadow: none;
+		  -webkit-box-shadow: none;
 		  -webkit-appearance: none;
 	 }
 	 .photoTextDescr, #photoTextCapt {
@@ -2567,9 +2565,16 @@ a.linkWS:hover, a.linkWS:hover span {
 		font-size: 18px;
 		margin-bottom: 24px;
 	}
-	.modalPhotoContent {
-		/*transform: translate(-3.5%, -5%);*/ /* add or remove, test more*/
+	.modalPhoto {
+		left: 47%;
+		width: 84vw;
 	}
+	.modalPhotoContent {
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-webkit-appearance: none;
+	}
+
 	#photoText {
 	 font-size: 12px;
 	 /*left: 47%;*/
