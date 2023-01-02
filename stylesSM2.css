@@ -2107,7 +2107,10 @@ a.linkWS:hover, a.linkWS:hover span {
 		width: 45%;
 	}
 	.modalPhoto {
-		width: 42vw;
+		width: 80vw;
+	}
+	.modalPhotoContent {
+		max-height: 80%;
 	}
 }
 @media screen and (min-width: 1500px) {
