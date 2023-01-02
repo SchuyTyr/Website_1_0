@@ -70,7 +70,7 @@ photoFooterInner.innerHTML = `
 <hr class="rounded">
 
 <div class="h4">
-  <img alt="Schuyler Meyer" src="../src/img/Logo2022.png" width="250">
+  <img alt="Schuyler Meyer" src="../src/img/Logo.png" width="250">
 </div>
 
 <p id="p01">

@@ -57,7 +57,7 @@ template.innerHTML = `
   <br>
   <br>
   <div class="h4">
-    <img alt="Schuyler Meyer" src="src/img/Logo2022.png" width="250">
+    <img alt="Schuyler Meyer" src="src/img/Logo.png" width="250">
     <br>
     <img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">
   </div>
