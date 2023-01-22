@@ -285,26 +285,6 @@ reset.addEventListener("click", function () {
 
 });
 
-// resets / clears the input text boxes
-reset.addEventListener("click", function () {
-
-    var output = document.getElementById("output");
-
-    loadingIcon.style.display = "none";
-
-    document.getElementById('textbox1').value = "";
-    document.getElementById('textbox2').value = "";
-    document.getElementById('textbox3').value = "";
-    document.getElementById('textbox4').value = "";
-    document.getElementById('textbox5').value = "";
-    document.getElementById('textbox6').value = "";
-    document.getElementById('textbox7').value = "";
-
-    // not ideal to use innerHTML, but until I find something else that works...
-    output.innerHTML = '';
-
-});
-
 //-------------------------------------------------------------------------------------------------------------//
 
 //-- Checking If Multiple Entries In Result Function --//
