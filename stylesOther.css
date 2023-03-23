@@ -395,6 +395,11 @@ td.thickLeft {
 .BOS {
 	color:#edc743;
 }
+.BOSElim {
+	text-shadow: 2px 1px 2px black;
+	background-image: repeating-linear-gradient(
+		-45deg, transparent 0 20px, #edc743 20px 40px);
+}
 .BUF {
 	color:#83ade3;
 }
