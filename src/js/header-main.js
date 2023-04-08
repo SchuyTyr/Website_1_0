@@ -28,7 +28,23 @@ mainHeader.innerHTML = `
           <div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
         </button>
       </a>
+
+        <a href="photoshoot.html" class="aButton">
+          <button class="pageButtonColorSkew" title="Book a Photoshoot">
+            <div class="pageButtonTxt">&nbsp;Book a Photoshoot&nbsp;</div>
+          </button>
+        </a>
+        <a href="itconsulting.html" class="aButton">
+          <button class="pageButtonColorSkew" title="IT Services">
+            <div class="pageButtonTxt">&nbsp;IT Services&nbsp;</div>
+          </button>
+        </a>
+        <a href="https://ko-fi.com/schuylermeyer" class="aButton" target="_blank">
+          <button class="pageButtonColorSkew" title="Please?">
+            <div class="pageButtonTxt">&nbsp;Buy me a Coffee&nbsp;</div>
+          </button>
+        </a>
     </nav>
 
-    <hr class="rounded">
+
 `;
