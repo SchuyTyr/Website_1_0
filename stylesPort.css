@@ -172,8 +172,8 @@ a.linkMore:hover {
 	font-family: 'Roboto Mono', monospace;
 	font-style: normal;
 	font-weight: 300;
-	margin-left: 10%;
-	margin-right: 10%;
+	/*margin-left: 10%;
+	margin-right: 10%;*/
 	display: flex;
 	justify-content: center;
 }
@@ -183,6 +183,7 @@ a.linkMore:hover {
 	/*list-style-type: none;*/
 	font-style: normal;
 	display: table;
+	padding-inline-start: 0;
 }
 .tocList li {
 	display: table-cell;
@@ -1065,9 +1066,10 @@ a.link4 {
 		/*width: 15%;*/
 		left: 42.5%;
 	}
-	/*.tocList li {
-		line-height: 1.25;
-	}*/
+	.tocList {
+		display: grid;
+		justify-content: center;
+	}
 }
 
 @media screen and (max-width: 960px) {
@@ -1134,6 +1136,11 @@ a.link4 {
 	}
 	.midTitles {
 		font-size:22px;
+		line-height: 2;
+	}
+	.thinMidLine {
+		padding-left: 4px;
+		padding-right: 4px;
 	}
 	p {
 		text-align: left;
