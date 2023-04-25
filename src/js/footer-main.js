@@ -64,12 +64,12 @@ template.innerHTML = `
 
   <p id="p01">
     <b>&nbsp;&lt;&nbsp;|&nbsp;/\\\\&nbsp;|&nbsp;&gt;&nbsp;</b><br><br>
-    &#169; Schuyler Meyer &nbsp;&#5827;&nbsp; 2019 &mdash;
+    &#169; Schuyler Meyer &nbsp;<>&nbsp; 2019 &mdash;
     `+curYear+`
-    &nbsp;&#5827;&nbsp;
-    Powered by SchuyTyr &nbsp;&#5827;&nbsp;
+    &nbsp;<>&nbsp;
+    Powered by SchuyTyr &nbsp;<>&nbsp;
     <a class="link3" href="sitemap.html" target="_self" title="Sitemap"> Site Map </a>
-    &nbsp;&#5827;&nbsp;
+    &nbsp;<>&nbsp;
     <a class="link3" href="readmeText.html" target="_self" title="Readme"> <u>README</u> </a>
   </p>
 `;

@@ -12,9 +12,8 @@ html {
 
 body {
 	/*overflow-y: scroll;*/
-	/*overflow-x: hidden;*/
-
-	background-color: #111821;
+	overflow-x: hidden;
+	/*background-color: #111821;*/
 	background: no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
@@ -1414,7 +1413,7 @@ a.linkG:hover {
 	list-style: none;
 }
 .ulSMap .divContent::before {
-	content: 'ᛃ ';
+	content: '<> ';
 	text-decoration: none;
 }
 .ulSMap li {
@@ -2141,6 +2140,19 @@ a.linkWS:hover, a.linkWS:hover span {
 	font-weight: bold;
 	color: inherit;
 }
+#time {
+	display: table-caption;
+	width: 100%;
+	/*width: 7ch;*/
+	/*font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;*/
+}
+#minutes {
+
+}
+#seconds {
+
+}
 /*
 #scoreboard tr:hover {
 	background-color: #7e29ff;
@@ -2269,6 +2281,11 @@ a.linkWS:hover, a.linkWS:hover span {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+	.pageButtonColorSkew {
+		transform: skew(0);
+		margin: 8px 1px;
+		font-size: 20px;
+	}
 	.rDownloads {
 		margin-bottom: 16px;
 	}
@@ -2316,11 +2333,6 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	.lineBox {
 	 width: 55%;
-	}
-	.pageButtonColorSkew {
-		transform: skew(0);
-		margin: 8px 1px;
-		font-size: 20px;
 	}
 	.pageButtonTxt {
 		transform: skew(0);

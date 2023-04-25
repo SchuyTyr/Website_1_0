@@ -79,10 +79,10 @@ photoFooterInner.innerHTML = `
   &#169; Schuyler Meyer Photography
   <br>
   2017 &mdash; `+curYear+`
-  &nbsp;&#5827;&nbsp;
-  Powered by SchuyTyr&nbsp;&#5827;&nbsp;
+  &nbsp;<>&nbsp;
+  Powered by SchuyTyr&nbsp;<>&nbsp;
   <a class="link3" href="../sitemap.html" target="_self" title="Sitemap"> Site Map </a>
-  &nbsp;&#5827;&nbsp;
+  &nbsp;<>&nbsp;
   <a class="link3" href="../readmeText.html" target="_self" title="Readme"> <u>README</u> </a>
 </p>
 `;
