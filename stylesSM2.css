@@ -2045,7 +2045,7 @@ a.linkWS:hover, a.linkWS:hover span {
 	list-style: none;
 }
 .ul4 li::before {
-	content: 'ᛃ';
+	content: '<>';
 	text-decoration: none;
 }
 .ul4 li {
