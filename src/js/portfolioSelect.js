@@ -89,19 +89,19 @@ for (var i = 0; i < images.length; i++) {
 		else if(this.getAttribute('id') == 'myImg6'){
 			modalImg.src = '';
 			vaText.innerHTML = descr[4];
-			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/uiQBXOmWC2M"></iframe>';
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/uiQBXOmWC2M?rel=0"></iframe>';
 		}
 		// Untitled Animation Tests
 		else if(this.getAttribute('id') == 'myImg11'){
 			modalImg.src = '';
 			vaText.innerHTML = descr[5];
-			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/w2kJaepBS7k"></iframe>';
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/w2kJaepBS7k?rel=0"></iframe>';
 		}
 		// The Spooky and Mysterious Box
 		else if(this.getAttribute('id') == 'myImg7'){
 			modalImg.src = this.src;
 			vaText.innerHTML = descr[6];
-			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/JpfNoArEEHw"></iframe>';
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/JpfNoArEEHw?rel=0"></iframe>';
 		}
 		// DA300 Animation
 		else if(this.getAttribute('id') == 'myImg13'){
@@ -113,13 +113,13 @@ for (var i = 0; i < images.length; i++) {
 			vid.innerHTML = '';*/
 			modalImg.src = '';
 			vaText.innerHTML = descr[7];
-			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/mHvkkD9hmiI"></iframe>';
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/mHvkkD9hmiI?rel=0"></iframe>';
 		}
 		// Zaim
 		else if(this.getAttribute('id') == 'myImg17'){
 			modalImg.src = '';
 			vaText.innerHTML = descr[8];
-			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/lbHEsqueyiY"></iframe>';
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/lbHEsqueyiY?rel=0"></iframe>';
 		}
 		// Space Ship
 		else if(this.getAttribute('id') == 'myImg8'){
@@ -140,19 +140,19 @@ for (var i = 0; i < images.length; i++) {
 		else if(this.getAttribute('id') == 'myImg10'){
 			modalImg.src = '';
 			vaText.innerHTML = descr[11];
-			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/tDnwA2Lajkw"></iframe>';
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/tDnwA2Lajkw?rel=0"></iframe>';
 		}
 		// CGK Promo
 		else if(this.getAttribute('id') == 'myImg16'){
 			modalImg.src = '';
 			vaText.innerHTML = descr[12];
-			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/teKWmAu9UxU"></iframe>';
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/teKWmAu9UxU?rel=0"></iframe>';
 		}
 		// Hockey Cards
 		else if(this.getAttribute('id') == 'myImg9'){
 			modalImg.src = '';
 			vaText.innerHTML = descr[13];
-			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/KWw_-XWKMek"></iframe>';
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/KWw_-XWKMek?rel=0"></iframe>';
 		}
 		// Board Game
 		else if(this.getAttribute('id') == 'myImg15'){
@@ -164,7 +164,7 @@ for (var i = 0; i < images.length; i++) {
 		else if(this.getAttribute('id') == 'myImg14'){
 			modalImg.src = '';
 			vaText.innerHTML = descr[15];
-			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/HvVJKZyXrKc"></iframe>';
+			vid.innerHTML = '<iframe allowfullscreen class="video" frameborder="0" src="https://www.youtube.com/embed/HvVJKZyXrKc?rel=0"></iframe>';
 		}
 		// Monuments
 		/*else if(this.getAttribute('id') == 'myImg11'){
