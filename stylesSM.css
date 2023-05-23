@@ -212,7 +212,7 @@ img {
 }
 #myBtn {
 	background-color: Transparent;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
 	display: none;
 	position: fixed;
 	bottom: 5%;
