@@ -2134,7 +2134,8 @@ a.linkWS:hover, a.linkWS:hover span {
 	text-align: center;
 	font-size: 21px;
 	width:auto;
-	font-family: 'Orbitron', sans-serif;
+	/*font-family: 'Orbitron', sans-serif;*/
+	font-family: 'Roboto', monospace;
 	padding: 5px;
 	background-color: rgba(20,20,20,0.5);
 	font-weight: bold;
@@ -2148,10 +2149,10 @@ a.linkWS:hover, a.linkWS:hover span {
   font-variant-numeric: tabular-nums;*/
 }
 #minutes {
-
+	/*font-family: 'Roboto', monospace;*/
 }
 #seconds {
-
+	/*font-family: 'Roboto', monospace;*/
 }
 /*
 #scoreboard tr:hover {
