@@ -858,8 +858,8 @@ polygon {
 	font-family: 'Merienda', cursive;
 	text-align: center;
 	margin: auto;
-	display: flex;
-	justify-content: center;
+	/*display: flex;
+	justify-content: center;*/
 }
 .photoTextDescr {
 	margin-bottom: 24px;
