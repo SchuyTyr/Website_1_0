@@ -81,13 +81,17 @@ br {
 	margin-bottom: 42px;
 	overflow: visible;
 	text-shadow: -1px 1px 2px #c2c7cc;
-							 /*0 0 2px #436ff3;*/
+	/*0 0 2px #436ff3;*/
 	/*animation: 10s ease-in-out headerColorChange infinite;*/
 }
 
 .headerTxt span {
 	position: relative;
 	left: 2%;
+	/*border-right: 2px ridge #8b8e91;
+	border-left: 2px ridge #8b8e91;
+	padding: 0px 12px 8px 65px;
+	border-radius: 24px;*/
 }
 
 @keyframes headerColorChange {
@@ -2245,7 +2249,7 @@ a.linkWS:hover, a.linkWS:hover span {
 
 @media screen and (max-width: 1200px) {
 	main {
-		margin-top: 60px;
+		margin-top: 20px;
 		margin-bottom: 80px;
 	}
 	.headerTxt {
@@ -2640,6 +2644,10 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 }
 @media screen and (max-width: 400px) {
+	main {
+		margin-top: 0px;
+		margin-bottom: 60px;
+	}
 	.headerTxt {
 		font-size: 18px;
 		margin-bottom: 24px;
