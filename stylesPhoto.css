@@ -159,7 +159,7 @@ video {
  	background-color: rgba(67,111,243,15%);
 	border-radius: 4%;
 	-webkit-background-clip: padding-box; /* for Safari */
-  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 .subNav-content a:active {
 	color: #00bb17;
@@ -167,11 +167,11 @@ video {
 
 .subNav:hover .subNav-content,
 .subNav:active .subNav-content {
-  display: block;
+	display: block;
 }
 
 .subNav:hover .subNavBtn {
-  border-bottom: 3px solid rgba(99, 138, 255);
+	border-bottom: 3px solid rgba(99, 138, 255);
 	color: rgba(99, 138, 255);
 }
 
@@ -183,7 +183,7 @@ video {
 
 #myBtn {
 	background-color: Transparent;
-  background-repeat:no-repeat;
+	background-repeat:no-repeat;
 	display: none;
 	position: fixed;
 	bottom: 20px;
@@ -196,7 +196,7 @@ video {
 	padding-top: 2px;
 	padding-left: 12px;
 	padding-right: 12px;
-  transition: .2s all ease-in;
+	transition: .2s all ease-in;
 
 	color: rgba(215,215,215);
 	border: solid 2px rgba(56,56,56,30%);
@@ -234,8 +234,8 @@ video {
 
 .mainContainer {
 	text-align:center;
-	margin-top: 40px;
-	margin-bottom: 60px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 	/*display: inline-block;*/
 }
 

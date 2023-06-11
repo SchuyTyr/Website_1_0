@@ -4,10 +4,12 @@ let mainHeader = document.getElementById('header-main');
 
 mainHeader.innerHTML = `
     <h1 class="headerTxt" title="Schuyler Meyer">
+    <div class="headerBorder">
       <a href="index.html">
         <!--<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">-->
         <span>Schuyler Meyer</span>
       </a>
+    </div>
     </h1>
     <!--<p class="topDesc"><u>&nbsp;&nbsp;Photography &#8280; Design &#8280; Game Developer &#8280; VR &#8280; Software Engineering &#8280; Animation&nbsp;&nbsp;</u></p>-->
     <hr class="rounded">

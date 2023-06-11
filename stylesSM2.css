@@ -87,11 +87,18 @@ br {
 
 .headerTxt span {
 	position: relative;
-	left: 2%;
-	/*border-right: 2px ridge #8b8e91;
-	border-left: 2px ridge #8b8e91;
-	padding: 0px 12px 8px 65px;
-	border-radius: 24px;*/
+	/*left: 2%;*/
+}
+
+.headerBorder span {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	background: linear-gradient(to right, #5a7eea 4px, transparent 4px) 0 0, linear-gradient(to left, #5a7eea 4px, transparent 4px) 100% 100%, linear-gradient(to bottom, #5a7eea 4px, transparent 4px) 0 0, linear-gradient(to top, #5a7eea 4px, transparent 4px) 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
 }
 
 @keyframes headerColorChange {
@@ -2590,6 +2597,13 @@ a.linkWS:hover, a.linkWS:hover span {
 		margin-top: 40px;
 		margin-bottom: 60px;
 	}
+	.headerTxt {
+		font-size: 18px;
+		margin-bottom: 24px;
+	}
+	.headerBorder {
+		width: 100%;
+	}
 	#textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
 		height: 42px;
 		width: 14%;
@@ -2647,10 +2661,6 @@ a.linkWS:hover, a.linkWS:hover span {
 	main {
 		margin-top: 0px;
 		margin-bottom: 60px;
-	}
-	.headerTxt {
-		font-size: 18px;
-		margin-bottom: 24px;
 	}
 	.modalPhoto {
 		left: 47%;
