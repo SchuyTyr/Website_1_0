@@ -2,18 +2,19 @@
 
 function openNav() {
   document.getElementById("mNav").style.width = "100%";
-
+  var mybutton = document.getElementById("myBtn");
   // 3 following variables from photoScript.js and scrollToTop.js
   // Apparently they are global variables....
-  scrollTop.style.display = "none";
+  //scrollTop.style.display = "none";
+  mybutton.style.display = "none";
   topBtn = true;
-  body.classList.toggle('noscroll');
+  document.body.classList.toggle('noscroll');
 }
 
 function closeNav() {
   document.getElementById("mNav").style.width = "0%";
   topBtn = false;
-  body.classList.toggle('noscroll');
+  document.body.classList.toggle('noscroll');
 }
 
 // For video on homescreen
