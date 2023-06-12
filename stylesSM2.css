@@ -135,9 +135,16 @@ h1 a:active {
 nav {
 	color: #8b8e91;
 	width: 100%;
-	font-size:12px;
-	display: block;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: center;
+	align-items: stretch;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -145,7 +152,7 @@ nav {
 .buttonNav {
 	color: #8b8e91;
 	width: 100%;
-	font-size:12px;
+	font-size: 12px;
 	display: block;
 	text-align: center;
 	padding-top: 10px;
@@ -172,12 +179,13 @@ nav {
 	/*font-family: 'Ubuntu', sans-serif;*/
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
-  transition: .3s all ease-in;
+	transition: .3s all ease-in;
 	color: rgba(99, 138, 255, 0.9);
  	font-size: 22px;
 	padding: 10px;
 	padding-left: 14px;
 	padding-right: 14px;
+	margin: 4px 1px;
  	text-decoration: none;
  	border: solid 2px rgba(67,111,243,30%);
  	background-color: rgba(67,111,243,15%);
@@ -186,7 +194,7 @@ nav {
 	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
 	-webkit-appearance: none;
 	-webkit-background-clip: padding-box;
-  background-clip: padding-box;
+	background-clip: padding-box;
 }
 
 .pageButtonColorSkew {
@@ -2221,7 +2229,7 @@ a.linkWS:hover, a.linkWS:hover span {
 }
 @media screen and (min-width: 1351px) {
 	main {
-		margin-top: 80px;
+		margin-top: 40px;
 		margin-bottom: 120px;
 	}
 	#photoTextCapt {
@@ -2231,8 +2239,11 @@ a.linkWS:hover, a.linkWS:hover span {
 
 @media screen and (max-width: 1350px) {
 	main {
-		margin-top: 60px;
+		margin-top: 20px;
 		margin-bottom: 100px;
+	}
+	.headerTxt {
+		font-size: 28px;
 	}
 	.containerGrid img {
 		height: 250px;
@@ -2254,13 +2265,21 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 }
 
-@media screen and (max-width: 1200px) {
-	main {
-		margin-top: 20px;
-		margin-bottom: 80px;
+@media screen and (min-width: 1200px) {
+	nav {
+		padding-top: 4px;
+		padding-bottom: 4px;
 	}
-	.headerTxt {
-		font-size: 28px;
+}
+@media screen and (max-width: 1200px) {
+	nav {
+		width: 90%;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+	main {
+		margin-top: 10px;
+		margin-bottom: 80px;
 	}
 	.socialBar {
 		padding-top: 10px;
@@ -2295,8 +2314,10 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	.pageButtonColorSkew {
 		transform: skew(0);
-		margin: 8px 1px;
+		margin: 4px 1px;
 		font-size: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.rDownloads {
 		margin-bottom: 16px;
@@ -2339,9 +2360,49 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 }
 
+@media screen and (max-width: 1130px) {
+	.pageButtonColorSkew {
+		margin: 4px 1px;
+		font-size: 18px;
+		padding: 8px;
+		/*padding-left: 10px;*/
+		/*padding-right: 10px;*/
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	.pageButtonColorSkew {
+		margin: 4px 1px;
+		font-size: 16px;
+		padding: 8px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.pageButtonColorSkew {
+		margin: 2px 1px;
+		font-size: 16px;
+		padding: 8px;
+		/*padding-left: 14px;*/
+		/*padding-right: 14px;*/
+	}
+}
+
 @media screen and (max-width: 900px) {
+	nav {
+		width: 100%;
+	}
 	.headerTxt {
 		font-size: 24px;
+	}
+	.pageButtonColorSkew {
+		margin: 2px 1px;
+		font-size: 16px;
+		padding: 8px;
+		/*padding-left: 14px;*/
+		/*padding-right: 14px;*/
 	}
 	.lineBox {
 	 width: 55%;
@@ -2353,7 +2414,22 @@ a.linkWS:hover, a.linkWS:hover span {
 		margin-left: 5%;
 	}
 }
+@media screen and (max-width: 830px) {
+	nav {
+		width: 90%;
+	}
+	.pageButtonColorSkew {
+		margin: 4px 1px;
+		font-size: 18px;
+		padding: 8px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+}
 @media screen and (max-width: 800px) {
+	nav {
+		width: 90%;
+	}
 	.lineBox {
 	 width: 80%;
 	}
@@ -2363,6 +2439,12 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	.modalPhoto {
 		width: 80vw;
+	}
+}
+@media screen and (max-width: 775px) {
+	.headerBorder span {
+		padding-left: 2em;
+		font-size: 18px;
 	}
 }
 @media screen and (max-width: 700px) {
@@ -2584,8 +2666,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	 }
 	 .pageButtonColor,
 	 .pageButtonColorSkew {
-		 margin: 8px 1px;
+		 margin: 4px 1px;
 		 font-size: 18px;
+		 padding: 8px;
 	 }
 	 .descrIT{
 		 margin-left: 0;
