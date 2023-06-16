@@ -1906,6 +1906,10 @@ a.linkWS:hover, a.linkWS:hover span {
 	margin-bottom: 24px;
 }
 
+.busCard {
+	width: 600px;
+}
+
 /*--------------------------End Contact Page----------------------------*/
 /*----------------------------------------------------------------------*/
 
@@ -2440,6 +2444,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	.modalPhoto {
 		width: 80vw;
 	}
+	.busCard {
+		width: 500px;
+	}
 }
 @media screen and (max-width: 775px) {
 	.headerBorder span {
@@ -2674,6 +2681,9 @@ a.linkWS:hover, a.linkWS:hover span {
 		 margin-left: 0;
 		 margin-right: 0;
 	 }
+	.busCard {
+		width: 400px;
+	}
 }
 @media screen and (max-width: 500px) {
 	main {
@@ -2754,7 +2764,6 @@ a.linkWS:hover, a.linkWS:hover span {
 		-webkit-box-shadow: none;
 		-webkit-appearance: none;
 	}
-
 	#photoText {
 	 font-size: 12px;
 	 /*left: 47%;*/
@@ -2818,5 +2827,8 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	.pageButtonTxt {
 		font-size: 14px;
+	}
+	.busCard {
+		width: 250px;
 	}
 }
