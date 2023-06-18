@@ -226,6 +226,30 @@ nav {
 	transform: skew(30deg);
 }*/
 
+#main-main {
+	margin-top: 0;
+}
+
+.dateContainer {
+	margin-bottom: 12px;
+}
+
+#date {
+	/*font-family: 'Audiowide', cursive;*/
+	font-family: 'nasalization', sans-serif;
+	color: rgba(67,111,243,60%);
+	/*color: rgba(0,187,23,70%);*/
+	/*color: rgba(255,164,7,70%);*/
+	border-bottom: 4px ridge #969696;
+	/*border-left: 1px ridge #969696;*/
+	/*border-right: 1px ridge #969696;*/
+	padding: 8px;
+	border-radius: 24px;
+	letter-spacing: 6px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
 .showcase {
 	height: 100vh;
 	display:inline-flex;
@@ -462,7 +486,7 @@ polygon {
 	text-align: center;
 	cursor: pointer;
 	cursor: url("src/img/CustomCursor_6_2p.png"), auto;
-  transition: .4s all ease-in-out;
+	transition: .4s all ease-in-out;
 	color: #E8AEB7;
 	padding: 10px;
 	padding-left: 14px;
@@ -2213,6 +2237,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 }
 @media screen and (min-width: 1500px) {
+	.dateContainer {
+		margin-bottom: 42px;
+	}
 	.sContainer ul {
 		font-size: 28px;
 	}
@@ -2229,6 +2256,11 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	#photoTextCapt {
 		width: 25%;
+	}
+}
+@media screen and (max-width: 1499px) {
+	.dateContainer {
+		margin-bottom: 24px;
 	}
 }
 @media screen and (min-width: 1351px) {
@@ -2284,6 +2316,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	main {
 		margin-top: 10px;
 		margin-bottom: 80px;
+	}
+	.dateContainer {
+		margin-bottom: 12px;
 	}
 	.socialBar {
 		padding-top: 10px;
@@ -2599,6 +2634,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	.socialBar {
 		padding-top: 5px;
 		padding-bottom: 5px;
+	}
+	.dateContainer {
+		margin-bottom: 8px;
 	}
 	.letterContainer{
 		width: 100%;
