@@ -23,7 +23,7 @@ let writeDateInv = document.getElementById('dateInverse');
 const phrases = [
     "Hello There Friends!",
     "Welcome to the Schuy!",
-    "こんにちは / Konnichiwa", // Japanese
+    "こんにちは、友達！", // Japanese
     "空へようこそ", // Sora e youkoso, Japanese
     "Bienvenida al cielo", // Spanish
     "Willkommen im Himmel", // German
@@ -35,12 +35,69 @@ const phrases = [
     "tervetuloa taivaaseen", // Finnish
     "velkommen til himmelen", // Norwegian
     "bienvenue dans le ciel", // French
-    "vítejte na obloze" // Czech
+    "vítejte na obloze", // Czech
+    "Hola amigos!", // Spanish
+    "Hallo Freunde!", // German
+    "你好朋友们！", // Nǐ hǎo péngyǒumen! Chinese, simplified
+    "안녕 친구들!", // annyeong chingudeul! Korean
+    "Dia dhaoibh a chairde!", // Irish
+    "Halo a chàirdean!", // Scots Gaelic
+    "Hej där vänner!", // Swedish
+    "Tervehdys ystävät!", // Finnish
+    "Hei venner!", // Norwegian
+    "Salut les amis!", // French
+    "Dobrý den přátelé!", // Czech
+    "नमस्कार दोस्तों!", // namaskaar doston! Hindi
+    "สวัสดีเพื่อน ๆ!", // S̄wạs̄dī pheụ̄̀xn «! Thai
+    "आकाश में आपका स्वागत है", // aakaash mein aapaka svaagat hai, Hindi
+    "ยินดีต้อนรับสู่ท้องฟ้า", // Yindī t̂xnrạb s̄ū̀ tĥxngf̂ā, Thai
+    "Karibu angani", // Swahili
+    "Habari marafiki!", // Swahili
 ];
+
+const phrasesLang = [
+    "English",
+    "English",
+    "Japanese",
+    "Japanese",
+    "Spanish",
+    "German",
+    "Chinese, simplified",
+    "Korean",
+    "Irish",
+    "Scots Gaelic",
+    "Swedish",
+    "Finnish",
+    "Norwegian",
+    "French",
+    "Czech",
+    "Spanish",
+    "German",
+    "Chinese, simplified",
+    "Korean",
+    "Irish",
+    "Scots Gaelic",
+    "Swedish",
+    "Finnish",
+    "Norwegian",
+    "French",
+    "Czech",
+    "Hindi",
+    "Thai",
+    "Hindi",
+    "Thai",
+    "Swahili",
+    "Swahili"
+];
+
+var result = {};
+phrases.forEach((phrases, i) => result[phrases] = phrasesLang[i]);
+//console.log(result);
 
 let pCounter = phrases[Math.floor(Math.random() * phrases.length)];
 
 //writeDate.innerHTML = "&nbsp;&nbsp;" + new Intl.DateTimeFormat(window.navigator.language, options).format(datef) + "&nbsp;&nbsp;";
 writeDate.innerHTML = "&nbsp;&nbsp;" + new Intl.DateTimeFormat(navigator.language, options).format(datef) + "&nbsp;&nbsp;";
 writeDateInv.innerHTML = "&nbsp;&nbsp;&nbsp;" + pCounter + "&nbsp;&nbsp;&nbsp;";
+writeDateInv.title = result[pCounter] + " - (Refresh for a new language!)";
 
