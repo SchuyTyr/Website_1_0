@@ -14,8 +14,10 @@ const options = {
 
 console.log(new Intl.DateTimeFormat(window.navigator.language, options).format(datef));
 console.log(window.navigator.language);
-console.log(navigator.language);
+//console.log(navigator.language);
 
 let writeDate = document.getElementById('date');
+let writeDateInv = document.getElementById('dateInverse');
 
-writeDate.innerHTML = "&nbsp;" + new Intl.DateTimeFormat(window.navigator.language, options).format(datef) + "&nbsp;";
+writeDate.innerHTML = "&nbsp;&nbsp;" + new Intl.DateTimeFormat(window.navigator.language, options).format(datef) + "&nbsp;&nbsp;";
+writeDateInv.innerHTML = "&nbsp;&nbsp;&nbsp;Hello There Friend!&nbsp;&nbsp;&nbsp;";

@@ -234,17 +234,38 @@ nav {
 	margin-bottom: 12px;
 }
 
+.dateContainerBottom {
+	margin-bottom: -12px;
+	display: flex;
+	justify-content: center;
+}
+
 #date {
 	/*font-family: 'Audiowide', cursive;*/
 	font-family: 'nasalization', sans-serif;
 	color: rgba(67,111,243,60%);
 	/*color: rgba(0,187,23,70%);*/
 	/*color: rgba(255,164,7,70%);*/
-	border-bottom: 4px ridge #969696;
+	border-bottom: 1px ridge #c7c7c7;
 	/*border-left: 1px ridge #969696;*/
 	/*border-right: 1px ridge #969696;*/
 	padding: 8px;
-	border-radius: 24px;
+	border-radius: 20% / 30% 30% 84px 84px;
+	box-shadow: 0px 6px 12px -8px #ffffff;
+	letter-spacing: 6px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+#dateInverse {
+	font-family: 'nasalization', sans-serif;
+	color: rgba(67,111,243,55%);
+	border-top: 1px ridge #c7c7c7;
+	padding: 8px;
+	padding-bottom: 12px;
+	padding-top: 4px;
+	border-radius: 20% / 84px 84px 30% 30%;
+	box-shadow: 0px -6px 12px -8px #ffffff;
 	letter-spacing: 6px;
 	font-size: 14px;
 	text-transform: uppercase;
