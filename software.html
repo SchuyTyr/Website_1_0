@@ -29,6 +29,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&family=VT323&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
 	<!-- End Fonts -->
+	<script src="src/js/header-inner.js" type="text/javascript" defer></script>
 	<script src="src/js/footer-main.js" type="text/javascript" defer></script>
 	<script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
 
@@ -36,21 +37,21 @@
 </head>
 <body>
 	<header>
-		<h1 class="headerTxt" title="Schuyler Meyer">
-			<div class="headerBorder">
-				<a href="index.html">
-					<!--<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">-->
-					<span>Schuyler Meyer</span>
-				</a>
-			</div>
-		</h1>
-		<!--<p class="topDesc"><u>&nbsp;&nbsp;Photography &#8280; Design &#8280; Game Developer &#8280; VR &#8280; Software Engineering &#8280; Animation&nbsp;&nbsp;</u></p>-->
+
+		<div id="header-inner"></div>
+
 		<hr class="rounded">
 
 		<nav>
 			<div class="buttonAbout">
 				<a href="index.html" class="aButton">
 					<input type="button" class="pageButtonColor" value="&nbsp;Home&nbsp;" title="Home">
+				</a>
+				<a href="aboutSM.html" class="aButton">
+					<input type="button" class="pageButtonColor" value="&nbsp;About&nbsp;" title="About">
+				</a>
+				<a href="itconsulting.html" class="aButton">
+					<input type="button" class="pageButtonColor" value="&nbsp;IT Services&nbsp;" title="IT Services">
 				</a>
 				<a href="https://github.com/schuybreach" class="aButton" target="_blank">
 					<input type="button" class="pageButtonColor" value="&nbsp;GitHub&nbsp;" title="GitHub @ schuybreach">
@@ -63,13 +64,10 @@
 
 	<!-- __________________________________________________________________________ -->
 
-	<main>
+	<main style="margin: 0px;">
 		<button id="myBtn" onclick="topFunction()" title="Go to the top"></button>
 
-		<!--
-		<div class="title">Software</div>
-		<br><br>
-		-->
+		<div class="dateContainer"><span id="date"></span></div>
 
 		<div id="typing" class="title" onclick="typingReset()" title="Click to Replay"></div>
 
@@ -79,12 +77,14 @@
 			<p>Knowledge||Currently_Learning:</p>
 			<ul>
 				<li class="topDescr">
-					<span class="topDescrIn">HTML, CSS, JavaScript, C#, MATLAB, MySQL, VBA, C/C++, Python, Node.JS</span>&nbsp;}
+					<span class="topDescrIn">HTML, CSS, JavaScript, C#, MATLAB, MySQL, VBA, C/C++, JSON, Python, Node.JS</span>&nbsp;}
 				</li>
 				<li class="topDescr">
-					<span class="topDescrIn">Unity, Oculus / VR, Windows, OOP, Vim, Atom, Wix, Unreal Engine, Linux(s), MacOS,
-					Android Studio, Adobe Photoshop, Premiere, Lightroom, After Effects, Autodesk Maya, AutoCAD, Microsoft Office,
-					Visual Studio, SharePoint	Designer, Blender, WordPress, Googling</span>&nbsp;}
+					<span class="topDescrIn">
+						Unity, Oculus / VR, Windows, OOP, Vim, Atom, GitHub, Wix, SmugMug, Unreal Engine, Linux(s), MacOS,
+						Android Studio, Adobe (Photoshop, Premiere, Lightroom, After Effects), Autodesk (Maya, AutoCAD), Microsoft (Office,
+						Visual Studio, SharePoint	Designer), Blender, WordPress, responsive design, Googling, pseudo code, troubleshooting
+					</span>&nbsp;}
 				</li>
 			</ul>
 		</div>
@@ -95,239 +95,357 @@
 		<div class="title">Projects:</div>
 
 		<div class="sContainer">
-			<p style="text-align:center;">(Click Title to <a class="showHideAll" title="Expand All">Expand</a>)</p>
+			<p style="text-align: center; text-decoration: none;">(Click Title to <a class="showHideAll" title="Expand All">Expand</a>)</p>
 			<br>
-			<p>Project_s:</p>
-					<ul>
-						<li>
-							<a class="showHideLink" title="Cinematography Website">Cinematography Website</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2023 &mdash;
-									<script>document.write(new Date().getFullYear())</script>&nbsp;}
-								</li>
-								<li class="types">
-									JavaScript, HTML, CSS&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Developed a cinematography website for Lawton Meyer.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											See the project in action, here:
-											<a class="projLink" href="https://www.lawtonmeyer.com" target="_self">lawtonmeyer.com</a>&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
+			<p>In_Development(Current):</p>
+			<ul>
+				<li>
+					<a class="showHideLink" title="WordPress Developer">WordPress Developer</a>&nbsp;}
+					<ul class="descr">
+						<li class="types">
+							ShePlays&nbsp;}
 						</li>
-						<li>
-							<a class="showHideLink" title="Wordsearch">Wordsearch</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2022&nbsp;}
-								</li>
-								<li class="types">
-									JavaScript, HTML, CSS&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Developed a word-searching function as an accompanying tool for Wordle, with a focus on cross browser compatibility.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											See the project in action, here:
-											<a class="projLink" href="wordsearch.html" target="_self">schuylermeyer.com/wordsearch</a>&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
+						<li class="dates">
+							2023 &mdash;
+							<script>document.write(new Date().getFullYear())</script>&nbsp;}
 						</li>
-						<li>
-							<a class="showHideLink" title="Twitter Bot IceySchuy">Twitter Bot &ndash; IceySchuy</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2021 &mdash; 2023&nbsp;}
+						<li class="types">
+							WordPress, HTML, CSS&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Enhanced compatibility and optimized user experience across the website.&nbsp;<span class="lg-view"><br></span>}
 								</li>
-								<li class="types">
-									Python, Twitter API, HTML, CSS&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Developed the first (and currently only) Twitter bot (and accompanying website) to compile all the NWHL / PHF
-											news in one place.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											See the project in action, here:
-											<a class="projLink" href="tweetingAccounts.html" target="_self">schuylermeyer.com/tweetingAccounts</a>
-											and here:
-											<a class="projLink" href="https://twitter.com/IceySchuy" target="_blank">twitter.com/IceySchuy</a>&nbsp;<span class="lg-view"><br></span>}
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											There is also an additional page to keep tabs on the standings and schedule, here:
-											<a class="projLink" href="PHF-Schedule.html" target="_self">schuylermeyer.com/PHF-Schedule</a>&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="showHideLink" title="This Website">This Full Stack Website</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2019 &mdash;
-								 	<script>document.write(new Date().getFullYear())</script>&nbsp;}
-								</li>
-								<li class="types">
-									HTML, CSS, JavaScript, Photoshop&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Developed a personal website from scratch, including all the code, logos,
-											and images, with a focus on user experience and cross browser compatibility.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="showHideLink" title="Spatial Navigation">Spatial Navigation and Foraging Research Project</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2018 &mdash; 2019&nbsp;}
-								</li>
-								<li class="types">
-									VR, Unity, C#, Maya, Photoshop, Excel&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Lead developer on a research project with the Psychology Department.
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Designed a VR environment for researchers to examine and gather data
-											on the behavior and decision strategies made by humans.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											See the project in action, here:
-											<a class="projLink" href="portfolio.html" target="_self">schuylermeyer.com/portfolio</a>
-											and here:
-											<a class="projLink" href="https://youtu.be/KSGVi-_yQFo" target="_blank">YouTube</a>&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="showHideLink" title="Swarm Simulation">Swarm Simulation Project</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2018&nbsp;}
-								</li>
-								<li class="types">
-									Unity, C#&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											A simulation of people shopping on Black Friday to study how each
-											individual reacts to a global event as well as how the entire group
-											reacts to each individual event.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											See the project in action, here:
-											<a class="projLink" href="portfolio.html" target="_self">schuylermeyer.com/portfolio</a>
-											and here:
-											<a class="projLink" href="https://youtu.be/tDnwA2Lajkw" target="_blank">YouTube</a>&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="showHideLink" title="Internship">Software Engineering Internship</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2018&nbsp;}
-								</li>
-								<li class="types">
-									SharePoint Designer, VBA, HTML&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Developed a publicly released cloud-based inventory system for
-											homeowners to store their home documents and expenses.
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Routinely met with a small remote team to discuss features and fix bugs.
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Product was reviewed by the New York Times.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="showHideLink" title="Senior Design Project">Software Senior Design Project</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2017&nbsp;}
-								</li>
-								<li class="types">
-									MySQL, PHP, JavaScript, HTML, CSS&nbsp;}
-								</li>
-								<li class="types">
-									Project Leader&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Created an online warehouse inventory management system.
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Allocated responsibilities to each team member and ensured that deadlines
-											were met, while consulting with the client to ensure that all the
-											requirements were satisfied.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="showHideLink" title="CUGI">Clarkson University Gamers Initiative</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2015 &mdash; 2019&nbsp;}
-								</li>
-								<li class="types">
-									Unity, C#, Maya, Photoshop&nbsp;}
-								</li>
-								<li class="types">
-									Treasurer | Founder and Head of the Game Creation Committee&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Developed multiple game prototypes, while delegating roles and deadlines to team members
-											based on their strengths.
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Taught the basics of Unity and game design to new members.
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Increased membership by 500% over three years.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="showHideLink" title="The Adventure Game">The Adventure Game</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2015&nbsp;}
-								</li>
-								<li class="types">
-									MATLAB&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Programmed a text-based adventure game in MATLAB.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											The game can be played in about 20 minutes and has multiple endings.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Collaborated with a remote team to maintain a consistent visual theme,
+									resulting in a cohesive and engaging user interface.&nbsp;<span class="lg-view"><br></span>}
 								</li>
 							</ul>
 						</li>
 					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="Cinematography Website">Cinematography Website</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2023 &mdash;
+							<script>document.write(new Date().getFullYear())</script>&nbsp;}
+						</li>
+						<li class="types">
+							JavaScript, HTML, CSS&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Developed a cinematography website for Lawton Meyer to match the previously Wix-designed one.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									See the project in action, here:
+									<a class="projLink" href="https://www.lawtonmeyer.com" target="_blank">lawtonmeyer.com</a>&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="Unity Developer">Unity Developer</a>&nbsp;}
+					<ul class="descr">
+						<li class="types">
+							Darkstar Games&nbsp;}
+						</li>
+						<li class="dates">
+							2022 &mdash;
+							<script>document.write(new Date().getFullYear())</script>&nbsp;}
+						</li>
+						<li class="types">
+							Unity, C#, JSON, Plastic, Blender, Photoshop&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Implemented a robust JSON-driven dialogue system and an intuitive rotating character selection screen.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Additionally, contributed to the development of various other smaller components.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Worked with a remote team and assisted with quality assurance (QA) testing
+									while providing specific and actionable feedback.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="Architectural Website">Architectural Website</a>&nbsp;}
+					<ul class="descr">
+						<li class="types">
+							Sloan Architects&nbsp;}
+						</li>
+						<li class="dates">
+							2022 &mdash;
+							<script>document.write(new Date().getFullYear())</script>&nbsp;}
+						</li>
+						<li class="types">
+							HTML, CSS, PHP, Web Interface&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Maintained the company website and provided technical support throughout the office.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Facilitated the modernization of the site with the host and original creator.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="This Website">This Website</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2019 &mdash;
+							<script>document.write(new Date().getFullYear())</script>&nbsp;}
+						</li>
+						<li class="types">
+							HTML, CSS, JavaScript, Photoshop&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Developed a personal website from scratch, including all the code, logos,
+									and images, with a focus on user experience and cross browser compatibility.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<br>
+			<p>Project_s:</p>
+			<ul>
+				<li>
+					<a class="showHideLink" title="Wordsearch">Wordsearch</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2022&nbsp;}
+						</li>
+						<li class="types">
+							JavaScript, HTML, CSS&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Developed a word-searching function as an accompanying tool for Wordle, with a focus on cross browser compatibility.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									See the project in action, here:
+									<a class="projLink" href="wordsearch.html" target="_self">schuylermeyer.com/wordsearch</a>&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="Twitter Bot IceySchuy">Twitter Bot &ndash; IceySchuy</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2021 &mdash; 2023&nbsp;}
+						</li>
+						<li class="types">
+							Python, Twitter API, HTML, CSS&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Developed the first (and currently only) Twitter bot (and accompanying website) to compile all the NWHL / PHF
+									news in one place.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									See the project in action, here:
+									<a class="projLink" href="tweetingAccounts.html" target="_self">schuylermeyer.com/tweetingAccounts</a>
+									and here:
+									<a class="projLink" href="https://twitter.com/IceySchuy" target="_blank">twitter.com/IceySchuy</a>&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									There is also an additional page to keep tabs on the standings and schedule, here:
+									<a class="projLink" href="PHF-Schedule.html" target="_self">schuylermeyer.com/PHF-Schedule</a>&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									This project was shutdown due to the changes in access to the Twitter API in 2023.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="Spatial Navigation">Spatial Navigation and Foraging Research Project</a>&nbsp;}
+					<ul class="descr">
+						<li class="types">
+							Clarkson University&nbsp;}
+						</li>
+						<li class="dates">
+							2018 &mdash; 2019&nbsp;}
+						</li>
+						<li class="types">
+							VR, Unity, C#, Maya, Photoshop, Excel&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Lead developer on a research project with the Psychology Department.
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Designed a VR environment for researchers to examine and gather data
+									on the behavior and decision strategies made by humans.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									See the project in action, here:
+									<a class="projLink" href="portfolio.html" target="_self">schuylermeyer.com/portfolio</a>
+									and here:
+									<a class="projLink" href="https://youtu.be/KSGVi-_yQFo" target="_blank">YouTube</a>&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="Swarm Simulation">Swarm Simulation Project</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2018&nbsp;}
+						</li>
+						<li class="types">
+							Unity, C#&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									A simulation of people shopping on Black Friday to study how each
+									individual reacts to a global event as well as how the entire group
+									reacts to each individual event.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									See the project in action, here:
+									<a class="projLink" href="portfolio.html" target="_self">schuylermeyer.com/portfolio</a>
+									and here:
+									<a class="projLink" href="https://youtu.be/tDnwA2Lajkw" target="_blank">YouTube</a>&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="Internship">Software Engineering Internship</a>&nbsp;}
+					<ul class="descr">
+						<li class="types">
+							17a-4, LLC.&nbsp;}
+						</li>
+						<li class="dates">
+							2018&nbsp;}
+						</li>
+						<li class="types">
+							SharePoint Designer, VBA, HTML&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Developed a publicly released cloud-based inventory system for
+									homeowners to store their home documents and expenses.
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Routinely met with a small remote team to discuss features and fix bugs.
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Product was reviewed by the New York Times.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="Senior Design Project">Software Senior Design Project</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2017&nbsp;}
+						</li>
+						<li class="types">
+							MySQL, PHP, JavaScript, HTML, CSS&nbsp;}
+						</li>
+						<li class="dates">
+							Project Leader&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Created an online warehouse inventory management system.
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Allocated responsibilities to each team member and ensured that deadlines
+									were met, while consulting with the client to ensure that all the
+									requirements were satisfied.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="CUGI">Clarkson University Gamers Initiative</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2015 &mdash; 2019&nbsp;}
+						</li>
+						<li class="types">
+							Unity, C#, Maya, Photoshop&nbsp;}
+						</li>
+						<li class="types">
+							Treasurer | Founder and Head of the Game Creation Committee&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Developed multiple game prototypes, while delegating roles and deadlines to team members
+									based on their strengths.
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Taught the basics of Unity and game design to new members.
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Increased membership by 500% over three years.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="The Adventure Game">The Adventure Game</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2015&nbsp;}
+						</li>
+						<li class="types">
+							MATLAB&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Programmed a text-based adventure game in MATLAB.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									The game can be played in about 20 minutes and has multiple endings.&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 		<br>
 
@@ -335,70 +453,76 @@
 
 		<div class="sContainer">
 			<p>Projects_in_progress:</p>
-					<ul>
-						<li>
-							<a class="showHideLink" title="AI_Market">AI_Market</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2021 &mdash;
-									<script>document.write(new Date().getFullYear())</script>&nbsp;}
-								</li>
-								<li class="types">
-									Unity, C#, Maya, Photoshop&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											Created as a crowd simulation study. Individual “people” are each given a
-											goal to accomplish while simultaneously reacting to each other.&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
+			<ul>
+				<li>
+					<a class="showHideLink" title="AI_Market">AI_Market</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2021 &mdash;
+							<script>document.write(new Date().getFullYear())</script>&nbsp;}
 						</li>
-						<li>
-							<a class="showHideLink" title="Project XO">Project XO</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2022 &mdash;
-									<script>document.write(new Date().getFullYear())</script>&nbsp;}
-								</li>
-								<li class="types">
-									Unity, C#, Blender, Photoshop&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											A version of Tic-Tac-Toe for PC and mobile devices.
-											&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="showHideLink" title="Scoreboard">Scoreboard</a>&nbsp;}
-							<ul class="descr">
-								<li class="dates">
-									2023&nbsp;}
-								</li>
-								<li class="types">
-									HTML, CSS, JavaScript&nbsp;}
-									<ul>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											An interactive hockey (or similar) scoreboard on the web.
-											&nbsp;<span class="lg-view"><br></span>}
-										</li>
-										<li class="underDescr"><span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-											See the project in progess, here:
-											<a class="projLink" href="scoreboard.html" target="_self">schuylermeyer.com/scoreboard</a>
-											&nbsp;<span class="lg-view"><br></span>}
-										</li>
-									</ul>
+						<li class="types">
+							Unity, C#, Maya, Photoshop&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									Created as a crowd simulation study. Individual “people” are each given a
+									goal to accomplish while simultaneously reacting to each other.&nbsp;<span class="lg-view"><br></span>}
 								</li>
 							</ul>
 						</li>
 					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="Project XO">Project XO</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2022 &mdash;
+							<script>document.write(new Date().getFullYear())</script>&nbsp;}
+						</li>
+						<li class="types">
+							Unity, C#, Blender, Photoshop&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									A version of Tic-Tac-Toe for PC and mobile devices.
+									&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="showHideLink" title="Scoreboard">Scoreboard</a>&nbsp;}
+					<ul class="descr">
+						<li class="dates">
+							2023&nbsp;}
+						</li>
+						<li class="types">
+							HTML, CSS, JavaScript&nbsp;}
+							<ul>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									An interactive hockey (or similar) scoreboard on the web.
+									&nbsp;<span class="lg-view"><br></span>}
+								</li>
+								<li class="underDescr">
+									<span class="lg-view"><br>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									See the project in progess, here:
+									<a class="projLink" href="scoreboard.html" target="_self">schuylermeyer.com/scoreboard</a>
+									&nbsp;<span class="lg-view"><br></span>}
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 		<br>
 
 	</main>
+
+	<div class="dateContainerBottom"><span id="dateInverse" title="Refresh the page for a new language!"></span></div>
 
 	<!-- __________________________________________________________________________ -->
 
@@ -407,35 +531,36 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="scrollToTop.js"></script>
 	<script src="src/js/typingText.js"></script>
+	<script src="src/js/dateANDtime.js"></script>
 	<script>
 		$('.showHideLink').click(
 			function (event) {
-					if ($(this).hasClass("underline")) {
-						$(this).removeClass("underline");
-						$('.showHideAll').text("Expand All");
-						$('.showHideAll').prop('title', 'Expand All');
-					} else {
-						$(this).addClass("underline");
-						$('.showHideAll').text("Collapse All");
-						$('.showHideAll').prop('title', 'Collapse All');
-					}
-					$(this).next('.descr').toggle("slow","swing");
+				if ($(this).hasClass("underline")) {
+					$(this).removeClass("underline");
+					$('.showHideAll').text("Expand All");
+					$('.showHideAll').prop('title', 'Expand All');
+				} else {
+					$(this).addClass("underline");
+					$('.showHideAll').text("Collapse All");
+					$('.showHideAll').prop('title', 'Collapse All');
+				}
+				$(this).next('.descr').toggle("slow", "swing");
 			}
 		);
 
 		$('.showHideAll').click(
 			function (event) {
-					if ($('.showHideLink').hasClass("underline")){
-						$('.descr').hide("slow","swing");
-						$('.showHideLink').removeClass("underline");
-						$('.showHideAll').text("Expand All");
-						$('.showHideAll').prop('title', 'Expand All');
-					} else {
-						$('.descr').show("slow","swing");
-						$('.showHideLink').addClass("underline");
-						$('.showHideAll').text("Collapse All");
-						$('.showHideAll').prop('title', 'Collapse All');
-					}
+				if ($('.showHideLink').hasClass("underline")) {
+					$('.descr').hide("slow", "swing");
+					$('.showHideLink').removeClass("underline");
+					$('.showHideAll').text("Expand All");
+					$('.showHideAll').prop('title', 'Expand All');
+				} else {
+					$('.descr').show("slow", "swing");
+					$('.showHideLink').addClass("underline");
+					$('.showHideAll').text("Collapse All");
+					$('.showHideAll').prop('title', 'Collapse All');
+				}
 			}
 		);
 	</script>

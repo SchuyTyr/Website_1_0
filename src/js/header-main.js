@@ -16,36 +16,23 @@ mainHeader.innerHTML = `
 
     <nav>
       <a href="aboutSM.html" class="aButton">
-        <button class="pageButtonColorSkew" title="About the Schuy">
-          <div class="pageButtonTxt">&nbsp;About&nbsp;</div>
-        </button>
-      </a>
+		<input type="button" class="pageButtonColor" value="&nbsp;About&nbsp;" title="About">
+	  </a>
       <a href="contact.html" class="aButton">
-        <button class="pageButtonColorSkew" title="Coming Soon!">
-          <div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
-        </button>
-      </a>
+		<input type="button" class="pageButtonColor" value="&nbsp;Contact&nbsp;" title="Coming Soon!">
+	  </a>
       <a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
-        <button class="pageButtonColorSkew" title="To the SchuyBox!">
-          <div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
-        </button>
-      </a>
-
-        <a href="photoshoot.html" class="aButton">
-          <button class="pageButtonColorSkew" title="Book a Photoshoot">
-            <div class="pageButtonTxt">&nbsp;Book a Photoshoot&nbsp;</div>
-          </button>
-        </a>
-        <a href="itconsulting.html" class="aButton">
-          <button class="pageButtonColorSkew" title="IT Services">
-            <div class="pageButtonTxt">&nbsp;IT Services&nbsp;</div>
-          </button>
-        </a>
-        <a href="https://ko-fi.com/schuylermeyer" class="aButton" target="_blank">
-          <button class="pageButtonColorSkew" title="Please?">
-            <div class="pageButtonTxt">&nbsp;Buy me a Coffee&nbsp;</div>
-          </button>
-        </a>
+		<input type="button" class="pageButtonColor" value="&nbsp;Blog&nbsp;" title="To the SchuyBox!">
+	  </a>
+      <a href="photoshoot.html" class="aButton">
+		<input type="button" class="pageButtonColor" value="&nbsp;Book a Photoshoot&nbsp;" title="Book a Photoshoot">
+	  </a>      
+      <a href="itconsulting.html" class="aButton">
+		<input type="button" class="pageButtonColor" value="&nbsp;IT Services&nbsp;" title="IT Services">
+	  </a>
+      <a href="https://ko-fi.com/schuylermeyer" class="aButton" target="_blank">
+		<input type="button" class="pageButtonColor" value="&nbsp;Buy me a Coffee&nbsp;" title="Please?">
+	  </a>
     </nav>
 
 

@@ -666,8 +666,8 @@ a.link4 {
 	font-size:12px;
 	display: block;
 	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	/*padding-top: 10px;*/
+	/*padding-bottom: 10px;*/
 	-webkit-appearance: none;
 }
 
@@ -1071,6 +1071,9 @@ hr.roundedTwo {
 		/*width: 100%;
 		height: auto;*/
 		height: 200px;
+	}
+	p {
+		margin: 0px;
 	}
 }
 @media screen and (max-width: 400px) {

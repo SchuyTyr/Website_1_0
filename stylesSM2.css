@@ -1057,7 +1057,7 @@ polygon {
 	color: #8b8e91;
 	font-size: 28px;
 	text-align: left;
-	/*text-decoration: underline;*/
+	text-decoration: underline;
 	margin: 0;
 	/*margin-top: 12px;*/
 	word-wrap: break-word;
@@ -2742,6 +2742,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	 }
 	.busCard {
 		width: 400px;
+	}
+	.sContainer {
+		width: 92%;
 	}
 }
 @media screen and (max-width: 500px) {
