@@ -2309,7 +2309,7 @@ a.linkWS:hover, a.linkWS:hover span {
 		width: 60%;
 	}
 	.lineBox {
-		width: 60%;
+		width: 70%;
 	}
 	.imgWel {
 		width: 60%;
@@ -2372,7 +2372,7 @@ a.linkWS:hover, a.linkWS:hover span {
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
-	.pageButtonColorSkew {
+	.pageButtonColor, .pageButtonColorSkew {
 		transform: skew(0);
 		margin: 4px 1px;
 		font-size: 20px;
@@ -2421,7 +2421,7 @@ a.linkWS:hover, a.linkWS:hover span {
 }
 
 @media screen and (max-width: 1130px) {
-	.pageButtonColorSkew {
+	.pageButtonColor, .pageButtonColorSkew {
 		margin: 4px 1px;
 		font-size: 18px;
 		padding: 8px;
@@ -2431,7 +2431,7 @@ a.linkWS:hover, a.linkWS:hover span {
 }
 
 @media screen and (max-width: 1020px) {
-	.pageButtonColorSkew {
+	.pageButtonColor, .pageButtonColorSkew {
 		margin: 4px 1px;
 		font-size: 16px;
 		padding: 8px;
@@ -2441,7 +2441,7 @@ a.linkWS:hover, a.linkWS:hover span {
 }
 
 @media screen and (max-width: 950px) {
-	.pageButtonColorSkew {
+	.pageButtonColor, .pageButtonColorSkew {
 		margin: 2px 1px;
 		font-size: 16px;
 		padding: 8px;
@@ -2457,7 +2457,7 @@ a.linkWS:hover, a.linkWS:hover span {
 	.headerTxt {
 		font-size: 24px;
 	}
-	.pageButtonColorSkew {
+	.pageButtonColor, .pageButtonColorSkew {
 		margin: 2px 1px;
 		font-size: 16px;
 		padding: 8px;
@@ -2465,7 +2465,7 @@ a.linkWS:hover, a.linkWS:hover span {
 		/*padding-right: 14px;*/
 	}
 	.lineBox {
-	 width: 55%;
+		width: 80%;
 	}
 	.pageButtonTxt {
 		transform: skew(0);
@@ -2478,7 +2478,7 @@ a.linkWS:hover, a.linkWS:hover span {
 	nav {
 		width: 90%;
 	}
-	.pageButtonColorSkew {
+	.pageButtonColor, .pageButtonColorSkew {
 		margin: 4px 1px;
 		font-size: 18px;
 		padding: 8px;
@@ -2525,7 +2525,7 @@ a.linkWS:hover, a.linkWS:hover span {
 	.hamS {
 		font-size: 14px;
 	}
-	.pageButtonColorSkew {
+	.pageButtonColor, .pageButtonColorSkew {
 		width: auto;
 		left: 50vw;
 	}
