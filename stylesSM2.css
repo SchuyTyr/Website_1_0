@@ -149,6 +149,15 @@ nav {
 	padding-bottom: 10px;
 }
 
+.mainGrid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .buttonNav {
 	color: #8b8e91;
 	width: 100%;
