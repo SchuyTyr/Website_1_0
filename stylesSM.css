@@ -843,6 +843,9 @@ hr.roundedTwo {
 		margin-top: 40px;
 		margin-bottom: 40px;
 	}
+	.textCaption span {
+		font-size: 22px;
+	}
 	.imgPSContainer {
 		text-align: center;
 		margin-left: 5%;
@@ -905,6 +908,9 @@ hr.roundedTwo {
 		padding: 5px;
 		margin-bottom: 20px;
 		width: 25%;
+	}	
+	.textCaption span {
+		font-size: 18px;
 	}
 	.imgLogo {
 		width: 24%;
@@ -970,6 +976,9 @@ hr.roundedTwo {
 	}
 	.textCaption {
 		width: 50%;
+	}
+	.textCaption span {
+		font-size: 22px;
 	}
 	.pageButton, .pageButtonSkew {
 		transform: skew(0);
