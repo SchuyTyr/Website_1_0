@@ -35,8 +35,8 @@ body {
 
 main {
 	text-align:center;
-	margin-top: 120px;
-	margin-bottom: 140px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
 
 /*.fullContent {
@@ -149,15 +149,6 @@ nav {
 	padding-bottom: 10px;
 }
 
-.mainGrid {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: space-between;
-	justify-content: space-around;
-	align-items: center;
-}
-
 .buttonNav {
 	color: #8b8e91;
 	width: 100%;
@@ -239,6 +230,18 @@ nav {
 	margin-top: 0;
 }
 
+.mainGrid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .dateContainer {
 	margin-bottom: 12px;
 }
@@ -278,6 +281,44 @@ nav {
 	letter-spacing: 6px;
 	font-size: 14px;
 	text-transform: uppercase;
+}
+
+.captionContainer {
+	/*transition: color .75s ease;*/
+	opacity: 1;
+	padding: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: transform 0.4s cubic-bezier(.31,.01,.51,.99);
+}
+
+.captionContainer span {
+	font-size: 24px;
+	font-family: 'Audiowide', cursive;
+	font-weight: 200;
+	text-align: center;
+	border-bottom: 1px solid #8b8e91;
+	border-top: 1px solid #8b8e91;
+	padding: 8px 12px 8px 12px;
+	border-radius: 8px;
+	transition: transform 0.4s cubic-bezier(.31,.01,.51,.99);
+}
+
+.lineBox {
+	padding-bottom: 8px;
+}
+
+.linkMain {
+	color: #8b8e91;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.linkMain:visited {
+	color: #8b8e91;
+}
+
+.linkMain:hover, .linkMain:active {
+	color: #d4d4d4;
 }
 
 .showcase {
@@ -2253,8 +2294,8 @@ a.linkWS:hover, a.linkWS:hover span {
 
 @media screen and (min-width: 2000px) {
 	main {
-		margin-top: 120px;
-		margin-bottom: 140px;
+		margin-top: 20px;
+		margin-bottom: 40px;
 	}
 	.imgLogoStyle {
 		width: 45%;
@@ -2296,7 +2337,7 @@ a.linkWS:hover, a.linkWS:hover span {
 @media screen and (min-width: 1351px) {
 	main {
 		margin-top: 40px;
-		margin-bottom: 120px;
+		margin-bottom: 40px;
 	}
 	#photoTextCapt {
 		width: 50%;
@@ -2306,7 +2347,7 @@ a.linkWS:hover, a.linkWS:hover span {
 @media screen and (max-width: 1350px) {
 	main {
 		margin-top: 20px;
-		margin-bottom: 100px;
+		margin-bottom: 20px;
 	}
 	.headerTxt {
 		font-size: 28px;
@@ -2345,7 +2386,7 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	main {
 		margin-top: 10px;
-		margin-bottom: 80px;
+		margin-bottom: 10px;
 	}
 	.dateContainer {
 		margin-bottom: 12px;
@@ -2759,7 +2800,7 @@ a.linkWS:hover, a.linkWS:hover span {
 @media screen and (max-width: 500px) {
 	main {
 		margin-top: 40px;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 	}
 	.headerTxt {
 		font-size: 18px;
@@ -2832,7 +2873,7 @@ a.linkWS:hover, a.linkWS:hover span {
 @media screen and (max-width: 400px) {
 	main {
 		margin-top: 0px;
-		margin-bottom: 60px;
+		margin-bottom: 10px;
 	}
 	.modalPhoto {
 		left: 47%;

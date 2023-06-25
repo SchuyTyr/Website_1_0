@@ -115,6 +115,7 @@ img {
 	transform: scale(1.2);
 	border-radius: 8px;
 }
+
 .img-hover-zoom:hover {
 	transform: translate(0,-12px);
 }
@@ -384,7 +385,7 @@ a.link4 {
 	width: 27%;
 	margin: 5px;
 	margin-top: 20px;
-	margin-bottom: 12px;
+	margin-bottom: 20px;
 	text-align: center;
 
 	border-top: 2px solid rgba(0, 0, 0, 0);
@@ -846,6 +847,9 @@ hr.roundedTwo {
 	.textCaption span {
 		font-size: 22px;
 	}
+	.captionContainer span {
+		font-size: 22px;
+	}
 	.imgPSContainer {
 		text-align: center;
 		margin-left: 5%;
@@ -910,6 +914,9 @@ hr.roundedTwo {
 		width: 25%;
 	}	
 	.textCaption span {
+		font-size: 18px;
+	}
+	.captionContainer span {
 		font-size: 18px;
 	}
 	.imgLogo {
@@ -978,6 +985,9 @@ hr.roundedTwo {
 		width: 50%;
 	}
 	.textCaption span {
+		font-size: 22px;
+	}
+	.captionContainer span {
 		font-size: 22px;
 	}
 	.pageButton, .pageButtonSkew {
