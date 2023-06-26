@@ -1168,7 +1168,7 @@ polygon {
 	text-decoration: underline;
 }
 .lg-view {
-	display:inline;
+	display: inline;
 }
 .topDescr{
 	color: #3870ff;
@@ -1185,6 +1185,17 @@ polygon {
 }
 .underDescr {
 	color: #8b8e91;
+}
+.softPhoto {
+	width: 40vw;
+	height: 30vh;
+	overflow: auto;
+	scrollbar-width: thin;
+	scrollbar-color: #c2c7cc #3870ff;
+	margin: 4px;
+	margin-left: 22px;
+	border: 12px solid #111111;
+	box-shadow: 0 0 8px 2px #111111;
 }
 
 
@@ -2691,6 +2702,10 @@ a.linkWS:hover, a.linkWS:hover span {
 	 #closeButton {
 		 transform: translate(4%, 1%);
 	 }
+	.softPhoto {
+		width: 60vw;
+		height: 30vh;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -2795,6 +2810,10 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	.sContainer {
 		width: 92%;
+	}
+	.softPhoto {
+		width: 50vw;
+		height: 25vh;
 	}
 }
 @media screen and (max-width: 500px) {
@@ -2950,5 +2969,13 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	.busCard {
 		width: 250px;
+	}
+	.sContainer {
+		width: 95%;
+	}
+	.softPhoto {
+		width: 100%;
+		height: 100%;
+		margin: 0;
 	}
 }
