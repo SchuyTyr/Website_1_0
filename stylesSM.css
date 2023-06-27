@@ -315,16 +315,21 @@ img {
 	background-color: rgba(56,56,56,75%);
 	border-radius: 80% 0 0 0;
 	box-shadow: 0px 0px 6px 2px #d7d7d7;
-	font-family: 'Audiowide', cursive;
+	font-family: Arial;
 	-webkit-appearance: none;
 	/*content: '⇪';*/ /*"⮝";*/ /*&#11165;*/
 }
 #myBtn::after {
 	content: '⇪';
+	/*content: '▲';*/
 }
 #myBtn:hover {
 	color: #383838;
 	background-color: rgba(215,215,215);
+}
+#myBtn:active {
+	color: rgba(215,215,215);
+	background-color: rgba(56,56,56,75%);
 }
 
 a.link2 {
@@ -1073,7 +1078,7 @@ hr.roundedTwo {
 		padding-right: 16px;
 		padding-top: 0;
 		padding-bottom: 0;
-		font-size: 32px;
+		font-size: 42px;
 		bottom: 10%;
 		left: 0;
 		right: revert;
