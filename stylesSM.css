@@ -1,3 +1,5 @@
+@charset "UTF-8"; 
+
 /*:root {
   --animation-time: 5s;
 }*/
@@ -303,9 +305,9 @@ img {
 	bottom: 0;
 	right: 0;
 	z-index: 1004;
-	font-size: 48px;
 	outline: none;
 	cursor: pointer;
+	font-size: 48px;
 	padding-top: 10px;
 	padding-left: 30px;
 	padding-right: 20px;
@@ -315,21 +317,32 @@ img {
 	background-color: rgba(56,56,56,75%);
 	border-radius: 80% 0 0 0;
 	box-shadow: 0px 0px 6px 2px #d7d7d7;
-	font-family: Arial;
+	font-family: 'Courier New', monospace;
+	font-family: Verdana;
 	-webkit-appearance: none;
-	/*content: '⇪';*/ /*"⮝";*/ /*&#11165;*/
+
+	-webkit-font-smoothing: antialiased;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
 }
 #myBtn::after {
-	content: '⇪';
-	/*content: '▲';*/
+	/*content: "⮝";*/
+	/*content: "⇪";*/
+	/*content: '⛰';*/
+	/*content: '⭱';*/
+	content: '⮴';
 }
-#myBtn:hover {
-	color: #383838;
-	background-color: rgba(215,215,215);
-}
-#myBtn:active {
+#myBtn:focus {
 	color: rgba(215,215,215);
 	background-color: rgba(56,56,56,75%);
+}
+#myBtn:hover {
+	color: rgba(215,215,215);
+	background-color: rgba(56,56,56,75%);
+}
+#myBtn:active {
+	color: #383838;
+	background-color: rgba(215,215,215);
 }
 
 a.link2 {
@@ -826,6 +839,13 @@ hr.roundedTwo {
 
 /* --------------------------------------------------------------------- */
 
+@media (hover:hover){
+	#myBtn:hover {
+		color: #383838;
+		background-color: rgba(215,215,215);
+	}
+}
+
 @media screen and (min-width: 2000px) {
 	.mainContainer {
 		margin-top: 80px;
@@ -1082,6 +1102,9 @@ hr.roundedTwo {
 		bottom: 10%;
 		left: 0;
 		right: revert;
+	}
+	#myBtn::after {
+		content: '⮵';
 	}
 }
 @media screen and (max-width: 600px) {
