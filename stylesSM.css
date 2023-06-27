@@ -296,31 +296,28 @@ img {
 	object-fit: cover;
 	overflow: hidden;
 }
+
 #myBtn {
-	background-color: Transparent;
-  background-repeat: no-repeat;
 	display: none;
 	position: fixed;
-	bottom: 5%;
-	right: 2.5%;
+	bottom: 0;
+	right: 0;
 	z-index: 1004;
-	font-size: 32px;
+	font-size: 48px;
 	outline: none;
 	cursor: pointer;
-	/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
-	padding: 8px;
-	padding-top: 8px;
-	padding-left: 12px;
-	padding-right: 12px;
-  transition: .2s all ease-in;
-
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 20px;
+	transition: .2s all ease-in;
 	color: rgba(215,215,215);
 	border: solid 2px rgba(56,56,56,30%);
- 	background-color: rgba(56,56,56,75%);
-	border-radius: 8px;
+	background-color: rgba(56,56,56,75%);
+	border-radius: 80% 0 0 0;
 	box-shadow: 0px 0px 6px 2px #d7d7d7;
-	font-family: arial;
-	content: '⇪';/*"⮝";*/ /*&#11165;*/
+	font-family: 'Audiowide', cursive;
+	-webkit-appearance: none;
+	/*content: '⇪';*/ /*"⮝";*/ /*&#11165;*/
 }
 #myBtn::after {
 	content: '⇪';
@@ -1071,8 +1068,14 @@ hr.roundedTwo {
 	}
 	#myBtn {
 		background-color: rgba(56,56,56,90%);
-		bottom: 100px;
-		left: 2.5%;
+		border-radius: 0 80% 80% 0;
+		padding-left: 8px;
+		padding-right: 16px;
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 32px;
+		bottom: 10%;
+		left: 0;
 		right: revert;
 	}
 }
