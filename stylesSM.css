@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
+
 /*:root {
   --animation-time: 5s;
 }*/
@@ -315,7 +317,7 @@ img {
 	background-color: rgba(56,56,56,75%);
 	border-radius: 80% 0 0 0;
 	box-shadow: 0px 0px 6px 2px #d7d7d7;
-	font-family: Symbola;
+	font-family: 'Noto Sans Symbols 2', sans-serif;
 	-webkit-appearance: none;
 	-webkit-font-smoothing: antialiased;
 	font-synthesis: none;
@@ -326,7 +328,8 @@ img {
 	/*content: "⇪";*/
 	/*content: '⛰';*/
 	/*content: '⭱';*/
-	content: '⮴';
+	/*content: '⮴';*/
+	content: '🡱';
 }
 #myBtn:focus {
 	color: rgba(215,215,215);
@@ -1098,9 +1101,6 @@ hr.roundedTwo {
 		bottom: 10%;
 		left: 0;
 		right: revert;
-	}
-	#myBtn::after {
-		content: '⮵';
 	}
 }
 @media screen and (max-width: 600px) {
