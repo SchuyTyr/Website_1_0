@@ -851,7 +851,7 @@ polygon {
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: space-between;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -864,7 +864,7 @@ polygon {
 	margin-right: 8px;
 	margin-top: 8px;
 	margin-bottom: 8px;
-	padding: 12px;
+	padding: 6px;
 }
 
 .img4 {
@@ -882,8 +882,6 @@ polygon {
 	-webkit-box-shadow: 0 0 1px 4px #000000,
 							0 0 25px 15px #436ff3;
 	-webkit-appearance: none;
-	/*animation: colorChange 2s Ease-in-out infinite;*/
-	/*animation: borderChange 0.25s Ease-in-out;*/
 }
 
 @keyframes borderChange {

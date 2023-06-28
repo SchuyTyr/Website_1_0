@@ -44,8 +44,8 @@ p {
 
 .mainContainer {
 	text-align:center;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	/*margin-top: 60px;*/
+	/*margin-bottom: 60px;*/
 }
 
 .btn-group button {
@@ -307,7 +307,7 @@ img {
 	z-index: 1004;
 	outline: none;
 	cursor: pointer;
-	font-size: 48px;
+	font-size: 38px;
 	padding-top: 10px;
 	padding-left: 30px;
 	padding-right: 20px;
@@ -846,10 +846,10 @@ hr.roundedTwo {
 }
 
 @media screen and (min-width: 2000px) {
-	.mainContainer {
+/*	.mainContainer {
 		margin-top: 80px;
 		margin-bottom: 80px;
-	}
+	}*/
 	.socialProps img {
 		width: 24%;
 	}

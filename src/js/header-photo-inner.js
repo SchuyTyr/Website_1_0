@@ -16,7 +16,7 @@ photoHeaderInner.innerHTML = `
         <button class="subNavBtn">Home</button>
         <div class="subNav-content">
           <a href="../index.html" title="Home, Main">Home</a>
-          <a href="../photo.html" title="Home, Photos">Photos</a>
+          <a href="../photo.html" title="Home, Photos">Photos Home</a>
         </div>
       </div>
 

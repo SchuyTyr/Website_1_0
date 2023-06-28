@@ -45,9 +45,10 @@ photoFooter.innerHTML = `
 </div>
 
 <hr class="rounded">
+<br>
 
 <div class="h4">
-  <img alt="Schuyler Meyer" src="src/img/Logo.png" width="250">
+<img alt="Schuyler Meyer" class="imgLogo" style="border: 0;" src="src/img/SM_Banner_Logo_noDate.png">
 </div>
 
 <p id="p01">

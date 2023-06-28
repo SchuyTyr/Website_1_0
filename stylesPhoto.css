@@ -181,38 +181,6 @@ video {
 	color: #8b8e91;
 }
 
-#myBtn {
-	background-color: Transparent;
-	background-repeat:no-repeat;
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	z-index: 1004;
-	font-size: 32px;
-	outline: none;
-	cursor: pointer;
-	padding: 8px;
-	padding-top: 2px;
-	padding-left: 12px;
-	padding-right: 12px;
-	transition: .2s all ease-in;
-
-	color: rgba(215,215,215);
-	border: solid 2px rgba(56,56,56,30%);
- 	background-color: rgba(56,56,56,75%);
-	border-radius: 8px;
-	box-shadow: 0px 0px 6px 2px #d7d7d7;
-	font-family: arial;
-}
-#myBtn::after {
-	content: '⇪';
-}
-#myBtn:hover {
-	color: #383838;
-	background-color: rgba(215,215,215);
-}
-
 .titles {
 	text-align: center;
 	font-size: 42px;
@@ -897,9 +865,6 @@ hr.roundedTwo {
 		width: 100%;
 		height: auto;
 	}
-	#myBtn {
-		background-color: rgba(56,56,56,75%);
-	}
 	.img3 {
 		/*width: 100%;*/
 		height: 400px;
@@ -1001,9 +966,6 @@ hr.roundedTwo {
 	}
 	.slidesText {
 		font-size: 20px;
-	}
-	#myBtn {
-		background-color: rgba(56,56,56,90%);
 	}
 	.img3 {
 		/*width: 100%;
