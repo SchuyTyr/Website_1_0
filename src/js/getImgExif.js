@@ -5,10 +5,28 @@
 window.onload = getExif;
 
 function getExif() {
-    var img1 = document.getElementById("img1");
-    EXIF.getData(img1, function () {
-        var imgTitle = EXIF.getTag(this, "ImageDescription");
 
-        img1.title = imgTitle;
-    });
+    //var img1 = document.getElementById("img1");
+    var imgs = document.getElementsByClassName("img4");
+    //document.getElementsByClassName("myText")[0].innerHTML,
+
+    //EXIF.getData(img1, function () {
+    //    var imgTitle = EXIF.getTag(this, "ImageDescription");
+
+    //    //img1.crossOrigin = "use-credentials";
+    //    img1.title = imgTitle;
+    //    img1.alt = imgTitle;
+    //});
+
+    for (var i = 0; i < imgs.length; i++) {
+
+        EXIF.getData(imgs[i], function () {
+
+            var imgTitle = EXIF.getTag(this, "ImageDescription");
+            imgs[i].title = imgTitle;
+            imgs[i].alt = imgTitle;
+
+        });
+    }
+
 }
