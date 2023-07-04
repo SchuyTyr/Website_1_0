@@ -10,6 +10,8 @@ function getExif() {
     var imgs = document.getElementsByClassName("img4");
     console.log("images: " + imgs.length);
 
+    var imgTitle = "";
+
     //EXIF.getData(img1, function () {
     //    var imgTitle = EXIF.getTag(this, "ImageDescription");
 
@@ -18,11 +20,13 @@ function getExif() {
     //    img1.alt = imgTitle;
     //});
 
+    console.log("img 1: " + imgs[0].title);
+
     for (var i = 0; i < imgs.length; i++) {
 
         EXIF.getData(imgs[i], function () {
 
-            var imgTitle = EXIF.getTag(imgs[i], "ImageDescription");
+            imgTitle = EXIF.getTag(imgs[i], "ImageDescription");
 
             console.log(imgs[i] + ": " + imgTitle);
 
