@@ -63,9 +63,9 @@ function getExif(img) {
         imgTitle = EXIF.getTag(this, "ImageDescription");
         console.log("imgTitle: " + imgTitle);
 
-        modalImgCapt.innerHTML = "<span>" + img.target.title + "</span>";
-        img.title = imgTitle;
-        img.alt = imgTitle;
+        modalImgCapt.innerHTML = "<span>" + modalImg.target.title + "</span>";
+        modalImg.title = imgTitle;
+        modalImg.alt = imgTitle;
     });
 
 }
