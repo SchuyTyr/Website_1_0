@@ -1,4 +1,4 @@
-/*-- photoScript.js // Schuyler Meyer // 2022 --*/
+/*-- photoScript.js // Schuyler Meyer // 2022-23 --*/
 
 const modal = document.getElementById('myModal');
 const images = document.querySelectorAll(".containerGrid img");
@@ -15,11 +15,12 @@ var noScroll = true;
 
 images.forEach((img) => {
     img.addEventListener("click", (e) => {
-				modal.style.display = "block";
+		modal.style.display = "block";
         modalImg.src = e.target.src;
-				modalImg.title = e.target.title;
-				modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";
-				noScrollF();
+        getExif(img);
+		//modalImg.title = e.target.title;
+		/*modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";*/
+		noScrollF();
         scrollTop.style.display = "none";
         html.style.overflow = "hidden";
         topBtn = true;
@@ -28,21 +29,43 @@ images.forEach((img) => {
 });
 
 window.onclick = function(event) {
-		if (event.target == modal) {
-			modal.style.display = "none";
-			noScrollF();
-      html.style.overflow = "revert";
-      topBtn = false;
-		}
+	if (event.target == modal) {
+		modal.style.display = "none";
+		noScrollF();
+        html.style.overflow = "revert";
+        topBtn = false;
+	}
 }
 
 close.onclick = function(event) {
-		modal.style.display = "none";
-		noScrollF();
+	modal.style.display = "none";
+	noScrollF();
     html.style.overflow = "revert";
     topBtn = false;
 }
 
 function noScrollF() {
-		body.classList.toggle('noscroll');
+	body.classList.toggle('noscroll');
+}
+
+function getExif(img) {
+
+    //var img1 = document.getElementById("img1");
+    //var imgs = document.getElementsByClassName("img4");
+
+    //for (var y = 0; y < imgs.length; y++) {
+    //    console.log("images: " + imgs[y].src);
+    //}
+
+    var imgTitle = "";
+
+    EXIF.getData(img, function () {
+        imgTitle = EXIF.getTag(this, "ImageDescription");
+        console.log("imgTitle: " + imgTitle);
+
+        modalImgCapt.innerHTML = "<span>" + img.target.title + "</span>";
+        img.title = imgTitle;
+        img.alt = imgTitle;
+    });
+
 }

@@ -4,38 +4,40 @@
 
 window.onload = getExif;
 
-function getExif() {
+async function getExif() {
 
-    //var img1 = document.getElementById("img1");
-    var imgs = document.getElementsByClassName("img4");
-    console.log("images: " + imgs.length);
+    var img1 = document.getElementById("img1");
+    //var imgs = document.getElementsByClassName("img4");
+
+    //for (var y = 0; y < imgs.length; y++) {
+    //    console.log("images: " + imgs[y].src);
+    //}
 
     var imgTitle = "";
 
-    //EXIF.getData(img1, function () {
-    //    var imgTitle = EXIF.getTag(this, "ImageDescription");
+    EXIF.getData(img1, function () {
+        imgTitle = EXIF.getTag(this, "ImageDescription");
 
-    //    //img1.crossOrigin = "use-credentials";
-    //    img1.title = imgTitle;
-    //    img1.alt = imgTitle;
-    //});
+        img1.title = imgTitle;
+        img1.alt = imgTitle;
+    });
 
-    console.log("img 1: " + imgs[0].title);
+    //console.log("img 1: " + imgs[0].title);
 
-    for (var i = 0; i < imgs.length; i++) {
+    //for (var i = 0; i < imgs.length; i++) {
 
-        EXIF.getData(imgs[i], function () {
+    //    EXIF.getData(imgs[i], function () {
 
-            imgTitle = EXIF.getTag(imgs[i], "ImageDescription");
+    //        imgTitle = EXIF.getTag(imgs[i], "ImageDescription");
 
-            console.log(imgs[i] + ": " + imgTitle);
+    //        console.log(imgs[i] + ": " + imgTitle);
 
-            imgs[i].setAttribute('title', imgTitle);
-            imgs[i].setAttribute('alt', imgTitle);
-            //imgs[i].title = imgTitle;
-            //imgs[i].alt = imgTitle;
+    //        imgs[i].setAttribute('title', imgTitle);
+    //        imgs[i].setAttribute('alt', imgTitle);
+    //        //imgs[i].title = imgTitle;
+    //        //imgs[i].alt = imgTitle;
 
-        });
-    }
+    //    });
+    //}
 
 }
