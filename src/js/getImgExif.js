@@ -8,7 +8,7 @@ function getExif() {
 
     //var img1 = document.getElementById("img1");
     var imgs = document.getElementsByClassName("img4");
-    //document.getElementsByClassName("myText")[0].innerHTML,
+    console.log("images: " + imgs.length);
 
     //EXIF.getData(img1, function () {
     //    var imgTitle = EXIF.getTag(this, "ImageDescription");
@@ -22,9 +22,14 @@ function getExif() {
 
         EXIF.getData(imgs[i], function () {
 
-            var imgTitle = EXIF.getTag(this, "ImageDescription");
-            imgs[i].title = imgTitle;
-            imgs[i].alt = imgTitle;
+            var imgTitle = EXIF.getTag(imgs[i], "ImageDescription");
+
+            console.log(imgs[i] + ": " + imgTitle);
+
+            imgs[i].setAttribute('title', imgTitle);
+            imgs[i].setAttribute('alt', imgTitle);
+            //imgs[i].title = imgTitle;
+            //imgs[i].alt = imgTitle;
 
         });
     }
