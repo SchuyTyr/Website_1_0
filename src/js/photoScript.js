@@ -50,13 +50,6 @@ function noScrollF() {
 
 function getExif(img) {
 
-    //var img1 = document.getElementById("img1");
-    //var imgs = document.getElementsByClassName("img4");
-
-    //for (var y = 0; y < imgs.length; y++) {
-    //    console.log("images: " + imgs[y].src);
-    //}
-
     var imgTitle = "";
 
     EXIF.getData(img, function () {
