@@ -16,14 +16,16 @@ body {
 	/*overflow-y: scroll;*/
 	overflow-x: hidden;
 	/*background-color: #111821;*/
-	background: no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	/*background: no-repeat center center fixed;*/
 	width: auto;
 	max-width: 100%;
 	height: 100%;
-	background-image: url('Hex_7.jpg');
+	background: #000000; /*Backup*/
+	background-size: cover;
+	background-image: linear-gradient(rgba(67,111,243,8%) 0%, transparent 50%, rgba(67,111,243,8%) 100%), url('Hex_7.jpg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 	/*cursor: url("src/img/CustomCursor_5_5s.png"), auto;*/
 	font-family: verdana; /*backup font*/
 }
