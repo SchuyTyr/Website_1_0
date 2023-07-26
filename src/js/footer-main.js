@@ -41,8 +41,8 @@ template.innerHTML = `
       </div>
 
       <div class="socialProps">
-        <a class="link4" href="https://www.deviantart.com/akatsukirising" title="DeviantArt &#64;AkatsukiRising" target="_blank">
-            <img class="socialHover" src="src/icons/DeviantArt_3.png" alt="deviantart.com/akatsukirising">
+        <a class="link4" href="https://linktr.ee/schuylermeyer" title="LinkTree &#64; SchuylerMeyer" target="_blank">
+            <img class="socialHover" src="src/icons/LinkTree.png" alt="linktr.ee/schuylermeyer">
         </a>
       </div>
 
