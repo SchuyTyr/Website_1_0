@@ -69,7 +69,7 @@ p {
   background-color: #00000000;
 }
 
-.imgSocial {
+/*.imgSocial {
 	width: 16.66667%;
 	height: 100%;
 }
@@ -84,8 +84,8 @@ p {
 .socialProps {
 	width: 80%;
 	display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .socialProps img {
 	width: 24%;
@@ -94,7 +94,7 @@ p {
 .socialProps a {
 	margin-left: auto;
 	margin-right: auto;
-}
+}*/
 
 img {
 	max-width: 100%;
@@ -322,10 +322,14 @@ a.link4 {
 	text-align: center;
 }
 
-.socialHover:hover {
+/*.socialHover:hover {
 	filter: drop-shadow(0 0 2px #ffffff) brightness(1.25);
 	animation: fadeinout 2s Ease-in-out infinite;
 }
+
+.twitterX:hover {
+	content: url("src/icons/Twitter_X.png");
+}*/
 
 .container {
 	position: relative;

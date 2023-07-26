@@ -873,36 +873,48 @@ body.noscroll {
 	border-radius: 12px;
 }
 
-.socialBar {
+.imgSocial {
+	width: 16.66667%;
+	height: 100%;
+}
+
+/*.socialBar {
 	width: 100%;
 	display: inline-flex;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+*/
+.socialBar {
+	display: inline-flex;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 100%;
 }
 
 .socialProps {
 	width: 80%;
-	display:         flex;
-  flex-wrap:       wrap;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
+
 .socialProps img {
-  /*display: inline;
-  margin-left: 5px;*/
-	/*display:inline-block;*/
-	/*display: table-cell;*/
-	/*text-align: center;
-	margin: auto;*/
 	width: 24%;
-	/*height: auto;*/
-	/*float: left;*/
 }
 
 .socialProps a {
-	/*display: block;
-	width: 16.66667%;*/
-	/*width: 85px;
-	height: 85px;*/
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.socialHover:hover {
+	filter: drop-shadow(0 0 2px #ffffff) brightness(1.25);
+	animation: fadeinout 2s Ease-in-out infinite;
+}
+
+.twitterX:hover {
+	content: url("src/icons/Twitter_X.png");
 }
 
 a.link4 {
@@ -913,11 +925,6 @@ a.link4 {
 	text-decoration: none;
 	display: inline;
 	text-align: center;
-}
-
-.socialHover:hover {
-	filter: drop-shadow(0 0 2px #ffffff) brightness(1.25);
-	animation: fadeinout 2s Ease-in-out infinite;
 }
 
 @keyframes fadeinout {

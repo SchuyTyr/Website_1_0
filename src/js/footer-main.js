@@ -17,38 +17,38 @@ template.innerHTML = `
   <div class="socialBar">
 
       <div class="socialProps">
-        <a class="link4" href="https://www.instagram.com/schuyler_meyer/" title="Instagram &#64;schuyler_meyer">
-            <img class="socialHover" src="Instagram_3.png" alt="instagram.com/schuyler_meyer">
+        <a class="link4" href="https://www.instagram.com/schuyler_meyer/" title="Instagram &#64;schuyler_meyer" target="_blank">
+            <img class="socialHover" src="src/icons/Instagram_3.png" alt="instagram.com/schuyler_meyer">
         </a>
       </div>
 
       <div class="socialProps">
-        <a class="link4" href="https://twitter.com/schuylermeyer24" title="Twitter &#64;schuylermeyer24">
-            <img class="socialHover" src="Twitter_3.png" alt="twitter.com/schuylermeyer24" >
+        <a class="link4" href="https://twitter.com/schuylermeyer24" title="Twitter &#64;schuylermeyer24" target="_blank">
+            <img class="socialHover twitterX" src="src/icons/Twitter_3.png" alt="twitter.com/schuylermeyer24">
         </a>
       </div>
 
       <div class="socialProps">
-        <a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer">
-            <img class="socialHover" src="Flickr_3.png" alt="flickr.com/photos/schuyler_meyer">
+        <a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer" target="_blank">
+            <img class="socialHover" src="src/icons/Flickr_3.png" alt="flickr.com/photos/schuyler_meyer">
         </a>
       </div>
 
       <div class="socialProps">
-        <a class="link4" href="https://www.linkedin.com/in/schuyler-meyer/" title="LinkedIn &#64; Schuyler Meyer">
-            <img class="socialHover" src="LinkedIn.png" alt="linkedin.com/in/schuyler-meyer">
+        <a class="link4" href="https://www.linkedin.com/in/schuyler-meyer/" title="LinkedIn &#64; Schuyler Meyer" target="_blank">
+            <img class="socialHover" src="src/icons/LinkedIn.png" alt="linkedin.com/in/schuyler-meyer">
         </a>
       </div>
 
       <div class="socialProps">
-        <a class="link4" href="https://www.deviantart.com/akatsukirising" title="DeviantArt &#64;AkatsukiRising">
-            <img class="socialHover" src="DeviantArt_3.png" alt="deviantart.com/akatsukirising" >
+        <a class="link4" href="https://www.deviantart.com/akatsukirising" title="DeviantArt &#64;AkatsukiRising" target="_blank">
+            <img class="socialHover" src="src/icons/DeviantArt_3.png" alt="deviantart.com/akatsukirising">
         </a>
       </div>
 
       <div class="socialProps">
         <a class="link4" href="mailto:schuybreach@gmail.com" title="Email &#64; schuybreach@gmail.com">
-            <img class="socialHover" src="Email.png" alt="Email: schuybreach@gmail.com">
+            <img class="socialHover" src="src/icons/Email.png" alt="Email: schuybreach@gmail.com">
         </a>
       </div>
   </div>

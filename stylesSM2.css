@@ -216,11 +216,48 @@ nav {
 	padding-bottom: 10px;
 }
 
+.imgSocial {
+	width: 16.66667%;
+	height: 100%;
+}
+
+/*.socialBar {
+	width: 100%;
+	display: inline-flex;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+*/
 .socialBar {
 	display: inline-flex;
 	padding-top: 8px;
 	padding-bottom: 8px;
 	width: 100%;
+}
+
+.socialProps {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.socialProps img {
+	width: 24%;
+}
+
+.socialProps a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.socialHover:hover {
+	filter: drop-shadow(0 0 2px #ffffff) brightness(1.25);
+	animation: fadeinout 2s Ease-in-out infinite;
+}
+
+.twitterX:hover {
+	content: url("src/icons/Twitter_X.png");
 }
 
 .pageButtonColor,
