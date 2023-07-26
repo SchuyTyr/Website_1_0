@@ -2419,6 +2419,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	.imgLogo {
 		width: 18%;
 	}
+	.socialProps img {
+		width: 24%;
+	}
 }
 @media screen and (min-width: 1500px) {
 	.dateContainer {
@@ -2507,6 +2510,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	.socialBar {
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+	.socialProps img {
+		width: 24%;
 	}
 	.imgLogoStyle {
 		width: 75%;
@@ -2693,6 +2699,9 @@ a.linkWS:hover, a.linkWS:hover span {
 		margin: 2px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.socialProps img {
+		width: 38%;
 	}
 	.hamS {
 		font-size: 14px;
