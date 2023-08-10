@@ -15,25 +15,65 @@ mainHeader.innerHTML = `
     <hr class="rounded">
 
     <nav>
+      <a href="index.html" class="aButton">
+		<button class="pageButtonColor" title="Home">&nbsp;Home&nbsp;</button>
+	  </a>
       <a href="aboutSM.html" class="aButton">
-		<input type="button" class="pageButtonColor" value="&nbsp;About&nbsp;" title="About">
+		<button class="pageButtonColor" title="About">&nbsp;About&nbsp;</button>
 	  </a>
       <a href="contact.html" class="aButton">
-		<input type="button" class="pageButtonColor" value="&nbsp;Contact&nbsp;" title="Coming Soon!">
+		<button class="pageButtonColor" title="Coming Soon!">&nbsp;Contact&nbsp;</button>
 	  </a>
+      <div class="dropdown">
+        <div class="aButton dropdownButton">
+            <button class="pageButtonColor" title="">&nbsp;Services&nbsp;</button>
+        </div>  
+        <div class="dropdown-content">
+            <a href="photoshoot.html" class="aButton">
+                <button class="pageButtonColor" title="Book a Photoshoot">&nbsp;Book a Photoshoot&nbsp;</button>
+            </a>
+            <a href="itconsulting.html" class="aButton">
+                <button class="pageButtonColor" title="IT Services">&nbsp;IT Services&nbsp;</button>
+            </a>
+        </div>
+      </div>
       <a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
-		<input type="button" class="pageButtonColor" value="&nbsp;Blog&nbsp;" title="To the SchuyBox!">
-	  </a>
-      <a href="photoshoot.html" class="aButton">
-		<input type="button" class="pageButtonColor" value="&nbsp;Book a Photoshoot&nbsp;" title="Book a Photoshoot">
-	  </a>      
-      <a href="itconsulting.html" class="aButton">
-		<input type="button" class="pageButtonColor" value="&nbsp;IT Services&nbsp;" title="IT Services">
+		<button class="pageButtonColor" title="To the SchuyBox!">&nbsp;Blog&nbsp;</button>
 	  </a>
       <a href="https://ko-fi.com/schuylermeyer" class="aButton" target="_blank">
-		<input type="button" class="pageButtonColor" value="&nbsp;Buy me a Coffee&nbsp;" title="Please?">
+		<button class="noPaddingTB pageButtonColor" title="Buy me a Coffee">
+            <img class="menuIcon" src="src/icons/KoFi_no_circle.png">
+        </button>
 	  </a>
     </nav>
 
 
 `;
+
+/*
+<a href="index.html" class="aButton">
+		<input type="button" class="pageButtonColor" value="&nbsp;Home&nbsp;" title="Home">
+</a>
+
+<img class="menuIcon" src="src/icons/KoFi.png">
+&nbsp;Buy me a Coffee&nbsp;
+
+<div class="dropdown">
+    <a class="dropbtn" href="work.html">
+        &nbsp;Work&nbsp;
+    </a>
+    <div class="dropdown-content">
+        <a href="music.html">Music&nbsp;Video</a>
+        <a href="narrative.html">Narrative</a>
+        <a href="nature.html">Nature</a>
+        <a href="commdoc.html">Commercial | Documentary</a>
+    </div>
+</div>
+
+<a href="photoshoot.html" class="aButton">
+    <input type="button" class="pageButtonColor" value="&nbsp;Book a Photoshoot&nbsp;" title="Book a Photoshoot">
+</a>      
+<a href="itconsulting.html" class="aButton">
+    <input type="button" class="pageButtonColor" value="&nbsp;IT Services&nbsp;" title="IT Services">
+</a>
+*/

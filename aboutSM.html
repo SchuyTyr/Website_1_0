@@ -6,11 +6,11 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMYCWX2SRC"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	  gtag('config', 'G-YMYCWX2SRC');
+		gtag('config', 'G-YMYCWX2SRC');
 	</script>
 
 	<meta charset="UTF-8">
@@ -30,77 +30,79 @@
 	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&family=Roboto+Mono:wght@200;300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
 	<!-- End Fonts -->
+	<script src="src/js/header-main.js" type="text/javascript" defer></script>
 	<script src="src/js/footer-main.js" type="text/javascript" defer></script>
 
 </head>
 <body>
 	<button id="myBtn" onclick="topFunction()" title="To top"></button>
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
-	<h1 style="text-align:center;color:#8b8e91;font-size:12px;font-family:verdana;" title="Schuyler Meyer"><a href="http://www.schuylermeyer.com">
-		<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png"></a>
-	</h1>
+	<header id="header-main"></header>
 
-<!-- __________________________________________________________________________ -->
+	<hr class="rounded">
 
-  <div class="aboutC">
-		<div style="text-align:center;">
-			<img alt="Schuyler Meyer" class="imgLogoStyle" src="src/img/me.jpg">
+	<!--<h1 style="text-align:center;color:#8b8e91;font-size:12px;font-family:verdana;" title="Schuyler Meyer">
+		<a href="http://www.schuylermeyer.com">
+			<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">
+		</a>
+	</h1>-->
+	<!-- __________________________________________________________________________ -->
+
+	<div class="aboutC">
+		<div class="headContainer">
+			<div class="headIMGContainer">
+				<img alt="Schuyler Meyer" class="imgLogoStyle" src="src/img/me.jpg">
+				<br><br>
+				<img alt="Schuyler Meyer" class="imgLogoSign" src="src/img/SMSignLogo2021.png">
+			</div>
+
+			<div class="toc">
+				<u>Table of Contents</u>:
+				<ul class="resumeStatsList tocList">
+					<li style="list-style: none; line-height: 2;">
+						<span><a href="#AboutMe">About Me</a></span>
+					</li>
+					<li style="list-style: none; line-height: 2;">
+						<span><a href="#resumeDownload">Resume Downloads</a></span>
+					</li>
+					<li style="list-style: none; line-height: 2;">
+						<span><a href="#skills">Technical Skills</a></span>
+					</li>
+					<li style="list-style: none; line-height: 2;">
+						<span><a href="#education">Education</a></span>
+					</li>
+					<li style="list-style: none; line-height: 2;">
+						<span><a href="#engineering">Engineering | Web Development</a></span>
+					</li>
+					<li style="list-style: none; line-height: 2;">
+						<span><a href="#gamecreation">Game Creation | VR | Animation</a></span>
+					</li>
+					<li style="list-style: none; line-height: 2;">
+						<span><a href="#photography">Photography Experience</a></span>
+					</li>
+					<li style="list-style: none; line-height: 2;">
+						<span><a href="#additional">Additional Experience & Leadership</a></span>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<br><br>
-		<div class="buttonAbout">
-			<a href="index.html" class="aButton">
-				<input type="button" class="pageButtonColor" value="&nbsp;Home&nbsp;" title="Home">
-			</a>
-		</div>
 
-		<br><br>
-		<div class="toc">
-			<u>Table of Contents</u>:
-			<ul class="resumeStatsList tocList">
-				<li style="list-style: none; line-height: 2;">
-					<span><a href="#AboutMe">About Me</a></span>
-				</li>
-				<li style="list-style: none; line-height: 2;">
-					<span><a href="#resumeDownload">Resume Downloads</a></span>
-				</li>
-				<li style="list-style: none; line-height: 2;">
-					<span><a href="#skills">Technical Skills</a></span>
-				</li>
-				<li style="list-style: none; line-height: 2;">
-					<span><a href="#education">Education</a></span>
-				</li>
-				<li style="list-style: none; line-height: 2;">
-					<span><a href="#engineering">Engineering | Web Development</a></span>
-				</li>
-				<li style="list-style: none; line-height: 2;">
-					<span><a href="#gamecreation">Game Creation | VR | Animation</a></span>
-				</li>
-				<li style="list-style: none; line-height: 2;">
-					<span><a href="#photography">Photography Experience</a></span>
-				</li>
-				<li style="list-style: none; line-height: 2;">
-					<span><a href="#additional">Additional Experience & Leadership</a></span>
-				</li>
-			</ul>
-		</div>
-
-		<br><br>
-		<hr class="rounded" style="width: 100%;">
+		<hr class="rounded">
 		<br><br>
 
 		<!-- __________________________________________________________________________ -->
 
-		<div id="AboutMe" class="greeting">
-			Hello friends and onlookers,<br>
-			<a class="linkG" onclick="hiddenTextFunc()"><u>Greetings</u>:</a>
-		</div>
-		<p class="aboutCText">Hmmm, where to start? <br><br>My name is Schuyler Meyer &mdash; [ pronounced like "Sky&mdash;ler My&mdash;er" ].</p>
+			<div id="AboutMe" class="greeting">
+				Hello friends and onlookers, <br>travelers and acquaintances,
+				<a class="linkG" onclick="hiddenTextFunc()" title="?"><u>Greetings</u>:</a>
+			</div>
+		<p class="aboutCText">My name is Schuyler Meyer &mdash; [ pronounced like "Sky&mdash;ler My&mdash;er" ].</p>
 
 		<div id="hiddenText" style="display:none;">
 			<br>
-			<hr class="rounded" style="width: 50%;">
+			<hr class="rounded">
 			<br>
 			<p class="aboutCText">
 				Congratulations! You found it! Sending you a virtual high&ndash;five. The following paragraphs are something I debated placing into
@@ -124,59 +126,67 @@
 				my time there, (the first&ndash;place person had 180). I did take one more class, to finish my second degree (that would have put me at 182), but
 				it was not consecutively.
 			</p>
-			<br><hr class="rounded" style="width: 50%;"><br>
+			<br><hr class="rounded"><br>
 		</div>
 
-		<script src="hideText.js"></script>
-
 		<p class="aboutCText">
-			As for my dreams and aspirations, my ultimate goal is to create immersive experiences. Whether they be happy and exciting
+			Current: I am working as a freelance photographer, while trying to work my way into a game and / or web development role. In my free time, I'm always working
+			on either this website, or other coding projects, creating small games or simulations, or 3D modeling and animations, in addition to tinkering with mine 
+			(and others) computers and other electronics.
+		</p>
+		<p class="aboutCText">
+			For my dreams and aspirations, my ultimate goal is to create immersive experiences. Whether they be happy and exciting
 			for people to relive or escape to, more sensitive and emotional for people to better understand the struggles of others or to learn about
 			history past, or simply awe-inspiring and epic. The tools used could be any number of things, such as virtual or augmented reality, in the
-			form of a video game or animation, or a photograph.
+			form of a video game or animation, or a photograph. This is more general on purpose, as it could be accomplished in many different ways!
 		</p>
-		<p class="aboutCText">
-			I, myself, am always fascinated and inspired by those that are able to create or capture the emotions of their subject and environment, in
-			any multitude of forms &ndash; game, movie, animation, book, photograph, etc. Whether I have reached a level of consistency yet or not is one thing,
-			but I would describe my artistic style as taking roots in a mix of both romanticism and photojournalism. (And yes, I know those are nearly contradictory
-			of one another). While I don't have a background in photojournalism per se, I am deeply inspired by the many photojournalists and their ability to capture
-			their subject. Similarly, I think my work also takes inspiration from the work of romantic painters of old (Albert Bierstadt, in particular, whose art
-			was often criticized for exaggeration), and in addition to, more specifically, the Hudson River School of Art "style". And likewise, in my work, I'm not adding,
-			nor taking away, what's there or not, I'm just *subtly* shaping the view. I'm trying to invoke an emotion, to tell a story, and to give someone an experience,
-			even with a single photograph. But of course, there is also such a thing as "too much", which is always a constant consideration. An example of someone's
-			work that I am deeply inspired by is Adam Glanzman
-			(<a class="link3" href="https://www.instagram.com/glanzpiece/" target="_blank">@glanzpiece</a> on Instagram) and Jean Fruth
-			(<a class="link3" href="https://www.instagram.com/jeanfruthimages/" target="_blank">@jeanfruthimages</a> on Instagram).
-			Naturally, the above does not only apply to my photography, but any and all of my artistic endeavors.
-		</p>
-		<p class="aboutCText">
-			In regard to the more tangible and technical stuff, I recently graduated from Clarkson University in Potsdam, NY with a bachelor's degree in
-			software engineering and a second bachelor's degree in digital arts and sciences. While there, I worked on some really cool projects &ndash; both for
-			research and class as well as for fun. As one of the student photographers for the school (both marketing and athletic departments), I also did
-			a lot with photography. I probably missed out on one or more social events because I was always editing photos. And I even got to TA a photography
-			class as well. (To see the gritty details, see below. To see more of my photography, check out my photography site,
-			<a class="link3" href="photo.html">here</a>.)
-		</p>
-		<p class="aboutCText">
-			In addition to photography and other projects, I was also an officer (or E&ndash;Board as we called it) for four different student run clubs:
-			<br>
-			&ndash; Baseball Club (<i>Historian, Photographer, Webmaster, Player</i>) <br>
-			&ndash; Video Game Club [CUGI &ndash; Clarkson University Gamers Initiative]
-			(<i>Treasurer, Head and Founder of the Game Creation Committee</i>) <br>
-			&ndash; Photo Club (<i>Secretary</i>) <br>
-			&ndash; Anime Club (<i>Secretary</i>) <br>
-			&ndash; Men's and Women's Club Hockey teams (<i>Team Photographer</i>).
-		</p>
-		<p class="aboutCText">
-			Before we move on, a note about this website &ndash; it is a personal one. A personal project of a personal website. I have created and written everything
-			on here from scratch, from the photos, logos, and backgrounds to all the underlying HTML, CSS, and JavaScript. While I do have a degree in software,
-			I had never taken any classes in HTML before &ndash; I self-taught myself HMTL / CSS / JavaScript through the many tutorials on the internet for this
-			website project. With that being said, as you scroll down, you may notice my software senior design project was created using HTML (among other things) &ndash;
-			while it is true that that project was my first experience with HMTL, there was no formal "teaching", my team was learning and piecemealing as we went along.
-			That project was more of a taste, where this personal website project is more of the full course.
-		</p>
+		<a id="readMoreTextTitle" class="linkG aboutCText" onclick="readMoreFunc()">
+			-&nbsp;<span id="readMoreLink">Read More</span>&nbsp;-
+		</a>
+		<div id="readMore" style="display:none;">
+			<p class="aboutCText">
+				I, myself, am always fascinated and inspired by those that are able to create or capture the emotions of their subject and environment, in
+				any multitude of forms &ndash; game, movie, animation, book, photograph, etc. Whether I have reached a level of consistency yet or not is one thing,
+				but I would describe my artistic style as taking roots in a mix of both romanticism and photojournalism. (And yes, I know those are nearly contradictory
+				of one another). While I don't have a background in photojournalism per se, I am deeply inspired by the many photojournalists and their ability to capture
+				their subject. Similarly, I think my work also takes inspiration from the work of romantic painters of old (Albert Bierstadt, in particular, whose art
+				was often criticized for exaggeration), and in addition to, more specifically, the Hudson River School of Art "style". And likewise, in my work, I'm not adding,
+				nor taking away, what's there or not, I'm just *subtly* shaping the view. I'm trying to invoke an emotion, to tell a story, and to give someone an experience,
+				even with a single photograph. But of course, there is also such a thing as "too much", which is always a constant consideration. An example of someone's
+				work that I am deeply inspired by is Adam Glanzman
+				(<a class="link3" href="https://www.instagram.com/glanzpiece/" target="_blank">@glanzpiece</a> on Instagram) and Jean Fruth
+				(<a class="link3" href="https://www.instagram.com/jeanfruthimages/" target="_blank">@jeanfruthimages</a> on Instagram).
+				Naturally, the above does not only apply to my photography, but any and all of my artistic endeavors.
+			</p>
+			<p class="aboutCText">
+				In regard to the more tangible and technical stuff, I recently graduated from Clarkson University in Potsdam, NY with a bachelor's degree in
+				software engineering and a second bachelor's degree in digital arts and sciences. While there, I worked on some really cool projects &ndash; both for
+				research and class as well as for fun. As one of the student photographers for the school (both marketing and athletic departments), I also did
+				a lot with photography. I probably missed out on one or more social events because I was always editing photos. And I even got to TA a photography
+				class as well. (To see the gritty details, see below. To see more of my photography, check out my photography site,
+				<a class="link3" href="photo.html">here</a>.)
+			</p>
+			<p class="aboutCText">
+				In addition to photography and other projects, I was also an officer (or E&ndash;Board as we called it) for four different student run clubs:
+				<br>
+				&ndash; Baseball Club (<i>Historian, Photographer, Webmaster, Player</i>) <br>
+				&ndash; Video Game Club [CUGI &ndash; Clarkson University Gamers Initiative]
+				(<i>Treasurer, Head and Founder of the Game Creation Committee</i>) <br>
+				&ndash; Photo Club (<i>Secretary</i>) <br>
+				&ndash; Anime Club (<i>Secretary</i>) <br>
+				&ndash; Men's and Women's Club Hockey teams (<i>Team Photographer</i>).
+			</p>
+			<p class="aboutCText">
+				Before we move on, a note about this website &ndash; it is a personal one. A personal project of a personal website. I have created and written everything
+				on here from scratch, from the photos, logos, and backgrounds to all the underlying HTML, CSS, and JavaScript. While I do have a degree in software,
+				I had never taken any classes in HTML before &ndash; I self-taught myself HMTL / CSS / JavaScript through the many tutorials on the internet for this
+				website project. With that being said, as you scroll down, you may notice my software senior design project was created using HTML (among other things) &ndash;
+				while it is true that that project was my first experience with HMTL, there was no formal "teaching", my team was learning and piecemealing as we went along.
+				That project was more of a taste, where this personal website project is more of the full course.
+			</p>
+		</div>
 		<br><br>
-		<hr class="rounded" style="width: 100%;">
+		<hr class="rounded">
 	</div>
 
 	<!-- __________________________________________________________________________ -->
@@ -185,24 +195,19 @@
 		<span id="resumeDownload" class="resumeStatsHeaderTop"><u>Resume Stat Sheet &shy;(The Full Experience)</u></span>
 
 		<div class="rDownloads">
-			<a class="rLink" href="src/resume/SchuylerMeyer_SoftEng-UnityDeveloper_Resume.pdf" download="SchuylerMeyer_SoftEngDev_Resume" target="_blank" title="Download PDF">
+			<a class="rLink" href="src/resume/Schuyler_Meyer-Software_Dev-Resume.pdf" download="SchuylerMeyer_SoftDev_Resume" target="_blank" title="Download PDF">
 				<img src="src/icons/download_arrow.svg">
-				<br>Software Developer Resume
+				<br>Developer Resume &ndash; Pretty
 			</a>
 			&nbsp;
-			<a class="rLink" href="src/resume/SchuylerMeyer-WebDev_Resume.pdf" download="SchuylerMeyer_WebDev_Resume" target="_blank" title="Download PDF">
+			<a class="rLink" href="src/resume/Schuyler_Meyer_Dev_Resume.pdf" download="SchuylerMeyer_Dev_Resume" target="_blank" title="Download PDF">
 				<img src="src/icons/download_arrow.svg">
-				<br>Web Dev Resume
+				<br>Developer Resume &ndash; ATS Friendly
 			</a>
 			&nbsp;
 			<a class="rLink" href="src/resume/SchuylerMeyer-Photography_Resume.pdf" download="SchuylerMeyer_Photography_Resume" target="_blank" title="Download PDF">
 				<img src="src/icons/download_arrow.svg">
 				<br>Photography Resume
-			</a>
-			&nbsp;
-			<a class="rLink" href="src/resume/SchuylerMeyer_Animation_Resume.pdf" download="SchuylerMeyer_Animation_Resume" target="_blank" title="Download PDF">
-				<img src="src/icons/download_arrow.svg">
-				<br>Animation Resume
 			</a>
 		</div>
 
@@ -360,13 +365,20 @@
 			<span class="resumeStatsTitle">WordPress Developer</span><br>
 			<span class="resumeStatsPlace" style="color: #05e4f0;">ShePlays</span><br>
 			<ul class="resumeStatsList">
+				<li>
+					Enhanced compatibility and optimized user experience across the website
+				</li>
+				<li style="list-style: none"><br></li>
+				<li>
+					Collaborated with a remote team to maintain a consistent visual theme, resulting in a cohesive and engaging user interface
+				</li>
 				<li style="list-style: none"><br></li>
 			</ul>
 
 			<span class="resumeStatsDate">Spring 2022 &ndash; Spring 2023</span>
 			<br>
-			<span class="resumeStatsTitle">Sloan Architects</span><br>
-			<span class="resumeStatsPlace">Junior Architect / Drafter / IT</span>
+			<span class="resumeStatsTitle">Junior Architect / Drafter / IT</span><br>
+			<span class="resumeStatsPlace">Sloan Architects</span>
 			<br>
 			<ul class="resumeStatsList">
 				<li>Maintained the website and provided technical support throughout the office</li>
@@ -400,7 +412,7 @@
 				<li style="list-style: none"><br></li>
 				<li>Developed in Python using Tweepy</li>
 				<li style="list-style: none"><br></li>
-				<li>Shutdown due to the no longer free access to the Twitter API</li>
+				<li>Shutdown due to the change in access to the Twitter API</li>
 				<li style="list-style: none"><br></li>
 				<li>To view, <a class="link3" href="https://twitter.com/IceySchuy" target="_blank">click here</a></li>
 				<li style="list-style: none"><br></li>
@@ -448,383 +460,382 @@
 				<li>Created with Microsoft SharePoint Designer</li>
 				<li style="list-style: none"><br></li>
 			</ul>
-			<span class="resumeStatsDate">Fall 2017<br>
-			<span class="resumeStatsTitle">Software Senior Design Project</span><br>
-			<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span> | <span class="resumeStatsDate">Project Leader</span><br>
-			<ul class="resumeStatsList">
-				<li>Designed an online inventory database system using HTML, PHP, and MySQL</li>
-				<li style="list-style: none"><br></li>
-				<li>Allocated responsibilities to each team member and ensured deadlines were met</li>
-				<li style="list-style: none"><br></li>
-				<li>Communicated with the client to ensure that all the requirements were satisfied</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<hr class="rounded" style="width: 100%;">
+			<span class="resumeStatsDate">Fall 2017</span><br>
+				<span class="resumeStatsTitle">Software Senior Design Project</span><br>
+				<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span> | <span class="resumeStatsDate">Project Leader</span><br>
+				<ul class="resumeStatsList">
+					<li>Designed an online inventory database system using HTML, PHP, and MySQL</li>
+					<li style="list-style: none"><br></li>
+					<li>Allocated responsibilities to each team member and ensured deadlines were met</li>
+					<li style="list-style: none"><br></li>
+					<li>Communicated with the client to ensure that all the requirements were satisfied</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<hr class="rounded" style="width: 100%;">
 
-			<!-- __________________________________________________________________________ -->
+				<!-- __________________________________________________________________________ -->
 
-			<br id="gamecreation">
-			<u class="resumeStatsHeader">Game Creation | VR | Animation:</u>
-			<br><br>
-			<span class="resumeStatsDate">Spring 2022 &mdash;</span><br>
-			<span class="resumeStatsTitle">Darkstar Games</span><br>
-			<span class="resumeStatsPlace">Unity Developer</span><br>
-			<ul class="resumeStatsList">
-				<li>Developed a JSON-fueled dialogue system</li>
-				<li style="list-style: none"><br></li>
-				<li>Created a rotating character selection screen</li>
-				<li style="list-style: none"><br></li>
-				<li>Assisted with QA testing while providing specific feedback</li>
-				<li style="list-style: none"><br></li>
-				<li>See <a class="link3" href="https://darkstargames.net/" target="_self">here</a>, for more information</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Summer 2021</span><br>
-			<span class="resumeStatsTitle">Animation | The Cube, Evolved</span><br>
-			<span class="resumeStatsPlace">Personal Project</span><br>
-			<ul class="resumeStatsList">
-				<li>Designed and created multiple short animations of a custom-made robot</li>
-				<li style="list-style: none"><br></li>
-				<li>Created with Maya, rendered in Arnold, video compiled in Davinci Resolve</li>
-				<li style="list-style: none"><br></li>
-				<li>To view the project, <a class="link3" href="portfolio.html" target="_self">click here</a></li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Fall 2018 &mdash; Fall 2019</span><br>
-			<span class="resumeStatsTitle">VR | Spatial Navigation and Foraging Research Project</span><br>
-			<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span><br>
-			<ul class="resumeStatsList">
-				<li>Lead developer on a research project with the Psychology Department</li>
-				<li style="list-style: none"><br></li>
-				<li>Developed a VR environment for researchers to examine and gather data for the behavior and decision strategies made by humans</li>
-				<li style="list-style: none"><br></li>
-				<li>Wrote all the underlying code</li>
-				<li style="list-style: none"><br></li>
-				<li>Data is outputted to a CSV file for the research team to use</li>
-				<li style="list-style: none"><br></li>
-				<li>Created with Unity, Oculus, C#, Photoshop, Maya, and Excel</li>
-				<li style="list-style: none"><br></li>
-				<li>To view the project, <a class="link3" href="portfolio.html" target="_self">click here</a></li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Spring 2019</span><br>
-			<span class="resumeStatsTitle">VR | The Virtual Archive</span><br>
-			<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span><br>
-			<ul class="resumeStatsList">
-				<li>Developed a fully immersive virtual museum of my past works</li>
-				<li style="list-style: none"><br></li>
-				<li>Designed a VR environment for people to walk around in</li>
-				<li style="list-style: none"><br></li>
-				<li>Made with Unity, Oculus, C#, Photoshop, Maya</li>
-				<li style="list-style: none"><br></li>
-				<li>Created as a final project for Clarkson University's Digital Arts and Sciences Program, Senior Studies class</li>
-				<li style="list-style: none"><br></li>
-				<li>To view the project, <a class="link3" href="portfolio.html" target="_self">click here</a></li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Spring 2019</span>
-			<br>
-			<span class="resumeStatsTitle">VR | Ice Hockey</span><br>
-			<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span><br>
-			<ul class="resumeStatsList">
-				<li>Developed playable hockey in virtual reality</li>
-				<li style="list-style: none"><br></li>
-				<li>Made with Unity, Oculus, C#, Photoshop, Maya</li>
-				<li style="list-style: none"><br></li>
-				<li>Created as a final project for Clarkson University's Mixed Reality class</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Fall 2018</span>
-			<br>
-			<span class="resumeStatsTitle">Animation | Konbini</span><br>
-			<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Developed a 3D animation in a cyberpunk sci-fi setting</li>
-				<li style="list-style: none"><br></li>
-				<li>Made with Maya and Photoshop, rendered with Arnold, video edited with After Effects and Premiere</li>
-				<li style="list-style: none"><br></li>
-				<li>To view the project, <a class="link3" href="portfolio.html" target="_self">click here</a></li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Spring 2018</span>
-			<br>
-			<span class="resumeStatsTitle">VR | An Observation Surrounding Southern Monuments</span><br>
-			<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Collaborative research project using VR to explore the current issues of Southern Monuments</li>
-				<li style="list-style: none"><br></li>
-				<li>Created with Unity, Oculus, C#, Photoshop, Maya, and Google Earth</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Spring 2018</span>
-			<br>
-			<span class="resumeStatsTitle">Video Game Narrative | Seekers of the Bygone</span><br>
-			<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Designed and developed an interactive story game in Unity, C#, Maya, Photoshop, and Fungus</li>
-				<li style="list-style: none"><br></li>
-				<li>Brenda Romero commented "Wow!", when first shown it</li>
-				<li style="list-style: none"><br></li>
-				<li>To view the project, <a class="link3" href="portfolio.html" target="_self">click here</a></li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Spring 2017 &mdash; Spring 2019</span>
-			<br>
-			<span class="resumeStatsTitle">Founder &amp; Head of the Game Creation Committee</span><br>
-			<span class="resumeStatsPlace" style="color: #a19405;">Clarkson University Gamers Initiative</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Developed multiple prototypes in Unity</li>
-				<li style="list-style: none"><br></li>
-				<li>Decided as a team the game’s theme and setting, and discussed relevant gameplay mechanics</li>
-				<li style="list-style: none"><br></li>
-				<li>Delegated roles and deadlines to team members based on their strengths</li>
-				<li style="list-style: none"><br></li>
-				<li>Converted hand drawn sketches by the team’s artists into 3D Models using Maya</li>
-				<li style="list-style: none"><br></li>
-				<li>Taught the basics of Unity and game design to new members</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Summer 2015</span>
-			<br>
-			<span class="resumeStatsTitle">The Adventure Game</span><br>
-			<span class="resumeStatsPlace">Personal Project</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Developed a text-based adventure game in MATLAB and GIMP</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<hr class="rounded" style="width: 100%;">
+				<br id="gamecreation">
+				<u class="resumeStatsHeader">Game Creation | VR | Animation:</u>
+				<br><br>
+				<span class="resumeStatsDate">Spring 2022 &mdash;</span><br>
+				<span class="resumeStatsTitle">Darkstar Games</span><br>
+				<span class="resumeStatsPlace">Unity Developer</span><br>
+				<ul class="resumeStatsList">
+					<li>Developed a JSON-fueled dialogue system</li>
+					<li style="list-style: none"><br></li>
+					<li>Created a rotating character selection screen</li>
+					<li style="list-style: none"><br></li>
+					<li>Assisted with QA testing while providing specific feedback</li>
+					<li style="list-style: none"><br></li>
+					<li>See <a class="link3" href="https://darkstargames.net/" target="_blank">here</a>, for more information</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Summer 2021</span><br>
+				<span class="resumeStatsTitle">Animation | The Cube, Evolved</span><br>
+				<span class="resumeStatsPlace">Personal Project</span><br>
+				<ul class="resumeStatsList">
+					<li>Designed and created multiple short animations of a custom-made robot</li>
+					<li style="list-style: none"><br></li>
+					<li>Created with Maya, rendered in Arnold, video compiled in Davinci Resolve</li>
+					<li style="list-style: none"><br></li>
+					<li>To view the project, <a class="link3" href="portfolio.html" target="_self">click here</a></li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Fall 2018 &mdash; Fall 2019</span><br>
+				<span class="resumeStatsTitle">VR | Spatial Navigation and Foraging Research Project</span><br>
+				<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span><br>
+				<ul class="resumeStatsList">
+					<li>Lead developer on a research project with the Psychology Department</li>
+					<li style="list-style: none"><br></li>
+					<li>Developed a VR environment for researchers to examine and gather data for the behavior and decision strategies made by humans</li>
+					<li style="list-style: none"><br></li>
+					<li>Wrote all the underlying code</li>
+					<li style="list-style: none"><br></li>
+					<li>Data is outputted to a CSV file for the research team to use</li>
+					<li style="list-style: none"><br></li>
+					<li>Created with Unity, Oculus, C#, Photoshop, Maya, and Excel</li>
+					<li style="list-style: none"><br></li>
+					<li>To view the project, <a class="link3" href="portfolio.html" target="_self">click here</a></li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Spring 2019</span><br>
+				<span class="resumeStatsTitle">VR | The Virtual Archive</span><br>
+				<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span><br>
+				<ul class="resumeStatsList">
+					<li>Developed a fully immersive virtual museum of my past works</li>
+					<li style="list-style: none"><br></li>
+					<li>Designed a VR environment for people to walk around in</li>
+					<li style="list-style: none"><br></li>
+					<li>Made with Unity, Oculus, C#, Photoshop, Maya</li>
+					<li style="list-style: none"><br></li>
+					<li>Created as a final project for Clarkson University's Digital Arts and Sciences Program, Senior Studies class</li>
+					<li style="list-style: none"><br></li>
+					<li>To view the project, <a class="link3" href="portfolio.html" target="_self">click here</a></li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Spring 2019</span>
+				<br>
+				<span class="resumeStatsTitle">VR | Ice Hockey</span><br>
+				<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span><br>
+				<ul class="resumeStatsList">
+					<li>Developed playable hockey in virtual reality</li>
+					<li style="list-style: none"><br></li>
+					<li>Made with Unity, Oculus, C#, Photoshop, Maya</li>
+					<li style="list-style: none"><br></li>
+					<li>Created as a final project for Clarkson University's Mixed Reality class</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Fall 2018</span>
+				<br>
+				<span class="resumeStatsTitle">Animation | Konbini</span><br>
+				<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Developed a 3D animation in a cyberpunk sci-fi setting</li>
+					<li style="list-style: none"><br></li>
+					<li>Made with Maya and Photoshop, rendered with Arnold, video edited with After Effects and Premiere</li>
+					<li style="list-style: none"><br></li>
+					<li>To view the project, <a class="link3" href="portfolio.html" target="_self">click here</a></li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Spring 2018</span>
+				<br>
+				<span class="resumeStatsTitle">VR | An Observation Surrounding Southern Monuments</span><br>
+				<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Collaborative research project using VR to explore the current issues of Southern Monuments</li>
+					<li style="list-style: none"><br></li>
+					<li>Created with Unity, Oculus, C#, Photoshop, Maya, and Google Earth</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Spring 2018</span>
+				<br>
+				<span class="resumeStatsTitle">Video Game Narrative | Seekers of the Bygone</span><br>
+				<span class="resumeStatsPlace" style="color: #00b900;">Clarkson University</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Designed and developed an interactive story game in Unity, C#, Maya, Photoshop, and Fungus</li>
+					<li style="list-style: none"><br></li>
+					<li>Brenda Romero commented "Wow!", when first shown it</li>
+					<li style="list-style: none"><br></li>
+					<li>To view the project, <a class="link3" href="portfolio.html" target="_self">click here</a></li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Spring 2017 &mdash; Spring 2019</span>
+				<br>
+				<span class="resumeStatsTitle">Founder &amp; Head of the Game Creation Committee</span><br>
+				<span class="resumeStatsPlace" style="color: #a19405;">Clarkson University Gamers Initiative</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Developed multiple prototypes in Unity</li>
+					<li style="list-style: none"><br></li>
+					<li>Decided as a team the game’s theme and setting, and discussed relevant gameplay mechanics</li>
+					<li style="list-style: none"><br></li>
+					<li>Delegated roles and deadlines to team members based on their strengths</li>
+					<li style="list-style: none"><br></li>
+					<li>Converted hand drawn sketches by the team’s artists into 3D Models using Maya</li>
+					<li style="list-style: none"><br></li>
+					<li>Taught the basics of Unity and game design to new members</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Summer 2015</span>
+				<br>
+				<span class="resumeStatsTitle">The Adventure Game</span><br>
+				<span class="resumeStatsPlace">Personal Project</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Developed a text-based adventure game in MATLAB and GIMP</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<hr class="rounded" style="width: 100%;">
 
-			<!-- __________________________________________________________________________ -->
+				<!-- __________________________________________________________________________ -->
 
-			<br id="photography">
-			<u class="resumeStatsHeader">Photography Experience:</u>
-			<br><br>
-			<span class="resumeStatsDate">Fall 2019 &mdash; 2021</span>
-			<br>
-			<span class="resumeStatsTitle">PHF &mdash; The Premier Hockey Federation, <br>(formally the NWHL &mdash; National Women's Hockey League)</span><br>
-			<span class="resumeStatsPlace">Official Photographer</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Photos used on PHF / NWHL’s website and social media</li>
-				<li style="list-style: none"><br></li>
-				<li>Took the Connecticut Whale's team photo (19-20) and headshots (20-21)</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Winter 2018 &mdash; Winter 2019</span>
-			<br>
-			<span class="resumeStatsTitle">Broken Bat Media</span><br>
-			<span class="resumeStatsPlace">Photographer | Contributor</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Officially photographed:</li>
-				<li style="list-style: none">
-					<br>
-					<ul style="list-style-type:circle;line-height: 1;font-size:17px;;">
-						<li>Hudson Valley Renegades (MiLB)</li>
-						<li style="list-style: none"><br></li>
-						<li>Staten Island Yankees (MiLB)</li>
-						<li style="list-style: none"><br></li>
-						<li>West Virginia Black Bears (MiLB)</li>
-						<li style="list-style: none"><br></li>
-						<li>Albany Empire (AFL)</li>
-						<li style="list-style: none"><br></li>
-						<li>Philadelphia Soul (AFL)</li>
-						<li style="list-style: none"><br></li>
-						<li>Belfast Giants (EIHL)</li>
-						<li style="list-style: none"><br></li>
-						<li>Sheffield Steelers (EIHL)</li>
-						<li style="list-style: none"><br></li>
-					</ul>
-				</li>
-				<li style="list-style: none"><br></li>
-				<li>Photos used on website and social media</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Fall 2017 &mdash; Winter 2020</span>
-			<br>
-			<span class="resumeStatsTitle" style="color: #00b900;">Clarkson University Athletics Department</span><br>
-			<span class="resumeStatsPlace">Student Photographer</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Officially photographed Clarkson Athletic Teams (NCAA D1, D3) including:</li>
-				<li style="list-style: none">
-					<br>
-					<ul style="list-style-type:circle;line-height: 1;font-size:17px;">
-						<li>Men's | Women’s Hockey</li>
-						<li style="list-style: none"><br></li>
-						<li>Baseball</li>
-						<li style="list-style: none"><br></li>
-						<li>Softball</li>
-						<li style="list-style: none"><br></li>
-						<li>Men's | Women’s Soccer</li>
-						<li style="list-style: none"><br></li>
-						<li>Men's | Women’s Basketball</li>
-						<li style="list-style: none"><br></li>
-						<li>Volleyball</li>
-						<li style="list-style: none"><br></li>
-						<li>Men's | Women’s Lacrosse</li>
-						<li style="list-style: none"><br></li>
-						<li>Golf</li>
-						<li style="list-style: none"><br></li>
-						<li>Men's | Women’s Cross Country</li>
-						<li style="list-style: none"><br></li>
-						<li>Men's | Women’s Swimming and Diving</li>
-						<li style="list-style: none"><br></li>
-					</ul>
-				</li>
-				<li style="list-style: none"><br></li>
-				<li>Officially photographed the 2018 and 2019 NCAA D1 Women’s Hockey Frozen Four Tournament (Minnesota, Connecticut)</li>
-				<li style="list-style: none"><br></li>
-				<li>Officially photographed the first NCAA Women's Hockey games played outside of North America (Belfast, N. Ireland, 2019)</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Fall 2018</span>
-			<br>
-			<span class="resumeStatsTitle" style="color: #00b900;">Clarkson University Communications Department</span><br>
-			<span class="resumeStatsPlace">Teaching Assistant</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>TA for “Digital Photography” class</li>
-				<li style="list-style: none"><br></li>
-				<li>Provided students with photography and editing fundamentals</li>
-				<li style="list-style: none"><br></li>
-				<li>Helped prepare class demonstrations, such as lighting and portrait set ups</li>
-				<li style="list-style: none"><br></li>
-				<li>Assisted students with printing help (photo prints)</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Spring 2017 &mdash; 2019</span>
-			<br>
-			<span class="resumeStatsTitle" style="color: #00b900;">Clarkson University Marketing and External Relations</span><br>
-			<span class="resumeStatsPlace">Student Photographer</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Officially photographed:</li>
-				<li style="list-style: none">
-					<br>
-					<ul style="list-style-type:circle;line-height: 1;font-size:17px;">
-						<li>Alumni events</li>
-						<li style="list-style: none"><br></li>
-						<li>TEDx talks</li>
-						<li style="list-style: none"><br></li>
-						<li>A US Presidential Candidate</li>
-						<li style="list-style: none"><br></li>
-						<li>Clarkson graduation and commencement</li>
-						<li style="list-style: none"><br></li>
-						<li>The Clarkson School graduation</li>
-						<li style="list-style: none"><br></li>
-						<li>Speakers</li>
-						<li style="list-style: none"><br></li>
-						<li>Workshops</li>
-						<li style="list-style: none"><br></li>
-						<li>Fashion shows</li>
-						<li style="list-style: none"><br></li>
-						<li>Award and scholarship winners</li>
-						<li style="list-style: none"><br></li>
-					</ul>
-				</li>
-				<li style="list-style: none"><br></li>
-				<li>Photos used for promotional purposes, website and social media, record keeping, postcards</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">May 2018, 2019</span>
-			<br>
-			<span class="resumeStatsTitle">Millbrook Literary Festival</span><br>
-			<span class="resumeStatsPlace">Official Photographer</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Photographed world-famous authors and writers, and the general festivities of the event</li>
-				<li style="list-style: none"><br></li>
-				<li>Photos used on website and social media</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Fall 2014 &mdash; Spring 2019</span>
-			<br>
-			<span class="resumeStatsTitle" style="color: #c9b801;">Clarkson Club Baseball</span><br>
-			<span class="resumeStatsPlace">Historian | Team Photographer | Webmaster | Player</span>
-			<br><br>
-			<span class="resumeStatsDate">Fall 2017 &mdash; Spring 2019</span>
-			<br>
-			<span class="resumeStatsTitle" style="color: #c9b801;">Clarkson Men's | Women's Club Hockey</span><br>
-			<span class="resumeStatsPlace">Team Photographer</span>
-			<br><br>
-			<span class="resumeStatsDate">Fall 2016 &mdash; Spring 2019</span>
-			<br>
-			<span class="resumeStatsTitle" style="color: #c9b801;">Clarkson University Photo Club</span><br>
-			<span class="resumeStatsPlace">Secretary</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Planned out meeting agendas and organized meeting times</li>
-				<li style="list-style: none"><br></li>
-				<li>Presented photography fundamentals and techniques to club members</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<hr class="rounded" style="width: 100%;">
+				<br id="photography">
+				<u class="resumeStatsHeader">Photography Experience:</u>
+				<br><br>
+				<span class="resumeStatsDate">2018 &mdash; </span>
+				<br>
+				<span class="resumeStatsTitle">Freelance Photographer</span><br>
+				<span class="resumeStatsPlace"></span>
+				<br>
+				<!--<ul class="resumeStatsList">
+					<li style="list-style: none"><br></li>
+				</ul>-->
+				<br>
+				<span class="resumeStatsDate">Fall 2019 &mdash; 2021</span>
+				<br>
+				<span class="resumeStatsTitle">PHF &mdash; The Premier Hockey Federation, <br>(formally the NWHL &mdash; National Women's Hockey League)</span><br>
+				<span class="resumeStatsPlace">Official Photographer</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Photos used on PHF / NWHL’s website and social media</li>
+					<li style="list-style: none"><br></li>
+					<li>Took the Connecticut Whale's team photo (19-20) and headshots (20-21)</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Winter 2018 &mdash; Winter 2019</span>
+				<br>
+				<span class="resumeStatsTitle">Broken Bat Media</span><br>
+				<span class="resumeStatsPlace">Photographer | Contributor</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Officially photographed:</li>
+					<li style="list-style: none">
+						<br>
+						<ul style="list-style-type:circle;line-height: 1;font-size:17px;;">
+							<li>Hudson Valley Renegades (MiLB)</li>
+							<li style="list-style: none"><br></li>
+							<li>Staten Island Yankees (MiLB)</li>
+							<li style="list-style: none"><br></li>
+							<li>West Virginia Black Bears (MiLB)</li>
+							<li style="list-style: none"><br></li>
+							<li>Albany Empire (AFL)</li>
+							<li style="list-style: none"><br></li>
+							<li>Philadelphia Soul (AFL)</li>
+							<li style="list-style: none"><br></li>
+							<li>Belfast Giants (EIHL)</li>
+							<li style="list-style: none"><br></li>
+							<li>Sheffield Steelers (EIHL)</li>
+							<li style="list-style: none"><br></li>
+						</ul>
+					</li>
+					<li style="list-style: none"><br></li>
+					<li>Photos used on website and social media</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Fall 2017 &mdash; Winter 2020</span>
+				<br>
+				<span class="resumeStatsTitle" style="color: #00b900;">Clarkson University Athletics Department</span><br>
+				<span class="resumeStatsPlace">Student Photographer</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Officially photographed Clarkson Athletic Teams (NCAA D1, D3) including:</li>
+					<li style="list-style: none">
+						<br>
+						<ul style="list-style-type:circle;line-height: 1;font-size:17px;">
+							<li>Men's | Women’s Hockey</li>
+							<li style="list-style: none"><br></li>
+							<li>Baseball</li>
+							<li style="list-style: none"><br></li>
+							<li>Softball</li>
+							<li style="list-style: none"><br></li>
+							<li>Men's | Women’s Soccer</li>
+							<li style="list-style: none"><br></li>
+							<li>Men's | Women’s Basketball</li>
+							<li style="list-style: none"><br></li>
+							<li>Volleyball</li>
+							<li style="list-style: none"><br></li>
+							<li>Men's | Women’s Lacrosse</li>
+							<li style="list-style: none"><br></li>
+							<li>Golf</li>
+							<li style="list-style: none"><br></li>
+							<li>Men's | Women’s Cross Country</li>
+							<li style="list-style: none"><br></li>
+							<li>Men's | Women’s Swimming and Diving</li>
+							<li style="list-style: none"><br></li>
+						</ul>
+					</li>
+					<li style="list-style: none"><br></li>
+					<li>Officially photographed the 2018 and 2019 NCAA D1 Women’s Hockey Frozen Four Tournament (Minnesota, Connecticut)</li>
+					<li style="list-style: none"><br></li>
+					<li>Officially photographed the first NCAA Women's Hockey games played outside of North America (Belfast, N. Ireland, 2019)</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Fall 2018</span>
+				<br>
+				<span class="resumeStatsTitle" style="color: #00b900;">Clarkson University Communications Department</span><br>
+				<span class="resumeStatsPlace">Teaching Assistant</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>TA for “Digital Photography” class</li>
+					<li style="list-style: none"><br></li>
+					<li>Provided students with photography and editing fundamentals</li>
+					<li style="list-style: none"><br></li>
+					<li>Helped prepare class demonstrations, such as lighting and portrait set ups</li>
+					<li style="list-style: none"><br></li>
+					<li>Assisted students with printing help (photo prints)</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Spring 2017 &mdash; 2019</span>
+				<br>
+				<span class="resumeStatsTitle" style="color: #00b900;">Clarkson University Marketing and External Relations</span><br>
+				<span class="resumeStatsPlace">Student Photographer</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Officially photographed:</li>
+					<li style="list-style: none">
+						<br>
+						<ul style="list-style-type:circle;line-height: 1;font-size:17px;">
+							<li>Alumni events</li>
+							<li style="list-style: none"><br></li>
+							<li>TEDx talks</li>
+							<li style="list-style: none"><br></li>
+							<li>A US Presidential Candidate</li>
+							<li style="list-style: none"><br></li>
+							<li>Clarkson graduation and commencement</li>
+							<li style="list-style: none"><br></li>
+							<li>The Clarkson School graduation</li>
+							<li style="list-style: none"><br></li>
+							<li>Speakers</li>
+							<li style="list-style: none"><br></li>
+							<li>Workshops</li>
+							<li style="list-style: none"><br></li>
+							<li>Fashion shows</li>
+							<li style="list-style: none"><br></li>
+							<li>Award and scholarship winners</li>
+							<li style="list-style: none"><br></li>
+						</ul>
+					</li>
+					<li style="list-style: none"><br></li>
+					<li>Photos used for promotional purposes, website and social media, record keeping, postcards</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">May 2018, 2019</span>
+				<br>
+				<span class="resumeStatsTitle">Millbrook Literary Festival</span><br>
+				<span class="resumeStatsPlace">Official Photographer</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Photographed world-famous authors and writers, and the general festivities of the event</li>
+					<li style="list-style: none"><br></li>
+					<li>Photos used on website and social media</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Fall 2014 &mdash; Spring 2019</span>
+				<br>
+				<span class="resumeStatsTitle" style="color: #c9b801;">Clarkson Club Baseball</span><br>
+				<span class="resumeStatsPlace">Historian | Team Photographer | Webmaster | Player</span>
+				<br><br>
+				<span class="resumeStatsDate">Fall 2017 &mdash; Spring 2019</span>
+				<br>
+				<span class="resumeStatsTitle" style="color: #c9b801;">Clarkson Men's | Women's Club Hockey</span><br>
+				<span class="resumeStatsPlace">Team Photographer</span>
+				<br><br>
+				<span class="resumeStatsDate">Fall 2016 &mdash; Spring 2019</span>
+				<br>
+				<span class="resumeStatsTitle" style="color: #c9b801;">Clarkson University Photo Club</span><br>
+				<span class="resumeStatsPlace">Secretary</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Planned out meeting agendas and organized meeting times</li>
+					<li style="list-style: none"><br></li>
+					<li>Presented photography fundamentals and techniques to club members</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<hr class="rounded" style="width: 100%;">
 
-			<!-- __________________________________________________________________________ -->
+				<!-- __________________________________________________________________________ -->
+				<!-- __________________________________________________________________________ -->
 
+				<br id="additional">
+				<span class="resumeStatsHeader">Additional Experience &amp; Leadership:</span>
+				<br><br>
 
-
-			<!-- __________________________________________________________________________ -->
-
-			<br id="additional">
-			<span class="resumeStatsHeader">Additional Experience &amp; Leadership:</span>
-			<br><br>
-
-			<span class="resumeStatsDate">Fall 2015 – Fall 2018</span>
-			<br>
-			<span class="resumeStatsTitle" style="color: #c9b801;">Clarkson University Gamers Initiative</span><br>
-			<span class="resumeStatsPlace">Treasurer</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Designed club / event logos and created promotional videos</li>
-				<li style="list-style: none"><br></li>
-				<li>Organized and maintained social media accounts – increased membership across platforms</li>
-				<li style="list-style: none"><br></li>
-				<li>Managed the yearly budget of $1250 and provided detailed expense reports</li>
-				<li style="list-style: none"><br></li>
-				<li>Planned and organized events including gaming / LAN events with over 100 attendees</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<span class="resumeStatsDate">Fall 2017 – Spring 2018</span>
-			<br>
-			<span class="resumeStatsTitle" style="color: #c9b801;">Clarkson University Anime Club</span><br>
-			<span class="resumeStatsPlace">Secretary</span>
-			<br>
-			<ul class="resumeStatsList">
-				<li>Provided members with a weekly schedule and updates on events</li>
-				<li style="list-style: none"><br></li>
-				<li>Increased engagement with "a Japanese-word-of-the-week" and relavent gifs</li>
-				<li style="list-style: none"><br></li>
-			</ul>
-			<br>
-			<span class="resumeStatsDate">Spring 2014</span>
-			<br>
-			<span class="resumeStatsTitle">Sloan Architects</span>, Millbrook, NY<br>
-			<span class="resumeStatsPlace">Internship</span>
-			<br><br>
-			<span class="resumeStatsDate">2010 &mdash; 2015</span>
-			<br>
-			<span class="resumeStatsTitle">Merritt Bookstore</span>, Millbrook, NY<br>
-			<span class="resumeStatsPlace">IT | Cashier | Receiving/Returns | Off-Site Events</span>
-			<br><br>
-			<hr class="rounded" style="width: 100%;">
+				<span class="resumeStatsDate">Fall 2015 – Fall 2018</span>
+				<br>
+				<span class="resumeStatsTitle" style="color: #c9b801;">Clarkson University Gamers Initiative</span><br>
+				<span class="resumeStatsPlace">Treasurer</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Designed club / event logos and created promotional videos</li>
+					<li style="list-style: none"><br></li>
+					<li>Organized and maintained social media accounts – increased membership across platforms</li>
+					<li style="list-style: none"><br></li>
+					<li>Managed the yearly budget of $1250 and provided detailed expense reports</li>
+					<li style="list-style: none"><br></li>
+					<li>Planned and organized events including gaming / LAN events with over 100 attendees</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<span class="resumeStatsDate">Fall 2017 – Spring 2018</span>
+				<br>
+				<span class="resumeStatsTitle" style="color: #c9b801;">Clarkson University Anime Club</span><br>
+				<span class="resumeStatsPlace">Secretary</span>
+				<br>
+				<ul class="resumeStatsList">
+					<li>Provided members with a weekly schedule and updates on events</li>
+					<li style="list-style: none"><br></li>
+					<li>Increased engagement with "a Japanese-word-of-the-week" and relavent gifs</li>
+					<li style="list-style: none"><br></li>
+				</ul>
+				<br>
+				<span class="resumeStatsDate">Spring 2014</span>
+				<br>
+				<span class="resumeStatsTitle">Sloan Architects</span>, Millbrook, NY<br>
+				<span class="resumeStatsPlace">Internship</span>
+				<br><br>
+				<span class="resumeStatsDate">2010 &mdash; 2015</span>
+				<br>
+				<span class="resumeStatsTitle">Merritt Bookstore</span>, Millbrook, NY<br>
+				<span class="resumeStatsPlace">IT | Cashier | Receiving/Returns | Off-Site Events</span>
+				<br><br>
 		</div>
 	</div>
 
 	<!-- __________________________________________________________________________ -->
 
-	<br>
-	<div class="buttonAbout">
-		<a href="index.html" class="aButton">
-			<input type="button" class="pageButtonColor" value="&nbsp;Home&nbsp;" title="Home">
-		</a>
-	</div>
 	<br>
 
 	<div id="footer-main"></div>
@@ -832,8 +843,9 @@
 	<!-- __________________________________________________________________________ -->
 
 	<script src="scrollToTop.js"></script>
+	<script src="hideText.js"></script>
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
 </body>
 </html>
