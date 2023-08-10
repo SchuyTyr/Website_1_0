@@ -2726,6 +2726,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	#photoTextCapt {
 		width: 50%;
 	}
+	.menuIcon {
+		width: 53px;
+	}
 }
 
 @media screen and (max-width: 1350px) {
