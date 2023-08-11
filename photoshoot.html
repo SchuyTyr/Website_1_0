@@ -4,7 +4,7 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMYCWX2SRC"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'G-YMYCWX2SRC');
 	</script>
@@ -22,39 +22,18 @@
 	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&family=VT323&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
 	<!-- End Fonts -->
+	<script src="src/js/header-main.js" type="text/javascript" defer></script>
 	<script src="src/js/footer-photo.js" type="text/javascript" defer></script>
 	<title>Schuyler Meyer Photography</title>
 </head>
 <body style="height: auto;">
 
+	<header id="header-main"></header>
+
 	<button id="myBtn" onclick="topFunction()" title="Go to the top"></button>
 
-	<h1 class="headerTxt" title="Schuyler Meyer">
-		<div class="headerBorder">
-			<a href="index.html">
-				<!--<img alt="Schuyler Meyer" class="imgLogo" src="src/img/SMSignLogo2021.png">-->
-				<span>Schuyler Meyer</span>
-			</a>
-		</div>
-	</h1>
 	<hr class="rounded">
 	<!-- __________________________________________________________________________ -->
-
-	<div class="buttonAbout">
-		<a href="index.html" class="aButton">
-			<!-- pageButtonColor is in stylesSM2, which breacks this page -->
-			<button class="pageButtonColor" title="Home">
-				<div>&nbsp;Home&nbsp;</div>
-			</button>
-		</a>
-		<a href="photo.html" class="aButton">
-			<button class="pageButtonColor" title="Photography">
-				<div>&nbsp;Photos&nbsp;</div>
-			</button>
-		</a>
-	</div>
-
-	<hr class="rounded">
 
 	<h2 class="descrTitleIT" style="text-align:center;">
 		<u>Socially Distance Photoshoots</u>
@@ -62,13 +41,20 @@
 
 	<div class="descrITClick" onclick="moveToContent()">Click here (or scroll) for information.</div>
 
-<!--
-	<div class="imgPSContainer">
-		<img alt="" class="imgPhotoshoot" src="Fashion_1.jpg">
-		<img alt="" class="imgPhotoshoot" src="Hockey_1.jpg">
-		<img alt="" class="imgPhotoshoot" src="Fashion_2.jpg">
-	</div>
--->
+	<!--
+		<div class="imgPSContainer">
+			<img alt="" class="imgPhotoshoot" src="Fashion_1.jpg">
+			<img alt="" class="imgPhotoshoot" src="Hockey_1.jpg">
+			<img alt="" class="imgPhotoshoot" src="Fashion_2.jpg">
+		</div>
+	-->
+	<!--<div style="text-align: center; margin-left: auto; margin-right: auto;">
+		<a href="photo.html" class="aButton">
+			<button class="pageButtonColor" title="Photography">
+				<div>&nbsp;Photos&nbsp;</div>
+			</button>
+		</a>
+	</div>-->
 
 	<div class="PSphotos">
 		<div class="PSphotosInner">
@@ -99,100 +85,85 @@
 		<a class="link3" href="photo.html">click here</a>.
 	</div>
 
-	 <div id="textHere" class="descrTitleIT"><u>Photoshoots Available</u>&nbsp;&mdash;</div>
-	 <div class="descrIT">
-		 <ul>
-			 <li>
-				 Sports (all levels), Holiday, Family, Senior Portraits, Professional Headshots, Cosplay, Pets, and More!
-			 </li>
-				 <ul>
-					 <li>
-						 I can also design your holiday card for an additional cost.
-					 </li>
-				 </ul>
-			 <li>
-				 Based out of Millbrook, NY, I am available throughout the Hudson Valley, Western Connecticut, and Western Massachusetts.
-			 </li>
-			 <li>
-				 You will receive fully edited digital photographs to use for social media, profile pictures, yearbooks, and more!
-			 </li>
-			 <li>
-				 Prints available for an additional cost.
-			 </li>
-		   <li>
-			   Solo, group, and family shoots are available.
-		   </li>
-		   <li>
-			   Photoshoots are split into one hour time slots (sports are per game or practice).
-		   </li>
-	   </ul>
-	 </div>
+	<div id="textHere" class="descrTitleIT"><u>Photoshoots Available</u>&nbsp;&mdash;</div>
+	<div class="descrIT">
+		<ul>
+			<li>
+				Sports (all levels), Holiday, Family, Senior Portraits, Professional Headshots, Cosplay, Pets, and More!
+			</li>
+			<ul>
+				<li>
+					I can also design your holiday card for an additional cost.
+				</li>
+			</ul>
+			<li>
+				Based out of Millbrook, NY, I am available throughout the Hudson Valley, Western Connecticut, and Western Massachusetts.
+			</li>
+			<li>
+				You will receive fully edited digital photographs to use for social media, profile pictures, yearbooks, and more!
+			</li>
+			<li>
+				Prints available for an additional cost.
+			</li>
+			<li>
+				Solo, group, and family shoots are available.
+			</li>
+			<li>
+				Photoshoots are split into one hour time slots (sports are per game or practice).
+			</li>
+		</ul>
+	</div>
 
-	 	 <br>
-		 <hr class="rounded" style="width:40%;">
-		 <br>
+	<br>
+	<hr class="rounded" style="width:40%;">
+	<br>
 
-		 <div class="descrIT">
-			 <ul>
-				 <li>
-					 I can travel further to get to that perfect location*.
-				 </li>
-				 <li>
-					 I am happy to work with you to get that image you are looking for**.
-				 </li>
-			 </ul>
-			</div>
+	<div class="descrIT">
+		<ul>
+			<li>
+				I can travel further to get to that perfect location*.
+			</li>
+			<li>
+				I am happy to work with you to get that image you are looking for**.
+			</li>
+		</ul>
+	</div>
 
-	 <div class="descrTitleIT"><u>Book Today</u>&nbsp;&mdash;</div>
-	 	<div class="descrIT">
-			 <ul>
-				 <li>
-					 To schedule, or if you have any questions, please message me on any of the social medias or email me at
-					 <a class="link3" href="mailto:schuybreach@gmail.com?subject=Schuyler%20Meyer%20Photoshoot%20Request">schuybreach@gmail.com</a>.
-				 </li>
-				 <li>
-	 			 		Please include "<i>Schuyler Meyer Photoshoot Request</i>" or something similar in the subject line or within the message.
-				 </li>
-	 	 </div>
+	<div class="descrTitleIT"><u>Book Today</u>&nbsp;&mdash;</div>
+	<div class="descrIT">
+		<ul>
+			<li>
+				To schedule, or if you have any questions, please message me on any of the social medias or email me at
+				<a class="link3" href="mailto:schuybreach@gmail.com?subject=Schuyler%20Meyer%20Photoshoot%20Request">schuybreach@gmail.com</a>.
+			</li>
+			<li>
+				Please include "<i>Schuyler Meyer Photoshoot Request</i>" or something similar in the subject line or within the message.
+			</li>
+	</div>
 
-	 <div class="descrTitleIT"><u>Costs</u>&nbsp;&mdash;</div>
-		 <div class="descrIT">
-			 <ul>
-				 <li>
-					 Base cost: $100 for a 1 hour shoot (or per game for sports).
-				 </li>
-				 <li>
-					 *If travel time from Millbrook, NY to the location is longer than one and a half (1.5) hours,
-					 additional travel costs may be added to the base price.
-				 </li>
-				 <li>
-					 **If rental equipment is needed and used, an additional fee may be added to the base price to cover the rental costs.
-				 </li>
-				 <li>
-					 <b><u>All</u></b> costs will be discussed prior to the shoot.
-				 </li>
-			 </ul>
-		 </div>
+	<div class="descrTitleIT"><u>Costs</u>&nbsp;&mdash;</div>
+	<div class="descrIT">
+		<ul>
+			<li>
+				Base cost: $100 for a 1 hour shoot (or per game for sports).
+			</li>
+			<li>
+				*If travel time from Millbrook, NY to the location is longer than one and a half (1.5) hours,
+				additional travel costs may be added to the base price.
+			</li>
+			<li>
+				**If rental equipment is needed and used, an additional fee may be added to the base price to cover the rental costs.
+			</li>
+			<li>
+				<b><u>All</u></b> costs will be discussed prior to the shoot.
+			</li>
+		</ul>
+	</div>
 
 	<!-- __________________________________________________________________________ -->
 	<br>
 	<br>
 	<br>
-
-	<hr class="rounded">
-
-	<div class="buttonAbout">
-		<a href="index.html" class="aButton">
-			<button class="pageButtonColor" title="Home">
-				<div>&nbsp;Home&nbsp;</div>
-			</button>
-		</a>
-		<a href="photo.html" class="aButton">
-			<button class="pageButtonColor" title="Photography">
-				<div>&nbsp;Photos&nbsp;</div>
-			</button>
-		</a>
-	</div>
 
 	<div id="PhotoFooter"></div>
 
