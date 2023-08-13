@@ -101,7 +101,7 @@ img {
 	height: auto;
 }
 
-.img-hover-zoom {
+/*.img-hover-zoom {
 	height: auto;
 	overflow: hidden;
 	transition: transform 0.4s cubic-bezier(.31,.01,.51,.99);
@@ -128,22 +128,22 @@ img {
 .glowBorder:hover img {
 	color: #436ff3;
 	border: 10px #436ff3;
-	border-radius: 8px;
+	border-radius: 8px;*/
 	/*border-radius: 2% 18%;*/
-	box-shadow: /*0 0 4px 4px #436ff3,*/
-	0 0 1px 4px #000000, /*1e1f20*/
-	0 0 25px 15px #436ff3;
+	/*box-shadow:*/ /*0 0 4px 4px #436ff3,*/
+	/*0 0 1px 4px #000000,*/ /*1e1f20*/
+	/*0 0 25px 15px #436ff3;*/
 	/*animation: imgFrame 0.5s Ease-in-out;*/
-	animation: imgFrame 0.8s Ease-in-out, colorChange 2s Ease-in-out infinite;
+	/*animation: imgFrame 0.8s Ease-in-out, colorChange 2s Ease-in-out infinite;*/
 	/*transform: translate(0,-10px);*/
-}
+/*}
 
 .glowBorder:hover span {
 	border-bottom: 1px solid #8b8e91;
-	border-top: 1px solid #8b8e91;
+	border-top: 1px solid #8b8e91;*/
 	/*border-right: 1px solid #8b8e91;
 	border-left: 1px solid #8b8e91;*/
-	border-radius: 50px;
+	/*border-radius: 50px;
 	
 	background-color: rgba(67,111,243,10%);
 	animation: txtFrame 0.8s Ease-in-out;
@@ -151,12 +151,12 @@ img {
 }
 
 .img2 {
-	max-width: 100%;
+	max-width: 100%;*/
 	/*border-radius: 50% / 12%;*/
 	/*border-radius: 2% 18%;*/
-	border-radius: 24% 24%;
+	/*border-radius: 24% 24%;*/
 	/*border-radius: 50%;*/
-	display: block;
+	/*display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 600px;
@@ -166,9 +166,9 @@ img {
 }
 
 @keyframes imgFrame {
-	0% {
+	0% {*/
 		/*border-radius: 50%;*/
-		border-radius: 24% 24%;
+		/*border-radius: 24% 24%;
 	}
 	100% {
 		border-radius: 8px;
@@ -182,7 +182,7 @@ img {
 	100% {
 		border-radius: 50px;
 	}
-}
+}*/
 
 .textCaption {
 	/*color: #d3dce6;*/
@@ -312,15 +312,15 @@ a.link3:hover {
 	color: #436ff3;
 }
 
-a.link4 {
-	color: #262a30;
+/*a.link4 {
+	color: #262a30;*/
 	/*width: 100%;
 	height: auto;*/
-	background-color: transparent;
+	/*background-color: transparent;
 	text-decoration: none;
 	display: inline;
 	text-align: center;
-}
+}*/
 
 /*.socialHover:hover {
 	filter: drop-shadow(0 0 2px #ffffff) brightness(1.25);
@@ -330,50 +330,6 @@ a.link4 {
 .twitterX:hover {
 	content: url("src/icons/Twitter_X.png");
 }*/
-
-.container {
-	position: relative;
-	display: inline-block;
-	vertical-align: top;
-	margin-left: auto;
-	margin-right: auto;
-	width: 27%;
-	margin: 5px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	text-align: center;
-
-	border-top: 2px solid rgba(0, 0, 0, 0);
-	/*animation: fadeLine 5s ease-in-out;*/
-	/*transition: fadeLine 5s ease-in-out;*/
-}
-
-@keyframes fadeLine {
-	0% {
-		border-top: 2px solid rgba(0, 0, 0, 0);
-    /*opacity: 0;*/
-  } 100% {
-    /*opacity: 1;*/
-		border-top: 2px solid #8b8e91;
-  }
-}
-
-.overlay {
-	position: relative;
-	margin-left: -50vw;
-	margin-right: -50vw;
-	height: auto;
-	color: #8b8e91;
-	transition: color .75s ease;
-	background-color: #008CBA;
-}
-.container:hover .overlay {
-	opacity: 1;
-	color: #d3dce6;
-	/*text-transform: uppercase;*/
-	font-weight: bold;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 .topDesc {
 	text-align: center;
@@ -644,8 +600,6 @@ a.link4 {
 }
 
 hr {
-	-webkit-width: 90%;
-	-ms-width: 90%;
 	width: 90%;
 }
 
@@ -655,12 +609,6 @@ hr.rounded {
 	box-shadow: 0 0 1px #ffffff,
 							0 0 10px #969696,
 							0 0 15px #ffffff;
-	/*-webkit-filter: drop-shadow(0 0 1px #ffffff)
-					drop-shadow(0 0 4px #99bbff);
-	-ms-filter: drop-shadow(0 0 1px #ffffff)
-					drop-shadow(0 0 4px #99bbff);
-	filter: drop-shadow(0 0 1px #ffffff)
-					drop-shadow(0 0 4px #99bbff);*/
 }
 
 hr.roundedTwo {
@@ -799,9 +747,6 @@ hr.roundedTwo {
 	.textCaption span {
 		font-size: 22px;
 	}
-	.captionContainer span {
-		font-size: 22px;
-	}
 	.imgPSContainer {
 		text-align: center;
 		margin-left: 5%;
@@ -821,13 +766,6 @@ hr.roundedTwo {
 	.mainContainer {
 		margin-top: 20px;
 		/*margin-bottom: 20px;*/
-	}
-	.container {
-		width: 33%;
-		margin: auto;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		padding: 5px;
 	}
 	.imgPSContainerSlides {
 		margin-top: 20px;
@@ -866,9 +804,6 @@ hr.roundedTwo {
 		width: 25%;
 	}	
 	.textCaption span {
-		font-size: 18px;
-	}
-	.captionContainer span {
 		font-size: 18px;
 	}
 	.modal-content > div {
@@ -917,20 +852,10 @@ hr.roundedTwo {
 	}
 }
 @media screen and (max-width: 800px) {
-	.container {
-		width: 75%;
-		margin: auto;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		padding: 5px;
-	}
 	.textCaption {
 		width: 50%;
 	}
 	.textCaption span {
-		font-size: 22px;
-	}
-	.captionContainer span {
 		font-size: 22px;
 	}
 	.pageButton, .pageButtonSkew {
@@ -1008,13 +933,6 @@ hr.roundedTwo {
 	}
 }
 @media screen and (max-width: 600px) {
-	.container {
-		width: 94%;
-		margin: auto;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		padding: 5px;
-	}
 	.buttonAbout {
 		padding-top: 0px;
 		padding-bottom: 0px;

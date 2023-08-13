@@ -620,7 +620,7 @@ border-left: 1px solid #8b8e91;*/
 .video-container video {
 	min-width: 100%;
 	min-height: 100%;
-  position: absolute;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -1076,6 +1076,14 @@ polygon {
 .fadeOut { opacity: 0; }
 .fadeIn { opacity: 1; }
 
+hr.rounded {
+/*	margin-top: 0;
+	margin-bottom: 0;
+	border: 0;*/
+	border-top: 1px solid #000000;
+	border-radius: 5px;
+	box-shadow: 0 0 1px #ffffff, 0 0 10px #969696, 0 0 15px #ffffff;
+}
 .rounded3Back {
 	position: absolute;
 	/*top: 50%;
@@ -1518,8 +1526,213 @@ polygon {
 /*--------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------*/
-/*---------------------------About Page----------------------------*/
+/*---------------------------Portfolio Page----------------------------*/
 
+/*[id*='port'] {*/
+#port * {
+	-webkit-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.topDescPort {
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 300;
+	color: #a2a6a9;
+}
+
+.secDescPort {
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	color: #a2a6a9;
+}
+.tocPort {
+	text-align: center;
+	/*text-align: left;*/
+	/*color: #99a8b8;*/
+	color: #a2a6a9;
+	font-size: 22px;
+	line-height: 1.4;
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	/*margin-left: 10%;
+	margin-right: 10%;*/
+	display: flex;
+	justify-content: center;
+}
+
+.tocListPort {
+	line-height: 1.5;
+	list-style-type: square;
+	/*list-style-type: none;*/
+	font-style: normal;
+	display: table;
+	padding-inline-start: 0;
+}
+
+	.tocListPort li {
+		display: table-cell;
+		line-height: 2;
+		text-decoration: underline;
+	}
+
+		.tocListPort li:hover span {
+			text-decoration: underline;
+		}
+
+	.tocListPort a, .tocListPort a:visited {
+		/*color: #889cb3;*/
+		color: #a2a6a9;
+		text-decoration: none;
+	}
+
+		.tocListPort a:hover {
+			color: #0099ff;
+		}
+
+/* The Modal (background) */
+.modalPort {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1000; /* Sit on top */
+	padding-top: 25px; /* Location of the box */
+	padding-bottom: 25px;
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.95); /* Black w/ opacity */
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	/*overflow-y: scroll;*/
+}
+
+/* Modal Content (Image) */
+.modalPort-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#captionPort {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	/*height: 150px;*/
+}
+
+/* The Close Button */
+.closeBtnPort {
+	font-size: 34px;
+	font-weight: bold;
+	transition: 0.3s;
+	margin: 0 auto;
+	/*position: absolute;*/
+	width: 100px;
+	left: 42.5%;
+	height: auto;
+	line-height: 1em;
+	display: block;
+	/* ------------------- */
+
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+	cursor: pointer;
+	/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
+	transition: .3s all ease-in;
+	color: rgba(99, 138, 255, 0.9);
+	/*padding: 12px;*/
+	padding-left: 8px;
+	padding-right: 8px;
+	text-decoration: none;
+	border: solid 2px rgba(67,111,243,30%);
+	background-color: rgba(67,111,243,15%);
+	border-radius: 4%;
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+	.closeBtnPort span {
+		display: inline-block;
+		/*position: absolute;*/
+		padding: 0px;
+		vertical-align: text-top;
+		/*line-height: 24px;*/
+	}
+
+	.closeBtnPort:hover {
+		color: #ffa407;
+		border: solid 2px rgba(255,164,7,70%);
+		cursor: pointer;
+		/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
+		transition: .15s all ease-in;
+		border-radius: 50% / 15%;
+	}
+
+	.closeBtnPort:active {
+		color: #00bb17;
+		border: solid 2px rgba(0,187,23,70%);
+		cursor: pointer;
+		/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
+		transition: .15s all ease-in;
+		border-radius: 50% / 15%;
+	}
+
+#bodyTextPort {
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	margin: auto;
+	display: block;
+	background-color: rgba(0,0,0,0.5);
+	padding: 1px 30px 10px 30px;
+	border-radius: 12px;
+}
+
+#vcontainerPort {
+	position: relative;
+	margin: 10px auto;
+	text-align: center;
+	width: 80%;
+	max-width: 700px;
+	height: auto;
+}
+
+.videoPort {
+	width: 100%;
+	max-width: 700px;
+	height: 420px;
+}
+
+.topCloseButton {
+	display: none;
+}
+/*-------------------------End Portfolio Page--------------------------*/
+/*--------------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*---------------------------About Page----------------------------*/
 .imgLogoStyle {
 	width: 90%;
 	border-radius: 40% / 8%;
@@ -2690,6 +2903,25 @@ a.linkWS:hover, a.linkWS:hover span {
 	.socialProps img {
 		width: 24%;
 	}
+	.closeBtnPort {
+		/*width: 5%;*/
+		left: 47.5%;
+	}
+}
+@media screen and (max-width: 1999px) {
+	.closeBtnPort {
+		/*width: 5%;*/
+		left: 47.5%;
+	}
+}
+@media screen and (max-width: 1600px) {
+	.tocListPort li {
+		line-height: 1.25;
+	}
+	.closeBtnPort {
+		/*width: 10%;*/
+		left: 45%;
+	}
 }
 @media screen and (min-width: 1500px) {
 	.dateContainer {
@@ -2887,6 +3119,22 @@ a.linkWS:hover, a.linkWS:hover span {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+	.tocPort {
+		font-size: 18px;
+	}
+	.tocListPort {
+		display: grid;
+		justify-content: center;
+	}
+	.closeBtnPort {
+		/*width: 15%;*/
+		left: 42.5%;
+	}
+	.topDescPort, .secDescPort {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 @media screen and (max-width: 1130px) {
@@ -2938,6 +3186,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	.menuIcon {
 		width: 55px;
 	}
+	.topCloseButton {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -2978,6 +3229,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	.descrIT{
 		margin-left: 5%;
+	}
+	.modalPort-content {
+		width: 100%;
 	}
 }
 @media screen and (max-width: 830px) {
@@ -3204,6 +3458,22 @@ a.linkWS:hover, a.linkWS:hover span {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+	.xlarge-font {
+		font-size: 32px;
+	}
+	img.modalPort-content {
+		width: 90%;
+	}
+	#bodyTextPort {
+		width: 90%;
+	}
+	.closeBtnPort {
+		/*width: 20%;*/
+		left: 40%;
+	}
+	.videoPort {
+		height: 200px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -3403,6 +3673,12 @@ a.linkWS:hover, a.linkWS:hover span {
 		margin-right: auto;
 		padding: 8px;
 	}
+	.tocPort {
+		font-size: 16px;
+	}
+	.topDescPort {
+		font-size: 18px;
+	}
 }
 @media screen and (max-width: 400px) {
 	main {
@@ -3495,5 +3771,9 @@ a.linkWS:hover, a.linkWS:hover span {
 	}
 	.imgLogo {
 		width: 90%;
+	}
+	.closeBtnPort {
+		/*width: 90%;*/
+		left: 5%;
 	}
 }

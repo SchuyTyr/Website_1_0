@@ -7,11 +7,11 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMYCWX2SRC"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	  gtag('config', 'G-YMYCWX2SRC');
+		gtag('config', 'G-YMYCWX2SRC');
 	</script>
 
 	<title>SM &ndash; Portfolio</title>
@@ -20,8 +20,9 @@
 	<meta content="Photography,Digital Art,Game Design,Software,Code,SchuyTyr,Animation" name="keywords">
 	<meta content="Schuyler Meyer" name="author">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">-->
 	<link href="stylesPort.css" rel="stylesheet">
+	<link href="stylesSM2.css" rel="stylesheet">
 	<!--<link href="stylesSM2.css" rel="stylesheet"> - breaks the modals -->
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,409 +31,412 @@
 	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
 	<!-- End Fonts -->
 	<link href="src/icons/SMLogo2022.ico" rel="shortcut icon">
+	<script src="src/js/header-main.js" type="text/javascript" defer></script>
 	<script src="src/js/footer-main.js" type="text/javascript" defer></script>
 
 </head>
-<body>
+<body id="port">
+
+	<header id="header-main"></header>
+
 	<button id="myBtn" onclick="topFunction()" title="Go to the top"></button>
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
-	<div style="text-align:center;">
-		<div class="topLogos headerTxt">
-			<div class="headerBorder">
-				<a href="index.html" target="_self">
-					<span>Schuyler Meyer</span>
-				</a>
-			</div>
-		</div>
-		<br>
-	</div>
+	<hr class="rounded">
 
-		<hr class="rounded">
-		<div class="headerBack">
-		<br>
-
-		<div class="buttonAbout">
-			<a href="index.html" class="aButton">
-				<button class="pageButtonColor" title="To the homepage, away!">
-					<div class="pageButtonTxt">&nbsp;Home&nbsp;</div>
-				</button>
-			</a>
-		</div>
-
-		<br>
+	<br>
+	<div class="headerBack">
 
 		<div class="topTitles">
 			_&nbsp;&mdash;&nbsp;Digital&nbsp;Portfolio&nbsp;&mdash;&nbsp;_
 		</div>
-		<p class="topDesc">A collection of my digital and narrative works, which includes:</p>
+		<p class="topDescPort">A collection of my digital and narrative works, which includes:</p>
 
+		<!-- __________________________________________________________________________ -->
 
-	<!-- __________________________________________________________________________ -->
+		<div class="tocPort">
+			<ul class="tocListPort">
+				<li style="list-style: none;">
+					<span><a href="#VR">VR (Virtual Reality)</a></span>
+				</li>
+				&nbsp;&lt;&gt;&nbsp;
+				<li style="list-style: none;">
+					<span><a href="#Animation">Animation // 3D Models</a></span>
+				</li>
+				&nbsp;&lt;&gt;&nbsp;
+				<li style="list-style: none;">
+					<span><a href="#GameCreation">Game Creation // Simulation</a></span>
+				</li>
+				&nbsp;&lt;&gt;&nbsp;
+				<li style="list-style: none;">
+					<span><a href="#Design">Design // Video</a></span>
+				</li>
+			</ul>
+		</div>
 
+		<br>
+	</div>
+	<hr class="rounded">
+
+	<p class="secDescPort"><span class="thinTopLine">&nbsp;&mdash;&nbsp;Click or tap on an image to view and read more about it.&nbsp;&mdash;&nbsp;</span></p>
 	<br>
-	<div class="toc">
-		<ul class="tocList">
-			<li style="list-style: none;">
-				<span><a href="#VR">VR (Virtual Reality)</a></span>
-			</li>
-			&nbsp;&lt;&gt;&nbsp;
-			<li style="list-style: none;">
-				<span><a href="#Animation">Animation // 3D Models</a></span>
-			</li>
-			&nbsp;&lt;&gt;&nbsp;
-			<li style="list-style: none;">
-				<span><a href="#GameCreation">Game Creation // Simulation</a></span>
-			</li>
-			&nbsp;&lt;&gt;&nbsp;
-			<li style="list-style: none;">
-				<span><a href="#Design">Design // Video</a></span>
-			</li>
-		</ul>
+
+	<div id="VR" class="midTitles">
+		<span class="thinMidLine">VR (Virtual Reality)</span>
 	</div>
 
-	<br>
-</div>
-<hr class="rounded">
-
-
-<p class="secDesc"><span class="thinTopLine">&nbsp;&mdash;&nbsp;Click or tap on an image to view and read more about it.&nbsp;&mdash;&nbsp;</span></p>
-<br>
-
-<br>
-
-<div id="VR" class="midTitles">
-	<span class="thinMidLine">VR (Virtual Reality)</span>
-</div>
-
-<div class="rowN">
-  <div class="columnN">
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg1" class="myImages grow" src="Digital_Portfolio/Capture.jpg" alt="The Virtual Archive">
-			<div class="titles" style="font-family: 'Eagle Lake', cursive;">The Virtual Archive</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'Eagle Lake', cursive;">The Virtual Archive</h1>
-				<p><i>Spring 2019</i><br>
-				<br>
-				<u>Press Release:</u><br>
-				<i>Through a fascination of architecture in game design and a devotion to the preservation of history, Schuyler Meyer of Millbrook, NY presents The Virtual Archive.
-					A fully immersive and symbolic virtual reality museum of past works of both his photography and other digital media projects, with a focus on environmental
-					design. The Virtual Archive, split into two sections, features a science fiction themed gallery, where the photos tell their own stories, and a fantasy themed
-					library, featuring videos of completed past works. This vault of award-winning and international pieces was developed in the Unity Engine and designed for
-					the Oculus VR headset.</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; Created as a final project for Clarkson University's Digital Arts and Sciences Program, Senior Studies class<br><br>
-				&#8883; Developed in Unity / C&#x23;<br><br>
-				&#8883; All models made in Autodesk Maya<br><br>
-				&#8883; All textures made in Adobe Photoshop (Sci&ndash;Fi floor texture was downloaded from a free asset store)<br><br>
-				&#8883; Voice is "Amy IVONA" from Harpo Software<br><br>
-				&#8883; All photos and projects within the archive were created and recorded by Schuyler Meyer<br>
-				</p>
+	<div class="rowN">
+		<div class="columnN">
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg1" class="myImages grow" src="Digital_Portfolio/Capture.jpg" alt="The Virtual Archive">
+				<div class="titles" style="font-family: 'Eagle Lake', cursive;">The Virtual Archive</div>
 			</div>
-		</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'Eagle Lake', cursive;">The Virtual Archive</div>
+					<p>
+						<i>Spring 2019</i><br>
+						<br>
+						<u>Press Release:</u><br>
+						<i>
+							Through a fascination of architecture in game design and a devotion to the preservation of history, Schuyler Meyer of Millbrook, NY presents The Virtual Archive.
+							A fully immersive and symbolic virtual reality museum of past works of both his photography and other digital media projects, with a focus on environmental
+							design. The Virtual Archive, split into two sections, features a science fiction themed gallery, where the photos tell their own stories, and a fantasy themed
+							library, featuring videos of completed past works. This vault of award-winning and international pieces was developed in the Unity Engine and designed for
+							the Oculus VR headset.
+						</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; Created as a final project for Clarkson University's Digital Arts and Sciences Program, Senior Studies class<br><br>
+						&#8883; Developed in Unity / C&#x23;<br><br>
+						&#8883; All models made in Autodesk Maya<br><br>
+						&#8883; All textures made in Adobe Photoshop (Sci&ndash;Fi floor texture was downloaded from a free asset store)<br><br>
+						&#8883; Voice is "Amy IVONA" from Harpo Software<br><br>
+						&#8883; All photos and projects within the archive were created and recorded by Schuyler Meyer<br>
+					</p>
+				</div>
+			</div>
 
 		</div>
 		<div class="columnN">
 
-		<div class="titleWrapper fadeScroll fadeOut">
-	  	<img id="myImg2" class="myImages grow" src="Digital_Portfolio/carrotsVR.jpg" alt="Foraging for Carrots in VR">
-			<div class="titles" style="font-family: verdana;">Spatial Navigation</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: verdana;">Spatial Navigation and Foraging Research Project</h1>
-				<p><i>Fall 2018 &ndash; Fall 2019</i><br>
-				<br>
-				<i>"Using virtual reality to study human foraging behavior."</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; Lead developer on a research collaboration project with the Clarkson University Psychology Department<br><br>
-				&#8883; Designed a VR environment for researchers to examine and gather data for the behavior and decision strategies made by humans<br><br>
-				&#8883; Subjects are tasked with finding carrots in a field<br><br>
-				&#8883; Data is both inputted and outputted to and from a CSV file for research team to easily use<br><br>
-				&#8883; Project created in Unity / C&#x23;<br><br>
-				&#8883; Models created in Autodesk Maya<br><br>
-				&#8883; Textures created in Adobe Photoshop and downloaded from free asset stores<br><br>
-				&#8883; Developed for the Oculus Rift platform<br><br>
-				&#8883; To view the code, click <a href="https://github.com/schuybreach/CarrotVRproject" target="_blank" class="linkMore"> here </a><br><br>
-				</p>
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg2" class="myImages grow" src="Digital_Portfolio/carrotsVR.jpg" alt="Foraging for Carrots in VR">
+				<div class="titles" style="font-family: verdana;">Spatial Navigation</div>
 			</div>
-		</div>
-
-	</div>
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg4" class="myImages grow" src="Digital_Portfolio/vrhockey-1.jpg" alt="VR Hockey">
-			<div class="titles" style="font-family: 'Faster One', cursive;">VR Hockey</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'Faster One', cursive;">VR Hockey</h1>
-				<p><i>Spring 2019</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; Hockey in virtual reality (VR)<br><br>
-				&#8883; Created as a final project for Clarkson University's Mixed Reality class<br><br>
-				&#8883; Developed in Unity / C&#x23;<br><br>
-				&#8883; All the models were created in Autodesk Maya<br><br>
-				&#8883; Some textures were created in Photoshop, the rest were downloaded from free asset stores<br><br>
-				<br>
-				<i>Live footage captured on a GoPro.</i>
-				</p>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: verdana;">Spatial Navigation and Foraging Research Project</div>
+					<p>
+						<i>Fall 2018 &ndash; Fall 2019</i><br>
+						<br>
+						<i>"Using virtual reality to study human foraging behavior."</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; Lead developer on a research collaboration project with the Clarkson University Psychology Department<br><br>
+						&#8883; Designed a VR environment for researchers to examine and gather data for the behavior and decision strategies made by humans<br><br>
+						&#8883; Subjects are tasked with finding carrots in a field<br><br>
+						&#8883; Data is both inputted and outputted to and from a CSV file for research team to easily use<br><br>
+						&#8883; Project created in Unity / C&#x23;<br><br>
+						&#8883; Models created in Autodesk Maya<br><br>
+						&#8883; Textures created in Adobe Photoshop and downloaded from free asset stores<br><br>
+						&#8883; Developed for the Oculus Rift platform<br><br>
+						&#8883; To view the code, click <a href="https://github.com/schuybreach/CarrotVRproject" target="_blank" class="linkMore"> here </a><br><br>
+					</p>
+				</div>
 			</div>
-		</div>
 
 		</div>
+		<div class="columnN">
 
-	</div>
-
-		<hr class="rounded">
-
-		<!-- __________________________________________________________________________ -->
-
-		<div id="Animation" class="midTitles">
-			<span class="thinMidLine">Animation | 3D Models</span>
-		</div>
-
-			<div class="rowN">
-
-  <div class="columnN">
-		<div class="titleWrapper fadeScroll fadeOut">
-	    <img id="myImg5" class="myImages grow" src="Digital_Portfolio/konbini2.jpg" alt="Konbini">
-			<div class="titles" style="font-family: 'Audiowide', cursive;">Konbini</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="glow xlarge-font">Konbini</h1>
-				<p><i>Fall 2018</i><br>
-				<br>
-				<i>A 3D animation with a cyberpunk sci&ndash;fi setting. The character heads to the Konbini. (Konbini is a Japanese convenience store). Originally,
-				I was going for more of a noir style animation, but ended up decided to go the cyberpunk route instead.</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; Created as a final project for Clarkson University's 3D Digital Modeling and Imagery class<br><br>
-				&#8883; All models were created in Autodesk Maya and rendered using Arnold<br><br>
-				&#8883; The vehicles and fence were downloaded from a free asset store &ndash; though I added the lights afterwards<br><br>
-				&#8883; Some post editing in Adobe After Effects and Premiere<br><br>
-				</p>
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg4" class="myImages grow" src="Digital_Portfolio/vrhockey-1.jpg" alt="VR Hockey">
+				<div class="titles" style="font-family: 'Faster One', cursive;">VR Hockey</div>
 			</div>
-		</div>
-
-	</div>
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg6" class="myImages grow" src="Digital_Portfolio/box_150.jpg" alt="The Cube, Evolved">
-			<div class="titles" style="font-family: 'Orbitron', sans-serif;">The Cube, Evolved</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="glowTree xlarge-font" style="font-family: 'Orbitron', sans-serif;">The Cube, Evolved</h1>
-				<p><i>Summer 2021</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; Created in Autodesk Maya<br><br>
-				&#8883; Rendered with Arnold<br><br>
-				&#8883; Edited with Davinci Resolve<br><br>
-				&#8883; Textures and final image edited in Adobe Photoshop<br><br>
-				</p>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'Faster One', cursive;">VR Hockey</div>
+					<p>
+						<i>Spring 2019</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; Hockey in virtual reality (VR)<br><br>
+						&#8883; Created as a final project for Clarkson University's Mixed Reality class<br><br>
+						&#8883; Developed in Unity / C&#x23;<br><br>
+						&#8883; All the models were created in Autodesk Maya<br><br>
+						&#8883; Some textures were created in Photoshop, the rest were downloaded from free asset stores<br><br>
+						<br>
+						<i>Live footage captured on a GoPro.</i>
+					</p>
+				</div>
 			</div>
+
 		</div>
 
 	</div>
-	<div class="columnN">
 
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg11" class="myImages grow" src="src/img/Web_Ani_Still-2.png" alt="Untitled Animation Tests">
-			<div class="titles" style="font-family: 'nasalization', sans-serif;">Untitled Animation Tests</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'nasalization', sans-serif;">Untitled Animation Tests</h1>
-				<p><i>Summer 2021</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; A compilation of animation tests<br><br>
-				&#8883; Created in Autodesk Maya<br><br>
-				&#8883; Rendered with Arnold<br><br>
-				&#8883; Edited with Davinci Resolve<br><br>
-				&#8883; Textures and final image edited in Adobe Photoshop<br><br>
-				</p>
-			</div>
-		</div>
-
-	</div>
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg7" class="myImages grow" src="Digital_Portfolio/box_water.jpg" alt="Spooky Box">
-			<div class="titles" style="font-family: 'Orbitron', sans-serif;">Spooky &amp; Mysterious Box</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font"><span class="glowToo">Spooky </span><span class="glowTree">&amp; Mysterious </span><span class="glowToo">Box</span></h1>
-				<p><i>Fall - Winter 2020</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; Created in Autodesk Maya<br><br>
-				&#8883; Rendered with Arnold<br><br>
-				&#8883; Textures and final image edited in Adobe Photoshop<br><br>
-				&#8883; Edited in Adobe Premiere<br><br>
-				</p>
-			</div>
-		</div>
-
-	</div>
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg13" class="myImages grow" src="src/img/faces.jpg" alt="Clarkson Women's Hockey Promotional Video">
-			<div class="titles" style="font-family: 'Audiowide', cursive;">DA300 Animation</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'Audiowide', cursive;">DA300 &ndash; 3D Imagery &amp; Animation</h1>
-				<p><i>Spring 2019</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; DA300 &ndash; 3D Imagery &amp; Animation class at Clarkson University<br><br>
-				&#8883; Various short animation projects all created in Maya<br><br>
-				&#8883; Note: While the class assignment was focused on mouth movement, in hindsight, I would have liked to incorporate more
-				facial movements, not just the with the mouth. (Boris always looks so grumpy...)<br><br>
-				</p>
-			</div>
-		</div>
-
-	</div>
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg17" class="myImages grow" src="src/img/zaim.png" alt="Zaim">
-			<div class="titles" style="font-family: 'nasalization', sans-serif;">Zaim Logo Sequence</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'nasalization', sans-serif;">Zaim Logo Sequence</h1>
-				<p><i>Fall 2017</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; Zaim Logo Sequence<br><br>
-				&#8883; Zaim was a company made up for Clarkson University's Software Engineering Senior Design Project<br><br>
-				&#8883; Sequence created in 3ds Max<br><br>
-				</p>
-			</div>
-		</div>
-
-	</div>
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg8" class="myImages grow" src="Digital_Portfolio/spaceShip1.jpg" alt="Spaceship">
-			<div class="titles" style="font-family: 'nasalization', sans-serif;">SPACE SHIP</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'nasalization', sans-serif;">SPACE SHIP</h1>
-				<p><i>Winter 2021</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; <i>Project: SealHawk</i><br><br>
-				&#8883; Created in Autodesk Maya<br><br>
-				&#8883; Rendered with Arnold<br><br>
-				&#8883; Textures and final image edited in Adobe Photoshop<br><br>
-				</p>
-			</div>
-		</div>
-
-	</div>
-	</div>
-
-
-
+	<br>
 	<hr class="rounded">
+	<br>
 
-		<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
-		<div id="GameCreation" class="midTitles">
-			<span class="thinMidLine">Game Creation | Narrative | Simulation</span>
-		</div>
+	<div id="Animation" class="midTitles">
+		<span class="thinMidLine">Animation | 3D Models</span>
+	</div>
 
-				<div class="rowN">
+	<div class="rowN">
 
-<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg3" class="myImages grow" src="Digital_Portfolio/sob_col_0_3.jpg" alt="Seeker of the Bygone">
-			<div class="titles" style="font-family: 'Quantico', sans-serif;">Seeker of the Bygone</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'Quantico', sans-serif;">Seeker of the Bygone</h1>
-				<p><i>Spring 2018</i><br>
-				<br>
-				<i>A five minute visual novel style narrative game. A tale that follows &#x23;482 and friends through a tale of companionship, ​separation, and isolation
-				in a world where togetherness is the most important aspect of life.</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; Created as a final project for Clarkson University's Video Game Narrative class<br><br>
-				&#8883; Developed in Unity / C&#x23; with Fungus<br><br>
-				&#8883; All models were created in Autodesk Maya<br><br>
-				&#8883; Some of the textures were created in Photoshop, the rest were downloaded from the Unity Asset Store<br><br>
-				&#8883; Other props were also downloaded from the Unity Asset Store<br><br>
-				&#8883; Can run on PC (Windows) or Android &ndash; has not been tested on MacOS or iOS<br><br>
-				&#8883; Brenda Romero commented "Wow!", when first shown it<br><br>
-				</p>
+		<div class="columnN">
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg5" class="myImages grow" src="Digital_Portfolio/konbini2.jpg" alt="Konbini">
+				<div class="titles" style="font-family: 'Audiowide', cursive;">Konbini</div>
 			</div>
-		</div>
-
-	</div>
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-	    <img id="myImg10" class="myImages grow" src="Digital_Portfolio/swarm.png" alt="Swarm Simulation">
-			<div class="titles" style="font-family: 'VT323', monospace;">Swarm Simulation</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'VT323', monospace;">Swarm Simulation</h1>
-				<p><i>Fall 2019</i><br>
-				<br>
-				<i>Developed in Unity / C&#x23;<br>
-				Made for a final project in Elementary Numerical Methods at Clarkson University</i><br><br>
-
-				<u>Project:</u><br>
-				&#8883; Each moving sphere represents a shopper / person shopping on Black Friday<br><br>
-				&#8883; Each person has three emotional states: Normal / content [Blue], angry [Red], happy [Light Blue / Cyan]<br><br>
-				&#8883; The stationary white spheres represent items to be purchased<br><br>
-				&#8883; Each person starts in the "normal" emotional state at the entrance / checkout<br><br>
-				&#8883; When they bump into another person, they become "angry"<br><br>
-				&#8883; When they pick up an item they want, they become "happy"<br><br>
-				&#8883; Each person has a shopping list of five items<br><br>
-				&#8883; Each item has a limited quantity (25)<br><br>
-				&#8883; Each time a person picks up (touches) an item, they move to the next one on their list and that item decreases its quantity by one<br><br>
-				&#8883; If an item's quantity reaches zero, it disappears and can no longer be picked up<br><br>
-				&#8883; If a person finds an item is no longer available, they move on to another item<br><br>
-				&#8883; When a person grabs all five items on their list, they move to checkout<br><br><br>
-
-				<u>Representation:</u><br>
-				<i>The original outburst of "shoppers / persons"</i><br>
-				&#8883; This represents "shoppers / persons" at the door waiting for the store to open and then a sudden flood when the store does open<br><br>
-				<i>Sometimes the "person" stalls at an item</i><br>
-				&#8883; This represents someone being indecisive on whether or not to buy the item<br><br>
-				&#8883; If there are two or more "persons" stalled at an item, they may be in argument about who can take the item<br><br>
-				</p>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="glow xlarge-font">Konbini</div>
+					<p>
+						<i>Fall 2018</i><br>
+						<br>
+						<i>
+							A 3D animation with a cyberpunk sci&ndash;fi setting. The character heads to the Konbini. (Konbini is a Japanese convenience store). Originally,
+							I was going for more of a noir style animation, but ended up decided to go the cyberpunk route instead.
+						</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; Created as a final project for Clarkson University's 3D Digital Modeling and Imagery class<br><br>
+						&#8883; All models were created in Autodesk Maya and rendered using Arnold<br><br>
+						&#8883; The vehicles and fence were downloaded from a free asset store &ndash; though I added the lights afterwards<br><br>
+						&#8883; Some post editing in Adobe After Effects and Premiere<br><br>
+					</p>
+				</div>
 			</div>
+
 		</div>
+		<div class="columnN">
 
-	</div>
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg6" class="myImages grow" src="Digital_Portfolio/box_150.jpg" alt="The Cube, Evolved">
+				<div class="titles" style="font-family: 'Orbitron', sans-serif;">The Cube, Evolved</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="glowTree xlarge-font" style="font-family: 'Orbitron', sans-serif;">The Cube, Evolved</div>
+					<p>
+						<i>Summer 2021</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; Created in Autodesk Maya<br><br>
+						&#8883; Rendered with Arnold<br><br>
+						&#8883; Edited with Davinci Resolve<br><br>
+						&#8883; Textures and final image edited in Adobe Photoshop<br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg11" class="myImages grow" src="src/img/Web_Ani_Still-2.png" alt="Untitled Animation Tests">
+				<div class="titles" style="font-family: 'nasalization', sans-serif;">Untitled Animation Tests</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'nasalization', sans-serif;">Untitled Animation Tests</div>
+					<p>
+						<i>Summer 2021</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; A compilation of animation tests<br><br>
+						&#8883; Created in Autodesk Maya<br><br>
+						&#8883; Rendered with Arnold<br><br>
+						&#8883; Edited with Davinci Resolve<br><br>
+						&#8883; Textures and final image edited in Adobe Photoshop<br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg7" class="myImages grow" src="Digital_Portfolio/box_water.jpg" alt="Spooky Box">
+				<div class="titles" style="font-family: 'Orbitron', sans-serif;">Spooky &amp; Mysterious Box</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font"><span class="glowToo">Spooky </span><span class="glowTree">&amp; Mysterious </span><span class="glowToo">Box</span></div>
+					<p>
+						<i>Fall - Winter 2020</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; Created in Autodesk Maya<br><br>
+						&#8883; Rendered with Arnold<br><br>
+						&#8883; Textures and final image edited in Adobe Photoshop<br><br>
+						&#8883; Edited in Adobe Premiere<br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg13" class="myImages grow" src="src/img/faces.jpg" alt="Clarkson Women's Hockey Promotional Video">
+				<div class="titles" style="font-family: 'Audiowide', cursive;">DA300 Animation</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'Audiowide', cursive;">DA300 &ndash; 3D Imagery &amp; Animation</div>
+					<p>
+						<i>Spring 2019</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; DA300 &ndash; 3D Imagery &amp; Animation class at Clarkson University<br><br>
+						&#8883; Various short animation projects all created in Maya<br><br>
+						&#8883; Note: While the class assignment was focused on mouth movement, in hindsight, I would have liked to incorporate more
+						facial movements, not just the with the mouth. (Boris always looks so grumpy...)<br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg17" class="myImages grow" src="src/img/zaim.png" alt="Zaim">
+				<div class="titles" style="font-family: 'nasalization', sans-serif;">Zaim Logo Sequence</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'nasalization', sans-serif;">Zaim Logo Sequence</div>
+					<p>
+						<i>Fall 2017</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; Zaim Logo Sequence<br><br>
+						&#8883; Zaim was a company made up for Clarkson University's Software Engineering Senior Design Project<br><br>
+						&#8883; Sequence created in 3ds Max<br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg8" class="myImages grow" src="Digital_Portfolio/spaceShip1.jpg" alt="Spaceship">
+				<div class="titles" style="font-family: 'nasalization', sans-serif;">SPACE SHIP</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'nasalization', sans-serif;">SPACE SHIP</div>
+					<p>
+						<i>Winter 2021</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; <i>Project: SealHawk</i><br><br>
+						&#8883; Created in Autodesk Maya<br><br>
+						&#8883; Rendered with Arnold<br><br>
+						&#8883; Textures and final image edited in Adobe Photoshop<br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
+	<br>
 	<hr class="rounded">
+	<br>
+
+	<!-- __________________________________________________________________________ -->
+
+	<div id="GameCreation" class="midTitles">
+		<span class="thinMidLine">Game Creation | Narrative | Simulation</span>
+	</div>
+
+	<div class="rowN">
+
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg3" class="myImages grow" src="Digital_Portfolio/sob_col_0_3.jpg" alt="Seeker of the Bygone">
+				<div class="titles" style="font-family: 'Quantico', sans-serif;">Seeker of the Bygone</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'Quantico', sans-serif;">Seeker of the Bygone</div>
+					<p>
+						<i>Spring 2018</i><br>
+						<br>
+						<i>
+							A five minute visual novel style narrative game. A tale that follows &#x23;482 and friends through a tale of companionship, ​separation, and isolation
+							in a world where togetherness is the most important aspect of life.
+						</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; Created as a final project for Clarkson University's Video Game Narrative class<br><br>
+						&#8883; Developed in Unity / C&#x23; with Fungus<br><br>
+						&#8883; All models were created in Autodesk Maya<br><br>
+						&#8883; Some of the textures were created in Photoshop, the rest were downloaded from the Unity Asset Store<br><br>
+						&#8883; Other props were also downloaded from the Unity Asset Store<br><br>
+						&#8883; Can run on PC (Windows) or Android &ndash; has not been tested on MacOS or iOS<br><br>
+						&#8883; Brenda Romero commented "Wow!", when first shown it<br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg10" class="myImages grow" src="Digital_Portfolio/swarm.png" alt="Swarm Simulation">
+				<div class="titles" style="font-family: 'VT323', monospace;">Swarm Simulation</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'VT323', monospace;">Swarm Simulation</div>
+					<p>
+						<i>Fall 2019</i><br>
+						<br>
+						<i>
+							Developed in Unity / C&#x23;<br>
+							Made for a final project in Elementary Numerical Methods at Clarkson University
+						</i><br><br>
+
+						<u>Project:</u><br>
+						&#8883; Each moving sphere represents a shopper / person shopping on Black Friday<br><br>
+						&#8883; Each person has three emotional states: Normal / content [Blue], angry [Red], happy [Light Blue / Cyan]<br><br>
+						&#8883; The stationary white spheres represent items to be purchased<br><br>
+						&#8883; Each person starts in the "normal" emotional state at the entrance / checkout<br><br>
+						&#8883; When they bump into another person, they become "angry"<br><br>
+						&#8883; When they pick up an item they want, they become "happy"<br><br>
+						&#8883; Each person has a shopping list of five items<br><br>
+						&#8883; Each item has a limited quantity (25)<br><br>
+						&#8883; Each time a person picks up (touches) an item, they move to the next one on their list and that item decreases its quantity by one<br><br>
+						&#8883; If an item's quantity reaches zero, it disappears and can no longer be picked up<br><br>
+						&#8883; If a person finds an item is no longer available, they move on to another item<br><br>
+						&#8883; When a person grabs all five items on their list, they move to checkout<br><br><br>
+
+						<u>Representation:</u><br>
+						<i>The original outburst of "shoppers / persons"</i><br>
+						&#8883; This represents "shoppers / persons" at the door waiting for the store to open and then a sudden flood when the store does open<br><br>
+						<i>Sometimes the "person" stalls at an item</i><br>
+						&#8883; This represents someone being indecisive on whether or not to buy the item<br><br>
+						&#8883; If there are two or more "persons" stalled at an item, they may be in argument about who can take the item<br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<br>
+	<hr class="rounded">
+	<br>
 
 	<!-- __________________________________________________________________________ -->
 
@@ -440,205 +444,215 @@
 		<span class="thinMidLine">Design | Video</span>
 	</div>
 
-				<div class="rowN">
+	<div class="rowN">
 
-	<div class="columnN">
+		<div class="columnN">
 
-		<div class="titleWrapper fadeScroll fadeOut">
-	    <img id="myImg16" class="myImages grow" src="Digital_Portfolio/cuhockey.jpg" alt="Clarkson Women's Hockey Promotional Video">
-			<div class="titles" style="font-family: 'Times New Roman';">CU Hockey Promo</div>
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg16" class="myImages grow" src="Digital_Portfolio/cuhockey.jpg" alt="Clarkson Women's Hockey Promotional Video">
+				<div class="titles" style="font-family: 'Times New Roman';">CU Hockey Promo</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'Times New Roman';">Clarkson Women's Hockey Promotional Video</div>
+					<p>
+						<i>Fall 2019</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; Promotional video created for the Clarkson Women's Hockey Team<br><br>
+						&#8883; Scripted, filmed, and edited by Schuyler Meyer<br><br>
+						&#8883; Starring Cassidy Vinkle<br><br>
+						&#8883; Music: For Tomorrow by Savfk<br><br>
+						&#8883; Filmed on location at Clarkson University and in Cheel Arena<br><br>
+					</p>
+				</div>
+			</div>
+
 		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'Times New Roman';">Clarkson Women's Hockey Promotional Video</h1>
-				<p><i>Fall 2019</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; Promotional video created for the Clarkson Women's Hockey Team<br><br>
-				&#8883; Scripted, filmed, and edited by Schuyler Meyer<br><br>
-				&#8883; Starring Cassidy Vinkle<br><br>
-				&#8883; Music: For Tomorrow by Savfk<br><br>
-				&#8883; Filmed on location at Clarkson University and in Cheel Arena<br><br>
-				</p>
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg9" class="myImages grow" src="Digital_Portfolio/hockeyCards1.png" alt="Hockey Cards">
+				<div class="titles" style="font-family: 'Orbitron', sans-serif;">Hockey Cards</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'Orbitron', sans-serif;">Hockey Cards</div>
+					<p>
+						<i>Spring 2020</i><br>
+						<br>
+						<i>
+							Growing up, I loved getting baseball cards. A year or so ago, I was looking for women's hockey cards and found next to none. There were some Team Canada
+							cards and the random Hilary Knight card, but that was pretty much it. So, I decided to make some myself.
+						</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; These are drafts / mockups / first renders / etc.<br><br>
+						&#8883; All information is copy/pasted from the <a href="https://www.nwhl.zone/" target="_blank" class="linkMore">NWHL roster pages</a><br><br>
+						&#8883; Photos are my own, for the portraits on the back &ndash; I "guessed" who took them<br><br>
+						&#8883; Logos are from Google Image Search, some are low quality because that's all I could find<br><br>
+						&#8883; The cards themselves can be used as templates for other players<br><br>
+						&#8883; Players on these cards were picked based on which photos I took that looked like "hockey card photos"<br><br>
+						&#8883; Cards made in Photoshop, 3D models and animation made in Maya, video made in Premiere<br><br>
+						&#8883; <i>Note: These are not officially affiliated with the NWHL or anyone else. They are simply a personal project at the moment.</i><br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg15" class="myImages grow" src="Digital_Portfolio/BG_SM.jpg" alt="Board Game">
+				<div class="titles" style="font-family: 'Orbitron', sans-serif;">Board Game Concept</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'Orbitron', sans-serif;">Board Game Concept</div>
+					<p>
+						<i>Fall 2018</i><br>
+						<br>
+						<i>A board game concept most similar to the classic Battleship.</i><br><br>
+						&#8883; Two teams (as many players per team)<br><br>
+						&#8883; If you are on the blue side, you can not see the enemy's game pieces on the red side, however, if a red team game piece crosses into
+						the blue side, blue team will be able to see it<br><br>
+						&#8883; If you are on the blue side and you have a game piece on the red side, you can see your own game piece, but not the other team's
+						game pieces (subject to change)<br><br>
+
+						<u>Movement</u><br><br>
+						&#8883; Can not cross thick black line in middle (wall)<br><br>
+						&#8883; Game pieces can occupy 1-4 little squares (up to 1 big square), depending on the size of the game piece (ship / vehicle / unit)<br><br>
+						&#8883; Water-based game pieces can not move on the land tiles and land-based game pieces can not move on the water tiles<br><br>
+						&#8883; Game pieces can move in any direction (forward, side, backward, diagonal) <br><br>
+						&#8883; Movement distance depends on the individual game piece's attributes<br><br>
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg14" class="myImages grow" src="src/img/CUGI.jpg" alt="CUGI">
+				<div class="titles" style="font-family: 'Times New Roman';">CUGI Promo Video</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'Times New Roman';">CUGI Promo Video</div>
+					<p>
+						<i>Summer 2016</i><br>
+						<br>
+						&#8883; A promotional video created for Clarkson University Gamers Initiative<br><br>
+						&#8883; Created in Adobe Premiere Pro and After Effects<br><br>
+						&#8883; All footage from various video game trailers<br><br>
+						&#8883; Music: "Protectors of the Earth" by Two Steps from Hell, from the album "Invincible"<br><br>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg12" class="myImages grow" src="src/img/Arts.png" alt="Artstation">
+				<div class="titles" style="font-family: 'Arial';">Artstation</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'Arial';">Continued Portfolio on Artstation</div>
+					<p>
+						<i>
+							2014 &ndash;
+							<script>document.write(new Date().getFullYear())</script>
+						</i><br>
+						<br>
+						&#8883; More art and design work on Artstation<br><br>
+						&#8883; Link: <a class="linkMore" href="https://www.artstation.com/schuytyr" target="_blank">here</a><br><br>
+					</p>
+				</div>
 			</div>
 		</div>
 
 	</div>
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg9" class="myImages grow" src="Digital_Portfolio/hockeyCards1.png" alt="Hockey Cards">
-			<div class="titles" style="font-family: 'Orbitron', sans-serif;">Hockey Cards</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'Orbitron', sans-serif;">Hockey Cards</h1>
-				<p><i>Spring 2020</i><br>
-				<br>
-				<i>Growing up, I loved getting baseball cards. A year or so ago, I was looking for women's hockey cards and found next to none. There were some Team Canada
-				cards and the random Hilary Knight card, but that was pretty much it. So, I decided to make some myself.</i><br>
-				<br>
-				<u>Project:</u><br>
-				&#8883; These are drafts / mockups / first renders / etc.<br><br>
-				&#8883; All information is copy/pasted from the <a href="https://www.nwhl.zone/" target="_blank" class="linkMore">NWHL roster pages</a><br><br>
-				&#8883; Photos are my own, for the portraits on the back &ndash; I "guessed" who took them<br><br>
-				&#8883; Logos are from Google Image Search, some are low quality because that's all I could find<br><br>
-				&#8883; The cards themselves can be used as templates for other players<br><br>
-				&#8883; Players on these cards were picked based on which photos I took that looked like "hockey card photos"<br><br>
-				&#8883; Cards made in Photoshop, 3D models and animation made in Maya, video made in Premiere<br><br>
-				&#8883; <i>Note: These are not officially affiliated with the NWHL or anyone else. They are simply a personal project at the moment.</i><br><br>
-				</p>
-			</div>
-		</div>
-
-	</div>
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg15" class="myImages grow" src="Digital_Portfolio/BG_SM.jpg" alt="Board Game">
-			<div class="titles" style="font-family: 'Orbitron', sans-serif;">Board Game Concept</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'Orbitron', sans-serif;">Board Game Concept</h1>
-				<p><i>Fall 2018</i><br>
-				<br>
-				<i>A board game concept most similar to the classic Battleship.</i><br><br>
-				&#8883; Two teams (as many players per team)<br><br>
-				&#8883; If you are on the blue side, you can not see the enemy's game pieces on the red side, however, if a red team game piece crosses into
-				the blue side, blue team will be able to see it<br><br>
-				&#8883; If you are on the blue side and you have a game piece on the red side, you can see your own game piece, but not the other team's
-				game pieces (subject to change)<br><br>
-
-				<u>Movement</u><br><br>
-				&#8883; Can not cross thick black line in middle (wall)<br><br>
-				&#8883; Game pieces can occupy 1-4 little squares (up to 1 big square), depending on the size of the game piece (ship / vehicle / unit)<br><br>
-				&#8883; Water-based game pieces can not move on the land tiles and land-based game pieces can not move on the water tiles<br><br>
-				&#8883; Game pieces can move in any direction (forward, side, backward, diagonal) <br><br>
-				&#8883; Movement distance depends on the individual game piece's attributes<br><br>
-			</p>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg14" class="myImages grow" src="src/img/CUGI.jpg" alt="CUGI">
-			<div class="titles" style="font-family: 'Times New Roman';">CUGI Promo Video</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'Times New Roman';">CUGI Promo Video</h1>
-				<p><i>Summer 2016</i><br>
-				<br>
-				&#8883; A promotional video created for Clarkson University Gamers Initiative<br><br>
-				&#8883; Created in Adobe Premiere Pro and After Effects<br><br>
-				&#8883; All footage from various video game trailers<br><br>
-				&#8883; Music: "Protectors of the Earth" by Two Steps from Hell, from the album "Invincible"<br><br>
-				</p>
-			</div>
-		</div>
-  </div>
-
-	<div class="columnN">
-
-		<div class="titleWrapper fadeScroll fadeOut">
-			<img id="myImg12" class="myImages grow" src="src/img/Arts.png" alt="Artstation">
-			<div class="titles" style="font-family: 'Arial';">Artstation</div>
-		</div>
-		<div style="display:none;">
-			<div id="myTexT" class="myText">
-				<h1 class="xlarge-font" style="font-family: 'Arial';">Continued Portfolio on Artstation</h1>
-				<p><i>2014 &ndash; <script>document.write(new Date().getFullYear())</script></i><br>
-				<br>
-				&#8883; More art and design work on Artstation<br><br>
-				&#8883; Link: <a class="linkMore" href="https://www.artstation.com/schuytyr" target="_blank">here</a><br><br>
-				</p>
-			</div>
-		</div>
-  </div>
-
-</div>
-
-<!-- __________________________________________________________________________ -->
-
-<hr class="rounded">
-
-<!-- The "More" Section -->
-<div class="container-fluid">
-	<div style="width:100%; margin-left: 0; padding:2%;">
-			<h1 class="xlarge-font" style="font-family: 'Reenie Beanie', cursive;"><b><u>More Smaller Projects</u></b></h1>
-			<p>
-			<ul class="moreProj">
-				<li>
-					<span style="font-size:20px;"><u>The Frying Ship</u>, <span style="font-size: 16px; color:#595b5d;">pencil drawing</span> &lt;&gt; </span>
-					<a href="https://www.deviantart.com/akatsukirising/art/The-Frying-Ship-Close-Up-869850898" target="_blank" rel="noopener" class="linkMore">
-						Link &lbrack;DeviantArt&rbrack;</a>, <span style="color:#595b5d;">Summer 2020</span><br>
-				</li>
-				<li>
-					<span style="font-size:20px;"><u>QWERTY</u>, <span style="font-size: 16px; color:#595b5d;">photography</span> &lt;&gt; </span>
-					<a href="https://www.deviantart.com/akatsukirising/art/QWERTY-897373278" target="_blank" rel="noopener" class="linkMore">
-						Link &lbrack;DeviantArt&rbrack;</a>, <span style="color:#595b5d;">Summer 2020</span><br>
-				</li>
-				<li>
-					<span style="font-size:20px;"><u>The Future of Sports Photography</u>, <span style="font-size: 16px; color:#595b5d;">After Effects</span> &lt;&gt; </span>
-					<a href="https://youtu.be/rictK6On9B4" target="_blank" rel="noopener" class="linkMore">
-						Link &lbrack;YouTube&rbrack;</a>, <span style="color:#595b5d;">Fall 2018</span><br>
-				</li>
-				<li>
-					<span style="font-size:20px;"><u>Infinite Space Tunnel</u>, <span style="font-size: 16px; color:#595b5d;">Maya, After Effects</span> &lt;&gt; </span>
-					<a href="https://youtu.be/jByZKsF_9uc" target="_blank" rel="noopener" class="linkMore">
-						Link &lbrack;YouTube&rbrack;</a>, <span style="color:#595b5d;">Fall 2018</span><br>
-				</li>
-				<li>
-					<span style="font-size:20px;"><u>BauhausKandinsky Animation Test</u>, <span style="font-size: 16px; color:#595b5d;">After Effects</span> &lt;&gt; </span>
-					<a href="https://youtu.be/wI8Bm3DvhKc" target="_blank" rel="noopener" class="linkMore">
-						Link &lbrack;YouTube&rbrack;</a>, <span style="color:#595b5d;">Fall 2018</span><br>
-				</li>
-				<li>
-					<span style="font-size:20px;"><u>City vs Nature</u>, <span style="font-size: 16px; color:#595b5d;">painting</span> &lt;&gt; </span>
-					<a href="https://www.deviantart.com/akatsukirising/art/City-vs-Nature-835261643" target="_blank" rel="noopener" class="linkMore">
-						Link &lbrack;DeviantArt&rbrack;</a>, <span style="color:#595b5d;">Fall 2016</span><br>
-				</li>
-				<li>
-					<span style="font-size:20px;"><u>The &#40;text&#41; Adventure Game</u>, <span style="font-size: 16px; color:#595b5d;">MATLAB</span> &lt;&gt; </span>
-					<a href="https://www.deviantart.com/akatsukirising/art/The-World-of-Gweneer-647177346" target="_blank" rel="noopener" class="linkMore">
-						Link to Map &lbrack;DeviantArt&rbrack;</a>, <span style="color:#595b5d;">Spring 2015</span><br>
-				</li>
-			</ul>
-		</p>
-		</div>
-</div>
-
-<!-- __________________________________________________________________________ -->
-
-<br>
-<div class="buttonAbout">
-	<a href="index.html" class="aButton">
-		<button class="pageButtonColor" title="To the homepage, away!">
-			<div class="pageButtonTxt">&nbsp;Home&nbsp;</div>
-		</button>
-	</a>
-</div>
-<br>
-
-<div id="footer-main"></div>
 
 	<!-- __________________________________________________________________________ -->
 
-	<div id="myModal" class="modal" title="Click to Close">
-		<button title="Close" class="closeBtn"><span>&times;</span></button>
+	<br>
+	<hr class="rounded">
+
+	<!-- The "More" Section -->
+	<div class="container-fluid">
+		<div style="width:100%; margin-left: 0; padding:2%;">
+			<div class="xlarge-font" style="font-family: 'Reenie Beanie', cursive;"><b><u>More Smaller Projects</u></b></div>
+			<p>
+				<ul class="moreProj">
+					<li>
+						<span style="font-size:20px;"><u>The Frying Ship</u>, <span style="font-size: 16px; color:#595b5d;">pencil drawing</span> &lt;&gt; </span>
+						<a href="https://www.deviantart.com/akatsukirising/art/The-Frying-Ship-Close-Up-869850898" target="_blank" rel="noopener" class="linkMore">
+							Link &lbrack;DeviantArt&rbrack;
+						</a>, <span style="color:#595b5d;">Summer 2020</span><br>
+					</li>
+					<li>
+						<span style="font-size:20px;"><u>QWERTY</u>, <span style="font-size: 16px; color:#595b5d;">photography</span> &lt;&gt; </span>
+						<a href="https://www.deviantart.com/akatsukirising/art/QWERTY-897373278" target="_blank" rel="noopener" class="linkMore">
+							Link &lbrack;DeviantArt&rbrack;
+						</a>, <span style="color:#595b5d;">Summer 2020</span><br>
+					</li>
+					<li>
+						<span style="font-size:20px;"><u>The Future of Sports Photography</u>, <span style="font-size: 16px; color:#595b5d;">After Effects</span> &lt;&gt; </span>
+						<a href="https://youtu.be/rictK6On9B4" target="_blank" rel="noopener" class="linkMore">
+							Link &lbrack;YouTube&rbrack;
+						</a>, <span style="color:#595b5d;">Fall 2018</span><br>
+					</li>
+					<li>
+						<span style="font-size:20px;"><u>Infinite Space Tunnel</u>, <span style="font-size: 16px; color:#595b5d;">Maya, After Effects</span> &lt;&gt; </span>
+						<a href="https://youtu.be/jByZKsF_9uc" target="_blank" rel="noopener" class="linkMore">
+							Link &lbrack;YouTube&rbrack;
+						</a>, <span style="color:#595b5d;">Fall 2018</span><br>
+					</li>
+					<li>
+						<span style="font-size:20px;"><u>BauhausKandinsky Animation Test</u>, <span style="font-size: 16px; color:#595b5d;">After Effects</span> &lt;&gt; </span>
+						<a href="https://youtu.be/wI8Bm3DvhKc" target="_blank" rel="noopener" class="linkMore">
+							Link &lbrack;YouTube&rbrack;
+						</a>, <span style="color:#595b5d;">Fall 2018</span><br>
+					</li>
+					<li>
+						<span style="font-size:20px;"><u>City vs Nature</u>, <span style="font-size: 16px; color:#595b5d;">painting</span> &lt;&gt; </span>
+						<a href="https://www.deviantart.com/akatsukirising/art/City-vs-Nature-835261643" target="_blank" rel="noopener" class="linkMore">
+							Link &lbrack;DeviantArt&rbrack;
+						</a>, <span style="color:#595b5d;">Fall 2016</span><br>
+					</li>
+					<li>
+						<span style="font-size:20px;"><u>The &#40;text&#41; Adventure Game</u>, <span style="font-size: 16px; color:#595b5d;">MATLAB</span> &lt;&gt; </span>
+						<a href="https://www.deviantart.com/akatsukirising/art/The-World-of-Gweneer-647177346" target="_blank" rel="noopener" class="linkMore">
+							Link to Map &lbrack;DeviantArt&rbrack;
+						</a>, <span style="color:#595b5d;">Spring 2015</span><br>
+					</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+
+	<!-- __________________________________________________________________________ -->
+
+	<br>
+
+	<div id="footer-main"></div>
+
+	<!-- __________________________________________________________________________ -->
+
+	<div id="myModal" class="modalPort" title="Click to Close">
+		<button title="Close" class="closeBtnPort topCloseButton"><span>&times;</span></button>
 		<br>
 		<hr class="rounded" style="width: 80%;max-width: 700px;">
-		<img class="modal-content" id="img01" title="">
-		<div id="vcontainer"></div>
+		<img class="modalPort-content" id="img01" title="">
+		<div id="vcontainerPort"></div>
 		<hr class="rounded" style="width: 80%;max-width: 700px;">
 		<!--<div id="caption"></div>-->
-		<div id="bodyText" title=""></div>
+		<div id="bodyTextPort" title=""></div>
 		<hr class="rounded" style="width: 80%;max-width: 700px;"><br>
-		<button title="Close" class="closeBtn"><span>&times;</span></button>
+		<button title="Close" class="closeBtnPort"><span>&times;</span></button>
 		<br><br><span>&nbsp;</span><br><br>
 	</div>
 
@@ -648,11 +662,11 @@
 	<script src="src/js/fadeScroll.js"></script>
 	<script src="src/js/portfolioSelect.js"></script>
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
 </body>
 </html>
