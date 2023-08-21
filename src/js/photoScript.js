@@ -66,7 +66,7 @@ async function names(img, e) {
             modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
             console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         }
-        else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "" && e.target.title === "") {
+        else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "" && e.target.title !== "") {
             modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
             modalImg.title = imgTitle;
             modalImg.alt = imgTitle;
