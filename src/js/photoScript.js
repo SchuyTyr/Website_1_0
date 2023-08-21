@@ -21,7 +21,11 @@ function getExif(img) {
 
     EXIF.getData(img, function () {
 
-        imgTitle = EXIF.getTag(this, "ImageDescription");
+        if (EXIF.getTag(this, "ImageDescription") !== null) {
+
+            imgTitle = EXIF.getTag(this, "ImageDescription");
+
+        }
 
         console.log("imgTitle: " + imgTitle);
 
@@ -60,9 +64,7 @@ images.forEach((img) => {
             console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         }
 
-        //else {
 
-        //}
 
 		/*modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";*/
 		noScrollF();
@@ -82,6 +84,7 @@ window.onclick = function (event) {
         html.style.overflow = "revert";
         topBtn = false;
         modalOpen = false;
+        imgTitle = "Untitled";
 	}
 }
 
@@ -92,6 +95,7 @@ close.onclick = function (event) {
         html.style.overflow = "revert";
         topBtn = false;
         modalOpen = false;
+        imgTitle = "Untitled";
     }
 }
 
