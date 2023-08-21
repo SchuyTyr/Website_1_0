@@ -19,7 +19,7 @@ var imgTitle = "Untitled";
 
 window.onload = getExif;
 
-async function getExif(img) {
+function getExif(img) {
 
     EXIF.getData(img, function () {
 
