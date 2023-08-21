@@ -17,7 +17,9 @@ var modalOpen = false;
 
 var imgTitle = "Untitled";
 
-function getExif(img) {
+window.onload = getExif;
+
+async function getExif(img) {
 
     EXIF.getData(img, function () {
 
@@ -38,12 +40,12 @@ images.forEach((img) => {
 
         console.log("----");
 
+        getExif(img);
+
 		modal.style.display = "block";
         modalImg.src = e.target.src;
         //modalImg.title = e.target.title;
         console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-
-        getExif(img);
 
         if ((imgTitle === "Untitled" || imgTitle === "undefined") && e.target.title !== "") {
             modalImg.title = e.target.title;
