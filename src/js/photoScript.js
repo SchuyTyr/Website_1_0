@@ -23,11 +23,11 @@ async function getExif(img) {
 
     EXIF.getData(img, await function () {
 
-        if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
+        //if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
 
             imgTitle = EXIF.getTag(this, "ImageDescription");
             console.log("imgTitle1: " + imgTitle);
-        }
+        //}
 
         console.log("imgTitle2: " + imgTitle);
 
