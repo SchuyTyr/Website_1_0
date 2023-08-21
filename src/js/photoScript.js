@@ -17,7 +17,7 @@ var modalOpen = false;
 
 var imgTitle = "Untitled";
 
-window.onload = getExif;
+//window.onload = getExif;
 
 function getExif(img) {
 
