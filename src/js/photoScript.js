@@ -1,6 +1,6 @@
 /*-- photoScript.js // Schuyler Meyer // 2022-23 --*/
 
-import * as EXIF from "/src/js/exif-js/exif.js"; 
+//import { EXIF } from "/src/js/exif-js/exif.js"; 
 
 const modal = document.getElementById('myModal');
 const images = document.querySelectorAll(".containerGrid img");
@@ -25,7 +25,7 @@ async function getExif(img) {
 
     console.log("running.");
 
-    EXIF.getData(img, function () {
+    await EXIF.getData(img, await function () {
 
         if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
 
