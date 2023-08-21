@@ -19,72 +19,66 @@ var imgTitle = "Untitled";
 
 //window.onload = getExif;
 
-//function getExif(img) {
+async function getExif(img) {
 
-//    EXIF.getData(img, function () {
+    EXIF.getData(img, function () {
 
-//        if (EXIF.getTag(this, "ImageDescription") !== null) {
+        if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
 
-//            imgTitle = EXIF.getTag(this, "ImageDescription");
+            imgTitle = EXIF.getTag(this, "ImageDescription");
+            console.log("imgTitle1: " + imgTitle);
+        }
 
-//        }
+        console.log("imgTitle2: " + imgTitle);
 
-//        console.log("imgTitle: " + imgTitle);
+    });
 
-//    });
+    console.log("ran.");
 
-//}
+}
 
 images.forEach((img) => {
     img.addEventListener("click", (e) => {
 
         console.log("----");
 
-        //getExif(img);
+        //async function name() {
 
-        EXIF.getData(img, function () {
+            /*await*/ getExif(img);
 
-            if (EXIF.getTag(this, "ImageDescription") !== "") {
+            modal.style.display = "block";
+            modalImg.src = e.target.src;
+            //modalImg.title = e.target.title;
+            console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
 
-                imgTitle = EXIF.getTag(this, "ImageDescription");
-                console.log("imgTitle1: " + imgTitle);
+            if ((imgTitle === "Untitled" || imgTitle === "undefined") && e.target.title !== "") {
+                modalImg.title = e.target.title;
+                modalImg.alt = e.target.title;
+                modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
+                console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+            }
+            else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "") {
+                modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
+                modalImg.title = imgTitle;
+                modalImg.alt = imgTitle;
+                console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+            }
+            else {
+                modalImgCapt.innerHTML = "";
+                modalImg.title = "";
+                modalImg.alt = "";
+                console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
             }
 
-            console.log("imgTitle2: " + imgTitle);
+            /*modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";*/
+            noScrollF();
+            scrollTop.style.display = "none";
+            html.style.overflow = "hidden";
+            topBtn = true;
+            modalOpen = true;
+            //console.log("no scroll?");
 
-        });
-
-		modal.style.display = "block";
-        modalImg.src = e.target.src;
-        //modalImg.title = e.target.title;
-        console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-
-        if ((imgTitle === "Untitled" || imgTitle === "undefined") && e.target.title !== "") {
-            modalImg.title = e.target.title;
-            modalImg.alt = e.target.title;
-            modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
-            console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-        }
-        else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "") {
-            modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
-            modalImg.title = imgTitle;
-            modalImg.alt = imgTitle;
-            console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-        }
-        else {
-            modalImgCapt.innerHTML = "";
-            modalImg.title = "";
-            modalImg.alt = "";
-            console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-        }
-
-		/*modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";*/
-		noScrollF();
-        scrollTop.style.display = "none";
-        html.style.overflow = "hidden";
-        topBtn = true;
-        modalOpen = true;
-        //console.log("no scroll?");
+        //}
 
     });
 });
