@@ -17,16 +17,31 @@ var modalOpen = false;
 
 var imgTitle = "Untitled";
 
+function getExif(img) {
+
+    EXIF.getData(img, function () {
+
+        imgTitle = EXIF.getTag(this, "ImageDescription");
+
+        console.log("imgTitle: " + imgTitle);
+
+    });
+
+}
+
 images.forEach((img) => {
     img.addEventListener("click", (e) => {
+
+        console.log("----");
 
 		modal.style.display = "block";
         modalImg.src = e.target.src;
         //modalImg.title = e.target.title;
         console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+
         getExif(img);
 
-        if (imgTitle === "Untitled" && e.target.title !== "") {
+        if ((imgTitle === "Untitled" || imgTitle === "undefined") && e.target.title !== "") {
             modalImg.title = e.target.title;
             modalImg.alt = e.target.title;
             modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
@@ -84,29 +99,4 @@ function noScrollF() {
 	body.classList.toggle('noscroll');
 }
 
-function getExif(img) {
-
-    EXIF.getData(img, function () {
-
-        imgTitle = EXIF.getTag(this, "ImageDescription");
-
-        //if (EXIF.getTag(this, "ImageDescription") !== null || img.title !== "undefined" || img.title !== "") {
-        //    modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
-        //    modalImg.title = imgTitle;
-        //    modalImg.alt = imgTitle;
-        //}
-        //else {
-        //    modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
-        //    modalImg.title = imgTitle;
-        //    modalImg.alt = imgTitle;
-        //}
-        console.log("imgTitle: " + imgTitle);
-
-        //modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
-        //modalImg.title = imgTitle;
-        //modalImg.alt = imgTitle;
-
-    });
-
-}
 
