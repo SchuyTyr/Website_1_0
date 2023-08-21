@@ -13,35 +13,44 @@ var close = document.getElementById("closeButton");
 var scrollTop = document.getElementById("myBtn");
 var noScroll = true;
 
+var modalOpen = false;
+
 images.forEach((img) => {
     img.addEventListener("click", (e) => {
+
 		modal.style.display = "block";
         modalImg.src = e.target.src;
+        modalImg.title = e.target.title;
         getExif(img);
-		//modalImg.title = e.target.title;
 		/*modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";*/
 		noScrollF();
         scrollTop.style.display = "none";
         html.style.overflow = "hidden";
         topBtn = true;
+        modalOpen = true;
         //console.log("no scroll?");
+
     });
 });
 
-window.onclick = function(event) {
-	if (event.target == modal) {
+window.onclick = function (event) {
+    if (event.target == modal && modalOpen) {
 		modal.style.display = "none";
 		noScrollF();
         html.style.overflow = "revert";
         topBtn = false;
+        modalOpen = false;
 	}
 }
 
-close.onclick = function(event) {
-	modal.style.display = "none";
-	noScrollF();
-    html.style.overflow = "revert";
-    topBtn = false;
+close.onclick = function (event) {
+    if (modalOpen) {
+        modal.style.display = "none";
+        noScrollF();
+        html.style.overflow = "revert";
+        topBtn = false;
+        modalOpen = false;
+    }
 }
 
 function noScrollF() {
@@ -53,12 +62,16 @@ function getExif(img) {
     var imgTitle = "";
 
     EXIF.getData(img, function () {
-        imgTitle = EXIF.getTag(this, "ImageDescription");
-        console.log("imgTitle: " + imgTitle);
 
-        modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
-        modalImg.title = imgTitle;
-        modalImg.alt = imgTitle;
+        //if (EXIF.getTag(this, "ImageDescription") != null) {
+            imgTitle = EXIF.getTag(this, "ImageDescription");
+            console.log("imgTitle: " + imgTitle);
+
+            modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
+            modalImg.title = imgTitle;
+            modalImg.alt = imgTitle;
+        //}
     });
 
 }
+

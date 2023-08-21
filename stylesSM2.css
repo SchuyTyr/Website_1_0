@@ -8,7 +8,7 @@
 
 html {
 	overflow-y: scroll;
-	overflow-x: hidden; /*messes up the noscroll modals*/
+	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -34,7 +34,7 @@ body {
 	margin: 0;
 	height: 100%;
 	overflow: hidden;
-	position: fixed;
+	/*position: fixed;*/
 }
 
 main {
@@ -968,7 +968,7 @@ polygon {
 
 .aButton {
 	text-decoration: none;
-	color: inherit;
+	/*color: inherit;*/
 	/*cursor: pointer;*/
 }
 
@@ -1180,11 +1180,13 @@ hr.rounded {
 	align-content: space-between;
 	justify-content: space-around;
 	align-items: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .containerGrid img {
 	height: 300px;
-  /*width: 90%;*/
 	/*border-radius: 20% / 12%;
 	border-radius: 12%;*/
 	margin-left: 8px;

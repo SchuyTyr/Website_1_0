@@ -6,7 +6,7 @@ window.onload = getExif;
 
 async function getExif() {
 
-    var img1 = document.getElementById("img1");
+    var img1 = document.getElementById("img01");
     //var imgs = document.getElementsByClassName("img4");
 
     //for (var y = 0; y < imgs.length; y++) {
@@ -16,10 +16,13 @@ async function getExif() {
     var imgTitle = "";
 
     EXIF.getData(img1, function () {
+
         imgTitle = EXIF.getTag(this, "ImageDescription");
 
-        img1.title = imgTitle;
-        img1.alt = imgTitle;
+        if (EXIF.getTag(this, "ImageDescription") != null) {
+            img1.title = imgTitle;
+            img1.alt = imgTitle;
+        }
     });
 
     //console.log("img 1: " + imgs[0].title);

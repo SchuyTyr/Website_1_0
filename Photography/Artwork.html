@@ -40,53 +40,54 @@
 
 	<div id="PhotoHeaderInner"></div>
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
-<div class="mainContainer">
+	<div class="mainContainer">
 
-	<div class="titles">
-		<u>Artwork</u>
+		<div class="titles">
+			<u>Artwork</u>
+		</div>
+
+		<div class="photoTextDescr">Click on an image to enlarge it.</div>
+
+		<div class="containerGrid">
+			<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_1.jpg" title="Cosmic Pumpkin">
+			<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_2.jpg" title="The Frying Ship">
+			<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_3.jpg" title="City vs Nature">
+			<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_4.jpg" title="The Frying Ship (full)">
+			<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_5.jpg" title="Maple Leaf">
+			<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_6.jpg" title="A Corner of My Room">
+			<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_7.jpg" title="AkatsukiRising">
+			<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_8.jpg" title="Mirai">
+			<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_9.jpg" title="Sky">
+			<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_10.jpg" title="Still Life">
+			<!--<div id="slideCounter" class="slidesText"></div>-->
+		</div>
 	</div>
 
-	<div class="photoTextDescr">Click on an image to enlarge it.</div>
-
-	<div class="containerGrid">
-		<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_1.jpg" title="Cosmic Pumpkin">
-	  <img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_2.jpg" title="The Frying Ship">
-	  <img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_3.jpg" title="City vs Nature">
-	  <img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_4.jpg" title="The Frying Ship (full)">
-		<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_5.jpg" title="Maple Leaf">
-		<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_6.jpg" title="A Corner of My Room">
-		<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_7.jpg" title="AkatsukiRising">
-		<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_8.jpg" title="Mirai">
-		<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_9.jpg" title="Sky">
-		<img class="img4 fadeScroll fadeOut" style="border-radius: 0;" src="photos/StillLife/Artwork/photo_10.jpg" title="Still Life">
-		<!--<div id="slideCounter" class="slidesText"></div>-->
+	<div id="myModal" class="modal" title="Click to Close">
+		<div class="modalPhoto">
+			<div id="photoText">Click the "x" or anywhere outside the image to close.</div>
+			<img class="modalPhotoContent" id="img01" title="">
+			<div id="photoTextCapt"></div>
+			<input type="button" id="closeButton" value="&times;" title="Close">
+		</div>
 	</div>
-</div>
-
-<div id="myModal" class="modal" title="Click to Close">
-	<div class="modalPhoto">
-		<div id="photoText">Click the "x" or anywhere outside the image to close.</div>
-		<img class="modalPhotoContent" id="img01" title="">
-		<div id="photoTextCapt"></div>
-		<input type="button" id="closeButton" value="&times;" title="Close">
-	</div>
-</div>
 
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
-<hr class="rounded">
+	<hr class="rounded">
 
-<div id="PhotoFooterInner"></div>
+	<div id="PhotoFooterInner"></div>
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
-<script src="photoMenu.js"></script>
-<script src="../scrollToTop.js"></script>
-<script src="../src/js/photoScript.js"></script>
-<script src="../src/js/fadeScroll.js"></script>
+	<script src="photoMenu.js"></script>
+	<script src="../scrollToTop.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+	<script src="../src/js/photoScript.js"></script>
+	<script src="../src/js/fadeScroll.js"></script>
 
 </body>
 </html>

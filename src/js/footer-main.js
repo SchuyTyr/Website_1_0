@@ -17,31 +17,31 @@ template.innerHTML = `
   <div class="socialBar">
 
       <div class="socialProps">
-        <a class="link4" href="https://www.instagram.com/schuyler_meyer/" title="Instagram &#64;schuyler_meyer" target="_blank">
+        <a class="link4" href="https://www.instagram.com/schuyler_meyer/" title="Instagram &#64;schuyler_meyer" target="_blank" rel="noopener">
             <img class="socialHover" src="src/icons/Instagram_3.png" alt="instagram.com/schuyler_meyer">
         </a>
       </div>
 
       <div class="socialProps">
-        <a class="link4" href="https://twitter.com/schuylermeyer24" title="Twitter &#64;schuylermeyer24" target="_blank">
+        <a class="link4" href="https://twitter.com/schuylermeyer24" title="Twitter &#64;schuylermeyer24" target="_blank" rel="noopener">
             <img class="socialHover twitterX" src="src/icons/Twitter_3.png" alt="twitter.com/schuylermeyer24">
         </a>
       </div>
 
       <div class="socialProps">
-        <a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer" target="_blank">
+        <a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer" target="_blank" rel="noopener">
             <img class="socialHover" src="src/icons/Flickr_3.png" alt="flickr.com/photos/schuyler_meyer">
         </a>
       </div>
 
       <div class="socialProps">
-        <a class="link4" href="https://www.linkedin.com/in/schuyler-meyer/" title="LinkedIn &#64; Schuyler Meyer" target="_blank">
+        <a class="link4" href="https://www.linkedin.com/in/schuyler-meyer/" title="LinkedIn &#64; Schuyler Meyer" target="_blank" rel="noopener">
             <img class="socialHover" src="src/icons/LinkedIn.png" alt="linkedin.com/in/schuyler-meyer">
         </a>
       </div>
 
       <div class="socialProps">
-        <a class="link4" href="https://linktr.ee/schuylermeyer" title="LinkTree &#64; SchuylerMeyer" target="_blank">
+        <a class="link4" href="https://linktr.ee/schuylermeyer" title="LinkTree &#64; SchuylerMeyer" target="_blank" rel="noopener">
             <img class="socialHover" src="src/icons/LinkTree.png" alt="linktr.ee/schuylermeyer">
         </a>
       </div>

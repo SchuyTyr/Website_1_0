@@ -9,55 +9,30 @@ let photoFooterInner = document.getElementById('PhotoFooterInner');
 var curYear = new Date().getFullYear();
 
 photoFooterInner.innerHTML = `
-<div class="buttonAbout">
-	<a href="../photoshoot.html" class="aButton">
-		<button class="pageButtonColor" title="Book a Photoshoot">
-			<div>&nbsp;Book a Photoshoot&nbsp;</div>
-		</button>
-	</a>
-	<a href="../aboutSM.html" class="aButton">
-		<button class="pageButtonColorSkew showButton" title="About the Schuy">
-			<div class="pageButtonTxt">&nbsp;About&nbsp;</div>
-		</button>
-	</a>
-	<a href="../contact.html" class="aButton">
-		<button class="pageButtonColorSkew showButton" title="Coming Soon!">
-			<div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
-		</button>
-	</a>
-	<a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
-		<button class="pageButtonColorSkew showButton" title="To the SchuyBox!">
-			<div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
-		</button>
-	</a>
-</div>
-
-<hr class="rounded">
-
 <div class="socialBar">
     <div class="socialProps">
-      <a class="link4" href="https://www.instagram.com/schuyler_meyer/" title="Instagram &#64;schuyler_meyer">
+      <a class="link4" href="https://www.instagram.com/schuyler_meyer/" title="Instagram &#64;schuyler_meyer" target="_blank" rel="noopener">
           <img class="socialHover" src="../src/icons/Instagram_3.png" alt="instagram.com/schuyler_meyer">
       </a>
     </div>
     <div class="socialProps">
-      <a class="link4" href="https://twitter.com/schuylermeyer24" title="Twitter &#64;schuylermeyer24">
+      <a class="link4" href="https://twitter.com/schuylermeyer24" title="Twitter &#64;schuylermeyer24" target="_blank" rel="noopener">
           <img class="socialHover twitterX" src="../src/icons/Twitter_3.png" alt="twitter.com/schuylermeyer24" >
       </a>
     </div>
     <div class="socialProps">
-      <a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer">
+      <a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer" target="_blank" rel="noopener">
           <img class="socialHover" src="../src/icons/Flickr_3.png" alt="flickr.com/photos/schuyler_meyer">
       </a>
     </div>
     <div class="socialProps">
-      <a class="link4" href="https://www.linkedin.com/in/schuyler-meyer/" title="LinkedIn &#64; Schuyler Meyer">
+      <a class="link4" href="https://www.linkedin.com/in/schuyler-meyer/" title="LinkedIn &#64; Schuyler Meyer" target="_blank" rel="noopener">
           <img class="socialHover" src="../src/icons/LinkedIn.png" alt="linkedin.com/in/schuyler-meyer">
       </a>
     </div>
     <div class="socialProps">
-      <a class="link4" href="https://www.deviantart.com/akatsukirising" title="DeviantArt &#64;AkatsukiRising">
-          <img class="socialHover" src="../src/icons/DeviantArt_3.png" alt="deviantart.com/akatsukirising" >
+      <a class="link4" href="https://linktr.ee/schuylermeyer" title="LinkTree &#64; SchuylerMeyer" target="_blank" rel="noopener">
+          <img class="socialHover" src="../src/icons/LinkTree.png" alt="linktr.ee/schuylermeyer">
       </a>
     </div>
     <div class="socialProps">
@@ -86,3 +61,9 @@ photoFooterInner.innerHTML = `
   <a class="link3" href="../readmeText.html" target="_self" title="Readme"> <u>README</u> </a>
 </p>
 `;
+
+//<div class="socialProps">
+//    <a class="link4" href="https://www.deviantart.com/akatsukirising" title="DeviantArt &#64;AkatsukiRising">
+//        <img class="socialHover" src="../src/icons/DeviantArt_3.png" alt="deviantart.com/akatsukirising" >
+//    </a>
+//</div>

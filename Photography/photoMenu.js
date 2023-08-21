@@ -17,6 +17,21 @@ function closeNav() {
   document.body.classList.toggle('noscroll');
 }
 
+//function myModal() {
+//    let myMod = document.getElementById('myModal');
+
+//    myMod.innerHTML = `
+//        <div class="modalPhoto">
+//		    <div id="photoText">Click the "x" or anywhere outside the image to close.</div>
+//		        <img class="modalPhotoContent" id="img01" title="">
+//		    <div id="photoTextCapt"></div>
+//		    <input type="button" id="closeButton" value="&times;" title="Close">
+//	    </div>
+//    `;
+
+//    console.log("modal set?");
+//}
+
 // For video on homescreen
 
 /*

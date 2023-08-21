@@ -84,30 +84,66 @@ photoHeaderInner.innerHTML = `
 
 <hr class="rounded">
 
-<div class="buttonAbout">
-  <a href="../index.html" class="aButton">
-    <button class="pageButtonColorSkew" title="Home">
-      <div class="pageButtonTxt">&nbsp;Home&nbsp;</div>
+<nav>
+    <a href="../index.html" class="aButton pageButtonColor" title="Home">
+        &nbsp;Home&nbsp;
+    </a>
+    <button class="pageButtonColorSkew" onclick="openNav()" title="Click to Open the Photo Menu">
+        <div class="pageButtonTxt">&nbsp;<span class="hamS">&#9776;</span>&nbsp;Photos&nbsp;</div>
     </button>
-  </a>
-  <button class="pageButtonColorSkew" onclick="openNav()" title="Click to Open the Photo Menu">
-    <div class="pageButtonTxt">&nbsp;<span class="hamS">&#9776;</span>&nbsp;Photos&nbsp;</div>
-  </button>
-  <a href="../aboutSM.html" class="aButton">
-    <button class="pageButtonColorSkew hideButton" title="About the Schuy">
-      <div class="pageButtonTxt">&nbsp;About&nbsp;</div>
-    </button>
-  </a>
-  <a href="../contact.html" class="aButton">
-    <button class="pageButtonColorSkew hideButton" title="Coming Soon!">
-      <div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
-    </button>
-  </a>
-  <a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
-    <button class="pageButtonColorSkew hideButton" title="To the SchuyBox!">
-      <div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
-    </button>
-  </a>
-</div>
+    <a href="../aboutSM.html" class="aButton pageButtonColor" title="About">
+        &nbsp;About&nbsp;
+    </a>
+    <a href="../contact.html" class="aButton pageButtonColor" title="Coming Soon!">
+        &nbsp;Contact&nbsp;
+    </a>
+    <div class="dropdown">
+        <div class="aButton dropdownButton">
+            <button class="pageButtonColor" title="">&nbsp;Services&nbsp;</button>
+        </div>
+        <div class="dropdown-content">
+            <a href="../photoshoot.html" class="aButton pageButtonColor" title="Book a Photoshoot">
+                &nbsp;Book a Photoshoot&nbsp;
+            </a>
+            <a href="../itconsulting.html" class="aButton pageButtonColor" title="IT Services">
+                &nbsp;IT Services&nbsp;
+            </a>
+        </div>
+    </div>
+    <a href="https://schuybox.wordpress.com/" class="aButton pageButtonColor" title="To the SchuyBox!" target="_blank">
+        &nbsp;Blog&nbsp;
+    </a>
+    <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor" title="Buy me a Coffee" target="_blank">
+        <img class="menuIcon" src="../src/icons/KoFi_no_circle.png">
+    </a>
+</nav>
 
 <hr class="rounded">`;
+
+//----------------------------------------------
+
+//<div class="buttonAbout">
+//  <a href="../index.html" class="aButton">
+//    <button class="pageButtonColorSkew" title="Home">
+//      <div class="pageButtonTxt">&nbsp;Home&nbsp;</div>
+//    </button>
+//  </a>
+//  <button class="pageButtonColorSkew" onclick="openNav()" title="Click to Open the Photo Menu">
+//    <div class="pageButtonTxt">&nbsp;<span class="hamS">&#9776;</span>&nbsp;Photos&nbsp;</div>
+//  </button>
+//  <a href="../aboutSM.html" class="aButton">
+//    <button class="pageButtonColorSkew hideButton" title="About the Schuy">
+//      <div class="pageButtonTxt">&nbsp;About&nbsp;</div>
+//    </button>
+//  </a>
+//  <a href="../contact.html" class="aButton">
+//    <button class="pageButtonColorSkew hideButton" title="Coming Soon!">
+//      <div class="pageButtonTxt">&nbsp;Contact&nbsp;</div>
+//    </button>
+//  </a>
+//  <a href="https://schuybox.wordpress.com/" class="aButton" target="_blank">
+//    <button class="pageButtonColorSkew hideButton" title="To the SchuyBox!">
+//      <div class="pageButtonTxt">&nbsp;Blog&nbsp;</div>
+//    </button>
+//  </a>
+//</div>

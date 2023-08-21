@@ -40,54 +40,56 @@
 
 	<div id="PhotoHeaderInner"></div>
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
-<div class="mainContainer">
+	<div class="mainContainer">
 
-	<div class="titles">
-		<u>Mountain Biking</u>
+		<div class="titles">
+			<u>Mountain Biking</u>
+		</div>
+
+		<div class="photoTextDescr">Click on an image to enlarge it.</div>
+
+		<div class="containerGrid">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_1.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_2.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_3.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_4.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_5.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_6.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_7.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_8.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_9.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_10.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_11.jpg" title="">
+			<img class="img4 fadeScroll fadeOut" src="photos/Sports/MountainBiking/photo_12.jpg" title="">
+			<!--<div id="slideCounter" class="slidesText"></div>-->
+		</div>
 	</div>
 
-	<div class="photoTextDescr">Click on an image to enlarge it.</div>
-
-	<div class="containerGrid">
-	  <img class="img4" src="photos/Sports/MountainBiking/photo_1.jpg" title="">
-	  <img class="img4" src="photos/Sports/MountainBiking/photo_2.jpg" title="">
-	  <img class="img4" src="photos/Sports/MountainBiking/photo_3.jpg" title="">
-	  <img class="img4" src="photos/Sports/MountainBiking/photo_4.jpg" title="">
-		<img class="img4" src="photos/Sports/MountainBiking/photo_5.jpg" title="">
-		<img class="img4" src="photos/Sports/MountainBiking/photo_6.jpg" title="">
-		<img class="img4" src="photos/Sports/MountainBiking/photo_7.jpg" title="">
-		<img class="img4" src="photos/Sports/MountainBiking/photo_8.jpg" title="">
-		<img class="img4" src="photos/Sports/MountainBiking/photo_9.jpg" title="">
-		<img class="img4" src="photos/Sports/MountainBiking/photo_10.jpg" title="">
-		<img class="img4" src="photos/Sports/MountainBiking/photo_11.jpg" title="">
-		<img class="img4" src="photos/Sports/MountainBiking/photo_12.jpg" title="">
-		<!--<div id="slideCounter" class="slidesText"></div>-->
+	<div id="myModal" class="modal" title="Click to Close">
+		<div class="modalPhoto">
+			<div id="photoText">Click the "x" or anywhere outside the image to close.</div>
+			<img class="modalPhotoContent" id="img01" title="">
+			<div id="photoTextCapt"></div>
+			<input type="button" id="closeButton" value="&times;" title="Close">
+		</div>
 	</div>
-</div>
-
-<div id="myModal" class="modal" title="Click to Close">
-	<div class="modalPhoto">
-		<div id="photoText">Click the "x" or anywhere outside the image to close.</div>
-		<img class="modalPhotoContent" id="img01" title="">
-		<div id="photoTextCapt"></div>
-		<input type="button" id="closeButton" value="&times;" title="Close">
-	</div>
-</div>
 
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
-<hr class="rounded">
+	<hr class="rounded">
 
-<div id="PhotoFooterInner"></div>
+	<div id="PhotoFooterInner"></div>
 
-<!-- __________________________________________________________________________ -->
+	<!-- __________________________________________________________________________ -->
 
-<script src="photoMenu.js"></script>
-<script src="../scrollToTop.js"></script>
-<script src="../src/js/photoScript.js"></script>
+	<script src="photoMenu.js"></script>
+	<script src="../scrollToTop.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+	<script src="../src/js/photoScript.js"></script>
+	<script src="../src/js/fadeScroll.js"></script>
 
 </body>
 </html>
