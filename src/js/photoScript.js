@@ -1,5 +1,7 @@
 /*-- photoScript.js // Schuyler Meyer // 2022-23 --*/
 
+import * as EXIF from "exif-js/exif.js"; 
+
 const modal = document.getElementById('myModal');
 const images = document.querySelectorAll(".containerGrid img");
 const body = document.getElementById('fullBody');
