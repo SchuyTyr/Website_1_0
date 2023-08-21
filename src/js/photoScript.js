@@ -21,11 +21,11 @@ var imgTitle = "Untitled";
 
 //window.onload = getExif;
 
-async function getExif(img) {
+function getExif(img) {
 
     console.log("running.");
 
-    await EXIF.getData(img, await function () {
+    EXIF.getData(img, function () {
 
         if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
 
@@ -58,30 +58,35 @@ async function names(img, e) {
 
     await getExif(img);
 
-    if ((imgTitle === "Untitled" || imgTitle === "undefined") && e.target.title !== "") {
-        modalImg.title = e.target.title;
-        modalImg.alt = e.target.title;
-        modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
-        console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-    }
-    else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "") {
-        modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
-        modalImg.title = imgTitle;
-        modalImg.alt = imgTitle;
-        console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-    }
-    else {
-        modalImgCapt.innerHTML = "";
-        modalImg.title = "";
-        modalImg.alt = "";
-        console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-    }
+    setTimeout(() => {
 
-    noScrollF();
-    scrollTop.style.display = "none";
-    html.style.overflow = "hidden";
-    topBtn = true;
-    modalOpen = true;
+
+        if ((imgTitle === "Untitled" || imgTitle === "undefined") && e.target.title !== "") {
+            modalImg.title = e.target.title;
+            modalImg.alt = e.target.title;
+            modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
+            console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+        }
+        else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "") {
+            modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
+            modalImg.title = imgTitle;
+            modalImg.alt = imgTitle;
+            console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+        }
+        else {
+            modalImgCapt.innerHTML = "";
+            modalImg.title = "";
+            modalImg.alt = "";
+            console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+        }
+
+        noScrollF();
+        scrollTop.style.display = "none";
+        html.style.overflow = "hidden";
+        topBtn = true;
+        modalOpen = true;
+
+    }, 1000);
 }
 
 window.onclick = function (event) {
