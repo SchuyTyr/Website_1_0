@@ -22,6 +22,7 @@ async function getExif() {
         if (EXIF.getTag(this, "ImageDescription") !== null) {
             img1.title = imgTitle;
             img1.alt = imgTitle;
+            console.log("imgTitle from exif: " + imgTitle);
         }
     });
 

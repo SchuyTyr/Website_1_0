@@ -15,19 +15,33 @@ var noScroll = true;
 
 var modalOpen = false;
 
+var imgTitle = "";
+
 images.forEach((img) => {
     img.addEventListener("click", (e) => {
 
 		modal.style.display = "block";
         modalImg.src = e.target.src;
         //modalImg.title = e.target.title;
-        console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title);
+        console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         getExif(img);
 
-        if (img.title == "undefined" || img.title !== "") {
+        if (imgTitle === "undefined" || imgTitle === "") {
             modalImg.title = e.target.title;
-            console.log("2- modalImg: " + modalImg.title + ", target: " + e.target.title);
+            modalImg.alt = e.target.title;
+            modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
+            console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         }
+        else if (imgTitle !== "undefined" || imgTitle !== "") {
+            modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
+            modalImg.title = imgTitle;
+            modalImg.alt = imgTitle;
+            console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+        }
+
+        //else {
+
+        //}
 
 		/*modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";*/
 		noScrollF();
@@ -66,18 +80,26 @@ function noScrollF() {
 
 function getExif(img) {
 
-    var imgTitle = "";
-
     EXIF.getData(img, function () {
 
-        //if (EXIF.getTag(this, "ImageDescription") != null) {
-            imgTitle = EXIF.getTag(this, "ImageDescription");
-            console.log("imgTitle: " + imgTitle);
+        imgTitle = EXIF.getTag(this, "ImageDescription");
 
-            modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
-            modalImg.title = imgTitle;
-            modalImg.alt = imgTitle;
+        //if (EXIF.getTag(this, "ImageDescription") !== null || img.title !== "undefined" || img.title !== "") {
+        //    modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
+        //    modalImg.title = imgTitle;
+        //    modalImg.alt = imgTitle;
         //}
+        //else {
+        //    modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
+        //    modalImg.title = imgTitle;
+        //    modalImg.alt = imgTitle;
+        //}
+        console.log("imgTitle: " + imgTitle);
+
+        //modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
+        //modalImg.title = imgTitle;
+        //modalImg.alt = imgTitle;
+
     });
 
 }
