@@ -60,14 +60,13 @@ async function names(img, e) {
 
     setTimeout(() => {
 
-
-        if ((imgTitle === "Untitled" || imgTitle === "undefined") && e.target.title !== "") {
+        if ((imgTitle === "Untitled" || imgTitle === "undefined" || imgTitle === "") && e.target.title !== "") {
             modalImg.title = e.target.title;
             modalImg.alt = e.target.title;
             modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
             console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         }
-        else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "") {
+        else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "" && e.target.title === "") {
             modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
             modalImg.title = imgTitle;
             modalImg.alt = imgTitle;
@@ -86,7 +85,7 @@ async function names(img, e) {
         topBtn = true;
         modalOpen = true;
 
-    }, 1000);
+    }, 500);
 }
 
 window.onclick = function (event) {
