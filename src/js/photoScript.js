@@ -21,7 +21,7 @@ var imgTitle = "Untitled";
 
 async function getExif(img) {
 
-    await EXIF.getData(img, function () {
+    EXIF.getData(img, await function () {
 
         if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
 
@@ -42,18 +42,12 @@ images.forEach((img) => {
 
         console.log("----");
 
-        /*async function name() {*/
-
-            ///*await*/ getExif(img);
-
-            modal.style.display = "block";
-            modalImg.src = e.target.src;
-            //modalImg.title = e.target.title;
-            console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+        modal.style.display = "block";
+        modalImg.src = e.target.src;
+        //modalImg.title = e.target.title;
+        console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
 
         names(img, e);
-
-        //}
 
     });
 });
