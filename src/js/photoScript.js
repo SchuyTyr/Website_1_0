@@ -20,8 +20,15 @@ images.forEach((img) => {
 
 		modal.style.display = "block";
         modalImg.src = e.target.src;
-        modalImg.title = e.target.title;
+        //modalImg.title = e.target.title;
+        console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title);
         getExif(img);
+
+        if (img.title == "undefined" || img.title !== "") {
+            modalImg.title = e.target.title;
+            console.log("2- modalImg: " + modalImg.title + ", target: " + e.target.title);
+        }
+
 		/*modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";*/
 		noScrollF();
         scrollTop.style.display = "none";

@@ -19,7 +19,7 @@ async function getExif() {
 
         imgTitle = EXIF.getTag(this, "ImageDescription");
 
-        if (EXIF.getTag(this, "ImageDescription") != null) {
+        if (EXIF.getTag(this, "ImageDescription") !== null) {
             img1.title = imgTitle;
             img1.alt = imgTitle;
         }
