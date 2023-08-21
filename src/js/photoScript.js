@@ -15,7 +15,7 @@ var noScroll = true;
 
 var modalOpen = false;
 
-var imgTitle = "";
+var imgTitle = "Untitled";
 
 images.forEach((img) => {
     img.addEventListener("click", (e) => {
@@ -26,13 +26,13 @@ images.forEach((img) => {
         console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         getExif(img);
 
-        if (imgTitle === "undefined" || imgTitle === "" || modalImg.title !== "undefined") {
+        if (imgTitle === "Untitled" && e.target.title !== "") {
             modalImg.title = e.target.title;
             modalImg.alt = e.target.title;
             modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
             console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         }
-        else if (imgTitle !== "undefined" || imgTitle !== "") {
+        else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "") {
             modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
             modalImg.title = imgTitle;
             modalImg.alt = imgTitle;
