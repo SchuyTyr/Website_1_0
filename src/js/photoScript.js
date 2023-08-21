@@ -26,17 +26,23 @@ images.forEach((img) => {
         console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         getExif(img);
 
-        if (imgTitle === "undefined" || imgTitle === "") {
+        if (imgTitle === "undefined" || imgTitle === "" || modalImg.title !== "undefined") {
             modalImg.title = e.target.title;
             modalImg.alt = e.target.title;
             modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
-            console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+            console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         }
         else if (imgTitle !== "undefined" || imgTitle !== "") {
             modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
             modalImg.title = imgTitle;
             modalImg.alt = imgTitle;
-            console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+            console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+        }
+        else {
+            modalImgCapt.innerHTML = "";
+            modalImg.title = "";
+            modalImg.alt = "";
+            console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         }
 
         //else {
