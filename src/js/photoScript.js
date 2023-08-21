@@ -42,46 +42,51 @@ images.forEach((img) => {
 
         console.log("----");
 
-        async function name() {
+        /*async function name() {*/
 
-            await getExif(img);
+            ///*await*/ getExif(img);
 
             modal.style.display = "block";
             modalImg.src = e.target.src;
             //modalImg.title = e.target.title;
             console.log("1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
 
-            if ((imgTitle === "Untitled" || imgTitle === "undefined") && e.target.title !== "") {
-                modalImg.title = e.target.title;
-                modalImg.alt = e.target.title;
-                modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
-                console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-            }
-            else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "") {
-                modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
-                modalImg.title = imgTitle;
-                modalImg.alt = imgTitle;
-                console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-            }
-            else {
-                modalImgCapt.innerHTML = "";
-                modalImg.title = "";
-                modalImg.alt = "";
-                console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
-            }
+        names(img, e);
 
-            /*modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";*/
-            noScrollF();
-            scrollTop.style.display = "none";
-            html.style.overflow = "hidden";
-            topBtn = true;
-            modalOpen = true;
-            //console.log("no scroll?");
-
-        }
+        //}
 
     });
 });
+
+async function names(img, e) {
+
+    await getExif(img);
+
+    if ((imgTitle === "Untitled" || imgTitle === "undefined") && e.target.title !== "") {
+        modalImg.title = e.target.title;
+        modalImg.alt = e.target.title;
+        modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
+        console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+    }
+    else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "") {
+        modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
+        modalImg.title = imgTitle;
+        modalImg.alt = imgTitle;
+        console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+    }
+    else {
+        modalImgCapt.innerHTML = "";
+        modalImg.title = "";
+        modalImg.alt = "";
+        console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+    }
+
+    noScrollF();
+    scrollTop.style.display = "none";
+    html.style.overflow = "hidden";
+    topBtn = true;
+    modalOpen = true;
+}
 
 window.onclick = function (event) {
     if (event.target == modal && modalOpen) {
