@@ -21,20 +21,15 @@ var imgTitle = "Untitled";
 
 async function getExif(img) {
 
-    if (EXIF.getTag(img, "ImageDescription") !== "") {
-        imgTitle = EXIF.getTag(img, "ImageDescription");
-        console.log("imgTitle2: " + imgTitle);
-    }
+    console.log("running.");
 
     EXIF.getData(img, function () {
 
-        //if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
+        if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
 
             imgTitle = EXIF.getTag(this, "ImageDescription");
             console.log("imgTitle1: " + imgTitle);
-        //}
-
-        
+        }
 
     });
 
