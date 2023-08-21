@@ -19,28 +19,40 @@ var imgTitle = "Untitled";
 
 //window.onload = getExif;
 
-function getExif(img) {
+//function getExif(img) {
 
-    EXIF.getData(img, function () {
+//    EXIF.getData(img, function () {
 
-        if (EXIF.getTag(this, "ImageDescription") !== null) {
+//        if (EXIF.getTag(this, "ImageDescription") !== null) {
 
-            imgTitle = EXIF.getTag(this, "ImageDescription");
+//            imgTitle = EXIF.getTag(this, "ImageDescription");
 
-        }
+//        }
 
-        console.log("imgTitle: " + imgTitle);
+//        console.log("imgTitle: " + imgTitle);
 
-    });
+//    });
 
-}
+//}
 
 images.forEach((img) => {
     img.addEventListener("click", (e) => {
 
         console.log("----");
 
-        getExif(img);
+        //getExif(img);
+
+        EXIF.getData(img, function () {
+
+            if (EXIF.getTag(this, "ImageDescription") !== "") {
+
+                imgTitle = EXIF.getTag(this, "ImageDescription");
+                console.log("imgTitle1: " + imgTitle);
+            }
+
+            console.log("imgTitle2: " + imgTitle);
+
+        });
 
 		modal.style.display = "block";
         modalImg.src = e.target.src;
@@ -65,8 +77,6 @@ images.forEach((img) => {
             modalImg.alt = "";
             console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
         }
-
-
 
 		/*modalImgCapt.innerHTML = "<span>"+e.target.title+"</span>";*/
 		noScrollF();
