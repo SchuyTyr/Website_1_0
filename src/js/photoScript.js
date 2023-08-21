@@ -21,7 +21,7 @@ var imgTitle = "Untitled";
 
 async function getExif(img) {
 
-    EXIF.getData(img, function () {
+    await EXIF.getData(img, function () {
 
         if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
 
@@ -42,9 +42,9 @@ images.forEach((img) => {
 
         console.log("----");
 
-        //async function name() {
+        async function name() {
 
-            /*await*/ getExif(img);
+            await getExif(img);
 
             modal.style.display = "block";
             modalImg.src = e.target.src;
@@ -78,7 +78,7 @@ images.forEach((img) => {
             modalOpen = true;
             //console.log("no scroll?");
 
-        //}
+        }
 
     });
 });
