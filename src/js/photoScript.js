@@ -17,7 +17,8 @@ var noScroll = true;
 
 var modalOpen = false;
 
-var imgTitle = "Untitled";
+//var imgTitle = "Untitled";
+var imgTitle = "";
 
 //window.onload = getExif;
 
@@ -60,23 +61,25 @@ async function names(img, e) {
 
     setTimeout(() => {
 
-        if ((imgTitle === "Untitled" || imgTitle === "undefined" || imgTitle === "") && e.target.title !== "") {
+        console.log("imgTitle: " + imgTitle);
+
+        if ((!imgTitle || imgTitle === "Untitled") && e.target.title) {
             modalImg.title = e.target.title;
             modalImg.alt = e.target.title;
             modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
-            console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+            console.log("2-1- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title + ", imgTitle: " + imgTitle);
         }
-        else if (imgTitle !== "undefined" && imgTitle !== "Untitled" && imgTitle !== "" && e.target.title !== "") {
+        else if (imgTitle && imgTitle !== "Untitled") {
             modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
             modalImg.title = imgTitle;
             modalImg.alt = imgTitle;
-            console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+            console.log("2-2- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title + ", imgTitle: " + imgTitle);
         }
         else {
             modalImgCapt.innerHTML = "";
             modalImg.title = "";
             modalImg.alt = "";
-            console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title);
+            console.log("2-3- modalImg: " + modalImg.title + ", target: " + e.target.title + ", img.title: " + img.title + ", imgTitle: " + imgTitle);
         }
 
         noScrollF();
@@ -95,7 +98,8 @@ window.onclick = function (event) {
         html.style.overflow = "revert";
         topBtn = false;
         modalOpen = false;
-        imgTitle = "Untitled";
+        //imgTitle = "Untitled";
+        imgTitle = "";
 	}
 }
 
@@ -106,7 +110,8 @@ close.onclick = function (event) {
         html.style.overflow = "revert";
         topBtn = false;
         modalOpen = false;
-        imgTitle = "Untitled";
+        //imgTitle = "Untitled";
+        imgTitle = "";
     }
 }
 
