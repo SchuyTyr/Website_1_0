@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- Schuyler Meyer Website 2.0 -->
+<html lang="en-US">
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMYCWX2SRC"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-YMYCWX2SRC');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Schuyler Meyer /\\ SchuyTyr Media &mdash; Photography, Animation, Game Developer, VR, Software Engineering, Web Development, IT Support Services">
+	<meta name="keywords" content="Photography,Digital Art,Game Design,VR,Software,Engineering,Animation,Schuyler Meyer,Schuyler,Meyer,Skyler,SchuyTyr,SchuyTyr Art,SchuyTyr Media,Design,Developer,IT Support Services,Millbrook,NY,Hudson Valley,Berkshires,CT">
+	<meta name="author" content="Schuyler Meyer">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index,follow">
+	<meta name="twitter:card" content="summary_large_image"><!-- required -->
+	<meta name="twitter:site" content="@schuylermeyer24"><!-- required -->
+	<meta name="twitter:creator" content="@schuylermeyer24"><!-- optional -->
+	<meta name="twitter:title" content="Schuyler Meyer /\\ SchuyTyr Media"><!-- required -->
+	<meta name="twitter:description" content="Photography, Animation, Game Developer, VR, Software Engineering, Web Development, IT Services"><!-- optional -->
+	<meta name="twitter:image" content="https://www.schuylermeyer.com/src/img/TwitPhoto_2x1.jpg"><!-- optional -->
+	<meta name="twitter:image:alt" content="Schuyler Meyer /\\ SchuyTyr Media"><!-- optional -->
+	<title>SM - Library Input</title>
+	<!--<link href="stylesSM.css" rel="stylesheet">-->
+	<link href="stylesSM.css" rel="stylesheet">
+	<link href="stylesSM2.css" rel="stylesheet">
+	<link href="src/icons/SMLogo2022.ico" rel="shortcut icon">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
+	<!-- End Fonts -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+	<script src="src/js/header-main.js" type="text/javascript" defer></script>
+	<script src="src/js/footer-main.js" type="text/javascript" defer></script>
+</head>
+<body>
+
+	<header id="header-main"></header>
+
+	<hr class="rounded" style="margin-bottom: 4px;">
+
+	<!-- __________________________________________________________________________ -->
+
+	<main id="main-main">
+
+		<br>
+		<br>
+
+		<form name="mediaTypeForm" class="topForms">
+			<label for="mediaTypeSelect">Select Type of Entry: </label>
+			<select name="mediaTypeSelect" id="mediaType" onchange="disableField()">
+				<option value="" selected>--Entry Type--</option>
+				<option value="bookFieldset">Book</option>
+				<option value="movieFieldset">Movie / TV Show</option>
+				<option value="musicFieldset">Music</option>
+			</select>
+
+			<!--<input id="submitType" type="submit" value="Submit" />-->
+		</form>
+
+		<br>
+		<br>
+
+		<div class="formContainer">
+
+			<!-- __________________________________________________________________________ -->
+
+			<form class="forms">
+				<fieldset id="bookFieldset">
+					<legend>Book Entry:</legend>
+					<label for="ISBN">ISBN: </label>
+					<input type="number" name="ISBN" placeholder="9780000000000" autocomplete="off" />
+
+					<br>
+
+					<label for="name">Title: </label>
+					<input name="title" placeholder="Book Title" autocomplete="off" />
+
+					<br>
+
+					<label for="author">Author: </label>
+					<input name="author" placeholder="Name" autocomplete="off" />
+
+					<br>
+
+					<label for="volume">Volume #: </label>
+					<input type="number" name="volume" autocomplete="off" />
+
+					<br>
+
+					<label for="rDate">Release Date: </label>
+					<input type="date" name="rDate" autocomplete="off" />
+
+					<br>
+
+					<label for="genre">Genre: </label>
+					<input name="genre" autocomplete="off" />
+
+					<br>
+
+					<label for="phyType">Physical Type: </label>
+					<label><input type="radio" name="phyType" value="hardcover" />Hardcover</label>
+					<label><input type="radio" name="phyType" value="paperback" />Paperback</label>
+					<label><input type="radio" name="phyType" value="other" />Other</label>
+
+					<br>
+
+					<label for="bookType">Book Type: </label>
+					<select name="bookType">
+						<option value="" selected>--Please choose an option--</option>
+						<option value="novel">Novel</option>
+						<option value="shortStory">Short Story</option>
+						<option value="manga">Manga</option>
+						<option value="graphicNovel">Graphic Novel</option>
+						<option value="lightNovel">Light Novel</option>
+						<option value="artBook">Art / Photo Book</option>
+						<option value="other">Other</option>
+					</select>
+
+					<br>
+
+					<label for="completed">Completed: </label>
+					<label><input type="radio" name="completed" value="yes" />Finished</label>
+					<label><input type="radio" name="completed" value="incomplete" />Started</label>
+					<label><input type="radio" name="completed" value="no" />Not Started</label>
+
+					<br>
+
+					<label for="pageLength">Length (in pages): </label>
+					<input type="number" name="pageLength" placeholder="200" autocomplete="off" />
+
+					<br>
+
+					<label for="tags">Tags: (Please separate each with a comma.)</label>
+					<br>
+					<textarea name="tags" rows="1" style="width: 358px;"></textarea>
+
+					<br><br>
+
+					<input id="submitBookInfo" type="submit" value="Submit" />
+					<input id="clearInfo" type="reset" value="Clear" />
+				</fieldset>
+			</form>
+
+			<!-- __________________________________________________________________________ -->
+
+			<form class="forms">
+				<fieldset id="movieFieldset">
+					<legend>Media Entry:</legend>
+					<label for="name">Title: </label>
+					<input name="title" placeholder="Movie Title" autocomplete="off" />
+
+					<br>
+
+					<label for="phyType">Physical Type: </label>
+					<label><input type="radio" name="phyType" value="bluray" />Blu-ray</label>
+					<label><input type="radio" name="phyType" value="dvd" />DVD</label>
+					<label><input type="radio" name="phyType" value="other" />Other</label>
+
+					<br>
+
+					<label for="movieType">Media Type: </label>
+					<label><input type="radio" name="movieType" value="movie" />Movie</label>
+					<label><input type="radio" name="movieType" value="tvShow" />TV Show</label>
+					<label><input type="radio" name="movieType" value="other" />Other</label>
+
+					<br>
+
+					<label for="mediaLength">Length (in minutes): </label>
+					<input type="number" name="mediaLength" placeholder="200" autocomplete="off" />
+
+					<br>
+
+					<label for="volume">Volume #: </label>
+					<input type="number" name="volume" autocomplete="off" />
+
+					<br>
+
+					<label for="rDate">Release Date: </label>
+					<input type="date" name="rDate" autocomplete="off" />
+
+					<br>
+
+					<label for="genre">Genre: </label>
+					<input name="genre" autocomplete="off" />
+
+					<br>
+
+					<label for="tags">Tags: (Please separate each with a comma.)</label>
+					<br>
+					<textarea name="tags" rows="1" style="width: 358px;"></textarea>
+
+					<br><br>
+
+					<input id="submitBookInfo" type="submit" value="Submit" />
+					<input id="clearInfo" type="reset" value="Clear" />
+				</fieldset>
+			</form>
+
+			<!-- __________________________________________________________________________ -->
+
+			<form class="forms">
+				<fieldset id="musicFieldset">
+					<legend>Music Entry:</legend>
+					<label for="albumTitle">Album Title: </label>
+					<input name="albumTitle" placeholder="Album Title" autocomplete="off" />
+
+					<br>
+
+					<label for="bandName">Band Name: </label>
+					<input name="bandName" placeholder="Band Name" autocomplete="off" />
+
+					<br>
+
+					<label for="phyType">Physical Type: </label>
+					<label><input type="radio" name="phyType" value="cd" />CD</label>
+					<label><input type="radio" name="phyType" value="vinyl" />Vinyl</label>
+					<label><input type="radio" name="phyType" value="other" />Other</label>
+
+					<br>
+
+					<label for="musicType">Music Type: </label>
+					<label><input type="radio" name="musicType" value="album" />Album</label>
+					<label><input type="radio" name="musicType" value="single" />Single</label>
+					<label><input type="radio" name="musicType" value="other" />Other</label>
+
+					<br>
+
+					<label for="rDate">Release Date: </label>
+					<input type="date" name="rDate" autocomplete="off" />
+
+					<br>
+
+					<label for="musicLength">Length (in minutes): </label>
+					<input type="number" name="musicLength" placeholder="200" autocomplete="off" />
+
+					<br>
+
+					<label for="genre">Genre: </label>
+					<input name="genre" autocomplete="off" />
+
+					<br>
+
+					<label for="tags">Tags: (Please separate each with a comma.)</label>
+					<br>
+					<textarea name="tags" rows="1" style="width: 358px;"></textarea>
+
+					<br><br>
+
+					<input id="submitBookInfo" type="submit" value="Submit" />
+					<input id="clearInfo" type="reset" value="Clear" />
+				</fieldset>
+			</form>
+
+			<!-- __________________________________________________________________________ -->
+
+		</div>
+
+		<br>
+		<br>
+
+
+
+
+	</main>
+
+	<div id="footer-main"></div>
+
+	<!-- __________________________________________________________________________ -->
+
+	<script src="src/js/entryType.js" type="text/javascript"></script>
+
+
+</body>
+</html>

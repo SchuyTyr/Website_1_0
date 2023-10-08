@@ -1,0 +1,40 @@
+{
+  "library": {
+    "books": {
+      "inter_id": "000",
+      "ISBN": "9780000000000",
+      "title": "name",
+      "volume": "1",
+      "author": "name",
+      "date": "release date",
+      "genre": "genre",
+      "phyType": "hardcover/paperback",
+      "type": "novel/shortStory/lightNovel/manga",
+      "completed": "yes",
+      "pageLength": "200",
+      "tags": [ "tag", "tag1" ]
+    },
+    "media": {
+      "inter_id": "000",
+      "phyType": "bluray/DVD",
+      "type": "TVshow/movie",
+      "length": "minutes",
+      "title": "name",
+      "volume": "1",
+      "date": "release date",
+      "genre": "genre",
+      "tags": [ "tag", "tag1" ]
+    },
+    "music": {
+      "inter_id": "000",
+      "phyType": "CD/Vinyl",
+      "type": "album/single",
+      "length": "minutes",
+      "albumName": "name",
+      "bandName": "name",
+      "date": "release date",
+      "genre": "genre",
+      "tags": [ "tag", "tag1" ]
+    }
+  }
+}
