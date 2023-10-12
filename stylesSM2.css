@@ -1271,8 +1271,9 @@ hr.rounded {
 	 backdrop-filter: blur(20px);
 }
 .modalPhoto {
-	display: block;
-/*	position: absolute;
+	/*display: block;*/
+	display: flex;
+	/*	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);*/
@@ -1288,12 +1289,17 @@ hr.rounded {
 	-o-object-fit: contain;
 	object-fit: contain;
 	vertical-align: middle;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
 }
 .modalPhotoContent {
 	margin: auto;
-	margin-top: auto;
-	margin-bottom: auto;
-	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/*display: block;*/
 	/*width: 80%;*/
 	max-width: 90%;
 	max-height: 80%;
@@ -1332,7 +1338,7 @@ hr.rounded {
 	font-size: 20px;
 	font-family: 'Merienda', cursive;
 	text-align: center;
-	margin: auto;
+	/*margin: auto;*/
 	/*display: flex;
 	justify-content: center;*/
 }
@@ -1371,14 +1377,15 @@ hr.rounded {
 	cursor: pointer;
 	/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
 	font-size: 96px;
+	line-height: 0.5;
 	color: var(--main_text_blue_color);
 	transition: 0.3s all ease-in-out;
 	text-align: center;
-	width: 25%;
+	/*width: 25%;*/
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Rye', cursive;
-	transform: rotate(0deg);
+	/*transform: rotate(0deg);*/
 	text-decoration: none;
 	border: 0;
 	background-color: rgba(0,0,0,0%);
@@ -2955,6 +2962,10 @@ a.linkWS:hover, a.linkWS:hover span {
 	align-items: flex-start;
 }
 
+.captionCompare {
+	text-align: center;
+}
+
 #comparison {
 	width: 600px;
 	height: 400px;
@@ -2962,7 +2973,7 @@ a.linkWS:hover, a.linkWS:hover span {
 	max-height: 800px;
 	overflow: hidden;
 	border: 8px solid #000000;
-	margin-bottom: 100px;
+	/*margin-bottom: 100px;*/
 }
 
 	#comparison figure {

@@ -53,17 +53,20 @@ async function names(img, e) {
         if ((!imgTitle || imgTitle === "Untitled") && e.target.title) {
             modalImg.title = e.target.title;
             modalImg.alt = e.target.title;
+            modalImg.style.marginBottom = "24px";
             modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
         }
         else if (imgTitle && imgTitle !== "Untitled") {
             modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
             modalImg.title = imgTitle;
             modalImg.alt = imgTitle;
+            modalImg.style.marginBottom = "5px";
         }
         else {
             modalImgCapt.innerHTML = "";
             modalImg.title = "";
             modalImg.alt = "";
+            modalImg.style.marginBottom = "24px";
         }
 
         noScrollF();
