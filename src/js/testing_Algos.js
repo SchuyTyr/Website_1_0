@@ -5,10 +5,10 @@
 import { max_subarray } from "./kadane_Algo.js";
 
 function kadaneAlgo() {
-    var numForAlgo = document.getElementById(numForAlgo);
+    var numForAlgo = document.getElementById("numForAlgo").value;
     console.log("numForAlgo: " + numForAlgo);
 
-    var output = document.getElementById(output);
+    var output = document.getElementById("output");
 
     var separatedArray = numForAlgo.split(', ');
     console.log("separatedArray: " + separatedArray);

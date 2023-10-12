@@ -53,30 +53,39 @@
 
 		<div class="formContainer">
 
-			<!-- __________________________________________________________________________ -->
+		<!-- __________________________________________________________________________ -->
 
-				<form class="forms">
-					<fieldset id="numberFieldset">
-						<legend>Number Entry:</legend>
+			<form class="forms">
+				<fieldset id="numberFieldset">
+					<legend>Number Entry:</legend>
 					
-						<label>
-							Numbers:
-							<input id="numForAlgo" name="numbers" placeholder="1,2,3,4" autocomplete="off" />
-						</label>
+					<label>
+						Numbers:
+						<input id="numForAlgo" name="numbers" placeholder="1, 2, 3, 4" autocomplete="off" />
+					</label>
 					
-						<br><br>
+					<br><br>
 						
-						<div id="output">
+						<label>Output: 
+							<output id="output" for="numForAlgo"></output>
+						</label>
 
-						</div>
+							<br><br>
 
-						<br><br>
+							<input id="submitNumberInfo" type="submit" value="Submit" onclick="kadaneAlgo()" />
+							<!--<input id="submitNumberInfo" type="submit" value="Submit" onclick="test1()" />-->
+							<input id="clearInfo" type="reset" value="Clear" />
 
-						<input id="submitNumberInfo" type="submit" value="Submit" onclick="kadaneAlgo()" />
-						<input id="clearInfo" type="reset" value="Clear" />
-					</fieldset>
-				</form>
-			</div>
+					<!--<script>
+						function test1() {
+							var numForAlgo = document.getElementById("numForAlgo").value;
+							console.log("numForAlgo: " + numForAlgo);
+						}
+					</script>-->
+
+				</fieldset>
+			</form>
+		</div>
 
 
 	</main>
