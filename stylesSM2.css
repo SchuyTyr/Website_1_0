@@ -1369,6 +1369,52 @@ hr.rounded {
 	line-height: 2;
 }
 
+.photoBorderBottom {
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 60%;*/
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+
+.photoBorderTop {
+	padding-top: 12px;
+	margin-top: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 60%;*/
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+
+.photoBorderTop:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	border-top: 1px solid var(--main_subText_color);
+	content: "";
+}
+
+.photoBorderBottom:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-bottom: 1px solid var(--main_subText_color);
+	content: "";
+}
+
+.photoHeaderSpacing {
+	/*padding-top: 12px;*/
+	margin-top: 0px;
+}
+
+
 #closeButton {
 	display: block;
 	cursor: pointer;
