@@ -46,6 +46,8 @@
 		<br>
 		<img alt="Software" class="img2" src="src/img/keyb_4.jpg">
 		<br>
+		<div class="descrITClick" onclick="moveToContent()">Click here (or scroll) for examples.</div>
+		<br>
 		<div class="descrTitleIT"><u>Computer Repair</u>&nbsp;&mdash;</div>
 		<div class="descrIT">
 			<ul>
@@ -114,6 +116,26 @@
 				</li>
 			</ul>
 		</div>
+		
+		<div id="textHere" class="descrTitleIT"><u>Examples</u>&nbsp;&mdash;</div>
+		<div class="descrIT">
+			<ul>
+				<li>
+					A cinematography website for Lawton Meyer to match the previously Wix-designed one.<br>
+				</li>
+				<li>
+					See the project in action, here:
+					<a class="projLink" href="https://www.lawtonmeyer.com" target="_blank">lawtonmeyer.com</a>&nbsp;<span class="lg-view"><br></span>
+				</li>
+				<li>
+					<span>(Scroll down on the image.)</span>
+					<div class="softPhoto">
+						<img src="src/img/cinema_Website.jpg" title="Cinema Website">
+					</div>
+					&nbsp;<span class="lg-view"><br></span>
+				</li>
+			</ul>
+		</div>
 
 		<br>
 		<br>
@@ -124,8 +146,15 @@
 
 	<div id="footer-main"></div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="scrollToTop.js"></script>
+
+	<script>
+		function moveToContent() {
+			document.getElementById('textHere').scrollIntoView({
+				behavior: 'smooth'
+			});
+		}
+	</script>
 
 
 </body>
