@@ -1,0 +1,41 @@
+Robot:
+
+- Anatomy
+- Maintenance / well-being
+- Energy / fuel
+- Tasks
+
+- Anatomy 
+	- [Phy] Head
+		- [Phy] Left eye
+		- [Phy] Right eye
+	- [Phy] Left arm
+	- [Phy] Right arm
+	- [Phy] Body
+	- [Phy] Legs?
+	- [Internal] Software (more detailed) 
+	- [Sensors] ???
+
+- Maintenance
+	- gather materials
+	- build components
+	- repair
+	- (breakdowns at random intervals)
+
+- Energy
+	- 0-100 (%)
+	- 1 unit of energy for per most tasks
+	- recharge (no tasks during)
+
+- Tasks
+	- [MNT] Gather
+	- [MNT] Build
+	- [MNT] Repair
+	- 
+	- [ENG] Recharge
+	- 
+	- [GEN] Research
+	- [GEN] Build 
+	- [GEN] Sleep
+	- [GEN] Repair (surroundings)
+	- [GEN] ...

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Noto+Sans+Symbols+2&family=Orbitron&family=Roboto+Mono:wght@200;400&display=swap');
 
 /* Colors
 	 Header Text: #ffffff
@@ -11,6 +11,7 @@
 	--main_border_blue_color: rgba(67,111,243,1.0);
 	--main_headerText_color: #c2c7cc;
 	--main_subText_color: #8b8e91;
+	--main_button_green_color: rgba(0,187,23,90%);
 }
 
 html {
@@ -3226,6 +3227,135 @@ input[type=range]:focus::-moz-range-thumb {
 
 /*-------------------End Odd Job Page------------------*/
 /*-----------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+/*-------------------Start Automation Page------------------*/
+
+#controlPanelContainer {
+	border: solid 2px var(--main_headerText_color);
+	width: 400px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 6px;
+	background: rgba(0,0,0,0.5);
+}
+#controlPanel {
+	border: solid 2px var(--main_headerText_color);
+	width: 370px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 6px;
+	background: rgba(0,0,0,0.5);
+}
+#middleContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px;
+	padding-left: 12px;
+	padding-right: 18px;
+}
+#textControlContainer {
+	width: auto;
+	text-align: left;
+	/*font-family: 'Roboto Mono', monospace;*/
+	font-family: 'Orbitron', sans-serif;
+	font-style: normal;
+	font-size: 20px;
+	/*font-weight: 300;*/
+	color: #a2a6a9;
+	padding-left: 4px;
+}
+.currentButton {
+	margin-left: 20px;
+}
+#currentBroken, #currently {
+	color: var(--main_headerText_color);
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 1.8;
+	text-align: left;
+}
+#currently {
+	padding-bottom: 2px;
+	border-top: solid thin var(--main_headerText_color);
+	/*border-bottom: solid thin var(--main_headerText_color);*/
+}
+#currentBroken {
+	color: #848484;
+}
+
+.currSpan {
+	/*text-decoration: underline;*/
+	color: var(--main_border_blue_color);
+	/*border-top: solid thin var(--main_headerText_color);*/
+	border-bottom: solid thin #848484;
+	font-weight: 400;
+	padding-bottom: 2px;
+	line-height: 1.8;
+}
+
+#batteryBar {
+	padding: 6px 6px;
+	width: 354px;
+	height: 60px;
+	border: solid 2px var(--main_headerText_color);
+	position: relative;
+	border-radius: 8px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(0,0,0,0.5);
+}
+	#batteryBar:before {
+		content: " ";
+		top: 15px;
+		right: 368px;
+		height: 42px;
+		width: 4px;
+		position: absolute;
+		background: var(--main_headerText_color);
+		border-radius: 4px 0 0 4px;
+	}	
+	#batteryBar:after {
+		content: " ";
+		top: 23px;
+		right: -12px;
+		height: 28px;
+		width: 12px;
+		position: absolute;
+		background: var(--main_headerText_color);
+		border-radius: 0 4px 4px 0;
+	}
+.bbar {
+	/*cursor: pointer;*/
+	display: inline-block;
+	text-align: center;
+	width: 0;
+	border: solid thin #4d4f51;
+	border-radius: 4px;
+	padding: 14px;
+	height: 30px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background: transparent;
+	transition: background 2s;
+}
+
+	.bbar.active {
+		background: var(--main_button_green_color);
+	}
+
+/*-------------------End Automation Page------------------*/
+/*--------------------------------------------------------*/
 
 /*-------------------------------------------------------*/
 /*-------------------Start Library Page------------------*/
