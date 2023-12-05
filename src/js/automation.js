@@ -263,9 +263,21 @@ function showBatteryLevel(energyLevel) {
 
         if (index != chargeIndex) {
             chargeToggle[j].classList.add("active");
+
+            if (energyLevel > 60) {
+                chargeToggle[j].style.background = "var(--main_button_green_color)";
+            }
+            else if (energyLevel <= 60 && energyLevel > 25) {
+                chargeToggle[j].style.background = "#ffd600";
+            }
+            else if (energyLevel <= 25) {
+                chargeToggle[j].style.background = "#c90000";
+            }
+
             index++;
         } else {
             chargeToggle[j].classList.remove("active");
+            chargeToggle[j].style.background = "transparent";
         }
     }
 
