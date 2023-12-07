@@ -4231,6 +4231,13 @@ input[type=range]:focus::-moz-range-thumb {
 	.topDescPort {
 		font-size: 18px;
 	}
+	#controlPanelContainer {
+		border: solid 1px var(--main_headerText_color);
+		width: auto;
+		padding: 0;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
 }
 @media screen and (max-width: 400px) {
 	main {
