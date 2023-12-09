@@ -3353,6 +3353,16 @@ input[type=range]:focus::-moz-range-thumb {
 	.bbar.active {
 		background: var(--main_button_green_color);
 	}
+#visualDisplay {
+	width: 370px;
+	height: 208px;
+}
+#vdVID {
+	display: none;
+	width: 100%;
+	height: auto;
+}
+
 
 /*-------------------End Automation Page------------------*/
 /*--------------------------------------------------------*/

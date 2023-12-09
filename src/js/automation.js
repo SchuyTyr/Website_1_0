@@ -66,6 +66,9 @@ let currentBrokenText = document.getElementById("currentBroken");
 let currentlyText = document.getElementById("currently");
 let startStopText = document.getElementById("startStop");
 let beginEndText = document.getElementById("beginEnd");
+let imgVid = document.getElementById("visualDisplay");
+let vdIMG = document.getElementById("vdIMG");
+let vdVID = document.getElementById("vdVID");
 
 //--------------------------------
 
@@ -107,6 +110,7 @@ function taskMaster() {
     checkEnergyLevel();
     breakdownCheck();
     currentState();
+    displayTask(currentTaskState);
     giveTask();
 
     console.log("-----------------" + "td: " + timeDelay + "------------------");
@@ -185,6 +189,43 @@ function Recharge() {
         inStandby = true;
         inRecharge = false;
         timeDelay = 10000;
+    }
+}
+
+// function to display gif / video / image
+function displayTask(currentTaskState) {
+
+    switch (currentTaskState) {
+        case currentTask[0]: // in Maintenance
+            vdIMG.style.display = "block";
+            vdVID.style.display = "none";
+            vdIMG.src = "src/img/automation.jpg";
+            vdVID.pause();
+            break;
+        case currentTask[1]: // in Task
+            vdIMG.style.display = "none";
+            vdVID.style.display = "block";
+            vdVID.src = "src/vid/auto_research.mp4";
+            vdVID.play();
+            break;
+        case currentTask[2]: // in Standby
+            vdIMG.style.display = "block";
+            vdVID.style.display = "none";
+            vdIMG.src = "src/img/automation.jpg";
+            vdVID.pause();
+            break;
+        case currentTask[3]: // in Recharge
+            vdIMG.style.display = "block";
+            vdVID.style.display = "none";
+            vdIMG.src = "src/img/automation.jpg";
+            vdVID.pause();
+            break;
+        default:
+            vdIMG.style.display = "block";
+            vdVID.style.display = "none";
+            vdIMG.src = "src/img/automation.jpg";
+            vdVID.pause();
+            break;
     }
 }
 
