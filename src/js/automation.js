@@ -110,8 +110,9 @@ function taskMaster() {
     checkEnergyLevel();
     breakdownCheck();
     currentState();
-    displayTask(currentTaskState);
+    
     giveTask();
+    displayTask(currentTaskState);
 
     console.log("-----------------" + "td: " + timeDelay + "------------------");
 
@@ -196,25 +197,36 @@ function Recharge() {
 function displayTask(currentTaskState) {
 
     switch (currentTaskState) {
-        case currentTask[0]: // in Maintenance
+        case currentTask[0]: // in Maintenance - not started
             vdIMG.style.display = "block";
             vdVID.style.display = "none";
             vdIMG.src = "src/img/automation.jpg";
             vdVID.pause();
             break;
-        case currentTask[1]: // in Task
+        case currentTask[1]: // in Task - incomplete
             vdIMG.style.display = "none";
             vdVID.style.display = "block";
-            vdVID.src = "src/vid/auto_research.mp4";
+            // Building
+            // Repairing Surroundings
+            // Flying
+            if (currentInTask === 'Getting Distracted') {
+                vdVID.src = "src/vid/auto_distraction.mp4";
+            }
+            else if (currentInTask === 'Researching') {
+                vdVID.src = "src/vid/auto_research.mp4";
+            }
+            else {
+                vdVID.src = "src/vid/auto_research.mp4";
+            }
             vdVID.play();
             break;
-        case currentTask[2]: // in Standby
+        case currentTask[2]: // in Standby - done
             vdIMG.style.display = "block";
             vdVID.style.display = "none";
             vdIMG.src = "src/img/automation.jpg";
             vdVID.pause();
             break;
-        case currentTask[3]: // in Recharge
+        case currentTask[3]: // in Recharge - done
             vdIMG.style.display = "none";
             vdVID.style.display = "block";
             vdVID.src = "src/vid/auto_recharge.mp4";
