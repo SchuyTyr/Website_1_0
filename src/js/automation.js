@@ -215,10 +215,10 @@ function displayTask(currentTaskState) {
             vdVID.pause();
             break;
         case currentTask[3]: // in Recharge
-            vdIMG.style.display = "block";
-            vdVID.style.display = "none";
-            vdIMG.src = "src/img/automation.jpg";
-            vdVID.pause();
+            vdIMG.style.display = "none";
+            vdVID.style.display = "block";
+            vdVID.src = "src/vid/auto_recharge.mp4";
+            vdVID.play();
             break;
         default:
             vdIMG.style.display = "block";
