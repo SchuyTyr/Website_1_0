@@ -55,9 +55,9 @@ let taskRecharge = 'Recharge';
 let taskGeneral = [
     'Researching',
     'Building',
-    'Repairing Surroundings',
-    'Getting Distracted',
-    'Flying'
+    //'Repairing Surroundings',
+    'Getting Distracted'
+    //'Flying'
 ]
 
 //--------------------------------
@@ -206,7 +206,6 @@ function displayTask(currentTaskState) {
         case currentTask[1]: // in Task - incomplete
             vdIMG.style.display = "none";
             vdVID.style.display = "block";
-            // Building
             // Repairing Surroundings
             // Flying
             if (currentInTask === 'Getting Distracted') {
@@ -214,6 +213,9 @@ function displayTask(currentTaskState) {
             }
             else if (currentInTask === 'Researching') {
                 vdVID.src = "src/vid/auto_research.mp4";
+            }
+            else if (currentInTask === 'Building') {
+                vdVID.src = "src/vid/auto_build.mp4";
             }
             else {
                 vdVID.src = "src/vid/auto_research.mp4";
