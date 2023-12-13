@@ -277,6 +277,7 @@ function getRandomInt(max) {
 
 let startStop = function () {
     if (timerID != null) {
+        vdVID.pause();
         stop();
     } else {
         //timerID = setTimeout(taskMaster, timeDelay);
