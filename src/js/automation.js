@@ -197,11 +197,11 @@ function Recharge() {
 function displayTask(currentTaskState) {
 
     switch (currentTaskState) {
-        case currentTask[0]: // in Maintenance - not started
-            vdIMG.style.display = "block";
-            vdVID.style.display = "none";
-            vdIMG.src = "src/img/automation.jpg";
-            vdVID.pause();
+        case currentTask[0]: // in Maintenance - done
+            vdIMG.style.display = "none";
+            vdVID.style.display = "block";
+            vdVID.src = "src/vid/auto_break.mp4";
+            vdVID.play();
             break;
         case currentTask[1]: // in Task - incomplete
             vdIMG.style.display = "none";
