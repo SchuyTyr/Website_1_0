@@ -47,46 +47,68 @@
 		<button id="myBtn" onclick="topFunction()" title="Go to the top"></button>
 
 		<div class="dateContainer"><span id="date"></span></div>
-		
+
+		<br>
+		<div class="titles">
+			<u>Automation</u>
+		</div>
 		<br>
 
-		<p>-Work in Progress-<br>More tasks coming soon.</p>
+		<p style="color: darkorange;">--Work in Progress--<br>More tasks coming soon.</p>
 
 		<br>
 
 		<!-- __________________________________________________________________________ -->
+		<div id="outContainer">
+			<div id="controlPanelContainer">
 
-		<div id="controlPanelContainer">
-
-			<div id="controlPanel">
-				<div id="visualDisplay">
-					<img id="vdIMG" src="src/img/automation.jpg">
-					<video id="vdVID" poster="src/img/automation.jpg" muted playsInline></video>
+				<div id="controlPanel">
+					<div id="visualDisplay">
+						<img id="vdIMG" src="src/img/automation.jpg">
+						<video id="vdVID" poster="src/img/automation.jpg" muted playsInline></video>
+					</div>
+					<div id="currentBroken">All systems nominal.</div>
+					<div id="currently"><span class='currSpan'>Currently in Standby.<br><br></span></div>
 				</div>
-				<div id="currentBroken">All systems nominal.</div>
-				<div id="currently"><span class='currSpan'>Currently in Standby.<br><br></span></div>
-			</div>
-			<div id="middleContainer">
-				<div id="textControlContainer">
-				Press <span id="startStop">'start'</span> to <span id="beginEnd">begin</span> the automation.
+
+				<div id="middleContainer">
+					<div id="textControlContainer">
+						Press <span id="startStop">'start'</span> to <span id="beginEnd">begin</span> the automation.
+					</div>
+					<input type="button" value="Start" onclick="startStop()" id="startButton" class="pageButtonColor currentButton">
 				</div>
-				<input type="button" value="Start" onclick="startStop()" id="startButton" class="pageButtonColor currentButton">
+
+				<div id='batteryBar'>
+					<div class='bbar' data-power='10'></div>
+					<div class='bbar' data-power='20'></div>
+					<div class='bbar' data-power='30'></div>
+					<div class='bbar' data-power='40'></div>
+					<div class='bbar' data-power='50'></div>
+					<div class='bbar' data-power='60'></div>
+					<div class='bbar' data-power='70'></div>
+					<div class='bbar' data-power='80'></div>
+					<div class='bbar' data-power='90'></div>
+					<div class='bbar' data-power='100'></div>
+				</div>
+
 			</div>
 
-			<div id='batteryBar'>
-				<div class='bbar' data-power='10'></div>
-				<div class='bbar' data-power='20'></div>
-				<div class='bbar' data-power='30'></div>
-				<div class='bbar' data-power='40'></div>
-				<div class='bbar' data-power='50'></div>
-				<div class='bbar' data-power='60'></div>
-				<div class='bbar' data-power='70'></div>
-				<div class='bbar' data-power='80'></div>
-				<div class='bbar' data-power='90'></div>
-				<div class='bbar' data-power='100'></div>
+			<div id="textInfoContainter">
+				<span>Current Tasks</span>:
+				<ul>
+					<li>Building</li>
+					<li>Researching</li>
+					<li>Getting Distracted</li>
+				</ul>
+				<span>Other Functions</span>:
+				<ul>
+					<li>Breaking / Repairing</li>
+					<li>Recharging</li>
+					<li>Standby</li>
+				</ul>
 			</div>
-
 		</div>
+		<br>
 		<br>
 
 		<!-- __________________________________________________________________________ -->

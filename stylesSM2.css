@@ -1169,11 +1169,19 @@ hr.rounded {
 /*--------------------------------------------------------------------*/
 /*---------------------------New Photo Page----------------------------*/
 
+.titles {
+	text-align: center;
+	font-size: 42px;
+	font-family: 'Orbitron', sans-serif;
+	color: #777a7d;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: underline #777a7d 4px;
+}
+
 .hamS {
 	font-size: 16px;
-	/*display: inline-block;
-  vertical-align: middle;
-  line-height: normal;*/
 }
 
 .containerGrid {
@@ -3362,6 +3370,39 @@ input[type=range]:focus::-moz-range-thumb {
 	width: 100%;
 	height: auto;
 }
+#outContainer {
+	margin-left: auto;
+	margin-right: auto;
+}
+#textInfoContainter {
+	color: #848484;
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 200;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	padding: 6px;
+	text-align: center;
+	border: solid 2px var(--main_headerText_color);
+	border-top: 0;
+}
+#textInfoContainter span {
+	/*text-decoration: underline;*/
+	border-bottom: solid 1px var(--main_border_blue_color);
+}
+#textInfoContainter li::before {
+	content: "> ";
+	color: var(--main_border_blue_color);
+}
+#textInfoContainter li {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-type: none;
+	text-decoration: none;
+}
 
 
 /*-------------------End Automation Page------------------*/
@@ -3547,6 +3588,10 @@ input[type=range]:focus::-moz-range-thumb {
 	}
 	.roundGreen2 {
 		transform: translate(-25%, 0);
+	}
+	.titles {
+		padding-top: 20px;
+		font-size: 34px;
 	}
 }
 
@@ -3788,6 +3833,9 @@ input[type=range]:focus::-moz-range-thumb {
 	}
 	.modalPort-content {
 		width: 100%;
+	}
+	.titles {
+		font-size: 28px;
 	}
 }
 @media screen and (max-width: 830px) {
@@ -4242,6 +4290,13 @@ input[type=range]:focus::-moz-range-thumb {
 		font-size: 18px;
 	}
 	#controlPanelContainer {
+		border: solid 1px var(--main_headerText_color);
+		width: auto;
+		padding: 0;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	#textInfoContainter {
 		border: solid 1px var(--main_headerText_color);
 		width: auto;
 		padding: 0;

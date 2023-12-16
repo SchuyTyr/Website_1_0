@@ -50,7 +50,7 @@ let taskMaintenance = [
     'Gather',
     'Repair',
     'Build'
-]
+];
 let taskRecharge = 'Recharge';
 let taskGeneral = [
     'Researching',
@@ -58,7 +58,7 @@ let taskGeneral = [
     //'Repairing Surroundings',
     'Getting Distracted'
     //'Flying'
-]
+];
 
 //--------------------------------
 
@@ -69,6 +69,15 @@ let beginEndText = document.getElementById("beginEnd");
 let imgVid = document.getElementById("visualDisplay");
 let vdIMG = document.getElementById("vdIMG");
 let vdVID = document.getElementById("vdVID");
+
+let animations = [
+    "src/img/automation.jpg",
+    "src/vid/auto_break.mp4",
+    "src/vid/auto_distraction.mp4",
+    "src/vid/auto_research.mp4",
+    "src/vid/auto_build.mp4",
+    "src/vid/auto_recharge.mp4"
+];
 
 //--------------------------------
 
@@ -160,7 +169,7 @@ function giveTask() {
 // function to check energy level
 function checkEnergyLevel() {
 
-    if (energyLevel < 25) {
+    if (energyLevel < 15) {
         inMaintenance = false;
         inTask = false;
         inStandby = false;
@@ -180,6 +189,7 @@ function Recharge() {
     }
     else if (energyLevel < 0) {
         energyLevel = 0;
+        Recharge();
     }
     else if (energyLevel > 100) {
         energyLevel = 100;
@@ -200,7 +210,7 @@ function displayTask(currentTaskState) {
         case currentTask[0]: // in Maintenance - done
             vdIMG.style.display = "none";
             vdVID.style.display = "block";
-            vdVID.src = "src/vid/auto_break.mp4";
+            vdVID.src = animations[1];
             vdVID.play();
             break;
         case currentTask[1]: // in Task - incomplete
@@ -209,35 +219,35 @@ function displayTask(currentTaskState) {
             // Repairing Surroundings
             // Flying
             if (currentInTask === 'Getting Distracted') {
-                vdVID.src = "src/vid/auto_distraction.mp4";
+                vdVID.src = animations[2];
             }
             else if (currentInTask === 'Researching') {
-                vdVID.src = "src/vid/auto_research.mp4";
+                vdVID.src = animations[3];
             }
             else if (currentInTask === 'Building') {
-                vdVID.src = "src/vid/auto_build.mp4";
+                vdVID.src = animations[4];
             }
             else {
-                vdVID.src = "src/vid/auto_research.mp4";
+                vdVID.src = animations[3];
             }
             vdVID.play();
             break;
         case currentTask[2]: // in Standby - done
             vdIMG.style.display = "block";
             vdVID.style.display = "none";
-            vdIMG.src = "src/img/automation.jpg";
+            vdIMG.src = animations[0];
             vdVID.pause();
             break;
         case currentTask[3]: // in Recharge - done
             vdIMG.style.display = "none";
             vdVID.style.display = "block";
-            vdVID.src = "src/vid/auto_recharge.mp4";
+            vdVID.src = animations[5];
             vdVID.play();
             break;
         default:
             vdIMG.style.display = "block";
             vdVID.style.display = "none";
-            vdIMG.src = "src/img/automation.jpg";
+            vdIMG.src = animations[0];
             vdVID.pause();
             break;
     }
