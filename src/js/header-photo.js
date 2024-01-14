@@ -75,7 +75,7 @@ photoHeader.innerHTML = `
 <!-- __________________________________________________________________________ -->
 
 <h1 style="color:#8b8e91;" title="Schuyler Meyer">
-  <a href="index.html">
+  <a href="photo.html">
     <img alt="Schuyler Meyer" class="imgLogo" src="src/img/SM_Sign_Photo-blur.png">
   </a>
 </h1>
