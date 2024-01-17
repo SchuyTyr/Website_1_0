@@ -25,6 +25,7 @@ photoHeaderInner.innerHTML = `
         <div class="subNav-content" onclick="void(0)">
           <a href="Baseball.html" title="Baseball">Baseball</a>
           <a href="Basketball.html" title="Basketball">Basketball</a>
+          <a href="XCountry.html" title="Cross Country">Cross Country</a>
           <a href="Equestrian.html" title="Equestrian">Equestrian</a>
           <a href="Football.html" title="Football">Football</a>
           <a href="Golf.html" title="Golf">Golf</a>
@@ -35,7 +36,6 @@ photoHeaderInner.innerHTML = `
           <a href="Soccer.html" title="Soccer">Soccer</a>
           <a href="Softball.html" title="Softball">Softball</a>
           <a href="SwimDive.html" title="Swimming and Diving">Swimming and Diving</a>
-          <a href="XCountry.html" title="Cross Country">Cross Country</a>
         </div>
       </div>
 

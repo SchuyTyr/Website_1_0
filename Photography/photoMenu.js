@@ -1,20 +1,22 @@
 /*-- photoMenu.js // Schuyler Meyer // 2021 --*/
 
 function openNav() {
-  document.getElementById("mNav").style.width = "100%";
-  var mybutton = document.getElementById("myBtn");
-  // 3 following variables from photoScript.js and scrollToTop.js
-  // Apparently they are global variables....
-  //scrollTop.style.display = "none";
-  mybutton.style.display = "none";
-  topBtn = true;
-  document.body.classList.toggle('noscroll');
+    document.getElementById("mNav").style.width = "100%";
+    var mybutton = document.getElementById("myBtn");
+    // 3 following variables from photoScript.js and scrollToTop.js
+    // Apparently they are global variables....
+    //scrollTop.style.display = "none";
+    mybutton.style.display = "none";
+    topBtn = true;
+    document.documentElement.classList.toggle('noscroll');
+  //document.body.classList.toggle('noscroll');
 }
 
 function closeNav() {
-  document.getElementById("mNav").style.width = "0%";
-  topBtn = false;
-  document.body.classList.toggle('noscroll');
+    document.getElementById("mNav").style.width = "0%";
+    topBtn = false;
+    document.documentElement.classList.toggle('noscroll');
+    //document.body.classList.toggle('noscroll');
 }
 
 //function myModal() {

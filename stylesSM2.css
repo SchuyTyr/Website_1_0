@@ -125,7 +125,7 @@ br {
 }
 
 .imgLogo {
-	width: 18%;
+	width: 16%;
 }
 
 .headerTxt {
@@ -1194,7 +1194,7 @@ hr.rounded {
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: space-between;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	width: 90%;
 	margin-left: auto;
@@ -1202,7 +1202,7 @@ hr.rounded {
 }
 
 .containerGrid img {
-	height: 300px;
+	height: 200px;
 	/*border-radius: 20% / 12%;
 	border-radius: 12%;*/
 	margin-left: 8px;
@@ -1211,9 +1211,11 @@ hr.rounded {
 	margin-bottom: 8px;
 	padding: 6px;
 }
+.mainPhoto img {
+	height: 250px;
+}
 
 .img4 {
-
 }
 
 .containerGrid img:hover {
@@ -1423,7 +1425,9 @@ hr.rounded {
 	margin-top: 0px;
 }
 
-
+#mNav {
+	width: 0%;
+}
 #closeButton {
 	display: block;
 	cursor: pointer;
@@ -3495,7 +3499,7 @@ input[type=range]:focus::-moz-range-thumb {
 		max-height: 80%;
 	}*/
 	.imgLogo {
-		width: 18%;
+		width: 14%;
 	}
 	.socialProps img {
 		width: 24%;
@@ -3569,7 +3573,10 @@ input[type=range]:focus::-moz-range-thumb {
 		font-size: 28px;
 	}
 	.containerGrid img {
-		height: 250px;
+		height: 170px;
+	}
+	.mainPhoto img {
+		height: 190px;
 	}
 	.captionContainer span {
 		font-size: 22px;
