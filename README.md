@@ -2,10 +2,10 @@
 
 README Last Updated September 2021
 
-Website Last Updated August 2023
+Website Last Updated January 2024
 
 
-Website - Schuyler Meyer &#169; 2019-2023
+Website - Schuyler Meyer &#169; 2019-2024
 
 View here: https://www.schuylermeyer.com/ 
 
