@@ -3476,7 +3476,58 @@ input[type=range]:focus::-moz-range-thumb {
 /*-------------------End Library Page------------------*/
 /*-----------------------------------------------------*/
 
+/*-------------------Start Color Page------------------*/
+/*-----------------------------------------------------*/
 
+.titleBack {
+	color: var(--main_text_blue_color);
+	text-shadow: 1px 1px 2px black;
+	background-color: rgba(67,111,243,15%);
+	padding: 4px;
+	border: solid 1px var(--main_border_blue_color);
+	border-radius: 8px;
+	box-shadow: 0px 0px 6px 2px #436ff3;
+}
+
+.labelText {
+	color: #f4f4f4;
+	font-family: 'Roboto Mono', monospace;
+	font-style: normal;
+	font-size: 22px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	/*vertical-align: super;*/
+}
+
+#colorPicker {
+	background-color: #2b2c47;
+	width: 84px;
+	height: 42px;
+	border: solid 2px var(--main_border_blue_color);
+	border-radius: 4px;
+	padding: 1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+input[type="color"]::-moz-color-swatch {
+	border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+	border-radius: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+/*-------------------End Color Page------------------*/
+/*---------------------------------------------------*/
 @media (hover:hover) {
 	#myBtn:hover {
 		color: #383838;
