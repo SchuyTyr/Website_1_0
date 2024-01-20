@@ -43,6 +43,10 @@ var slides9 = document.getElementById("MillbrookLitFest");
 slides9.currentSlideIndex = 1;
 showSlides(slides9.currentSlideIndex, slides9);
 
+var slides10 = document.getElementById("CUGI");
+slides10.currentSlideIndex = 1;
+showSlides(slides10.currentSlideIndex, slides10);
+
 function plusSlides(n, slideshow) {
     showSlides(slideshow.currentSlideIndex += n, slideshow);
 }
