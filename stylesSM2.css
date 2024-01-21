@@ -3479,6 +3479,31 @@ input[type=range]:focus::-moz-range-thumb {
 /*-------------------Start Color Page------------------*/
 /*-----------------------------------------------------*/
 
+.homeLink {
+	font-family: 'Roboto Mono', monospace;
+	font-family: 'Audiowide', cursive;
+	font-style: normal;
+	font-size: 16px;
+	color: #000000;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	/*text-shadow: 1px 0px 0px black,2px 1px 1px white;*/
+	letter-spacing: 2px;
+	text-decoration: none;
+	border-bottom: solid 1px #000000;
+	-webkit-filter: invert(1);
+	filter: invert(1);
+	mix-blend-mode: difference;
+}
+
+	.homeLink:hover {
+		border-top: solid 1px #000000;
+	}
+	.homeLink:visited {
+		/*color: inherit;*/
+	}
+
 .titleBack {
 	color: var(--main_text_blue_color);
 	text-shadow: 1px 1px 2px black;
@@ -3487,6 +3512,8 @@ input[type=range]:focus::-moz-range-thumb {
 	border: solid 1px var(--main_border_blue_color);
 	border-radius: 8px;
 	box-shadow: 0px 0px 6px 2px #436ff3;
+	letter-spacing: 2px;
+	line-height: 2;
 }
 
 .labelText {
@@ -3511,6 +3538,8 @@ input[type=range]:focus::-moz-range-thumb {
 	padding-bottom: 1px;
 	outline: none;
 	-webkit-appearance: none;
+	z-index: 10;
+	cursor: pointer;
 }
 
 input[type="color"]::-moz-color-swatch {
@@ -3524,6 +3553,50 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 
 input[type="color"]::-webkit-color-swatch {
 	border: none;
+}
+
+.colorBottom {
+	/*background-color: #000000;*/
+	text-align: center;
+	/*color: #000000;*/
+	color: #8b8e91;
+	font-size: 14px;
+	width: 90%;
+	font-family: 'Orbitron', sans-serif;
+	position: fixed;
+	left: 50%;
+	bottom: 0%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	border-top: 1px solid #000000;
+	/*	-webkit-filter: invert(1);
+	filter: invert(1);
+	mix-blend-mode: difference;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #000000;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
+}
+
+#colorArrow {
+	text-align: center;
+	font-size: 42px;
+	color: #000000;
+	transform: translate(0%, 25%);
+	animation: arrow-anim 4s ease-in-out infinite;
+}
+
+@keyframes arrow-anim {
+	0% {
+		transform: translate(0%, 25%);
+	}
+	50% {
+		transform: translate(0%, -10%);
+	}
+	100% {
+		transform: translate(0%, 25%);
+	}
 }
 
 /*-------------------End Color Page------------------*/

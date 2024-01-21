@@ -462,7 +462,7 @@ a.link3:hover {
 	font-family: 'Orbitron', sans-serif;
 	cursor: pointer;
 	/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
-  transition: .3s all ease-in;
+	transition: .3s all ease-in;
 	color: rgba(99, 138, 255, 0.9); /*#638aff;*/
 	/*color: #99B3FF;*/
  	font-size: 22px;
