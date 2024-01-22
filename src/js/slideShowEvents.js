@@ -47,6 +47,10 @@ var slides10 = document.getElementById("CUGI");
 slides10.currentSlideIndex = 1;
 showSlides(slides10.currentSlideIndex, slides10);
 
+var slides11 = document.getElementById("VerminSupreme");
+slides11.currentSlideIndex = 1;
+showSlides(slides11.currentSlideIndex, slides11);
+
 function plusSlides(n, slideshow) {
     showSlides(slideshow.currentSlideIndex += n, slideshow);
 }
