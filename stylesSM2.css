@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Noto+Sans+Symbols+2&family=Orbitron&family=Roboto+Mono:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Noto+Sans+Symbols+2&family=Orbitron&family=VT323&family=Roboto+Mono:wght@200;400&display=swap');
 
 /* Colors
 	 Header Text: #ffffff
@@ -122,6 +122,25 @@ br {
 #myBtn:active {
 	color: #383838;
 	background-color: rgba(215,215,215);
+}
+
+/*Custom hamburger menu icon - not in use*/
+/*#menu_button {
+	margin-top: 2vmin;
+	margin-left: 2vmin;
+	width: 8vmin;
+	height: 8vmin;
+	background-size: 100%;*/
+	/* inline SVG element! */
+	/*background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 120 80" width="40" height="40" version="1.0" xmlns="http://www.w3.org/2000/svg"><rect x="15" width="90" height="15" rx="10"></rect><rect x="15" y="30" width="90" height="15" rx="10"></rect><rect x="15" y="60" width="90" height="15" rx="10"></rect></svg>');
+}*/
+
+#mobileMenu {
+	display: none;
+}
+
+.fullMenu {
+	display: block;
 }
 
 .imgLogo {
@@ -4022,6 +4041,15 @@ input[type="color"]::-webkit-color-swatch {
 		font-size: 18px;
 	}
 }
+@media screen and (min-width: 701px) {
+	#mobileMenu {
+		display: none;
+	}
+
+	.fullMenu {
+		display: block;
+	}
+}
 @media screen and (max-width: 700px) {
 	nav {
 		width: 90%;
@@ -4033,6 +4061,12 @@ input[type="color"]::-webkit-color-swatch {
 		margin: 2px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	#mobileMenu {
+		display: block;
+	}
+	.fullMenu {
+		display: none;
 	}
 	.socialProps img {
 		width: 38%;
@@ -4531,3 +4565,12 @@ input[type="color"]::-webkit-color-swatch {
 		left: 5%;
 	}
 }
+
+.displayNone {
+	display: none;
+}
+
+.displayBlock {
+	display: block;
+}
+

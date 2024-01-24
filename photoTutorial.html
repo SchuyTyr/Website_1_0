@@ -32,9 +32,6 @@
 	<link href="stylesSM2.css" rel="stylesheet">
 	<link href="src/icons/SMLogo2022.ico" rel="shortcut icon">
 	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Merienda&family=Orbitron&family=Roboto+Mono:wght@200;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/ozq0omu.css"> <!-- Adobe font - nasalization -->
 	<!-- End Fonts -->
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
@@ -55,7 +52,23 @@
 		<br>
 
 		<div class="greeting">Photo Editing</div>
-		<p class="aboutCText">Text goes here</p>
+		<p class="aboutCText">
+			Note: the following is all done in the latest version of Adobe Lightroom Classic
+			(screenshots from version 12.5). I will also occasionally use Adobe Photoshop as well.
+		</p>
+
+		<br>
+		<br>
+
+		<p class="aboutCText">
+			My "starting" preset, (which you can download here) basically adds the things I always forget to update,
+			it does not change contrast or color or anything. Basically: <br>
+			- checks the "Constrain to Image" box in the Crop Tool<br>
+			- adds evenly split points to the Tone Curve (shadows, highlights, etc.)<br>
+			- sets Luminance to "10" and Color to "100" in the Noise Reduction tab<br>
+			- sets Grain Amount to "10" and Roughness to "20" in the Effects tab<br>
+			- checks the "Remove Chromatic Aberration" box in the Lens Corrections tab<br>
+		</p>
 
 		<br>
 		<br>
@@ -68,11 +81,12 @@
 				<div class="sliderContainer">
 					<span class="sliderArrows">⮜</span>
 					<input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
-					<span class="sliderArrows">⮞</span>	
+					<span class="sliderArrows">⮞</span>
 				</div>
 			</div>
 			<div class="editSliders"><img src="./src/img/phTut-imgSliders.jpg"></div>
 		</div>
+		<p class="aboutCText captionCompare">ISO 400, 70-200mm at 200mm, f/2.8, 1/2500 sec</p>
 
 		<br>
 		<br>
@@ -91,6 +105,8 @@
 			<div class="editSliders"><img src="./src/img/phTut-img2Sliders.jpg"></div>
 		</div>
 
+		<p class="aboutCText captionCompare">ISO 1250, 100mm, f/2.8, 1/500 sec</p>
+
 
 	</main>
 
@@ -104,6 +120,7 @@
 	<!-- __________________________________________________________________________ -->
 
 	<script src="./src/js/photoBeforeAfter.js"></script>
+	<script src="hideMenu.js"></script>
 
 
 </body>

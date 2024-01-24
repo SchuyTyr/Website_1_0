@@ -82,13 +82,16 @@ photoHeader.innerHTML = `
 <hr class="rounded">
 
 <nav>
-      <a href="index.html" class="aButton pageButtonColor" title="Home">
+      <a id="mobileMenu" class="aButton pageButtonColor" title="Open Menu" onclick="mobileMenu()">
+		&nbsp;&#9776;&nbsp;
+	  </a>
+      <a href="index.html" class="aButton pageButtonColor fullMenu" title="Home">
 		&nbsp;Home&nbsp;
 	  </a>
       <button class="pageButtonColorSkew" onclick="openNav()" title="Click to Open the Photo Menu">
         <div class="pageButtonTxt">&nbsp;<span class="hamS">&#9776;</span>&nbsp;Photos&nbsp;</div>
       </button>
-      <a href="aboutSM.html" class="aButton pageButtonColor" title="About">
+      <a href="aboutSM.html" class="aButton pageButtonColor fullMenu" title="About">
 		&nbsp;About&nbsp;
 	  </a>
       <a href="contact.html" class="aButton pageButtonColor" title="Coming Soon!">
@@ -96,7 +99,7 @@ photoHeader.innerHTML = `
 	  </a>
       <div class="dropdown">
         <div class="aButton dropdownButton">
-            <button class="pageButtonColor" title="">&nbsp;Services&nbsp;</button>
+            <button class="pageButtonColor fullMenu" title="">&nbsp;Services&nbsp;</button>
         </div>  
         <div class="dropdown-content">
             <a href="photoshoot.html" class="aButton pageButtonColor" title="Book a Photoshoot">
@@ -107,10 +110,10 @@ photoHeader.innerHTML = `
             </a>
         </div>
       </div>
-      <a href="https://schuybox.wordpress.com/" class="aButton pageButtonColor" title="To the SchuyBox!" target="_blank">
+      <a href="https://schuybox.wordpress.com/" class="aButton pageButtonColor fullMenu" title="To the SchuyBox!" target="_blank">
 		&nbsp;Blog&nbsp;
 	  </a>
-      <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor" title="Buy me a Coffee" target="_blank">
+      <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor fullMenu" title="Buy me a Coffee" target="_blank">
 		<img class="menuIcon" src="src/icons/KoFi_no_circle.png">
 	  </a>
 </nav>

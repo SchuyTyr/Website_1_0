@@ -13,20 +13,23 @@ mainHeader.innerHTML = `
     <hr class="rounded">
 
     <nav>
+      <a id="mobileMenu" class="aButton pageButtonColor" title="Open Menu" onclick="mobileMenu()">
+		&nbsp;&#9776;&nbsp;
+	  </a>
       <a href="index.html" class="aButton pageButtonColor" title="Home">
 		&nbsp;Home&nbsp;
 	  </a>
-      <a href="aboutSM.html" class="aButton pageButtonColor" title="About">
+      <a href="aboutSM.html" class="aButton pageButtonColor fullMenu" title="About">
 		&nbsp;About&nbsp;
 	  </a>
       <a href="contact.html" class="aButton pageButtonColor" title="Coming Soon!">
 		&nbsp;Contact&nbsp;
 	  </a>
-      <div class="dropdown">
-        <div class="aButton dropdownButton">
+      <div id="dDown" class="dropdown">
+        <div class="aButton dropdownButton fullMenu">
             <button class="pageButtonColor" title="">&nbsp;Services&nbsp;</button>
         </div>  
-        <div class="dropdown-content">
+        <div id="dDownContent" class="dropdown-content">
             <a href="photoshoot.html" class="aButton pageButtonColor" title="Book a Photoshoot">
                 &nbsp;Book a Photoshoot&nbsp;
             </a>
@@ -35,10 +38,10 @@ mainHeader.innerHTML = `
             </a>
         </div>
       </div>
-      <a href="https://schuybox.wordpress.com/" class="aButton pageButtonColor" title="To the SchuyBox!" target="_blank">
+      <a href="https://schuybox.wordpress.com/" class="aButton pageButtonColor fullMenu" title="To the SchuyBox!" target="_blank">
 		&nbsp;Blog&nbsp;
 	  </a>
-      <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor" title="Buy me a Coffee" target="_blank">
+      <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor fullMenu" title="Buy me a Coffee" target="_blank">
 		<img class="menuIcon" src="src/icons/KoFi_no_circle.png">
 	  </a>
     </nav>
