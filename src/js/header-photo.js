@@ -61,11 +61,12 @@ photoHeader.innerHTML = `
       </div>
 
       <div class="subNav">
-        <button class="subNavBtn">Still Life</button>
+        <button class="subNavBtn">Still Life | Art</button>
         <div class="subNav-content">
           <a href="Photography/Artwork.html" title="Artwork">Artwork</a>
           <a href="Photography/Miniatures.html" title="Miniatures">Miniatures</a>
           <a href="Photography/StillLife.html" title="Still Life">Still Life</a>
+          <a href="Photography/photoshop.html" title="Photoshop">Photoshop</a>
         </div>
       </div>
     </div>
