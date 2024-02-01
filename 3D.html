@@ -49,11 +49,11 @@
 	<main id="main-main 3D">
 
 		<!-- <model-viewer> HTML element -->
-		<!--<model-viewer src="src/3DModels/robot/Robot_2024.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="src/3DModels/robot/poster.webp" shadow-intensity="1">-->
-		<model-viewer style="width:600px; height:400px; margin: 0 auto;" crossorigin="anonymous" 
-					  src="https://www.schuylermeyer.com/src/3DModels/robot/Robot_2024.glb" 
-					  camera-controls auto-rotate poster="src/3DModels/robot/poster.webp" touch-action="pan-y"
-					  tone-mapping="commerce" shadow-intensity="1">
+		<model-viewer style="height: 400px; margin: 0 auto;" crossorigin="anonymous"
+					  src="https://www.schuylermeyer.com/src/3DModels/robot/Robot_2024.glb"
+					  ar ar-modes="webxr scene-viewer quick-look" camera-controls auto-rotate
+					  poster="src/3DModels/robot/poster.webp" touch-action="pan-y"
+					  tone-mapping="commerce" shadow-intensity="1" disable-tap disable-zoom alt="Robot">
 			<div class="progress-bar hide" slot="progress-bar">
 				<div class="update-bar"></div>
 			</div>
@@ -67,7 +67,9 @@
 		<script src="src/3DModels/robot/3DModelScript.js"></script>
 		<!-- Loads <model-viewer> for browsers: -->
 
-
+		<hr class="rounded" style="width: 50%;">
+		<br/>
+		<div class="photoTextDescr">Click and drag to view the 3D model of the robot.</div>
 
 
 	</main>
