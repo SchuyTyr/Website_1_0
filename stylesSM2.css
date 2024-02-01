@@ -3649,11 +3649,11 @@ body {
 model-viewer {
 	width: 100%;
 	height: 90%;
-	background-color: #ffffff;
+	background-color: rgba(0,0,0,0);
 }
 
 
-/*.progress-bar {
+.progress-bar {
 	display: block;
 	width: 33%;
 	height: 10%;
@@ -3749,7 +3749,7 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 
 model-viewer > #ar-prompt > img {
 	animation: circle 4s linear infinite;
-}*/
+}
 
 /*-------------------End 3D Page------------------*/
 /*------------------------------------------------*/
