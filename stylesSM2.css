@@ -3647,9 +3647,12 @@ body {
 }
 
 model-viewer {
-	width: 100%;
+	width: 80%;
 	height: 90%;
+	padding: 24px 0;
 	background-color: rgba(0,0,0,0);
+	box-shadow: 0px 0px 30px 15px #436ff3;
+	-webkit-box-shadow: 0px 0px 30px 15px #436ff3;
 }
 
 
@@ -3821,6 +3824,9 @@ model-viewer > #ar-prompt > img {
 	}
 	#photoTextCapt {
 		width: 25%;
+	}
+	model-viewer {
+		width: 50%;
 	}
 }
 @media screen and (max-width: 1499px) {
@@ -4505,6 +4511,9 @@ model-viewer > #ar-prompt > img {
 	.softPhoto {
 		width: 50vw;
 		height: 25vh;
+	}
+	model-viewer {
+		width: 100%;
 	}
 }
 @media screen and (max-width: 500px) {
