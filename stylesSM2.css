@@ -3653,6 +3653,7 @@ model-viewer {
 	background-color: rgba(0,0,0,0);
 	box-shadow: 0px 0px 30px 15px #436ff3;
 	-webkit-box-shadow: 0px 0px 30px 15px #436ff3;
+	background-color: rgba(18,18,18,0.6);
 }
 
 
