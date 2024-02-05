@@ -655,7 +655,7 @@ hr {
 /* Style the Image Used to Trigger the Modal */
 #myImg1,#myImg2,#myImg3,#myImg4,#myImg5,#myImg6,
 #myImg7,#myImg8,#myImg9,#myImg10,#myImg11,#myImg12,
-#myImg13,#myImg14,#myImg15,#myImg16,#myImg17 {
+#myImg13,#myImg14,#myImg15,#myImg16,#myImg17,#myImg18 {
 	border-radius: 48px;
 	cursor: pointer;
 	/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
@@ -665,17 +665,17 @@ hr {
  	/*background: rgba(255, 255, 255, 0.8);*/
 }
 
-#myImg1:hover,#myImg2:hover,#myImg3:hover,
-#myImg4:hover,#myImg5:hover,#myImg6:hover,
-#myImg7:hover,#myImg8:hover,#myImg9:hover,
-#myImg10:hover,#myImg11:hover,#myImg12:hover,
-#myImg13:hover,#myImg14:hover,#myImg15:hover,
-#myImg16:hover,#myImg17:hover {
-	/*opacity: 0.9;*/
-	background-color: rgb(0,0,0);
-	border-radius: 8px;
-	z-index: 999;
-}
+	#myImg1:hover, #myImg2:hover, #myImg3:hover,
+	#myImg4:hover, #myImg5:hover, #myImg6:hover,
+	#myImg7:hover, #myImg8:hover, #myImg9:hover,
+	#myImg10:hover, #myImg11:hover, #myImg12:hover,
+	#myImg13:hover, #myImg14:hover, #myImg15:hover,
+	#myImg16:hover, #myImg17:hover, #myImg18:hover {
+		/*opacity: 0.9;*/
+		background-color: rgb(0,0,0);
+		border-radius: 8px;
+		z-index: 999;
+	}
 
 body.noscroll {
   overflow-y: hidden;

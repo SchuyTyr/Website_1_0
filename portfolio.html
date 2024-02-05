@@ -190,6 +190,32 @@
 
 		<div class="columnN">
 			<div class="titleWrapper fadeScroll fadeOut">
+				<img id="myImg18" class="myImages grow" src="Digital_Portfolio/HoliAnim.jpg" alt="Holiday Animation">
+				<div class="titlesPort" style="font-family: 'Audiowide', cursive;">Holiday Animation</div>
+			</div>
+			<div style="display:none;">
+				<div id="myTexT" class="myText">
+					<div class="xlarge-font" style="font-family: 'Audiowide', cursive; color: #ff0000;">Holiday Animation</div>
+					<p>
+						<i style="color: #00a343;">Winter 2023</i><br>
+						<br>
+						<i>
+							A looping 3D animation with a holiday twist! ("Right-click &ndash;&gt; loop", on the the video.)
+						</i><br>
+						<br>
+						<u>Project:</u><br>
+						&#8883; Models and animation created in Blender<br><br>
+						&#8883; Rendered with Cycles<br><br>
+						&#8883; Edited images in Lightroom<br><br>
+						&#8883; Edited video in DaVinci Resolve<br><br>
+						&#8883; Thumbnail image in Photoshop<br><br>
+					</p>
+				</div>
+			</div>		
+		</div>	
+		<div class="columnN">
+
+			<div class="titleWrapper fadeScroll fadeOut">
 				<img id="myImg5" class="myImages grow" src="Digital_Portfolio/konbini2.jpg" alt="Konbini">
 				<div class="titlesPort" style="font-family: 'Audiowide', cursive;">Konbini</div>
 			</div>
@@ -564,7 +590,9 @@
 					<p>
 						<i>
 							2014 &ndash;
-							<script>document.write(new Date().getFullYear())</script>
+							<span id="ArtSDate">
+								<script>document.getElementById('ArtSDate').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+							</span>
 						</i><br>
 						<br>
 						&#8883; More art and design work on Artstation<br><br>

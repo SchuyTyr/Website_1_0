@@ -32,7 +32,8 @@ var descr = [
 	document.getElementsByClassName("myText")[13].innerHTML,
 	document.getElementsByClassName("myText")[14].innerHTML,
 	document.getElementsByClassName("myText")[15].innerHTML,
-	document.getElementsByClassName("myText")[16].innerHTML
+	document.getElementsByClassName("myText")[16].innerHTML,
+	document.getElementsByClassName("myText")[17].innerHTML
 ];
 
 var vaText = document.getElementById("bodyTextPort");
@@ -79,28 +80,34 @@ for (var i = 0; i < images.length; i++) {
 			vaText.innerHTML = descr[2];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/YdjYonT1VPY?rel=0"></iframe>';
 		}
+		// Holiday Animation
+		else if (this.getAttribute('id') == 'myImg18') {
+			modalImg.src = this.src;
+			vaText.innerHTML = descr[3];
+			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/9ZnV03GeOIk?rel=0"></iframe>';
+		}
 		// Konbini
 		else if(this.getAttribute('id') == 'myImg5'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[3];
+			vaText.innerHTML = descr[4];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/YvHBGxTTjos?rel=0"></iframe>';
 		}
 		// The Cube, Evolved
 		else if(this.getAttribute('id') == 'myImg6'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[4];
+			vaText.innerHTML = descr[5];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/uiQBXOmWC2M?rel=0"></iframe>';
 		}
 		// Untitled Animation Tests
 		else if(this.getAttribute('id') == 'myImg11'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[5];
+			vaText.innerHTML = descr[6];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/w2kJaepBS7k?rel=0"></iframe>';
 		}
 		// The Spooky and Mysterious Box
 		else if(this.getAttribute('id') == 'myImg7'){
 			modalImg.src = this.src;
-			vaText.innerHTML = descr[6];
+			vaText.innerHTML = descr[7];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/JpfNoArEEHw?rel=0"></iframe>';
 		}
 		// DA300 Animation
@@ -112,19 +119,19 @@ for (var i = 0; i < images.length; i++) {
 			vaText.innerHTML = descr[10];
 			vid.innerHTML = '';*/
 			modalImg.src = '';
-			vaText.innerHTML = descr[7];
+			vaText.innerHTML = descr[8];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/mHvkkD9hmiI?rel=0"></iframe>';
 		}
 		// Zaim
 		else if(this.getAttribute('id') == 'myImg17'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[8];
+			vaText.innerHTML = descr[9];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/lbHEsqueyiY?rel=0"></iframe>';
 		}
 		// Space Ship
 		else if(this.getAttribute('id') == 'myImg8'){
 			modalImg.src = this.src;
-			vaText.innerHTML = descr[9];
+			vaText.innerHTML = descr[10];
 			vid.innerHTML = '';
 			/*modalImg.src = '';
 			vaText.innerHTML = descr[7];
@@ -133,37 +140,37 @@ for (var i = 0; i < images.length; i++) {
 		// SOB
 		else if(this.getAttribute('id') == 'myImg3'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[10];
+			vaText.innerHTML = descr[11];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/TyFg2lPMnGQ?rel=0"></iframe>';
 		}
 		// Swarm
 		else if(this.getAttribute('id') == 'myImg10'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[11];
+			vaText.innerHTML = descr[12];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/tDnwA2Lajkw?rel=0"></iframe>';
 		}
 		// CGK Promo
 		else if(this.getAttribute('id') == 'myImg16'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[12];
+			vaText.innerHTML = descr[13];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/teKWmAu9UxU?rel=0"></iframe>';
 		}
 		// Hockey Cards
 		else if(this.getAttribute('id') == 'myImg9'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[13];
+			vaText.innerHTML = descr[14];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/KWw_-XWKMek?rel=0"></iframe>';
 		}
 		// Board Game
 		else if(this.getAttribute('id') == 'myImg15'){
 			modalImg.src = this.src;
-			vaText.innerHTML = descr[14];
+			vaText.innerHTML = descr[15];
 			vid.innerHTML = '';
 		}
 		// CUGI Promo
 		else if(this.getAttribute('id') == 'myImg14'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[15];
+			vaText.innerHTML = descr[16];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/HvVJKZyXrKc?rel=0"></iframe>';
 		}
 		// Monuments
@@ -181,7 +188,7 @@ for (var i = 0; i < images.length; i++) {
 		// Artstation
 		else if(this.getAttribute('id') == 'myImg12'){
 			modalImg.src = this.src;
-			vaText.innerHTML = descr[16];
+			vaText.innerHTML = descr[17];
 			vid.innerHTML = '';
 		}
 		// Infinite Space Tunnel (No longer)
