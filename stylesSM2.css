@@ -49,7 +49,7 @@ body {
 main {
 	text-align:center;
 	margin-top: 20px;
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 }
 
 nav {
@@ -385,6 +385,8 @@ a.link4 {
 
 #main-main {
 	margin-top: 0;
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(67,111,243,0.1) 0%, rgba(9,9,121,0.1) 42%, rgba(0,0,0,0.1) 100%);
 }
 
 .mainGrid {
@@ -397,6 +399,7 @@ a.link4 {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	padding-bottom: 40px;
 }
 
 .img-hover-zoom {
@@ -421,6 +424,11 @@ a.link4 {
 .glowBorder {
 	transition: transform 1s cubic-bezier(.31,.01,.51,.99);
 }
+	.glowBorder .img-hover-zoom {
+		border-radius: 24% 24%;
+		box-shadow: 0 0 1px 4px #000000, 0 0 24px 1px var(--main_border_blue_color);
+		animation: imgFrameBasic 4s Ease-in-out infinite;
+	}
 
 /*To work on*/
 /*.glowBorder span {*/
@@ -428,19 +436,17 @@ a.link4 {
 	/*transition: transform 0.4s cubic-bezier(.31,.01,.51,.99);*/
 /*}*/
 
-.glowBorder:hover .img-hover-zoom,
-.glowBorder:hover img {
-	color: #436ff3;
-	border: 10px #436ff3;
-	border-radius: 8px;
-	/*border-radius: 2% 18%;*/
-	box-shadow: /*0 0 4px 4px #436ff3,*/
-	0 0 1px 4px #000000, /*1e1f20*/
-	0 0 25px 15px #436ff3;
-	/*animation: imgFrame 0.5s Ease-in-out;*/
-	animation: imgFrame 0.8s Ease-in-out, colorChange 2s Ease-in-out infinite;
-	/*transform: translate(0,-10px);*/
-}
+	.glowBorder:hover .img-hover-zoom,
+	.glowBorder:hover img {
+		color: #436ff3;
+		border: 10px #436ff3;
+		border-radius: 8px;
+		/*border-radius: 2% 18%;*/
+		box-shadow: 0 0 1px 4px #000000, 0 0 25px 15px var(--main_border_blue_color);
+		/*animation: imgFrame 0.5s Ease-in-out;*/
+		animation: imgFrame 0.8s Ease-in-out, colorChange 2s Ease-in-out infinite;
+		/*transform: translate(0,-10px);*/
+	}
 
 .glowBorder:hover span {
 	border-bottom: 1px solid var(--main_subText_color);
@@ -468,14 +474,37 @@ border-left: 1px solid var(--main_subText_color);*/
 	left: 0;
 }
 
+@keyframes imgFrameBasic {
+	0% {
+		box-shadow: 0 0 1px 4px #000000, 0 0 18px 1px var(--main_border_blue_color);
+	}
+
+	12% {
+		box-shadow: 0 0 1px 4px #000000, 0 0 14px 1px var(--main_border_blue_color);
+	}
+
+	32% {
+		box-shadow: 0 0 1px 4px #000000, 0 0 16px 1px var(--main_border_blue_color);
+	}	
+	
+	68% {
+		box-shadow: 0 0 1px 4px #000000, 0 0 12px 1px var(--main_border_blue_color);
+	}
+
+	100% {
+		box-shadow: 0 0 1px 4px #000000, 0 0 18px 1px var(--main_border_blue_color);
+	}
+}
 @keyframes imgFrame {
 	0% {
 		/*border-radius: 50%;*/
 		border-radius: 24% 24%;
+		box-shadow: 0 0 1px 4px #000000, 0 0 12px 1px var(--main_border_blue_color);
 	}
 
 	100% {
 		border-radius: 8px;
+		box-shadow: 0 0 1px 4px #000000, 0 0 25px 15px var(--main_border_blue_color);
 	}
 }
 
@@ -3832,7 +3861,25 @@ model-viewer > #ar-prompt > img {
 		border-radius: 24% 24%;
 		position: relative;
 		object-fit: cover;
+		box-shadow: 0 0 1px 1px #000000, 0 0 8px 1px rgba(255,143,0,100%);
+		transition: transform 0.2s cubic-bezier(.31,.01,.51,.99);
 	}
+	.SCimg:hover img {
+		border-radius: 8px;
+		box-shadow: 0 0 1px 4px #000000, 0 0 18px 1px var(--main_button_green_color);
+		animation: SCimgFrame 0.2s Ease-in-out;
+	}
+@keyframes SCimgFrame {
+	0% {
+		border-radius: 24% 24%;
+		box-shadow: 0 0 1px 1px #000000, 0 0 8px 1px rgba(255,143,0,100%);
+	}
+
+	100% {
+		border-radius: 8px;
+		box-shadow: 0 0 1px 4px #000000, 0 0 18px 1px var(--main_button_green_color);
+	}
+}
 /*.SCslides {
 	background-image: url("Photography/photos/People/Weddings/photo_16.jpg");
 }*/
@@ -3874,7 +3921,10 @@ model-viewer > #ar-prompt > img {
 @media screen and (min-width: 2000px) {
 	main {
 		margin-top: 20px;
-		margin-bottom: 40px;
+		/*margin-bottom: 40px;*/
+	}
+	.mainGrid {
+		padding-bottom: 40px;
 	}
 	.imgLogoStyle {
 		/*width: 45%;*/
@@ -3965,7 +4015,10 @@ model-viewer > #ar-prompt > img {
 @media screen and (min-width: 1351px) {
 	main {
 		margin-top: 40px;
-		margin-bottom: 40px;
+		/*margin-bottom: 40px;*/
+	}
+	.mainGrid {
+		padding-bottom: 40px;
 	}
 	#photoTextCapt {
 		width: 50%;
@@ -3978,7 +4031,10 @@ model-viewer > #ar-prompt > img {
 @media screen and (max-width: 1350px) {
 	main {
 		margin-top: 20px;
-		margin-bottom: 20px;
+		/*margin-bottom: 20px;*/
+	}
+	.mainGrid {
+		padding-bottom: 20px;
 	}
 	.headerTxt {
 		font-size: 28px;
@@ -4036,7 +4092,10 @@ model-viewer > #ar-prompt > img {
 	}
 	main {
 		margin-top: 10px;
-		margin-bottom: 10px;
+		/*margin-bottom: 10px;*/
+	}
+	.mainGrid {
+		padding-bottom: 10px;
 	}
 	.dateContainer {
 		margin-bottom: 12px;
@@ -4682,7 +4741,10 @@ model-viewer > #ar-prompt > img {
 @media screen and (max-width: 500px) {
 	main {
 		margin-top: 40px;
-		margin-bottom: 40px;
+		/*margin-bottom: 40px;*/
+	}
+	.mainGrid {
+		padding-bottom: 20px;
 	}
 	.headerTxt {
 		font-size: 18px;
@@ -4778,7 +4840,10 @@ model-viewer > #ar-prompt > img {
 @media screen and (max-width: 400px) {
 	main {
 		margin-top: 0px;
-		margin-bottom: 10px;
+		/*margin-bottom: 10px;*/
+	}
+	.mainGrid {
+		padding-bottom: 10px;
 	}
 /*	.modalPhoto {
 		left: 47%;
