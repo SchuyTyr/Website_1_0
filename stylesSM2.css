@@ -476,23 +476,27 @@ border-left: 1px solid var(--main_subText_color);*/
 
 @keyframes imgFrameBasic {
 	0% {
-		box-shadow: 0 0 1px 4px #000000, 0 0 18px 1px var(--main_border_blue_color);
+		box-shadow: 0 0 1px 4px #000000, 0 0 4px 2px #000000, 0 0 18px 1px var(--main_border_blue_color);
 	}
 
 	12% {
-		box-shadow: 0 0 1px 4px #000000, 0 0 14px 1px var(--main_border_blue_color);
+		box-shadow: 0 0 1px 4px #000000, -2px 0 4px 2px #000000, 0 0 14px 1px var(--main_border_blue_color);
 	}
 
 	32% {
-		box-shadow: 0 0 1px 4px #000000, 0 0 16px 1px var(--main_border_blue_color);
-	}	
-	
+		box-shadow: 0 0 1px 4px #000000, 0 -2px 4px 2px #000000, 0 0 16px 1px var(--main_border_blue_color);
+	}
+
 	68% {
-		box-shadow: 0 0 1px 4px #000000, 0 0 12px 1px var(--main_border_blue_color);
+		box-shadow: 0 0 1px 4px #000000, 2px 0 4px 2px #000000, 0 0 12px 1px var(--main_border_blue_color);
+	}
+
+	84% {
+		box-shadow: 0 0 1px 4px #000000, 0 2px 4px 2px #000000, 0 0 12px 1px var(--main_border_blue_color);
 	}
 
 	100% {
-		box-shadow: 0 0 1px 4px #000000, 0 0 18px 1px var(--main_border_blue_color);
+		box-shadow: 0 0 1px 4px #000000, 0 0 4px 2px #000000, 0 0 18px 1px var(--main_border_blue_color);
 	}
 }
 @keyframes imgFrame {
@@ -1668,13 +1672,18 @@ hr.rounded {
 	box-shadow: 0 0 8px 2px #111111;
 }
 
+.softImgContainer {
+	padding-top: 4px;
+}
+	.softImgContainer img {
+		max-width: 90%;
+		box-shadow: 0 0 1px 4px #000000, 0 0 8px 2px #000000, 0 0 32px 0px var(--main_border_blue_color);
+	}
 
 /*-------------------------End Software Page--------------------------*/
 /*--------------------------------------------------------------------*/
-
 /*-----------------------------------------------------------------*/
 /*---------------------------Portfolio Page----------------------------*/
-
 /*[id*='port'] {*/
 #port * {
 	-webkit-text-size-adjust: 100%;
@@ -4006,6 +4015,9 @@ model-viewer > #ar-prompt > img {
 	.dateContainer {
 		margin-bottom: 24px;
 	}
+	.softImgContainer {
+		padding-top: 12px;
+	}
 }
 @media screen and (max-width: 1450px) {
 	.SCvertLine {
@@ -4109,6 +4121,9 @@ model-viewer > #ar-prompt > img {
 	}
 	.captionContainer span {
 		font-size: 18px;
+	}
+	.softImgContainer {
+		padding-top: 24px;
 	}
 	.socialBar {
 		padding-top: 10px;
