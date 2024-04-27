@@ -17,7 +17,7 @@ const inst = new TypeIt("#typing", {
 })
   .type("Welcome to SchuyTyr Software!", { delay: 4000 })
   .delete()
-  .type("Software:", { delay: 2000 })
+    .type("SchuyTyr Software:", { delay: 2000 })
   .go();
 
 
