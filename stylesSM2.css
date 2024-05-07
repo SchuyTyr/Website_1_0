@@ -13,6 +13,7 @@
 	--main_subText_color: #8b8e91;
 	--main_button_green_color: rgba(0,187,23,90%);
 	--main_button_orange_color: rgba(255,164,7,70%);
+	--main_genTitle_color: #99a8b8;
 }
 
 html {
@@ -1673,12 +1674,24 @@ hr.rounded {
 }
 
 .softImgContainer {
-	padding-top: 4px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+	padding: 24px;
 }
 	.softImgContainer img {
 		max-width: 90%;
+		width: 28%;
 		box-shadow: 0 0 1px 4px #000000, 0 0 8px 2px #000000, 0 0 32px 0px var(--main_border_blue_color);
 	}
+.softImgHide {
+	display: block;
+}
 
 /*-------------------------End Software Page--------------------------*/
 /*--------------------------------------------------------------------*/
@@ -2666,14 +2679,14 @@ a.linkWS:hover, a.linkWS:hover span {
 	margin: auto;
 	word-wrap: break-word;
 }
-.descrTitleIT{
+.descrTitleIT {
 	text-align: left;
 	word-wrap: break-word;
 	width: 90%;
 	line-height: 2;
 	text-decoration: none;
 	font-size: 28px;
-	color: #99a8b8;
+	color: var(--main_genTitle_color);
 	font-family: 'Audiowide', cursive;
 	font-style: normal;
 	font-weight: 300;
@@ -3920,6 +3933,79 @@ model-viewer > #ar-prompt > img {
 
 /*-------------------End Services on Main------------------*/
 /*---------------------------------------------------------*/
+
+/*-------------------Start Would You Rather------------------*/
+/*-----------------------------------------------------------*/
+
+.generalTitle {
+	text-align: center;
+	word-wrap: break-word;
+	width: 90%;
+	line-height: 2;
+	text-decoration: none;
+	font-size: 28px;
+	color: var(--main_genTitle_color);
+	font-family: 'Audiowide', cursive;
+	font-style: normal;
+	font-weight: 300;
+	display: block;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin: auto;
+}
+
+.ansContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.wurButton {
+	width: auto;
+	margin: 0;
+	padding: 24px;
+}
+
+.wurButtonBut {
+	text-align: center;
+	font-family: 'Audiowide', cursive;
+	cursor: pointer;
+	transition: .3s all ease-in;
+	color: var(--main_genTitle_color);
+	font-size: 22px;
+	padding: 10px;
+	padding-left: 14px;
+	padding-right: 14px;
+	margin: 4px 1px;
+	text-decoration: none;
+	border: solid 2px rgba(67,111,243,30%);
+	background-color: rgba(67,111,243,15%);
+	border-radius: 4%;
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+	.wurButtonBut:hover {
+		color: #00bb17;
+		border: solid 2px rgba(0,187,23,70%);
+		transition: .15s all ease-in;
+		border-radius: 25% / 10%;
+	}
+
+	.wurButtonBut:active {
+		color: #ffa407;
+		border: solid 2px rgba(255,164,7,70%);
+		transition: .15s all ease-in;
+		border-radius: 50% / 15%;
+	}
+
+/*-------------------End Would You Rather------------------*/
+/*---------------------------------------------------------*/
 @media (hover:hover) {
 	#myBtn:hover {
 		color: #383838;
@@ -4016,7 +4102,7 @@ model-viewer > #ar-prompt > img {
 		margin-bottom: 24px;
 	}
 	.softImgContainer {
-		padding-top: 12px;
+		/*padding-top: 12px;*/
 	}
 }
 @media screen and (max-width: 1450px) {
@@ -4123,7 +4209,11 @@ model-viewer > #ar-prompt > img {
 		font-size: 18px;
 	}
 	.softImgContainer {
-		padding-top: 24px;
+		/*padding-top: 24px;*/
+	}	
+	.softImgContainer img {
+		/*width: 40%;*/
+		margin-top: 24px;
 	}
 	.socialBar {
 		padding-top: 10px;
@@ -4398,6 +4488,14 @@ model-viewer > #ar-prompt > img {
 		transform: rotate(0deg);
 		width: 80%;
 		margin: 42px;
+	}
+	.softImgContainer img {
+		width: 80%;
+		margin-top: 28px;
+	}
+
+	.softImgHide {
+		display: none;
 	}
 }
 @media screen and (max-width: 775px) {
