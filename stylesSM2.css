@@ -3966,6 +3966,8 @@ model-viewer > #ar-prompt > img {
 	font-style: normal;
 	font-weight: 200;
 	display: block;
+	margin-left: 18%;
+	margin-right: 18%;
 }
 
 .ansContainer {
@@ -4021,6 +4023,14 @@ model-viewer > #ar-prompt > img {
 		/*border-radius: 50% / 15%;*/
 		border-radius: 4%;
 	}
+
+.mobileView {
+	display: none;
+}
+
+.titleColor {
+	color: var(--main_text_blue_color);
+}
 
 /*-------------------End Would You Rather------------------*/
 /*---------------------------------------------------------*/
@@ -4867,6 +4877,9 @@ model-viewer > #ar-prompt > img {
 	}
 	.SCinContMargin {
 		margin-bottom: 24px;
+	}
+	.mobileView {
+		display: block;
 	}
 }
 @media screen and (max-width: 500px) {

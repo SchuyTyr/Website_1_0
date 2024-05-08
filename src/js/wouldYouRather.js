@@ -2,6 +2,7 @@
 
 let but1 = document.getElementById('wurBut1');
 let but2 = document.getElementById('wurBut2');
+let resp = document.getElementById('wurResponse');
 
 let opt1, opt2, opt1Prev, opt2Prev;
 
@@ -13,12 +14,12 @@ let listOfRathers = [
     'only eat pizza with a fork and knife',
     'play baseball in >90\u00B0 weather',
     'play baseball in <40\u00B0 weather',
-    'watch a 4 hour long movie',
-    'watch a 30 minute long movie',
+    'watch an amazing 4 hour long movie',
+    'watch a mediocre 30 minute long movie',
     'go for a walk on a muddy trail with sneakers',
     'go for a walk on a gravel trail with flip flops',
-    'only be able to sleep for 10 hours everyday',
-    'only be able to sleep for 6 hours everyday',
+    'sleep for 10 hours everyday and no less',
+    'sleep for 6 hours everyday and no more',
     'never taste sour',
     'only taste sweet',
     'be unable to see yellow',
@@ -26,17 +27,35 @@ let listOfRathers = [
     'be unable to see red',
     'never be able to find what you are looking for in a room',
     'only be able to find things when you are not looking for them',
-    'only be able slightly overcook everything',
-    'only be able slightly undercook everything',
+    'only be able to slightly overcook everything',
+    'only be able to slightly undercook everything',
     'only be able to find tickets from resellers',
-    'always feel slightly cold',
-    'always feel slightly warm',
+    'always feel slightly too cold',
+    'always feel slightly too warm',
     'always have your drinks luke warm',
     'always forget someone\'s first name when talking to them',
     'always forget to cancel a trial subscription until after it has renewed',
     'always be an hour early',
     'always be 5 minutes late'
 ];
+
+let listOfResponses = [
+    'Interesting.',
+    'Interesting choice.',
+    'Wow.',
+    'WoOow.',
+    'Wow!',
+    'For real?',
+    'For real.',
+    'Same.',
+    'Hmmm...',
+    'Woah.',
+    'Yep.',
+    'Bet.',
+    'Ha.',
+    'Huh.',
+    'asfjahsfdgsdhfl'
+]
 
 // function to get random integer
 function getRandom(max) {
@@ -50,6 +69,7 @@ function setWUR() {
     checkWUR();
     but1.innerHTML = capitalizeFirstLetter(opt1);
     but2.innerHTML = capitalizeFirstLetter(opt2);
+    resp.innerHTML = "";
 }
 
 // Button 1 press
@@ -59,6 +79,7 @@ function setWUR1() {
     getOpt2();
     checkWUR();
     but2.innerHTML = capitalizeFirstLetter(opt2);
+    resp.innerHTML = listOfResponses[getRandom(listOfResponses.length)];
 }
 
 // Button 2 press
@@ -68,6 +89,7 @@ function setWUR2() {
     getOpt1();
     checkWUR();
     but1.innerHTML = capitalizeFirstLetter(opt1);
+    resp.innerHTML = listOfResponses[getRandom(listOfResponses.length)];
 }
 
 function getOpt1() {
