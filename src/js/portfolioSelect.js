@@ -34,7 +34,8 @@ var descr = [
 	document.getElementsByClassName("myText")[15].innerHTML,
 	document.getElementsByClassName("myText")[16].innerHTML,
 	document.getElementsByClassName("myText")[17].innerHTML,
-	document.getElementsByClassName("myText")[18].innerHTML
+	document.getElementsByClassName("myText")[18].innerHTML,
+	document.getElementsByClassName("myText")[19].innerHTML
 ];
 
 var vaText = document.getElementById("bodyTextPort");
@@ -156,28 +157,34 @@ for (var i = 0; i < images.length; i++) {
 			vaText.innerHTML = descr[13];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/tDnwA2Lajkw?rel=0"></iframe>';
 		}
+		// The Adventure Game
+		else if(this.getAttribute('id') == 'myImg20'){
+			modalImg.src = ''
+			vaText.innerHTML = descr[14];
+			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/Qpgz8DsiR-M?rel=0"></iframe>';
+		}
 		// CGK Promo
 		else if(this.getAttribute('id') == 'myImg16'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[14];
+			vaText.innerHTML = descr[15];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/teKWmAu9UxU?rel=0"></iframe>';
 		}
 		// Hockey Cards
 		else if(this.getAttribute('id') == 'myImg9'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[15];
+			vaText.innerHTML = descr[16];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/KWw_-XWKMek?rel=0"></iframe>';
 		}
 		// Board Game
 		else if(this.getAttribute('id') == 'myImg15'){
 			modalImg.src = this.src;
-			vaText.innerHTML = descr[16];
+			vaText.innerHTML = descr[17];
 			vid.innerHTML = '';
 		}
 		// CUGI Promo
 		else if(this.getAttribute('id') == 'myImg14'){
 			modalImg.src = '';
-			vaText.innerHTML = descr[17];
+			vaText.innerHTML = descr[18];
 			vid.innerHTML = '<iframe allowfullscreen class="videoPort" frameborder="0" src="https://www.youtube.com/embed/HvVJKZyXrKc?rel=0"></iframe>';
 		}
 		// Monuments
@@ -195,7 +202,7 @@ for (var i = 0; i < images.length; i++) {
 		// Artstation
 		else if(this.getAttribute('id') == 'myImg12'){
 			modalImg.src = this.src;
-			vaText.innerHTML = descr[18];
+			vaText.innerHTML = descr[19];
 			vid.innerHTML = '';
 		}
 		// Infinite Space Tunnel (No longer)

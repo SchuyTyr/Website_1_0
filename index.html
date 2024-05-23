@@ -2,12 +2,25 @@
 <!-- Schuyler Meyer Website 2.0 -->
 <html lang="en-US">
 <head>
+	<script>
+		// Define dataLayer and the gtag function.
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
 
+		// Set default consent to 'denied' as a placeholder
+		// Determine actual values based on your own requirements
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'analytics_storage': 'denied'
+		});
+	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMYCWX2SRC"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'G-YMYCWX2SRC');
@@ -35,9 +48,20 @@
 	<!-- End Fonts -->
 	<script src="src/js/header-main.js" type="text/javascript" defer></script>
 	<script src="src/js/footer-main.js" type="text/javascript" defer></script>
+
+	<!-- Create one update function for each consent parameter -->
+	<script>
+		function consentGrantedAdStorage() {
+			gtag('consent', 'update', {
+				'ad_storage': 'granted'
+			});
+		}
+	</script>
 </head>
 <body>
 	<header id="header-main"></header>
+
+	<!--<button onclick="consentGrantedAdStorage">Yes</button>-->
 
 	<hr class="rounded" style="margin-bottom: 4px;">
 
@@ -49,7 +73,7 @@
 		<div class="dateContainer"><span id="date"></span></div>
 
 		<div class="mainGrid">
-			<div class="glowBorder container borderLine fadeScroll fadeOut" onmouseover="document.getElementById('line3a').style.visibility = 'visible'" onmouseout="document.getElementById('line3a').style.visibility = 'hidden'">
+			<div class="glowBorder container borderLine" onmouseover="document.getElementById('line3a').style.visibility = 'visible'" onmouseout="document.getElementById('line3a').style.visibility = 'hidden'">
 				<a class="linkMain" href="portfolio.html" target="_self" title="SchuyTyr Art">
 					<div class="imgContainer img-hover-zoom">
 						<img alt="Digital_Portfolio" class="img2" src="src/img/DA.jpg">
@@ -63,7 +87,7 @@
 				</a>
 			</div>
 
-			<div class="glowBorder container borderLine fadeScroll fadeOut" onmouseover="document.getElementById('line3b').style.visibility = 'visible'" onmouseout="document.getElementById('line3b').style.visibility = 'hidden'">
+			<div class="glowBorder container borderLine" onmouseover="document.getElementById('line3b').style.visibility = 'visible'" onmouseout="document.getElementById('line3b').style.visibility = 'hidden'">
 				<a class="linkMain" href="photo.html" title="Schuyler Meyer Photography">
 					<div class="imgContainer img-hover-zoom">
 						<img alt="Photography" class="img2" src="Photography/photos/Sports/Softball/photo_1.jpg">
@@ -77,7 +101,7 @@
 				</a>
 			</div>
 
-			<div class="glowBorder container borderLine fadeScroll fadeOut" onmouseover="document.getElementById('line3c').style.visibility = 'visible'" onmouseout="document.getElementById('line3c').style.visibility = 'hidden'">
+			<div class="glowBorder container borderLine" onmouseover="document.getElementById('line3c').style.visibility = 'visible'" onmouseout="document.getElementById('line3c').style.visibility = 'hidden'">
 				<a class="linkMain" href="software.html" title="SchuyTyr Software">
 					<div class="imgContainer img-hover-zoom">
 						<img alt="Software" class="img2" src="src/img/softE.jpg">
