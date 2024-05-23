@@ -527,18 +527,17 @@ hr {
 	/* tilt like Steam library */
 	/*transform:  perspective(100em) rotateX(15deg);
 	-webkit-transform:   perspective(100em) rotateX(15deg);
-  -ms-transform:   perspective(100em) rotateX(15deg);*/
+	-ms-transform:   perspective(100em) rotateX(15deg);*/
 
 	-webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
+	-moz-transform: scale(1.4);
 	-o-transform: scale(1.4);
 	-ms-transform: scale(1.4);
 	transform: scale(1.4);
-
 	color: #436ff3;
 	border: 10px #436ff3;
-	box-shadow: 0 0 1px 4px #000000,
-							0 0 20px 10px #436ff3;
+	box-shadow: 0 0 1px 4px #000000, 0 0 20px 10px #436ff3;
+	z-index: 10;
 }
 
 /* RGB rainbow effect - doesn't work yet
