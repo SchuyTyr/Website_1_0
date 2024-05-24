@@ -46,6 +46,7 @@ photoHeader.innerHTML = `
           <a href="Photography/Animals.html" title="Animals">Animals</a>
           <a href="Photography/Landscape.html" title="Landscape">Landscape</a>
           <a href="Photography/Macro.html" title="Macro">Macro</a>
+          <a href="Photography/Pets.html" title="Pets">Pets</a>
         </div>
       </div>
 
