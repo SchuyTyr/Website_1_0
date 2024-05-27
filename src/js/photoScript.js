@@ -101,15 +101,12 @@ window.addEventListener("click", function (event) {
     //if (modalOpen) {
 
     if (event.target === leftArrow) {
-        console.log("1");
         ImagePrevious();
     }
     else if (event.target === rightArrow) {
-        console.log("2");
         ImageAdvance();
     }
     else if ((event.currentTarget !== leftArrow || event.currentTarget !== rightArrow) && modalOpen) {
-        console.log("3");
         modal.style.display = "none";
         noScrollF();
         html.style.overflow = "revert";
@@ -147,7 +144,7 @@ function ImageAdvance() {
         imageIndex++;
     }
 
-    modalImg.src = images[imageIndex];
+    modalImg.src = images[imageIndex].src;
     //names(images[imageIndex], imgEventCollection[imageIndex]);
     console.log("img = " + images[imageIndex] + ", index = " + imageIndex + ", counter = " + curImgCounter);
 }
@@ -161,7 +158,7 @@ function ImagePrevious() {
         imageIndex--;
     }
 
-    modalImg.src = images[imageIndex];
-    //names(images[imageIndex], imgEventCollection[imageIndex]);
+    modalImg.src = images[imageIndex].src;
+    names(images[imageIndex], imgEventCollection[imageIndex]);
     console.log("img = " + images[imageIndex] + ", index = " + imageIndex + ", counter = " + curImgCounter);
 }
