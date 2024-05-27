@@ -1491,12 +1491,22 @@ hr.rounded {
 #mNav {
 	width: 0%;
 }
-#closeButton {
+
+.modalButtonGroup {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#closeButton, #leftArrow, #rightArrow {
 	display: block;
 	cursor: pointer;
 	/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
 	font-size: 96px;
-	line-height: 0.5;
+	line-height: normal;
 	color: var(--main_text_blue_color);
 	transition: 0.3s all ease-in-out;
 	text-align: center;
@@ -1507,11 +1517,13 @@ hr.rounded {
 	/*transform: rotate(0deg);*/
 	text-decoration: none;
 	border: 0;
+	padding-left: 5vw;
+	padding-right: 5vw;
 	background-color: rgba(0,0,0,0%);
 	-webkit-appearance: none;
 }
-#closeButton:hover,
-#closeButton:active {
+#closeButton:hover, #leftArrow:hover, #rightArrow:hover,
+#closeButton:active, #leftArrow:active, #rightArrow:active {
 	color: rgba(99, 138, 255, 0.4);
 	/*transform: rotate(90deg);
 	transition: 0.3s all ease-in-out;*/

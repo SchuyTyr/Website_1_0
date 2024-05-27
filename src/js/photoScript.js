@@ -7,6 +7,12 @@ const images = document.querySelectorAll(".containerGrid img");
 const body = document.getElementById('fullBody');
 const html = document.documentElement;
 
+//let imagesCollection = document.getElementsByClassName("img4");
+let imageIndex = 0;
+let leftArrow = document.getElementById('leftArrow');
+let rightArrow = document.getElementById('rightArrow');
+
+
 let modalImg = document.getElementById("img01");
 let modalImgCapt = document.getElementById("photoTextCapt");
 
@@ -18,6 +24,9 @@ var noScroll = true;
 var modalOpen = false;
 
 var imgTitle = "";
+
+document.getElementById("leftArrow").onclick = ImagePrevious();
+document.getElementById("rightArrow").onclick = ImageAdvance();
 
 function getExif(img) {
 
@@ -79,7 +88,8 @@ async function names(img, e) {
 }
 
 window.onclick = function (event) {
-    if (/*event.currentTarget == modal && */modalOpen) {
+    //if (modalOpen) {
+    if (event.currentTarget != leftArrow || event.currentTarget != rightArrow && modalOpen) {
 		modal.style.display = "none";
 		noScrollF();
         html.style.overflow = "revert";
@@ -105,3 +115,28 @@ function noScrollF() {
 }
 
 
+function ImageAdvance() {
+
+    if (imageIndex >= images.length - 1) {
+        imageIndex = 0;
+    }
+    else {
+        imageIndex++;
+    }
+
+    modalImg.src = images[imageIndex];
+    names(images[imageIndex], images[imageIndex]);
+}
+
+function ImagePrevious() {
+
+    if (imageIndex <= 0) {
+        imageIndex = images.length - 1;
+    }
+    else {
+        imageIndex--;
+    }
+
+    modalImg.src = images[imageIndex];
+    names(images[imageIndex], images[imageIndex]);
+}
