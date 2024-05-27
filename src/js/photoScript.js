@@ -88,15 +88,15 @@ async function names(img, e) {
 }
 
 window.onclick = function (event) {
-    //if (modalOpen) {
-    if (event.currentTarget != leftArrow || event.currentTarget != rightArrow && modalOpen) {
-		modal.style.display = "none";
-		noScrollF();
+    if (modalOpen) {
+    //if (event.currentTarget != leftArrow || event.currentTarget != rightArrow && modalOpen) {
+        modal.style.display = "none";
+        noScrollF();
         html.style.overflow = "revert";
         topBtn = false;
         modalOpen = false;
         imgTitle = "";
-	}
+    }
 }
 
 close.onclick = function (event) {
