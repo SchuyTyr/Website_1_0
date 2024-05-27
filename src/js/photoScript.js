@@ -9,6 +9,8 @@ const html = document.documentElement;
 
 //let imagesCollection = document.getElementsByClassName("img4");
 let imageIndex = 0;
+let curImgCounter = 0;
+let imgEventCollection = [];
 let leftArrow = document.getElementById('leftArrow');
 let rightArrow = document.getElementById('rightArrow');
 
@@ -25,9 +27,6 @@ var modalOpen = false;
 
 var imgTitle = "";
 
-document.getElementById("leftArrow").onclick = ImagePrevious();
-document.getElementById("rightArrow").onclick = ImageAdvance();
-
 function getExif(img) {
 
     EXIF.getData(img, function () {
@@ -43,14 +42,25 @@ function getExif(img) {
 }
 
 images.forEach((img) => {
+    
     img.addEventListener("click", (e) => {
 
         modal.style.display = "block";
         modalImg.src = e.target.src;
 
+        //imageIndex = curImgCounter;
+
+        //imgCollection[curImgCounter] = img;
+
+        imgEventCollection[curImgCounter] = e;
+
         names(img, e);
 
+        console.log("img: " + img + ", e: " + e);
+        console.log("imgEventCollection: " + imgEventCollection);
     });
+
+    curImgCounter++;
 });
 
 async function names(img, e) {
@@ -87,9 +97,19 @@ async function names(img, e) {
     }, 500);
 }
 
-window.onclick = function (event) {
-    if (modalOpen) {
-    //if (event.currentTarget != leftArrow || event.currentTarget != rightArrow && modalOpen) {
+window.addEventListener("click", function (event) {
+    //if (modalOpen) {
+
+    if (event.target === leftArrow) {
+        console.log("1");
+        ImagePrevious();
+    }
+    else if (event.target === rightArrow) {
+        console.log("2");
+        ImageAdvance();
+    }
+    else if ((event.currentTarget !== leftArrow || event.currentTarget !== rightArrow) && modalOpen) {
+        console.log("3");
         modal.style.display = "none";
         noScrollF();
         html.style.overflow = "revert";
@@ -97,7 +117,7 @@ window.onclick = function (event) {
         modalOpen = false;
         imgTitle = "";
     }
-}
+});
 
 close.onclick = function (event) {
     if (modalOpen) {
@@ -109,6 +129,9 @@ close.onclick = function (event) {
         imgTitle = "";
     }
 }
+
+//document.getElementById("leftArrow").onclick = function (event) { ImagePrevious(); }
+//document.getElementById("rightArrow").onclick = function (event) { ImageAdvance(); }
 
 function noScrollF() {
 	body.classList.toggle('noscroll');
@@ -125,7 +148,8 @@ function ImageAdvance() {
     }
 
     modalImg.src = images[imageIndex];
-    names(images[imageIndex], images[imageIndex]);
+    //names(images[imageIndex], imgEventCollection[imageIndex]);
+    console.log("img = " + images[imageIndex] + ", index = " + imageIndex + ", counter = " + curImgCounter);
 }
 
 function ImagePrevious() {
@@ -138,5 +162,6 @@ function ImagePrevious() {
     }
 
     modalImg.src = images[imageIndex];
-    names(images[imageIndex], images[imageIndex]);
+    //names(images[imageIndex], imgEventCollection[imageIndex]);
+    console.log("img = " + images[imageIndex] + ", index = " + imageIndex + ", counter = " + curImgCounter);
 }
