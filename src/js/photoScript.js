@@ -145,7 +145,7 @@ function ImageAdvance() {
     }
 
     modalImg.src = images[imageIndex].src;
-    //names(images[imageIndex], imgEventCollection[imageIndex]);
+    names(images[imageIndex], imgEventCollection[imageIndex]);
     console.log("img = " + images[imageIndex] + ", index = " + imageIndex + ", counter = " + curImgCounter);
 }
 
