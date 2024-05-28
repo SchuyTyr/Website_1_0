@@ -1338,9 +1338,9 @@ hr.rounded {
 	 height: 100%; /* Full height */
 	 overflow: auto; /* Enable scroll if needed */
 	 background-color: rgb(0,0,0); /* Fallback color */
-	 background-color: rgba(0,0,0,0.95); /* Black w/ opacity */
-	 -webkit-backdrop-filter: blur(20px);
-	 backdrop-filter: blur(20px);
+	 background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+	 -webkit-backdrop-filter: blur(42px);
+	 backdrop-filter: blur(42px);
 }
 .modalPhoto {
 	/*display: block;*/
@@ -1406,7 +1406,7 @@ hr.rounded {
 
 #photoText, .photoTextDescr, #photoTextCapt {
 	color: var(--main_headerText_color);
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'Merienda', cursive;
 	text-align: center;
 	/*margin: auto;*/
@@ -1415,9 +1415,15 @@ hr.rounded {
 }
 .photoTextDescr {
 	margin-bottom: 24px;
-	padding-bottom: 12px;
+	padding-bottom: 18px;
 	margin-top: 8px;
 	padding-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	width: 75%;
+	display: block;
+	border-bottom: 1px solid var(--main_subText_color);
 }
 #photoText {
 	margin-bottom: 24px;
@@ -4188,6 +4194,9 @@ model-viewer > #ar-prompt > img {
 	}
 	.headerTxt {
 		font-size: 28px;
+	}
+	.photoTextDescr {
+		width: 90%;
 	}
 	.containerGrid img {
 		height: 170px;

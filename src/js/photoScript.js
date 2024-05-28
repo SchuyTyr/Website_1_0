@@ -70,7 +70,7 @@ async function names(img) {
             modalImg.style.marginBottom = "24px";
         }
 
-        noScrollF();
+        //noScrollF();
         scrollTop.style.display = "none";
         html.style.overflow = "hidden";
         topBtn = true;
@@ -89,22 +89,40 @@ window.addEventListener("click", function (event) {
     }
     else if ((event.currentTarget !== leftArrow || event.currentTarget !== rightArrow) && modalOpen) {
         modal.style.display = "none";
-        noScrollF();
-        html.style.overflow = "revert";
+        //noScrollF();
+        //html.style.overflow = "auto";
         topBtn = false;
         modalOpen = false;
         imgTitle = "";
     }
+
+    toggleScroll();
 });
 
-close.onclick = function (event) {
+//--Redundant with window event listener above--//
+//--Uncomment if not using window event listener--// 
+//close.onclick = function (event) {
+//    if (modalOpen) {
+//        modal.style.display = "none";
+//        noScrollF();
+//        //html.style.overflow = "revert";
+//        //html.style.overflow = "auto";
+//        topBtn = false;
+//        modalOpen = false;
+//        imgTitle = "";
+//    }
+//}
+
+function toggleScroll() {
     if (modalOpen) {
-        modal.style.display = "none";
-        noScrollF();
-        html.style.overflow = "revert";
-        topBtn = false;
-        modalOpen = false;
-        imgTitle = "";
+        html.style.overflow = "hidden";
+        //body.style.margin = "0"; //noScroll replacement - not needed?
+        //body.style.height = "100%"; //noScroll replacement - not needed?
+    }
+    else if (!modalOpen) {
+        html.style.overflowY = "scroll";
+        html.style.overflowX = "hidden";
+        //body.style.margin = "revert"; //noScroll replacement - not needed?
     }
 }
 
