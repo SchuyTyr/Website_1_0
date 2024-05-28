@@ -8,77 +8,52 @@ const images = document.querySelectorAll(".containerGrid img");
 let imageList = [];
 const body = document.getElementById('fullBody');
 const html = document.documentElement;
-
 let imageIndex = 0;
-let curImgCounter = 0;
 let currentImg;
-let imgEventCollection = [];
 let leftArrow = document.getElementById('leftArrow');
 let rightArrow = document.getElementById('rightArrow');
-
-
 let modalImg = document.getElementById("img01");
 let modalImgCapt = document.getElementById("photoTextCapt");
-
 var close = document.getElementById("closeButton");
-
 var scrollTop = document.getElementById("myBtn");
 var noScroll = true;
-
 var modalOpen = false;
-
 var imgTitle = "";
 
 function getExif(img) {
-
     EXIF.getData(img, function () {
-
         if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
-
             imgTitle = EXIF.getTag(this, "ImageDescription");
-
         }
-
     });
-
 }
 
 function atLoad() {
-
     for (var p = 0; p < images.length; p++) {
         imageList.push({ image: images[p].src, id: p });
     }
 }
 
 images.forEach((img) => {
-    
-    img.addEventListener("click", (e) => {
 
+    img.addEventListener("click", (e) => {
         modal.style.display = "block";
         modalImg.src = e.target.src;
-
-        //currentImg = imageList.find(({ image }) => image === e.target.src); // returns undefined
+        currentImg = e.target;
         imageIndex = imageList.findIndex(({ image }) => image === e.target.src);
-
-        //console.log("currentImg: " + currentImg.src + ", imageIndex: " + imageIndex);
-
-        imgEventCollection[curImgCounter] = e;
-
-        names(img, e);
+        names(img);
     });
-
-    curImgCounter++;
 });
 
-async function names(img, e) {
+async function names(img) {
 
     await getExif(img);
 
     setTimeout(() => {
 
-        if ((!imgTitle || imgTitle === "Untitled") && e.target.title) {
-            modalImg.title = e.target.title;
-            modalImg.alt = e.target.title;
+        if ((!imgTitle || imgTitle === "Untitled") && currentImg.title) {
+            modalImg.title = currentImg.title;
+            modalImg.alt = currentImg.title;
             modalImg.style.marginBottom = "24px";
             modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
         }
@@ -101,12 +76,11 @@ async function names(img, e) {
         topBtn = true;
         modalOpen = true;
 
-    }, 500);
+    }, 200);
 }
 
 window.addEventListener("click", function (event) {
 
-    //if (modalOpen) {
     if (event.target === leftArrow) {
         ImagePrevious();
     }
@@ -149,8 +123,7 @@ function ImageAdvance() {
     }
 
     modalImg.src = images[imageIndex].src;
-    names(images[imageIndex], imgEventCollection[imageIndex]);
-    //console.log("img = " + images[imageIndex].src + ", index = " + imageIndex);
+    names(images[imageIndex]);
 }
 
 function ImagePrevious() {
@@ -163,6 +136,5 @@ function ImagePrevious() {
     }
 
     modalImg.src = images[imageIndex].src;
-    names(images[imageIndex], imgEventCollection[imageIndex]);
-    //console.log("img = " + images[imageIndex].src + ", index = " + imageIndex);
+    names(images[imageIndex]);
 }

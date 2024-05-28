@@ -34,7 +34,7 @@
 
 </head>
 
-<body id='fullBody'>
+<body id='fullBody' onload="atLoad()">
 
 	<button id="myBtn" onclick="topFunction()" title="Go to the top"></button>
 
@@ -90,7 +90,11 @@
 			<div id="photoText">Click the "x" or anywhere outside the image to close.</div>
 			<img class="modalPhotoContent" id="img01" title="">
 			<div id="photoTextCapt"></div>
-			<input type="button" id="closeButton" value="&times;" title="Close">
+			<div class="modalButtonGroup">
+				<input type="button" id="leftArrow" value="<" title="Previous">
+				<input type="button" id="closeButton" value="&times;" title="Close">
+				<input type="button" id="rightArrow" value=">" title="Next">
+			</div>
 		</div>
 	</div>
 
