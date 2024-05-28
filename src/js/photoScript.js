@@ -4,12 +4,14 @@
 
 const modal = document.getElementById('myModal');
 const images = document.querySelectorAll(".containerGrid img");
+//let imagesCollection = document.getElementsByClassName("img4");
+let imageList = [];
 const body = document.getElementById('fullBody');
 const html = document.documentElement;
 
-//let imagesCollection = document.getElementsByClassName("img4");
 let imageIndex = 0;
 let curImgCounter = 0;
+let currentImg;
 let imgEventCollection = [];
 let leftArrow = document.getElementById('leftArrow');
 let rightArrow = document.getElementById('rightArrow');
@@ -41,6 +43,13 @@ function getExif(img) {
 
 }
 
+function atLoad() {
+
+    for (var p = 0; p < images.length; p++) {
+        imageList.push({ image: images[p].src, id: p });
+    }
+}
+
 images.forEach((img) => {
     
     img.addEventListener("click", (e) => {
@@ -48,16 +57,14 @@ images.forEach((img) => {
         modal.style.display = "block";
         modalImg.src = e.target.src;
 
-        //imageIndex = curImgCounter;
+        //currentImg = imageList.find(({ image }) => image === e.target.src); // returns undefined
+        imageIndex = imageList.findIndex(({ image }) => image === e.target.src);
 
-        //imgCollection[curImgCounter] = img;
+        //console.log("currentImg: " + currentImg.src + ", imageIndex: " + imageIndex);
 
         imgEventCollection[curImgCounter] = e;
 
         names(img, e);
-
-        console.log("img: " + img + ", e: " + e);
-        console.log("imgEventCollection: " + imgEventCollection);
     });
 
     curImgCounter++;
@@ -98,8 +105,8 @@ async function names(img, e) {
 }
 
 window.addEventListener("click", function (event) {
-    //if (modalOpen) {
 
+    //if (modalOpen) {
     if (event.target === leftArrow) {
         ImagePrevious();
     }
@@ -127,9 +134,6 @@ close.onclick = function (event) {
     }
 }
 
-//document.getElementById("leftArrow").onclick = function (event) { ImagePrevious(); }
-//document.getElementById("rightArrow").onclick = function (event) { ImageAdvance(); }
-
 function noScrollF() {
 	body.classList.toggle('noscroll');
 }
@@ -146,7 +150,7 @@ function ImageAdvance() {
 
     modalImg.src = images[imageIndex].src;
     names(images[imageIndex], imgEventCollection[imageIndex]);
-    console.log("img = " + images[imageIndex] + ", index = " + imageIndex + ", counter = " + curImgCounter);
+    //console.log("img = " + images[imageIndex].src + ", index = " + imageIndex);
 }
 
 function ImagePrevious() {
@@ -160,5 +164,5 @@ function ImagePrevious() {
 
     modalImg.src = images[imageIndex].src;
     names(images[imageIndex], imgEventCollection[imageIndex]);
-    console.log("img = " + images[imageIndex] + ", index = " + imageIndex + ", counter = " + curImgCounter);
+    //console.log("img = " + images[imageIndex].src + ", index = " + imageIndex);
 }
