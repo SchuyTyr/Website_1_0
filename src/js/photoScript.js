@@ -61,7 +61,7 @@ async function names(img) {
             modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
             modalImg.title = imgTitle;
             modalImg.alt = imgTitle;
-            modalImg.style.marginBottom = "5px";
+            modalImg.style.marginBottom = "24px";
         }
         else {
             modalImgCapt.innerHTML = "";
