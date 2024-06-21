@@ -1575,6 +1575,27 @@ hr.rounded {
 	font-size: 18px;
 	font-family: 'Merienda', cursive;
 }
+.captionContainerPhoto {
+	opacity: 1;
+	padding: 5px;
+	transition: transform 0.4s cubic-bezier(.31,.01,.51,.99);
+}
+.captionContainerPhoto span {
+	font-size: 24px;
+	font-family: 'Audiowide', cursive;
+	font-weight: 200;
+	text-align: center;
+	padding: 12px;
+	margin-bottom: 8px;
+	transition: transform 0.4s cubic-bezier(.31,.01,.51,.99);
+}
+.capHover {
+	padding-bottom: 8px;
+}
+.capHover:hover span {
+	border-bottom: 1px solid var(--main_subText_color);
+	border-top: 1px solid var(--main_subText_color);
+}
 
 /*-------------------------End Photo Page--------------------------*/
 /*--------------------------------------------------------------------*/

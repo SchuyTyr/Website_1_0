@@ -21,7 +21,7 @@ photoHeaderInner.innerHTML = `
       </div>
 
       <div class="subNav">
-        <button class="subNavBtn" onclick="void(0)">Sports</button>
+        <button class="subNavBtn" onclick="location.href='Sports.html';" title="All Sports" style="cursor: pointer;">Sports</button>
         <div class="subNav-content" onclick="void(0)">
           <a href="Baseball.html" title="Baseball">Baseball</a>
           <a href="Basketball.html" title="Basketball">Basketball</a>
