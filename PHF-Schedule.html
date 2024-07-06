@@ -1,11 +1,26 @@
 <html lang="en-US">
 <head>
+	<script>
+		// Define dataLayer and the gtag function.
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+
+		// Set default consent to 'denied' as a placeholder
+		// Determine actual values based on your own requirements
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'analytics_storage': 'denied'
+		});
+	</script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMYCWX2SRC"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
+
 		gtag('config', 'G-YMYCWX2SRC');
 	</script>
 	<meta charset="UTF-8">
