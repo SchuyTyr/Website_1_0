@@ -51,10 +51,20 @@
 
 	<!-- Create one update function for each consent parameter -->
 	<script>
-		function consentGrantedAdStorage() {
+		//function consentGrantedAdStorage() {
+		//	gtag('consent', 'update', {
+		//		'ad_storage': 'granted'
+		//	});
+		//}
+        function consentGrantedAnalyticsStorage() {
 			gtag('consent', 'update', {
-				'ad_storage': 'granted'
+				'analytics_storage': 'granted'
 			});
+			hideBanner();
+		}
+		function hideBanner() {
+			document.getElementById("consentContainer").style.display = "none";
+			console.log("Consenting Cookies: Is this actually working?");
 		}
 	</script>
 </head>
@@ -69,6 +79,8 @@
 
 	<main id="main-main">
 		<button id="myBtn" onclick="topFunction()" title="To top"></button>
+
+		<div id="consentContainer"></div>
 
 		<div class="dateContainer"><span id="date"></span></div>
 
@@ -178,6 +190,7 @@
 	<script src="scrollToTop.js"></script>
 	<script src="src/js/fadeScroll.js"></script>
 	<script src="src/js/dateANDtime.js"></script>
+	<script src="src/js/consentBanner.js"></script>
 
 </body>
 </html>
