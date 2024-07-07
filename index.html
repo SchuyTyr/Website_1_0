@@ -64,11 +64,12 @@
 		}
 		function hideBanner() {
 			document.getElementById("consentContainer").style.display = "none";
-			console.log("Consenting Cookies: Is this actually working?");
+			console.log("Consenting Cookies: Is this working?");
 		}
+
 	</script>
 </head>
-<body>
+<body onload="checkCookie()">
 	<header id="header-main"></header>
 
 	<!--<button onclick="consentGrantedAdStorage">Yes</button>-->
@@ -191,6 +192,7 @@
 	<script src="src/js/fadeScroll.js"></script>
 	<script src="src/js/dateANDtime.js"></script>
 	<script src="src/js/consentBanner.js"></script>
+	<script src="src/js/cookies.js"></script>
 
 </body>
 </html>

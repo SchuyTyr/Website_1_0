@@ -1251,29 +1251,37 @@ hr.rounded {
 @keyframes rgbRotate {
 	0% {
 		border-color: #ff0000;
+		box-shadow: 0 0 1px 4px #000000, 0 0 24px 1px #ff0000;
 	}
 
 	16.7% {
 		border-color: #ff00ff;
+		box-shadow: 0 0 1px 4px #000000, 0 0 24px 1px #ff00ff;
 	}
 
 	33.33% {
 		border-color: #0000ff;
+		box-shadow: 0 0 1px 4px #000000, 0 0 24px 1px #0000ff;
 	}
 
 	50% {
 		border-color: #00fff0;
+		box-shadow: 0 0 1px 4px #000000, 0 0 24px 1px #00fff0;
 	}
 
 	66.7% {
 		border-color: #00ff00;
+		box-shadow: 0 0 1px 4px #000000, 0 0 24px 1px #00ff00;
 	}
-	
+
 	83.33% {
 		border-color: #ffff00;
+		box-shadow: 0 0 1px 4px #000000, 0 0 24px 1px #ffff00;
 	}
+
 	100% {
 		border-color: #ff0000;
+		box-shadow: 0 0 1px 4px #000000, 0 0 24px 1px #ff0000;
 	}
 }
 
@@ -1295,25 +1303,6 @@ hr.rounded {
 
 	#yesToConsent, #noToConsent {
 		margin-bottom: 12px;
-		/*	text-align: center;
-	font-family: 'Audiowide', cursive;
-	cursor: pointer;
-	transition: .3s all ease-in;
-	color: var(--main_text_blue_color);
-	font-size: 22px;
-	padding: 10px;
-	padding-left: 14px;
-	padding-right: 14px;
-	margin: 4px 1px;
-	text-decoration: none;
-	border: solid 2px rgba(67,111,243,30%);
-	background-color: rgba(67,111,243,15%);
-	border-radius: 4%;
-	box-shadow: 0px 0px 6px 2px #436ff3;
-	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
-	-webkit-appearance: none;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;*/
 	}
 
 /*--------------------------------------------------------------------*/
