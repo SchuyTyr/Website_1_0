@@ -36,6 +36,7 @@ photoHeaderInner.innerHTML = `
           <a href="Soccer.html" title="Soccer">Soccer</a>
           <a href="Softball.html" title="Softball">Softball</a>
           <a href="SwimDive.html" title="Swimming and Diving">Swimming and Diving</a>
+          <a href="WinterSports.html" title="Skiing, Snowboarding, etc.">Winter Sports</a>
         </div>
       </div>
 
