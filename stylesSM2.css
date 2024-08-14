@@ -142,7 +142,7 @@ br {
 }
 
 .fullMenu {
-	display: block;
+	display: inline-block;
 }
 
 .imgLogo {
@@ -579,6 +579,14 @@ a.link4 {
 		/*opacity: 1;*/
 		border-top: 2px solid var(--main_subText_color);
 	}
+}
+
+.mainMobileView {
+	display: none;
+}
+
+.mainDesktopView {
+	display: block;
 }
 
 .overlay {
@@ -2366,8 +2374,8 @@ a.linkG:hover {
 	text-decoration: none;
 	word-wrap: break-word;
 	width: 75%;
-	padding: 24px;
-	margin: auto;
+	padding: 8px;
+	margin: 0 auto;
 }
 
 .aboutSMapTitle { /*about4Title*/
@@ -2918,10 +2926,10 @@ a.linkWS:hover, a.linkWS:hover span {
 	text-align: center;
 	text-decoration: underline;
 	word-wrap: break-word;
-	padding: 24px;
+	padding: 4px;
 	margin: auto;
-	margin-top: 24px;
-	margin-bottom: 24px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 .paraTextPara {
 	/*color: var(--main_headerText_color);*/
@@ -2961,7 +2969,7 @@ a.linkWS:hover, a.linkWS:hover span {
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	margin: 40px;
+	/*margin: 40px;*/
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -4039,6 +4047,7 @@ model-viewer > #ar-prompt > img {
 	width: 304px;
 	height: 304px;
 	/*aspect-ratio: 1 / 1;*/
+	box-shadow: 0 0 1px 1px #000000, 0 0 8px 1px var(--main_border_blue_color);
 }
 @keyframes SCimgFrame {
 	0% {
@@ -4292,7 +4301,7 @@ model-viewer > #ar-prompt > img {
 }
 @media screen and (max-width: 1450px) {
 	.SCvertLine {
-		width: 54px;
+		width: 4em;
 	}
 	.SCinnerContainerTools {
 		display: inline;
@@ -4318,6 +4327,9 @@ model-viewer > #ar-prompt > img {
 	}
 	#consentContainer {
 		width: 50%;
+	}
+	.SCinnerContainer {
+		display: inline-block;
 	}
 }
 
@@ -4669,6 +4681,15 @@ model-viewer > #ar-prompt > img {
 	.dropdown-content {
 		/*transform: translateX(-24px);*/
 	}
+
+	.mainMobileView {
+		display: inline-block;
+	}
+
+	.mainDesktopView {
+		display: none;
+	}
+
 	.lineBox {
 	 width: 80%;
 	}
