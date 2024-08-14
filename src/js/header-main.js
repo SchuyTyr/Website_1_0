@@ -30,18 +30,21 @@ mainHeader.innerHTML = `
             <button class="pageButtonColor" title="">&nbsp;Services&nbsp;</button>
         </div>  
         <div id="dDownContent" class="dropdown-content">
-            <a href="photoshoot.html" class="aButton pageButtonColor" title="Book a Photoshoot">
+            <a href="photoshoot.html" class="aButton pageButtonColor menuButtons" title="Book a Photoshoot">
                 &nbsp;Book a Photoshoot&nbsp;
             </a>
-            <a href="itconsulting.html" class="aButton pageButtonColor" title="IT Services">
+            <a href="itconsulting.html" class="aButton pageButtonColor menuButtons" title="IT Services">
                 &nbsp;IT Services&nbsp;
+            </a>
+            <a href="tools.html" class="aButton pageButtonColor menuButtons" title="Tools">
+                &nbsp;Tools&nbsp;
             </a>
         </div>
       </div>
       <a href="https://schuybox.wordpress.com/" class="aButton pageButtonColor fullMenu" title="To the SchuyBox!" target="_blank">
 		&nbsp;Blog&nbsp;
 	  </a>
-      <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor fullMenu" title="Buy me a Coffee" target="_blank">
+      <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor fullMenu" title="Buy me a Coffee?" target="_blank">
 		<img class="menuIcon" src="src/icons/KoFi_no_circle.png">
 	  </a>
     </nav>

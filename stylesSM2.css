@@ -428,7 +428,7 @@ a.link4 {
 	.glowBorder .img-hover-zoom {
 		border-radius: 24% 24%;
 		box-shadow: 0 0 1px 4px #000000, 0 0 24px 1px var(--main_border_blue_color);
-		animation: imgFrameBasic 4s Ease-in-out infinite;
+		/*animation: imgFrameBasic 4s Ease-in-out infinite;*/
 	}
 /*	.glowBorder img {
 		animation: imgFrameReverse 0.8s Ease-in-out;
@@ -448,7 +448,7 @@ a.link4 {
 	/*border-radius: 2% 18%;*/
 	box-shadow: 0 0 1px 4px #000000, 0 0 25px 15px var(--main_border_blue_color);
 	/*animation: imgFrame 0.5s Ease-in-out;*/
-	animation: imgFrame 0.8s Ease-in-out, colorChange 2s Ease-in-out infinite;
+	animation: imgFrame 0.8s Ease-in-out/*, colorChange 2s Ease-in-out infinite*/;
 	/*transform: translate(0,-10px);*/
 }
 
@@ -1142,10 +1142,17 @@ polygon {
 
 .dropdown:hover .dropdown-content {
 	display: inline-flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: flex-start;
+}
+
+.menuButtons {
+	width: 100%;
 }
 
 .fadeScroll {
-  transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
 }
 .fadeOut { opacity: 0; }
 .fadeIn { opacity: 1; }
@@ -3991,7 +3998,7 @@ model-viewer > #ar-prompt > img {
 	justify-content: center;
 	align-items: center;
 	width: 90%;
-	width: 100%;
+	/*width: 100%;*/
 	text-align: center;
 	margin: 40px auto;
 }
@@ -4004,6 +4011,9 @@ model-viewer > #ar-prompt > img {
 	align-content: center;
 	justify-content: space-around;
 	align-items: center;
+}
+.SCinnerContainerTools {
+	padding: 12px;
 }
 .SCimg {
 	height: 100%;
@@ -4024,6 +4034,12 @@ model-viewer > #ar-prompt > img {
 		box-shadow: 0 0 1px 4px #000000, 0 0 18px 1px var(--main_button_green_color);
 		animation: SCimgFrame 0.2s Ease-in-out;
 	}
+
+.SCimgTools img {
+	width: 304px;
+	height: 304px;
+	/*aspect-ratio: 1 / 1;*/
+}
 @keyframes SCimgFrame {
 	0% {
 		border-radius: 24% 24%;
@@ -4211,6 +4227,10 @@ model-viewer > #ar-prompt > img {
 		width: 304px;
 		height: 171px;
 	}
+	.SCimgTools img {
+		width: 304px;
+		height: 304px;
+	}
 }
 @media screen and (max-width: 1630px) {
 	.SCvertLine {
@@ -4221,6 +4241,10 @@ model-viewer > #ar-prompt > img {
 	.SCimg img {
 		width: 208px;
 		height: 117px;
+	}
+	.SCimgTools img {
+		width: 208px;
+		height: 208px;
 	}
 }
 	
@@ -4269,6 +4293,13 @@ model-viewer > #ar-prompt > img {
 @media screen and (max-width: 1450px) {
 	.SCvertLine {
 		width: 54px;
+	}
+	.SCinnerContainerTools {
+		display: inline;
+		text-align: center;
+	}
+	.SCDescrTools {
+		text-align: center;
 	}
 }
 @media screen and (min-width: 1351px) {
@@ -4636,7 +4667,7 @@ model-viewer > #ar-prompt > img {
 		padding: 5px;
 	}
 	.dropdown-content {
-		transform: translateX(-24px);
+		/*transform: translateX(-24px);*/
 	}
 	.lineBox {
 	 width: 80%;
@@ -4713,7 +4744,7 @@ model-viewer > #ar-prompt > img {
 		width: 38%;
 	}
 	.dropdown-content {
-		transform: translateX(-12px);
+		/*transform: translateX(-12px);*/
 	}
 	.dropdown:hover .dropdown-content {
 		flex-wrap: wrap;
@@ -5049,7 +5080,7 @@ model-viewer > #ar-prompt > img {
 		font-size: 12px;
 	}
 	.dropdown-content {
-		transform: translateX(0px);
+		/*transform: translateX(0px);*/
 	}
 	#textbox1, #textbox2, #textbox3, #textbox4, #textbox5 {
 		height: 42px;
