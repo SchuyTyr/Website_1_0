@@ -4192,6 +4192,93 @@ model-viewer > #ar-prompt > img {
 
 /*-------------------End Would You Rather------------------*/
 /*---------------------------------------------------------*/
+
+/*-------------------Start Wrong Calculator------------------*/
+/*-----------------------------------------------------------*/
+
+.calcDiv {
+	display: table;
+	margin: 2em auto 3em;
+}
+
+#calculatorw {
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.calcButtons {
+	width: 100%;
+	padding: 20px 40px;
+	font-size: 24px;
+	/*font-weight: bold;*/
+	text-align: center;
+	font-family: 'Audiowide', cursive;
+	cursor: pointer;
+	transition: .3s all ease-in;
+	color: var(--main_text_blue_color);
+	text-decoration: none;
+	border: solid 2px rgba(67,111,243,30%);
+	background-color: rgba(67,111,243,15%);
+	border-radius: 4%;
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+#equalSign {
+	color: #ffa407;
+}
+
+#cButton {
+	color: var(--main_button_green_color);
+}
+
+#bButton {
+	color: var(--main_subText_color);
+}
+
+.calcButtons:hover, #equalSign:hover, #cButton:hover, #bButton:hover {
+	color: #ffa407;
+	border: solid 2px rgba(255,164,7,70%);
+	transition: .15s all ease-in;
+	border-radius: 25% / 10%;
+}
+
+.calcButtons:active, #equalSign:active, #cButton:active, #bButton:active {
+	color: #00bb17;
+	border: solid 2px rgba(0,187,23,70%);
+	transition: .15s all ease-in;
+	border-radius: 50% / 15%;
+}
+
+.calcOutputText {
+	padding: 20px 30px;
+	font-size: 24px;
+	font-family: 'Audiowide', cursive;
+	font-weight: bold;
+	text-align: right;
+	color: var(--main_headerText_color);
+	border: none;
+	border: solid 2px rgba(67,111,243,30%);
+	background-color: rgba(67,111,243,15%);
+	border-radius: 4%;
+	box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-box-shadow: 0px 0px 6px 2px #436ff3;
+	-webkit-appearance: none;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	overflow: hidden;
+}
+
+.titleUnderline {
+	border-bottom: solid 1px var(--main_subText_color);
+}
+
+/*-------------------End Wrong Calculator------------------*/
+/*---------------------------------------------------------*/
 @media (hover:hover) {
 	#myBtn:hover {
 		color: #383838;
@@ -5180,6 +5267,13 @@ model-viewer > #ar-prompt > img {
 		border: solid 2px rgba(67,111,243,30%);
 		transition: .15s all ease-in;
 		border-radius: 4%;
+	}
+	.calcButtons {
+		padding: 1em;
+		font-size: 18px;
+	}
+	.calcOutputText {
+		padding: 1em 5px 1em 2px;
 	}
 }
 @media screen and (max-width: 400px) {

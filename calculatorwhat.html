@@ -2,7 +2,6 @@
 <!-- Schuyler Meyer Website 3.0 -->
 <html lang="en-US">
 <head>
-
 	<script>
 		// Define dataLayer and the gtag function.
 		window.dataLayer = window.dataLayer || [];
@@ -40,7 +39,7 @@
 	<meta name="twitter:description" content="Photography, Animation, Game Developer, VR, Software Engineering, Web Development, IT Services"><!-- optional -->
 	<meta name="twitter:image" content="https://www.schuylermeyer.com/src/img/TwitPhoto_2x1.jpg"><!-- optional -->
 	<meta name="twitter:image:alt" content="Schuyler Meyer /\\ SchuyTyr Media"><!-- optional -->
-	<title>SM - Tools</title>
+	<title>SM - Calculator</title>
 	<!--<link href="stylesSM.css" rel="stylesheet">-->
 	<link href="stylesSM.css" rel="stylesheet">
 	<link href="stylesSM2.css" rel="stylesheet">
@@ -56,65 +55,65 @@
 
 	<header id="header-main"></header>
 
-	<hr class="rounded" style="margin-bottom: 4px;">
+	<hr class="rounded">
 
 	<!-- __________________________________________________________________________ -->
 
 	<main id="main-main">
 
-		<div class="servsContainer"><span class="servs">&nbsp;&nbsp;Tools&nbsp;&nbsp;</span></div>
+		<div class="servsContainer"><span class="servs">&nbsp;&nbsp;Calculator&nbsp;&nbsp;</span></div>
 
-		<div class="serviceContainer">
-			<div class="SCinnerContainer SCinnerContainerTools">
-				<div class="SCimg SCslides SCimgTools">
-					<a class="linkMain" href="wordsearch.html">
-						<img alt="" src="src/img/wordsearch.jpg" />
-					</a>
-				</div>
-				<div class="SCDescrContainer">
-					<p class="SCDescr SCDescrTools">
-						<b><u>Wordsearch</u></b>
-						<br />
-						A wordsearching tool for Wordle-type games.
-					</p>
-				</div>
-			</div>
+		<br />
+		<br />
 
-			<!--<hr class="SCvertLine">-->
-			<div class="SCinnerContainer SCinnerContainerTools">
-				<div class="SCimg SCimgTools">
-					<a class="linkMain" href="color.html">
-						<img alt="Color Picker" src="src/img/colorpicker.jpg" />
-					</a>
-				</div>
-				<div class="SCDescrContainer">
-					<p class="SCDescr SCDescrTools">
-						<b><u>Color Picker</u></b>
-						<br />
-						A full screen color picker.
-					</p>
-				</div>
-			</div>
+		<p class="textSMap aboutSMapTitle"><span class="titleUnderline">Check your answers.</span></p>
 
+		<div class="calcDiv">
+			<table id="calculatorw">
+				<tr>
+					<td colspan="4">
+						<input type="text" id="result" class="calcOutputText" value="">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="button" id="bButton" class="calcButtons" value="↤ DEL" title="delete"></td>
+					<td colspan="2"><input type="button" id="cButton" class="calcButtons" value="C" title="clear"></td>
 
-			<div class="SCinnerContainer SCinnerContainerTools">
-				<div class="SCimg SCimgTools">
-					<a class="linkMain" href="calculatorwhat.html">
-						<img alt="CalculatorWhat" src="src/img/calculatorWhat.jpg" />
-					</a>
-				</div>
-				<div class="SCDescrContainer">
-					<p class="SCDescr SCDescrTools">
-						<b><u>Calculator What?</u></b>
-						<br />
-						A simple calculator that is correct 80% of the time.
-					</p>
-				</div>
-			</div>
+				</tr>
+
+				<tr>
+					<td><input type="button" id="calcSeven" class="calcButtons" value="7"></td>
+					<td><input type="button" id="calcEight" class="calcButtons" value="8"></td>
+					<td><input type="button" id="calcNine" class="calcButtons" value="9"></td>
+					<td><input type="button" id="calcDiv" class="calcButtons" value="/" title="divide"></td>
+				</tr>
+				<tr>
+					<td><input type="button" id="calcFour" class="calcButtons" value="4"></td>
+					<td><input type="button" id="calcFive" class="calcButtons" value="5"></td>
+					<td><input type="button" id="calcSix" class="calcButtons" value="6"></td>
+					<td><input type="button" id="calcTimes" class="calcButtons" value="*" title="multiply"></td>
+				</tr>
+				<tr>
+					<td><input type="button" id="calcOne" class="calcButtons" value="1"></td>
+					<td><input type="button" id="calcTwo" class="calcButtons" value="2"></td>
+					<td><input type="button" id="calcThree" class="calcButtons" value="3"></td>
+					<td><input type="button" id="calcSub" class="calcButtons" value="-" title="subtract"></td>
+				</tr>
+				<tr>
+					<td><input type="button" id="calcZero" class="calcButtons" value="0"></td>
+					<td><input type="button" id="calcDec" class="calcButtons" value="."></td>
+					<td><input type="button" id="equalSign" class="calcButtons" value="="></td>
+					<td><input type="button" id="calcPlus" class="calcButtons" value="+" title="add"></td>
+				</tr>
+			</table>
 		</div>
 
-		<div class="servsContainer"><span class="servsINV">&nbsp;&nbsp;Tools&nbsp;&nbsp;</span></div>
 
+		<p class="textSMap aboutSMapTitle" style="font-size:0.8em;">*Keyboard presses not supported at this time.</p>
+		<br />
+		<br />
+
+		<div class="servsContainer"><span class="servsINV">&nbsp;&nbsp;Calculator&nbsp;&nbsp;</span></div>
 
 	</main>
 
@@ -123,6 +122,12 @@
 	<!-- __________________________________________________________________________ -->
 
 	<script src="hideMenu.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+			integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer">
+	</script>
+	<script src="src/js/calcWhat.js"></script>
 
 </body>
 </html>
