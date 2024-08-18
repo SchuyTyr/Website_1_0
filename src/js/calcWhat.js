@@ -16,6 +16,7 @@ document.getElementById("equalSign").onclick = function () {
 	} else {
 		let actualVal = resultText.value;
 		let realMath = math.evaluate(actualVal)
+		realMath = Math.round((realMath + Number.EPSILON) * 100000000) / 100000000
 		resultText.value = realMath;
 	}
 };
