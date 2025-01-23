@@ -18,10 +18,10 @@ photoFooter.innerHTML = `
       </a>
     </div>
     <div class="socialProps">
-      <a class="link4" href="https://twitter.com/schuylermeyer24" title="Twitter &#64;schuylermeyer24" target="_blank" rel="noopener">
-          <img class="socialHover twitterX" src="src/icons/Twitter_3.png" alt="twitter.com/schuylermeyer24" >
-      </a>
-    </div>
+        <a class="link4" href="https://bsky.app/profile/mapleki.bsky.social" title="BlueSky &#64;mapleki.bsky.social" target="_blank" rel="noopener">
+            <img class="socialHover" src="src/icons/Bluesky.png" alt="https://bsky.app/profile/mapleki.bsky.social">
+        </a>
+      </div>
     <div class="socialProps">
       <a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer" target="_blank" rel="noopener">
           <img class="socialHover" src="src/icons/Flickr_3.png" alt="flickr.com/photos/schuyler_meyer">
