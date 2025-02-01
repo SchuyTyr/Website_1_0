@@ -1514,9 +1514,9 @@ hr.rounded {
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	width: 75%;
+	width: 90%;
 	display: block;
-	border-bottom: 1px solid var(--main_subText_color);
+	/*border-bottom: 1px solid var(--main_subText_color);*/
 }
 #photoText {
 	margin-bottom: 24px;
@@ -2079,6 +2079,9 @@ hr.rounded {
 .headIMGContainer{
 	width: 100%;
 	text-align: center;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .greeting {
 	text-align: center;
@@ -2099,7 +2102,7 @@ hr.rounded {
 	line-height: 1.4;
 	/*font-family: 'Merienda', cursive;*/
 	font-family: 'Roboto Mono', monospace;
-	font-weight: 300;
+	font-weight: 400;
 	display: block;
 	width: 90%;
 	margin-left: auto;
@@ -2126,9 +2129,11 @@ hr.rounded {
 	line-height: 1.4;
 	/*font-family: 'Merienda', cursive;*/
 	font-family: 'Roboto Mono', monospace;
-	font-weight: 300;
-	margin-left: auto;
+	font-weight: 400;
+	margin-left: 5%;
 	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 5%;
 	width: 90%;
 }
 .tocList {
@@ -4478,6 +4483,9 @@ model-viewer > #ar-prompt > img {
 		padding-top: 4px;
 		padding-bottom: 4px;
 	}
+	.headIMGContainer {
+		margin-left: 12vw;
+	}
 }
 @media screen and (max-width: 1200px) {
 	nav {
@@ -4633,6 +4641,9 @@ model-viewer > #ar-prompt > img {
 		width: 304px;
 		height: 171px;
 	}*/
+	.headIMGContainer {
+		margin-left: auto;
+	}
 }
 
 @media screen and (max-width: 1130px) {
