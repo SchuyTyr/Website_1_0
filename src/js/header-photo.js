@@ -25,9 +25,11 @@ photoHeader.innerHTML = `
         <button class="subNavBtn" onclick="location.href='Photography/Sports.html';" title="All Sports" style="cursor: pointer;">Sports</button>
         <div class="subNav-content" onclick="void(0)">
           <a href="Photography/Baseball.html" title="Baseball">Baseball</a>
-          <a href="Photography/Basketball.html" title="Basketball">Basketball</a>
+          <a href="Photography/MBasketball.html" title="Basketball, Men's">Basketball, Men's</a>
+          <a href="Photography/WBasketball.html" title="Basketball, Women's">Basketball, Women's</a>
           <a href="Photography/XCountry.html" title="Cross Country">Cross Country</a>
           <a href="Photography/Equestrian.html" title="Equestrian">Equestrian</a>
+          <a href="Photography/Fencing.html" title="Fencing">Fencing</a>
           <a href="Photography/Football.html" title="Football">Football</a>
           <a href="Photography/Golf.html" title="Golf">Golf</a>
           <a href="Photography/MHockey.html" title="Hockey, Men's">Hockey, Men's</a>
@@ -36,7 +38,9 @@ photoHeader.innerHTML = `
           <a href="Photography/MountainBiking.html" title="Mountain Biking">Mountain Biking</a>
           <a href="Photography/Soccer.html" title="Soccer">Soccer</a>
           <a href="Photography/Softball.html" title="Softball">Softball</a>
-          <a href="Photography/SwimDive.html" title="Swimming and Diving">Swimming and Diving</a>
+          <a href="Photography/Squash.html" title="Squash">Squash</a>
+          <a href="Photography/SwimDive.html" title="Swimming and Diving">Swimming & Diving</a>
+          <a href="Photography/Track.html" title="Track and Field">Track & Field</a>
           <a href="Photography/WinterSports.html" title="Skiing, Snowboarding, etc.">Winter Sports</a>
         </div>
       </div>

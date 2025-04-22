@@ -1683,10 +1683,11 @@ hr.rounded {
 .capHover {
 	padding-bottom: 8px;
 }
-.capHover:hover span {
-	border-bottom: 1px solid var(--main_subText_color);
-	border-top: 1px solid var(--main_subText_color);
-}
+	.capHover:hover span {
+		border-bottom: 1px solid var(--main_subText_color);
+		border-top: 1px solid var(--main_subText_color);
+		color: rgb(0 229 255);
+	}
 
 /*-------------------------End Photo Page--------------------------*/
 /*--------------------------------------------------------------------*/
