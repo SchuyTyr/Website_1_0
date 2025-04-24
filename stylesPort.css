@@ -311,6 +311,30 @@ hr {
 	}
 }
 
+.glowMiku {
+	color: #BEC8D1;
+	/*text-align: left;*/
+	-webkit-animation: glowMiku 2s ease-in-out infinite alternate;
+	-moz-animation: glowMiku 2s ease-in-out infinite alternate;
+	animation: glowMiku 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glowMiku {
+	from {
+		text-shadow: 0 0 5px #fff,
+					 0 0 10px #86CECB,
+					 0 0 20px #86CECB,
+					 0 0 30px #86CECB,
+					 0 0 40px #86CECB;
+	}
+	to {
+		text-shadow: 0 0 10px #137A7F,
+					 0 0 20px #137A7F,
+					 0 0 30px #137A7F,
+					 0 0 40px #137A7F,
+					 0 0 50px #137A7F;
+	}
+}
+
 .glowToo {
 	/*font-size: 64px;*/
 	/*font-family: 'Audiowide', cursive;*/
