@@ -40,7 +40,9 @@ photoHeader.innerHTML = `
           <a href="Photography/Softball.html" title="Softball">Softball</a>
           <a href="Photography/Squash.html" title="Squash">Squash</a>
           <a href="Photography/SwimDive.html" title="Swimming and Diving">Swimming & Diving</a>
+          <a href="Photography/Tennis.html" title="Tennis">Tennis</a>
           <a href="Photography/Track.html" title="Track and Field">Track & Field</a>
+          <a href="Photography/Volleyball.html" title="Volleyball">Volleyball</a>
           <a href="Photography/WinterSports.html" title="Skiing, Snowboarding, etc.">Winter Sports</a>
         </div>
       </div>
