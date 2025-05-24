@@ -16,8 +16,8 @@ photoFooterInner.innerHTML = `
       </a>
     </div>
     <div class="socialProps">
-        <a class="link4" href="https://bsky.app/profile/mapleki.bsky.social" title="BlueSky &#64;mapleki.bsky.social" target="_blank" rel="noopener">
-            <img class="socialHover" src="../src/icons/Bluesky.png" alt="https://bsky.app/profile/mapleki.bsky.social">
+        <a class="link4" href="https://bsky.app/profile/schuylermeyer.bsky.social" title="BlueSky &#64;schuylermeyer.bsky.social" target="_blank" rel="noopener">
+            <img class="socialHover" src="../src/icons/Bluesky.png" alt="https://bsky.app/profile/schuylermeyer.bsky.social">
         </a>
       </div>
     <div class="socialProps">
