@@ -410,10 +410,11 @@ a.link4 {
 .img-hover-zoom {
 	height: auto;
 	overflow: hidden;
-	transition: transform 0.4s cubic-bezier(.31,.01,.51,.99);
+	/*transition: transform 0.4s cubic-bezier(.31,.01,.51,.99);*/
 }
 
 	.img-hover-zoom img {
+		/*border-radius: 24% 24%;*/
 		transition: transform 0.4s cubic-bezier(.31,.01,.51,.99);
 	}
 
@@ -427,12 +428,14 @@ a.link4 {
 	}
 
 .glowBorder {
-	transition: transform 1s cubic-bezier(.31,.01,.51,.99);
+	/*transition: transform 1s cubic-bezier(.31,.01,.51,.99);*/
 }
 	.glowBorder .img-hover-zoom {
 		border-radius: 24% 24%;
 		box-shadow: 0 0 1px 4px #000000, 0 0 24px 1px var(--main_border_blue_color);
 		/*animation: imgFrameRGB 4s Ease-in-out infinite;*/
+		transition: transform 0.4s cubic-bezier(.31,.01,.51,.99),
+					border-radius 0.4s cubic-bezier(.31,.01,.51,.99);
 	}
 /*	.glowBorder img {
 		animation: imgFrameReverse 0.8s Ease-in-out;
@@ -4084,13 +4087,14 @@ model-viewer > #ar-prompt > img {
 		border-radius: 24% 24%;
 		position: relative;
 		object-fit: cover;
-		box-shadow: 0 0 1px 1px #000000, 0 0 8px 1px rgba(255,143,0,100%);
-		transition: transform 0.2s cubic-bezier(.31,.01,.51,.99);
+		box-shadow: 0 0 1px 1px #000000, 0 0 8px 1px var(--main_button_orange_color);
+		transition: border-radius 0.2s cubic-bezier(.31,.01,.51,.99);
 	}
 	.SCimg:hover img {
 		border-radius: 8px;
-		box-shadow: 0 0 1px 4px #000000, 0 0 18px 1px var(--main_button_green_color);
-		animation: SCimgFrame 0.2s Ease-in-out;
+		box-shadow: 0 0 1px 1px #000000, 0 0 8px 1px var(--main_button_orange_color);
+		/*box-shadow: 0 0 1px 4px #000000, 0 0 18px 1px var(--main_button_green_color);*/
+		animation: rgbRotate 10s Ease-in-out infinite;
 	}
 
 .SCimgTools img {

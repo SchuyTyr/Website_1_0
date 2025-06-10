@@ -3,6 +3,17 @@
 	overflow-x: hidden;
 }*/
 
+:root {
+	--main_text_blue_color: rgba(99, 138, 255, 0.9);
+	--main_border_blue_color: rgba(67,111,243,1.0);
+	--main_headerText_color: #c2c7cc;
+	--main_subText_color: #8b8e91;
+	--main_subText_colorTeal: #00f1ff;
+	--main_button_green_color: rgba(0,187,23,90%);
+	--main_button_orange_color: rgba(255,164,7,70%);
+	--main_genTitle_color: #99a8b8;
+}
+
 body {
 	background-color: #111821;
 	background: no-repeat center center fixed;
@@ -149,21 +160,24 @@ video {
 	padding: 4px;
 }
 
-.subNav-content a:hover {
-	text-align: center;
-	cursor: pointer;
-	/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
-	/*color: rgba(99, 138, 255);*/
-	color: #ffa407;
- 	border: solid 2px rgba(67,111,243,30%);
- 	background-color: rgba(67,111,243,15%);
-	border-radius: 4%;
-	-webkit-background-clip: padding-box; /* for Safari */
-	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-}
-.subNav-content a:active {
-	color: #00bb17;
-}
+	.subNav-content a:hover {
+		text-align: center;
+		cursor: pointer;
+		/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
+		/*color: rgba(99, 138, 255);*/
+		/*color: #ffa407;*/
+		color: var(--main_subText_colorTeal);
+		border: solid 2px rgba(67,111,243,30%);
+		border: solid 2px var(--main_subText_colorTeal);
+		background-color: rgba(67,111,243,15%);
+		border-radius: 4%;
+		-webkit-background-clip: padding-box; /* for Safari */
+		background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	}
+	.subNav-content a:active {
+		/*color: #00bb17;*/
+		color: var(--main_text_blue_color);
+	}
 
 .subNav:hover .subNav-content,
 .subNav:active .subNav-content {
