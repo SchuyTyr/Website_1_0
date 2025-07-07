@@ -51,6 +51,7 @@ photoHeader.innerHTML = `
         <button class="subNavBtn">Nature</button>
         <div class="subNav-content">
           <a href="Photography/Animals.html" title="Animals">Animals</a>
+          <a href="Photography/Astro.html" title="Astro">Astro</a>
           <a href="Photography/Landscape.html" title="Landscape">Landscape</a>
           <a href="Photography/Macro.html" title="Macro">Macro</a>
           <a href="Photography/Pets.html" title="Pets">Pets</a>
