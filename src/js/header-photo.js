@@ -42,6 +42,7 @@ photoHeader.innerHTML = `
           <a href="Photography/SwimDive.html" title="Swimming and Diving">Swimming & Diving</a>
           <a href="Photography/Tennis.html" title="Tennis">Tennis</a>
           <a href="Photography/Track.html" title="Track and Field">Track & Field</a>
+          <a href="Photography/VintageBaseBall.html" title="Vintage Base Ball">Vintage Base Ball</a>
           <a href="Photography/Volleyball.html" title="Volleyball">Volleyball</a>
           <a href="Photography/WinterSports.html" title="Skiing, Snowboarding, etc.">Winter Sports</a>
         </div>
@@ -73,9 +74,10 @@ photoHeader.innerHTML = `
         <button class="subNavBtn">Still Life | Art</button>
         <div class="subNav-content">
           <a href="Photography/Artwork.html" title="Artwork">Artwork</a>
+          <a href="Photography/HumanCreated.html" title="Human Created">Human Created</a>
           <a href="Photography/Miniatures.html" title="Miniatures">Miniatures</a>
-          <a href="Photography/StillLife.html" title="Still Life">Still Life</a>
           <a href="Photography/photoshop.html" title="Photoshop">Photoshop</a>
+          <a href="Photography/StillLife.html" title="Still Life">Still Life</a>
         </div>
       </div>
     </div>
