@@ -24,6 +24,7 @@ photoHeaderInner.innerHTML = `
         <button class="subNavBtn" onclick="location.href='Sports.html';" title="All Sports" style="cursor: pointer;">Sports</button>
         <div class="subNav-content" onclick="void(0)">
           <a href="Baseball.html" title="Baseball">Baseball</a>
+          <a href="VintageBaseBall.html" title="Vintage Base Ball">Base Ball, Vintage</a>
           <a href="MBasketball.html" title="Basketball, Men's">Basketball, Men's</a>
           <a href="WBasketball.html" title="Basketball, Women's">Basketball, Women's</a>
           <a href="XCountry.html" title="Cross Country">Cross Country</a>
@@ -41,7 +42,6 @@ photoHeaderInner.innerHTML = `
           <a href="SwimDive.html" title="Swimming and Diving">Swimming & Diving</a>
           <a href="Tennis.html" title="Tennis">Tennis</a>
           <a href="Track.html" title="Track and Field">Track & Field</a>
-          <a href="VintageBaseBall.html" title="Vintage Base Ball">Vintage Base Ball</a>
           <a href="Volleyball.html" title="Volleyball">Volleyball</a>
           <a href="WinterSports.html" title="Skiing, Snowboarding, etc.">Winter Sports</a>
         </div>
