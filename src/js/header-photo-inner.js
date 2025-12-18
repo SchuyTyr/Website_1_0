@@ -8,7 +8,20 @@ let photoHeaderInner = document.getElementById('PhotoHeaderInner');
 
 photoHeaderInner.innerHTML = `
 <div id="mNav" class="menuOverlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" title="Close">&times;</a>
+  <div class="closebtnT" onclick="closeNav()" title="CLOSE">
+	    <span class="xBtnTXT">CL</span>
+	    <svg class="xBtn" viewBox="-10 -10 120 120" xmlns="http://www.w3.org/2000/svg">
+		    <line id="xBtnLineTL" x1="0" y1="0" x2="50" y2="50" stroke="black" />
+		    <line id="xBtnLineWTL" x1="0" y1="0" x2="50" y2="50" stroke="black" />
+		    <line id="xBtnLineBR" x1="100" y1="100" x2="50" y2="50" stroke="red" />
+		    <line id="xBtnLineWBR" x1="100" y1="100" x2="50" y2="50" stroke="red" />
+		    <line id="xBtnLineBL" x1="0" y1="100" x2="50" y2="50" stroke="green" />
+		    <line id="xBtnLineWBL" x1="0" y1="100" x2="50" y2="50" stroke="green" />
+		    <line id="xBtnLineTR" x1="100" y1="0" x2="50" y2="50" stroke="blue" />
+		    <line id="xBtnLineWTR" x1="100" y1="0" x2="50" y2="50" stroke="blue" />
+	    </svg>
+	    <span class="xBtnTXT">SE</span>
+    </div>
   <div class="menuOverlay-content">
 
     <div class="navbar">
@@ -64,6 +77,7 @@ photoHeaderInner.innerHTML = `
           <a href="Concerts.html" title="Concerts">Concerts</a>
           <a href="Cosplay.html" title="Cosplay">Cosplay</a>
           <a href="Events.html" title="Events">Events</a>
+          <a href="Humans.html" title="Humans">Humans</a>
           <a href="Portraits.html" title="Portraits">Portraits</a>
           <a href="Weddings.html" title="Weddings">Weddings</a>
         </div>
