@@ -82,7 +82,7 @@ video {
 
 .menuOverlay-content {
   position: relative;
-  top: 10%;
+  /*top: 10%;*/
   text-align: left;
 }
 
