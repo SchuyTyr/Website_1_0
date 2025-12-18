@@ -142,7 +142,7 @@ photoHeader.innerHTML = `
 		&nbsp;Blog&nbsp;
 	  </a>
       <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor fullMenu" title="Buy me a Coffee" target="_blank">
-		<img class="menuIcon" src="src/icons/KoFi_no_circle.png">
+		<img class="menuIcon" src="https://www.schuylermeyer.com/src/icons/KoFi_no_circle.png">
 	  </a>
 </nav>
 
