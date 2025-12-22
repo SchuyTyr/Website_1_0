@@ -39,6 +39,7 @@
 	<!-- End Fonts -->
 	<script src="src/js/header-photo.js" type="text/javascript" defer></script>
 	<script src="src/js/footer-photo.js" type="text/javascript" defer></script>
+	<script src="src/js/photo-modal.js" defer></script>
 </head>
 
 <body id='fullBody' onload="atLoad()">
@@ -104,20 +105,6 @@
 
 	</main>
 
-	<div id="myModal" class="modal" title="Click to Close">
-		<div class="modalPhoto">
-			<!--<div id="photoText">Click the "x" or anywhere outside the image to close.</div>-->
-			<img class="modalPhotoContent" id="img01" title="">
-			<div id="photoTextCapt"></div>
-			<div class="modalButtonGroup">
-				<input type="button" id="leftArrow" value="<" title="Previous">
-				<input type="button" id="closeButton" value="&times;" title="Close">
-				<input type="button" id="rightArrow" value=">" title="Next">
-			</div>
-		</div>
-	</div>
-
-	<!-- __________________________________________________________________________ -->
 	<!--<hr class="rounded">-->
 
 	<br />
@@ -246,6 +233,22 @@
 
 	<!-- __________________________________________________________________________ -->
 
+	<div id="myModal" class="modal" title="Click to Close"></div>
+
+	<!--<div id="myModal" class="modal" title="Click to Close">
+	<div class="modalPhoto">-->
+	<!--<div id="photoText">Click the "x" or anywhere outside the image to close.</div>-->
+	<!--<img class="modalPhotoContent" id="img01" title="">
+	<div id="photoTextCapt"></div>
+		<div class="modalButtonGroup">
+			<input type="button" id="leftArrow" value="<" title="Previous">
+			<input type="button" id="closeButton" value="&times;" title="Close">
+			<input type="button" id="rightArrow" value=">" title="Next">
+		</div>
+		</div>
+	</div>-->
+	<!-- __________________________________________________________________________ -->
+
 	<div id="PhotoFooter"></div>
 
 	<!-- __________________________________________________________________________ -->
@@ -253,8 +256,8 @@
 	<script src="photography/photoMenu.js"></script>
 	<script src="scrollToTop.js"></script>
 	<script src="hideMenu.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
-	<script src="src/js/photoScript.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/exif-js" defer></script>
+	<script src="src/js/photoScript.js" defer></script>
 	<!--<script src="src/js/imageRotateThough.js"></script>-->
 	<script src="src/js/fadeScroll.js"></script>
 

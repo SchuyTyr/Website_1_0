@@ -156,7 +156,7 @@ br {
 	/*letter-spacing: 8px;*/
 }
 
-.closebtnP {
+.closebtnP, .closebtnA {
 	margin: 0 auto;
 	/*min-width: 20px;*/
 	/*min-height: 50px;*/
@@ -172,9 +172,6 @@ br {
 	align-content: center;
 }
 
-/*.closebtnT:hover {
-	letter-spacing: -0.5em;
-}*/
 .xBtnTXT {
 	font-family: 'nasalization', sans-serif;
 	font-size: 24px !important;
@@ -220,10 +217,10 @@ br {
 }*/
 
 #xBtnLineBL, #xBtnLineBR, #xBtnLineTL, #xBtnLineTR,
-#xBtnLineWTL, #xBtnLineWBR, #xBtnLineWBL, #xBtnLineWTR {
+#xBtnLineWTL, #xBtnLineWBR, #xBtnLineWBL, #xBtnLineWTR, #xBtnLineStTemp, #xBtnLineStTempW {
 	transition: all 0.5s ease-in-out;
 	stroke-dashoffset: 25;
-	stroke-dasharray: 60;
+	stroke-dasharray: 30;
 	fill: none;
 	stroke: var(--main_border_blue_color);
 	stroke-width: 10px;
@@ -232,11 +229,16 @@ br {
 	filter: drop-shadow(0px 0px 3px var(--main_border_blue_color)) drop-shadow(0px 0px 8px var(--main_text_blue_color));
 }
 
-#xBtnLineWTL, #xBtnLineWBR, #xBtnLineWBL, #xBtnLineWTR {
+#xBtnLineWTL, #xBtnLineWBR, #xBtnLineWBL, #xBtnLineWTR, #xBtnLineStTempW {
 	stroke-width: 2px;
 	stroke: white;
 	stroke-dashoffset: 10;
 	filter: drop-shadow(0px 0px 3px white);
+}
+
+#xBtnLineStTemp, #xBtnLineStTempW {
+	stroke-dashoffset: 0;
+	stroke-dasharray: 0;
 }
 
 .xBtn #xBtnLineTL, .xBtn #xBtnLineWTL {
