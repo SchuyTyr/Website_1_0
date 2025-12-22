@@ -1,4 +1,4 @@
-/*-- photoScript.js // Schuyler Meyer // 2022-23 --*/
+/*-- photoScript.js // Schuyler Meyer // 2022-25 --*/
 
 //window.onload = function () {
 
@@ -12,8 +12,6 @@
     let imageList = [];
     let imageIndex = 0;
     let currentImg;
-    //let leftArrow = document.getElementById('leftArrow');
-    //let rightArrow = document.getElementById('rightArrow');
     let modalImg/* = document.getElementById("img01")*/;
     let modalImgCapt/* = document.getElementById("photoTextCapt")*/;
     /*var close = document.getElementById("closeButton");*/
@@ -43,14 +41,11 @@
             modal = document.getElementById('myModal');
             modalImg = document.getElementById("img01");
             modalImgCapt = document.getElementById("photoTextCapt");
-            //if (!modal || !modalImg || !modalImgCapt) return;
-            console.log(imageList.length + " " + images.length);
 
             modal.style.display = "block";
             modalImg.src = e.target.src;
             currentImg = e.target;
             imageIndex = imageList.findIndex(({ image }) => image === e.target.src);
-            console.log("imageIndex: " + imageIndex);
             names(img);
         });
     });
@@ -99,12 +94,6 @@
 
     function ArrowClicked(event) {
 
-        //let leftArrow = document.getElementById('leftArrow');
-        //let rightArrow = document.getElementById('rightArrow');
-        //let close = document.getElementById("closeButton");
-
-        console.log("event.type: " + event.type + ", event.target: " + event.Target);
-
         // Handle keyboard events
         if (event.type === "keydown") {
             if (event.keyCode === 37) { // Left arrow
@@ -132,20 +121,12 @@
         // Handle mouse clicks
         else if (event.type === "click") { 
 
-            //if (leftArrow) {
-            //    leftArrow.addEventListener('click', function (event) {
-            //        event.stopPropagation();
-            //    });
-            //}
-
             if (event.target.closest && event.target.closest('#leftArrow')) {
                 ImagePrevious();
-                console.log("Here!");
                 return;
             }
             else if (event.target.closest && event.target.closest('#rightArrow')) {
                 ImageAdvance();
-                console.log("Or Here!");
                 return;
             }
             else if (modalOpen) {
@@ -154,18 +135,11 @@
                 modalOpen = false;
                 imgTitle = "";
                 toggleScroll();
-                console.log("Here Too!");
                 return;
             }
-            //else {
-            //    toggleScroll();
-            //    return;
-            //}
+
         }
 
-        
-
-        //toggleScroll();
     }
 
     //--Redundant with window event listener above--//
@@ -212,7 +186,6 @@
         modalImg.src = images[imageIndex].src;
         names(images[imageIndex]);
 
-        console.log("modalImg.src: " + modalImg.src + ", imageIndex: " + imageIndex);
     }
 
     function ImagePrevious() {
@@ -227,7 +200,6 @@
         modalImg.src = images[imageIndex].src;
         names(images[imageIndex]);
 
-        console.log("modalImg.src: " + modalImg.src + ", imageIndex: " + imageIndex);
     }
 
 // necessary for js modal??
