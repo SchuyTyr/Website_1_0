@@ -1658,7 +1658,7 @@ hr.rounded {
 	margin-right: auto;
 }
 
-.containerGrid img {
+.containerGrid img, .containerGrid video {
 	height: 200px;
 	/*border-radius: 20% / 12%;
 	border-radius: 12%;*/
@@ -1668,23 +1668,21 @@ hr.rounded {
 	margin-bottom: 8px;
 	padding: 6px;
 }
-.mainPhoto img {
+.mainPhoto img, .mainPhoto video {
 	height: 250px;
 }
 
 .img4 {
 }
 
-.containerGrid img:hover {
+.containerGrid img:hover, .containerGrid video:hover {
 	cursor: pointer;
 	/*cursor: url("src/img/CustomCursor_6_2p.png"), auto;*/
 	color: #436ff3;
 	border: 10px #436ff3;
 	/*border-radius: 0px;*/
-	box-shadow: 0 0 1px 4px #000000,
-							0 0 25px 15px #436ff3;
-	-webkit-box-shadow: 0 0 1px 4px #000000,
-							0 0 25px 15px #436ff3;
+	box-shadow: 0 0 1px 4px #000000, 0 0 25px 15px #436ff3;
+	-webkit-box-shadow: 0 0 1px 4px #000000, 0 0 25px 15px #436ff3;
 	-webkit-appearance: none;
 }
 
@@ -4784,10 +4782,10 @@ model-viewer > #ar-prompt > img {
 	.photoTextDescr {
 		width: 90%;
 	}
-	.containerGrid img {
+	.containerGrid img, .containerGrid video {
 		height: 170px;
 	}
-	.mainPhoto img {
+	.mainPhoto img, .mainPhoto video {
 		height: 190px;
 	}
 	.captionContainer span {
@@ -5438,7 +5436,7 @@ model-viewer > #ar-prompt > img {
 		 height: 24px;
 		 font-size: 20px;
 	 }
-	 .containerGrid img {
+	 .containerGrid img, .containerGrid video {
 			 height: auto;
 			 width: 80%;
 	 }
@@ -5574,15 +5572,15 @@ model-viewer > #ar-prompt > img {
 		 font-size: 20px;
 		 padding: 12px;
 	 }
-	 .containerGrid img {
- 		 height: auto;
- 		 width: 90%;
- 		 margin-left: 4px;
- 		 margin-right: 4px;
- 		 margin-top: 4px;
- 		 margin-bottom: 4px;
- 		 padding: 8px;
- 	}
+	.containerGrid img, .containerGrid video {
+		height: auto;
+		width: 90%;
+		margin-left: 4px;
+		margin-right: 4px;
+		margin-top: 4px;
+		margin-bottom: 4px;
+		padding: 8px;
+	}
 	.photoTextCaptCosplay {
 		overflow-y: scroll;
 		z-index: 1001;
