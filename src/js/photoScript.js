@@ -1,4 +1,4 @@
-/*-- photoScript.js // Schuyler Meyer // 2022-25 --*/
+/*-- photoScript.js // Schuyler Meyer // 2022-26 --*/
 
 //window.onload = function () {
 
@@ -7,12 +7,13 @@
     const body = document.getElementById('fullBody');
     const html = document.documentElement;
     let modal /*= document.getElementById('myModal')*/;
-    const images = document.querySelectorAll(".containerGrid img");
+    const images = document.querySelectorAll(".containerGrid img, .containerGrid video");
     //let imagesCollection = document.getElementsByClassName("img4");
     let imageList = [];
     let imageIndex = 0;
     let currentImg;
     let modalImg/* = document.getElementById("img01")*/;
+    let modalVid/* = document.getElementById("vid01")*/;
     let modalImgCapt/* = document.getElementById("photoTextCapt")*/;
     /*var close = document.getElementById("closeButton");*/
     var scrollTop = document.getElementById("myBtn");
@@ -33,6 +34,7 @@
         for (var p = 0; p < images.length; p++) {
             imageList.push({ image: images[p].src, id: p });
         }
+        
     }
 
     images.forEach((img) => {
@@ -40,10 +42,23 @@
         img.addEventListener("click", (e) => {
             modal = document.getElementById('myModal');
             modalImg = document.getElementById("img01");
+            modalVid = document.getElementById("vid01");
             modalImgCapt = document.getElementById("photoTextCapt");
 
+            modalImg.style.display = "none";
+            modalVid.style.display = "none";
+
+            // Need "currentSrc" for video instead of "src"
+            if (e.target.nodeName === "IMG") {
+                modalImg.src = e.target.src;
+                modalImg.style.display = "block";
+            } else if (e.target.nodeName === "VIDEO") {
+                modalVid.src = e.target.currentSrc;
+                modalVid.style.display = "block";
+            }
+
             modal.style.display = "block";
-            modalImg.src = e.target.src;
+            //modalImg.src = e.target.src;
             currentImg = e.target;
             imageIndex = imageList.findIndex(({ image }) => image === e.target.src);
             names(img);
@@ -53,6 +68,8 @@
     async function names(img) {
 
         await getExif(img);
+
+        //console.log("images: " + images[22].src);
 
         setTimeout(() => {
 
@@ -183,7 +200,8 @@
             imageIndex++;
         }
 
-        modalImg.src = images[imageIndex].src;
+        //modalImg.src = images[imageIndex].src;
+        showModalContent(images[imageIndex]);
         names(images[imageIndex]);
 
     }
@@ -197,9 +215,24 @@
             imageIndex--;
         }
 
-        modalImg.src = images[imageIndex].src;
+        //modalImg.src = images[imageIndex].src;
+        showModalContent(images[imageIndex]);
         names(images[imageIndex]);
 
+    }
+
+    function showModalContent(element) {
+        modalImg = document.getElementById("img01");
+        modalVid = document.getElementById("vid01");
+        modalImg.style.display = "none";
+        modalVid.style.display = "none";
+        if (element.nodeName === "IMG") {
+            modalImg.src = element.src;
+            modalImg.style.display = "block";
+        } else if (element.nodeName === "VIDEO") {
+            modalVid.src = element.currentSrc;
+            modalVid.style.display = "block";
+        }
     }
 
 // necessary for js modal??

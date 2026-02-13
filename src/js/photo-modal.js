@@ -44,6 +44,7 @@ window.onload = function () {
 			photomodal.innerHTML = `				
 					<div class="modalPhoto">
 						<img id="img01" class="modalPhotoContent" title="">
+						<video id="vid01" class="modalPhotoContent" autoplay muted playsinline loop title=""></video>
 						<div id="photoTextCapt"></div>
 						<div class="modalButtonGroup">
 							
