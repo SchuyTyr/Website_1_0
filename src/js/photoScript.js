@@ -76,25 +76,27 @@
             if ((!imgTitle || imgTitle === "Untitled") && currentImg.title) {
                 modalImg.title = currentImg.title;
                 modalImg.alt = currentImg.title;
-                modalImg.style.marginBottom = "24px";
+                //modalImg.style.marginBottom = "24px";
                 modalImgCapt.innerHTML = "<span>" + modalImg.title + "</span>";
             }
             else if (imgTitle && imgTitle !== "Untitled") {
                 modalImgCapt.innerHTML = "<span>" + imgTitle + "</span>";
                 modalImg.title = imgTitle;
                 modalImg.alt = imgTitle;
-                modalImg.style.marginBottom = "24px";
+                //modalImg.style.marginBottom = "24px";
             }
             else {
                 modalImgCapt.innerHTML = "";
                 modalImg.title = "";
                 modalImg.alt = "";
-                modalImg.style.marginBottom = "24px";
+                //modalImg.style.marginBottom = "24px";
             }
 
             //noScrollF();
             scrollTop.style.display = "none";
             html.style.overflow = "hidden";
+            modalImg.style.marginBottom = "24px";
+            modalVid.style.marginBottom = "24px";
             topBtn = true;
             modalOpen = true;
 
