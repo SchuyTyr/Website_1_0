@@ -7,6 +7,10 @@ var slideIndex = 0;
 var slides;
 //var slideshowContainers = document.getElementsByClassName("slideshow-container");
 
+var slides0 = document.getElementById("RepPatRyan");
+slides0.currentSlideIndex = 1;
+showSlides(slides0.currentSlideIndex, slides0);
+
 var slides1 = document.getElementById("VintageBaseBall");
 slides1.currentSlideIndex = 1;
 showSlides(slides1.currentSlideIndex, slides1);

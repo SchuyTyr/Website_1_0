@@ -50,7 +50,8 @@ photoHeader.innerHTML = `
           <a href="Photography/Golf.html" title="Golf">Golf</a>
           <a href="Photography/MHockey.html" title="Hockey, Men's">Hockey, Men's</a>
           <a href="Photography/WHockey.html" title="Hockey, Women's">Hockey, Women's</a>
-          <a href="Photography/Lacrosse.html" title="Lacrosse">Lacrosse</a>
+          <a href="Photography/MLacrosse.html" title="Men's Lacrosse">Lacrosse, Men's</a>
+          <a href="Photography/WLacrosse.html" title="Women's Lacrosse">Lacrosse, Women's</a>
           <a href="Photography/MountainBiking.html" title="Mountain Biking">Mountain Biking</a>
           <a href="Photography/Soccer.html" title="Soccer">Soccer</a>
           <a href="Photography/Softball.html" title="Softball">Softball</a>
@@ -59,6 +60,7 @@ photoHeader.innerHTML = `
           <a href="Photography/Tennis.html" title="Tennis">Tennis</a>
           <a href="Photography/Track.html" title="Track and Field">Track & Field</a>
           <a href="Photography/Volleyball.html" title="Volleyball">Volleyball</a>
+          <a href="Photography/WaterPolo.html" title="Water Polo">Water Polo</a>
           <a href="Photography/WinterSports.html" title="Skiing, Snowboarding, etc.">Winter Sports</a>
         </div>
       </div>

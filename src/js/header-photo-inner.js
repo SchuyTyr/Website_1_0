@@ -47,7 +47,8 @@ photoHeaderInner.innerHTML = `
           <a href="Golf.html" title="Golf">Golf</a>
           <a href="MHockey.html" title="Hockey, Men's">Hockey, Men's</a>
           <a href="WHockey.html" title="Hockey, Women's">Hockey, Women's</a>
-          <a href="Lacrosse.html" title="Lacrosse">Lacrosse</a>
+          <a href="MLacrosse.html" title="Men's Lacrosse">Lacrosse, Men's</a>
+          <a href="WLacrosse.html" title="Women's Lacrosse">Lacrosse, Women's</a>
           <a href="MountainBiking.html" title="Mountain Biking">Mountain Biking</a>
           <a href="Soccer.html" title="Soccer">Soccer</a>
           <a href="Softball.html" title="Softball">Softball</a>
@@ -56,6 +57,7 @@ photoHeaderInner.innerHTML = `
           <a href="Tennis.html" title="Tennis">Tennis</a>
           <a href="Track.html" title="Track and Field">Track & Field</a>
           <a href="Volleyball.html" title="Volleyball">Volleyball</a>
+          <a href="WaterPolo.html" title="Water Polo">Water Polo</a>
           <a href="WinterSports.html" title="Skiing, Snowboarding, etc.">Winter Sports</a>
         </div>
       </div>
