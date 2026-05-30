@@ -50,6 +50,7 @@ photoHeaderInner.innerHTML = `
           <a href="MLacrosse.html" title="Men's Lacrosse">Lacrosse, Men's</a>
           <a href="WLacrosse.html" title="Women's Lacrosse">Lacrosse, Women's</a>
           <a href="MountainBiking.html" title="Mountain Biking">Mountain Biking</a>
+          <a href="Rowing.html" title="Rowing / Crew">Rowing</a>
           <a href="Soccer.html" title="Soccer">Soccer</a>
           <a href="Softball.html" title="Softball">Softball</a>
           <a href="Squash.html" title="Squash">Squash</a>
@@ -125,9 +126,6 @@ photoHeaderInner.innerHTML = `
     <a href="../aboutSM.html" class="aButton pageButtonColor fullMenu" title="About">
         &nbsp;About&nbsp;
     </a>
-    <a href="../contact.html" class="aButton pageButtonColor" title="Coming Soon!">
-        &nbsp;Contact&nbsp;
-    </a>
     <div class="dropdown">
         <div class="aButton dropdownButton">
             <button class="pageButtonColor fullMenu" title="">&nbsp;Services&nbsp;</button>
@@ -141,11 +139,8 @@ photoHeaderInner.innerHTML = `
             </a>
         </div>
     </div>
-    <a href="https://schuybox.wordpress.com/" class="aButton pageButtonColor fullMenu" title="To the SchuyBox!" target="_blank">
-        &nbsp;Blog&nbsp;
-    </a>
-    <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor fullMenu" title="Buy me a Coffee" target="_blank">
-        <img class="menuIcon" src="https://www.schuylermeyer.com/src/icons/KoFi_no_circle.png">
+    <a href="../contact.html" class="aButton pageButtonColor" title="Coming Soon!">
+        &nbsp;Contact&nbsp;
     </a>
 </nav>
 

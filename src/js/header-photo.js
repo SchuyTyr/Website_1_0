@@ -53,6 +53,7 @@ photoHeader.innerHTML = `
           <a href="Photography/MLacrosse.html" title="Men's Lacrosse">Lacrosse, Men's</a>
           <a href="Photography/WLacrosse.html" title="Women's Lacrosse">Lacrosse, Women's</a>
           <a href="Photography/MountainBiking.html" title="Mountain Biking">Mountain Biking</a>
+          <a href="Photography/Rowing.html" title="Rowing / Crew">Rowing</a>
           <a href="Photography/Soccer.html" title="Soccer">Soccer</a>
           <a href="Photography/Softball.html" title="Softball">Softball</a>
           <a href="Photography/Squash.html" title="Squash">Squash</a>
@@ -104,10 +105,12 @@ photoHeader.innerHTML = `
 
 <!-- __________________________________________________________________________ -->
 
-<h1 style="color:#8b8e91;" title="Schuyler Meyer">
+<h1 class="headerTxt" style="color:#8b8e91;" title="Schuyler Meyer">
+    <div class="headerBorder">
   <a href="photo.html">
-    <img alt="Schuyler Meyer" class="imgLogo" src="src/img/SM_Sign_Photo-blur.png">
+    <span>SkyMyr Media</span>
   </a>
+  </div>
 </h1>
 <hr class="rounded">
 
@@ -124,9 +127,6 @@ photoHeader.innerHTML = `
       <a href="aboutSM.html" class="aButton pageButtonColor fullMenu" title="About">
 		&nbsp;About&nbsp;
 	  </a>
-      <a href="contact.html" class="aButton pageButtonColor" title="Coming Soon!">
-		&nbsp;Contact&nbsp;
-	  </a>
       <div class="dropdown">
         <div class="aButton dropdownButton">
             <button class="pageButtonColor fullMenu" title="">&nbsp;Services&nbsp;</button>
@@ -140,11 +140,8 @@ photoHeader.innerHTML = `
             </a>
         </div>
       </div>
-      <a href="https://schuybox.wordpress.com/" class="aButton pageButtonColor fullMenu" title="To the SchuyBox!" target="_blank">
-		&nbsp;Blog&nbsp;
-	  </a>
-      <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor fullMenu" title="Buy me a Coffee" target="_blank">
-		<img class="menuIcon" src="https://www.schuylermeyer.com/src/icons/KoFi_no_circle.png">
+      <a href="contact.html" class="aButton pageButtonColor" title="Coming Soon!">
+		&nbsp;Contact&nbsp;
 	  </a>
 </nav>
 

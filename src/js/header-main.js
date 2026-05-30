@@ -22,9 +22,6 @@ mainHeader.innerHTML = `
       <a href="aboutSM.html" class="aButton pageButtonColor fullMenu" title="About">
 		&nbsp;About&nbsp;
 	  </a>
-      <a href="contact.html" class="aButton pageButtonColor" title="Coming Soon!">
-		&nbsp;Contact&nbsp;
-	  </a>
       <div id="dDown" class="dropdown">
         <div class="aButton dropdownButton fullMenu">
             <button class="pageButtonColor" title="">&nbsp;Services&nbsp;</button>
@@ -41,12 +38,10 @@ mainHeader.innerHTML = `
             </a>
         </div>
       </div>
-      <a href="https://schuybox.wordpress.com/" class="aButton pageButtonColor fullMenu" title="To the SchuyBox!" target="_blank">
-		&nbsp;Blog&nbsp;
+      <a href="contact.html" class="aButton pageButtonColor" title="Coming Soon!">
+		&nbsp;Contact&nbsp;
 	  </a>
-      <a href="https://ko-fi.com/schuylermeyer" class="aButton noPaddingTB pageButtonColor fullMenu" title="Buy me a Coffee?" target="_blank">
-		<img class="menuIcon" src="src/icons/KoFi_no_circle.png">
-	  </a>
+
     </nav>
 
 

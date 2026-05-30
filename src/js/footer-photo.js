@@ -17,11 +17,11 @@ photoFooter.innerHTML = `
           <img class="socialHover" src="https://www.schuylermeyer.com/src/icons/Instagram_3.png" alt="instagram.com/schuyler_meyer">
       </a>
     </div>
-    <div class="socialProps">
-        <a class="link4" href="https://bsky.app/profile/schuylermeyer.bsky.social" title="BlueSky &#64;schuylermeyer.bsky.social" target="_blank" rel="noopener">
-            <img class="socialHover" src="https://www.schuylermeyer.com/src/icons/Bluesky.png" alt="https://bsky.app/profile/schuylermeyer.bsky.social">
-        </a>
-      </div>
+    <!--<div class="socialProps">-->
+        <!--<a class="link4" href="https://bsky.app/profile/schuylermeyer.bsky.social" title="BlueSky &#64;schuylermeyer.bsky.social" target="_blank" rel="noopener">-->
+            <!--<img class="socialHover" src="https://www.schuylermeyer.com/src/icons/Bluesky.png" alt="https://bsky.app/profile/schuylermeyer.bsky.social">-->
+        <!--</a>-->
+      <!--</div>-->
     <div class="socialProps">
       <a class="link4" href="https://www.flickr.com/photos/schuyler_meyer/albums" title="Flickr &#64; Schuyler Meyer" target="_blank" rel="noopener">
           <img class="socialHover" src="https://www.schuylermeyer.com/src/icons/Flickr_3.png" alt="flickr.com/photos/schuyler_meyer">
@@ -42,6 +42,11 @@ photoFooter.innerHTML = `
           <img class="socialHover" src="https://www.schuylermeyer.com/src/icons/Email.png" alt="Email: schuybreach@gmail.com">
       </a>
     </div>
+        <div class="socialProps">
+        <a class="link4" href="https://ko-fi.com/schuylermeyer" title="Buy me a coffee?" target="_blank" rel="noopener">
+            <img class="socialHover" src="https://www.schuylermeyer.com/src/icons/KoFi_no_circle.png" alt="https://ko-fi.com/schuylermeyer">
+        </a>
+      </div>
 </div>
 
 <hr class="rounded">
@@ -54,6 +59,8 @@ photoFooter.innerHTML = `
 <p id="p01">
   <b>&nbsp;&lt;&nbsp;|&nbsp;/\\\\&nbsp;|&nbsp;&gt;&nbsp;</b>
   <br><br>
+  &#169; Skymyr Media
+  <br>
   &#169; Schuyler Meyer Photography
   <br>
   2017 &mdash; `+curYear+`
