@@ -105,10 +105,12 @@ photoHeaderInner.innerHTML = `
 <!-- __________________________________________________________________________ -->
 
 
-<h1 style="color:#8b8e91;" title="Schuyler Meyer">
+<h1 class="headerTxt" style="color:#8b8e91;" title="Skymyr Media">
+    <div class="headerBorder">
   <a href="../photo.html">
-    <img alt="Schuyler Meyer" class="imgLogo" src="../src/img/SM_Sign_Photo-blur.png">
+    <span>SkyMyr Media</span>
   </a>
+  </div>
 </h1>
 
 <hr class="rounded">

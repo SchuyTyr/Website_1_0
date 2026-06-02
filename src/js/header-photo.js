@@ -105,7 +105,7 @@ photoHeader.innerHTML = `
 
 <!-- __________________________________________________________________________ -->
 
-<h1 class="headerTxt" style="color:#8b8e91;" title="Schuyler Meyer">
+<h1 class="headerTxt" style="color:#8b8e91;" title="Skymyr Media">
     <div class="headerBorder">
   <a href="photo.html">
     <span>SkyMyr Media</span>
