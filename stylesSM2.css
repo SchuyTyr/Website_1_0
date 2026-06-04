@@ -822,6 +822,43 @@ a.link4 {
 		box-shadow: 0 0 1px 4px #000000, 0 0 24px 8px var(--main_border_blue_color); /*blue*/
 	}
 }
+@keyframes txtRGB {
+	0% {
+		color: var(--main_border_blue_color); /*blue*/
+	}
+
+	12.5% {
+		color: rgba(67, 243, 243, 1); /*teal*/
+	}
+
+	25% {
+		color: rgba(78, 243, 67, 1); /*green*/
+	}
+
+	37.5% {
+		color: rgba(240, 243, 67, 1); /*yellow*/
+	}
+
+	50% {
+		color: rgba(243, 124, 67, 1); /*orange*/
+	}
+
+	62.5% {
+		color: rgba(243, 67, 67, 1); /*red*/
+	}
+
+	75% {
+		color: rgba(243, 67, 189, 1); /*pink*/
+	}
+
+	87.5% {
+		color: rgba(167, 67, 243, 1); /*purple*/
+	}
+
+	100% {
+		color: var(--main_border_blue_color); /*blue*/
+	}
+}
 @keyframes imgFrame {
 	0% {
 		border-radius: 24% 24%;
