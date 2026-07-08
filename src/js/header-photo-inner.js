@@ -28,72 +28,72 @@ photoHeaderInner.innerHTML = `
       <div class="subNav">
         <button class="subNavBtn">Home</button>
         <div class="subNav-content">
-          <a href="../index.html" title="Home, Main">Home</a>
-          <a href="../photo.html" title="Home, Photos">Photos Home</a>
+          <a href="../index.html" onclick="closeNav()" title="Home, Main">Home</a>
+          <a href="../photo.html" onclick="closeNav()" title="Home, Photos">Photos Home</a>
         </div>
       </div>
 
       <div class="subNav">
         <button class="subNavBtn" onclick="location.href='Sports.html';" title="All Sports" style="cursor: pointer;">Sports</button>
         <div class="subNav-content" onclick="void(0)">
-          <a href="Baseball.html" title="Baseball">Baseball</a>
-          <a href="VintageBaseBall.html" title="Vintage Base Ball">Base Ball, Vintage</a>
-          <a href="MBasketball.html" title="Basketball, Men's">Basketball, Men's</a>
-          <a href="WBasketball.html" title="Basketball, Women's">Basketball, Women's</a>
-          <a href="XCountry.html" title="Cross Country">Cross Country</a>
-          <a href="Equestrian.html" title="Equestrian">Equestrian</a>
-          <a href="Fencing.html" title="Fencing">Fencing</a>
-          <a href="Football.html" title="Football">Football</a>
-          <a href="Golf.html" title="Golf">Golf</a>
-          <a href="MHockey.html" title="Hockey, Men's">Hockey, Men's</a>
-          <a href="WHockey.html" title="Hockey, Women's">Hockey, Women's</a>
-          <a href="MLacrosse.html" title="Men's Lacrosse">Lacrosse, Men's</a>
-          <a href="WLacrosse.html" title="Women's Lacrosse">Lacrosse, Women's</a>
-          <a href="MountainBiking.html" title="Mountain Biking">Mountain Biking</a>
-          <a href="Rowing.html" title="Rowing / Crew">Rowing</a>
-          <a href="Soccer.html" title="Soccer">Soccer</a>
-          <a href="Softball.html" title="Softball">Softball</a>
-          <a href="Squash.html" title="Squash">Squash</a>
-          <a href="SwimDive.html" title="Swimming and Diving">Swimming & Diving</a>
-          <a href="Tennis.html" title="Tennis">Tennis</a>
-          <a href="Track.html" title="Track and Field">Track & Field</a>
-          <a href="Volleyball.html" title="Volleyball">Volleyball</a>
-          <a href="WaterPolo.html" title="Water Polo">Water Polo</a>
-          <a href="WinterSports.html" title="Skiing, Snowboarding, etc.">Winter Sports</a>
+          <a href="Baseball.html" onclick="closeNav()" title="Baseball">Baseball</a>
+          <a href="VintageBaseBall.html" onclick="closeNav()" title="Vintage Base Ball">Base Ball, Vintage</a>
+          <a href="MBasketball.html" onclick="closeNav()" title="Basketball, Men's">Basketball, Men's</a>
+          <a href="WBasketball.html" onclick="closeNav()" title="Basketball, Women's">Basketball, Women's</a>
+          <a href="XCountry.html" onclick="closeNav()" title="Cross Country">Cross Country</a>
+          <a href="Equestrian.html" onclick="closeNav()" title="Equestrian">Equestrian</a>
+          <a href="Fencing.html" onclick="closeNav()" title="Fencing">Fencing</a>
+          <a href="Football.html" onclick="closeNav()" title="Football">Football</a>
+          <a href="Golf.html" onclick="closeNav()" title="Golf">Golf</a>
+          <a href="MHockey.html" onclick="closeNav()" title="Hockey, Men's">Hockey, Men's</a>
+          <a href="WHockey.html" onclick="closeNav()" title="Hockey, Women's">Hockey, Women's</a>
+          <a href="MLacrosse.html" onclick="closeNav()" title="Men's Lacrosse">Lacrosse, Men's</a>
+          <a href="WLacrosse.html" onclick="closeNav()" title="Women's Lacrosse">Lacrosse, Women's</a>
+          <a href="MountainBiking.html" onclick="closeNav()" title="Mountain Biking">Mountain Biking</a>
+          <a href="Rowing.html" onclick="closeNav()" title="Rowing / Crew">Rowing</a>
+          <a href="Soccer.html" onclick="closeNav()" title="Soccer">Soccer</a>
+          <a href="Softball.html" onclick="closeNav()" title="Softball">Softball</a>
+          <a href="Squash.html" onclick="closeNav()" title="Squash">Squash</a>
+          <a href="SwimDive.html" onclick="closeNav()" title="Swimming and Diving">Swimming & Diving</a>
+          <a href="Tennis.html" onclick="closeNav()" title="Tennis">Tennis</a>
+          <a href="Track.html" onclick="closeNav()" title="Track and Field">Track & Field</a>
+          <a href="Volleyball.html" onclick="closeNav()" title="Volleyball">Volleyball</a>
+          <a href="WaterPolo.html" onclick="closeNav()" title="Water Polo">Water Polo</a>
+          <a href="WinterSports.html" onclick="closeNav()" title="Skiing, Snowboarding, etc.">Winter Sports</a>
         </div>
       </div>
 
       <div class="subNav">
         <button class="subNavBtn">Nature</button>
         <div class="subNav-content">
-          <a href="Animals.html" title="Animals">Animals</a>
-          <a href="Astro.html" title="Astro">Astro</a>
-          <a href="Landscape.html" title="Landscape">Landscape</a>
-          <a href="Macro.html" title="Macro">Macro</a>
-          <a href="Pets.html" title="Pets">Pets</a>
+          <a href="Animals.html" onclick="closeNav()" title="Animals">Animals</a>
+          <a href="Astro.html" onclick="closeNav()" title="Astro">Astro</a>
+          <a href="Landscape.html" onclick="closeNav()" title="Landscape">Landscape</a>
+          <a href="Macro.html" onclick="closeNav()" title="Macro">Macro</a>
+          <a href="Pets.html" onclick="closeNav()" title="Pets">Pets</a>
         </div>
       </div>
 
       <div class="subNav">
         <button class="subNavBtn" onclick="void(0)">People</button>
         <div class="subNav-content" onclick="void(0)">
-          <a href="Concerts.html" title="Concerts">Concerts</a>
-          <a href="Cosplay.html" title="Cosplay">Cosplay</a>
-          <a href="Events.html" title="Events">Events</a>
-          <a href="Humans.html" title="Humans">Humans</a>
-          <a href="Portraits.html" title="Portraits">Portraits</a>
-          <a href="Weddings.html" title="Weddings">Weddings</a>
+          <a href="Concerts.html" onclick="closeNav()" title="Concerts">Concerts</a>
+          <a href="Cosplay.html" onclick="closeNav()" title="Cosplay">Cosplay</a>
+          <a href="Events.html" onclick="closeNav()" title="Events">Events</a>
+          <a href="Humans.html" onclick="closeNav()" title="Humans">Humans</a>
+          <a href="Portraits.html" onclick="closeNav()" title="Portraits">Portraits</a>
+          <a href="Weddings.html" onclick="closeNav()" title="Weddings">Weddings</a>
         </div>
       </div>
 
       <div class="subNav">
         <button class="subNavBtn">Still Life | Art</button>
         <div class="subNav-content">
-          <a href="Artwork.html" title="Artwork">Artwork</a>
-          <a href="HumanCreated.html" title="Human Created">Human Created</a>
-          <a href="Miniatures.html" title="Miniatures">Miniatures</a>
-          <a href="photoshop.html" title="Photoshop">Photoshop</a>
-          <a href="StillLife.html" title="Still Life">Still Life</a>
+          <a href="Artwork.html" onclick="closeNav()" title="Artwork">Artwork</a>
+          <a href="HumanCreated.html" onclick="closeNav()" title="Human Created">Human Created</a>
+          <a href="Miniatures.html" onclick="closeNav()" title="Miniatures">Miniatures</a>
+          <a href="photoshop.html" onclick="closeNav()" title="Photoshop">Photoshop</a>
+          <a href="StillLife.html" onclick="closeNav()" title="Still Life">Still Life</a>
         </div>
       </div>
   </div>

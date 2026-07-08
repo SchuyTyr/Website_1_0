@@ -140,20 +140,21 @@ br {
 
 
 .closebtnT {
-	margin: 0 auto;
-	/*padding: 1em 2em;*/
-	/*min-width: 200px;*/
-	min-height: 50px;
-	cursor: pointer;
-	position: relative;
-	height: 8vh;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	/*letter-spacing: 8px;*/
+    margin: 0 auto;
+    /*padding: 1em 2em;*/
+    /*min-width: 200px;*/
+    min-height: 50px;
+    cursor: pointer;
+    position: relative;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /*letter-spacing: 8px;*/
+    gap: 0.5em;
 }
 
 .closebtnP, .closebtnA {
