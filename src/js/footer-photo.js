@@ -53,7 +53,7 @@ photoFooter.innerHTML = `
 <br>
 
 <div class="h4">
-<img alt="Schuyler Meyer" class="imgLogo" style="border: 0;" src="https://www.schuylermeyer.com/src/img/SM_Banner_Logo_noDate.png">
+<img class="logoGlowRGB" alt="Schuyler Meyer" src="https://www.schuylermeyer.com/src/img/SMLogo-Black.png" width="250">
 </div>
 
 <p id="p01">

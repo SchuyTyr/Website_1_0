@@ -760,6 +760,11 @@ a.link4 {
 	left: 0;
 }
 
+.logoGlowRGB {
+	filter: drop-shadow(0 0 0.5rem var(--main_border_blue_color)); /*blue*/
+	animation: imgFrameRGBDrop 8s Ease-in-out infinite;
+}
+
 @keyframes imgFrameBasic {
 	0% {
 		box-shadow: 0 0 1px 4px #000000, 0 0 4px 2px #000000, 0 0 18px 1px var(--main_border_blue_color);
@@ -821,6 +826,43 @@ a.link4 {
 
 	100% {
 		box-shadow: 0 0 1px 4px #000000, 0 0 24px 8px var(--main_border_blue_color); /*blue*/
+	}
+}
+@keyframes imgFrameRGBDrop {
+	0% {
+		filter: drop-shadow(0 0 3px var(--main_border_blue_color)); /*blue*/
+	}
+
+	12.5% {
+		filter: drop-shadow(0 0 3px rgba(67, 243, 243, 1)); /*teal*/
+	}
+
+	25% {
+		filter: drop-shadow(0 0 3px rgba(78, 243, 67, 1)); /*green*/
+	}
+
+	37.5% {
+		filter: drop-shadow(0 0 3px rgba(240, 243, 67, 1)); /*yellow*/
+	}
+
+	50% {
+		filter: drop-shadow(0 0 3px rgba(243, 124, 67, 1)); /*orange*/
+	}
+
+	62.5% {
+		filter: drop-shadow(0 0 3px rgba(243, 67, 67, 1)); /*red*/
+	}
+
+	75% {
+		filter: drop-shadow(0 0 3px rgba(243, 67, 189, 1)); /*pink*/
+	}
+
+	87.5% {
+		filter: drop-shadow(0 0 3px rgba(167, 67, 243, 1)); /*purple*/
+	}
+
+	100% {
+		filter: drop-shadow(0 0 3px var(--main_border_blue_color)); /*blue*/
 	}
 }
 @keyframes txtRGB {

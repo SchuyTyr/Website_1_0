@@ -39,7 +39,8 @@ photoHeader.innerHTML = `
       <div class="subNav">
         <button class="subNavBtn" onclick="location.href='Photography/Sports.html';" title="All Sports" style="cursor: pointer;">Sports</button>
         <div class="subNav-content" onclick="void(0)">
-          <a href="Photography/Baseball.html" onclick="closeNav()" title="Baseball">Baseball</a>
+          <a href="Photography/MBaseball.html" onclick="closeNav()" title="Men's Baseball">Baseball, Men's</a>
+          <a href="Photography/WBaseball.html" onclick="closeNav()" title="Women's Baseball">Baseball, Women's</a>
           <a href="Photography/VintageBaseBall.html" onclick="closeNav()" title="Vintage Base Ball">Base Ball, Vintage</a>
           <a href="Photography/MBasketball.html" onclick="closeNav()" title="Basketball, Men's">Basketball, Men's</a>
           <a href="Photography/WBasketball.html" onclick="closeNav()" title="Basketball, Women's">Basketball, Women's</a>
@@ -108,7 +109,7 @@ photoHeader.innerHTML = `
 <h1 class="headerTxt" style="color:#8b8e91;" title="Skymyr Media">
     <div class="headerBorder">
   <a href="photo.html">
-    <span>SkyMyr Media</span>
+    <span class="logoGlowRGB">SkyMyr Media</span>
   </a>
   </div>
 </h1>
