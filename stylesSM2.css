@@ -409,6 +409,12 @@ br {
     margin-right: auto;
 }
 
+.imgLogoPhotoFeat {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .headerTxt {
 	color: var(--main_headerText_color);
 	font-size: 42px;
@@ -4753,6 +4759,9 @@ model-viewer > #ar-prompt > img {
 	.imgLogo {
 		width: 14%;
 	}
+	.imgLogoPhotoFeat {
+		width: 30%;
+	}
 	.socialProps img {
 		width: 24%;
 	}
@@ -5063,6 +5072,12 @@ model-viewer > #ar-prompt > img {
 	}
 	.imgLogo {
 		width: 24%;
+		margin: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.imgLogoPhotoFeat {
+		width: 50%;
 		margin: 0;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -5468,6 +5483,12 @@ model-viewer > #ar-prompt > img {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+	.imgLogoPhotoFeat {
+		width: 70%;
+		margin: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	.xlarge-font {
 		font-size: 32px;
 	}
@@ -5850,6 +5871,9 @@ model-viewer > #ar-prompt > img {
 		margin: 0;
 	}
 	.imgLogo {
+		width: 90%;
+	}
+	.imgLogoPhotoFeat {
 		width: 90%;
 	}
 	.closeBtnPort {
