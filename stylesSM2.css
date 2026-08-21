@@ -1924,6 +1924,21 @@ hr.rounded {
 	display: block;
 	/*border-bottom: 1px solid var(--main_subText_color);*/
 }
+	.photoTextDescr a {
+		color: var(--main_headerText_color);
+		border-bottom: 1px solid var(--main_headerText_color);
+		text-decoration: none;
+	}
+	.photoTextDescr a:visited {
+		color: var(--main_headerText_color);
+	}
+	.photoTextDescr a:hover {
+		color: var(--main_text_blue_color);
+		border-bottom: 1px solid var(--main_text_blue_color);
+	}
+	.photoTextDescr a:active {
+		color: var(--main_headerText_color);
+	}
 #photoText {
 	margin-bottom: 24px;
 	font-size: 18px;
@@ -2098,6 +2113,23 @@ hr.rounded {
 		border-top: 1px solid var(--main_subText_color);
 		color: rgb(0 229 255);
 	}
+
+/* Slideshow */
+.sportFullContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
+/*    padding-left: 10px;
+    padding-right: 10px;*/
+}
+
+#slideshowMain {
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 /*-------------------------End Photo Page--------------------------*/
 /*--------------------------------------------------------------------*/

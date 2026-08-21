@@ -21,6 +21,8 @@
     var modalOpen = false;
     var imgTitle = "";
 
+    //export { modalOpen };
+
     function getExif(img) {
         EXIF.getData(img, function () {
             if (EXIF.getTag(this, "ImageDescription") !== "undefined") {
@@ -114,7 +116,7 @@
     function ArrowClicked(event) {
 
         // Handle keyboard events
-        if (event.type === "keydown") {
+        if (event.type === "keydown" && modalOpen) {
             if (event.keyCode === 37) { // Left arrow
                 ImagePrevious();
                 event.preventDefault();
@@ -138,7 +140,7 @@
             }
         }
         // Handle mouse clicks
-        else if (event.type === "click") { 
+        else if (event.type === "click" && modalOpen) { 
 
             if (event.target.closest && event.target.closest('#leftArrow')) {
                 ImagePrevious();
@@ -235,7 +237,15 @@
             modalVid.src = element.currentSrc;
             modalVid.style.display = "block";
         }
+}
+
+window.setCaptionForSlide = function (imgElement) {
+    // Example: set caption in a div with id="slideCaption"
+    const captionDiv = document.getElementById('slideCaption');
+    if (captionDiv) {
+        captionDiv.textContent = imgElement.title || imgElement.alt || '';
     }
+};
 
 // necessary for js modal??
 atLoad();
