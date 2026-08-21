@@ -84,7 +84,7 @@ window.addEventListener("click", ClickDown, false);
 function ClickDown(event) {
     if (event.target.id !== 'playPauseBtn') {
         pauseSlideshow()
-        event.preventDefault();
+        //event.preventDefault();
         if (isPlaying) resetTimer();
     }
 }
